@@ -335,8 +335,6 @@
     <Content Include="Desktop\GetTotals.aspx" />
     <Content Include="Desktop\header.html" />
     <Content Include="Desktop\index.aspx" />
-    <Content Include="Desktop\index_Cart_B.aspx" />
-    <Content Include="Desktop\index_Cart_A.aspx" />
     <Content Include="Desktop\PayPalProcess.aspx" />
     <Content Include="Desktop\popups.html" />
     <Content Include="Desktop\PostSale.aspx" />
@@ -1169,14 +1167,6 @@
     </Compile>
     <Compile Include="Desktop\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Desktop\index_Cart_B.aspx.cs">
-      <DependentUpon>index_Cart_B.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Desktop\index_Cart_A.aspx.cs">
-      <DependentUpon>index_Cart_A.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Desktop\PayPalProcess.aspx.cs">
