@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /ADMIN/
+Disallow: /admin/
+Disallow: /mobile/
+Disallow: /MOBILE/

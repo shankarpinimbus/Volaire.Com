@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d0c76559-d496-46c1-b8e5-9ac9f622f05d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://test-api.tokenex.com/TokenServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TokenServices.disco" MetadataType="Disco" ID="7dbe336e-650a-4df0-a587-6282168eef9d" SourceId="1" SourceUrl="https://test-api.tokenex.com/TokenServices.svc?disco" />
+    <MetadataFile FileName="TokenServices.xsd" MetadataType="Schema" ID="370d429e-368c-4e5d-8731-c231f123b79a" SourceId="1" SourceUrl="https://test-api.tokenex.com/TokenServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="TokenServices1.xsd" MetadataType="Schema" ID="4c091574-a212-4b2c-ba13-50269ce4f68e" SourceId="1" SourceUrl="https://test-api.tokenex.com/TokenServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="TokenServices2.xsd" MetadataType="Schema" ID="c89970d1-6e65-442b-9de0-39fb4d90a9da" SourceId="1" SourceUrl="https://test-api.tokenex.com/TokenServices.svc?xsd=xsd4" />
+    <MetadataFile FileName="TokenExServices.wsdl" MetadataType="Wsdl" ID="c794ac92-99ea-4bbc-9272-2c7ab0298f46" SourceId="1" SourceUrl="https://test-api.tokenex.com/TokenServices.svc?wsdl" />
+    <MetadataFile FileName="TokenServices3.xsd" MetadataType="Schema" ID="d61b3f73-1d33-4581-bf05-c4b89d5a449a" SourceId="1" SourceUrl="https://test-api.tokenex.com/TokenServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="TokenServices.wsdl" MetadataType="Wsdl" ID="8ac88199-8355-4757-8df6-a6fb88126a8d" SourceId="1" SourceUrl="https://test-api.tokenex.com/TokenServices.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="TokenServices4.xsd" MetadataType="Schema" ID="1720ccf4-8e41-4945-9056-0f073d15b3d2" SourceId="1" SourceUrl="https://test-api.tokenex.com/TokenServices.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
