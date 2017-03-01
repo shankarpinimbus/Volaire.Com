@@ -54,6 +54,19 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CSDLL\CSPaymentProvider.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CSDLL\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\CSDLL\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\CSDLL\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\CSDLL\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -67,6 +80,8 @@
   <ItemGroup>
     <Compile Include="ContactDAL.cs" />
     <Compile Include="AbTestingVersionUpdate.cs" />
+    <Compile Include="CustomTaxCalculator.cs" />
+    <Compile Include="CustomUnityDependencyResolver.cs" />
     <Compile Include="DuplicateOrderDAL.cs" />
     <Compile Include="DynamicVersionDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
