@@ -37,7 +37,8 @@
         <area shape="circle" coords="440,344,85" href="#guarantee" class="guarantee">
       </map>
     
-    </div>
+    </div>
+
 
     <div class="contentpad">
 
@@ -46,7 +47,8 @@
             <p>
                 <img src="//d39hwjxo88pg52.cloudfront.net/tryfootrescue/images/mobile/home1a.jpg" class="fright" style="width: 47%; margin-left: 10px">
                 Are your sexy high heels leaving you sore? Are your running shoes rubbing and chafing? Does standing all day leave you grimacing at night? Don’t let aching feet keep you from looking and feeling your best. It’s time to get Foot Rescue!
-            </p>        </div>
+            </p>
+        </div>
     </div>
 
 
@@ -59,7 +61,8 @@
           <area shape="rect" coords="2,184,638,268" href="faq.aspx">
           <area shape="rect" coords="2,274,638,357" href="mailto:[enter your email address]?subject=Email from TryFootRescue&body=Just sending a reminder to order from Foot Rescue! Simply visit http://www.tryfootrescue.com to banish foot pain!">
         </map>
-    </div>
+    </div>
+
 </div>
 
  <uc:Footer ID="Footer" runat="server" />

@@ -11,6 +11,7 @@ namespace CSWebBase
 {
     public class MVISOrderLogixDAL
     {
+
         public static void InsertMVISOrderLogixLog(int OrderID, int PostStatusID, string ErroMessage, int OrderID_MVIS)
         {
             string connectionString = ConfigHelper.GetDBConnection();
