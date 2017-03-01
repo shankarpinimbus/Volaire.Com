@@ -325,6 +325,8 @@
     <Content Include="Admin\VersionReport.aspx" />
     <Content Include="Admin\VersionReport1.aspx" />
     <Content Include="Desktop\AddProduct.aspx" />
+    <Content Include="Desktop\bottomcta.html" />
+    <Content Include="Desktop\note-txt.html" />
     <Content Include="Desktop\tangle-angel-brush.aspx" />
     <Content Include="Desktop\shine-angel-brush.aspx" />
     <Content Include="Desktop\mega-volume-collection.aspx" />
@@ -581,6 +583,15 @@
     <Content Include="Styles\fonts\lato-mediumitalic-webfont.ttf" />
     <Content Include="Styles\fonts\lato-mediumitalic-webfont.woff" />
     <Content Include="Styles\fonts\lato-mediumitalic-webfont.woff2" />
+    <Content Include="Styles\fonts\Didot-Bold.ttf" />
+    <Content Include="Styles\fonts\Didot-Bold.woff" />
+    <Content Include="Styles\fonts\Didot-Bold.woff2" />
+    <Content Include="Styles\fonts\Didot-Italic.ttf" />
+    <Content Include="Styles\fonts\Didot-Italic.woff" />
+    <Content Include="Styles\fonts\Didot-Italic.woff2" />
+    <Content Include="Styles\fonts\Didot.ttf" />
+    <Content Include="Styles\fonts\Didot.woff" />
+    <Content Include="Styles\fonts\Didot.woff2" />
     <None Include="Web.config.Debug">
       <DependentUpon>Web.config</DependentUpon>
     </None>

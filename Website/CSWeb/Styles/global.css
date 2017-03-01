@@ -16,6 +16,35 @@
     font-weight: 500;
     font-style: italic;
 }
+@font-face {
+	font-family: 'Didot';
+	src: local('Didot Italic'), local('Didot-Italic'),
+		url('Didot-Italic.woff2') format('woff2'),
+		url('Didot-Italic.woff') format('woff'),
+		url('Didot-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Didot';
+	src: local('Didot'),
+		url('Didot.woff2') format('woff2'),
+		url('Didot.woff') format('woff'),
+		url('Didot.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Didot';
+	src: local('Didot Bold'), local('Didot-Bold'),
+		url('Didot-Bold.woff2') format('woff2'),
+		url('Didot-Bold.woff') format('woff'),
+		url('Didot-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
 
 a {
 	color: #202c50;	
@@ -43,6 +72,7 @@ img, input[type=image] {max-width: 100%;}
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 .bold {font-weight: bold !important;}
+.med {font-weight: 500 !important;}
 .heavy {font-weight: 900 !important;}
 .normal {font-weight: normal !important;}
 .ital {	font-style: italic !important;}
@@ -73,7 +103,7 @@ img, input[type=image] {max-width: 100%;}
 .red {color: #ef4527 !important;}
 .magenta {color: #eb1c74 !important;}
 .orange {color: #ff7418 !important;}
-.brown {color: #af6738 !important;}
+.brown {color: #a47f56 !important;}
 .margr20 {margin-right: 20px !important;}
 .lh19 {line-height: 19px !important;}
 .lh20 {line-height: 20px !important;}
@@ -387,18 +417,20 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 
 .home-slider-wrap {
     max-width: 1376px;
-    margin: 2rem auto 3rem;
+    margin: 3rem auto 2rem;
 }
 
 .slider-hdr {
     float: left;
     width: 18.75%;
-    margin: 1rem 0 2rem 7.5%;
+    margin: 0 0 2rem 7.5%;
     padding-right: 1.5%;
     text-align: right;
+    z-index: 10;
+    background: #fff;
 }
 .slider-hdr h2 {
-    padding-bottom: .6rem;
+    padding: 4.3rem 0 .8rem;
     line-height: 1;
 }
 .slider-hdr h2 .line1 {
@@ -430,23 +462,32 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
     display: block;
 }
 
+.slide-angle {
+    position: absolute;
+    top: -8%;
+    right: -36.8%;
+    z-index: 100;
+    width: 37.6%;
+}
+
 
 .home-slider {
     float: left;
     width: 73%;
     padding-bottom: 50px;
+    margin-left: -2%;
 }
 
 .home-slider .btn_next {
     position: absolute;
-    top: 110%;
-    right: 22%;
+    top: 111%;
+    right: 32%;
     cursor: pointer;
 }
 .home-slider .btn_prev {
     position: absolute;
-    top: 110%;
-    left: 22%;
+    top: 111%;
+    left: 32%;
     cursor: pointer;
 }
 
@@ -462,10 +503,10 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 
 .home-slider .slick-dots {
     list-style: none;
-    width: 50%;
+    width: 33%;
     position: absolute;
     top: 110%;
-    left: 25%;
+    left: 33%;
     text-align: center;
 }
 
@@ -473,16 +514,16 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
     display: inline-block;
     /*background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/slick_nav_bg.png) repeat-x 0 0;*/
     text-align: center;
-    cursor: pointer;
-    margin: 0 4px;
+    margin: 0 6px;
 }
 .home-slider .slick-dots li button {
     border: 0;
-    background: #999;
+    background: #dadada;
     width: 13px;
     height: 13px;
     border-radius: 50%;
     text-indent: -9999px;
+    cursor: pointer;
 }
 .home-slider .slick-dots li.slick-active button {
     opacity: 1;
@@ -490,9 +531,168 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 }
 
 
+.home3link {
+    top: 75.9%;
+    left: 13.32%;
+    width: 21.9%;
+    height: 13.1%;
+
+}
+
+.home4 {padding: 2rem 0;}
+
+.home4a {
+    float: left;
+    width: 54.4%;
+}
+.home4b {
+    float: left;
+    width: 45.6%;
+    text-align: right;
+}
+.home4c {
+    float: left;
+    width: 49.7%;
+}
+.home4d {
+    float: left;
+    width: 50.3%;
+}
+
+.kristin_selfies p.note {
+    position: absolute;
+    top: 72.6%;
+    left: 67.13%;
+    font-size: 14px;
+}
+
+.home4b h2 {
+    font-size: 3.125rem;
+    margin: -1.8rem 0 1rem;
+    padding-right: 5%;
+}
+.home4b h2 .part1 {
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .6);
+}
+.home4b h2 .part2 {
+    font-family: Didot, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #25cbd3;
+}
+.home4b h3 {
+    font-size: 1.375rem;
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .6);
+    margin-bottom: 1rem;
+    padding-right: 5%;
+}
+
+.volaire-rises-img {
+    width: 100%;
+}
+
+.volaire-rises h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.3125rem;
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .6);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    position: absolute;
+    top: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -.03rem;
+    padding-right: 0;
+}
+.volaire-rises h2.hdr1 {
+    left: 7.4%;
+    width: 48%;
+}
+.volaire-rises h2.hdr2 {
+    left: 62%;
+    width: 35%;
+}
+.volaire-rises h2 .line2 {
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: none;
+    color: #96774d;
+}
+.volaire-rises h2.hdr2 .line2 {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: none;
+    color: #25cbd3;
+}
+
+.watch_demo {
+    position: absolute;
+    bottom: 0;
+    left: 44.5%;
+    font-weight: 700;
+    color: #ff5a34;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 0 2px 27px;
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/triangle_orange.png) no-repeat 0 0;
+    background-size: auto 100%;
+}
+
+.watch_demo:hover {text-decoration: underline;}
+
+.home4b p.p1 {
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 1.63;
+    padding: 1.2rem 5% 1rem 0;
+}
+
+.brand-txt {
+    font-family: Judson, 'Times New Roman', serif;
+    font-size: 110%;
+    font-style: italic;
+}
+
+.home4c img {
+    margin: -1rem 0 0 18%;
+    max-width: 85%;
+}
 
 
+.home5 {
+    padding: 1rem 2.7%;
+    text-align: center;
+}
 
+.home5 h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+
+.bottomcta {
+    margin: 1rem 2.5%;
+}
+.bottomctalink1 {
+    top: 53.95%;
+    left: 78.5%;
+    width: 20.05%;
+    height: 20.59%;
+}
+.bottomctalink2 {
+    top: 84%;
+    left: 76.79%;
+    width: 21.5%;
+    height: 14.4%;
+}
+.bottomctalink1:hover, 
+.bottomctalink2:hover {background: rgba(255, 255, 255, .2);}
 
 
 
@@ -519,54 +719,123 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 	box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, .3);
 }
 
+
+
+.footer-social {
+    margin-top: 1.7rem;
+    border-top: #000 solid 1px;
+    padding: 1rem 0;
+    text-align: right;
+}
+.footer-social .container {
+    padding: 0 2%;
+    text-align: right;
+}
+
+.footer-hashtag {
+    margin-right: 24px;
+    vertical-align: middle;
+}
+
+.footer-logo-v {
+    margin-right: 24px;
+    vertical-align: middle;
+}
+
+.footer-social-txt {
+    color: #a28e79;
+    margin-right: 20px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    vertical-align: middle;
+}
+.footer-social-link {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.footer-social-link:last-of-type {
+    margin-right: 0;
+}
+
+
 .footer {
-	text-align: left;
-	color: #000;
-	padding: 2em 4% 0;
-	font-size: .85rem;
-	line-height: 1.54;
+	padding: .5rem 0;
+    background: #efe6dd;
 }
-.footer_social {
-    float:right;
-    width: 10%;
+
+.footer .container {
+    padding: 0 2% 0 4%;
 }
+
 .footer ul {
 	list-style: none;
-    margin-bottom: .5em;
+    margin-bottom: 2rem;
 }
 .footer ul li {
-	display: inline-block;
-    text-transform:uppercase;
+    padding-bottom: .4rem;
 }
 .footer ul li a {
-	padding: 0 10px;
-}
-.footer ul li:first-of-type a {padding-left: 0;}
-.footer ul li:not(:last-of-type):after {
-	content: '|';
-}
-.footer a {
 	color: #000;
-	text-decoration: none;
+    text-decoration: none;
 }
-.footer a:hover {
-	text-decoration: underline;
+.footer ul li a:hover {
+    text-decoration: underline;
 }
-.footer p {
-    padding-bottom: 1.5em;
+
+.footer-list-1 {
+    display: inline-block;
+    white-space: nowrap;
+    width: 35%;
+    vertical-align: top;
 }
-.footer_phone {
-    font-size: 1rem;
+.footer-list-2 {
+    display: inline-block;
+    white-space: nowrap;
+    width: 25%;
+    vertical-align: top;
 }
-.footer_legal {color: #777;}
-#cart .footer_offerdetails, 
-#receipt .footer_offerdetails {display: none;}
+.footer-list-3 {
+    display: inline-block;
+    white-space: nowrap;
+    width: 30%;
+    vertical-align: top;
+}
+
+.footer-right {
+    text-align: right;
+    padding-top: .1rem;
+}
+
+.footer p.footer-note {
+    font-size: .875rem;
+    padding-bottom: 0;
+    line-height: 1.1;
+}
+
+.footer p.footer-copyright {
+    font-size: .8125rem;
+    padding-bottom: 0;
+    line-height: 1.1;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+
+
 h1.pagetitle {
 	font-size: 2.4rem;
 	padding: 0 0 1.2rem 0;
 	line-height: 1.2;
     color: #25205f;
 }
+
+
+
+
+
+
+
+
 
 .testimonial_container {
 	width: 90%;
@@ -1150,13 +1419,47 @@ h2.ccdecline_hdr {
 }
 
 
-@media all and (max-width:1070px) and (min-width: 1025px) {
 
-ul.nav li {margin: 0 1%;}
+
+@media all and (max-width:1330px) and (min-width: 1025px) {
+
+.volaire-rises h2{font-size: 1.15rem; top: 81%;}
+.volaire-rises h2 .line2 {font-size: 1.75rem;}
 
 }
 
 
+@media all and (max-width:1220px) and (min-width: 1025px) {
+.slider-hdr {
+    width: 20%;
+    margin: 0 0 2rem 2.5%;
+}
+.home-slider {
+    width: 76%;
+    margin-left: -2%;
+}
+.slider-hdr h2 {
+    padding: 35% 0 .8rem;
+}
+.slider-hdr h2 .line1 {font-size: 40px;}
+.slider-hdr h2 .line2 {font-size: 34px;}
+.slider-hdr h3 .line1 {font-size: 22px;}
+.slider-hdr h3 .line2 {font-size: 18px;}
+
+.home5 h2 {font-size: 1.75rem;}
+
+}
+
+
+
+@media all and (max-width:1070px) and (min-width: 1025px) {
+
+ul.nav li {margin: 0 1%;}
+
+.kristin_selfies p.note {font-size: 12px;}
+
+
+}
 
 
 
@@ -1179,7 +1482,7 @@ ul.nav li {margin: 0 1%;}
 .spant2 {width: 15.3332%;}
 .spant1 {width: 6.8666%;}
 body {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 h1.pagetitle {
@@ -1188,10 +1491,7 @@ h1.pagetitle {
 }
 
 
-.footer {
-	padding: 1em 4% 0;
-	font-size: .85rem;
-}
+
 
 .topbanner-links {
 	width: 48%;
@@ -1220,7 +1520,7 @@ h1.pagetitle {
 }
 .nav-inner {
     width: 60%;
-    padding: .3rem 1% .1rem 0;
+    padding: .6rem 1% .1rem 0;
 }
 .nav-phone {
     font-size: 14px;
@@ -1233,6 +1533,39 @@ ul.nav li {
 
 ul.nav li.tablet-last {margin-right: -6px;}
 
+.slider-hdr {
+    width: 20%;
+    margin: 0 0 2rem 2.5%;
+}
+.home-slider {
+    width: 76%;
+    margin-left: -2%;
+}
+.slider-hdr h2 {
+    padding: 3rem 0 .8rem;
+}
+.slider-hdr h2 .line1 {font-size: 40px;}
+.slider-hdr h2 .line2 {font-size: 34px;}
+.slider-hdr h3 .line1 {font-size: 22px;}
+.slider-hdr h3 .line2 {font-size: 18px;}
+
+
+.kristin_selfies p.note {font-size: 12px;}
+
+.volaire-rises h2{font-size: 1.15rem; top: 81%;}
+.volaire-rises h2 .line2 {font-size: 1.75rem;}
+
+.home4b p.p1 {
+    font-size: 1.2rem;
+}
+.home5 h2 {
+    font-size: 1.75rem;
+}
+
+.footer .container {
+    padding: 0 2%;
+}
+.footer-right img {max-width: 45%;}
 
 }
 
