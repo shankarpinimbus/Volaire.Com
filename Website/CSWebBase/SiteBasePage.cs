@@ -15,6 +15,8 @@ using CSBusiness.Attributes;
 using System.Xml.Linq;
 using System.IO;
 using System.Web.UI.WebControls;
+using CSBusiness.Cache;
+using CSBusiness.OrderManagement;
 
 namespace CSWebBase
 {
@@ -72,6 +74,47 @@ namespace CSWebBase
         public static void SendErrorEmail(string message)
         {
             CSCore.EmailHelper.SendEmail("info@conversionsystems.com", AdminEmail, "[SiteName.Com Error]", message, false);
+        }
+
+        public static decimal CalculateTaxRate(int orderId, decimal skuPrice)
+        {
+            Order orderItem = new OrderManager().GetBatchProcessOrder(orderId);
+            decimal taxToReturn = 0;
+            SitePreference list = CSFactory.GetCartPrefrence();
+            decimal taxableAmount = skuPrice;
+            //If this returns a value, it means country has states and we need to 
+            //find tax for states
+            if (orderItem.CustomerInfo.ShippingAddress.CountryId > 0)
+            {
+                //CodeReview By Sri on 09/15: Need to change TaxRegionCache Object
+                TaxRegion countryRegion = null, stateRegion = null, zipRegion = null;
+
+                //Comments on 11/2: pulling data from Cache object
+                TaxregionCache cache = new TaxregionCache(HttpContext.Current);
+                List<TaxRegion> taxRegions = (List<TaxRegion>)cache.Value;
+
+                countryRegion = taxRegions.FirstOrDefault(t => t.CountryId == orderItem.CustomerInfo.ShippingAddress.CountryId && t.StateId == 0 && string.IsNullOrEmpty(t.ZipCode));
+                stateRegion = taxRegions.FirstOrDefault(t => t.CountryId == orderItem.CustomerInfo.ShippingAddress.CountryId && t.StateId == orderItem.CustomerInfo.ShippingAddress.StateProvinceId && string.IsNullOrEmpty(t.ZipCode));
+                zipRegion = taxRegions.FirstOrDefault(t => t.CountryId == orderItem.CustomerInfo.ShippingAddress.CountryId && t.StateId == orderItem.CustomerInfo.ShippingAddress.StateProvinceId
+                    && t.ZipCode == orderItem.CustomerInfo.ShippingAddress.ZipPostalCode);
+
+                //Tax regions are always returned by country
+                //taxRegions = CSFactory.GetTaxByCountry(cart.ShippingAddress.CountryId);				
+                if (zipRegion != null)
+                {
+                    taxToReturn = zipRegion.Value;
+                }
+                else if (stateRegion != null)
+                {
+                    taxToReturn = stateRegion.Value;
+                }
+                else if (countryRegion != null)
+                {
+                    taxToReturn = countryRegion.Value;
+                }
+            }
+
+            return taxToReturn;
         }
     }
 

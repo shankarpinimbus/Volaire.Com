@@ -83,7 +83,9 @@
     <Compile Include="CustomTaxCalculator.cs" />
     <Compile Include="CustomUnityDependencyResolver.cs" />
     <Compile Include="DuplicateOrderDAL.cs" />
+    <Compile Include="DynamicSidDAL.cs" />
     <Compile Include="DynamicVersionDAL.cs" />
+    <Compile Include="MVISOrderLogixDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShoppingCartBasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
