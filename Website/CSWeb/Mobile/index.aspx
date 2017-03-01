@@ -33,7 +33,7 @@
       <map name="Maphome">
           <area shape="rect" coords="306,13,626,190" href="https://d39hwjxo88pg52.cloudfront.net/tryfootrescue/video/ctavideo.mp4" class="fancymedia">
         <area shape="rect" coords="24,588,309,676" href="tel:18000000000">
-        <area shape="rect" coords="331,588,618,676" href="cart.aspx">
+        <area shape="rect" coords="331,588,618,676" href="tv-introductory-offer.aspx">
         <area shape="circle" coords="440,344,85" href="#guarantee" class="guarantee">
       </map>
     

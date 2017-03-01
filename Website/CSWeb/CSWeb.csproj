@@ -325,6 +325,10 @@
     <Content Include="Admin\VersionReport.aspx" />
     <Content Include="Admin\VersionReport1.aspx" />
     <Content Include="Desktop\AddProduct.aspx" />
+    <Content Include="Desktop\tangle-angel-brush.aspx" />
+    <Content Include="Desktop\shine-angel-brush.aspx" />
+    <Content Include="Desktop\mega-volume-collection.aspx" />
+    <Content Include="Desktop\tv-introductory-offer.aspx" />
     <Content Include="Desktop\amazontest.aspx" />
     <Content Include="Desktop\CardDecline.aspx" />
     <Content Include="Desktop\Cart.aspx" />
@@ -345,7 +349,11 @@
     <Content Include="Desktop\scripts-bottom.html" />
     <Content Include="Desktop\scripts-top.html" />
     <Content Include="Desktop\videoplayers.aspx" />
+    <Content Include="Mobile\mega-volume-collection.aspx" />
     <Content Include="Mobile\scripts-top.html" />
+    <Content Include="Mobile\shine-angel-brush.aspx" />
+    <Content Include="Mobile\tangle-angel-brush.aspx" />
+    <Content Include="Mobile\tv-introductory-offer.aspx" />
     <Content Include="NoCart\400.aspx" />
     <Content Include="NoCart\footer.html" />
     <Content Include="NoCart\contact.aspx" />
@@ -1134,6 +1142,34 @@
       <DependentUpon>AddProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Desktop\tangle-angel-brush.aspx.cs">
+      <DependentUpon>tangle-angel-brush.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Desktop\tangle-angel-brush.aspx.designer.cs">
+      <DependentUpon>tangle-angel-brush.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop\shine-angel-brush.aspx.cs">
+      <DependentUpon>shine-angel-brush.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Desktop\shine-angel-brush.aspx.designer.cs">
+      <DependentUpon>shine-angel-brush.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop\mega-volume-collection.aspx.cs">
+      <DependentUpon>mega-volume-collection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Desktop\mega-volume-collection.aspx.designer.cs">
+      <DependentUpon>mega-volume-collection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop\tv-introductory-offer.aspx.cs">
+      <DependentUpon>tv-introductory-offer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Desktop\tv-introductory-offer.aspx.designer.cs">
+      <DependentUpon>tv-introductory-offer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Desktop\amazontest.aspx.cs">
       <DependentUpon>amazontest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1205,6 +1241,34 @@
     </Compile>
     <Compile Include="Desktop\ReviewOrder.aspx.designer.cs">
       <DependentUpon>ReviewOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\mega-volume-collection.aspx.cs">
+      <DependentUpon>mega-volume-collection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mobile\mega-volume-collection.aspx.designer.cs">
+      <DependentUpon>mega-volume-collection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\shine-angel-brush.aspx.cs">
+      <DependentUpon>shine-angel-brush.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mobile\shine-angel-brush.aspx.designer.cs">
+      <DependentUpon>shine-angel-brush.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\tangle-angel-brush.aspx.cs">
+      <DependentUpon>tangle-angel-brush.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mobile\tangle-angel-brush.aspx.designer.cs">
+      <DependentUpon>tangle-angel-brush.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\tv-introductory-offer.aspx.cs">
+      <DependentUpon>tv-introductory-offer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mobile\tv-introductory-offer.aspx.designer.cs">
+      <DependentUpon>tv-introductory-offer.aspx</DependentUpon>
     </Compile>
     <Compile Include="NoCart\400.aspx.cs">
       <DependentUpon>400.aspx</DependentUpon>

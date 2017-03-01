@@ -20,6 +20,7 @@ using System.Collections;
 using CSBusiness.Attributes;
 using CSWebBase;
 using CSBusiness.CustomerManagement;
+using CSBusiness.ShoppingManagement;
 using CSData;
 
 
@@ -1154,6 +1155,17 @@ namespace CSWeb
             if (CartContext.CustomerInfo != null && CartContext.CustomerInfo.ShippingAddress != null)
                 CartContext.CartInfo.ShippingAddress = CartContext.CustomerInfo.ShippingAddress;
             CartContext.CartInfo.AddItem(Convert.ToInt32(btnArgs), qty, true, true);
+            CartContext.CartInfo.Compute();
+            HttpContext.Current.Session["ClientOrderData"] = CartContext;
+        }
+
+        public static void EmptyCart()
+        {
+            Cart cartObject = new Cart();
+            ClientCartContext CartContext = (ClientCartContext)HttpContext.Current.Session["ClientOrderData"];
+            if (CartContext.CustomerInfo != null && CartContext.CustomerInfo.ShippingAddress != null)
+                cartObject.ShippingAddress = CartContext.CustomerInfo.ShippingAddress;
+            CartContext.CartInfo = cartObject;
             CartContext.CartInfo.Compute();
             HttpContext.Current.Session["ClientOrderData"] = CartContext;
         }

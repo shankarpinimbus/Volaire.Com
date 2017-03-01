@@ -390,7 +390,7 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         </div>
                         <asp:CheckBox ID="cbAgree" runat="server" CssClass="checkbox-left" Checked="false" />
                         <label class="label-3" for="sbcfShippingBillingCreditForm_cbAgree">
-                            By checking this box, you are electronically signing your order, agreeing to the terms above and to our general <a href="terms" style="text-decoration: underline; color: #1c3f94;" target="_blank">Terms and Conditions</a><span class="">*</span>,<span runat="server" id="sSubscription">including our no-commitment auto-replenishment program,</span> and authorizing us to charge payments to the credit card you have provided.
+                            Agree to terms and conditions.
                     
                            
                         </label>

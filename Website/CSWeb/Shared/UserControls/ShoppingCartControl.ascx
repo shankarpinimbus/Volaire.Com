@@ -79,21 +79,5 @@
         </div>
     </asp:PlaceHolder>
 </asp:Panel>
-
-<div><img src="//d39hwjxo88pg52.cloudfront.net/citrinex/images/cart_cta2.jpg" alt="" class="block" />
-</div>
-
-<div class="cart_offer hiddenm">
-    <asp:Literal runat="server" ID="ltOfferDetail"></asp:Literal>
-    <p>
-        <strong>CANCELLATION POLICY:</strong><br />
-        You can cancel at any time by calling customer service toll-free at <strong class="bigphone iblock"><%--<%=ltPhoneNum.Text %>--%>1-888-263-3991</strong>. Every Citrinex purchase includes a 30-day money-back guarantee of the purchase price less shipping and handling. <strong>If you call to cancel your membership in the preferred customer program, the cancellation will be effective immediately and no future shipments will be sent. For any product returned under our 100% Satisfaction Guarantee, you will receive a refund of your purchase price less shipping and handling.</strong> To customize this program or future shipments and charges, call customer service anytime at <strong class="bigphone iblock"><%--<%=ltPhoneNum.Text %>--%>1-888-263-3991</strong>.<br />
-        
-    </p>
-    <p>Taxable States: AZ, CA, CT, MI, NY, NC, SC, TX, VA, WA, and All Canadian Provinces</p>
-    <p>
-        <strong class="caps">Your Satisfaction is our Guarantee</strong><br />
-        100% Satisfaction Guarantee - We want you to be completely satisfied with every product that you purchase from New Vitality. Every purchase comes with a 30-day money back guarantee beginning on the date you receive each shipment. You may use any New Vitality product for 30-days absolutely risk free and if you do not see or feel the results that you expected, you can return it within 30-days and you'll receive a prompt and complete refund of your purchase price less shipping and handling. If you have purchased more than one bottle of any single product and you wish to return your purchase, return the opened bottle along with any sealed bottles within 30 days beginning on the date of delivery to you and you'll receive a prompt and complete refund of your purchase price less shipping and handling. No questions or explanation required... your complete satisfaction is guaranteed. Period!
-    </p>
-</div>
+<asp:Literal ID="ltOfferDetail" runat="server" Visible="False"></asp:Literal>
 <asp:Literal ID="ltPhoneNum" runat="server" Visible="False"></asp:Literal>
