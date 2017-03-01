@@ -331,6 +331,7 @@
     <Content Include="Desktop\CheckoutExpired.aspx" />
     <Content Include="Desktop\CheckoutSessionExpired.aspx" />
     <Content Include="Desktop\faq.aspx" />
+    <Content Include="Desktop\benefits-txt.html" />
     <Content Include="Desktop\footer.html" />
     <Content Include="Desktop\GetTotals.aspx" />
     <Content Include="Desktop\header.html" />
@@ -566,6 +567,12 @@
     <None Include="Service References\TokenEx_Test\TokenServices4.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Styles\fonts\lato-medium-webfont.ttf" />
+    <Content Include="Styles\fonts\lato-medium-webfont.woff" />
+    <Content Include="Styles\fonts\lato-medium-webfont.woff2" />
+    <Content Include="Styles\fonts\lato-mediumitalic-webfont.ttf" />
+    <Content Include="Styles\fonts\lato-mediumitalic-webfont.woff" />
+    <Content Include="Styles\fonts\lato-mediumitalic-webfont.woff2" />
     <None Include="Web.config.Debug">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1045,6 +1052,7 @@
     </Compile>
     <Compile Include="Admin\UserControls\PageControl.ascx.cs">
       <DependentUpon>PageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\UserControls\RangeDateControl.ascx.cs">
       <DependentUpon>RangeDateControl.ascx</DependentUpon>
@@ -1458,6 +1466,7 @@
     </Compile>
     <Compile Include="NoCart\UserControls\PageControl.ascx.cs">
       <DependentUpon>PageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NoCart\UserControls\RangeDateControl.ascx.cs">
       <DependentUpon>RangeDateControl.ascx</DependentUpon>

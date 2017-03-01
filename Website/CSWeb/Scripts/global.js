@@ -17,6 +17,7 @@ $(document).ready(function () {
     });
 
 
+
     //fancybox popups
     $(".fancybox").fancybox();
 
