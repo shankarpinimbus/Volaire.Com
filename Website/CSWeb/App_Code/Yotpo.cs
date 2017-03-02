@@ -24,7 +24,7 @@ namespace CSWeb.App_Code
             bool success = false;
             try
             {
-                Uri uri = new Uri("https://api.yotpo.com/apps/" + "q7aSfVYvWU7lRAFGbTPY2DwzuBBm72cg1baI71Yt" + "/purchases/");
+                Uri uri = new Uri("https://api.yotpo.com/apps/" + "itGFmlqh7twU16FRq19FlRC31nQvBIQab9nDaHuQ" + "/purchases/");
                 StringBuilder sb = new StringBuilder();
                 StringWriter sq = new StringWriter(sb);
 
@@ -55,7 +55,7 @@ namespace CSWeb.App_Code
                         writer.WritePropertyName(item.OfferCode);
                         writer.WriteStartObject();
                         writer.WritePropertyName("url");
-                        writer.WriteValue("https://www.trydrd.com");
+                        writer.WriteValue("https://www.volaire.com");
                         writer.WritePropertyName("name");
                         writer.WriteValue(item.OfferCode);
                         writer.WriteEndObject();
@@ -112,7 +112,7 @@ namespace CSWeb.App_Code
             {
                 Uri uri = new Uri("https://api.yotpo.com/oauth/token");
 
-                var authRequest = new { client_id = "q7aSfVYvWU7lRAFGbTPY2DwzuBBm72cg1baI71Yt", client_secret = "q4GwBsw0E5d1vMajxG7ruVdukkSAT1O4v64mr95d", grant_type = "client_credentials" };
+                var authRequest = new { client_id = "itGFmlqh7twU16FRq19FlRC31nQvBIQab9nDaHuQ", client_secret = "QeoLLyvnEiE9rjbNBs4296E2ayAMcEVFYvRf8hrI", grant_type = "client_credentials" };
                 var jsonSerializer = new System.Web.Script.Serialization.JavaScriptSerializer();
                 string jsonReq = jsonSerializer.Serialize(authRequest);
 
