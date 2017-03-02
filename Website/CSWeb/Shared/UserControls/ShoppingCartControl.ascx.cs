@@ -86,11 +86,11 @@ namespace CSWeb.Shared.UserControls
                     if (sku.SkuCode != "FREE")
                     {
                         sku.LoadAttributeValues();
-                        ltOfferDetail.Text = sku.GetAttributeValue<string>("OfferDetails", string.Empty).Replace("{Phone}", "1-888-263-3991"); 
+                        ltOfferDetail.Text = sku.GetAttributeValue<string>("OfferDetails", string.Empty); 
                     }
                     
                 }
-                ltPhoneNum.Text = "1-888-263-3991";
+                
                 //Sri Comments on 11/15: Need to Plug-in to Custom Shipping option Model
                 SitePreference shippingGetShippingPref = CSFactory.GetCacheSitePref();
                 holderRushShipping.Visible = shippingGetShippingPref.IncludeRushShipping ?? false;
@@ -119,7 +119,7 @@ namespace CSWeb.Shared.UserControls
                 Image imgProduct = e.Item.FindControl("imgProduct") as Image;
 
                 Sku cartItem = e.Item.DataItem as Sku;
-
+                cartItem.LoadAttributeValues();
                 lblSkuDescription.Text = cartItem.ShortDescription;
                 lblQuantity.Text = txtQuantity.Text = cartItem.Quantity.ToString();
                 lblSkuInitialPrice.Text = String.Format("${0:0.00}", cartItem.InitialPrice);
@@ -158,6 +158,12 @@ namespace CSWeb.Shared.UserControls
                 {
                     holderRemove.Visible = false;
                 }
+
+
+                if (!cartItem.GetAttributeValue<bool>("isMainKit", false))
+                {
+                    holderRemove.Visible = true;
+                }
             }
             else if (e.Item.ItemType == ListItemType.Header)
             {
@@ -183,6 +189,24 @@ namespace CSWeb.Shared.UserControls
                     {
                         int skuToRemove = Convert.ToInt32(e.CommandArgument);
                         CartContext.CartInfo.UpdateSku(skuToRemove);
+                        Sku sku = new SkuManager().GetSkuByID(skuToRemove);
+                        sku.LoadAttributeValues();
+                        var removeSkus = sku.GetAttributeValue<string>("removeSku", string.Empty).Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+                        foreach (string removeSku in removeSkus)
+                        {
+                            if (CartContext.CartInfo.SkuExists(int.Parse(removeSku)))
+                            {
+                                CartContext.CartInfo.UpdateSku(int.Parse(removeSku));
+                                Sku skuRemove = new SkuManager().GetSkuByID(int.Parse(removeSku));
+                                skuRemove.LoadAttributeValues();
+                                var replaceSkus = skuRemove.GetAttributeValue<string>("replaceSku", string.Empty).Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+                                foreach (string replaceSku in replaceSkus)
+                                {
+                                    OrderHelper.ChangeCart(replaceSku);
+                                }
+                            }
+                            
+                        }
                         BindControls();
 						if (UpdateCart != null)
 							UpdateCart(sender, e);
