@@ -163,33 +163,15 @@ namespace CSWeb.FulfillmentHouse
                     xml.WriteElementString("CC_NUMBER", orderItem.CreditInfo.CreditCardNumber);
                     xml.WriteElementString("EXP_DATE", orderItem.CreditInfo.CreditCardExpired.ToString("MM/yy"));
                     xml.WriteElementString("CVV_CODE", orderItem.CreditInfo.CreditCardCSC);
-                    
+
                     xml.WriteElementString("SHIPPING_METHOD", "REG");
                     xml.WriteElementString("SHIPPING_CARRIER", "");
                     // We have both Trial as well as One Pay “In the case set Use prices and use shipping to "N."
                     string useShipping = config.Attributes["useShipping"].Value.ToUpper();
                     string usePrices = config.Attributes["usePrices"].Value.ToUpper();
                     string useTaxes = config.Attributes["useTaxes"].Value.ToUpper();
-                    bool skuPresent = false;
-                    //PAID_PRICE
-                    foreach (Sku Item in orderItem.SkuItems)
-                    {
-                        if (Item.SkuCode.ToUpper().Equals("UC901499-CP"))
-                        {
-                            skuPresent = true;
-                        }
-                        }
 
-                    if (skuPresent)
-                    {
-                        useShipping = usePrices = useTaxes = "N";
-                    }
-                    else
-                    {
-                        useShipping = usePrices = useTaxes = "Y";
-                    }
-
-                        xml.WriteElementString("USE_SHIPPING", useShipping);
+                    xml.WriteElementString("USE_SHIPPING", useShipping);
                     xml.WriteElementString("SHIPPING", Math.Round(orderItem.ShippingCost + orderItem.AdditionalShippingCharge, 2).ToString("N2"));
                     xml.WriteElementString("ORDER_STATE_SALES_TAX", Math.Round(orderItem.Tax, 2).ToString("N2"));
                     xml.WriteElementString("USE_PRICES", usePrices);
@@ -197,7 +179,7 @@ namespace CSWeb.FulfillmentHouse
                     xml.WriteElementString("ORDER_SUBTOTAL", Math.Round(orderItem.FullPriceSubTotal - orderItem.DiscountAmount, 2).ToString("N2"));
                     xml.WriteElementString("ORDER_TOTAL", Math.Round(orderItem.FullPriceSubTotal + orderItem.ShippingCost + orderItem.AdditionalShippingCharge + orderItem.Tax - orderItem.DiscountAmount, 2).ToString("N2"));
 
-                    
+
                     int count = 1;
                     SkuManager skuManager = new SkuManager();
                     string fieldnamePRODUCT = "PRODUCT";
@@ -225,7 +207,7 @@ namespace CSWeb.FulfillmentHouse
                             fieldnamePAIDPRICE = "PAID_PRICE_PROD" + counter;
                             fieldnameTAXRATE = "TAX_RATE" + counter;
                             fieldnameSHIPPING = "SHIPPING" + counter;
-                            xml.WriteElementString(fieldnamePRODUCT, GetSkuCode(sku.SkuId,orderItem.CustomerInfo.ShippingAddress.CountryId));
+                            xml.WriteElementString(fieldnamePRODUCT, GetSkuCode(sku.SkuId, orderItem.CustomerInfo.ShippingAddress.CountryId));
                             xml.WriteElementString(fieldnameQUANTITY, Item.Quantity.ToString());
                             xml.WriteElementString(fieldnamePRICE, sku.FullPrice.ToString("N2"));
                             xml.WriteElementString(fieldnameDISCOUNT, "");
@@ -240,7 +222,7 @@ namespace CSWeb.FulfillmentHouse
                             }
                             count++;
                         }
-                        
+
                     }
                     xml.WriteEndElement();
                     xml.WriteStartElement("Settings");
@@ -264,7 +246,7 @@ namespace CSWeb.FulfillmentHouse
             }
             return strXml;
         }
-        public static string HttpPost(string uri, string parameters,string login, string pass)
+        public static string HttpPost(string uri, string parameters, string login, string pass)
         {
             // parameters: name1=value1&name2=value2	
             WebRequest webRequest = WebRequest.Create(uri);
@@ -319,7 +301,7 @@ namespace CSWeb.FulfillmentHouse
                 string req = new MVISOrderLogix().GetRequest(orderItem);
 
                 string Parameters = "user=" + config.Attributes["login"].Value + "&pwd=" + config.Attributes["password"].Value + "&token=" + config.Attributes["MVISTOKEN"].Value + "&inXMLDoc=" + req;
-                string res = HttpPost(config.Attributes["transactionUrl"].Value, Parameters, config.Attributes["logincred"].Value,config.Attributes["passwordcred"].Value);
+                string res = HttpPost(config.Attributes["transactionUrl"].Value, Parameters, config.Attributes["logincred"].Value, config.Attributes["passwordcred"].Value);
                 Dictionary<string, AttributeValue> orderAttributes = new Dictionary<string, AttributeValue>();
                 orderAttributes.Add("Request", new CSBusiness.Attributes.AttributeValue(CommonHelper.Encrypt(req)));
                 orderAttributes.Add("Response", new CSBusiness.Attributes.AttributeValue(res));
@@ -404,7 +386,7 @@ namespace CSWeb.FulfillmentHouse
             }
             //return "";
         }
-        
+
         private string GetCCType(string CreditCardType)
         {
             string CreditCardTypeAbb = "";
@@ -429,7 +411,7 @@ namespace CSWeb.FulfillmentHouse
         public string GetShipMethod(Order orderItem)
         {
             string ShipMethod = "fedex";
-           
+
             return ShipMethod;
         }
         private string getfromto(string s22, string sa22, string sb22)

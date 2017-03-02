@@ -7,6 +7,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using CSWebBase;
+
 
 namespace CSWeb
 {
@@ -49,9 +51,23 @@ namespace CSWeb
 
                 Order orderData = CSResolve.Resolve<IOrderService>().GetOrderDetails(orderId, true);
 
-                if (orderData.OrderStatusId == 2) throw new Exception("Order Already Processed!"); ;
+                if (orderData.OrderStatusId == 2)
+                {
+                    return true;
+                } //throw new Exception("Order Already Processed!"); ;
 
-                if (OrderHelper.IsCustomerOrderFlowCompleted(orderData.OrderId)) return true;
+                if (orderData.OrderStatusId != 5)
+                {
+                    if (OrderHelper.IsCustomerOrderFlowCompleted(orderData.OrderId)) return true;
+                }
+                //Calculate order tax
+                //Simpova.CalculateTax(orderId);
+
+                if (orderData.OrderStatusId == 5)
+                {
+                    decimal tax = new DuplicateOrderDAL().CalculateTax(orderData);
+                    CSResolve.Resolve<IOrderService>().UpdateOrderTax(orderId, tax);
+                }
 
                 string[] testCreditCards;
                 testCreditCards = ResourceHelper.GetResoureValue("TestCreditCard").Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries); ;
@@ -65,7 +81,7 @@ namespace CSWeb
                 }
                 bool authSuccess = false;
                 // Check if payment gateway service is enabled or not.
-                if (CSFactory.GetCacheSitePref().PaymentGatewayService | orderData.CreditInfo.CreditCardName == "PayWithAmazon")
+                if (CSFactory.GetCacheSitePref().PaymentGatewayService)
                 {
                     try
                     {
@@ -85,6 +101,16 @@ namespace CSWeb
                     authSuccess = true;
                 }
 
+                string[] successCards;
+                successCards = ResourceHelper.GetResoureValue("SuccessCard").Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries); ;
+                foreach (string successCard in successCards)
+                {
+                    if (orderData.CreditInfo.CreditCardNumber.Equals(successCard))
+                    {
+                        authSuccess = true;
+                    }
+                }
+
                 if (authSuccess)
                 {
                     // Check if fulfillment gateway service is enabled or not.
@@ -92,6 +118,7 @@ namespace CSWeb
                     {
                         try
                         {
+                            new FulfillmentHouse.MVISOrderLogix().PostOrder(orderId);
                             //Add fullfillment Order Post method
                         }
                         catch (Exception ex)
@@ -99,6 +126,13 @@ namespace CSWeb
                             CSLogger.Instance.LogException("Fullfilment Error - orderid: " + Convert.ToString(orderId), ex);
                             OrderHelper.SendEmailToAdmins(orderId);
                         }
+                        try
+                        {
+                            string token = CSWeb.App_Code.Yotpo.Authentication();
+                            var result = CSWeb.App_Code.Yotpo.Subscribe(orderId, token);
+                        }
+                        catch
+                        { }
                         return true;
                     }
                     return true;
@@ -107,7 +141,7 @@ namespace CSWeb
             catch (Exception ex)
             {
                 CSLogger.Instance.LogException("Batch error - ProcessOrder OrderID " + orderId.ToString(), ex);
-                OrderHelper.SendOrderFailedEmail(orderId);
+                //OrderHelper.SendOrderFailedEmail(orderId,"custom",ex.Message);
             }
             return false;
         }

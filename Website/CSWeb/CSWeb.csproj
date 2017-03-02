@@ -1072,7 +1072,6 @@
     </Compile>
     <Compile Include="Admin\UserControls\PageControl.ascx.cs">
       <DependentUpon>PageControl.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\UserControls\RangeDateControl.ascx.cs">
       <DependentUpon>RangeDateControl.ascx</DependentUpon>
@@ -1150,6 +1149,7 @@
     <Compile Include="App_Code\Tokenization\RequestGenerator.cs" />
     <Compile Include="App_Code\Tokenization\ResponseParse.cs" />
     <Compile Include="App_Code\Tokenization\TokenexProcessor.cs" />
+    <Compile Include="App_Code\Yotpo.cs" />
     <Compile Include="Desktop\AddProduct.aspx.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1542,7 +1542,6 @@
     </Compile>
     <Compile Include="NoCart\UserControls\PageControl.ascx.cs">
       <DependentUpon>PageControl.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NoCart\UserControls\RangeDateControl.ascx.cs">
       <DependentUpon>RangeDateControl.ascx</DependentUpon>
