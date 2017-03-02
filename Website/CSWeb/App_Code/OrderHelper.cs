@@ -36,59 +36,47 @@ namespace CSWeb
 
         public static bool AuthorizeOrder(int orderID)
         {
+            Request _request = new Request();
+
             Order orderData = CSResolve.Resolve<IOrderService>().GetOrderDetails(orderID, true);
-            if(!orderData.AttributeValuesLoaded)
-                orderData.LoadAttributeValues();
-            Response _response;
-            if (orderData.CreditInfo.CreditCardName == "PayWithAmazon")
-            {
-                var payWithAmazon = new CSPaymentProvider.Providers.PayWithAmazon();
-                _response = payWithAmazon.PerformRequest(orderData.CreditInfo.TransactionCode, orderData.Total);
-                //We get extra customer/shipping information from amazon after we capture the amount, so we save the order again.
-                HttpContext.Current.Session["ClientOrderData"] = OrderHelper.SaveAmazonOrder(
-                    (ClientCartContext)HttpContext.Current.Session["ClientOrderData"], orderData.CreditInfo.TransactionCode);
-            }
-            else
-            {
-                Request _request = new Request();
-                if(!string.IsNullOrEmpty(orderData.GetAttributeValue<string>("token",string.Empty)))
-                {
-                    _request.CardNumber = orderData.GetAttributeValue<string>("token", string.Empty);
-                }
-                else
-                {
-                    _request.CardNumber = orderData.CreditInfo.CreditCardNumber;
-                }
-                
-                _request.CardCvv = orderData.CreditInfo.CreditCardCSC;
-                _request.CurrencyCode = "$";
-                _request.ExpireDate = orderData.CreditInfo.CreditCardExpired;
-                _request.Amount = (double)orderData.Total;
-                _request.FirstName = orderData.CustomerInfo.BillingAddress.FirstName;
-                _request.LastName = orderData.CustomerInfo.BillingAddress.LastName;
-                _request.Address1 = orderData.CustomerInfo.BillingAddress.Address1;
-                _request.City = orderData.CustomerInfo.BillingAddress.City;
-                _request.State = StateManager.GetStateName(orderData.CustomerInfo.BillingAddress.StateProvinceId);
-                _request.Country = CountryManager.CountryCode(orderData.CustomerInfo.BillingAddress.CountryId);
-                _request.ZipCode = orderData.CustomerInfo.BillingAddress.ZipPostalCode;
-                _request.TransactionDescription = orderData.CustomerInfo.BillingAddress.FirstName + " " + orderData.CustomerInfo.BillingAddress.LastName;
-                if (!string.IsNullOrEmpty(orderData.GetAttributeValue<string>("tokencustomerid", string.Empty)))
-                {
-                    _request.CustomerID = orderData.GetAttributeValue<string>("tokencustomerid", string.Empty);
-                }
-                else
-                {
-                    _request.CustomerID = orderData.CustomerId.ToString();
-                }
-                //_request.CustomerID = orderData.CustomerId.ToString();
-                _request.InvoiceNumber = orderData.OrderId.ToString();
 
-                //Read information from web.config
-                //Response _response =   GatewayProvider.Instance("PaymentProvider").PerformRequest(_request);
-
-                //Read information from client DB setting
-                _response = PaymentProviderRepository.Instance.Get().PerformRequest(_request);
+            _request.CardNumber = orderData.CreditInfo.CreditCardNumber;
+            _request.CardCvv = orderData.CreditInfo.CreditCardCSC;
+            _request.CurrencyCode = "$";
+            _request.ExpireDate = orderData.CreditInfo.CreditCardExpired;
+            _request.Amount = (double)(Math.Round(orderData.Total, 2));
+            _request.FirstName = orderData.CustomerInfo.BillingAddress.FirstName;
+            _request.LastName = orderData.CustomerInfo.BillingAddress.LastName;
+            _request.Address1 = orderData.CustomerInfo.BillingAddress.Address1;
+            _request.City = orderData.CustomerInfo.BillingAddress.City;
+            _request.State = StateManager.GetStateName(orderData.CustomerInfo.BillingAddress.StateProvinceId);
+            _request.Country = CountryManager.CountryCode(orderData.CustomerInfo.BillingAddress.CountryId);
+            _request.ZipCode = orderData.CustomerInfo.BillingAddress.ZipPostalCode;
+            _request.TransactionDescription = orderData.CustomerInfo.BillingAddress.FirstName + " " + orderData.CustomerInfo.BillingAddress.LastName;
+            _request.CustomerID = orderData.CustomerId.ToString();
+            _request.InvoiceNumber = orderData.OrderId.ToString();
+            if (orderData.CreditInfo.CreditCardName.ToString().ToLower().Contains("visa"))
+            {
+                _request.CardType = CreditCardType.Visa;
             }
+            else if (orderData.CreditInfo.CreditCardName.ToString().ToLower().Contains("mastercard"))
+            {
+                _request.CardType = CreditCardType.Mastercard;
+            }
+            else if (orderData.CreditInfo.CreditCardName.ToString().ToLower().Contains("discover"))
+            {
+                _request.CardType = CreditCardType.Discover;
+            }
+            else if (orderData.CreditInfo.CreditCardName.ToString().ToLower().Contains("americanexpress"))
+            {
+                _request.CardType = CreditCardType.AmericanExpress;
+            }
+            //Read information from web.config
+            //Response _response =   GatewayProvider.Instance("PaymentProvider").PerformRequest(_request);
+
+            //Read information from client DB setting
+            Response _response = PaymentProviderRepository.Instance.Get().PerformRequest(_request);
+
             //Save gateway transaction
             Dictionary<string, AttributeValue> orderAttributes = new Dictionary<string, AttributeValue>();
             orderAttributes.Add("AuthRequest", new CSBusiness.Attributes.AttributeValue(
