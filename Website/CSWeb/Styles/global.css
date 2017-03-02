@@ -19,9 +19,9 @@
 @font-face {
 	font-family: 'Didot';
 	src: local('Didot Italic'), local('Didot-Italic'),
-		url('Didot-Italic.woff2') format('woff2'),
-		url('Didot-Italic.woff') format('woff'),
-		url('Didot-Italic.ttf') format('truetype');
+		url('fonts/Didot-Italic.woff2') format('woff2'),
+		url('fonts/Didot-Italic.woff') format('woff'),
+		url('fonts/Didot-Italic.ttf') format('truetype');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -29,9 +29,9 @@
 @font-face {
 	font-family: 'Didot';
 	src: local('Didot'),
-		url('Didot.woff2') format('woff2'),
-		url('Didot.woff') format('woff'),
-		url('Didot.ttf') format('truetype');
+		url('fonts/Didot.woff2') format('woff2'),
+		url('fonts/Didot.woff') format('woff'),
+		url('fonts/Didot.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -39,20 +39,20 @@
 @font-face {
 	font-family: 'Didot';
 	src: local('Didot Bold'), local('Didot-Bold'),
-		url('Didot-Bold.woff2') format('woff2'),
-		url('Didot-Bold.woff') format('woff'),
-		url('Didot-Bold.ttf') format('truetype');
+		url('fonts/Didot-Bold.woff2') format('woff2'),
+		url('fonts/Didot-Bold.woff') format('woff'),
+		url('fonts/Didot-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
 
 a {
 	color: #202c50;	
-	text-decoration: none;
-	transition: all .15s ease-in-out;
+	text-decoration: none;transition: all .15s ease-in-out;
 	-o-transition: all .15s ease-in-out;
 	-moz-transition: all .15s ease-in-out;
 	-webkit-transition: all .15s ease-in-out;
+	
 }
 img {border: none;}
 img, input[type=image] {max-width: 100%;}
@@ -85,6 +85,7 @@ img, input[type=image] {max-width: 100%;}
 .text-right {text-align:right !important;}
 .div-center {margin: 0 auto !important;}
 .caps {text-transform: uppercase !important;}
+.uncaps {text-transform: none !important;}
 .small {font-size: 87.5% !important;}
 .smaller {font-size: 81.25% !important;}
 .pad0 {padding-bottom: 0 !important;}
@@ -102,8 +103,9 @@ img, input[type=image] {max-width: 100%;}
 .gold {color: #b79c4f !important;}
 .red {color: #ef4527 !important;}
 .magenta {color: #eb1c74 !important;}
-.orange {color: #ff7418 !important;}
+.orange {color: #ee5c24 !important;}
 .brown {color: #a47f56 !important;}
+.brown2 {color: #a28e79 !important;}
 .margr20 {margin-right: 20px !important;}
 .lh19 {line-height: 19px !important;}
 .lh20 {line-height: 20px !important;}
@@ -132,11 +134,11 @@ img, input[type=image] {max-width: 100%;}
 .trow {display: table-row;}
 .tcell {display: table-cell; height: 100%;}
 sup {font-size: 60%; line-height: 0}
-.webfont1 {font-family: Lato, arial, sans-serif;}
+.webfont1 {font-family: Didot, Judson, 'Times New Roman', sans-serif;}
 html, body {height: 100%;width: 100%; min-height: 100%;}
 html {font-size: 100%;}
 h1,h2,h3,h4,h5 {
-	font-weight: normal; 
+	
 }
 div {position:relative;}
 * {
@@ -364,6 +366,17 @@ ul.nav li a {
 	text-decoration: none;
 }
 ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
+
+.nav-top-guarantee {display: inline-block;}
+#home .nav-top-guarantee {display: none;}
+.nav-top-products {display: none;}
+#home .nav-top-products {display: inline-block;}
+
+#tech .nav-tech, 
+#products .nav-products, 
+#reviews .nav-reviews, 
+#before-afters .nav-before-afters, 
+#tips .nav-tips  {color: #ff5b35; font-weight: bold;}
 
 .home1 {
 	background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/bg_home1b.jpg) repeat-x center 0;
@@ -822,15 +835,210 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 
 
 
-h1.pagetitle {
-	font-size: 2.4rem;
+.hero h1 {
+	font-size: 3.125rem;
+    font-weight: 300;
 	padding: 0 0 1.2rem 0;
 	line-height: 1.2;
-    color: #25205f;
+    color: #fff;
+    text-transform: uppercase;
 }
 
+.hero-products {background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-products-bg1.jpg) repeat-x center top;}
 
+.hero-products-content {
+    position: absolute;
+    top: 12.7%;
+    left: 38.46%;
+    width: 60%;
+}
 
+.hero-products h1 {
+    line-height: .9;
+    padding-bottom: 1.8rem;
+}
+.hero-products h1 .line2 {
+    display: block;
+    margin-left: 17%;
+}
+
+.hero-products p {
+    font-size: 1.125rem;
+    line-height: 1.28;
+    margin-left: 8%;
+}
+
+.products-main .container {
+    padding: 0 1.4%;
+}
+
+.products-main-benefits {
+    padding: .8rem 0;
+}
+
+.products-1 {margin-top: -13.5%;}
+.products-3 {margin-top: -3%;}
+
+.products-quotes {
+    padding: 2.5rem 0;
+}
+.products-quotes .container {
+    padding: 0 0 0 1.2%;
+}
+
+.products-quotes-1 {
+    float: left;
+    width: 52.2%;
+}
+
+.products-quotes-2 {
+    float: right;
+    width: 47%;
+    margin-top: -12%;
+}
+
+.products-quotes-2 .watch_demo {
+    bottom: auto;
+    top: 53.2%;
+    left: 0%;
+}
+
+#kit_30day .nav-logo {
+    width: 28.65%;
+}
+#kit_30day .nav-offer-promo {
+    float: left;
+    width: 68%;
+}
+
+.hero-30-day-kit {
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/bg-30daykit.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.hero-30-day-kit h1 {
+    position: absolute;
+    top: 18.5%;
+    left: 27.43%;
+    color: #000;
+    width: 37%;
+    line-height: 1;
+}
+
+.hero-30-day-kit h1 .line2 {
+    display: block;
+    margin-left: 13%;
+}
+
+.btn_ordernow {
+    width: 277px;
+    max-width: 100%;
+    height: 52px;
+    max-height: inherit;
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/btn_ordernow.png) no-repeat 0 0;
+    background-size: cover;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.btn_ordernow:hover {
+    opacity: .85;
+    transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-webkit-transition: all .15s ease-in-out;
+}
+
+.offer-content {padding: 0 1.5%}
+
+.offer-left {
+    float: left;
+    width: 56%;
+    padding: 1.2rem 1% 0 .5%;
+}
+.offer-right {
+    float: left;
+    width: 44%;
+}
+
+.offer-left h2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: .9rem;
+}
+.offer-left h2 .part2 {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: Judson, 'Times New Roman', serif;
+}
+.offer-left p  {
+    font-size: 1.125rem;
+    line-height: 1.44;
+    padding: 0 20% 1.3rem 0;
+    font-weight: 300;
+}
+.offer-left h3  {
+    font-size: 1.125rem;
+    line-height: 1.44;
+    padding: 0 0 .2rem 0;
+    text-transform: uppercase;
+}
+
+.offer-links {
+    float: left;
+    width: 54%;
+}
+.offer-cta {
+    float: left;
+    width: 46%;
+    padding-top: 3rem;
+}
+
+.offer-links ul {
+    list-style: none;
+    margin-left: 4%;
+    font-weight: 300;
+}
+.offer-links li {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    padding: 0 0 .5rem 1em;
+}
+.offer-links li:before {
+    content: '–';
+    float: left;
+    margin-left: -1em;
+}
+.offer-links li.last:before {
+    content: '+';
+    float: left;
+    margin-left: -1em;
+    color: #eb1c74;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    top: -5px;
+    left: 3px;
+}
+
+.offer-links li a {
+    color: #000;
+    text-decoration: none;
+}
+.offer-links li a:hover {
+    text-decoration: underline;
+}
+
+.offer-30-day-kit-img {
+    margin-top: -43%;
+}
+
+.offer-30-day-kit .offer-benefits {
+    margin-top: -3rem;
+    margin-bottom: 1.5rem;
+}
 
 
 
@@ -1448,6 +1656,9 @@ h2.ccdecline_hdr {
 
 .home5 h2 {font-size: 1.75rem;}
 
+.hero h1 {font-size: 2.6rem;}
+.hero-products p {font-size: 1.115rem;}
+
 }
 
 
@@ -1463,7 +1674,7 @@ ul.nav li {margin: 0 1%;}
 
 
 
-@media all and (max-width:1024px) and (min-width: 768px) {
+@media all and (max-width:1024px) {
 .hiddent, .visiblem, .visibled {display: none !important;}
 .hiddenm, .hiddend, .visiblet {display: block;}
 .spant12 {
@@ -1566,6 +1777,18 @@ ul.nav li.tablet-last {margin-right: -6px;}
     padding: 0 2%;
 }
 .footer-right img {max-width: 45%;}
+
+.hero h1 {font-size: 2.6rem;}
+.hero-products p {font-size: 1rem;}
+
+.products-quotes-2 .watch_demo {
+    font-size: .93rem;
+    padding-bottom: 1px;
+}
+
+
+
+
 
 }
 

@@ -14,7 +14,7 @@
 <script src="//d39hwjxo88pg52.cloudfront.net/scripts/slick/slick.min.js"></script>
 </head>
  
-<body>
+<body id="home">
 <form runat="server" id="fm1">
 <uc:Header ID="Header" runat="server" />
 <section>
