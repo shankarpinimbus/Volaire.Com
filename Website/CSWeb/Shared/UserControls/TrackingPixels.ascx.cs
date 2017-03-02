@@ -12,7 +12,7 @@ using CSBusiness.Resolver;
 using CSCore.Utils;
 
 
-namespace CSWeb.Cart_A.UserControls
+namespace CSWeb.Shared.UserControls
 {
     public partial class TrackingPixels : System.Web.UI.UserControl
     {

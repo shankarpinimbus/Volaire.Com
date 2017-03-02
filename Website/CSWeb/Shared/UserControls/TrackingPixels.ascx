@@ -1,4 +1,4 @@
-<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="TrackingPixels.ascx.cs" Inherits="CSWeb.Cart_A.UserControls.TrackingPixels" %>
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="TrackingPixels.ascx.cs" Inherits="CSWeb.Shared.UserControls.TrackingPixels" %>
 <!-- All Pixels Here -->
 <input type="hidden" id="wppoHitsLinkVersionName" value="<%=Session["wppohitslinkversionname"]%>" />
 <input type="hidden" id="wppoPageTitle" value="<%=Session["wppopagetitle"]%>" />

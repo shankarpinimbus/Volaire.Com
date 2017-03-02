@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CSWeb.Cart_A.UserControls {
+namespace CSWeb.Shared.UserControls {
     
     
     public partial class TrackingPixels {
