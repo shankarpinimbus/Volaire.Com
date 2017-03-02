@@ -1,11 +1,12 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="tv-introductory-offer.aspx.cs" Inherits="CSWeb.Desktop.tvintroductoryoffer" EnableSessionState="True" %>
+<%@ Register Src="~/Shared/UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
 
 <!doctype html>
 <html>
 <head runat="server">
 <meta charset="utf-8">
-<title>Volaire™| Hair Volumizing System </title>
-<meta name="description" content="Official Volaire Website. Hair care products that add instant, weightless, touchable, long-lasting volume and texture. Read product reviews and tips" />
+<title>Buy Volaire™ Hair Care & Styling Products </title>
+<meta name="description" content="Buy Volaire Hair Volumizing Products. Choose which Volaire Hair Care system works best for your hair." />
 <meta name="keywords" content="" />
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
 </head>
@@ -26,7 +27,7 @@
 
 <section class="hero hero-30-day-kit">
     <div class="container">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-30daykit.png" alt="Volaire" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-30daykit.png" alt="Volaire Hair Volumizing System" class="block" />
         <h1>
             TV Offer
             <span class="line2"><span class="webfont1 ital uncaps orange">introductory kit.</span></span>
@@ -67,9 +68,22 @@
 </section>
     
 
+<section class="container offer-footer">
+    <div class="offer-footer-content">
+        <p><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/ssl.png" alt="" class="iblock" /></p>
+        <p>*Volaire Volume Essentials Collection, 30 Day Supply. WITH YOUR ORDER TODAY, YOU’LL RECEIVE YOUR GIFT AND FREE SHIPPING! For today’s 30 Day Volume Essentials Collection, you will be charged 1 payment of $29.95, plus any applicable tax.</p>
+        <p>This offer includes enrollment in the Volaire MVP Subscription Program. Approximately 4 weeks after your first order is shipped, and then approximately every 12 weeks thereafter, you will be sent a new 90 Day supply of the Volume Essentials Collection. Each shipment will be charged to the card you provide today, in three installments, approximately every 4 weeks at the guaranteed low price of $29.95, per installment plus $3.33 per installment for shipping and handling, plus any applicable sales tax, unless you call to cancel. </p>
+        <p>There is no commitment and no minimum to buy. Please note exact shipment times may vary. To customize future shipments and charges, <span class="iblock">call customer service anytime a 1-800-201-6539.</span></p>
+        <p class="footer-copyright">© <script>document.write(new Date().getFullYear())</script> VOLAIRE™. All Rights Reserved.</p>
+    </div>
+    
+</section>
 
 
 
+<%# CSBusiness.DynamicVersion.Helper.IncludeFile("popups.html")%>
+<%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
 </form>
+<uc:TrackingPixels ID="TrackingPixels" runat="server" />
 </body>
 </html>

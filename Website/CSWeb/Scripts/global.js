@@ -16,18 +16,23 @@ $(document).ready(function () {
         $(this).children('i').toggleClass('icon-sort-up icon-sort-down');
     });
 
-
+    $('.size_select input:radio').change(function () {
+        $('.checkbox').html("");
+        $(this).siblings('.checkbox').html("<img src=\"//d39hwjxo88pg52.cloudfront.net/volaire/images/checkmark.png\" alt=\"checked\">");
+    });
 
     //fancybox popups
     $(".fancybox").fancybox();
 
-    $(".included").fancybox({
+    $(".product-pop").fancybox({
         closeBtn: false,
         fitToView: false,
         wrapCSS: 'nowrapper',
         padding: 0,
-        width: 710,
-        height: 461,
+        width: '90%',
+        maxWidth: 793,
+        height: '90%',
+        maxHeight: 639,
         autoSize: false,
         closeClick: false,
         scrolling: 'no',
