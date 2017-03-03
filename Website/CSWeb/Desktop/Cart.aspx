@@ -43,7 +43,8 @@
 
 <uc:ShippingBillingCreditForm ID="sbcfShippingBillingCreditForm" runat="server" RedirectUrl="Store/AddProduct.aspx" />
 
- 
+<uc:Footer ID="Footer" runat="server" />
+
 </form>
 <%#CSBusiness.DynamicVersion.Helper.IncludeFile("popups.html")%>
 <%--<uc:TrackingPixels ID="TrackingPixels" runat="server" />--%>
