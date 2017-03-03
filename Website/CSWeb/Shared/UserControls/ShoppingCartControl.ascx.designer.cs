@@ -31,6 +31,33 @@ namespace CSWeb.Shared.UserControls {
         protected global::System.Web.UI.WebControls.Repeater rptShoppingCart;
         
         /// <summary>
+        /// dfreeGift control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dfreeGift;
+        
+        /// <summary>
+        /// ltImagePath control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltImagePath;
+        
+        /// <summary>
+        /// ltImageDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltImageDescription;
+        
+        /// <summary>
         /// pnlTotal control.
         /// </summary>
         /// <remarks>

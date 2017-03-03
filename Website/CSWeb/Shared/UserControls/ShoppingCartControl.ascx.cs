@@ -90,7 +90,21 @@ namespace CSWeb.Shared.UserControls
                     }
                     
                 }
-                
+
+                foreach (Sku sku in CartContext.CartInfo.CartItems)
+                {
+                    sku.LoadAttributeValues();
+                    if (!string.IsNullOrEmpty(sku.GetAttributeValue<string>("freegift_imagepath", string.Empty)))
+                    {
+                        ltImagePath.Text = sku.GetAttributeValue<string>("freegift_imagepath", string.Empty);
+                    }
+
+                    if (!string.IsNullOrEmpty(sku.GetAttributeValue<string>("freegift_description", string.Empty)))
+                    {
+                        ltImageDescription.Text = sku.GetAttributeValue<string>("freegift_description", string.Empty);
+                    }
+                }
+
                 //Sri Comments on 11/15: Need to Plug-in to Custom Shipping option Model
                 SitePreference shippingGetShippingPref = CSFactory.GetCacheSitePref();
                 holderRushShipping.Visible = shippingGetShippingPref.IncludeRushShipping ?? false;

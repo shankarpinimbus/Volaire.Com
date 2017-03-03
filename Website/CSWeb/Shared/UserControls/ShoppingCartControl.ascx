@@ -56,6 +56,37 @@
         </div>
     </ItemTemplate>
 </asp:Repeater>
+<div class="cart_table table clearfix" style="margin-top: -1px;" runat="server" id="dfreeGift">
+    <div class="trow">
+        <div class="tcell cart_skudetails">
+            <div class="cart_image">
+                <img class="img block" src="<%=ltImagePath.Text %>" />
+            </div>
+            <div class="cart_text">
+                <div class="basket_description">
+                    <%=ltImageDescription.Text %>
+                </div>
+            </div>
+            <div class="cart_remove">
+	        &nbsp;
+            </div>
+                    
+        </div>
+
+        <div class="tcell cart_qty">
+            &nbsp;
+        </div>
+        <div class="tcell cart_unitprice">
+            FREE
+        </div>
+                    
+        <div class="tcell cart_totalprice">
+            FREE
+        </div>
+    </div>
+</div><asp:Literal runat="server" id="ltImagePath" Visible="False"></asp:Literal>
+<asp:Literal runat="server" id="ltImageDescription" Visible="False"></asp:Literal>
+
 <asp:Panel ID="pnlTotal" runat="server">
     <asp:PlaceHolder runat="server" ID="holderTaxAndShipping">
         <div class="horizontal_dots">
@@ -90,5 +121,5 @@
         </div>
     </asp:PlaceHolder>
 </asp:Panel>
-<asp:Literal ID="ltOfferDetail" runat="server" Visible="False"></asp:Literal>
+<asp:Literal ID="ltOfferDetail" runat="server"></asp:Literal>
 <asp:Literal ID="ltPhoneNum" runat="server" Visible="False"></asp:Literal>
