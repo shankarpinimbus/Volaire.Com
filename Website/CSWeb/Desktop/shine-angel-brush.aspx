@@ -25,7 +25,7 @@
     </section>
 </header>
 
-<section class="hero hero-shine-angel-brush">
+<section class="hero hero-shine-angel-brush gradient">
     <div class="hero-shine-angel-brush-inner">
         <div class="container">
             <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-shine-angel-brush.png" alt="Volaire Mega Volumizing System" class="block" />

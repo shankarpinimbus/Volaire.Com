@@ -103,6 +103,7 @@ img, input[type=image] {max-width: 100%;}
 .darkgray {color: #303030 !important;}
 .gold {color: #b79c4f !important;}
 .red {color: #ef4527 !important;}
+.pink {color: #ef7a80 !important;}
 .magenta {color: #eb1c74 !important;}
 .orange {color: #ee5c24 !important;}
 .brown {color: #a47f56 !important;}
@@ -496,12 +497,13 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 
 .slick-slide {margin-right: 14px;}
 
-
+p.note {
+    font-size: .875rem;
+}
 .home-slider-wrap p.note {
     clear: both;
     text-align: right;
     margin-right: 10%;
-    font-size: .875rem;
 }
 
 .home-slider .slick-dots {
@@ -1357,6 +1359,143 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
     padding-top: .5rem;
 }
 
+.hero-airweight-tech {
+    background: #061217;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA2MTIxNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzA2MTIxNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2VmN2E4MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2ZmOGY5ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjhmOWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  #061217 0%, #061217 50%, #ef7a80 51%, #ff8f9f 51%, #ff8f9f 100%);
+background: -webkit-linear-gradient(left,  #061217 0%,#061217 50%,#ef7a80 51%,#ff8f9f 51%,#ff8f9f 100%);
+background: linear-gradient(to right,  #061217 0%,#061217 50%,#ef7a80 51%,#ff8f9f 51%,#ff8f9f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#061217', endColorstr='#ff8f9f',GradientType=1 );
+
+}
+.hero-airweight-tech-1 {
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/bg_airweight_tech.jpg) no-repeat center top;
+}
+
+.airweight-main {
+    margin: 2rem 0;
+}
+
+.airweight-quotes {
+    margin: 0 0 1rem 0;
+}
+.airweight-quotes-1 {
+    float: left;
+    width: 52.3%;
+}
+.airweight-quotes-2 {
+    float: left;
+    width: 47.7%;
+}
+
+.watch_demo {
+    position: absolute;
+    top: 55%;
+    bottom: inherit;
+    left: 8%;
+}
+.airweight-quotes-1 p.note {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    width: 45.5%;
+    text-align: right;
+}
+
+.before-afters-hdr {
+    padding: 2.5rem 0 2rem;
+}
+.hero.before-afters-hdr h1 {
+    padding: 0;
+    width: 90%;
+    text-align: center;
+    color: #000;
+    position: relative;
+    z-index: 10;
+}
+
+.before-afters .row {
+    margin: 0 2.5%;
+}
+.ba-attr {
+    font-weight: 300;
+    text-align: right;
+    padding: .3rem .6rem .3rem .3rem;
+}
+.ba-spacer {
+    margin-top: .4rem;
+}
+
+.quote-dawn {
+    margin-top: -3.8%;
+}
+.quote-dawn p.note {
+    position: absolute;
+    width: 50%;
+    left: 42%;
+    bottom: 10%;
+    text-align: right;
+}
+
+.quote-dawn .watch_demo {
+    position: absolute;
+    width: 50%;
+    left: 70%;
+    top: 61.7%;
+}
+
+.basic-note {padding: 0 0 .8rem 1%;}
+.basic-note2 p.note {text-align: right; padding-bottom: 0;}
+.quote-lindsay p.note {
+    position: absolute;
+    width: 50%;
+    left: 2%;
+    bottom: 23%;
+}
+
+.quote-lindsay .watch_demo {
+    position: absolute;
+    width: 50%;
+    left: 15.58%;
+    top: 61%;
+}
+.quote-lindsay-img {
+    width: 99%;
+}
+
+.quote-cyndi .watch_demo {
+    position: absolute;
+    width: 32%;
+    left: 68%;
+    top: 82%;
+}
+
+
+.hero-reviews {
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/bg_reviews.jpg) no-repeat center 0;
+}
+
+.hero-reviews h1 {
+    position: absolute;
+    top: 38%;
+    left: 7%;
+    width: 37%;
+    line-height: 1;
+}
+
+.hero-reviews h1 .line2 {
+    display: block;
+    margin-left: 13%;
+}
+
+.hero-reviews p.note {
+    position: absolute;
+    bottom: .5rem;
+    padding: 0;
+    width: 39.3%;
+    text-align: right;
+    color: #fff;
+}
 
 
 
@@ -2000,7 +2139,14 @@ h2.ccdecline_hdr {
 }
 
 
+@media all and (min-width: 1800px) {
 
+.hero-reviews {
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/bg_reviews.jpg) no-repeat center 0;
+    background-size: 100%;
+}
+
+}
 
 @media all and (max-width:1330px) and (min-width: 1025px) {
 

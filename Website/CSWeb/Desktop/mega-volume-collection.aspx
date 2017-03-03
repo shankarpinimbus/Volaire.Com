@@ -25,7 +25,7 @@
     </section>
 </header>
 
-<section class="hero hero-90-day-kit">
+<section class="hero hero-90-day-kit gradient">
     <div class="container">
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-90daykit.png" alt="Volaire Mega Volumizing System" class="block" />
         <h1>

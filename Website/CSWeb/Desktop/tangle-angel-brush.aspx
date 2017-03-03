@@ -26,7 +26,7 @@
     </section>
 </header>
 
-<section class="hero hero-tangle-angel-brush">
+<section class="hero hero-tangle-angel-brush gradient">
     <div class="hero-tangle-angel-brush-inner">
         <div class="container">
             <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-tangle-angel-brush.png" alt="Volaire Mega Volumizing System" class="block" />

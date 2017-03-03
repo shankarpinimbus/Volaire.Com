@@ -326,7 +326,10 @@
     <Content Include="Admin\VersionReport.aspx" />
     <Content Include="Admin\VersionReport1.aspx" />
     <Content Include="Desktop\AddProduct.aspx" />
+    <Content Include="Desktop\volaire-reviews.aspx" />
+    <Content Include="Desktop\volaire-befores-and-afters.aspx" />
     <Content Include="Desktop\bottomcta.html" />
+    <Content Include="Desktop\air-weight-technology.aspx" />
     <Content Include="Desktop\hair-volumizing-products.aspx" />
     <Content Include="Desktop\note-txt.html" />
     <Content Include="Desktop\tangle-angel-brush.aspx" />
@@ -1073,6 +1076,7 @@
     </Compile>
     <Compile Include="Admin\UserControls\PageControl.ascx.cs">
       <DependentUpon>PageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\UserControls\RangeDateControl.ascx.cs">
       <DependentUpon>RangeDateControl.ascx</DependentUpon>
@@ -1543,6 +1547,7 @@
     </Compile>
     <Compile Include="NoCart\UserControls\PageControl.ascx.cs">
       <DependentUpon>PageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NoCart\UserControls\RangeDateControl.ascx.cs">
       <DependentUpon>RangeDateControl.ascx</DependentUpon>
