@@ -1363,6 +1363,9 @@ namespace CSWeb
                 case "cartimage":
                     returnData = doc.SelectSingleNode("Version")["Image3"].InnerText;
                     break;
+                case "sid":
+                    returnData = doc.SelectSingleNode("Version")["sid"].InnerText;
+                    break;
             }
             return returnData;
         }
