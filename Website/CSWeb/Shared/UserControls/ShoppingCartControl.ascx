@@ -22,7 +22,7 @@
                     <div class="cart_image">
                         <asp:Image runat="server" ID="imgProduct" />
                     </div>
-                    <div class="cart_txt">
+                    <div class="cart_text">
                         <div class="basket_title">
                             <asp:Label runat="server" ID="lblSkuCode"></asp:Label>
                         </div>
@@ -31,29 +31,41 @@
                         </div>
                     </div>
                     <div class="cart_remove">
-                        <asp:ImageButton ID="ImageButton1" runat="server" CommandName="delete" CausesValidation="false"
+                        <td runat="server" width="1%" id='holderRemove' visible="false">
+                            <asp:ImageButton ID="btnRemoveItem" runat="server" CommandName="delete" CausesValidation="false"
                                 Visible="" CssClass="ucRemoveButtonOverlay" ImageUrl="//d39hwjxo88pg52.cloudfront.net/trydrd/images/remove.png" />
+                        </td>
                     </div>
                 </div>
                 
-                
-                <div class="cart_price" runat="server" visible="false">
+                <div class="tcell cart_qty" runat="server" visible="true">
+                    <div>
+                        <asp:TextBox runat="server" ID="txtQuantity" Font-Size="8pt" Text='1' MaxLength="3"
+                            Columns="2" OnTextChanged="OnTextChanged_Changed"></asp:TextBox>
+                        <asp:Label runat="server" ID="lblQuantity" CssClass="cart_select">
+                        </asp:Label>
+                    </div>
 
-                    <asp:TextBox runat="server" ID="txtQuantity" Font-Size="8pt" Text='1' MaxLength="3"
-                        Columns="2" OnTextChanged="OnTextChanged_Changed"></asp:TextBox>
-                    <asp:Label runat="server" ID="lblQuantity" CssClass="cart_select">
-                    </asp:Label>
+                    <%--<asp:HiddenField runat="server" ID="hidSkuId" />
+                    <asp:TextBox ID="TextBox1" runat="server" MaxLength="1" Visible="false" />
+                    <asp:DropDownList ID="ddlQty" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlQty_SelectedIndexChanged1">
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                    </asp:DropDownList>--%>
                 </div>
-                <div class="cart_price">
+                <div class="tcell cart_unitprice">
                     <asp:Label runat="server" ID="lblSkuInitialPrice"></asp:Label>
-                    <td runat="server" width="1%" id='holderRemove' visible="false">
-                        <asp:ImageButton ID="btnRemoveItem" runat="server" CommandName="delete" CausesValidation="false"
-                            Visible="" CssClass="ucRemoveButtonOverlay" ImageUrl="//d39hwjxo88pg52.cloudfront.net/images/delete.gif" />
-                    </td>
                 </div>
+                    
+                <div class="tcell cart_totalprice">
+                    <asp:Label runat="server" ID="lblTotalPrice"></asp:Label>
+                </div>
+
             </div>
             
         </div>
+        <div class="horizontal_dots" style="margin-bottom: 0;"></div>
     </ItemTemplate>
 </asp:Repeater>
 <div class="cart_table table clearfix" style="margin-top: -1px;" runat="server" id="dfreeGift">
@@ -92,16 +104,19 @@
         <div class="horizontal_dots">
         </div>
         <div class="cart_totals clearfix">
-            <div class="cart_totals_left">
+            <div class="cart_totals_left caps">
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/cart-promo-code.png" class="fleft" />
                 Subtotal:<br />
-                Shipping & Handling:<br />
-                Estimated Tax:<br />
-                Total:
+                Tax:<br />
+                S&H:<br />
+                <div style="height: .8rem"></div>
+                <span class="cart-promo-code-txt">**Promo Code Applied</span> Total:
             </div>
             <div class="cart_totals_right">
                 <asp:Literal runat="server" ID='lblSubtotal'></asp:Literal><br />
-                <asp:Literal runat="server" ID="lblShipping"></asp:Literal><br />
                 <asp:Literal runat="server" ID="lblTax"></asp:Literal><br />
+                <asp:Literal runat="server" ID="lblShipping"></asp:Literal><br />
+                <div style="height: .8rem"></div>
                 <asp:Literal runat="server" ID="lblOrderTotal"></asp:Literal>
                 <asp:Literal runat="server" ID="lblRushShipping" Visible="false"></asp:Literal>
                 <table>
@@ -119,6 +134,7 @@
                 </table>
             </div>
         </div>
+            <div class="cart-hr"></div>
     </asp:PlaceHolder>
 </asp:Panel>
 <asp:Literal ID="ltOfferDetail" runat="server"></asp:Literal>

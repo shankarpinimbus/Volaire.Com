@@ -67,27 +67,6 @@ $(document).ready(function () {
         }
     });
 
-    $(".guarantee").fancybox({
-        closeBtn: false,
-        fitToView: false,
-        wrapCSS: 'nowrapper',
-        padding: 0,
-        width: 500,
-        maxWidth: '90%',
-        height: "auto",
-        autoSize: false,
-        closeClick: false,
-        scrolling: 'no',
-        helpers: {
-            overlay: {
-                locked: false,
-                css: {
-                    'background': 'rgba(0,0,0,.8)'
-                }
-            }
-        }
-    });
-
 
 });
 
@@ -134,6 +113,9 @@ function pageLoad() {
                     required: true,
                     creditcard: true
                 },
+                sbcfShippingBillingCreditForm$cbAgree: {
+                    required: true
+                }
                 
             },
             // the below can be used to submit to tokenex or to show the mask and submit, but may conflict with shipping or contact forms?

@@ -71,7 +71,23 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
         
             <div class="cartB">
                 <asp:Panel ID="pnlBillingInfo" runat="server" Visible="true">
-                    <h2 class="billinghdr">Billing Information:</h2>
+                    <div class="main_cart_hdr">Please Enter Your Email Address:</div>
+                    
+                    <div class="form_line clearfix">
+                        <div class="error-1">
+                            <asp:RequiredFieldValidator ID="rfvEmail" runat="server" CssClass="cata" Display="Dynamic" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail"
+                                Display="Dynamic" CssClass="cata" ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" />
+                            <asp:Label ID="lblEmailError" runat="server" Visible="false"></asp:Label>
+                        </div>
+                        <label class="label-1">
+                            Email Address*</label>
+                        <asp:TextBox ID="txtEmail" required="required" runat="server" MaxLength="100" CssClass="text-1" placeholder="*Email"></asp:TextBox>
+                        <%-- <input required="required" title="" pattern="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" id="txtEmail" runat="server" class="text-1" maxlength="100" placeholder="Email" />--%>
+                    </div>
+                    
+                    <div class="main_cart_hdr">Shipping Address:</div>
+
                     <div class="form_line clearfix">
                         <div class="error-1">
                             <asp:RequiredFieldValidator CssClass="cata" ID="rfvFirstName" runat="server" Display="Dynamic"
@@ -94,6 +110,8 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         <input type="text" required="required" id="txtLastName" runat="server" maxlength="14" clientidmode="Static" class="text-1" placeholder="*Last Name" />
                     </div>
 
+                    <div class="clear"></div>
+
                     <div class="form_line clearfix">
                         <div class="error-1">
                             <asp:RequiredFieldValidator CssClass="cata" ID="rfvAddress1" runat="server" Display="Dynamic"
@@ -101,16 +119,18 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                             <asp:Label ID="lblAddress1Error" CssClass="none" runat="server" Visible="false"></asp:Label>
                         </div>
                         <label class="label-1">
-                            Billing Address*</label>
+                            Address 1*</label>
 
                         <input required="required" id="txtAddress1" runat="server" maxlength="30" clientidmode="Static" class="text-1 billingad1" placeholder="*Address" type="text" />
                     </div>
                     <div class="form_line clearfix">
                         <label class="label-1">
-                            Billing Address 2
+                            Address 2
                         </label>
                         <input id="txtAddress2" maxlength="30" class="text-1" type="text" clientidmode="Static" runat="server" visible="true" placeholder="Address 2" />
                     </div>
+                    
+                    <div class="clear"></div>
 
                     <div class="form_line clearfix">
                         <div class="error-1">
@@ -130,6 +150,9 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                             CssClass="text-1">
                         </asp:DropDownList>
                     </div>
+                    
+                    <div class="clear"></div>
+
                     <div class="form_line clearfix">
                         <div class="error-1">
                             <asp:Label ID="lblStateError" runat="server" Visible="false"></asp:Label>
@@ -156,6 +179,9 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                             Zip Code*</label>
                         <asp:TextBox required="required" id="txtZipCode" runat="server" maxlength="5" clientidmode="Static" class="text-1" placeholder="*ZIP Code" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" />
                     </div>
+
+                    <div class="clear"></div>
+
                     <div class="form_line clearfix">
                         <div class="error-1">
                             <asp:RequiredFieldValidator CssClass="cata" ID="rfvPhoneNumber" runat="server" Display="Dynamic"
@@ -164,21 +190,11 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         </div>
                         <label class="label-1">
                             Phone*</label>
-                        <asp:TextBox required="required" ID="txtPhoneNumber" runat="server" MaxLength="15" CssClass="text-1" placeholder="*Phone" />
-
+                        <asp:TextBox required="required" ID="txtPhoneNumber" runat="server" MaxLength="15" CssClass="text-2" placeholder="*Phone" />
+                        <span style="font-size: 11.5px; padding-left: 10px; padding-top: 2px;">For delivery questions only</span>
                     </div>
-                    <div class="form_line clearfix">
-                        <div class="error-1">
-                            <asp:RequiredFieldValidator ID="rfvEmail" runat="server" CssClass="cata" Display="Dynamic" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail"
-                                Display="Dynamic" CssClass="cata" ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" />
-                            <asp:Label ID="lblEmailError" runat="server" Visible="false"></asp:Label>
-                        </div>
-                        <label class="label-1">
-                            Email*</label>
-                        <asp:TextBox ID="txtEmail" required="required" runat="server" MaxLength="100" CssClass="text-1" placeholder="*Email"></asp:TextBox>
-                        <%-- <input required="required" title="" pattern="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" id="txtEmail" runat="server" class="text-1" maxlength="100" placeholder="Email" />--%>
-                    </div>
+                    
+                    <div class="clear"></div>
 
 
                     <asp:Panel ID="pnlQuantity" runat="server" Visible="false">
@@ -200,16 +216,18 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         </div>
                     </asp:Panel>
                 </asp:Panel>
-                <div class="form_line clearfix" style="padding-top: 6px;">
-                    <asp:CheckBox ID="cbShippingSame" runat="server" CssClass="checkbox-left" OnCheckedChanged="cbShippingSame_CheckedChanged" AutoPostBack="true" Checked="true" />
+                <div class="form_line clearfix" style="padding-top: 6px; padding-bottom: 0;">
                     <label class="label-3" for="sbcfShippingBillingCreditForm_cbShippingSame">
-                        My billing address is the same as&nbsp;shipping
+                        Is this also your Billing Address
                     </label>
+                    <asp:CheckBox ID="cbShippingSame" runat="server" CssClass="checkbox-left" OnCheckedChanged="cbShippingSame_CheckedChanged" AutoPostBack="true" Checked="true" />
                 </div>
+
+                <div class="clear"></div>
 
                 <asp:Panel ID="pnlShippingAddress" runat="server" Visible="false">
                     
-                    <h2 class="billinghdr">Shipping Information:</h2>
+                    <div class="main_cart_hdr">Billing Address:</div>
                     <div class="form_line clearfix">
                         <div class="error-1">
                             <asp:RequiredFieldValidator ID="rfvShippingFirstName" runat="server" CssClass="cata" Display="Dynamic"
@@ -232,6 +250,9 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         <input required="required" type="text" id="txtShippingLastName" runat="server" clientidmode="Static" maxlength="14" class="text-1" placeholder="*Last Name" />
 
                     </div>
+                    
+                    <div class="clear"></div>
+
                     <div class="form_line clearfix">
                         <div class="error-1">
                             <asp:RequiredFieldValidator ID="rfvShippingAddress1" CssClass="cata" runat="server" Display="Dynamic"
@@ -239,7 +260,7 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                             <asp:Label ID="lblShippingAddress1Error" CssClass="none" runat="server" Visible="false"></asp:Label>
                         </div>
                         <label class="label-1">
-                            Shipping Address*</label>
+                            Billing Address*</label>
                         <input required="required" type="text" id="txtShippingAddress1" runat="server" maxlength="30" class="text-1" placeholder="*Address" />
                     </div>
                     <div class="form_line clearfix">
@@ -249,6 +270,9 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                             Address 2</label>
                         <input id="txtShippingAddress2" runat="server" maxlength="30" class="text-1" placeholder="Address 2" />
                     </div>
+                    
+                    <div class="clear"></div>
+
                     <div class="form_line clearfix">
                         <div class="error-1">
                             <asp:RequiredFieldValidator ID="rfvShippingCity" runat="server" CssClass="cata" Display="Dynamic"
@@ -271,6 +295,9 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                             CssClass="text-1">
                         </asp:DropDownList>
                     </div>
+                    
+                    <div class="clear"></div>
+
                     <div class="form_line clearfix">
                         <div class="error-1">
                             <asp:Label ID="lblShippingStateError" runat="server" Visible="false"></asp:Label>
@@ -292,7 +319,9 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                             Zip Code*</label>
                         <asp:TextBox required="required" type="text" id="txtShippingZipCode" runat="server" clientidmode="Static" maxlength="5" class="text-1" placeholder="*ZIP Code" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" />
                     </div>
-
+                    
+                    
+                    <div class="clear"></div>
                 </asp:Panel>
 
                 <div class="form_line clearfix" runat="server" visible="False">
@@ -304,10 +333,10 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                     </div>
                 </div>
 
+                <div class="clear"></div>
 
-                <div class="form_line">
-                    <img src="//d39hwjxo88pg52.cloudfront.net/images/cards.png" alt="" />
-                </div>
+                <div class="main_cart_hdr">Select Your Payment Method:</div>
+
                 <div class="form_line clearfix paydrop" runat="server" visible="False">
                     <label class="label-1">Payment Method</label>
                     <asp:DropDownList runat="server" ID="ddlPaymentMethod" AutoPostBack="True" OnSelectedIndexChanged="ddlPaymentMethod_OnSelectedIndexChanged" CssClass="text-1" Style="float: none">
@@ -322,38 +351,69 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
 
 
                 <asp:Panel runat="server" ID="pnlCreditCard" Visible="False">
-                    <div class="form_line clearfix" runat="server" visible="False">
-                        <label class="label-1">Credit Card Type</label>
-                        <asp:Label ID="lblCCType" runat="server" Visible="false"></asp:Label>
+                    <div class="form_line clearfix" runat="server" visible="true">
                         <div class="error-1">
                             <asp:RequiredFieldValidator ID="rfvCCType" CssClass="cata" runat="server" Display="Dynamic"
                                 ControlToValidate="ddlCCType"></asp:RequiredFieldValidator>
 
                         </div>
+                        <label class="label-1 bold">Credit Card Type</label>
+                        <asp:Label ID="lblCCType" runat="server" Visible="false"></asp:Label>
                         <select id="ddlCCType" required="required" name="ddlCCType" runat="server" class="text-1"></select>
 
                     </div>
 
+                    <div class="clear"></div>
+
                     <div class="form_line clearfix">
-                        <label class="label-1">
-                            Card Number*</label>
                         <div class="error-1">
                             <asp:RequiredFieldValidator ID="rfvCreditCard" CssClass="cata" ControlToValidate="txtCCNumber1" runat="server" Display="Dynamic" ErrorMessage="Please enter valid card number" />
                             <asp:Label ID="lblCCNumberError" runat="server" Visible="false"></asp:Label>
                         </div>
+                        <label class="label-1 bold">
+                            Card Number*</label>
                         <asp:TextBox name="txtCCNumber1" required="required" AutoCompleteType="Disabled" ID="txtCCNumber1" ClientIDMode="Static" runat="server" CssClass="text-1" MaxLength="16" placeholder="*Credit Card Number" autocomplete="off"></asp:TextBox>
                     </div>
+                    
+                    <div class="form_line clearfix" style="margin-left: -4%;">
+                        <div class="error-1c">
+                            <asp:RequiredFieldValidator CssClass="cata" ID="rfvCVV" ControlToValidate="txtCvv" runat="server" Display="Dynamic" />
+                            <asp:Label ID="lblCvvError" runat="server" Visible="false"></asp:Label>
+                        </div>
+                        <label class="label-2 bold">
+                            CVC* 
+                        </label>
+                        <input id="txtCvv" required="required" size="4" runat="server" autocomplete="off" clientidmode="Static" class="text-1 text-3" maxlength="4" placeholder="*CVV" />
+                        <%--<a class="cvv" href="//d39hwjxo88pg52.cloudfront.net/images/mobile/cvv.png">What is this?</a>--%>
+
+                    </div>
+                    
+                    <div class="clear"></div>
+
+                    <div class="form_line clearfix">
+                        <div class="error-1">
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtNameOnCard" runat="server" Display="Dynamic" ErrorMessage="Please enter valid name" />
+                            <asp:Label ID="Label1" runat="server" Visible="false"></asp:Label>
+                        </div>
+                        <label class="label-1 bold">
+                            Name on Card*</label>
+
+                        <asp:TextBox ID="txtNameOnCard" runat="server" required="required" CssClass="text-1" MaxLength="50" placeholder=""></asp:TextBox>
+                    </div>
+
+                    <div class="clear"></div>
+
                     <div class="form_line clearfix">
                         <div class="error-1b">
 
                             <asp:Label ID="lblExpDate" runat="server" Visible="false"></asp:Label>
                         </div>
-                        <label class="label-1">
+                        <label class="label-1 bold">
                             Expiration Date*</label>
 
-                        <select name="ddlExpMonth" required="required" id="ddlExpMonth" clientidmode="Static" runat="server" class="text-1 text-2">
+                        <select name="ddlExpMonth" required="required" id="ddlExpMonth" clientidmode="Static" runat="server" class="text-2a">
                         </select>
-                        <select name="ddlExpYear" required="required" id="ddlExpYear" runat="server" clientidmode="Static" class="text-1 text-2">
+                        <select name="ddlExpYear" required="required" id="ddlExpYear" runat="server" clientidmode="Static" class="text-2">
                         </select>
                         <div class="error-1">
                             <asp:RequiredFieldValidator ID="rfvExpMonth" runat="server" CssClass="cata" Display="Dynamic"
@@ -363,38 +423,40 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                             <asp:Label ID="Label2" CssClass="cata" runat="server" Visible="false"></asp:Label>
                         </div>
                     </div>
-                    <div class="form_line clearfix">
-                        <label class="label-1">
-                            Card Verification* 
-                        </label>
-                        <div class="error-1">
-                            <asp:RequiredFieldValidator CssClass="cata" ID="rfvCVV" ControlToValidate="txtCvv" runat="server" Display="Dynamic" />
-                            <asp:Label ID="lblCvvError" runat="server" Visible="false"></asp:Label>
-                        </div>
-                        <input id="txtCvv" required="required" size="4" runat="server" autocomplete="off" clientidmode="Static" class="text-1 text-3" maxlength="4" placeholder="*CVV" />
-                        <a class="cvv" href="//d39hwjxo88pg52.cloudfront.net/images/mobile/cvv.png">What is this?</a>
+                    
+                    <div class="clear"></div>
 
-                    </div>
+                    <div class="main_cart_hdr">Promocode: <input type="text" value="SAVE40" class="text-2 text-promocode" disabled /></div>
+                    
+                    <div class="clear"></div>
 
-                    <div class="form_line2 clearfix" style="padding-top: 6px; ">
+                    <div class="form_line2 clearfix" runat="server" visible="false">
                         <asp:CheckBox ID="cbxSignup" runat="server" CssClass="checkbox-left" Checked="false" />
                         <label class="label-3" for="sbcfShippingBillingCreditForm_cbxSignup">
                             I would like to get product updates and special&nbsp;offers
                         </label>
                     </div>
 
-                    <div class="form_line2 clearfix">
-                        <div class="error-1">
+                    <div class="cart_offer_details_wrap">
+                        <div class="cart_offer_details">
+                            <asp:Literal runat="server" ID="ltOfferDetails"></asp:Literal>
+                        </div>
+                        <div class="form_line2 clearfix">
+                        <div class="error-1c">
                             <asp:Label ID="lblcbAgree" runat="server" Visible="false"></asp:Label>
                             <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Please agree to our Terms and Conditions" ClientValidationFunction="ValidateCheckBox"></asp:CustomValidator>
                         </div>
                         <asp:CheckBox ID="cbAgree" runat="server" CssClass="checkbox-left" Checked="false" />
-                        <label class="label-3" for="sbcfShippingBillingCreditForm_cbAgree">
-                            Agree to terms and conditions.
+                        <label class="label-3b" for="sbcfShippingBillingCreditForm_cbAgree">
+                            By checking this box, you are electronically signing your order, agreeing to the terms above and to our general Terms and Conditions, including our no-commitment auto-replenishment program, and authorizing us to charge payments to the credit card you have provided.
                     
                            
                         </label>
                     </div>
+                    </div>
+
+
+                    
 
                     <div class="form_line_btn" runat="server" id="dCompleteOrder" visible="False">
                         <div style="display: none;">
@@ -402,18 +464,14 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                             <asp:Label runat="server" ID="lblErrorSummary" Visible="False" ForeColor="Red"></asp:Label>
                             <asp:Label ID="lblMessage" runat="server" ForeColor="Red" />
                         </div>
-                        <asp:ImageButton ID="imgBtn" runat="server" ImageUrl="//d39hwjxo88pg52.cloudfront.net/gettoppik/images/btn_ordernow.png" CssClass="submit iblock" OnClick="imgBtn_OnClick" />
+                        <asp:ImageButton ID="imgBtn" runat="server" ImageUrl="//d39hwjxo88pg52.cloudfront.net/volaire/images/btn_submit.png" CssClass="submit iblock" OnClick="imgBtn_OnClick" />
 
                     </div>
                     <div class="form_line text-center">
                         <img src="//d39hwjxo88pg52.cloudfront.net/gettoppik/images/ssl.png" alt="SSL Secured Online Ordering" />
                     </div>
 
-                    
-                    <div class="cart-offer-details visiblem">
-                        <%--Offer details go here--%>
-                        <asp:Literal runat="server" ID="ltOfferDetails"></asp:Literal>
-                    </div>
+
                 </asp:Panel>
 
                 <div>

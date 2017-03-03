@@ -380,7 +380,7 @@ namespace CSWeb.Shared.UserControls
                 pnlShippingBillingCreditForm.Visible = true;
                 dCompleteOrder.Visible = true;
 
-                imgBtn.ImageUrl = "//d39hwjxo88pg52.cloudfront.net/gettoppik/images/btn_ordernow.png";
+                imgBtn.ImageUrl = "//d39hwjxo88pg52.cloudfront.net/volaire/images/btn_submit.png";
             }
             else if (ddlPaymentMethod.SelectedValue.Equals("3"))
             {
@@ -397,7 +397,7 @@ namespace CSWeb.Shared.UserControls
             {
                 pnlShippingBillingCreditForm.Visible = false;
                 AmazonPayment.Visible = true;
-                imgBtn.ImageUrl = "//d39hwjxo88pg52.cloudfront.net/gettoppik/images/btn_ordernow.png";
+                imgBtn.ImageUrl = "//d39hwjxo88pg52.cloudfront.net/volaire/images/btn_submit.png";
             }
 
             dCompleteOrder.Visible = true;
@@ -1008,7 +1008,7 @@ namespace CSWeb.Shared.UserControls
             {
                 string script = "MM_showHideLayers('mask', '', 'hide');";
                 imgBtn.Enabled = true;
-                imgBtn.ImageUrl = "//d39hwjxo88pg52.cloudfront.net/gettoppik/images/btn_ordernow.png";
+                imgBtn.ImageUrl = "//d39hwjxo88pg52.cloudfront.net/volaire/images/btn_submit.png";
                 ScriptManager.RegisterStartupScript(pnlShippingBillingCreditForm, this.GetType(), "popup", script, true);
             }
 

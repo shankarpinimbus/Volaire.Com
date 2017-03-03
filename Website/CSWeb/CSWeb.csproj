@@ -326,6 +326,7 @@
     <Content Include="Admin\VersionReport.aspx" />
     <Content Include="Admin\VersionReport1.aspx" />
     <Content Include="Desktop\AddProduct.aspx" />
+    <Content Include="Desktop\mega-promise-money-back-guarantee.aspx" />
     <Content Include="Desktop\hair-styles-and-tips.aspx" />
     <Content Include="Desktop\volaire-reviews.aspx" />
     <Content Include="Desktop\volaire-befores-and-afters.aspx" />
@@ -342,7 +343,7 @@
     <Content Include="Desktop\Cart.aspx" />
     <Content Include="Desktop\CheckoutExpired.aspx" />
     <Content Include="Desktop\CheckoutSessionExpired.aspx" />
-    <Content Include="Desktop\faq.aspx" />
+    <Content Include="Desktop\frequently-asked-questions.aspx" />
     <Content Include="Desktop\benefits-txt.html" />
     <Content Include="Desktop\footer.html" />
     <Content Include="Desktop\GetTotals.aspx" />

@@ -85,15 +85,6 @@ namespace CSWeb.Shared.UserControls {
         protected global::System.Web.UI.WebControls.Literal lblSubtotal;
         
         /// <summary>
-        /// lblShipping control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal lblShipping;
-        
-        /// <summary>
         /// lblTax control.
         /// </summary>
         /// <remarks>
@@ -101,6 +92,15 @@ namespace CSWeb.Shared.UserControls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal lblTax;
+        
+        /// <summary>
+        /// lblShipping control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lblShipping;
         
         /// <summary>
         /// lblOrderTotal control.

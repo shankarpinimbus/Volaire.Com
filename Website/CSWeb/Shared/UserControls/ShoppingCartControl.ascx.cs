@@ -127,6 +127,7 @@ namespace CSWeb.Shared.UserControls
                 TextBox txtQuantity = e.Item.FindControl("txtQuantity") as TextBox;
                 Label lblQuantity = e.Item.FindControl("lblQuantity") as Label;
                 Label lblSkuInitialPrice = e.Item.FindControl("lblSkuInitialPrice") as Label;
+                Label lblTotalPrice = e.Item.FindControl("lblTotalPrice") as Label;
                 ImageButton btnRemoveItem = e.Item.FindControl("btnRemoveItem") as ImageButton;
                 HtmlContainerControl holderQuantity = e.Item.FindControl("holderQuantity") as HtmlContainerControl;
                 HtmlContainerControl holderRemove = e.Item.FindControl("holderRemove") as HtmlContainerControl;
@@ -194,6 +195,8 @@ namespace CSWeb.Shared.UserControls
                 }
             }
         }
+
+
 
         protected void rptShoppingCart_OnItemCommand(object sender, RepeaterCommandEventArgs e)
         {

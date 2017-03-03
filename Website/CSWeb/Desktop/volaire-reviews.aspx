@@ -31,12 +31,11 @@
 </section> 
 
 <div class="container">
-    reviews...
     <div class="yotpo yotpo-main-widget"
         data-product-id="120"
-        data-name="Volaire"
-        data-url="The url to the page where the product is url escaped"
-        data-image-url="https://d39hwjxo88pg52.cloudfront.net/volaire/images/offer-30-day-kit.png"
+        data-name="Volume Essentials 30 Day Collection"
+        data-url="https://www.volaire.com/tv-introductory-offer"
+        data-image-url="https://d39hwjxo88pg52.cloudfront.net/volaire/images/cart-volaire-volume-essentials-collection.jpg"
         data-description="Volaire">
     </div>
 
