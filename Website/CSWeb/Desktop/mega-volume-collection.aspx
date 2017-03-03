@@ -63,12 +63,12 @@
             
             <div class="offer-cta">
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/price-90-day-kit.png" alt="Just 3 Payments of $29.95* + Free Shipping" class="block" />
-                <asp:Button runat="server" id="btnAddtoCart" CssClass="btn_ordernow2" OnClick="btnAddtoCart_OnClick"/>
+                <asp:Button runat="server" id="btnAddtoCart" CssClass="btn_ordernow btn_ordernow-2" OnClick="btnAddtoCart_OnClick"/>
                 <div class="text-center">
                     <a href="shine-angel-brush" class="btn_no_thanks">No, thank you.</a>
                 </div>
             </div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-30-day-money-back-guarantee.png" alt="30 Day Money Back Guarantee" class="iblock" style="max-width: 105px; margin-top: 2rem;" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-30-day-money-back-guarantee.png" alt="30 Day Money Back Guarantee" class="iblock offer-mbg" style="margin-top: 2rem; margin-left: 1%;" />
         </div>
     </div>
 </section>

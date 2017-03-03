@@ -944,12 +944,11 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 }
 
 .btn_ordernow {
-    width: 277px;
-    max-width: 100%;
-    height: 52px;
-    max-height: inherit;
-    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/btn_ordernow.png) no-repeat 0 0;
-    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: 277px;
+    height: 1px;
+    padding-bottom: 12.91%;
     border: 0;
     outline: 0;
     cursor: pointer;
@@ -960,6 +959,32 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 	-o-transition: all .15s ease-in-out;
 	-moz-transition: all .15s ease-in-out;
 	-webkit-transition: all .15s ease-in-out;
+}
+
+.btn_ordernow-1 {
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/btn_ordernow.png) no-repeat 0 0;
+    background-size: cover;
+    padding-bottom: 18.52%;
+}
+
+.btn_ordernow-2 {
+    max-width: 460px;
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/btn-yes-i-want-to-go-big.png) no-repeat 0 0;
+    background-size: cover;
+    padding-bottom: 10.985%;
+}
+.btn_ordernow-3 {
+    max-width: 412px;
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/btn-yes-shine-me-up.png) no-repeat 0 0;
+    background-size: cover;
+    padding-bottom: 12.625%;
+}
+.btn_ordernow-4 {
+    display: block;
+    max-width: 368px;
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/btn-yes-i-need-this.png) no-repeat 0 0;
+    background-size: cover;
+    padding-bottom: 12.842%;
 }
 
 .offer-content {padding: 0 1.5%}
@@ -979,6 +1004,7 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
     font-weight: 500;
     text-transform: uppercase;
     padding-bottom: .9rem;
+    line-height: 1.2;
 }
 .offer-left h2 .part2 {
     font-size: 40px;
@@ -1056,6 +1082,17 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
     margin-bottom: 1.5rem;
 }
 
+.offer-mbg {
+    width: 25%;
+    max-width: 105px;
+}
+
+#kit_90day .offer-mbg {
+    width: 20%;
+    max-width: 105px;
+}
+
+
 .offer-footer {
     margin: 1.5rem auto;
     padding: 0 1.5%;
@@ -1076,13 +1113,12 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 }
 
 .hero-90-day-kit {
-    bbackground: #ef7a80;
+    background: #ef7a80;
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmN2E4MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM1JSIgc3RvcC1jb2xvcj0iI2VmN2E4MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iI2VlNWMyNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZTVjMjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
     background: -moz-linear-gradient(left,  #ef7a80 0%, #ef7a80 35%, #ee5c24 80%, #ee5c24 100%);
     background: -webkit-linear-gradient(left,  #ef7a80 0%,#ef7a80 35%,#ee5c24 80%,#ee5c24 100%);
     background: linear-gradient(to right,  #ef7a80 0%,#ef7a80 35%,#ee5c24 80%,#ee5c24 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef7a80', endColorstr='#ee5c24',GradientType=1 );
-
 
 }
 
@@ -1122,24 +1158,7 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
     padding-top: 0;
 }
 
-.btn_ordernow2 {
-    width: 460px;
-    max-width: 100%;
-    height: 52px;
-    max-height: inherit;
-    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/btn-yes-i-want-to-go-big.png) no-repeat 0 0;
-    background-size: cover;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-}
-.btn_ordernow2:hover {
-    opacity: .85;
-    transition: all .15s ease-in-out;
-	-o-transition: all .15s ease-in-out;
-	-moz-transition: all .15s ease-in-out;
-	-webkit-transition: all .15s ease-in-out;
-}
+
 
 .btn_no_thanks {
     display: inline-block;
@@ -1243,25 +1262,7 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
     max-width: 93%;
 }
 
-.btn_ordernow3 {
-    display: block;
-    width: 100%;
-    height: 1px;
-    padding-bottom: 12.625%;
-    max-height: inherit;
-    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/btn-yes-shine-me-up.png) no-repeat 0 0;
-    background-size: cover;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-}
-.btn_ordernow3:hover {
-    opacity: .85;
-    transition: all .15s ease-in-out;
-	-o-transition: all .15s ease-in-out;
-	-moz-transition: all .15s ease-in-out;
-	-webkit-transition: all .15s ease-in-out;
-}
+
 
 .size_selector h3 {
     text-transform: uppercase;
@@ -1356,26 +1357,6 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
     padding-top: .5rem;
 }
 
-.btn_ordernow4 {
-    display: block;
-    width: 100%;
-    max-width: 368px;
-    height: 1px;
-    padding-bottom: 12.91%;
-    max-height: inherit;
-    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/btn-yes-i-need-this.png) no-repeat 0 0;
-    background-size: cover;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-}
-.btn_ordernow4:hover {
-    opacity: .85;
-    transition: all .15s ease-in-out;
-	-o-transition: all .15s ease-in-out;
-	-moz-transition: all .15s ease-in-out;
-	-webkit-transition: all .15s ease-in-out;
-}
 
 
 
@@ -2062,10 +2043,10 @@ h2.ccdecline_hdr {
 
 @media all and (max-width:1170px) and (min-width: 1025px) {
 
-.offer-tangle-angel-brush .offer-left p, 
-.offer-tangle-angel-brush .offer-left ul {
-    font-size: 1rem;
-}
+.offer-left h2 {font-size: 1.75rem;}
+.offer-left p {font-size: 1rem;}
+.offer-left h3 {font-size: 1.1rem;}
+.offer-links li, .offer-left li {font-size: 1rem;}
 
 }
 
@@ -2189,6 +2170,12 @@ ul.nav li.tablet-last {margin-right: -6px;}
 .footer-right img {max-width: 45%;}
 
 .hero h1 {font-size: 2.6rem;}
+.hero-products h1 {
+    font-size: 2.4rem;
+    line-height: .9;
+    padding-bottom: 1.2rem;
+}
+.hero-products h1 .line2 {margin-left: 10%;}
 .hero-products p {font-size: 1rem;}
 .hero-shine-angel-brush h1 .line2 {font-size: 1.3rem;}
 .hero-shine-angel-brush h1 .line3 {font-size: 1.6rem;}
@@ -2209,14 +2196,37 @@ ul.nav li.tablet-last {margin-right: -6px;}
     padding: 2.2rem 0 0 .5%;
 }
 
-.offer-shine-angel-brush .offer-left p {
-    font-size: 1.1rem;
-}
+.offer-left h2 {font-size: 1.75rem;}
+.offer-left p {font-size: 1rem;}
+.offer-left h3 {font-size: 1.1rem;}
+#kit_90day .offer-left h3 {font-size: 1rem;}
+.offer-links li, .offer-left li {font-size: 1rem;}
 
 .offer-shine-angel-brush .offer-right a.videolink img {
     width: 75%;
 }
 
+.hero-shine-angel-brush h2, .hero-tangle-angel-brush h2 {
+    font-size: 1.325rem;
+}
+.hero-90-day-kit h1 {
+    top: 50%;
+    left: 5%;
+    font-size: 2.4rem
+}
+.hero-30-day-kit h1 {
+    left: 22%;
+    width: 42%;
+}
+.hero-shine-angel-brush h1 {
+    top: 30%;
+    left: 20%;
+    width: 50%;
+}
+
+.select_wrap label {
+    font-size: .93rem;
+}
 
 }
 

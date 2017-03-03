@@ -72,7 +72,7 @@
                         </label>
                     </div>
                 </div>
-                <asp:Button runat="server" id="btnAddtoCart" CssClass="btn_ordernow3" OnClick="btnAddtoCart_OnClick"/>
+                <asp:Button runat="server" id="btnAddtoCart" CssClass="btn_ordernow btn_ordernow-3" OnClick="btnAddtoCart_OnClick"/>
                 <div class="text-center">
                     <a href="tangle-angel-brush" class="btn_no_thanks">No, thank you.</a>
                 </div>

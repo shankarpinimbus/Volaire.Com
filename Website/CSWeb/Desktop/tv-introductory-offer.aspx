@@ -52,7 +52,7 @@
             </div>
             <div class="offer-cta">
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/price-30-day-kit.png" alt="$29.95 + Free Shipping" class="block" />
-                <asp:Button runat="server" id="btnAddtoCart" CssClass="btn_ordernow" OnClick="btnAddtoCart_OnClick"/>
+                <asp:Button runat="server" id="btnAddtoCart" CssClass="btn_ordernow btn_ordernow-1" OnClick="btnAddtoCart_OnClick"/>
             </div>
         </div>
         
@@ -62,7 +62,7 @@
         <div class="offer-benefits">
             <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
         </div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-30-day-money-back-guarantee.png" alt="30 Day Money Back Guarantee" class="iblock" style="max-width: 105px;" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-30-day-money-back-guarantee.png" alt="30 Day Money Back Guarantee" class="iblock offer-mbg" />
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/promo-code-save-40-percent-big.png" alt="Save 40% - Promo Code SAVE40" class="fright" style="margin-top: .8rem;" />
     </div>
 </section>
