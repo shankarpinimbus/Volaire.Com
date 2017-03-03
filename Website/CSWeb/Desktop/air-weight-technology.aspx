@@ -7,8 +7,8 @@
 <html>
 <head runat="server">
 <meta charset="utf-8">
-<title>Products for Volumizing, Texture and Healthy Scalp and Hair</title>
-<meta name="description" content="Volaire is a sulfate-free and paraben-free hair volumizing system that gives healthy, beautiful hair with natural shine and weightless texture and volume" />
+<title>Airweight Technology Designed to Add Weightless Volume</title>
+<meta name="description" content="Airweight™ Technology gives you instant, touchable, weightless volume after just ONE use! Avocado Oil, Kelp & Seaweed promotes healthy hair and strength" />
 <meta name="keywords" content="" />
     
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>

@@ -7,8 +7,8 @@
 <html>
 <head runat="server">
 <meta charset="utf-8">
-<title>Products for Volumizing, Texture and Healthy Scalp and Hair</title>
-<meta name="description" content="Volaire is a sulfate-free and paraben-free hair volumizing system that gives healthy, beautiful hair with natural shine and weightless texture and volume" />
+<title>See Ratings and Read Reviews for Volaire™ Products</title>
+<meta name="description" content="Read real reviews and customer ratings about how Volaire is the easiest, fastest way to get bouncing, weightless volume that LASTS and without a salon!" />
 <meta name="keywords" content="" />
     
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
@@ -32,6 +32,14 @@
 
 <div class="container">
     reviews...
+    <div class="yotpo yotpo-main-widget"
+        data-product-id="120"
+        data-name="Volaire"
+        data-url="The url to the page where the product is url escaped"
+        data-image-url="https://d39hwjxo88pg52.cloudfront.net/volaire/images/offer-30-day-kit.png"
+        data-description="Volaire">
+    </div>
+
 </div>
 
 

@@ -7,8 +7,8 @@
 <html>
 <head runat="server">
 <meta charset="utf-8">
-<title>Products for Volumizing, Texture and Healthy Scalp and Hair</title>
-<meta name="description" content="Volaire is a sulfate-free and paraben-free hair volumizing system that gives healthy, beautiful hair with natural shine and weightless texture and volume" />
+<title>Real Before and After Pictures Of Volaire Customers</title>
+<meta name="description" content="Volaire™ real users, real women, photo's and pictures. Amazing volume with before and afters. Soft, touchable, every day effortless volume with Volaire!" />
 <meta name="keywords" content="" />
     
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>

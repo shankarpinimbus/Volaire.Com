@@ -59,15 +59,15 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
     </Scripts>
 </asp:ScriptManager>
 
+<section class="container cart-wrap">
 <fieldset class="form">
 <asp:UpdatePanel ID="pnlShippingBillingCreditForm" runat="server">
     <ContentTemplate>
-        <div class="content_main_cart tcell">
+        <div class="cart_content_B clearfix">
 
             <uc:ShoppingCartControl ID="ShoppingCartControl" runat="server" />
 
-        </div>
-        <div class="content_right_cart tcell">
+
         
             <div class="cartB">
                 <asp:Panel ID="pnlBillingInfo" runat="server" Visible="true">
@@ -417,9 +417,9 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                 </asp:Panel>
 
                 <div>
-                </div>
             </div>
      
     </ContentTemplate>
 </asp:UpdatePanel>
 </fieldset>
+</section>

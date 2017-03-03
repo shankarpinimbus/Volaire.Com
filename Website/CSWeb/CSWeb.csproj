@@ -326,6 +326,7 @@
     <Content Include="Admin\VersionReport.aspx" />
     <Content Include="Admin\VersionReport1.aspx" />
     <Content Include="Desktop\AddProduct.aspx" />
+    <Content Include="Desktop\hair-styles-and-tips.aspx" />
     <Content Include="Desktop\volaire-reviews.aspx" />
     <Content Include="Desktop\volaire-befores-and-afters.aspx" />
     <Content Include="Desktop\bottomcta.html" />
