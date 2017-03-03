@@ -1538,7 +1538,7 @@ namespace CSWeb
         public static void MobileRedirect()
         {
             string version = GetVersionName();
-            string RedirectVersion = "mobile";
+            string RedirectVersion = "mobile_a1";
             if (!version.ToLower().Contains("mobile"))
             {
                 //if (version.ToLower().Contains("b2"))
@@ -1556,6 +1556,19 @@ namespace CSWeb
                     HttpContext.Current.Response.Redirect("/" + RedirectVersion + "/index");
                 }
             }
+        }
+
+        public static string getMobileSid(string sid)
+        {
+            if (sid.Equals("vweda1"))
+            {
+                return "vewbma1";
+            }
+            else if (sid.Substring(sid.Length - 1, 1).Equals("d"))
+            {
+                return sid.Substring(0, sid.Length - 1) + "m";
+            }
+            return sid;
         }
     }
 }

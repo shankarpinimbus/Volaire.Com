@@ -1021,6 +1021,12 @@ namespace CSWeb.Shared.UserControls
             ClientCartContext clientData = ClientOrderData;
             if (Page.IsValid)
             {
+                if (!string.IsNullOrEmpty(CommonHelper.GetCookieString("sid", false)))
+                {
+
+                    clientData.OrderAttributeValues.AddOrUpdateAttributeValue("sid",
+                            new AttributeValue(CommonHelper.GetCookieString("sid", false).ToLower()));
+                }
                 //Set Customer Information
                 Address billingAddress = new Address();
                 
