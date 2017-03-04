@@ -69,7 +69,7 @@ namespace CSWeb.Shared.UserControls
         {
             if (orderId > 0)
             {
-                Order orderData = CSResolve.Resolve<IOrderService>().GetOrderDetails(orderId);
+                Order orderData = CSResolve.Resolve<IOrderService>().GetOrderDetails(orderId,true);
 
                 dlordersList.DataSource = orderData.SkuItems;
                 dlordersList.DataBind();
