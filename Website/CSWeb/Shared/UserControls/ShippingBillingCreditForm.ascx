@@ -448,7 +448,7 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         </div>
                         <asp:CheckBox ID="cbAgree" runat="server" CssClass="checkbox-left" Checked="false" />
                         <label class="label-3b" for="sbcfShippingBillingCreditForm_cbAgree">
-                            By checking this box, you are electronically signing your order, agreeing to the terms above and to our general Terms and Conditions, including our no-commitment auto-replenishment program, and authorizing us to charge payments to the credit card you have provided.
+                            By checking this box, you are electronically signing your order, agreeing to the terms above and to our general <a href="#pop-terms" class="terms black scored" target="_blank">Terms and Conditions</a>, including our no-commitment auto-replenishment program, and authorizing us to charge payments to the credit card you have provided.
                     
                            
                         </label>
@@ -467,17 +467,27 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         <asp:ImageButton ID="imgBtn" runat="server" ImageUrl="//d39hwjxo88pg52.cloudfront.net/volaire/images/btn_submit.png" CssClass="submit iblock" OnClick="imgBtn_OnClick" />
 
                     </div>
-                    <div class="form_line text-center">
-                        <img src="//d39hwjxo88pg52.cloudfront.net/gettoppik/images/ssl.png" alt="SSL Secured Online Ordering" />
-                    </div>
 
 
                 </asp:Panel>
 
                 <div>
+                    
+                    <p class="text-center">
+                        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/cart-guarantee.png" alt="30 Day Money Back Guarantee - SSL Secured Online Ordering" />
+                    </p>
             </div>
      
     </ContentTemplate>
 </asp:UpdatePanel>
 </fieldset>
 </section>
+
+<div id="pop-terms" class="legal" style="display: none;">
+    <div class="overlay_content">
+        <div class="txt-closex">
+            <a href="javascript:void(0);" onclick="$.fancybox.close();">X CLOSE</a>
+        </div>
+        <!--#include virtual="/Shared/terms-txt.html" -->
+    </div>
+</div>

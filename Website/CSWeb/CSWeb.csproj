@@ -326,6 +326,10 @@
     <Content Include="Admin\VersionReport.aspx" />
     <Content Include="Admin\VersionReport1.aspx" />
     <Content Include="Desktop\AddProduct.aspx" />
+    <Content Include="Desktop\terms-txt.html" />
+    <Content Include="Desktop\terms-and-conditions.aspx" />
+    <Content Include="Desktop\privacy-policy.aspx" />
+    <Content Include="Desktop\volaire-customer-care.aspx" />
     <Content Include="Desktop\mega-promise-money-back-guarantee.aspx" />
     <Content Include="Desktop\hair-styles-and-tips.aspx" />
     <Content Include="Desktop\volaire-reviews.aspx" />
@@ -484,6 +488,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Shared\terms-txt.html" />
     <Content Include="Shared\UserControls\AmazonPayment.ascx" />
     <Content Include="Shared\UserControls\AmazonPayment.js" />
     <Content Include="Shared\UserControls\CheckoutSummary.ascx" />
