@@ -2284,9 +2284,19 @@ p.form_note {
 	text-decoration: underline;
 }
 
+.form_line p.input_note {
+	position: absolute !important;
+	top: 24px;
+	left: 166px;
+	font-size: 75%;
+	margin: 0; padding: 0;
+    color: #53585a;
+}
+
 .receipt .container {
     padding: 5rem 5%;
 }
+
 
 
 .receipt_content h1.receipt_top {

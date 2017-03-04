@@ -33,7 +33,7 @@
                     <div class="cart_remove">
                         <td runat="server" width="1%" id='holderRemove' visible="false">
                             <asp:ImageButton ID="btnRemoveItem" runat="server" CommandName="delete" CausesValidation="false"
-                                Visible="" CssClass="ucRemoveButtonOverlay" ImageUrl="//d39hwjxo88pg52.cloudfront.net/trydrd/images/remove.png" />
+                                Visible="" CssClass="ucRemoveButtonOverlay" ImageUrl="//d39hwjxo88pg52.cloudfront.net/volaire/images/remove.png" />
                         </td>
                     </div>
                 </div>
@@ -110,14 +110,14 @@
                 Tax:<br />
                 S&H:<br />
                 <div style="height: .8rem"></div>
-                <span class="cart-promo-code-txt">**Promo Code Applied</span> Total:
+                <span class="cart-promo-code-txt">**Promo Code Applied</span> <strong class="magenta">Total:</strong>
             </div>
             <div class="cart_totals_right">
-                <asp:Literal runat="server" ID='lblSubtotal'></asp:Literal><br />
-                <asp:Literal runat="server" ID="lblTax"></asp:Literal><br />
-                <asp:Literal runat="server" ID="lblShipping"></asp:Literal><br />
+                <strong><asp:Literal runat="server" ID='lblSubtotal'></asp:Literal></strong><br />
+                <strong><asp:Literal runat="server" ID="lblTax"></asp:Literal></strong><br />
+                <strong><asp:Literal runat="server" ID="lblShipping"></asp:Literal></strong><br />
                 <div style="height: .8rem"></div>
-                <asp:Literal runat="server" ID="lblOrderTotal"></asp:Literal>
+                <strong><asp:Literal runat="server" ID="lblOrderTotal"></strong></asp:Literal>
                 <asp:Literal runat="server" ID="lblRushShipping" Visible="false"></asp:Literal>
                 <table>
                     <tr id='holderRushShippingTotal' runat="server">

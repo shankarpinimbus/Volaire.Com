@@ -71,6 +71,7 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
         
             <div class="cartB">
                 <asp:Panel ID="pnlBillingInfo" runat="server" Visible="true">
+                    <p style="font-size: 12px; text-align: right; padding: .5em 4px 0 0; margin-bottom: -3em;">* All Fields Required</p>
                     <div class="main_cart_hdr">Please Enter Your Email Address:</div>
                     
                     <div class="form_line clearfix">
@@ -372,6 +373,7 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         </div>
                         <label class="label-1 bold">
                             Card Number*</label>
+                        <p class="input_note">Just numbers no dashes</p>
                         <asp:TextBox name="txtCCNumber1" required="required" AutoCompleteType="Disabled" ID="txtCCNumber1" ClientIDMode="Static" runat="server" CssClass="text-1" MaxLength="16" placeholder="*Credit Card Number" autocomplete="off"></asp:TextBox>
                     </div>
                     
