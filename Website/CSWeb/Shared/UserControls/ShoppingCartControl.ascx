@@ -40,19 +40,19 @@
                 
                 <div class="tcell cart_qty" runat="server" visible="true">
                     <div>
-                        <asp:TextBox runat="server" ID="txtQuantity" Font-Size="8pt" Text='1' MaxLength="3"
+                        <asp:TextBox runat="server" ID="txtQuantity" Font-Size="8pt" Text='1' Visible="False" MaxLength="3"
                             Columns="2" OnTextChanged="OnTextChanged_Changed"></asp:TextBox>
                         <asp:Label runat="server" ID="lblQuantity" CssClass="cart_select">
                         </asp:Label>
                     </div>
 
-                    <%--<asp:HiddenField runat="server" ID="hidSkuId" />
+                    <asp:HiddenField runat="server" ID="hidSkuId" />
                     <asp:TextBox ID="TextBox1" runat="server" MaxLength="1" Visible="false" />
                     <asp:DropDownList ID="ddlQty" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlQty_SelectedIndexChanged1">
                         <asp:ListItem>1</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
                         <asp:ListItem>3</asp:ListItem>
-                    </asp:DropDownList>--%>
+                    </asp:DropDownList>
                 </div>
                 <div class="tcell cart_unitprice">
                     <asp:Label runat="server" ID="lblSkuInitialPrice"></asp:Label>

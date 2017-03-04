@@ -1027,6 +1027,7 @@ namespace CSWeb.Shared.UserControls
                     clientData.OrderAttributeValues.AddOrUpdateAttributeValue("sid",
                             new AttributeValue(CommonHelper.GetCookieString("sid", false).ToLower()));
                 }
+                clientData.OrderAttributeValues.AddOrUpdateAttributeValue("NameOnCard", new AttributeValue(txtNameOnCard.Text));
                 //Set Customer Information
                 Address billingAddress = new Address();
                 

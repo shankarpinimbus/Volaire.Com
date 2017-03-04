@@ -20,7 +20,20 @@ namespace CSWeb.Shared.UserControls
                 return Session["ClientOrderData"] as ClientCartContext;
             }
         }
-        
+
+
+        public ClientCartContext ClientOrderData
+        {
+            get
+            {
+                return (ClientCartContext)Session["ClientOrderData"];
+            }
+            set
+            {
+                Session["ClientOrderData"] = value;
+            }
+        }
+
         public ShoppingCartDisplayTotalMode TotalMode
         {
             get 
@@ -64,6 +77,40 @@ namespace CSWeb.Shared.UserControls
                 
                 BindControls();   
             }
+        }
+
+        protected void ddlQty_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+            DropDownList ddl = sender as DropDownList;
+            RepeaterItem ri = ddl.NamingContainer as RepeaterItem;
+            if (ri != null)
+            {
+                int skuid = -1;
+                int qty = 1;
+
+                TextBox tb = ri.FindControl("txtQuantity") as TextBox;
+                if (tb != null)
+                {
+                    tb.Text = ddl.SelectedValue;
+                    qty = Convert.ToInt32(ddl.SelectedValue);
+                }
+
+                HiddenField hidSkuId = ri.FindControl("hidSkuId") as HiddenField;
+                if (hidSkuId != null)
+                {
+                    skuid = int.Parse((hidSkuId.Value));
+                }
+
+                if (skuid > 0)
+                {
+                    ClientCartContext cartContext = ClientOrderData;
+                    cartContext.CartInfo.AddOrUpdate(skuid, qty, true, false, false);
+                    cartContext.CartInfo.Compute();
+                    ClientOrderData = cartContext;
+
+                }
+            }
+            BindControls();
         }
 
         public void BindControls()
@@ -148,36 +195,46 @@ namespace CSWeb.Shared.UserControls
                     imgProduct.Visible = false;
                     lblSkuCode.Text = cartItem.SkuCode.ToString();
                 }
-
+                DropDownList ddlQty = e.Item.FindControl("ddlQty") as DropDownList;
+                HiddenField hidSkuId = e.Item.FindControl("hidSkuId") as HiddenField;
+                hidSkuId.Value = cartItem.SkuId.ToString();
+                ddlQty.SelectedValue = cartItem.Quantity.ToString();
 
                 btnRemoveItem.CommandArgument = cartItem.SkuId.ToString();
 
                 txtQuantity.Attributes["onchange"] = Page.ClientScript.GetPostBackEventReference(refresh, "");
 
-                switch (QuantityMode)
-                {
-                    case ShoppingCartQuanityMode.Hidden:
-                        holderQuantity.Visible = false;
-                        break;
-                    case ShoppingCartQuanityMode.Editable:
-                        lblQuantity.Visible = false;
-                        break;
-                    case ShoppingCartQuanityMode.Readonly:
-                        txtQuantity.Visible = false;
-                        break;
-                    default:
-                        break;
-                }
+                //switch (QuantityMode)
+                //{
+                //    case ShoppingCartQuanityMode.Hidden:
+                //        holderQuantity.Visible = false;
+                //        break;
+                //    case ShoppingCartQuanityMode.Editable:
+                //        lblQuantity.Visible = false;
+                //        break;
+                //    case ShoppingCartQuanityMode.Readonly:
+                //        txtQuantity.Visible = false;
+                //        break;
+                //    default:
+                //        break;
+                //}
 
-                if (HideRemoveButton)
-                {
-                    holderRemove.Visible = false;
-                }
+                //if (HideRemoveButton)
+                //{
+                //    holderRemove.Visible = false;
+                //}
 
 
                 if (!cartItem.GetAttributeValue<bool>("isMainKit", false))
                 {
                     holderRemove.Visible = true;
+                    ddlQty.Visible = true;
+                    lblQuantity.Visible = false;
+                }
+                else
+                {
+                    ddlQty.Visible = false;
+                    lblQuantity.Visible = true;
                 }
             }
             else if (e.Item.ItemType == ListItemType.Header)
