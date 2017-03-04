@@ -61,7 +61,7 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
 
 <section class="container cart-wrap">
 <fieldset class="form">
-<asp:UpdatePanel ID="pnlShippingBillingCreditForm" runat="server">
+<asp:UpdatePanel ID="pnlShippingBillingCreditForm" UpdateMode = "Conditional" runat="server">
     <ContentTemplate>
         <div class="cart_content_B clearfix">
 
@@ -178,7 +178,7 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         
                         <label class="label-1">
                             Zip Code*</label>
-                        <asp:TextBox required="required" id="txtZipCode" runat="server" maxlength="5" clientidmode="Static" class="text-1" placeholder="*ZIP Code" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" />
+                        <asp:TextBox required="required" id="txtZipCode" runat="server" maxlength="10" clientidmode="Static" class="text-1" placeholder="*ZIP Code" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" />
                     </div>
 
                     <div class="clear"></div>

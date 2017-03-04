@@ -128,15 +128,11 @@ namespace CSWeb.Shared.UserControls
                 lblRushShipping.Text = String.Format("${0:0.00}", CartContext.CartInfo.RushShippingCost);
                 lblOrderTotal.Text = String.Format("${0:0.00}", CartContext.CartInfo.Total);
 
-                foreach (Sku sku in CartContext.CartInfo.CartItems)
-                {
-                    if (sku.SkuCode != "FREE")
-                    {
-                        sku.LoadAttributeValues();
-                        ltOfferDetail.Text = sku.GetAttributeValue<string>("OfferDetails", string.Empty); 
-                    }
+                
+                ltOfferDetail.Text = OrderHelper.GetOfferDatails(); 
+                
                     
-                }
+                
 
                 foreach (Sku sku in CartContext.CartInfo.CartItems)
                 {
@@ -185,6 +181,7 @@ namespace CSWeb.Shared.UserControls
                 lblSkuDescription.Text = cartItem.ShortDescription;
                 lblQuantity.Text = txtQuantity.Text = cartItem.Quantity.ToString();
                 lblSkuInitialPrice.Text = String.Format("${0:0.00}", cartItem.InitialPrice);
+                lblTotalPrice.Text = String.Format("${0:0.00}", (cartItem.InitialPrice * cartItem.Quantity));
                 if (cartItem.ImagePath != null && cartItem.ImagePath.Length > 0)
                 {
                     imgProduct.ImageUrl = cartItem.ImagePath;

@@ -1573,6 +1573,59 @@ namespace CSWeb
             }
             return sid;
         }
+
+        public static string GetOfferDatails()
+        {
+            string strDynamic = "";
+            ClientCartContext clientData = (ClientCartContext)HttpContext.Current.Session["ClientOrderData"];
+            if (clientData.OrderId > 0)
+            {
+                Order orderData = CSResolve.Resolve<IOrderService>().GetOrderDetails(clientData.OrderId);
+                foreach (Sku sku in orderData.SkuItems)
+                {
+                    sku.LoadAttributeValues();
+                    if (!sku.GetAttributeValue<string>("OfferDetails", string.Empty).Equals(string.Empty))
+                    {
+                        if (orderData.CustomerInfo.ShippingAddress.CountryId == 46 && orderData.CustomerInfo != null && orderData.CustomerInfo.ShippingAddress != null)
+                        {
+                            strDynamic = sku.GetAttributeValue<string>("OfferDetails", string.Empty).Replace("3.33", "6.33");
+                        }
+                        else
+                        {
+                            strDynamic = sku.GetAttributeValue<string>("OfferDetails", string.Empty);
+                        }
+
+                    }
+                }
+
+
+            }
+            else
+            {
+                if (clientData.CartInfo != null && clientData.CartInfo.CartItems.Count > 0)
+                {
+                    foreach (Sku cartItem in clientData.CartInfo.CartItems)
+                    {
+                        cartItem.LoadAttributeValues();
+                        if (!cartItem.GetAttributeValue<string>("OfferDetails", string.Empty).Equals(string.Empty))
+                        {
+                            if (clientData.CustomerInfo != null && clientData.CustomerInfo.ShippingAddress != null && clientData.CustomerInfo.ShippingAddress.CountryId == 46)
+                            {
+                                strDynamic = cartItem.GetAttributeValue<string>("OfferDetails", string.Empty).Replace("3.33", "6.33");
+                            }
+                            else
+                            {
+                                strDynamic = cartItem.GetAttributeValue<string>("OfferDetails", string.Empty);
+                            }
+
+                        }
+                    }
+                }
+
+            }
+
+            return strDynamic;
+        }
     }
 }
 

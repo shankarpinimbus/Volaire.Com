@@ -154,6 +154,7 @@ namespace CSWeb.Shared.UserControls
                 clientData.CartInfo = cartObject;
                 Session["ClientOrderData"] = clientData;
                 ShoppingCartControl.BindControls();
+                BindControls();
             }
             
         }
@@ -169,17 +170,8 @@ namespace CSWeb.Shared.UserControls
         public void BindControls()
         {
             clientData = (ClientCartContext)Session["ClientOrderData"];
-            if (clientData.CartInfo.CartItems.Count > 0)
-            {
-                
-                foreach (Sku sku in clientData.CartInfo.CartItems)
-                {
-                    if (!string.IsNullOrEmpty(sku.GetAttributeValue<string>("OfferDetails", String.Empty)))
-                    {
-                        ltOfferDetails.Text = sku.GetAttributeValue<string>("OfferDetails", String.Empty);
-                    }
-                }
-            }
+            ltOfferDetails.Text = OrderHelper.GetOfferDatails();
+
         }
 
 
@@ -487,6 +479,7 @@ namespace CSWeb.Shared.UserControls
             {
                 //refreshShoppingCart();
                 ShoppingCartControl.BindControls();
+                BindControls();
             }
         }
 
@@ -655,6 +648,7 @@ namespace CSWeb.Shared.UserControls
             clientData.CartInfo.Compute();
             ClientOrderData = clientData;
             ShoppingCartControl.BindControls();
+            BindControls();
 
         }
 
@@ -1160,6 +1154,8 @@ namespace CSWeb.Shared.UserControls
             {
                 txtZipCode.Focus();
             }
+            RegionChanged();
+            BindControls();
         }
 
         #endregion General Methods
