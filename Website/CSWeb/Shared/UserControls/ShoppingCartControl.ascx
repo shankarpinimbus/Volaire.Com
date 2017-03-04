@@ -137,5 +137,5 @@
             <div class="cart-hr"></div>
     </asp:PlaceHolder>
 </asp:Panel>
-<asp:Literal ID="ltOfferDetail" runat="server"></asp:Literal>
+<asp:Literal ID="ltOfferDetail" runat="server" Visible="false"></asp:Literal>
 <asp:Literal ID="ltPhoneNum" runat="server" Visible="False"></asp:Literal>
