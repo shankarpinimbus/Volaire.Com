@@ -1563,9 +1563,9 @@ namespace CSWeb
 
         public static string getMobileSid(string sid)
         {
-            if (sid.Equals("vweda1"))
+            if (sid.Equals("vwebda1"))
             {
-                return "vewbma1";
+                return "vwebma1";
             }
             else if (sid.Substring(sid.Length - 1, 1).Equals("d"))
             {

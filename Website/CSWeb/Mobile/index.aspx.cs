@@ -81,8 +81,27 @@ namespace CSWeb.Mobile.Store
                     CartContext.RequestParam = CommonHelper.GetQueryString(Request.RawUrl);
                 }
                 OrderHelper.SetDynamicLandingPageVersion(OrderHelper.GetVersionName(), ClientOrderData);
-
                 var qs = HttpUtility.ParseQueryString(Request.QueryString.ToString());
+                if (Request["sid"] != null)
+                {
+                    string sid = Request["sid"].ToLower();
+                    string newSid = OrderHelper.getMobileSid(sid);
+                    if (!sid.Equals(newSid))
+                    {
+                        CommonHelper.SetCookie("sid", newSid, new TimeSpan(1, 24, 1, 1));
+                        qs.Remove("sid");
+                        qs.Set("sid", newSid);
+                        if (Request.RawUrl.Contains("?"))
+                            Response.Redirect(Request.RawUrl.Substring(0, Request.RawUrl.IndexOf('?')) + "?" + qs);
+                        else
+                        {
+                            Response.Redirect(Request.RawUrl + "?" + qs);
+                        }
+                    }
+
+                }
+
+                
                 if (Request["sid"] == null || Request["sid"].Equals(""))
                 {
                     string sid = OrderHelper.GetDynamicVersionData("sid");
@@ -130,24 +149,7 @@ namespace CSWeb.Mobile.Store
                     }
 
                 }
-                else if (Request["sid"] != null)
-                {
-                    string sid = Request["sid"].ToLower();
-                    string newSid = OrderHelper.getMobileSid(sid);
-                    if (!sid.Equals(newSid))
-                    {
-                        CommonHelper.SetCookie("sid", newSid, new TimeSpan(1, 24, 1, 1));
-                        qs.Remove("sid");
-                        qs.Set("sid", newSid);
-                        if (Request.RawUrl.Contains("?"))
-                            Response.Redirect(Request.RawUrl.Substring(0, Request.RawUrl.IndexOf('?')) + "?" + qs);
-                        else
-                        {
-                            Response.Redirect(Request.RawUrl + "?" + qs);
-                        }
-                    }
-
-                }
+                
 
             }
 
