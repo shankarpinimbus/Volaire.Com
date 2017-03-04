@@ -25,10 +25,10 @@ namespace CSWeb.Desktop
             base.Page_Load(sender, e);
             if (!IsPostBack)
             {
-                if (CSBasePage.GetClientDeviceType() == CSBusiness.Enum.DeviceType.Mobile)
-                {
-                    OrderHelper.MobileRedirect();
-                }
+                //if (CSBasePage.GetClientDeviceType() == CSBusiness.Enum.DeviceType.Mobile)
+                //{
+                //    OrderHelper.MobileRedirect();
+                //}
 
                 OrderHelper.SetDynamicLandingPageVersion(OrderHelper.GetVersionName(), ClientOrderData);
                 var qs = HttpUtility.ParseQueryString(Request.QueryString.ToString());

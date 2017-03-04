@@ -96,7 +96,8 @@
             FREE
         </div>
     </div>
-</div><asp:Literal runat="server" id="ltImagePath" Visible="False"></asp:Literal>
+</div>
+<asp:Literal runat="server" id="ltImagePath" Visible="False"></asp:Literal>
 <asp:Literal runat="server" id="ltImageDescription" Visible="False"></asp:Literal>
 
 <asp:Panel ID="pnlTotal" runat="server">
