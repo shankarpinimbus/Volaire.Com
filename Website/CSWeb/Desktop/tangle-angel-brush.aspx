@@ -6,7 +6,7 @@
 <head runat="server">
 <meta charset="utf-8">
 <title>Richard Ward Tangle Angel Brush</title>
-<meta name="description" content="Richard Ward's Tangle Angel detangling brush. Perfect for detangling wet or dry hair and its perfect for all hair types including  children’s hair" />
+<meta name="description" content="Richard Ward's Tangle Angel detangling brush. Perfect for detangling wet or dry hair and it's perfect for all hair types including  children’s hair" />
 <meta name="keywords" content="" />
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
 </head>

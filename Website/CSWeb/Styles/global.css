@@ -1486,7 +1486,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#061217', end
 
 .hero-reviews h1 .line2 {
     display: block;
-    margin-left: 13%;
+    margin-left: 25%;
 }
 
 .hero-reviews p.note {
@@ -1691,7 +1691,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4b6a5', end
 
 .contact-text {
     float: left;
-    width: 80%;
+    width: 82%;
     font-size: 1.125rem;
     line-height: 1.28;
     font-weight: 300;

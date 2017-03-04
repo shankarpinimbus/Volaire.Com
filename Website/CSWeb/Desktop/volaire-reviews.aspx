@@ -24,7 +24,7 @@
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-volaire-reviews.jpg" alt="Big Results, no teasing." class="block" />
         <h1>
             Big Results,
-            <span class="line2"><span class="webfont1 ital uncaps lightblue">no teasing!</span></span>
+            <span class="line2"><span class="webfont1 ital uncaps lightblue">no teasing.</span></span>
         </h1>
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
     </div>
