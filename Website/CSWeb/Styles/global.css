@@ -359,10 +359,6 @@ ul.nav li a {
 }
 ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 
-.nav-top-guarantee {display: inline-block;}
-#home .nav-top-guarantee {display: none;}
-.nav-top-products {display: none;}
-#home .nav-top-products {display: inline-block;}
 
 #tech .nav-tech, 
 #products .nav-products, 
@@ -1375,6 +1371,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#061217', end
 
 .airweight-main {
     margin: 2rem 0;
+}
+.airweight-main p.note {
+    margin-left: 36%;
 }
 
 .airweight-quotes {

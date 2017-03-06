@@ -4,7 +4,6 @@
     	<div class="container clearfix">
         	<div class="topbanner-links">
             	<a href="frequently-asked-questions" class="nav-top-faqs">&gt; FAQS</a>
-            	<a href="hair-volumizing-products" class="nav-top-products">&gt; Shop Products</a>
             	<a href="mega-promise-money-back-guarantee" class="nav-top-guarantee">&gt; Guarantee</a>
             	<a href="hair-styles-and-tips" class="visiblet nav-top-tips">&gt; Hair Styles & Tips</a>
             </div>

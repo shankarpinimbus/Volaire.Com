@@ -65,7 +65,7 @@
 
 <section class="home3">
     <div class="container">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/home-we-know-volume-richard-ward.jpg" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/home-everday-volume-richard-ward.jpg" class="block" />
         <a href="tv-introductory-offer" class="maplink home3link">Save 40% Get Offer</a>
     </div>
 </section>

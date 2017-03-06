@@ -30,6 +30,7 @@
 <section class="airweight-main">
     <div class="container">
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-rises-above-the-rest.jpg" alt="VOLAIRE Rises Above the Rest" class="block" />
+        <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
     </div>
 </section>
 
