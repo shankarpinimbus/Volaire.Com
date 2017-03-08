@@ -19,7 +19,6 @@
                         <li><a href="air-weight-technology">AirWeight Technology<sup>™</sup></a></li>
                         <li><a href="volaire-reviews">VOLAIRE Reviews</a></li>
                         <li><a href="volaire-befores-and-afters">VOLAIRE Before and Afters</a></li>
-                        <%--<li><a href="">Care and Usage</a></li>--%>
                     </ul>
                     <ul class="footer-list-2">
                         <li><a href="volaire-customer-care">Customer Care</a></li>
@@ -27,6 +26,7 @@
                         <li><a href="mega-promise-money-back-guarantee">Guarantee</a></li>
                     </ul>
                     <ul class="footer-list-3">
+                        <li><a href="care-and-usage">Care and Usage</a></li>
                         <li><a href="terms-and-conditions">Terms and Conditions</a></li>
                         <li><a href="privacy-policy">Privacy Policy</a></li>
                     </ul>

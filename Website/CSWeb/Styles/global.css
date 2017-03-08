@@ -855,6 +855,7 @@ p.note {
     font-size: 1.125rem;
     line-height: 1.28;
     margin-left: 8%;
+    padding-right: 5.5%;
 }
 
 .products-main .container {
@@ -1414,6 +1415,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#061217', end
     z-index: 10;
 }
 
+.before-afters .container {max-width: 1220px;}
+
 .before-afters .row {
     margin: 0 2.5%;
 }
@@ -1461,6 +1464,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#061217', end
 }
 .quote-lindsay-img {
     width: 99%;
+    max-width: 738px;
 }
 
 .quote-cyndi .watch_demo {
@@ -1470,6 +1474,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#061217', end
     bottom: 12%;
 }
 
+.before-after-bottom  .watch_demo {
+    position: absolute;
+    width: 32%;
+    left: 42.8%;
+    bottom: 4%;
+}
 
 .hero-reviews {
     background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/bg_reviews.jpg) no-repeat center 0;
@@ -1720,6 +1730,91 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4b6a5', end
     width: 24.3%;
     text-align: right;
 }
+
+.hero-care-usage {
+    color: #8c7359;
+    margin-bottom: 3rem;
+    background: rgb(147,221,225);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzkzZGRlMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEyJSIgc3RvcC1jb2xvcj0iIzkzZGRlMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjM2VlZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(147,221,225,1) 0%, rgba(147,221,225,1) 12%, rgba(255,255,255,1) 70%, rgba(195,238,238,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(147,221,225,1) 0%,rgba(147,221,225,1) 12%,rgba(255,255,255,1) 70%,rgba(195,238,238,1) 100%);
+    background: linear-gradient(to bottom,  rgba(147,221,225,1) 0%,rgba(147,221,225,1) 12%,rgba(255,255,255,1) 70%,rgba(195,238,238,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93dde1', endColorstr='#c3eeee',GradientType=0 );
+
+}
+.hero-care-usage .container {
+    max-width: 1236px;
+}
+
+.hero-care-usage h1 {
+    position: absolute;
+    top: 5.5%;
+    left: 26.2%;
+    color: #8c7359;
+}
+
+.care_info {
+    position: absolute;
+}
+
+.care_info h2 {
+    font-family: Judson, 'Times New Roman', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    padding-bottom: .2rem;
+    line-height: 1.1;
+}
+.care_info p {
+    line-height: 1.25;
+}
+.care_info p em {
+    font-family: Judson, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
+.care-1 {
+    top: 17.6%;
+    left: 6.5%;
+    width: 30%;
+}
+.care-2 {
+    top: 38.6%;
+    left: 6.5%;
+    width: 19%;
+}
+.care-3 {
+    top: 73.5%;
+    left: 6.5%;
+    width: 33%;
+}
+.care-4 {
+    top: 42.6%;
+    right: 6%;
+    width: 18%;
+    text-align: right;
+}
+.care-tips-link {
+    position: absolute;
+    bottom: 7.4%;
+    right: 6%;
+    width: 50%;
+    text-align: right;
+}
+.care-tips-link a {
+    color: #8c7359;
+    font-size: 1.875rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.1;
+}
+.care-tips-link a:hover {
+    color: #ee5c24;
+}
+
+
 
 
 .legal .container {
@@ -2756,6 +2851,29 @@ h2.ccdecline_hdr {
 .tips-top p.p1 {font-size: .93rem;}
 
 
+.care_info h2 {font-size: 1.15rem; line-height: 1;}
+.care_info p {font-size: .93rem;}
+.care_info p em {font-size: 1.15rem;}
+
+.care-1 {left: 3%;}
+.care-2 {
+    top: 42%;
+    left: 3%;
+    width: 25%;
+}
+.care-3 {
+    top: 74%;
+    left: 3%;
+}
+.care-4 {
+    top: 42.6%;
+    right: 4%;
+    width: 20%;
+    text-align: right;
+}
+.care-tips-link {bottom: 6%;}
+.care-tips-link a {font-size: 1.5rem;}
+
 }
 
 
@@ -2945,6 +3063,29 @@ ul.nav li.tablet-last {margin-right: -6px;}
     padding: 2rem 2.5%;
 }
 
+
+.care_info h2 {font-size: 1.15rem; line-height: 1;}
+.care_info p {font-size: .93rem;}
+.care_info p em {font-size: 1.15rem;}
+
+.care-1 {top: 16.5%; left: 2%;}
+.care-2 {
+    top: 42%;
+    left: 2%;
+    width: 25%;
+}
+.care-3 {
+    top: 76%;
+    left: 2%;
+}
+.care-4 {
+    top: 42.6%;
+    right: 4%;
+    width: 20%;
+    text-align: right;
+}
+.care-tips-link {bottom: 6%; right: 4%;}
+.care-tips-link a {font-size: 1.5rem;}
 
 
 

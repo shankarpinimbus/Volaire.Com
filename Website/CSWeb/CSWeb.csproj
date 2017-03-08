@@ -326,6 +326,7 @@
     <Content Include="Admin\VersionReport.aspx" />
     <Content Include="Admin\VersionReport1.aspx" />
     <Content Include="Desktop\AddProduct.aspx" />
+    <Content Include="Desktop\care-and-usage.aspx" />
     <Content Include="Desktop\terms-and-conditions.aspx" />
     <Content Include="Desktop\privacy-policy.aspx" />
     <Content Include="Desktop\volaire-customer-care.aspx" />

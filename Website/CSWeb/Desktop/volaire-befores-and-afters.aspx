@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="col span8 quote-dawn">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-dawn.jpg" alt="Before and After" class="block ba-img" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-dawn.png" alt="Before and After" class="block ba-img" />
                 <a href="#video" class="watch_demo">Watch Her Story</a>
                 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
             </div>
@@ -61,7 +61,7 @@
         <div class="basic-note"><%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%></div>
         <div class="row">
             <div class="col span8 quote-lindsay">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-lindsay.jpg" alt="Before and After" class="block ba-img quote-lindsay-img" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-lindsay.png" alt="Before and After" class="block ba-img quote-lindsay-img" />
                 <a href="#video" class="watch_demo">Watch Her Story</a>
                 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
             </div>
@@ -91,7 +91,7 @@
         </div>
         <div class="row">
             <div class="col span8 quote-cyndi">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-cyndi.jpg" alt="Before and After" class="block ba-img quote-lindsay-img" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-cyndi.png" alt="Before and After" class="block ba-img quote-lindsay-img" />
                 <a href="#video" class="watch_demo">Watch Her Story</a>
             </div>
             <div class="col span4">
@@ -100,8 +100,9 @@
         </div>
         <div class="basic-note"><%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%></div>
     </div>
-    <div class="container">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-bottom.jpg" alt="Still Think We're Teasing?" class="block" style="margin-bottom: 1.5rem;" />
+    <div class="container before-after-bottom">
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-bottom.png" alt="Still Think We're Teasing?" class="block" style="margin: 0 auto 1.5rem;" />
+        <a href="#video" class="watch_demo">Watch Video</a>
     </div>
 </section>
 
