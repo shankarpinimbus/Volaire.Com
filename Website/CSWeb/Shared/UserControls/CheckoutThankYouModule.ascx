@@ -9,7 +9,7 @@
 
     <asp:Literal ID="LiteralOrderNumber" runat="server" Visible="false"></asp:Literal>
                 
-    <p>Thank you for your order. We’re so excited to share the Volaire™ difference with you, and can’t wait for you to experience the soft, touchable, full-bodied volume you deserve. Please check your order below, and contact us if you have any questions at 1-800-201-6539, 6am–6pm PST, Monday–Friday and 7am–1pm PST Saturday.</p>
+    <p class="intro">Thank you for your order. We’re so excited to share the VOLAIRE™ difference with you, and can’t wait for you to experience the soft, touchable, full-bodied volume you deserve. Please check your order below, and contact us if you have any questions at <span class="iblock">1-800-201-6539,</span> 6am–6pm PST, Monday–Friday and 7am–1pm PST Saturday.</p>
 
 
 

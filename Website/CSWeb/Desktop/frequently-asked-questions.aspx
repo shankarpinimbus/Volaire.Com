@@ -31,7 +31,7 @@
         <dd>VOLAIRE<sup>™</sup> is the revolutionary Volumizing Hair System that uses AirWeight Technology<sup>™</sup> to deliver full-proof results for everyday, effortless, lasting volume. </dd>
 
         <dt>How is VOLAIRE different than other volumizing products?</dt>
-        <dd>VOLAIRE doesn’t use heavy silicone to “thicken” each individual strand of hair that ultimately weigh it down. The secret is AirWeight Technology. This triple action complex mimics the look and feel of thicker hair by adding positively-charged oxygen spheres that naturally create weightless space between each hair strand, giving them instant lift and weightless volume. </dd>
+        <dd>The secret to VOLAIRE is AirWeight Technology. This triple action complex mimics the look and feel of thicker hair by adding positively-charged oxygen spheres that naturally create weightless space between each hair strand, giving instant lift and weightless volume. </dd>
 
         <dt>How do I use VOLAIRE?</dt>
         <dd>Just shampoo and condition your hair using the Weightless Volumizing Shampoo and Weightless Fortifying Conditioner. It's just that easy to get the instant and lasting volume you want. For extra texture, body and lift, use the Uplift Volumizing Mist and Air Magic Texturizing Spray.</dd>
@@ -45,7 +45,7 @@
                 <li><strong class="med">Weightless Volumizing Shampoo – </strong> Dispense a large dollop of shampoo into palm and activate lather by rubbing hands together. 	Massage lather into wet hair, from roots to ends. Rinse thoroughly. Repeat as needed.</li>		
                 <li><strong class="med">Weightless Fortifying Conditioner – </strong> After shampooing, apply a quarter size amount to wet hair, starting from the bottom half of the hair 		and working down to the tips, distributing the product evenly. Rinse thoroughly with cool water.</li>
                 <li><strong class="med">Uplift Volumizing Mist – </strong> After showering, on combed, towel-dried hair, liberally spray mist directly onto roots in sections and work 			through the ends. Follow with normal hair drying and styling routine.	 </li>
-                <li><strong class="med">Air Magic Texturizing Mist – </strong> After drying hair into desired style, lift hair in sections and spray liberally underneath from root to tip. Use 			fingertips to add volume and texture. Spray all over hair to finish your look.</li>
+                <li><strong class="med">Air Magic Texturizing Spray – </strong> After drying hair into desired style, lift hair in sections and spray liberally underneath from root to tip. Use 			fingertips to add volume and texture. Spray all over hair to finish your look.</li>
             </ul>
         </dd>
 
@@ -57,24 +57,28 @@
         <dd>VOLAIRE is suitable for all hair types, whether long, short, curly, straight, flat, fine, thinning, unruly, color treated, or chemically-treated.</dd>
 
         <dt>How quickly will I see results with VOLAIRE?</dt>
-        <dd>You will experience instant volume and texture with Volaire. Your full-bodied style will last longer while hair remains smooth and touchable. </dd>
+        <dd>You will experience instant volume and texture with VOLAIRE. Your full-bodied style will last longer while hair remains smooth and touchable. </dd>
 
         <dt>Can I use VOLAIRE if I color my hair?</dt>
-        <dd>Absolutely! Volaire doesn't contain sulfates, parabens, or phthalates so it doesn’t strip away color.</dd>
+        <dd>Absolutely! VOLAIRE doesn't contain sulfates, parabens, or phthalates so it doesn’t strip away color.</dd>
 
         <dt>Can I use styling tools with VOLAIRE?</dt>
         <dd>While you may find less need to use your styling tools after using Volaire, you can continue to use your styling tools as needed. </dd>
 
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/faq-quote-mell.jpg" alt="'It feels like there's air in my hair. It is unbelievable. It's great. I LOVE IT.' - Mell, Age 52" class="fright" style="margin: 2rem -2% 0 2%;" />
 
         <dt>PAYMENT OPTIONS</dt>
-        <dd>We accept debit and credit cards including Visa, MasterCard, American Express and Discover. We do not accept cash, personal checks, money orders, or cash-on-delivery.</dd>
+        <dd>
+            <div class="faq-quote">
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/faq-quote-mell.jpg" alt="'It feels like there's air in my hair. It is unbelievable. It's great. I LOVE IT.' - Mell, Age 52" class="block" />
+                <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
+            </div>
+            We accept debit and credit cards including Visa, MasterCard, American Express, and Discover. We do not accept cash, personal checks, money orders, or cash-on-delivery.</dd>
 
         <dt>SALES TAX</dt>
         <dd>Sales tax will be applied to orders shipping to California, Georgia, Ohio, Utah, and Virginia.</dd>
 
         <dt>ORDER PROCESSING AND SHIPPING</dt>
-        <dd>Orders are typically processed within 1-2 business days and delivered within 5-7 business days, Monday through Saturday, excluding holidays. </dd>
+        <dd>Orders are typically processed within 1-2 business days, and delivered within 5-7 days, Monday through Saturday, excluding holidays. </dd>
 
         <dt>ORDER TRACKING</dt>
         <dd>When your order ships from our fulfillment center, you will receive a shipment confirmation email that includes a tracking number from a major US carrier.</dd>

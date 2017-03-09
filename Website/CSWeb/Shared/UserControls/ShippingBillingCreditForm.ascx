@@ -358,7 +358,7 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                                 ControlToValidate="ddlCCType"></asp:RequiredFieldValidator>
 
                         </div>
-                        <label class="label-1 bold">Credit Card Type</label>
+                        <label class="label-1 bold">Credit Card Type*</label>
                         <asp:Label ID="lblCCType" runat="server" Visible="false"></asp:Label>
                         <select id="ddlCCType" required="required" name="ddlCCType" runat="server" class="text-1"></select>
 

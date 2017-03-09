@@ -31,7 +31,7 @@
         <div class="container">
             <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-tangle-angel-brush.png" alt="Volaire Mega Volumizing System" class="block" />
             <h1>
-                Detangle <span class="part2"><span class="webfont1 ital uncaps normal">those strands.</span></span>
+                Detangle <span class="part2"><span class="webfont1 ital uncaps normal lightblue">those strands.</span></span>
                 <span class="line2">Effortlessly detangle with</span>
                 <span class="line3">this hair-styling must-have!</span>
             </h1>

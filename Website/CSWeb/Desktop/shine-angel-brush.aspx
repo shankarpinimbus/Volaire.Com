@@ -42,9 +42,9 @@
 
 <section class="container offer-content offer-shine-angel-brush clearfix" style="position: relative;">
     <div class="offer-left">
-        <p>Dubbed by the UK press as <strong><em>HRH Kate Middleton’s Mane Man</em>, Richard Ward</strong> shares<br />
-            his tips and tricks for achieving his <strong class="orange">signature “Chelsea Blow Dry”</strong><br />
-            with that truly royal finish every girl wants.</p>
+        <p>Dubbed by the UK press as <strong><em>HRH Kate Middleton’s "Mane Man"</em>, <span class="caps">Richard Ward</span></strong><br />
+            shares his tips and tricks for achieving his <strong class="orange">signature Chelsea Blow Dry</strong><br />
+            for that truly royal finish every girl wants.</p>
         <p><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/shine-angel-brush-details.jpg" alt="Shine Angel Brush" class="block" /></p>
     </div>
     <div class="offer-right">

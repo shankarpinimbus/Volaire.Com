@@ -20,7 +20,8 @@
 <section class="hero hero-guarantee gradient">
     <div class="hero-guarantee1">
         <div class="container">
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-guarantee.jpg" alt="Our Mega Promise" class="block" />
+            <div class="visibled"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-guarantee-text.png" alt="Our Mega Promise" class="block" /></div>
+            <div class="visiblet"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-guarantee-t.jpg" alt="Our Mega Promise" class="block" /></div>
         </div>
     </div>
 </section> 

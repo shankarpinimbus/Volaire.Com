@@ -31,7 +31,7 @@
     <div class="container">
         <div class="tips-top">
             <h2>Get these <span class="med caps lightblue2">Everyday ‘do</span>s!</h2>
-            <p class="intro">Create your own fave salon styles with ease using <strong class="med caps">Volaire’s Hair Volumizing system</strong>. Choose a look below to either see our stylists in action or get step-by-step techniques to create on your own. </p>
+            <p class="intro">Create your own fave salon styles with ease using <strong class="med caps">Volaire’s Hair Volumizing system</strong>. Choose a look below to see our stylists in action or get step-by-step techniques to create on your own. </p>
             <div class="row">
                 <div class="tips-left">
                     <p class="p1">Richard Ward’s Signature Chelsea blow dry</p>
@@ -60,7 +60,7 @@
         
         <div class="row tip-bottom">
             <div class="col span8 tips-quote-luke">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-quote-luke-o-connor.jpg" alt="Luke O'Connor" class="block" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-quote-luke-o-connor.png" alt="Luke O'Connor" class="block" />
             </div>
             <div class="col span4">
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-selfies-wanted.jpg" alt="Before and After Selfies Wanted!" class="block tips-before-after-selfies-wanted" />

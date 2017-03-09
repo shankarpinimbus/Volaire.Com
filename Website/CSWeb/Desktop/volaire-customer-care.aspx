@@ -44,7 +44,7 @@
                     </div>
                     <div class="contact-text">
                         <h3>Email Us:</h3>
-                        <p>Click <a href="mailto:volaire@volaire.com" class="black scored">here</a> to reach us by email,and we promise to get back to you within 1–2 business days</p>
+                        <p>Click <a href="mailto:customercare@volaire.com" class="black scored">here</a> to reach us by email, and we promise to get back to you within 1–2 business days</p>
                     </div>
                 </div>
                 

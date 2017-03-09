@@ -1017,6 +1017,10 @@ p.note {
     line-height: 1.44;
     padding: 0 20% 1.3rem 0;
     font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+}
+.offer-left p strong {
+    text-shadow: none;
 }
 .offer-left h3  {
     font-size: 1.125rem;
@@ -1040,6 +1044,11 @@ p.note {
     list-style: none;
     margin-left: 4%;
     font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+}
+.offer-links ul strong, 
+.offer-left ul strong {
+    text-shadow: none;
 }
 .offer-links li, 
 .offer-left li {
@@ -1150,6 +1159,10 @@ p.note {
 }
 #kit_90day .offer-left p {
     padding: 0 2% 2rem 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+}
+#kit_90day .offer-left p strong {
+    text-shadow: none;
 }
 
 #kit_90day .offer-cta {
@@ -1627,7 +1640,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4b6a5', end
 }
 
 .hero-guarantee1 {
-    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/bg_guarantee.jpg) no-repeat center top;
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/bg-guarantee2.jpg) no-repeat center top;
 }
 
 .guarantee {
@@ -1712,6 +1725,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4b6a5', end
 }
 .contact-text p {
     padding-bottom: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
 }
 
 .customer-care-main {
@@ -1944,6 +1958,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4b6a5', end
     position: relative;
     top: 6px;
 }
+
+.faq-quote {
+    float: right;
+    margin: 0 -2% .5rem 2%;
+    width: 54%;
+}
+.faq-quote p.note {
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+}
+
+
 .contact {
     color: #676767;
 }
@@ -2388,7 +2415,7 @@ p.form_note {
 }
 
 .receipt .container {
-    padding: 5rem 5%;
+    padding: 5rem 3.9%;
 }
 
 
@@ -2414,6 +2441,17 @@ p.form_note {
     padding-bottom: .6rem;
 }
 
+.receipt_content p.intro {
+    font-size: 1.125rem;
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+    line-height: 1.45;
+    padding-right: 3%;
+    padding-bottom: .3rem;
+}
+.receipt_content p.intro strong {
+    text-shadow: none;
+}
 
 h2.receipt_hdr {
     background: #efe6dd;
@@ -2667,7 +2705,9 @@ h2.ccdecline_hdr {
     height: 10%;
     z-index: 9999;
 }
-#pop-air-magic .closex {top: 17%;}
+
+#pop-uplift-volumizing-mist .closex {top: 16%;}
+#pop-air-magic .closex {top: 16.5%;}
 
 .pop-content {
     position: absolute;
@@ -2678,6 +2718,9 @@ h2.ccdecline_hdr {
     line-height: 1.35;
 }
 
+#pop-uplift-volumizing-mist .pop-content {top: 23%;}
+#pop-air-magic .pop-content {top: 23%;}
+
 .pop-content h1 {
     font-size: 1.5rem;
     font-weight: 300;
@@ -2686,10 +2729,10 @@ h2.ccdecline_hdr {
     text-transform: uppercase;
 }
 .pop-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.065rem;
     font-weight: 400;
     line-height: 1;
-    padding-bottom: .5rem;
+    padding-bottom: .8rem;
 }
 .pop-content h2 .part2 {
     font-family: Judson, 'Times New Roman', serif;
@@ -2718,6 +2761,7 @@ h2.ccdecline_hdr {
     font-size: 1.125rem;
     font-family: Judson, 'Times New Roman', serif;
     font-style: italic;
+    line-height: initial;
 }
 
 .pop-content p.pop-ingredients {
@@ -2789,6 +2833,9 @@ h2.ccdecline_hdr {
     line-height: 19px;
 }
 
+
+/* YOTPO - get rid of 'x' on thank you for posting a review message */
+.yotpo-icon.yotpo-icon-cross {display: none !important;}
 
 @media all and (min-width: 1800px) {
 
