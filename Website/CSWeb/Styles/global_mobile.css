@@ -81,6 +81,7 @@ img {border: none; max-width: 100%;}
 .iblock {display: inline-block !important;}
 .scored {text-decoration: underline !important;}
 .caps {text-transform: uppercase !important;}
+.uncaps {text-transform: none !important;}
 .pad0 {padding-bottom: 0 !important;}
 .pad6 {padding-bottom: 6px !important;}
 .pad12 {padding-bottom: 12px !important;}
@@ -356,6 +357,7 @@ p {padding-bottom: 1rem;}
     font-weight: 700;
     font-size: 16px;
     font-size: 5vw;
+    line-height: 1.2;
     color: #ff5a34;
     text-transform: uppercase;
     text-decoration: none;
@@ -505,7 +507,7 @@ p.note {
     left: 2%;
     font-size: 10px;
     font-size: 3.2vw;
-    padding: 0 0 2px 5%;
+    padding: 1px 0 1px 5%;
 }
 .products-angie p.note {
     text-align: right;
@@ -785,7 +787,7 @@ p.note {
     left: 4%;
     font-size: 10px;
     font-size: 3.2vw;
-    padding: 0 0 2px 5%;
+    padding: 1px 0 1px 5%;
 }
 .airweight-kristi p.note {
     position: absolute;
@@ -795,6 +797,79 @@ p.note {
     font-size: 3.2vw;
     padding-bottom: 0;
 }
+
+.before-afters-hdr {
+    padding: 1.75rem 0 .5rem;
+}
+.before-afters-hdr h1 {
+    padding: 0;
+    text-align: center;
+    color: #000;
+    font-size: 23px;
+    font-size: 7.2vw;
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+}
+
+.quote-dawn .watch_demo {
+    position: absolute;
+    width: 39%;
+    left: 60.7%;
+    top: 78.5%;
+    font-size: 10px;
+    font-size: 3.2vw;
+    padding: 1px 0 1px 5%;
+}
+.ba-attr {
+    font-weight: 300;
+    text-align: right;
+    padding: .3rem .6rem .6rem .3rem;
+}
+
+
+.before-afters {
+    padding: 0 2.5%;
+}
+.quote-lindsay .watch_demo {
+    position: absolute;
+    width: 39%;
+    left: 8.5%;
+    bottom: 3.5%;
+    font-size: 10px;
+    font-size: 3.2vw;
+    padding: 1px 0 1px 5%;
+}
+.quote-cyndi .watch_demo {
+    position: absolute;
+    width: 39%;
+    left: 58.9%;
+    bottom: 2%;
+    font-size: 10px;
+    font-size: 3.2vw;
+    padding: 1px 0 1px 5%;
+}
+.quote-cyndi p.note {
+    position: absolute;
+    width: 50%;
+    left: 2.8%;
+    bottom: 2.7%;
+    font-size: 11px;
+    font-size: 3.4vw;
+    padding-bottom: 0;
+}
+
+.before-after-twins .watch_demo {
+    position: absolute;
+    width: 39%;
+    left: 36.25%;
+    bottom: 25%;
+    font-size: 10px;
+    font-size: 3.2vw;
+    padding: 1px 0 1px 5%;
+}
+
+
 
 
 /* FAQ COLLAPSE/EXPAND STYLES */

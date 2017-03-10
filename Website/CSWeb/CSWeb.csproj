@@ -362,6 +362,7 @@
     <Content Include="Desktop\scripts-bottom.html" />
     <Content Include="Desktop\scripts-top.html" />
     <Content Include="Desktop\videoplayers.aspx" />
+    <Content Include="Mobile\volaire-befores-and-afters.aspx" />
     <Content Include="Mobile\bottomcta.html" />
     <Content Include="Mobile\benefits-txt.html" />
     <Content Include="Mobile\frequently-asked-questions.aspx" />
