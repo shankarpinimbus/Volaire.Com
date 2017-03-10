@@ -60,7 +60,7 @@
         <dd>You will experience instant volume and texture with VOLAIRE. Your full-bodied style will last longer while hair remains smooth and touchable. </dd>
 
         <dt>Can I use VOLAIRE if I color my hair?</dt>
-        <dd>Absolutely! VOLAIRE doesn't contain sulfates, parabens, or phthalates so it doesn’t strip away color.</dd>
+        <dd>Absolutely! VOLAIRE doesn't contain sulfates, parabens, or phthalates.</dd>
 
         <dt>Can I use styling tools with VOLAIRE?</dt>
         <dd>While you may find less need to use your styling tools after using Volaire, you can continue to use your styling tools as needed. </dd>

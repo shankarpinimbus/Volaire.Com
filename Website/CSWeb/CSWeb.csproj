@@ -362,7 +362,10 @@
     <Content Include="Desktop\scripts-bottom.html" />
     <Content Include="Desktop\scripts-top.html" />
     <Content Include="Desktop\videoplayers.aspx" />
+    <Content Include="Mobile\bottomcta.html" />
+    <Content Include="Mobile\benefits-txt.html" />
     <Content Include="Mobile\mega-volume-collection.aspx" />
+    <Content Include="Mobile\note-txt.html" />
     <Content Include="Mobile\scripts-top.html" />
     <Content Include="Mobile\shine-angel-brush.aspx" />
     <Content Include="Mobile\tangle-angel-brush.aspx" />
@@ -496,6 +499,7 @@
     <Content Include="Shared\UserControls\Footer.ascx" />
     <Content Include="Shared\UserControls\Footer_Mobile.ascx" />
     <Content Include="Shared\UserControls\Header.ascx" />
+    <Content Include="Shared\UserControls\Header_Mobile.ascx" />
     <Content Include="Shared\UserControls\ShippingBillingCreditForm.ascx" />
     <Content Include="Shared\UserControls\CheckoutThankYouModule.ascx" />
     <Content Include="Shared\UserControls\PayPalResponseForm.ascx" />
