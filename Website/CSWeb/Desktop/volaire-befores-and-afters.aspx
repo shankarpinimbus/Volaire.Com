@@ -40,7 +40,7 @@
             </div>
             <div class="col span8 quote-dawn">
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-dawn.png" alt="Before and After" class="block ba-img" />
-                <a href="#video" class="watch_demo">Watch Her Story</a>
+                <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/dawn.mp4" class="watch_demo fancy_video">Watch Her Story</a>
                 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
             </div>
         </div>
@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col span8 quote-lindsay">
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-lindsay.png" alt="Before and After" class="block ba-img quote-lindsay-img" />
-                <a href="#video" class="watch_demo">Watch Her Story</a>
+                <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/lindsay.mp4" class="watch_demo fancy_video">Watch Her Story</a>
                 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
             </div>
             <div class="col span4">
@@ -92,7 +92,7 @@
         <div class="row">
             <div class="col span8 quote-cyndi">
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-cyndi.png" alt="Before and After" class="block ba-img quote-lindsay-img" />
-                <a href="#video" class="watch_demo">Watch Her Story</a>
+                <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/cyndi.mp4" class="watch_demo fancy_video">Watch Her Story</a>
             </div>
             <div class="col span4">
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-selfies-wanted.jpg" alt="Before and After Selfies Wanted!" class="block ba-img" />

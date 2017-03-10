@@ -48,7 +48,7 @@
     </div>
     <div class="offer-right">
         <div class="clearfix">
-            <p><a href="#video" class="videolink"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/vid-tangle-angel-brush.jpg" alt="Watch Me" /></a></p>
+            <p><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/TangleAngelBrush.mp4" class="videolink fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/vid-tangle-angel-brush.jpg" alt="Watch Me" /></a></p>
             <div class="offer-cta">
                     <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/price-tangle-angel-brush.png" alt="One Easy Payment of $9.95* + Free Shipping" class="block" />
                 <asp:Button runat="server" id="btnAddtoCart" CssClass="btn_ordernow btn_ordernow-4" OnClick="btnAddtoCart_OnClick"/>

@@ -49,7 +49,7 @@
     </div>
     <div class="offer-right">
         <div class="clearfix">
-            <p><a href="#video" class="videolink"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/vid-shine-angel-brush.jpg" alt="Watch Me" /></a></p>
+            <p><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/ShineAngelBrush.mp4" class="videolink fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/vid-shine-angel-brush.jpg" alt="Watch Me" /></a></p>
             <div class="offer-cta">
                 <div class="fleft" style="width: 50%;">
                     <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/price-shine-angel-brush.png" alt="One Easy Payment of $19.95* + Free Shipping" class="block" />

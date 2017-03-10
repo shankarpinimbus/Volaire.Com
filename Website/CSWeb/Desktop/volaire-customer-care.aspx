@@ -56,7 +56,7 @@
 <section class="container">
     <div class="customer-care-main">
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/customer-care-quote-yvette.jpg" alt="VOLAIRE Rises Above the Rest" class="block" />
-        <a href="#video" class="watch_demo">Watch Her Story</a>
+        <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/yvette.mp4" class="watch_demo fancy_video">Watch Her Story</a>
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
     </div>
 </section>

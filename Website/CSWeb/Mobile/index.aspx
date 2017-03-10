@@ -64,7 +64,7 @@
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home6.png" alt="STYLE to the fullest. See how VOLAIRE™ rises above the rest!" class="block" />
 
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home6b.jpg" alt="VOLAIRE Rises" class="block" />
-        <p class="text-center"><a href="#video" class="watch_demo">Watch Demo</a></p>
+        <p class="text-center"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/sink-or-swim.mp4" class="watch_demo fancy_video">Watch Demo</a></p>
 
         <p class="p1"><span class="brand-txt">VOLAIRE</span> uses <strong class="med">AIRWEIGHT TECHNOLOGY</strong><br />
             to infuse hair with tiny bubbles of positively charged microspheres filled with nutrient-rich ingredients that attach along each hair shaft to <strong class="med">create extra space between strands</strong> – so you get truly incredible volume – without adding any weight. </p>

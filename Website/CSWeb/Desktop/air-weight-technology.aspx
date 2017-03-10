@@ -38,7 +38,7 @@
     <div class="container clearfix">
         <div class="airweight-quotes-1">
             <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/airweight-quote-kristi.jpg" alt="'With Volaire you get full, bouncing, shiny, healthy-looking hair with tons of volume that lasts all day.' - Luke O’Connor, celebrity stylist" class="block" />
-            <a href="#video" class="watch_demo">Watch Her Story</a>
+            <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/kristi.mp4" class="watch_demo fancy_video">Watch Her Story</a>
             <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
         </div>
         <div class="airweight-quotes-2">
