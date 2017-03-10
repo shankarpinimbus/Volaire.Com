@@ -364,6 +364,8 @@
     <Content Include="Desktop\videoplayers.aspx" />
     <Content Include="Mobile\bottomcta.html" />
     <Content Include="Mobile\benefits-txt.html" />
+    <Content Include="Mobile\frequently-asked-questions.aspx" />
+    <Content Include="Mobile\hair-volumizing-products.aspx" />
     <Content Include="Mobile\mega-volume-collection.aspx" />
     <Content Include="Mobile\note-txt.html" />
     <Content Include="Mobile\scripts-top.html" />

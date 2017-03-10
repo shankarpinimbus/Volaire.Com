@@ -40,17 +40,17 @@
         <h2>Mega Volume <span class="part2 ital brown2 uncaps">Collection</span></h2>
         <p>Upgrade now to our <span class="iblock">MEGA VOLUME COLLECTION.</span> and receive our 90 Day supply of VOLAIRE. Plus, <strong>GET A FREE <span class="orange">JUMBO SIZE GIFT</span></strong> + <strong>FREE SHIPPING</strong> on today's order!</p>
         <div class="offer-links">
-                <h3>The 4-Piece, 90 Day Mega Volume<br />
-                    Collection Includes <span class="orange">Jumbo</span> Sizes of:
-                </h3>
-                <ul>
-                    <li><a href="#pop-weightless-volumizing-shampoo" class="product-pop">Weightless Volumizing Shampoo</a></li>
-                    <li><a href="#pop-weightless-fortifying-conditioner" class="product-pop">Weightless Fortifying Conditioner</a></li>
-                    <li><a href="#pop-uplift-volumizing-mist" class="product-pop">Uplift Volumizing Mist</a></li>
-                    <li class="last"><strong><span class="magenta">INSTANT UPGRADE TO A</span> <span class="orange">JUMBO SIZE GIFT</span></strong><br />
-                        <a href="#pop-air-magic" class="magenta med product-pop">Air Magic Texturizing Spray</a></li>
-                </ul>
-            </div>
+            <h3>The 4-Piece, 90 Day Mega Volume<br />
+                Collection Includes <span class="orange">Jumbo</span> Sizes of:
+            </h3>
+            <ul>
+                <li><a href="#pop-weightless-volumizing-shampoo" class="product-pop">Weightless Volumizing Shampoo</a></li>
+                <li><a href="#pop-weightless-fortifying-conditioner" class="product-pop">Weightless Fortifying Conditioner</a></li>
+                <li><a href="#pop-uplift-volumizing-mist" class="product-pop">Uplift Volumizing Mist</a></li>
+                <li class="last"><strong><span class="magenta">INSTANT UPGRADE TO A</span> <span class="orange">JUMBO SIZE GIFT</span></strong><br />
+                    <a href="#pop-air-magic" class="magenta med product-pop">Air Magic Texturizing Spray</a></li>
+            </ul>
+        </div>
         
         
     </div>

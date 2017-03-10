@@ -3,14 +3,12 @@
 <%@ Register Src="~/Shared/UserControls/Header_Mobile.ascx" TagName="Header" TagPrefix="uc" %>
 <%@ Register Src="~/Shared/UserControls/Footer_Mobile.ascx" TagName="Footer" TagPrefix="uc" %>
 
-
-
 <!doctype html>
 <html>
 <head runat="server">
 <meta charset="utf-8">
-<title></title>
-<meta name="description" content="" />
+<title>Volaire™| Hair Volumizing System </title>
+<meta name="description" content="Official Volaire Website. Hair care products that add instant, weightless, touchable, long-lasting volume and texture. Read product reviews and tips" />
 <meta name="keywords" content="" />
 
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>

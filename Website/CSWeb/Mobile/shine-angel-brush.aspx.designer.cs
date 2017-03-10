@@ -22,6 +22,15 @@ namespace CSWeb.Mobile {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// Header control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::CSWeb.Shared.UserControls.Header Header;
+        
+        /// <summary>
         /// rbMedium control.
         /// </summary>
         /// <remarks>

@@ -27,6 +27,26 @@ $(document).ready(function () {
         }
     });
 
+    $(".product-pop").fancybox({
+        closeBtn: false,
+        fitToView: false,
+        wrapCSS: 'nowrapper',
+        padding: 0,
+        width: '98%',
+        height: 'auto',
+        autoSize: false,
+        closeClick: false,
+        scrolling: 'auto',
+        helpers: {
+            overlay: {
+                locked: false,
+                css: {
+                    'background': 'rgba(0,0,0,.8)'
+                }
+            }
+        }
+    });
+
 
     $(".included").fancybox({
         closeBtn: true,

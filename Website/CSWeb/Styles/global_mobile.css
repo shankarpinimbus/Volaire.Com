@@ -136,8 +136,8 @@ div {position:relative;}
 }
 
 body {
-	background: #e2e2e2;
-	color: #565354;	
+	background: #fff;
+	color: #000;	
 	line-height: 1.4;
 	font-family: Lato, arial, sans-serif;
     font-size: 13px;
@@ -147,6 +147,12 @@ body {
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
 }
+
+sup {
+    font-size: 65%;
+    line-height: 1;
+}
+
 .container {
 	width: 100%;
     max-width: 800px;
@@ -221,6 +227,27 @@ body {
 	font-weight: 900;
 	letter-spacing: .03em;
 }
+.header-ssl {display: none;}
+.offers-cart .header-ssl {
+    display: block;
+    position: absolute;
+    top: 22%;
+    left: 51.7%;
+    width: 32%;
+}
+
+.mega-collection-page .topbanner-promo, 
+.shine-angel-brush-page .topbanner-promo, 
+.tangle-angel-brush-page .topbanner-promo {display: none;}
+
+.header-mega, 
+.header-shine, 
+.header-tangle {display: none;}
+.mega-collection-page .header-mega {display: block;}
+.shine-angel-brush-page .header-shine {display: block;}
+.tangle-angel-brush-page .header-tangle {display: block;}
+
+
 
 .content {
 	width: 100%;	
@@ -244,12 +271,13 @@ body {
 }
 
 h2 {
-	color: #666d3e;
 	font-size: 6vw;
 	padding: 0 0 1rem 0;
 }
 
-p {padding-bottom: 1.3rem;}
+p {padding-bottom: 1rem;}
+.products p {padding-bottom: .8rem;}
+
 
 .nav-v {
     position: absolute;
@@ -300,6 +328,12 @@ p {padding-bottom: 1.3rem;}
     width: 50%;
     height: 13%;
 }
+.tanglevideolink {
+    top: 14.8%;
+    left: 54.375%;
+    width: 45%;
+    height: 24.8%;
+}
 
 
 
@@ -329,6 +363,7 @@ p {padding-bottom: 1.3rem;}
     background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/triangle_orange.png) no-repeat 0 0;
     background-size: auto 100%;
 }
+
 
 
 .home-slider-wrap {
@@ -441,11 +476,304 @@ p.note {
 }
 
 
+.contentpad1 {
+    padding: .6rem 1% 0;
+}
+.contentpad2 {
+    padding: .3rem 2% 0 3%;
+}
 
 .content ul {
 	padding: 0 3% 1.4rem;
 	margin-left: 4%;	
 }
+
+.products p {
+    font-size: 12px;
+    font-size: 3.8vw;
+    line-height: 1.5;
+}
+
+.products p.intro {
+    font-size: 13px;
+    font-size: 4vw;
+    line-height: 1.5;
+}
+.products-angie .watch_demo {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    font-size: 10px;
+    font-size: 3.2vw;
+    padding: 0 0 2px 5%;
+}
+.products-angie p.note {
+    text-align: right;
+    padding-right: 5%;
+    padding-bottom: 0;
+}
+
+
+.offer-links h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: .4rem;
+    font-size: 13px;
+    font-size: 4vw;
+}
+
+.offer-links ul, 
+.offer-left ul {
+    list-style: none;
+    margin-left: 4%;
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+}
+.offer-links ul strong, 
+.offer-left ul strong {
+    text-shadow: none;
+}
+.offer-links li, 
+.offer-left li {
+    line-height: 1.1;
+    padding: 0 0 .5rem 1em;
+}
+.offer-links li:before, 
+.offer-left li:before {
+    content: '–';
+    float: left;
+    margin-left: -1em;
+}
+.offer-links li.last:before {
+    content: '+';
+    float: left;
+    margin-left: -1em;
+    color: #eb1c74;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    top: -5px;
+    left: 3px;
+}
+
+.offer-links li a {
+    color: #000;
+    text-decoration: none;
+}
+.offer-links li a:hover {
+    text-decoration: underline;
+}
+
+.btn_ordernow {
+    display: block;
+    width: 98%;
+    height: 1px;
+    padding-bottom: 13%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.btn_ordernow-1 {
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/btn_ordernow.png) no-repeat 0 0;
+    background-size: cover;
+}
+.btn_ordernow-2 {
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/btn-yes-i-want-to-go-big.png) no-repeat 0 0;
+    background-size: cover;
+    padding-bottom: 12%;
+}
+.btn_ordernow-3 {
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/btn-yes-shine-me-up.png) no-repeat 0 0;
+    background-size: cover;
+    padding-bottom: 12.625%;
+}
+.btn_ordernow-4 {
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/btn-yes-i-need-this.png) no-repeat 0 0;
+    background-size: cover;
+    padding-bottom: 12.842%;
+}
+
+.btn_no_thanks {
+    display: inline-block;
+    margin: .3rem auto 0;
+    padding: 1rem .5rem;
+    color: #000;
+    text-decoration: underline;
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+}
+
+
+
+.offer-footer {
+    margin: 1.5rem auto 0;
+    padding: 0 1.5%;
+    border-top: #000 solid 1px;
+}
+.offer-footer-content {
+    padding: 1.5rem 1%;
+    text-align: center;
+    font-size: 11px;
+    font-size: 3.4vw;
+    line-height: 1.55;
+}
+.offer-footer-content p {
+    padding-bottom: 1rem;
+}
+.offer-footer-content p.footer-copyright {
+    padding-bottom: 0;
+}
+
+.product-pops-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: .3rem 1%;
+}
+
+.product-pops-content-inner {
+    background: #fff;
+    border: #83dbe0 solid 3px;
+    padding: 1.3rem 2%;
+}
+
+.pop-img {
+    float: left;
+    width: 38%;
+    margin: 0 2% 0 0;
+}
+
+.pop-intro {
+    float: left;
+    width: 60%;
+    margin: 0 0 0 0;
+}
+
+.pop-bottom {
+    margin: .5rem 0 0;
+}
+
+.closex {
+    position: absolute;
+    top: -.3rem;
+    right: .5%;
+    font-size: 18px;
+    font-size: 6vw;
+    font-weight: 300;
+    text-decoration: none;
+    padding: .4rem;
+}
+
+.pop-content {
+    font-size: 12px;
+    font-size: 3.6vw;
+    line-height: 1.3;
+}
+
+.pop-content h1 {
+    font-size: 17px;
+    font-size: 5vw;
+    font-weight: 300;
+    line-height: .95;
+    padding-bottom: .4rem;
+    text-transform: uppercase;
+}
+.pop-content h2 {
+    font-size: 14px;
+    font-size: 4.2vw;
+    font-weight: 400;
+    line-height: 1;
+    padding-bottom: .6rem;
+}
+.pop-content h2 .part2 {
+    font-family: Judson, 'Times New Roman', serif;
+    font-style: italic;
+}
+.pop-content p {
+    padding-bottom: .6rem;
+}
+
+.pop-content ul {
+    list-style: none;
+    margin-left: 1em;
+}
+.pop-content li {
+    padding: 0 0 .6rem 1em;
+}
+.pop-content li:before {
+    content: '–';
+    float: left;
+    margin-left: -1em;
+}
+
+.pop-directions {
+    font-family: Judson, 'Times New Roman', serif;
+    font-style: italic;
+    line-height: 1;
+}
+
+.pop-content p.pop-ingredients {
+    font-size: .625rem;
+    line-height: 1.2;
+    padding-right: 0;
+}
+
+.pop-ingredients-hdr {
+    font-size: .75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pop-benefits .benefits-txt {
+    font-size: 10px;
+    font-size: 3.2vw;
+}
+
+
+
+.offer-shine-angel-brush .offer-cta {
+    width: 94%;
+    margin:0 auto;
+    padding-top: 1rem;
+}
+
+.offer-shine-angel-brush .offer-right a.videolink img {
+    max-width: 93%;
+}
+
+
+
+.size_selector h3 {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.125rem;
+    font-weight: normal;
+    padding-bottom: .5rem;
+    line-height: 1;
+}
+
+.checkbox {
+    float: right;
+    margin: -2px 0 0 .5rem;
+    width: 20px;
+    height: 21px;
+    border: #cacdd1 solid 1px;
+    text-align: center;
+}
+.size_select input[type=radio] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.select_wrap {
+    padding-bottom: .6rem;
+    font-size: 11px;
+    font-size: 3.6vw;
+}
+
+
+
+
+
 
 /* FAQ COLLAPSE/EXPAND STYLES */
 

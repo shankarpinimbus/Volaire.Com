@@ -12,12 +12,28 @@
                 </a>
             </h2>
         </div>
+        <%--display mega collection --%>
+        <div class="header-mega">
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hdr-mega.png" alt="Do Not Miss This Amazing Offer" class="block" />
+        </div>
+        <div class="header-shine">
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/header-shine.png" alt="Make Your Results Shine Today!" class="block" />
+        </div>
+        <div class="header-tangle">
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/header-tangle.png" alt="Final Chance to Save Big Today!" class="block" />
+        </div>
     </section>
     <section>
         <div>
             <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/header.png" alt="Volaire" class="block" />
             <a href="index" class="maplink hdrlink1">Home</a>
             <a href="#" class="maplink hdrlink2 toggleNav">Menu</a>
+
+            <%--display ssl only on offer pages and cart pages--%>
+            <div class="header-ssl">
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/ssl.png" alt="Volaire" class="block" />
+            </div>
+
 
             <ul id="headernav" class="nav">
                 <li><a href="index">Home</a></li>
