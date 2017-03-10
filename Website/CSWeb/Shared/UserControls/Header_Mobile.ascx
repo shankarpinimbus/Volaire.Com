@@ -54,3 +54,14 @@
         </div>
     </section>
 </header>
+
+<div class="stickynav">
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav.png" alt="Menu" class="block" />
+    <a href="tel:18002016539" class="maplink stickylink1">Call Now</a>
+    <a href="tv-introductory-offer" class="maplink stickylink2">Order Now!</a>
+</div>
+<div class="stickynav-landscape">
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav-landscape.png" alt="Menu" class="block" />
+    <a href="tel:18002016539" class="maplink stickylink1">Call Now</a>
+    <a href="tv-introductory-offer" class="maplink stickylink2">Order Now!</a>
+</div>

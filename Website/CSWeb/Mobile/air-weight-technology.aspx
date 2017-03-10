@@ -42,13 +42,13 @@
     <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/airweight-5.png" alt="Microspheres attach to hair to create space between strands without weighing down hair" class="block" />
     
     <div class="airweight-kristi">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/airweight-6.png" alt="VOLAIRE rises above the rest. Volume you can see." class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/airweight-6.jpg" alt="VOLAIRE rises above the rest. Volume you can see." class="block" />
         <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/kristi.mp4" class="watch_demo fancy_video">Watch Her Story</a>
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
     </div>
     
     
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/airweight-7.png" alt="VOLAIRE rises above the rest. Volume you can see." class="block" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/airweight-7.jpg" alt="VOLAIRE rises above the rest. Volume you can see." class="block" />
 
 
     
