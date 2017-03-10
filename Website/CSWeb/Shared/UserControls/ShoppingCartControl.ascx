@@ -9,7 +9,7 @@
         <div class="cart_table cart_hdrs clearfix">
             <div class="cart_image_txt_hdr">Product Description</div>
             <div class="cart_qty_hdr">Quantity</div>
-            <div class="cart_price1_hdr">Unit Price</div>
+            <div class="cart_price1_hdr">Price</div>
             <div class="cart_price2_hdr">Total</div>
         </div>
         <div class="horizontal_dots" style="margin-top: 0;">

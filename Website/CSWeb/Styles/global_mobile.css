@@ -289,16 +289,16 @@ p {padding-bottom: 1.3rem;}
     height: 16%;
 }
 .bottomctalink1 {
-    bottom: 7.5%;
+    bottom: 23%;
     right: 1%;
-    width: 68%;
-    height: 16%;
+    width: 43%;
+    height: 11%;
 }
 .bottomctalink2 {
-    bottom: 7.5%;
+    bottom: 9%;
     right: 1%;
-    width: 68%;
-    height: 16%;
+    width: 50%;
+    height: 13%;
 }
 
 
@@ -406,7 +406,7 @@ p.note {
 }
 
 .home8 {
-    padding: 1rem 0 2.5rem;
+    padding: 1rem 0;
     text-align: center;
 }
 
@@ -419,6 +419,9 @@ p.note {
 }
 
 
+.bottomcta {
+    padding: 1rem 0;
+}
 
 
 #guarantee, #returns {
@@ -489,18 +492,72 @@ p.note {
 }
 
 
-.footer {
-	width: 100%;
-	background: #fff;
-	padding: 2rem 3%;	
-	border-top: 1px solid #b3b3b3;
+
+.footer-social {
+    margin-top: 1.7rem;
+    border-top: #000 solid 1px;
+    padding: 1.2rem 0 0;
+    text-align: center;
+}
+.footer-social .container {
+    padding: 0 2%;
 }
 
-.footer p {
-	padding-bottom: 1.4rem;
-	font-size: 3.6vw;
-	color: #878787;
-	line-height: 1.4;
+.footer-hashtag {
+    width: 43%;
+    margin-right: 4%;
+    vertical-align: middle;
+}
+
+.footer-logo-v {
+    width: 13%;
+    vertical-align: middle;
+}
+
+.footer-social-txt {
+    color: #a28e79;
+    margin-right: 2.5%;
+    font-size: 14px;
+    font-size: 4.4vw;
+    font-weight: 500;
+    vertical-align: middle;
+}
+.footer-social-link {
+    margin-right: 1.75%;
+    vertical-align: middle;
+}
+.footer-social-link:first-of-type {
+    margin-right: 1%;
+}
+.footer-social-link:last-of-type {
+    margin-right: 0;
+    margin-left: 1.5%;
+}
+.footer-social-link img {
+    height: 1.6rem;
+    width: auto;
+}
+
+
+.footer {
+	padding: 2.5rem 2% 1rem;
+    background: #efe6dd;
+    text-align: center;
+}
+
+.footer-mbg {width: 40%;}
+.footer-logo {width: 58%;}
+
+.footer p.footer-note {
+    font-size: .8125rem;
+    line-height: 1.1;
+}
+
+.footer p.footer-copyright {
+    font-size: .8125rem;
+    line-height: 1.1;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 /* -----CART MOBILE ----- */
