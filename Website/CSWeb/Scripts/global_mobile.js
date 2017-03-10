@@ -7,6 +7,10 @@ $(document).ready(function () {
         $('#headernav').slideToggle();
     });
 
+    $('.size_select input:radio').change(function () {
+        $('.checkbox').html("");
+        $(this).siblings('.checkbox').html("<img src=\"//d39hwjxo88pg52.cloudfront.net/volaire/images/checkmark.png\" alt=\"checked\">");
+    });
 
     //cvv overlay
     $(".cvv").fancybox({
