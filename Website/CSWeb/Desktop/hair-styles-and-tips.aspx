@@ -40,20 +40,20 @@
                 </div>
                 <div class="tips-right">
                     <p class="p1">Dean Banowetz – Beach Waves </p>
-                    <a href="#video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-dean-banowetz-beach-waves.jpg" alt="Dean Banowetz" class="iblock" /></a>
-                    <p class="p2"><a href="#video" class="watch_demo">Watch Me</a></p>
+                    <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/beachy-wave.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-dean-banowetz-beach-waves.jpg" alt="Dean Banowetz" class="iblock" /></a>
+                    <p class="p2"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/beachy-wave.mp4" class="watch_demo fancy_video">Watch Me</a></p>
                 </div>
             </div>
             <div class="row">
                 <div class="tips-left">
                     <p class="p1">Dean Banowetz - Modern Up-Do</p>
-                    <a href="#video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-fpo.jpg" alt="Richard Ward" class="iblock" /></a>
-                    <p class="p2"><a href="#video" class="watch_demo">Watch Me</a></p>
+                    <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/twist-updo.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-twist-updo.jpg" alt="Richard Ward" class="iblock" /></a>
+                    <p class="p2"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/twist-updo.mp4" class="watch_demo fancy_video">Watch Me</a></p>
                 </div>
                 <div class="tips-right">
                     <p class="p1">Dean Banowetz – Modern Blow Out</p>
-                    <a href="#video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-fpo.jpg" alt="Dean Banowetz" class="iblock" /></a>
-                    <p class="p2"><a href="#video" class="watch_demo">Watch Me</a></p>
+                    <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blowout.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-modern-blowout.jpg" alt="Dean Banowetz" class="iblock" /></a>
+                    <p class="p2"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blowout.mp4" class="watch_demo fancy_video">Watch Me</a></p>
                 </div>
             </div>
         </div>

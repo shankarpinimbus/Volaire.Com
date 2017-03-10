@@ -14,8 +14,6 @@
 <meta name="keywords" content="" />
 
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
-<link rel="stylesheet" href="//d39hwjxo88pg52.cloudfront.net/scripts/slick/slick.css" />
-<script src="//d39hwjxo88pg52.cloudfront.net/scripts/slick/slick.min.js"></script>
 </head>
  
 <body class="products">
@@ -42,7 +40,7 @@
 
     <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-uplift-volumizing-mist.jpg" alt="VOLAIRE Uplift Volumizing Mist" class="block" />
     <div class="contentpad2">
-        <p>Ultra-lightweight mist locks onto roots and strands of hair to delivery super-charged lift and continuous volume </p>
+        <p>Ultra-lightweight mist locks onto roots and strands of hair to deliver super-charged lift and continuous volume </p>
         <p>Heat protectants help maintain hair health during styling</p>
         <p>Delivers touchable, tossable movement that you can run your fingers through – never stiff, tacky, or sticky</p>
     </div>
