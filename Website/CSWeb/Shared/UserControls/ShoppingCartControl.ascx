@@ -118,7 +118,7 @@
                 <strong><asp:Literal runat="server" ID="lblTax"></asp:Literal></strong><br />
                 <strong><asp:Literal runat="server" ID="lblShipping"></asp:Literal></strong><br />
                 <div style="height: .8rem"></div>
-                <strong><asp:Literal runat="server" ID="lblOrderTotal"></strong></asp:Literal>
+                <strong><asp:Literal runat="server" ID="lblOrderTotal"></asp:Literal></strong>
                 <asp:Literal runat="server" ID="lblRushShipping" Visible="false"></asp:Literal>
                 <table>
                     <tr id='holderRushShippingTotal' runat="server">

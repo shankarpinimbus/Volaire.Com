@@ -1408,6 +1408,9 @@ p.required-txt {
     width: 96%;
     margin: 1rem auto;
 }
+.form_line_btn input {
+    width: 100%;
+}
 
 .cart_mobile .error-1 {
 	position:relative;
@@ -1485,6 +1488,28 @@ input[type=checkbox].error {
     outline: red solid 2px;
 }
 label.error {display: none !important;}
+
+
+.overlay_content {
+    background: #fff;
+    padding: 1rem 5%;
+}
+
+.txt-closex {
+    text-align: right;
+}
+.txt-closex a {
+    color: #333;
+    padding: .6rem 3%;
+    margin-top:-.8rem;
+    margin-right:-5%;
+    text-decoration: none;
+    font-size: 6vw;
+}
+.txt-closex:hover {
+    text-decoration: underline;
+}
+
 
 
 /* upsells */

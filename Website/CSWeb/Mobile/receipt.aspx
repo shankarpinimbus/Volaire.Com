@@ -19,14 +19,13 @@
 <body id="cart">
 <div class="container">
 <uc:Header ID="Header" runat="server" />
-<%#CSBusiness.DynamicVersion.Helper.IncludeFile("popups.html")%>
-<%#CSBusiness.DynamicVersion.Helper.IncludeFile("header_cart.html")%>
 
 
      <uc1:Form ID="Form1" runat="server" />
 
 <uc:Footer ID="Footer" runat="server" />
 </div>
+<%#CSBusiness.DynamicVersion.Helper.IncludeFile("popups.html")%>
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
 <uc:TrackingPixels ID="TrackingPixels" runat="server" />
 </body>
