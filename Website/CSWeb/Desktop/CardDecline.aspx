@@ -27,6 +27,7 @@
 <!-- end loader front end --> 
 
     <div>
+         <p style="color:red; margin: 1rem 0 -1rem; font-size: 1.2rem;">There was a problem with your credit card please try again.</p>
         <uc1:Form id="ucCardDecline" runat="server" />
     </div>
 

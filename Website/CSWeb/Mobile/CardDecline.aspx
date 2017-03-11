@@ -18,7 +18,7 @@
 <%#CSBusiness.DynamicVersion.Helper.IncludeFile("header_upsell.html")%>
 
 <div class="content">
-
+    <p style="color:red;">There was a problem with your credit card please try again.</p>
         <uc1:Form id="ucCardDecline" runat="server" />
 
 </div>
