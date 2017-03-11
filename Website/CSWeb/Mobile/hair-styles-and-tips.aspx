@@ -49,7 +49,7 @@
             <p class="p2"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blowout.mp4" class="watch_demo fancy_video">Watch Me</a></p>
         </div>
 
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/tips-quote-luke-o-connor.jpg" alt="Luke O'Connor" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/tips-quote-luke-o-connor.jpg" alt="Luke O'Connor" class="block" style="margin-top: 1rem;" />
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/selfies-wanted.jpg" alt="Before and After Selfies Wanted!" class="block tips-before-after-selfies-wanted" />
 
     </div>
