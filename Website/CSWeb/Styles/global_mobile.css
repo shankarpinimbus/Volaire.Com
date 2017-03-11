@@ -870,6 +870,18 @@ p.note {
 }
 
 
+.hero-reviews p.note {
+    position: absolute;
+    width: 50%;
+    left: 5.7%;
+    bottom: 2%;
+    font-size: 12px;
+    font-size: 3.6vw;
+    padding-bottom: 0;
+    color: #fff;
+}
+
+
 
 
 /* FAQ COLLAPSE/EXPAND STYLES */
