@@ -1562,7 +1562,8 @@ label.error {display: none !important;}
     width: 50%; height: 100%;
     display: block;
 }
-.offers-cart .stickynav {display: none;}
+.offers-cart .stickynav,
+#cart .stickynav {display: none;}
 .stickynav-landscape {display: none;}
 
 @media all and (orientation: landscape) {
@@ -1577,6 +1578,7 @@ label.error {display: none !important;}
     z-index: 20;
 }
 
-.offers-cart .stickynav-landscape  {display: none;}
+.offers-cart .stickynav-landscape,
+#cart .stickynav-landscape  {display: none;}
 
 }
