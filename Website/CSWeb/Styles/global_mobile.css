@@ -485,6 +485,10 @@ p.note {
     padding: .3rem 2% 0 3%;
 }
 
+.contentpad3 {
+    padding: 1rem 4%;
+}
+
 .content ul {
 	padding: 0 3% 1.4rem;
 	margin-left: 4%;	
@@ -880,6 +884,47 @@ p.note {
     padding-bottom: 0;
     color: #fff;
 }
+
+
+.tips {
+    text-align: center;
+}
+
+.tips h2 {
+    font-size: 21px;
+    font-size: 6.7vw;
+    font-weight: 300;
+    padding-bottom: .4rem;
+}
+.tips p.intro {
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+    padding-bottom: .4rem;
+}
+
+.tips-wrap {
+    margin: 1rem 0 0;
+}
+
+.tips-wrap p.p1 {
+    padding: 0 0 .8em;
+    font-size: 12px;
+    font-size: 3.7vw;
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+.tips-wrap p.p2 {
+    padding: .2rem 0 1rem;
+}
+
+.tips-wrap .watch_demo {
+    position: inherit;
+    bottom: inherit;
+}
+
+
 
 
 
