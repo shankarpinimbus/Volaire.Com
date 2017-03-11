@@ -86,7 +86,6 @@
     <div class="before-after-twins">
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/before-after-twins.jpg" alt="Identical twins tested VOLAIRE..." class="block" />
         <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/cyndi.mp4" class="watch_demo fancy_video">Watch Clip</a>
-        <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
     </div>
 
     <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/before-after-tip.jpg" class="block" alt="" />
