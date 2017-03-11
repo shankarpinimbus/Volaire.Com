@@ -30,6 +30,7 @@ namespace CSWeb.Mobile.Store
         protected override void Page_Load(object sender, EventArgs e)
         {
             base.Page_Load(sender, e);
+            OrderHelper.SetDynamicLandingPageVersion(OrderHelper.GetVersionName(), ClientOrderData);
             if (CartContext != null && CartContext.RequestParam.Equals(""))
             {
                 if (Request.QueryString.Count > 0)
