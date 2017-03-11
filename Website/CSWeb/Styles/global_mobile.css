@@ -48,6 +48,7 @@
 }
 
 img {border: none; max-width: 100%;}
+input[type=image] {max-width: 100%;}
 .full {width: 100%;}
 /* floats */
 
@@ -229,7 +230,8 @@ sup {
 	letter-spacing: .03em;
 }
 .header-ssl {display: none;}
-.offers-cart .header-ssl {
+.offers-cart .header-ssl, 
+#cart .header-ssl {
     display: block;
     position: absolute;
     top: 22%;
@@ -1022,7 +1024,7 @@ p.note {
 
 
 .footer {
-	padding: 2.5rem 2% 1rem;
+	padding: 2.5rem 2% 6rem;
     background: #efe6dd;
     text-align: center;
 }
@@ -1050,6 +1052,159 @@ p.note {
 .fixWidth td {
 	text-align:center;	
 }
+
+
+h1.shopping-cart-hdr {
+    font-size: 24px;
+    font-size: 7.6vw;
+    font-family: Judson, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 400;
+    padding: 1.5rem 0 1rem 2%;
+}
+
+.cart_hdrs {
+    font-size: 12px;
+    font-size: 3.8vw;
+    font-weight: 400;
+    color: #5c5c61;
+    text-transform: uppercase;
+    background: #efe6dd;
+    padding: .4rem 0;
+    width: 100%;
+}
+
+.cart_image_txt_hdr {
+    float: left;
+    width: 53%;
+    padding-left: 2%;
+}
+.cart_qty_hdr {
+    float: left;
+    width: 26%;
+    text-align: center;
+}
+.cart_price2_hdr {
+    float: left;
+    width: 21%;
+    text-align: center;
+}
+
+.cart_skudetails {
+    width: 53%;
+    border-right: #5c5c61 solid 1px;
+    border-bottom: #5c5c61 solid 1px;
+    padding: .4rem 1% .2rem 1%;
+    vertical-align: middle;
+}
+.cart_qty {
+    width: 26%;
+    text-align: center;
+    border-right: #5c5c61 solid 1px;
+    border-bottom: #5c5c61 solid 1px;
+    vertical-align: middle;
+}
+
+.cart_totalprice {
+    width: 21%;
+    padding-right: 4%;
+    text-align: right;
+    border-bottom: #5c5c61 solid 1px;
+    vertical-align: middle;
+}
+
+.cart_image {
+    float: left;
+    width: 41%;
+}
+
+.cart_text {
+	float:left;
+	position:relative;
+	width: 58%;	
+}
+.cart_text h2 {
+	font-size: 12px;
+    font-size: 3.7vw;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-top: .4rem;
+    padding-bottom: .3rem;
+}
+.cart_text h2 .part2 {
+    font-family: Judson, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.cart_remove input {
+    width: 23%;
+}
+
+.cart_totals {
+    font-size: 12px;
+    font-size: 3.9vw;
+	color: #5c5c61;
+	padding: 0 4% .7rem 0;
+}
+
+.cart_totals_left {
+    float: left;
+    width: 82%;
+    text-align: right;
+}
+
+.cart_totals_right {
+	float:left;
+	width: 18%;
+    text-align: right;
+	font-weight: bold;
+}
+
+.cart-promo-code-txt {
+    color: #3d4142;
+    font-size: 12px;
+    font-size: 3.8vw;
+    text-align: right;
+    padding: 1rem 0 .5rem 0;
+}
+
+fieldset {border: 0; outline: 0;}
+
+p.required-txt {
+    text-align: right;
+    padding: 1rem 4% .2rem 0;
+    font-size: 11px;
+    font-size: 3.6vw;
+    color: #5D605D
+}
+
+.main_cart_hdr {
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/bg_carthdr.png) no-repeat center top;
+    background-size: cover;
+    color: #fff;
+    font-size: 16px;
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: .6rem 1%;
+}
+
+::-webkit-input-placeholder {color: #999; text-transform: uppercase;}
+:-moz-placeholder {color: #999; text-transform: uppercase;}
+::-moz-placeholder {color: #999; text-transform: uppercase;}
+:-ms-input-placeholder {color: #999; text-transform: uppercase;}
+
+.label-1 {
+    display: none;
+}
+
+.form_line {
+    width: 95%;
+    margin: 1rem auto;
+}
+
 .cart_mobile {
 	width: 92%;
 	position:relative;
@@ -1091,12 +1246,12 @@ p.note {
 	margin-right: 10px;
 }
 .text-1 {
-	width: 92%;
+	width: 100%;
 	position:relative;
-	float:left;
 	font-size: 5vw;
 	color: #666666;
-	padding: 1rem 3%;
+	padding: 1rem 3% .8rem;
+    line-height: 1.3;
 	border-color: #5D605D #CCCCCC #CCCCCC #5D605D;
 	border-radius: 7px 7px 7px 7px;
 	border-style: solid;
@@ -1118,54 +1273,40 @@ p.note {
 	box-shadow: 1px 1px 2px 0 #666666 inset;
     font-family: arial, sans-serif;
 }
-.cart_mobile .text-2 {
-	width: 30%;
-	position:relative;
-	float:left;
-	padding: 1rem 3%;
-	font-size: 28px;
-	color: #666666;
-	border-color: #5D605D #CCCCCC #CCCCCC #5D605D;
-	border-radius: 7px 7px 7px 7px;
-	border-style: solid;
-	border-width: 1px;
-	box-shadow: 1px 1px 2px 0 #666666 inset;
-}
-.cart_mobile .text-3 {
+.text-2a {
 	width: 48%;
-	padding: 1rem 3%;
-	float:left;
-	margin-right: 20px;
-	position:relative;
-	font-size: 5vw;
-	color: #666666;
-	border-color: #5D605D #CCCCCC #CCCCCC #5D605D;
-	border-radius: 7px 7px 7px 7px;
-	border-style: solid;
-	border-width: 1px;
-	box-shadow: 1px 1px 2px 0 #666666 inset;
+    margin-right: 2%;
+}
+.text-2 {
+	width: 48%;
+}
+.text-3 {
+	width: 48%;
+	margin-right: 10px;
 }
 
-.cart_mobile .text-3:last-child {
-	margin-right: 0;	
+.text-promocode {
+    color: #eb1c74;
+    font-weight: 500;
+    background: #fefefe;
 }
-.cart_mobile .text-4 {
-	width: 32%;
-	float:left;
-	padding: 1rem 3%;
-	margin-right: 20px;
-	position:relative;
-	font-size: 5vw;
-	color: #666666;
-	border-color: #5D605D #CCCCCC #CCCCCC #5D605D;
-	border-radius: 7px 7px 7px 7px;
-	border-style: solid;
-	border-width: 1px;
-	box-shadow: 1px 1px 2px 0 #666666 inset;
+
+.cart_offer_details_wrap {
+    width: 98%;
+    margin: 0 auto 1rem;
+    padding: .6rem 2%;
+    border: #949698 solid 1px;
+    color: #030d0f;
+    font-size: 11px;
+    font-size: 3.7vw;
+    font-weight: 400;
 }
-.cart_mobile .text-4:last-child {
-	margin-right: 0;	
+
+.form_line_btn {
+    width: 96%;
+    margin: 1rem auto;
 }
+
 .cart_mobile .error-1 {
 	position:relative;
 	font-size: 3.4vw;
@@ -1176,12 +1317,11 @@ p.note {
 	font-size: 3.4vw;
 	color: #ff0000;
 }
-.cart_mobile .cvv {
+.cvv {
     color: #4E4E4E;
     font-size: 4vw;
-    padding: 1rem 3%;
+    padding: 1rem 1%;
     text-decoration: underline;
-    float: left;
 }
 
 .horzgrayline {
@@ -1195,6 +1335,54 @@ p.note {
 	font-size: 3.4vw;
 	color: red;	
 }
+
+.error-1 {
+	position:relative;
+	font-size: 11px;
+	font-size: 3.4vw;
+	color: #ff0000;
+}
+.error-1b {
+	position:relative;
+	font-size: 11px;
+	font-size: 3.4vw;
+	color: #ff0000;
+}
+.error-1c {
+	position:relative;
+	/*margin-left: 15px;*/
+	font-size: 11px;
+	font-size: 3.4vw;
+	color: #ff0000;
+}
+.error-2 {
+	position:relative;
+	font-size: 11px;
+	color: #ff0000;
+}
+#contact_form .error2 {
+    display: none;
+}
+.error {
+    border:2px solid red!important;
+    border-radius:5px;
+}
+.error:focus {
+    border:2px solid red!important;
+    border-radius:5px;
+    outline: 0;
+}
+.error, .error-1 {
+    color: red;
+}
+input.error {
+    color: red;
+    font-size: 0.9rem;
+}
+input[type=checkbox].error {
+    outline: red solid 2px;
+}
+label.error {display: none !important;}
 
 
 /* upsells */
@@ -1263,9 +1451,11 @@ p.note {
 	border: none;    
 	border-spacing:0;
     border-collapse:collapse;
-	font-size: 4.2vw;
-	margin-bottom: 50px;
+    display: table;
+    table-layout: fixed;
 }
+.trow {display: table-row;}
+.tcell {display: table-cell;}
 
 .table td {
 	padding: 0 20px;	
@@ -1300,69 +1490,17 @@ p.note {
 
 
 
-.cart_table {
-	display:block;
-	width: 85%;
-	color: #464646;
-	font-size: 3.6vw;
-	margin: 0 auto;
-	position:relative;	
-}
 
-
-.cart_text {
-	float:left;
-	position:relative;
-	width: 50%;	
-}
-
-.cart_select {
-    float: left;
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-    width: 27%;
-}
-
-.product_price {
-    float:left;
-    position:relative;
-    font-weight: bold;
-    width: 17%;	
-}
-
-.freeshipcall {
-	float:right;
-
-}	
-
-.cart_totals {
-    display: block;
-    position: relative;
-    font-size: 3.6vw;
-	width: 85%;
-	color: #000;
-	padding-bottom: 1.4rem;
-	font-weight: bold;
-}
-
-.cart_totals_left {
-    float: left;
-    position: relative;
-    width: 80%;
-    text-align: right;
-}
-
-.cart_totals_right {
-	position:relative;
-	float:left;
-	width: 15%;	
-}
 
 .horizontal_dots {
 	height: 1px;
 	margin: .8rem 0;
-	border-top: 2px solid #464646;	
+	border-top: 1px solid #5c5c61;	
+}
+.horizontal_dots2 {
+	height: 1px;
+	margin: 0;
+	border-top: 1px solid #5c5c61;	
 }
 
 .content .basket_description {

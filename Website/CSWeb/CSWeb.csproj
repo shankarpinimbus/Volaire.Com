@@ -510,8 +510,10 @@
     <Content Include="Shared\UserControls\CheckoutThankYouModule.ascx" />
     <Content Include="Shared\UserControls\PayPalResponseForm.ascx" />
     <Content Include="Shared\UserControls\ReviewOrder.ascx" />
+    <Content Include="Shared\UserControls\ShippingBillingCreditForm_MOBILE.ascx" />
     <Content Include="Shared\UserControls\ShippingForm.ascx" />
     <Content Include="Shared\UserControls\ShoppingCartControl.ascx" />
+    <Content Include="Shared\UserControls\ShoppingCartControl_MOBILE.ascx" />
     <Content Include="Shared\UserControls\TokenSecureNet.ascx" />
     <Content Include="Shared\UserControls\Tokenex.ascx" />
     <Content Include="Shared\UserControls\TrackingPixels.ascx" />

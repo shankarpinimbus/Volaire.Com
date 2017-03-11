@@ -37,7 +37,6 @@
 
             <ul id="headernav" class="nav">
                 <li><a href="index">Home</a></li>
-                <li><a href="tel:18002016539">Call Now</a></li>
                 <li><a href="air-weight-technology">Airweight Technology™</a></li>
                 <li><a href="hair-volumizing-products">Products</a></li>
                 <li><a href="volaire-reviews">Reviews</a></li>
