@@ -927,53 +927,155 @@ p.note {
 }
 
 
+.faq {padding: 1rem 2%;}
 
-
-
-
-/* FAQ COLLAPSE/EXPAND STYLES */
-
-.content .faqanswer {
-	display: none;
-	width: 96%;
-	background: #e5e5e5;
-	padding: .6rem 3% 0 3%;	
-	margin: 0 auto;
+.faq dl {
+    list-style: none;
+    line-height: 1.55;
+    font-size: 12px;
+    font-size: 3.8vw;
+}
+.faq dt {
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 0;
+}
+.faq dd {
+    font-weight: 300;
+    padding-bottom: 1.3rem;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+}
+.faq dd ul {
+    list-style: none;
+    margin: 1.2rem 0 0 3%;
+}
+.faq dd ul li {
+    padding-bottom: .7rem;
 }
 
-.content .faqanswer p {
-}
-.content .faqanswer a {
-	text-decoration: none;
-	color: #333;	
+
+.tipslink1 {
+    bottom: 3%;
+    left: 4%;
+    width: 90%;
+    height: 2.2rem;
 }
 
 
-.content .togglefaq {
-	text-decoration: none;
-	color: #333;
-	font-size: 5vw;
-	padding: .6rem 3%;
-	line-height: 1.5;
-	display: block;
-	border: 1px solid #d0d0d0;
-	width: 96%;
-	margin: 0 auto -1px;
-}
-.icon-plus {
-	color: #8a160f;
-	margin-right: 2%;
-	font-size: 5vw;
-	float:left;
-	min-height: 2.5rem;
+
+
+.contact-box {
+    padding: 1.5rem 5% 1.8rem;
+    background: #fff;
 }
 
-.icon-minus {
-	color: #464646;
-	margin-right: 2%;
-	font-size: 5vw;
-	float:left;
+.contact-row {
+    padding-bottom: 2rem;
 }
+.contact-row:last-of-type {
+    padding-bottom: 0;
+}
+
+.contactinfo {
+    float: left;
+    width: 12%;
+    margin-right: 5.5%;
+}
+.contactinfo {
+    float: left;
+    width: 12%;
+    margin-right: 5.5%;
+}
+.icon-phone {
+    padding-top: .4rem;
+}
+.icon-email {
+    padding-top: 1rem;
+}
+
+.contact-text {
+    float: left;
+    width: 82%;
+    line-height: 1.28;
+    font-weight: 300;
+}
+.contact-text h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.contact-text p {
+    padding-bottom: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+}
+
+.carelink1 {
+    bottom: 6.5%;
+    left: 5%;
+    width: 20%;
+    height: 2rem;
+}
+
+.customer-care-main .watch_demo {
+    font-size: 10px;
+    font-size: 3.2vw;
+    padding: 1px 0 1px 5%;
+}
+.customer-care-main p.note {
+    padding: .2rem 0 .5rem 4%;
+    font-size: 11px;
+    font-size: 3.4vw;
+}
+
+
+.legal {
+    padding: 2rem 4% 1rem;
+}
+
+.legal h1 {
+    font-size: 22px;
+    font-size: 7vw;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.legal h3 {
+    font-size: 13px;
+    font-size: 4vw;
+    font-weight: bold;
+    padding-bottom: .2rem;
+}
+
+.legal a {
+    color: #000;
+    text-decoration: underline;
+}
+
+
+.legal h4 {
+    font-size: 15px;
+    font-size: 4.6vw;
+    font-weight: bold;
+    padding-top: .2em;
+    padding-bottom: .2em;
+}
+
+.legal_list_1 {
+    list-style: none;
+}
+.legal_list_1 li {
+    padding-left: 6%;
+}
+.legal_list_1 li:before {
+    content: '\2022';
+    float: left;
+    margin-left: -12px;
+
+}
+
+.terms_section_numbers {
+    margin-right: 20px;
+}
+
 
 
 

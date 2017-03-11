@@ -362,6 +362,11 @@
     <Content Include="Desktop\scripts-bottom.html" />
     <Content Include="Desktop\scripts-top.html" />
     <Content Include="Desktop\videoplayers.aspx" />
+    <Content Include="Mobile\volaire-customer-care.aspx" />
+    <Content Include="Mobile\privacy-policy.aspx" />
+    <Content Include="Mobile\terms-and-conditions.aspx" />
+    <Content Include="Mobile\care-and-usage.aspx" />
+    <Content Include="Mobile\mega-promise-money-back-guarantee.aspx" />
     <Content Include="Mobile\hair-styles-and-tips.aspx" />
     <Content Include="Mobile\volaire-reviews.aspx" />
     <Content Include="Mobile\volaire-befores-and-afters.aspx" />
