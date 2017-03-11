@@ -426,12 +426,7 @@ namespace HavasEdgeReport
         {
             try
             {
-                // stored procedure convert time to EST Time Zone.
-                //DateTime StartDate = StartOfDay(DateTime.Parse("12/01/2014"));
-                //DateTime Enddate = EndOfDay(DateTime.Parse("06/14/2015"));
-                //DateTime StartDate1 = DateTime.Parse("12/01/2014");
-                //DateTime Enddate1 = DateTime.Parse("06/14/2015");
-                DateTime StartDate = StartOfDay(ReportDate.AddDays(-61));
+                DateTime StartDate = StartOfDay(ReportDate.AddDays(-6));
                 DateTime Enddate = EndOfDay(ReportDate);
                 DateTime StartDate1 = ReportDate.AddDays(-6);
                 DateTime Enddate1 = ReportDate;
@@ -542,26 +537,10 @@ namespace HavasEdgeReport
             Console.WriteLine("Start Havas file Legendzxl.com " + ReportDate.ToString());
             Report DailyReports = new Report();
             DailyReports.LogToFile("Start Chief  Media Reports " + DateTime.Now.ToString());                                    
-            // DailyReports.CheckDataBase_Connection();           
-            //ReportDate = DateTime.Parse("1/17/2016");
             string versionname = "";
             string FileName_PostFix = "";
             int VersionID = 0;
-            //DataTable DT = getDataTable("pr_report_ChiefMediaVersionDetails");
-            //if(DT.Rows.Count>0)
-            //{
-            //    foreach (DataRow row in DT.Rows)
-            //    {
-                    //versionname = row["VersionName"].ToString();
-                    //FileName_PostFix = row["FileName_PostFix"].ToString();
-                    //VersionID = Convert.ToInt32(row["VersionID"].ToString());
-                    //if(VersionID>0)
-                    //{
-                        DailyReports.LoadReport(ReportDate, VersionID, versionname, FileName_PostFix); // Version ID are as per PRODUCTION VersionID                        
-                    //}
-            //    }
-            //}
-
+            DailyReports.LoadReport(ReportDate, VersionID, versionname, FileName_PostFix); // Version ID are as per PRODUCTION VersionID                        
             Console.WriteLine("End  Havas file Legendzxl.com ");
             DailyReports.LogToFile("End Mercury Media Reports " + DateTime.Now.ToString());   
         }
