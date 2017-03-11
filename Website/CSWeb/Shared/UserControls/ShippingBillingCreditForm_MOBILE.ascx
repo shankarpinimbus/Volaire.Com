@@ -33,7 +33,7 @@ Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(BeginRequestHandl
 function BeginRequestHandler(sender, args) {
 document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...";
     //document.getElementById('<%= imgBtn.ClientID %>').Im = "Processing";
-    document.getElementById("<%= imgBtn.ClientID %>").src = "//d39hwjxo88pg52.cloudfront.net/images/loader.gif";
+    //document.getElementById("<%= imgBtn.ClientID %>").src = "//d39hwjxo88pg52.cloudfront.net/images/loader.gif";
     args.get_postBackElement().disabled = true;
     //MM_showHideLayers('mask', '', 'show');
 }
