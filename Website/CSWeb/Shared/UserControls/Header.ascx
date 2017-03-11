@@ -25,7 +25,7 @@
         	<div class="nav-logo"><h1><a href="index"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-logo.png" alt="Volaire" class="block" /></a></h1></div>
             <div class="nav-btn"><a href="tv-introductory-offer"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-get-tv-offer.png" alt="Volaire" class="block" /></a></div>
             <div class="nav-inner">
-            	<h3 class="nav-phone">1-800-201-6539</h3>
+            	<h3 class="nav-phone"><%=GetDynamicSidData("phone") %></h3>
                 <ul class="nav">
                 	<li><a href="air-weight-technology" class="nav-tech">Airweight Technology™</a></li>
                 	<li><a href="hair-volumizing-products" class="nav-products">Products</a></li>
