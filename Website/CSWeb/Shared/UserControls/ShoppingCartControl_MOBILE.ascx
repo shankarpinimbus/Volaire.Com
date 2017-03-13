@@ -29,12 +29,14 @@
                         <div class="basket_description">
                             <asp:Label runat="server" ID='lblSkuDescription'></asp:Label>
                         </div>
-                    </div>
-                    <div class="cart_remove">
-                        <td runat="server" width="1%" id='holderRemove' visible="false">
-                            <asp:ImageButton ID="btnRemoveItem" runat="server" CommandName="delete" CausesValidation="false"
-                                Visible="" CssClass="ucRemoveButtonOverlay" ImageUrl="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/remove.png" />
-                        </td>
+
+                        
+                        <div class="cart_remove">
+                            <td runat="server" width="1%" id='holderRemove' visible="false">
+                                <asp:ImageButton ID="btnRemoveItem" runat="server" CommandName="delete" CausesValidation="false"
+                                    Visible="" CssClass="ucRemoveButtonOverlay" ImageUrl="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/remove.png" />
+                            </td>
+                        </div>
                     </div>
                 </div>
                 

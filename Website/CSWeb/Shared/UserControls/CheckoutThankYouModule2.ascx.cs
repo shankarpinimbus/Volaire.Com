@@ -23,7 +23,7 @@ namespace CSWeb.Mobile.UserControls
         protected Literal LiteralSubTotal, LiteralShipping, LiteralTax, LiteralTotal,
             LiteralName, LiteralAddress, LiteralCity, LiteralEmail, LiteralZip, LiteralState, LiteralCountry,
             LiteralName_b, LiteralAddress_b, LiteralCity_b, LiteralZip_b, LiteralState_b, LiteralCountry_b, LiteralRushShipping, LiteralGoogleAnalytics, LiteralID, LiteralSid, LiteralOfferId,
-            LiteralAddress2, LiteralAddress2_b, LiteralPhone;
+            LiteralAddress2, LiteralAddress2_b, LiteralPhone, ltOfferDetails, ltCardType, ltCardNumber, ltExpDate;
 
         protected DataList dlordersList;
         protected Label lblPurchaseName, lblPromotionPrice;
@@ -98,10 +98,16 @@ namespace CSWeb.Mobile.UserControls
 
                 dlordersList.DataSource = orderData.SkuItems;
                 dlordersList.DataBind();
+                ltOfferDetails.Text = OrderHelper.GetOfferDatails();
                 LiteralSubTotal.Text = Math.Round(orderData.SubTotal, 2).ToString();
                 LiteralShipping.Text = Math.Round(orderData.ShippingCost, 2).ToString();
                 LiteralTax.Text = Math.Round(orderData.Tax, 2).ToString();
                 LiteralTotal.Text = Math.Round(orderData.Total, 2).ToString();
+
+                //ltCardNumber.Text = orderData.CreditInfo.CreditCardNumber.Substring(orderData.CreditInfo.CreditCardNumber.Length - 4, 4);
+                //ltCardType.Text = orderData.CreditInfo.CreditCardName;//.Substring(0, 1);
+                //ltExpDate.Text = orderData.CreditInfo.CreditCardExpired.ToString("MM/yyyy");
+
                 if (orderData.RushShippingCost > 0)
                 {
                     pnlRushLabel.Visible = true;
