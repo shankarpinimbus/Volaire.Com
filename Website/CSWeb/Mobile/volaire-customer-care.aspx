@@ -23,7 +23,7 @@
 <uc:Header ID="Header" runat="server" />
 
     <div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-customer-care.jpg" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-customer-care.jpg" class="block full" />
         <a href="frequently-asked-questions" class="maplink carelink1">FAQ</a>
     </div>
 
@@ -36,7 +36,7 @@
             <div class="contact-text">
                 <h3>Call Us:</h3>
                 <p>1-800-201-6539 6am–6pm PST, <br />
-                    Monday–Friday <br />and 7am–1pm PST Saturday</p>
+                    Monday–Friday and <br />7am–1pm PST Saturday</p>
             </div>
         </div>
         <div class="contact-row clearfix">
@@ -54,7 +54,7 @@
 
     <section class="container">
     <div class="customer-care-main">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/care-quote-yvette.jpg" alt="VOLAIRE, Yvette" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/care-quote-yvette.jpg" alt="VOLAIRE, Yvette" class="block full" />
         <div style="text-align:right; padding-right: 5%;"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/yvette.mp4" class="watch_demo fancy_video">Watch Her Story</a></div>
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
     </div>

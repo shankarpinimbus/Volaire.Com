@@ -21,7 +21,7 @@
 <uc:Header ID="Header" runat="server" />
 
     <div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-care-usage.jpg" alt="Care & Usage" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-care-usage.jpg" alt="Care & Usage" class="block full" />
         <a href="hair-styles-and-tips.aspx" class="maplink tipslink1">Tips</a>
     </div>
     

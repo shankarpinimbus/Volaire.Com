@@ -188,7 +188,7 @@ sup {
    text-decoration: none;
    display: block;
    padding: .4rem 5%;
-   background: #efe6dd;
+   background: rgba(239, 230, 221, 0.9);
 }
 
 .topbanner-promo {
@@ -377,23 +377,25 @@ p {padding-bottom: 1rem;}
 .home-slider {
     width: 100%;
     padding-bottom: 50px;
-    padding-left: 2%;
 }
 
 .home-slider .btn_next {
     position: absolute;
-    top: 110%;
-    right: 15%;
+    top: 109%;
+    right: 4%;
     cursor: pointer;
+    width: 4%;
 }
 .home-slider .btn_prev {
     position: absolute;
-    top: 110%;
-    left: 15%;
+    top: 109%;
+    left: 4%;
     cursor: pointer;
+    width: 4%;
 }
 
-.slick-slide {margin-right: 14px;}
+.slick-slide {margin: 0 5px;}
+.slick-slide img {width: 100%;}
 p.note {
     font-size: .875rem;
 }
@@ -404,23 +406,26 @@ p.note {
 
 .home-slider .slick-dots {
     list-style: none;
-    width: 60%;
+    width: 85%;
     position: absolute;
     top: 110%;
-    left: 20%;
+    left: 7.5%;
     text-align: center;
+    line-height: 1.1;
 }
 
 .home-slider .slick-dots li {
     display: inline-block;
     text-align: center;
-    margin: 0 6px;
+    margin: 0 4px;
 }
 .home-slider .slick-dots li button {
     border: 0;
     background: #dadada;
-    width: 13px;
-    height: 13px;
+    width: .7rem;
+    width: 3.4vw;
+    height: .7rem;
+    height: 3.4vw;
     border-radius: 50%;
     text-indent: -9999px;
     cursor: pointer;
@@ -779,12 +784,9 @@ p.note {
 }
 
 .airweight-3 p.note {
-    position: absolute;
-    bottom: 5%;
-    right: 3%;
+    padding: 0 0 1rem 2%;
     font-size: 11px;
     font-size: 3.2vw;
-    padding-bottom: 0;
 }
 
 .airweight-kristi .watch_demo {
@@ -818,6 +820,8 @@ p.note {
     text-transform: uppercase;
 }
 
+.ba-img {width: 100%;}
+
 .quote-dawn .watch_demo {
     position: absolute;
     width: 39%;
@@ -830,7 +834,7 @@ p.note {
 .ba-attr {
     font-weight: 300;
     text-align: right;
-    padding: .3rem .6rem .6rem .3rem;
+    padding: .3rem .1rem .6rem .3rem;
 }
 
 
@@ -1770,5 +1774,10 @@ label.error {display: none !important;}
 
 .offers-cart .stickynav-landscape,
 #cart .stickynav-landscape  {display: none;}
+.home-slider {padding-bottom: 7rem;}
+
+.watch_demo {
+    padding: 0 0 2px 8%;
+}
 
 }

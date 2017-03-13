@@ -482,13 +482,13 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 .home-slider .btn_next {
     position: absolute;
     top: 111%;
-    right: 32%;
+    right: 28%;
     cursor: pointer;
 }
 .home-slider .btn_prev {
     position: absolute;
     top: 111%;
-    left: 32%;
+    left: 28%;
     cursor: pointer;
 }
 
@@ -505,10 +505,10 @@ p.note {
 
 .home-slider .slick-dots {
     list-style: none;
-    width: 33%;
+    width: 40%;
     position: absolute;
     top: 110%;
-    left: 33%;
+    left: 30%;
     text-align: center;
 }
 
@@ -1017,7 +1017,7 @@ p.note {
     line-height: 1.44;
     padding: 0 20% 1.3rem 0;
     font-weight: 300;
-    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+    text-shadow: 0 0 0 rgba(0, 0, 0, 1);
 }
 .offer-left p strong {
     text-shadow: none;
@@ -1044,7 +1044,7 @@ p.note {
     list-style: none;
     margin-left: 4%;
     font-weight: 300;
-    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+    text-shadow: 0 0 0 rgba(0, 0, 0, 1);
 }
 .offer-links ul strong, 
 .offer-left ul strong {
@@ -1159,7 +1159,7 @@ p.note {
 }
 #kit_90day .offer-left p {
     padding: 0 2% 2rem 0;
-    text-shadow: 0 0 0 rgba(0, 0, 0, .5);
+    text-shadow: 0 0 0 rgba(0, 0, 0, 1);
 }
 #kit_90day .offer-left p strong {
     text-shadow: none;
@@ -1433,10 +1433,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#061217', end
 .before-afters .row {
     margin: 0 2.5%;
 }
+
+.ba-img {width: 100%;}
+
 .ba-attr {
     font-weight: 300;
     text-align: right;
-    padding: .3rem .6rem .3rem .3rem;
+    padding: .3rem .1rem .3rem .3rem;
 }
 .ba-spacer {
     margin-top: .4rem;
@@ -1462,6 +1465,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#061217', end
 
 .basic-note {padding: 0 0 .8rem 1%;}
 .basic-note2 p.note {text-align: right; padding-bottom: 0;}
+.basic-note3 {padding: 0 0 .8rem 0; clear: both;}
 .quote-lindsay p.note {
     position: absolute;
     width: 50%;
@@ -1786,6 +1790,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4b6a5', end
     font-family: Judson, 'Times New Roman', serif;
     font-style: italic;
     font-size: 1.25rem;
+    line-height: 1;
 }
 
 .care-1 {

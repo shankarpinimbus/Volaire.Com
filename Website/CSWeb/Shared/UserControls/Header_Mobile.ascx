@@ -14,18 +14,18 @@
         </div>
         <%--display mega collection --%>
         <div class="header-mega">
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hdr-mega.png" alt="Do Not Miss This Amazing Offer" class="block" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hdr-mega.png" alt="Do Not Miss This Amazing Offer" class="block full" />
         </div>
         <div class="header-shine">
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/header-shine.png" alt="Make Your Results Shine Today!" class="block" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/header-shine.png" alt="Make Your Results Shine Today!" class="block full" />
         </div>
         <div class="header-tangle">
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/header-tangle.png" alt="Final Chance to Save Big Today!" class="block" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/header-tangle.png" alt="Final Chance to Save Big Today!" class="block full" />
         </div>
     </section>
     <section>
         <div>
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/header.png" alt="Volaire" class="block" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/header.png" alt="Volaire" class="block full" />
             <a href="index" class="maplink hdrlink1">Home</a>
             <a href="#" class="maplink hdrlink2 toggleNav">Menu</a>
 
@@ -55,12 +55,12 @@
 </header>
 
 <div class="stickynav">
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav.png" alt="Menu" class="block" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav.png" alt="Menu" class="block full" />
     <a href="tel:<%= GetCleanPhoneNumber(GetDynamicSidData("phone"))%>" class="maplink stickylink1">Call Now</a>
     <a href="tv-introductory-offer" class="maplink stickylink2">Order Now!</a>
 </div>
 <div class="stickynav-landscape">
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav-landscape.png" alt="Menu" class="block" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav-landscape.png" alt="Menu" class="block full" />
     <a href="tel:<%= GetCleanPhoneNumber(GetDynamicSidData("phone"))%>" class="maplink stickylink1">Call Now</a>
     <a href="tv-introductory-offer" class="maplink stickylink2">Order Now!</a>
 </div>

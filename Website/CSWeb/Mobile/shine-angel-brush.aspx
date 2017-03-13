@@ -15,12 +15,12 @@
 <div class="container">
 <uc:Header ID="Header" runat="server" />
 
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-shine.jpg" alt="Style like a pro. Shine Angel Pro Styling Brush" class="block" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-shine.jpg" alt="Style like a pro. Shine Angel Pro Styling Brush" class="block full" />
 
     <div class="contentpad2 clearfix" style="padding-top: 1rem;">
         <div class="fleft" style="width: 50%; margin-right: 2%;">
-            <p>Dubbed by the UK press as <strong><em>HRH Kate Middleton’s "Mane Man"</em>, <span class="caps">Richard Ward</span></strong><br />
-            shares his tips and tricks for achieving his <strong class="orange">signature Chelsea Blow Dry</strong><br />
+            <p>Dubbed by the UK press as <strong><em>HRH Kate Middleton’s "Mane Man"</em>, <span class="caps">Richard Ward</span></strong> 
+            shares his tips and tricks for achieving his <strong class="orange">signature Chelsea Blow Dry</strong> 
             for that truly royal finish every girl wants.</p>
         </div>
         <div class="fleft" style="width: 48%;">

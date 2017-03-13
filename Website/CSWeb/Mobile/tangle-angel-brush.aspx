@@ -16,7 +16,7 @@
 <uc:Header ID="Header" runat="server" />
 
     
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-tangle.jpg" alt="Detangle those strands. Tangle Angel Brush" class="block" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-tangle.jpg" alt="Detangle those strands. Tangle Angel Brush" class="block full" />
 
     <div>
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/tangle-main.jpg" alt="Richard Ward's Tangle Angel Brush" class="block" />

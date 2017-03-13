@@ -53,9 +53,16 @@
             <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-angie.jpg" alt="" /></div>
             <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-yvette.jpg" alt="" /></div>
             <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-cyndi.jpg" alt="" /></div>
-            <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-angie.jpg" alt="" /></div>
-            <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-yvette.jpg" alt="" /></div>
-            <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-cyndi.jpg" alt="" /></div>
+            <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-dawn.jpg" alt="" /></div>
+            <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-kana.jpg" alt="" /></div>
+            <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-barbara.jpg" alt="" /></div>
+            <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-nancy.jpg" alt="" /></div>
+            <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-lindsay.jpg" alt="" /></div>
+            <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-abra.jpg" alt="" /></div>
+            <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-cyndi.jpg" alt="" /></div>
+            <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-taunya.jpg" alt="" /></div>
+            <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-brittney.jpg" alt="" /></div>
+            <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-mel.jpg" alt="" /></div>
         </div>
               
 

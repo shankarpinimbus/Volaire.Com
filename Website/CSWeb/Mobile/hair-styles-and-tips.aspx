@@ -22,11 +22,11 @@
 <div class="container">
 <uc:Header ID="Header" runat="server" />
 
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-tips.jpg" alt="Do It Yourself - DIY" class="block" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-tips.jpg" alt="Do It Yourself - DIY" class="block full" />
 
     <div class="contentpad3 tips">
         <h2>Get these <span class="med caps lightblue2">Everyday ‘do</span>s!</h2>
-        <p class="intro">Create your own fave salon styles with ease using <strong class="med caps">Volaire’s Hair Volumizing system</strong>. Choose a look below to see our stylists in action or get step-by-step techniques to create on your own. </p>
+        <%--<p class="intro">Create your own fave salon styles with ease using <strong class="med caps">Volaire’s Hair Volumizing system</strong>. Choose a look below to see our stylists in action or get step-by-step techniques to create on your own. </p>--%>
 
         <div class="tips-wrap">
             <p class="p1">Richard Ward’s Signature Chelsea blow dry</p>
@@ -45,12 +45,12 @@
         </div>
         <div class="tips-wrap">
             <p class="p1">Dean Banowetz – Modern Blow Out</p>
-            <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blowout.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-modern-blowout.png" alt="Dean Banowetz" class="iblock" /></a>
-            <p class="p2"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blowout.mp4" class="watch_demo fancy_video">Watch Me</a></p>
+            <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blow-out.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-modern-blowout.png" alt="Dean Banowetz" class="iblock" /></a>
+            <p class="p2"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blow-out.mp4" class="watch_demo fancy_video">Watch Me</a></p>
         </div>
 
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/tips-quote-luke-o-connor.jpg" alt="Luke O'Connor" class="block" style="margin-top: 1rem;" />
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/selfies-wanted.jpg" alt="Before and After Selfies Wanted!" class="block tips-before-after-selfies-wanted" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/tips-quote-luke-o-connor.jpg" alt="Luke O'Connor" class="block full" style="margin-top: 1rem;" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/selfies-wanted.jpg" alt="Before and After Selfies Wanted!" class="block full tips-before-after-selfies-wanted" />
 
     </div>
     

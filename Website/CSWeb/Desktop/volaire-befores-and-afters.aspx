@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="col span8 quote-dawn">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-dawn.png" alt="Before and After" class="block ba-img" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-dawn.png" alt="Before and After" class="block ba-img-big" />
                 <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/dawn.mp4" class="watch_demo fancy_video">Watch Her Story</a>
                 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
             </div>
@@ -57,11 +57,11 @@
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-yvette.jpg" alt="Before and After" class="block ba-img" />
                 <div class="ba-attr">Yvette, <em>Age 41</em></div>
             </div>
+            <div class="basic-note3"><%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%></div>
         </div>
-        <div class="basic-note"><%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%></div>
         <div class="row">
             <div class="col span8 quote-lindsay">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-lindsay.png" alt="Before and After" class="block ba-img quote-lindsay-img" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-lindsay.png" alt="Before and After" class="block ba-img-big quote-lindsay-img" />
                 <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/lindsay.mp4" class="watch_demo fancy_video">Watch Her Story</a>
                 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
             </div>
@@ -91,18 +91,19 @@
         </div>
         <div class="row">
             <div class="col span8 quote-cyndi">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-cyndi.png" alt="Before and After" class="block ba-img quote-lindsay-img" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-quote-cyndi.png" alt="Before and After" class="block ba-img-big quote-lindsay-img" />
                 <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/cyndi.mp4" class="watch_demo fancy_video">Watch Her Story</a>
             </div>
             <div class="col span4">
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-selfies-wanted.jpg" alt="Before and After Selfies Wanted!" class="block ba-img" />
             </div>
+            
+            <div class="basic-note3"><%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%></div>
         </div>
-        <div class="basic-note"><%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%></div>
     </div>
     <div class="container before-after-bottom">
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-bottom.png" alt="Still Think We're Teasing?" class="block" style="margin: 0 auto 1.5rem;" />
-        <a href="#video" class="watch_demo">Watch Video</a>
+        <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/volaire-twin-test.mp4" class="watch_demo fancy_video">Watch Video</a>
     </div>
 </section>
 

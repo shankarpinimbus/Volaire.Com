@@ -52,8 +52,8 @@
                 </div>
                 <div class="tips-right">
                     <p class="p1">Dean Banowetz – Modern Blow Out</p>
-                    <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blowout.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-modern-blowout.png" alt="Dean Banowetz" class="iblock" /></a>
-                    <p class="p2"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blowout.mp4" class="watch_demo fancy_video">Watch Me</a></p>
+                    <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blow-out.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-modern-blowout.png" alt="Dean Banowetz" class="iblock" /></a>
+                    <p class="p2"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blow-out.mp4" class="watch_demo fancy_video">Watch Me</a></p>
                 </div>
             </div>
         </div>

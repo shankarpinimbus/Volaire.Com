@@ -23,7 +23,7 @@
 <uc:Header ID="Header" runat="server" />
 
     <div class="hero-reviews">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-reviews.jpg" alt="Thicker, Fuller Looking Hair with AirWeight™ Technology " class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-reviews.jpg" alt="Thicker, Fuller Looking Hair with AirWeight™ Technology " class="block full" />
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
     </div>
     

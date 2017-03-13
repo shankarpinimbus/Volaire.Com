@@ -22,29 +22,30 @@
 <uc:Header ID="Header" runat="server" />
 
     <div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home1.jpg" alt="ready. set. VA-VA VOLUME! Get touchable, weightless, long-lasting volume instantly!" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home1.jpg" alt="ready. set. VA-VA VOLUME! Get touchable, weightless, long-lasting volume instantly!" class="block full" />
         <a href="tv-introductory-offer" class="maplink homelink1">Get TV Offer!</a>
     </div>
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home2.png" alt="AirWeight Technology&trade; Hair Volumizing System" class="block" />
+    <%--<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home2.png" alt="AirWeight Technology&trade; Hair Volumizing System" class="block" />--%>
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
     
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home3.png" alt="full-proof RESULTS" class="block" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home3.png" alt="full-proof RESULTS" class="block full" />
 
     <section class="home-slider-wrap clearfix">
         <div class="home-slider">
             <div class="slick-slider">
-                <div>
-                    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-angie.jpg" alt="" /></div>
-                <div>
-                    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-yvette.jpg" alt="" /></div>
-                <div>
-                    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-cyndi.jpg" alt="" /></div>
-                <div>
-                    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-angie.jpg" alt="" /></div>
-                <div>
-                    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-yvette.jpg" alt="" /></div>
-                <div>
-                    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-cyndi.jpg" alt="" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-angie.jpg" alt="" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-yvette.jpg" alt="" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-cyndi.jpg" alt="" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-dawn.jpg" alt="" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-kana.jpg" alt="" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-barbara.jpg" alt="" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-nancy.jpg" alt="" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-lindsay.jpg" alt="" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-abra.jpg" alt="" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-cyndi.jpg" alt="" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-taunya.jpg" alt="" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-brittney.jpg" alt="" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-mel.jpg" alt="" /></div>
             </div>
         </div>
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
@@ -52,31 +53,31 @@
 
 
     <div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home4.jpg" alt="Get Everyday, effortless volume - no stylist needed." class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home4.jpg" alt="Get Everyday, effortless volume - no stylist needed." class="block full" />
         <a href="tv-introductory-offer" class="maplink homelink4">Save 40% - Get Offer!</a>
     </div>
 
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home5.jpg" alt="TIP: VOLAIRE's Shampoo and Conditioner Give All Types the Foundation for Mega Volume" class="block" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home5.jpg" alt="TIP: VOLAIRE's Shampoo and Conditioner Give All Types the Foundation for Mega Volume" class="block full" />
 
     <div class="home6">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home6.png" alt="STYLE to the fullest. See how VOLAIRE™ rises above the rest!" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home6.png" alt="STYLE to the fullest. See how VOLAIRE™ rises above the rest!" class="block full" />
 
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home6b.jpg" alt="VOLAIRE Rises" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home6b.jpg" alt="VOLAIRE Rises" class="block full" />
         <p class="text-center"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/sink-or-swim.mp4" class="watch_demo fancy_video">Watch Demo</a></p>
 
-        <p class="p1"><span class="brand-txt">VOLAIRE</span> uses <strong class="med">AIRWEIGHT TECHNOLOGY</strong><br />
-            to infuse hair with tiny bubbles of positively charged microspheres filled with nutrient-rich ingredients that attach along each hair shaft to <strong class="med">create extra space between strands</strong> – so you get truly incredible volume – without adding any weight. </p>
+        <%--<p class="p1"><span class="brand-txt">VOLAIRE</span> uses <strong class="med">AIRWEIGHT TECHNOLOGY</strong><br />
+            to infuse hair with tiny bubbles of positively charged microspheres filled with nutrient-rich ingredients that attach along each hair shaft to <strong class="med">create extra space between strands</strong> – so you get truly incredible volume – without adding any weight. </p>--%>
     </div>
     
     
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home7.png" alt="95% of Women who used VOLAIRE said theirhair had more body and bounce.†  †As reported by women in a 21-person company sponsored study." class="block" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home7.png" alt="95% of Women who used VOLAIRE said theirhair had more body and bounce.†  †As reported by women in a 21-person company sponsored study." class="block full" />
     
 
 
-    <div class="home8">
+    <%--<div class="home8">
         <h2>Celebrity stylists from <strong class="brown med caps">Beverly Hills</strong> to <strong class="brown med caps">London</strong> rave about <span class="caps">Volaire!</span></h2>
-        <p><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/celebrity-stylists.jpg" alt="" class="block" /></p>
-    </div>
+        <p><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/celebrity-stylists.jpg" alt="" class="block full" /></p>
+    </div>--%>
 
 
     

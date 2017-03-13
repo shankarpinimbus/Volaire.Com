@@ -21,7 +21,7 @@
 <div class="container">
 <uc:Header ID="Header" runat="server" />
 
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-faq.jpg" alt="Frequently Asked Volume" class="block" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-faq.jpg" alt="Frequently Asked Volume" class="block full" />
 
 <div class="faq">
     <dl>
@@ -35,10 +35,10 @@
         <dd>Just shampoo and condition your hair using the Weightless Volumizing Shampoo and Weightless Fortifying Conditioner. It's just that easy to get the instant and lasting volume you want. For extra texture, body and lift, use the Uplift Volumizing Mist and Air Magic Texturizing Spray.</dd>
 
         <dt>Can I use VOLAIRE every day?</dt>
-        <dd>VOLAIRE is gentle enough to use every day. The frequency of use depends on your hair’s thickness and condition (oily versus dry and/or color treated). Because Volaire extends your style longer, you may find that you need to wash your hair less often.</dd>
+        <dd>VOLAIRE is gentle enough to use every day. The frequency of use depends on your hair’s thickness and condition (oily versus dry and/or color treated). Because VOLAIRE extends your style longer, you may find that you need to wash your hair less often.</dd>
 
         <dt>How do I use VOLAIRE?</dt>
-        <dd>The Volaire Hair Volumizing System was created to work perfectly together to give you effortless volume, all day long.
+        <dd>The VOLAIRE Hair Volumizing System was created to work perfectly together to give you effortless volume, all day long.
             <ul>
                 <li><strong class="med">Weightless Volumizing Shampoo – </strong> Dispense a large dollop of shampoo into palm and activate lather by rubbing hands together. 	Massage lather into wet hair, from roots to ends. Rinse thoroughly. Repeat as needed.</li>		
                 <li><strong class="med">Weightless Fortifying Conditioner – </strong> After shampooing, apply a quarter size amount to wet hair, starting from the bottom half of the hair 		and working down to the tips, distributing the product evenly. Rinse thoroughly with cool water.</li>
