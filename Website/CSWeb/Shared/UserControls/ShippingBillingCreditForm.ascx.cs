@@ -1069,7 +1069,7 @@ namespace CSWeb.Shared.UserControls
                     paymentDataInfo.CreditCardNumber = CommonHelper.Encrypt(CardNumber);
                     paymentDataInfo.CreditCardType = Convert.ToInt32(ddlCCType.Value);
                     paymentDataInfo.CreditCardName = ddlCCType.Items[ddlCCType.SelectedIndex].Text;
-                    paymentDataInfo.CreditCardExpired = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1); //new DateTime(int.Parse(ddlExpYear.Items[ddlExpYear.SelectedIndex].Text), int.Parse(ddlExpMonth.Items[ddlExpMonth.SelectedIndex].Text), 1);
+                    paymentDataInfo.CreditCardExpired = new DateTime(int.Parse(ddlExpYear.Items[ddlExpYear.SelectedIndex].Text), int.Parse(ddlExpMonth.Items[ddlExpMonth.SelectedIndex].Text), 1);
                     paymentDataInfo.CreditCardCSC = txtCvv.Value;
                 }
                 else
