@@ -634,12 +634,14 @@ namespace CSWeb.Shared.UserControls
             {
                 shippingAddress.StateProvinceId = Convert.ToInt32(ddlShippingState.SelectedValue);
                 shippingAddress.CountryId = Convert.ToInt32(ddlShippingCountry.SelectedValue);
+                shippingAddress.ZipPostalCode = txtShippingZipCode.Text;
                 cartObject.ShippingAddress = shippingAddress;
             }
             else
             {
                 shippingAddress.StateProvinceId = Convert.ToInt32(ddlState.SelectedValue);
                 shippingAddress.CountryId = Convert.ToInt32(ddlCountry.SelectedItem.Value);
+                shippingAddress.ZipPostalCode = txtZipCode.Text;
                 cartObject.ShippingAddress = shippingAddress;
             }
             
@@ -1146,14 +1148,14 @@ namespace CSWeb.Shared.UserControls
                 }
             }
             
-            if (pnlShippingAddress.Visible)
-            {
-                txtShippingZipCode.Focus();
-            }
-            else
-            {
-                txtZipCode.Focus();
-            }
+            //if (pnlShippingAddress.Visible)
+            //{
+            //    txtShippingZipCode.Focus();
+            //}
+            //else
+            //{
+            //    txtZipCode.Focus();
+            //}
             RegionChanged();
             BindControls();
         }

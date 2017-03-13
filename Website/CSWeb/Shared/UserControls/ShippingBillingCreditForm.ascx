@@ -83,7 +83,7 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         </div>
                         <label class="label-1">
                             Email Address*</label>
-                        <asp:TextBox ID="txtEmail" required="required" runat="server" MaxLength="100" CssClass="text-1" placeholder="*Email"></asp:TextBox>
+                        <asp:TextBox ID="txtEmail" required="required" runat="server" MaxLength="100" CssClass="text-1"  placeholder="*Email"></asp:TextBox>
                         <%-- <input required="required" title="" pattern="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" id="txtEmail" runat="server" class="text-1" maxlength="100" placeholder="Email" />--%>
                     </div>
                     
@@ -161,7 +161,7 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         </div>
                         <label class="label-1">
                             State*</label>
-                        <asp:DropDownList ID="ddlState" required="required" runat="server" DataTextField="NAME" ClientIDMode="Static" CssClass="text-1" size="1">
+                        <asp:DropDownList ID="ddlState" required="required"  runat="server" DataTextField="NAME" ClientIDMode="Static" CssClass="text-1" size="1">
                         </asp:DropDownList>
                         <asp:HiddenField ID="ddlStateJS" runat="server" />
                         <%-- <select name="ddlState" id="ddlState" runat="server" datatextfield="NAME" class="text-1" size="1">
@@ -178,7 +178,8 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         
                         <label class="label-1">
                             Zip Code*</label>
-                        <asp:TextBox required="required" id="txtZipCode" runat="server" maxlength="10" clientidmode="Static" class="text-1" placeholder="*ZIP Code" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" />
+                        <asp:TextBox ID="txtZipCode" required="required" runat="server" MaxLength="100" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" CssClass="text-1"  placeholder="*ZIP Code"></asp:TextBox>
+                        <%--<asp:TextBox required="required" id="txtZipCode" runat="server" maxlength="10" clientidmode="Static" class="text-1" placeholder="*ZIP Code" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" />--%>
                     </div>
 
                     <div class="clear"></div>
@@ -481,6 +482,7 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
             </div>
      
     </ContentTemplate>
+    
 </asp:UpdatePanel>
 </fieldset>
 </section>
