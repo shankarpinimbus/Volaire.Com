@@ -319,7 +319,7 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         </div>
                         <label class="label-1">
                             Zip Code*</label>
-                        <asp:TextBox required="required" type="text" id="txtShippingZipCode" runat="server" clientidmode="Static" maxlength="5" class="text-1" placeholder="*ZIP Code" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" />
+                        <asp:TextBox required="required" type="text" ID="txtShippingZipCode" runat="server" clientidmode="Static" maxlength="5" class="text-1" placeholder="*ZIP Code" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" />
                     </div>
                     
                     
