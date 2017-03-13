@@ -94,7 +94,7 @@ namespace CSWeb.Mobile.UserControls
         {
             if (orderId > 0)
             {
-                Order orderData = CSResolve.Resolve<IOrderService>().GetOrderDetails(orderId);
+                Order orderData = CSResolve.Resolve<IOrderService>().GetOrderDetails(orderId,true);
 
                 dlordersList.DataSource = orderData.SkuItems;
                 dlordersList.DataBind();
@@ -104,9 +104,9 @@ namespace CSWeb.Mobile.UserControls
                 LiteralTax.Text = Math.Round(orderData.Tax, 2).ToString();
                 LiteralTotal.Text = Math.Round(orderData.Total, 2).ToString();
 
-                //ltCardNumber.Text = orderData.CreditInfo.CreditCardNumber.Substring(orderData.CreditInfo.CreditCardNumber.Length - 4, 4);
-                //ltCardType.Text = orderData.CreditInfo.CreditCardName;//.Substring(0, 1);
-                //ltExpDate.Text = orderData.CreditInfo.CreditCardExpired.ToString("MM/yyyy");
+                ltCardNumber.Text = orderData.CreditInfo.CreditCardNumber.Substring(orderData.CreditInfo.CreditCardNumber.Length - 4, 4);
+                ltCardType.Text = orderData.CreditInfo.CreditCardName;//.Substring(0, 1);
+                ltExpDate.Text = orderData.CreditInfo.CreditCardExpired.ToString("MM/yyyy");
 
                 if (orderData.RushShippingCost > 0)
                 {
