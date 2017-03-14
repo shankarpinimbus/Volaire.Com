@@ -47,6 +47,6 @@
 
 </form>
 <%#CSBusiness.DynamicVersion.Helper.IncludeFile("popups.html")%>
-<%--<uc:TrackingPixels ID="TrackingPixels" runat="server" />--%>
+<uc:TrackingPixels ID="TrackingPixels" runat="server" />
 </body>
 </html>
