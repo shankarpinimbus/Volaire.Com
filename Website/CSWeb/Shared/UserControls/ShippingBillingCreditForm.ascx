@@ -91,147 +91,6 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
 
                     <div class="form_line clearfix">
                         <div class="error-1">
-                            <asp:RequiredFieldValidator CssClass="cata" ID="rfvFirstName" runat="server" Display="Dynamic"
-                                ControlToValidate="txtFirstName"></asp:RequiredFieldValidator>
-                            <asp:Label ID="lblFirstNameError" CssClass="none" runat="server" Visible="false">
-                            </asp:Label>
-                        </div>
-                        <label class="label-1">
-                            First Name*</label>
-                        <input type="text" required="required" id="txtFirstName" runat="server" maxlength="14" clientidmode="Static" class="text-1" placeholder="*First Name" />
-                    </div>
-                    <div class="form_line clearfix">
-                        <div class="error-1">
-                            <asp:RequiredFieldValidator CssClass="cata" ID="rfvLastName" runat="server" Display="Dynamic"
-                                ControlToValidate="txtLastName"></asp:RequiredFieldValidator>
-                            <asp:Label ID="lblLastNameError" CssClass="none" runat="server" Visible="false"></asp:Label>
-                        </div>
-                        <label class="label-1">
-                            Last Name*</label>
-                        <input type="text" required="required" id="txtLastName" runat="server" maxlength="14" clientidmode="Static" class="text-1" placeholder="*Last Name" />
-                    </div>
-
-                    <div class="clear"></div>
-
-                    <div class="form_line clearfix">
-                        <div class="error-1">
-                            <asp:RequiredFieldValidator CssClass="cata" ID="rfvAddress1" runat="server" Display="Dynamic"
-                                ControlToValidate="txtAddress1"></asp:RequiredFieldValidator>
-                            <asp:Label ID="lblAddress1Error" CssClass="none" runat="server" Visible="false"></asp:Label>
-                        </div>
-                        <label class="label-1">
-                            Address 1*</label>
-
-                        <input required="required" id="txtAddress1" runat="server" maxlength="30" clientidmode="Static" class="text-1 billingad1" placeholder="*Address" type="text" />
-                    </div>
-                    <div class="form_line clearfix">
-                        <label class="label-1">
-                            Address 2
-                        </label>
-                        <input id="txtAddress2" maxlength="30" class="text-1" type="text" clientidmode="Static" runat="server" visible="true" placeholder="Address 2" />
-                    </div>
-                    
-                    <div class="clear"></div>
-
-                    <div class="form_line clearfix">
-                        <div class="error-1">
-                            <asp:RequiredFieldValidator ID="rfvCity" CssClass="cata" runat="server" Display="Dynamic"
-                                ControlToValidate="txtCity"></asp:RequiredFieldValidator>
-                            <asp:Label ID="lblCityError" CssClass="none" runat="server" Visible="false"></asp:Label>
-                        </div>
-                        <label class="label-1">
-                            City*</label>
-                        <input required="required" type="text" id="txtCity" runat="server" maxlength="30" clientidmode="Static" class="text-1" placeholder="*City" />
-                    </div>
-                    <div class="form_line clearfix">
-                        <label class="label-1">
-                            Country*</label>
-                        <asp:DropDownList ID="ddlCountry" required="required" runat="server" DataTextField="NAME" DataValueField="COUNTRYID"
-                            AutoPostBack="true" OnSelectedIndexChanged="Country_SelectedIndexChanged"
-                            CssClass="text-1">
-                        </asp:DropDownList>
-                    </div>
-                    
-                    <div class="clear"></div>
-
-                    <div class="form_line clearfix">
-                        <div class="error-1">
-                            <asp:Label ID="lblStateError" runat="server" Visible="false"></asp:Label>
-
-                        </div>
-                        <label class="label-1">
-                            State*</label>
-                        <asp:DropDownList ID="ddlState" required="required"  runat="server" DataTextField="NAME" ClientIDMode="Static" CssClass="text-1" size="1">
-                        </asp:DropDownList>
-                        <asp:HiddenField ID="ddlStateJS" runat="server" />
-                        <%-- <select name="ddlState" id="ddlState" runat="server" datatextfield="NAME" class="text-1" size="1">
-                    </select>--%>
-                    </div>
-
-                    <div class="form_line clearfix">
-                        <div class="error-1">
-                            <asp:RequiredFieldValidator CssClass="cata" ID="rfvZipCode" runat="server" Display="Dynamic"
-                                ControlToValidate="txtZipCode"></asp:RequiredFieldValidator>
-                            <asp:Label ID="lblZiPError" runat="server" Visible="false"></asp:Label>
-                        </div>
-                            
-                        
-                        <label class="label-1">
-                            Zip Code*</label>
-                        <asp:TextBox ID="txtZipCode" required="required" runat="server" MaxLength="100" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" CssClass="text-1"  placeholder="*ZIP Code"></asp:TextBox>
-                        <%--<asp:TextBox required="required" id="txtZipCode" runat="server" maxlength="10" clientidmode="Static" class="text-1" placeholder="*ZIP Code" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" />--%>
-                    </div>
-
-                    <div class="clear"></div>
-
-                    <div class="form_line clearfix">
-                        <div class="error-1">
-                            <asp:RequiredFieldValidator CssClass="cata" ID="rfvPhoneNumber" runat="server" Display="Dynamic"
-                                ControlToValidate="txtPhoneNumber"></asp:RequiredFieldValidator>
-                            <asp:Label ID="lblPhoneNumberError" runat="server" Visible="false"></asp:Label>
-                        </div>
-                        <label class="label-1">
-                            Phone*</label>
-                        <asp:TextBox required="required" ID="txtPhoneNumber" runat="server" MaxLength="15" CssClass="text-2" placeholder="*Phone" />
-                        <span style="font-size: 11.5px; padding-left: 10px; padding-top: 2px;">For delivery questions only</span>
-                    </div>
-                    
-                    <div class="clear"></div>
-
-
-                    <asp:Panel ID="pnlQuantity" runat="server" Visible="false">
-                        <div class="form_line clearfix">
-                            <div class="error-1">
-                                <asp:Label ID="lblQuantityList" runat="server" Visible="false"></asp:Label>
-                            </div>
-                            <label class="label-1">
-                                Quantity*</label>
-                            <asp:DropDownList ID="ddlQuantityList" runat="server" CssClass="text-1">
-                                <asp:ListItem Value="select" Text="Select"></asp:ListItem>
-                                <asp:ListItem Value="1" Text="1"></asp:ListItem>
-                                <asp:ListItem Value="2" Text="2"></asp:ListItem>
-                                <asp:ListItem Value="3" Text="3"></asp:ListItem>
-                                <asp:ListItem Value="4" Text="4"></asp:ListItem>
-                                <asp:ListItem Value="5" Text="5"></asp:ListItem>
-                                <asp:ListItem Value="6" Text="6"></asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
-                    </asp:Panel>
-                </asp:Panel>
-                <div class="form_line clearfix" style="padding-top: 6px; padding-bottom: 0;">
-                    <label class="label-3" for="sbcfShippingBillingCreditForm_cbShippingSame">
-                        Is this also your Billing Address
-                    </label>
-                    <asp:CheckBox ID="cbShippingSame" runat="server" CssClass="checkbox-left" OnCheckedChanged="cbShippingSame_CheckedChanged" AutoPostBack="true" Checked="true" />
-                </div>
-
-                <div class="clear"></div>
-
-                <asp:Panel ID="pnlShippingAddress" runat="server" Visible="false">
-                    
-                    <div class="main_cart_hdr">Billing Address:</div>
-                    <div class="form_line clearfix">
-                        <div class="error-1">
                             <asp:RequiredFieldValidator ID="rfvShippingFirstName" runat="server" CssClass="cata" Display="Dynamic"
                                 ControlToValidate="txtShippingFirstName"></asp:RequiredFieldValidator>
                             <asp:Label ID="lblShippingFirstName" CssClass="none" runat="server" Visible="false">
@@ -322,7 +181,150 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         <asp:TextBox ID="txtShippingZipCode" required="required" runat="server" MaxLength="100" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" CssClass="text-1"  placeholder="*ZIP Code"></asp:TextBox>
                         <%--<asp:TextBox required="required" type="text" ID="txtShippingZipCode" runat="server" clientidmode="Static" maxlength="5" class="text-1" placeholder="*ZIP Code" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" />--%>
                     </div>
+
+                    <div class="clear"></div>
+
+                    <div class="form_line clearfix">
+                        <div class="error-1">
+                            <asp:RequiredFieldValidator CssClass="cata" ID="rfvPhoneNumber" runat="server" Display="Dynamic"
+                                ControlToValidate="txtPhoneNumber"></asp:RequiredFieldValidator>
+                            <asp:Label ID="lblPhoneNumberError" runat="server" Visible="false"></asp:Label>
+                        </div>
+                        <label class="label-1">
+                            Phone*</label>
+                        <asp:TextBox required="required" ID="txtPhoneNumber" runat="server" MaxLength="15" CssClass="text-2" placeholder="*Phone" />
+                        <span style="font-size: 11.5px; padding-left: 10px; padding-top: 2px;">For delivery questions only</span>
+                    </div>
                     
+                    <div class="clear"></div>
+
+
+                    <asp:Panel ID="pnlQuantity" runat="server" Visible="false">
+                        <div class="form_line clearfix">
+                            <div class="error-1">
+                                <asp:Label ID="lblQuantityList" runat="server" Visible="false"></asp:Label>
+                            </div>
+                            <label class="label-1">
+                                Quantity*</label>
+                            <asp:DropDownList ID="ddlQuantityList" runat="server" CssClass="text-1">
+                                <asp:ListItem Value="select" Text="Select"></asp:ListItem>
+                                <asp:ListItem Value="1" Text="1"></asp:ListItem>
+                                <asp:ListItem Value="2" Text="2"></asp:ListItem>
+                                <asp:ListItem Value="3" Text="3"></asp:ListItem>
+                                <asp:ListItem Value="4" Text="4"></asp:ListItem>
+                                <asp:ListItem Value="5" Text="5"></asp:ListItem>
+                                <asp:ListItem Value="6" Text="6"></asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+                    </asp:Panel>
+                </asp:Panel>
+                <div class="form_line clearfix" style="padding-top: 6px; padding-bottom: 0;">
+                    <label class="label-3" for="sbcfShippingBillingCreditForm_cbShippingSame">
+                        Is this also your Billing Address
+                    </label>
+                    <asp:CheckBox ID="cbShippingSame" runat="server" CssClass="checkbox-left" OnCheckedChanged="cbShippingSame_CheckedChanged" AutoPostBack="true" Checked="true" />
+                </div>
+
+                <div class="clear"></div>
+
+                <asp:Panel ID="pnlShippingAddress" runat="server" Visible="false">
+                    
+                    <div class="main_cart_hdr">Billing Address:</div>
+                    
+                    
+                    
+                    <div class="form_line clearfix">
+                        <div class="error-1">
+                            <asp:RequiredFieldValidator CssClass="cata" ID="rfvFirstName" runat="server" Display="Dynamic"
+                                ControlToValidate="txtFirstName"></asp:RequiredFieldValidator>
+                            <asp:Label ID="lblFirstNameError" CssClass="none" runat="server" Visible="false">
+                            </asp:Label>
+                        </div>
+                        <label class="label-1">
+                            First Name*</label>
+                        <input type="text" required="required" id="txtFirstName" runat="server" maxlength="14" clientidmode="Static" class="text-1" placeholder="*First Name" />
+                    </div>
+                    <div class="form_line clearfix">
+                        <div class="error-1">
+                            <asp:RequiredFieldValidator CssClass="cata" ID="rfvLastName" runat="server" Display="Dynamic"
+                                ControlToValidate="txtLastName"></asp:RequiredFieldValidator>
+                            <asp:Label ID="lblLastNameError" CssClass="none" runat="server" Visible="false"></asp:Label>
+                        </div>
+                        <label class="label-1">
+                            Last Name*</label>
+                        <input type="text" required="required" id="txtLastName" runat="server" maxlength="14" clientidmode="Static" class="text-1" placeholder="*Last Name" />
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="form_line clearfix">
+                        <div class="error-1">
+                            <asp:RequiredFieldValidator CssClass="cata" ID="rfvAddress1" runat="server" Display="Dynamic"
+                                ControlToValidate="txtAddress1"></asp:RequiredFieldValidator>
+                            <asp:Label ID="lblAddress1Error" CssClass="none" runat="server" Visible="false"></asp:Label>
+                        </div>
+                        <label class="label-1">
+                            Address 1*</label>
+
+                        <input required="required" id="txtAddress1" runat="server" maxlength="30" clientidmode="Static" class="text-1 billingad1" placeholder="*Address" type="text" />
+                    </div>
+                    <div class="form_line clearfix">
+                        <label class="label-1">
+                            Address 2
+                        </label>
+                        <input id="txtAddress2" maxlength="30" class="text-1" type="text" clientidmode="Static" runat="server" visible="true" placeholder="Address 2" />
+                    </div>
+                    
+                    <div class="clear"></div>
+
+                    <div class="form_line clearfix">
+                        <div class="error-1">
+                            <asp:RequiredFieldValidator ID="rfvCity" CssClass="cata" runat="server" Display="Dynamic"
+                                ControlToValidate="txtCity"></asp:RequiredFieldValidator>
+                            <asp:Label ID="lblCityError" CssClass="none" runat="server" Visible="false"></asp:Label>
+                        </div>
+                        <label class="label-1">
+                            City*</label>
+                        <input required="required" type="text" id="txtCity" runat="server" maxlength="30" clientidmode="Static" class="text-1" placeholder="*City" />
+                    </div>
+                    <div class="form_line clearfix">
+                        <label class="label-1">
+                            Country*</label>
+                        <asp:DropDownList ID="ddlCountry" required="required" runat="server" DataTextField="NAME" DataValueField="COUNTRYID"
+                            AutoPostBack="true" OnSelectedIndexChanged="Country_SelectedIndexChanged"
+                            CssClass="text-1">
+                        </asp:DropDownList>
+                    </div>
+                    
+                    <div class="clear"></div>
+
+                    <div class="form_line clearfix">
+                        <div class="error-1">
+                            <asp:Label ID="lblStateError" runat="server" Visible="false"></asp:Label>
+
+                        </div>
+                        <label class="label-1">
+                            State*</label>
+                        <asp:DropDownList ID="ddlState" required="required"  runat="server" DataTextField="NAME" ClientIDMode="Static" CssClass="text-1" size="1">
+                        </asp:DropDownList>
+                        <asp:HiddenField ID="ddlStateJS" runat="server" />
+                        <%-- <select name="ddlState" id="ddlState" runat="server" datatextfield="NAME" class="text-1" size="1">
+                    </select>--%>
+                    </div>
+
+                    <div class="form_line clearfix">
+                        <div class="error-1">
+                            <asp:RequiredFieldValidator CssClass="cata" ID="rfvZipCode" runat="server" Display="Dynamic"
+                                ControlToValidate="txtZipCode"></asp:RequiredFieldValidator>
+                            <asp:Label ID="lblZiPError" runat="server" Visible="false"></asp:Label>
+                        </div>
+                            
+                        
+                        <label class="label-1">
+                            Zip Code*</label>
+                        <asp:TextBox ID="txtZipCode" required="required" runat="server" MaxLength="100" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" CssClass="text-1"  placeholder="*ZIP Code"></asp:TextBox>
+                        <%--<asp:TextBox required="required" id="txtZipCode" runat="server" maxlength="10" clientidmode="Static" class="text-1" placeholder="*ZIP Code" AutoPostBack="true" OnTextChanged="ZipCode_TextChanged" />--%>
+                    </div>
                     
                     <div class="clear"></div>
                 </asp:Panel>

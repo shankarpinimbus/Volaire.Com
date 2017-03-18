@@ -661,14 +661,24 @@ namespace CSWeb.Shared.UserControls
         }
         public bool validateInput()
         {
-            if (CommonHelper.EnsureNotNull(txtZipCode.Text) != String.Empty)
+            if (ddlShippingState.SelectedItem.Equals("select"))
             {
-                if (ddlCountry.SelectedValue.Contains("231"))
+                lblShippingStateError.Text = ResourceHelper.GetResoureValue("StateErrorMsg");
+                lblShippingStateError.Visible = true;
+                _bError = true;
+            }
+            else
+                lblShippingStateError.Visible = false;
+
+
+            if (CommonHelper.EnsureNotNull(txtShippingZipCode.Text) != String.Empty)
+            {
+                if (ddlShippingCountry.SelectedValue.Contains("231"))
                 {
-                    if (!CommonHelper.IsValidZipCode(txtZipCode.Text))
+                    if (!CommonHelper.IsValidZipCode(txtShippingZipCode.Text))
                     {
-                        lblZiPError.Text = ResourceHelper.GetResoureValue("BillingZipCodeValidationErrorMsg");
-                        lblZiPError.Visible = true;
+                        lblShippingZiPError.Text = ResourceHelper.GetResoureValue("ShippingZipCodeValidationErrorMsg");
+                        lblShippingZiPError.Visible = true;
                         _bError = true;
 
                     }
@@ -678,32 +688,18 @@ namespace CSWeb.Shared.UserControls
                 }
                 else
                 {
-                    if (!CommonHelper.IsValidZipCodeCanadian(txtZipCode.Text))
+                    if (!CommonHelper.IsValidZipCodeCanadian(txtShippingZipCode.Text))
                     {
-                        lblZiPError.Text = ResourceHelper.GetResoureValue("BillingZipCodeValidationErrorMsg");
-                        lblZiPError.Visible = true;
+                        lblShippingZiPError.Text = ResourceHelper.GetResoureValue("ShippingZipCodeValidationErrorMsg");
+                        lblShippingZiPError.Visible = true;
                         _bError = true;
 
                     }
                     else
-                        lblZiPError.Visible = false;
+                        lblShippingZiPError.Visible = false;
                 }
 
             }
-            else
-            {
-                lblZiPError.Text = ResourceHelper.GetResoureValue("ZipCodeErrorMsg");
-                lblZiPError.Visible = true;
-                _bError = true;
-            }
-            if (ddlState.SelectedItem.Text.Equals("select"))
-            {
-                lblStateError.Text = ResourceHelper.GetResoureValue("StateErrorMsg");
-                lblStateError.Visible = true;
-                _bError = true;
-            }
-            else
-                lblStateError.Visible = false;
 
             string strPhoneNum = txtPhoneNumber.Text;
 
@@ -768,24 +764,16 @@ namespace CSWeb.Shared.UserControls
 
             if (pnlShippingAddress.Visible)
             {
-                if (ddlShippingState.SelectedItem.Equals("select"))
-                {
-                    lblShippingStateError.Text = ResourceHelper.GetResoureValue("StateErrorMsg");
-                    lblShippingStateError.Visible = true;
-                    _bError = true;
-                }
-                else
-                    lblShippingStateError.Visible = false;
 
-             
-                if (CommonHelper.EnsureNotNull(txtShippingZipCode.Text) != String.Empty)
+
+                if (CommonHelper.EnsureNotNull(txtZipCode.Text) != String.Empty)
                 {
-                    if (ddlShippingCountry.SelectedValue.Contains("231"))
+                    if (ddlCountry.SelectedValue.Contains("231"))
                     {
-                        if (!CommonHelper.IsValidZipCode(txtShippingZipCode.Text))
+                        if (!CommonHelper.IsValidZipCode(txtZipCode.Text))
                         {
-                            lblShippingZiPError.Text = ResourceHelper.GetResoureValue("ShippingZipCodeValidationErrorMsg");
-                            lblShippingZiPError.Visible = true;
+                            lblZiPError.Text = ResourceHelper.GetResoureValue("BillingZipCodeValidationErrorMsg");
+                            lblZiPError.Visible = true;
                             _bError = true;
 
                         }
@@ -795,18 +783,32 @@ namespace CSWeb.Shared.UserControls
                     }
                     else
                     {
-                        if (!CommonHelper.IsValidZipCodeCanadian(txtShippingZipCode.Text))
+                        if (!CommonHelper.IsValidZipCodeCanadian(txtZipCode.Text))
                         {
-                            lblShippingZiPError.Text = ResourceHelper.GetResoureValue("ShippingZipCodeValidationErrorMsg");
-                            lblShippingZiPError.Visible = true;
+                            lblZiPError.Text = ResourceHelper.GetResoureValue("BillingZipCodeValidationErrorMsg");
+                            lblZiPError.Visible = true;
                             _bError = true;
 
                         }
                         else
-                            lblShippingZiPError.Visible = false;
+                            lblZiPError.Visible = false;
                     }
 
                 }
+                else
+                {
+                    lblZiPError.Text = ResourceHelper.GetResoureValue("ZipCodeErrorMsg");
+                    lblZiPError.Visible = true;
+                    _bError = true;
+                }
+                if (ddlState.SelectedItem.Text.Equals("select"))
+                {
+                    lblStateError.Text = ResourceHelper.GetResoureValue("StateErrorMsg");
+                    lblStateError.Visible = true;
+                    _bError = true;
+                }
+                else
+                    lblStateError.Visible = false;
             }
             #endregion
 
@@ -1026,41 +1028,43 @@ namespace CSWeb.Shared.UserControls
                 clientData.OrderAttributeValues.AddOrUpdateAttributeValue("NameOnCard", new AttributeValue(txtNameOnCard.Text));
                 //Set Customer Information
                 Address billingAddress = new Address();
+                Address shippingAddress = new Address();
+                shippingAddress.FirstName = CommonHelper.fixquotesAccents(txtShippingFirstName.Value);
+                shippingAddress.LastName = CommonHelper.fixquotesAccents(txtShippingLastName.Value);
+                shippingAddress.Address1 = CommonHelper.fixquotesAccents(txtShippingAddress1.Value);
+                shippingAddress.Address2 = CommonHelper.fixquotesAccents(txtShippingAddress2.Value);
+                shippingAddress.City = CommonHelper.fixquotesAccents(txtShippingCity.Value);
+                shippingAddress.City = CommonHelper.fixquotesAccents(txtShippingCity.Value);
+                shippingAddress.StateProvinceId = Convert.ToInt32(ddlShippingState.SelectedValue);
+                shippingAddress.CountryId = Convert.ToInt32(ddlShippingCountry.SelectedValue);
+                shippingAddress.ZipPostalCode = CommonHelper.fixquotesAccents(txtShippingZipCode.Text);
+
                 
-                billingAddress.FirstName = CommonHelper.fixquotesAccents(txtFirstName.Value);
-                billingAddress.LastName = CommonHelper.fixquotesAccents(txtLastName.Value);
-                billingAddress.Address1 = CommonHelper.fixquotesAccents(txtAddress1.Value);
-                billingAddress.Address2 = CommonHelper.fixquotesAccents(txtAddress2.Value);
-                billingAddress.City = CommonHelper.fixquotesAccents(txtCity.Value);
-                billingAddress.StateProvinceId = int.Parse(ddlState.SelectedValue);
-                billingAddress.CountryId = Convert.ToInt32(ddlCountry.SelectedValue);
-                billingAddress.ZipPostalCode = CommonHelper.fixquotesAccents(txtZipCode.Text);
                 Customer CustData = new Customer();
                 CustData.FirstName = CommonHelper.fixquotesAccents(txtFirstName.Value);
                 CustData.LastName = CommonHelper.fixquotesAccents(txtLastName.Value);
                 CustData.PhoneNumber = CommonHelper.GetCleanPhoneNumber(txtPhoneNumber.Text);
                 CustData.Email = CommonHelper.fixquotesAccents(txtEmail.Text);
                 CustData.Username = CommonHelper.fixquotesAccents(txtEmail.Text);
-                CustData.BillingAddress = billingAddress;
+                CustData.ShippingAddress = shippingAddress;
+                
                 
 
                 if (!pnlShippingAddress.Visible)
                 {
-                    CustData.ShippingAddress = billingAddress;
+                    CustData.BillingAddress = shippingAddress;
                 }
                 else
                 {
-                    Address shippingAddress = new Address();
-                    shippingAddress.FirstName = CommonHelper.fixquotesAccents(txtShippingFirstName.Value);
-                    shippingAddress.LastName = CommonHelper.fixquotesAccents(txtShippingLastName.Value);
-                    shippingAddress.Address1 = CommonHelper.fixquotesAccents(txtShippingAddress1.Value);
-                    shippingAddress.Address2 = CommonHelper.fixquotesAccents(txtShippingAddress2.Value);
-                    shippingAddress.City = CommonHelper.fixquotesAccents(txtShippingCity.Value);
-                    shippingAddress.City = CommonHelper.fixquotesAccents(txtShippingCity.Value);
-                    shippingAddress.StateProvinceId = Convert.ToInt32(ddlShippingState.SelectedValue);
-                    shippingAddress.CountryId = Convert.ToInt32(ddlShippingCountry.SelectedValue);
-                    shippingAddress.ZipPostalCode = CommonHelper.fixquotesAccents(txtShippingZipCode.Text);
-                    CustData.ShippingAddress = shippingAddress;
+                    billingAddress.FirstName = CommonHelper.fixquotesAccents(txtFirstName.Value);
+                    billingAddress.LastName = CommonHelper.fixquotesAccents(txtLastName.Value);
+                    billingAddress.Address1 = CommonHelper.fixquotesAccents(txtAddress1.Value);
+                    billingAddress.Address2 = CommonHelper.fixquotesAccents(txtAddress2.Value);
+                    billingAddress.City = CommonHelper.fixquotesAccents(txtCity.Value);
+                    billingAddress.StateProvinceId = int.Parse(ddlState.SelectedValue);
+                    billingAddress.CountryId = Convert.ToInt32(ddlCountry.SelectedValue);
+                    billingAddress.ZipPostalCode = CommonHelper.fixquotesAccents(txtZipCode.Text);
+                    CustData.BillingAddress = billingAddress;
                 }
 
                 PaymentInformation paymentDataInfo = new PaymentInformation();
