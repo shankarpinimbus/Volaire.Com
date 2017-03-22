@@ -177,12 +177,12 @@ namespace HavasEdgeReport
 
         public static DateTime EndOfDay(DateTime date)
         {
-            return date.AddHours(21).AddMinutes(00).AddSeconds(00);
+            return date.AddHours(23).AddMinutes(59).AddSeconds(59);
         }
 
         public static DateTime StartOfDay(DateTime date)
         {
-            return date.AddDays(-1).AddHours(21).AddMinutes(00).AddSeconds(00);
+            return date;//.AddDays(-1).AddHours(21).AddMinutes(00).AddSeconds(00);
         }
 
         void CheckDataBase_Connection()
@@ -347,18 +347,6 @@ namespace HavasEdgeReport
                 // Create the TXT file.
                 StreamWriter sw = new StreamWriter(strFilePath, false);                
                 int iColCount = dt.Columns.Count;
-
-                // First we will write the headers.
-                //DataTable dt = m_dsProducts.Tables[0];
-                //for (int i = 0; i < iColCount; i++)
-                //{
-                //    sw.Write(dt.Columns[i]);
-                //    if (i < iColCount - 1)
-                //    {
-                //        sw.Write("|");
-                //    }
-                //}
-                //sw.Write(sw.NewLine);
                 string value = "";
                 string fomattedValue = "";
                 int length = 0;
@@ -369,10 +357,7 @@ namespace HavasEdgeReport
                     {
                         if (!Convert.IsDBNull(dr[i]))
                         {
-
-
                             sw.Write(dr[i].ToString());
-                            
                         }
                         if (i < iColCount - 1)
                         {
