@@ -143,7 +143,9 @@ $(document).ready(function () {
         infinite: true,
         dots: true,
         nextArrow: '<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/btn_next.png" alt="Next" class="btn_next">',
-        prevArrow: '<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/btn_prev.png" alt="Previous" class="btn_prev">',        adaptiveHeight: true,
+        prevArrow: '<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/btn_prev.png" alt="Previous" class="btn_prev">',
+        adaptiveHeight: true,
+
     });
 });
 </script>

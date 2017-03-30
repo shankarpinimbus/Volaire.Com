@@ -19,7 +19,15 @@ namespace CSWeb.Desktop
         protected void btnAddtoCart_OnClick(object sender, EventArgs e)
         {
             OrderHelper.EmptyCart();
-            OrderHelper.ChangeCart("122");
+            if (OrderHelper.GetVersionName().ToLower().Equals("b2"))
+            {
+                OrderHelper.ChangeCart("130");
+            }
+            else
+            {
+                OrderHelper.ChangeCart("122");
+            }
+            
             Response.Redirect("shine-angel-brush");
         }
     }

@@ -24,10 +24,20 @@ namespace CSWeb.Mobile
                 OrderHelper.EmptyCart();
                 OrderHelper.ChangeCart("123");
             }
-            else
+            else if (SiteBasePage.CartContext.CartInfo.SkuExists(120))
             {
                 OrderHelper.EmptyCart();
                 OrderHelper.ChangeCart("121");
+            }
+            else if (SiteBasePage.CartContext.CartInfo.SkuExists(128))
+            {
+                OrderHelper.EmptyCart();
+                OrderHelper.ChangeCart("129");
+            }
+            else if (SiteBasePage.CartContext.CartInfo.SkuExists(130))
+            {
+                OrderHelper.EmptyCart();
+                OrderHelper.ChangeCart("131");
             }
 
             if (rbMedium.Checked)

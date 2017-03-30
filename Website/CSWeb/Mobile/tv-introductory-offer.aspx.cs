@@ -19,7 +19,14 @@ namespace CSWeb.Mobile
         protected void btnAddtoCart_OnClick(object sender, EventArgs e)
         {
             OrderHelper.EmptyCart();
-            OrderHelper.ChangeCart("120");
+            if (OrderHelper.GetVersionName().ToLower().Equals("mobile_b2"))
+            {
+                OrderHelper.ChangeCart("128");
+            }
+            else
+            {
+                OrderHelper.ChangeCart("120");
+            }
             Response.Redirect("mega-volume-collection");
         }
     }
