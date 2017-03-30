@@ -12,7 +12,7 @@ namespace CSWeb.Shared.UserControls
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //versionName = CSWeb.OrderHelper.GetVersionName();
         }
 
         public string GetDynamicSidData(string data)

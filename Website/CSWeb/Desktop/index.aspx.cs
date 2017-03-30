@@ -31,6 +31,8 @@ namespace CSWeb.Desktop
                 }
 
                 OrderHelper.SetDynamicLandingPageVersion(OrderHelper.GetVersionName(), ClientOrderData);
+                // versionName used in Header.ascx
+                string versioName = OrderHelper.GetVersionName().ToLower();
                 var qs = HttpUtility.ParseQueryString(Request.QueryString.ToString());
                 if (Request["sid"] == null || Request["sid"].Equals(""))
                 {
