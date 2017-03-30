@@ -106,7 +106,13 @@
         </div>
         <div class="cart_totals clearfix">
             <div class="cart_totals_left caps">
+                <% if (versionName.ToLower().EndsWith("b2") ) %>
+    <% { %>
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/b2/cart-promo-code.png" class="fleft" />
+    <% } else  { %>
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/cart-promo-code.png" class="fleft" />
+    <% } %>
+
                 Subtotal:<br />
                 Tax:<br />
                 S&H:<br />

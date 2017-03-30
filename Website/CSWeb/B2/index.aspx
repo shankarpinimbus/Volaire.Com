@@ -26,7 +26,7 @@
             </div>
         	<div class="home1bottom">
             	<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/home-1-bottom.jpg" alt="Hair Volumizing System with AirWeight Technology" class="block">
-                <a href="tv-introductory-offer" class="home1bottomlink"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/promo-code-save-40-percent.png" alt="Save 40% - Promo Code SAVE40" class="block" /></a>
+                <a href="tv-introductory-offer" class="home1bottomlink"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/b2/promo-code-save-33-percent.png" alt="Save 33% - Promo Code SAVE40" class="block" /></a>
                 <div class="home1bottom-benefits">
                     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
                 </div>
@@ -72,8 +72,8 @@
 
 <section class="home3">
     <div class="container">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/home-everday-volume-richard-ward.jpg" class="block" />
-        <a href="tv-introductory-offer" class="maplink home3link">Save 40% Get Offer</a>
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/b2/home-everday-volume-richard-ward.jpg" class="block" />
+        <a href="tv-introductory-offer" class="maplink home3link">Save 33% Get Offer</a>
     </div>
 </section>
 

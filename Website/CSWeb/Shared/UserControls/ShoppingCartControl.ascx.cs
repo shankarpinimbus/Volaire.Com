@@ -10,6 +10,7 @@ namespace CSWeb.Shared.UserControls
 {
     public partial class ShoppingCartControl : System.Web.UI.UserControl
     {
+        public string versionName = "";
 
 		public event EventHandler UpdateCart;
 
@@ -72,6 +73,8 @@ namespace CSWeb.Shared.UserControls
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            versionName = CSWeb.OrderHelper.GetVersionName();
+
             if (!Page.IsPostBack)
             { 
                 

@@ -432,7 +432,14 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                     
                     <div class="clear"></div>
 
-                    <div class="main_cart_hdr">Promocode: <input type="text" value="SAVE40" class="text-2 text-promocode" disabled /></div>
+                    <div class="main_cart_hdr">Promocode: 
+                        <% if (versionName.ToLower().EndsWith("b2") ) %>
+    <% { %>
+                <input type="text" value="VOL33" class="text-2 text-promocode" disabled />
+    <% } else  { %>
+                <input type="text" value="SAVE40" class="text-2 text-promocode" disabled />
+    <% } %>
+                        </div>
                     
                     <div class="clear"></div>
 

@@ -22,6 +22,8 @@ namespace CSWeb.Shared.UserControls
 
     public partial class ShippingBillingCreditForm : System.Web.UI.UserControl
     {
+        public string versionName = "";
+
         #region Variable and Events Declaration
         bool _bError = false;
         protected Cart cartObject;
@@ -55,6 +57,8 @@ namespace CSWeb.Shared.UserControls
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            versionName = CSWeb.OrderHelper.GetVersionName();
+
             ScriptManager.RegisterStartupScript(this.Page, typeof(string), "ShowPopup", "MM_showHideLayers('mask','','hide');", true);
 
             if (!IsPostBack)

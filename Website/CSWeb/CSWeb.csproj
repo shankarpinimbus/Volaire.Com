@@ -325,7 +325,11 @@
     <Content Include="Admin\VersionList.aspx" />
     <Content Include="Admin\VersionReport.aspx" />
     <Content Include="Admin\VersionReport1.aspx" />
+    <Content Include="B2\bottomcta.html" />
+    <Content Include="B2\Cart.aspx" />
     <Content Include="B2\index.aspx" />
+    <Content Include="B2\mega-volume-collection.aspx" />
+    <Content Include="B2\tv-introductory-offer.aspx" />
     <Content Include="Desktop\AddProduct.aspx" />
     <Content Include="Desktop\care-and-usage.aspx" />
     <Content Include="Desktop\terms-and-conditions.aspx" />
