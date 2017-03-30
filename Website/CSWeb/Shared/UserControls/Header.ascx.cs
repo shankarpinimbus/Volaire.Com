@@ -10,9 +10,11 @@ namespace CSWeb.Shared.UserControls
 {
     public partial class Header : System.Web.UI.UserControl
     {
+        public string versionName = "";
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            //versionName = CSWeb.OrderHelper.GetVersionName();
+            versionName = CSWeb.OrderHelper.GetVersionName();
         }
 
         public string GetDynamicSidData(string data)
