@@ -22,7 +22,7 @@
 <uc:Header ID="Header" runat="server" />
 
     <div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home1.jpg" alt="ready. set. VA-VA VOLUME! Get touchable, weightless, long-lasting volume instantly!" class="block full" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_b2/home1.jpg" alt="ready. set. VA-VA VOLUME! Get touchable, weightless, long-lasting volume instantly!" class="block full" />
         <a href="tv-introductory-offer" class="maplink homelink1">Get TV Offer!</a>
     </div>
     <%--<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home2.png" alt="AirWeight Technology&trade; Hair Volumizing System" class="block" />--%>
@@ -53,8 +53,8 @@
 
 
     <div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home4.jpg" alt="Get Everyday, effortless volume - no stylist needed." class="block full" />
-        <a href="tv-introductory-offer" class="maplink homelink4">Save 40% - Get Offer!</a>
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_b2/home4.jpg" alt="Get Everyday, effortless volume - no stylist needed." class="block full" />
+        <a href="tv-introductory-offer" class="maplink homelink4">Save 33% - Get Offer!</a>
     </div>
 
     <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home5.jpg" alt="TIP: VOLAIRE's Shampoo and Conditioner Give All Types the Foundation for Mega Volume" class="block full" />

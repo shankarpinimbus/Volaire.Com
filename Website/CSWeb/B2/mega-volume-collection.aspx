@@ -77,7 +77,7 @@
 <section class="container offer-footer">
     <div class="offer-footer-content">
         <p><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/ssl.png" alt="" class="iblock" /></p>
-        <p>*VOLAIRE Mega Volume Collection, 90 Day Supply. WITH YOUR ORDER TODAY, YOU’LL RECEIVE A FREE FULL-SIZE BONUS GIFT, AND FREE SHIPPING! For today’s Mega Volume Collection, 90 Day Supply, you will be charged 1 payment of $39.95, plus any applicable tax, plus two additional monthly payments of $29.95.</p>
+        <p>*VOLAIRE Mega Volume Collection, 90 Day Supply. WITH YOUR ORDER TODAY, YOU’LL RECEIVE A FREE FULL-SIZE BONUS GIFT, AND FREE SHIPPING! For today’s Mega Volume Collection, 90 Day Supply, you will be charged 1 payment of $39.95, plus any applicable tax, plus two additional monthly payments of $39.95.</p>
         <p>This offer includes enrollment in the VOLAIRE MVP Subscription Program. Approximately 12 weeks after your first order is shipped, and then approximately every 12 weeks thereafter, you will be sent a new 90 Day supply of the Mega Volume Collection. Each shipment will be charged to the card you provide today, in three installments, approximately every 4 weeks at the guaranteed low price of $39.95, per installment plus $3.33 per installment for shipping and handling, plus any applicable sales tax, unless you call to cancel. There is no commitment and no minimum to buy. Please note exact shipment times may vary.  </p>
         <p>To customize future shipments and charges, call customer service anytime at 1-800-201-6539.</p>
         <p class="footer-copyright">© <script>document.write(new Date().getFullYear())</script> VOLAIRE™. All Rights Reserved.</p>

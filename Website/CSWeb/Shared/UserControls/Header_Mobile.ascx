@@ -2,15 +2,28 @@
 <header>
 	<section class="topbanner">
         <div class="topbanner-promo">
-            <h2>
-                <a href="tv-introductory-offer">
-                	<span class="part1">Save 40%</span> 
-                	<span class="part2a">+</span> 
-                	<span class="part2b">Free Shipping</span> 
-                	<span class="part3"><span>|</span> Promo Code</span> 
-                	<span class="part4">Save40</span>
-                </a>
-            </h2>
+            <% if (versionName.ToLower().EndsWith("b2") ) %>
+    <% { %>
+                    <h2>
+                    <a href="tv-introductory-offer">
+                	    <span class="part1">Save 33%</span> 
+                	    <span class="part2a">+</span> 
+                	    <span class="part2b">Free Shipping</span> 
+                	    <span class="part3"><span style="margin-right: 2px;">|</span> Promo Code</span> 
+                	    <span class="part4">VOL33</span>
+                    </a>
+                </h2>
+    <% } else  { %>
+                <h2>
+                    <a href="tv-introductory-offer">
+                	    <span class="part1">Save 40%</span> 
+                	    <span class="part2a">+</span> 
+                	    <span class="part2b">Free Shipping</span> 
+                	    <span class="part3"><span style="margin-right: 2px;">|</span> Promo Code</span> 
+                	    <span class="part4">Save40</span>
+                    </a>
+                </h2>
+    <% } %>
         </div>
         <%--display mega collection --%>
         <div class="header-mega">

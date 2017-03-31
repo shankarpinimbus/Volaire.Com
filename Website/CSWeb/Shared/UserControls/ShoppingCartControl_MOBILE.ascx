@@ -135,7 +135,12 @@
             </div>
         </div>
         
+        <% if (versionName.ToLower().EndsWith("b2") ) %>
+    <% { %>
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_b2/cart-promo-code.png" class="block" />
+    <% } else  { %>
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/cart-promo-code.png" class="block" />
+    <% } %>
 
             <div class="cart-hr"></div>
     </asp:PlaceHolder>
