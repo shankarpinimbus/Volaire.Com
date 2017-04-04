@@ -1087,8 +1087,7 @@ p.note {
 }
 
 .offer-30-day-kit .offer-benefits {
-    margin-top: -3rem;
-    margin-bottom: 1.5rem;
+    margin: -3rem 0 1.5rem 3%;
 }
 
 .offer-mbg {
@@ -2023,7 +2022,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4b6a5', end
 }
 
 .cart-wrap {
-    padding: 2rem 4%;
+    padding: 2rem 3%;
 }
 
 h1.shopping-cart-hdr {
@@ -2417,6 +2416,36 @@ p.form_note {
 	font-size: 75%;
 	margin: 0; padding: 0;
     color: #53585a;
+}
+
+.cart-guarantee-1 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 17%;
+    padding-right: 2%;
+}
+.cart-guarantee-2 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 64%;
+    padding: 0 2% 0 0;
+}
+.cart-guarantee-2 h2 {
+    font-size: 1.875rem;
+    font-weight: 300;
+    padding-bottom: .2rem;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .75);
+}
+.cart-guarantee-2 p {
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, .75);
+}
+.cart-guarantee-3 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 17%;
+    padding: 0 0 0 2%;
+
 }
 
 .receipt .container {

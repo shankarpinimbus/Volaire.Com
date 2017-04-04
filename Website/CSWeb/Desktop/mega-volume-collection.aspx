@@ -55,7 +55,7 @@
         
     </div>
     <div class="offer-right">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/offer-90-day-kit.png" alt="Volaire 30 Day Kit" class="offer-90-day-kit-img" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/offer-90-day-kit-150more.png" alt="Volaire 30 Day Kit" class="offer-90-day-kit-img" />
         <div class="offer-benefits">
             <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
         </div>

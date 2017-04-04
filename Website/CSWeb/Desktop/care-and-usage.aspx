@@ -37,7 +37,7 @@
         </div>
         <div class="care_info care-4">
             <h2>Air Magic<br />
-                Ttexturizing<br />
+                Texturizing<br />
                 Spray</h2>
             <p><em>directions:</em> After drying hair into desired style, lift hair in sections and spray liberally underneath from root to tip. Use fingertips to add volume and texture. Spray all over hair to finish your look.</p>
         </div>

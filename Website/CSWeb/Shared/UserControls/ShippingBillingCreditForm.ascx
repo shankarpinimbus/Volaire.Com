@@ -484,11 +484,16 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
 
                 </asp:Panel>
 
-                <div>
-                    
-                    <p class="text-center">
+                <div class="clearfix">
+                    <div class="cart-guarantee-1"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-30DMBG.png" alt="No risk 30 day money back guarentee with VOLAIRE. Volume that is easy to achieve and lasts all day long with VOLAIRE." /></div>
+                    <div class="cart-guarantee-2">
+                        <h2>OUR MEGA &nbsp;<span class="webfont1 orange ital normal">promise</span></h2>
+                        <p>At VOLAIRE<sup>™</sup> we are committed to you achieving the full-bodied, touchable volume you’ve always dreamed of. If, for any reason, you’re not 100% satisfied with any of our products, simply return them within 30 days of purchase for a full refund (less s&h). </p>
+                    </div>
+                    <div class="cart-guarantee-3"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/ssl.png" alt="SSL Secured Online Ordering" /></div>
+                    <%--<p class="text-center">
                         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/cart-guarantee.png" alt="30 Day Money Back Guarantee - SSL Secured Online Ordering" />
-                    </p>
+                    </p>--%>
             </div>
      
     </ContentTemplate>
