@@ -18,8 +18,8 @@
 <div class="container">
 <uc:Header ID="Header" runat="server" />
     
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-guarantee-mega-promise.jpg" alt="Our Mega Promise " class="block full" />
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/guarantee-content.jpg" alt="What I love about Volaire, it’s OMG volume! It’s going to give you so much texture and extra bounce to your hair. - Richard Ward, Celebrity and Royal Stylist" class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Guarantee.jpg" alt="No risk money back guarantee with VOLAIRE Hair Volumizing System! Try our products risk free for 30 days!" class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Richard-Ward-Guarantee.jpg" alt="VOLAIRE gives your hair texture, volume, bounce and life! Best offer on VOLAIRE Hair Volumizing System!" class="block full" />
     
     
 

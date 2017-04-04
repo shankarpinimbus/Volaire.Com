@@ -23,7 +23,7 @@
 <uc:Header ID="Header" runat="server" />
 
     <div class="hero-reviews">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-reviews.jpg" alt="Thicker, Fuller Looking Hair with AirWeight™ Technology " class="block full" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Reviews.jpg" alt="Every woman can use VOLAIRE to achieve the best hair of her life! Get the volume you always dreamed of with VOLAIRE" class="block full" />
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
     </div>
     

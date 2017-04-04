@@ -21,7 +21,7 @@
     
 <section class="hero hero-products">
     <div class="container">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-products.jpg" alt="" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Gorgeous-Hair.jpg" alt="VOLAIRE is the Volumizing Hair System that delivers full-proof results for everyday, effortless, lasting volume." class="block" />
         <div class="hero-products-content">
             <h1>
                 Unbelievable
@@ -39,13 +39,13 @@
             <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
         </div>
         <div class="products-1">
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products-shampoo-conditioner.png" alt="Pump UP the volume. Weightless Volumizing Shampoo & Weightless Fortifying Conditioner" class="block" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Shampoo-Conditioner.png" alt="Sulfate free shampoo (sulfate-free shampoo) that lathers and provides instant and lasting volume to your hairstyle" class="block" />
         </div>
         <div class="products-2">
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products-volumizing-lift.jpg" alt="Add on incredible lift. Uplift Volumizing Mist" class="block" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Uplift-Mist.jpg" alt="Hair care products that give you incredible lift and continuous volume throughout the day. Tossable, touchable volume" class="block" />
         </div>
         <div class="products-3">
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products-air-magic-spray.png" alt="Add on incredible lift. Uplift Volumizing Mist" class="block" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Air-Magic-Spray.png" alt="Best texturizing spray and hair spray for hair volume. Instantly get two times the volume over hair without VOLAIRE" class="block" />
         </div>
     </div>
 </section>
@@ -53,10 +53,10 @@
 <section class="products-quotes">
     <div class="container clearfix">
         <div class="products-quotes-1">
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products-quote-luke.jpg" alt="'With Volaire you get full, bouncing, shiny, healthy-looking hair with tons of volume that lasts all day.' - Luke O’Connor, celebrity stylist" class="block" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Luke-Oconnor-1.jpg" alt="With VOLAIRE you get gorgeous, shiny,healthy-looking, bouncy hair with tons of volume that lasts all day long" class="block" />
         </div>
         <div class="products-quotes-2">
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products-quote-angie.jpg" alt="'With Volaire you get full, bouncing, shiny, healthy-looking hair with tons of volume that lasts all day.' - Luke O’Connor, celebrity stylist" class="block" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Angie-2.jpg" alt="Women of all ages use VOLAIRE to give them lasting volume that stays! Experience gorgeous hair again!" class="block" />
             <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/angie.mp4" class="watch_demo fancy_video">Watch Her Story</a>
         </div>
     </div>

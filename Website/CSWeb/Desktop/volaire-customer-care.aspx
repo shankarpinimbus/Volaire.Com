@@ -21,7 +21,7 @@
     
 <section class="hero hero-customer-care">
     <div class="container">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-customer-care.jpg" alt="Thicker, Fuller looking hair with AirWeight Technology™" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Customer-Care.jpg" alt="The VOLAIRE Hair Volumizing System was created to work perfectly together to give you effortless volume, all day long" class="block" />
         <div class="hero-customer-care-content">
             <h1 class="black">Have a<br />
                 Hair-Raising
@@ -55,7 +55,7 @@
 
 <section class="container">
     <div class="customer-care-main">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/customer-care-quote-yvette.jpg" alt="VOLAIRE Rises Above the Rest" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Yvette-2.jpg" alt="After using VOLAIRE hair has tons of body and it keeps your curl all day long! Perfect for all age types!" class="block" />
         <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/yvette.mp4" class="watch_demo fancy_video">Watch Her Story</a>
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
     </div>

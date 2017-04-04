@@ -21,7 +21,7 @@
 <div class="container">
 <uc:Header ID="Header" runat="server" />
 
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-products.jpg" alt="Unbelievable Volume. Minimal Effort. " class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Gorgeous-Hair.jpg" alt="VOLAIRE is the Volumizing Hair System that delivers full-proof results for everyday, effortless, lasting volume." class="block full" />
 
     <%--<div class="contentpad1">
         <p class="text-center intro">The <strong class="caps">Volaire<sup>™</sup> Hair Volumizing System</strong> is a game-changer for everyone, regardless of hair type or challenge – long, short, curly, straight, thin, fine, flat, or just plain unruly. Whether you want airy, bouncy volume or full-bodied, mega volume, <strong class="med">AirWeight Technology<sup>™</sup></strong> will make you look like you just left the salon – every day. </p>
@@ -30,7 +30,7 @@
     
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
 
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-shampoo-conditioner.jpg" alt="VOLAIRE Weightless Volumizing Shampoo & VOLAIRE Weightless Fortifying Conditioner" class="block full" style="margin: 1.3rem 0 .2rem;" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Shampoo-Conditioner.jpg" alt="Sulfate free shampoo (sulfate-free shampoo) that lathers and provides instant and lasting volume to your hairstyle" class="block full" style="margin: 1.3rem 0 .2rem;" />
     
     <div class="contentpad2">
         <p>A revolutionary innovation in sulfate-free shampoos that gives you the lather you love without stripping away essential moisture</p>
@@ -38,7 +38,7 @@
         <p>Fortifying properties help strengthen hair to prevent breakage</p>
     </div>
 
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-uplift-volumizing-mist.jpg" alt="VOLAIRE Uplift Volumizing Mist" class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Uplift-Mist.jpg" alt="Hair care products that give you incredible lift and continuous volume throughout the day. Tossable, touchable volume" class="block full" />
     <div class="contentpad2">
         <p>Ultra-lightweight mist locks onto roots and strands of hair to deliver super-charged lift and continuous volume </p>
         <p>Heat protectants help maintain hair health during styling</p>
@@ -47,7 +47,7 @@
 
     
     <%--<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-women-agree.png" alt="After just 1 use, 100% of womenusing VOLAIRE agreed instant lift and volume.† † As reported by women in a 21-person company sponsored study." class="block full" />--%>
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-air-magic.jpg" alt="Air Magic Texturizing Spray" class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Air-Magic-Spray.jpg" alt="Best texturizing spray and hair spray for hair volume. Instantly get two times the volume over hair without VOLAIRE" class="block full" />
     <div class="contentpad2" style="z-index: 4;">
         <p>Thickens and texturizes hair, reviving limp locks with INSTANT volume</p>
         <p>Lightweight, invisible hold allows workable styling without build-up</p>
@@ -56,10 +56,10 @@
     
     <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-ingredients.jpg" alt="Help revive the look of lifeless hair and restore a vibrant luster with natural conditioning, including Avocado Oil, Essential Fatty Acids, and Red & Green Algae" class="block full" style="margin-top: -40%; position: relative; z-index: 3;" />
     
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-luke-o-connor.jpg" alt="'With VOLAIRE you get full, bouncing, shiny, healthy-looking hair with tons of volume that lasts all day.' Luke O'Connor, Celebrity Stylist" class="block full"  />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Luke-Oconnor-1.jpg" alt="With VOLAIRE you get gorgeous, shiny,healthy-looking, bouncy hair with tons of volume that lasts all day long" class="block full"  />
 
     <div class="products-angie">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-angie.jpg" alt="'With VOLAIRE I have height in my hair and it stays!' - Angie, Age 56" class="block full"  />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Angie-2.jpg" alt="Women of all ages use VOLAIRE to give them lasting volume that stays! Experience gorgeous hair again!"  />
         <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/angie.mp4" class="watch_demo fancy_video">Watch Her Story</a>
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
     </div>

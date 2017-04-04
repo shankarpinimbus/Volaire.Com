@@ -20,14 +20,14 @@
 <section class="hero hero-guarantee gradient">
     <div class="hero-guarantee1">
         <div class="container">
-            <div class="visibled"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-guarantee-text.png" alt="Our Mega Promise" class="block" /></div>
+            <div class="visibled"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Guarantee.png" alt="No risk money back guarantee with VOLAIRE Hair Volumizing System! Try our products risk free for 30 days!" class="block" /></div>
             <div class="visiblet"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-guarantee-t.jpg" alt="Our Mega Promise" class="block" /></div>
         </div>
     </div>
 </section> 
 
 <div class="container guarantee">
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/guarantee-richard-ward.jpg" alt="" class="block" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Richard-Ward-Guarantee.jpg" alt="VOLAIRE gives your hair texture, volume, bounce and life! Best offer on VOLAIRE Hair Volumizing System!" class="block" />
 </div>
 
      

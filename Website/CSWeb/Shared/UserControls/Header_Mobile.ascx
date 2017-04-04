@@ -38,13 +38,13 @@
     </section>
     <section>
         <div>
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/header.png" alt="Volaire" class="block full" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/header.png" alt="Best way to get hair volume is with VOLAIRE - no salon needed! Get beautiful, long-lasting volume that gives you 2xs the volume!" class="block full" />
             <a href="index" class="maplink hdrlink1">Home</a>
             <a href="#" class="maplink hdrlink2 toggleNav">Menu</a>
 
             <%--display ssl only on offer pages and cart pages--%>
             <div class="header-ssl">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/ssl.png" alt="Volaire" class="block" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/ssl.png" alt="SSL - Secure Online Ordering" class="block" />
             </div>
 
 
@@ -62,7 +62,7 @@
                 <li><a href="terms-and-conditions">Terms and Conditions</a></li>
                 <li><a href="privacy-policy">Privacy Policy</a></li>
             </ul>
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-v.png" alt="Volaire" class="block nav-v" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-LOGO-V.png" alt="VOLAIRE gives you softer, smoother hair with two times the volume. VOLAIRE supports stronger, healthier hair with each use!" class="block nav-v" />
         </div>
     </section>
 </header>

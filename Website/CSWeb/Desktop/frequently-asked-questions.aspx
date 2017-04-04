@@ -20,7 +20,7 @@
 <section class="hero hero-faq gradient">
     <div class="hero-faq1">
         <div class="container">
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-faq.jpg" alt="Frequently Asked Questions" class="block" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/FAQs.jpg" alt="How does VOLAIRE work? How does VOLAIRE give you volume? All the frequently asked questions about VOLAIRE." class="block" />
         </div>
     </div>
 </section> 
@@ -69,7 +69,7 @@
         <dt>PAYMENT OPTIONS</dt>
         <dd>
             <div class="faq-quote">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/faq-quote-mell.jpg" alt="'It feels like there's air in my hair. It is unbelievable. It's great. I LOVE IT.' - Mell, Age 52" class="block" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Mell-2.jpg" alt="VOLAIRE is unbelievable! Great customer reviews about VOLAIRE as users are experiencing lasting, gorgeous volume!" class="block" />
                 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
             </div>
             We accept debit and credit cards including Visa, MasterCard, American Express, and Discover. We do not accept cash, personal checks, money orders, or cash-on-delivery.</dd>

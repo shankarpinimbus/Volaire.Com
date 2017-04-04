@@ -22,7 +22,7 @@
 <section class="hero hero-tips-wrap gradient">
     <div class="hero-tips">
         <div class="container">
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-tips.png" alt="Do It Yourself with Volaire!" class="block" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/DIY-2.png" alt="Getting volume on your own at home is easy with VOLAIRE. Your hairstyle will not fall with VOLAIRE AirWeight Technology!" class="block" />
         </div>
     </div>
 </section> 
@@ -35,24 +35,24 @@
             <div class="row">
                 <div class="tips-left">
                     <p class="p1">Richard Ward’s Signature Chelsea blow dry</p>
-                    <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/chelsea.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-richard-ward-chelsea-blow-dry.jpg" alt="Richard Ward" class="iblock" /></a>
+                    <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/chelsea.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Chelsea-BlowDry.jpg" alt="Get Kate Middleton's signature Chelsea Blow Out at home and easier than ever using VOLAIRE hair care products." class="iblock" /></a>
                     <p class="p2"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/chelsea.mp4" class="watch_demo fancy_video">Watch Me</a></p>
                 </div>
                 <div class="tips-right">
                     <p class="p1">Dean Banowetz – Beach Waves </p>
-                    <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/beachy-wave.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-dean-banowetz-beach-waves.jpg" alt="Dean Banowetz" class="iblock" /></a>
+                    <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/beachy-wave.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Beach-Waves.jpg" alt="Create easy boho beach waves that last all day long using VOLAIRE. Perfect hair for a date, night out or work!" class="iblock" /></a>
                     <p class="p2"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/beachy-wave.mp4" class="watch_demo fancy_video">Watch Me</a></p>
                 </div>
             </div>
             <div class="row">
                 <div class="tips-left">
                     <p class="p1">Dean Banowetz - Modern Up-Do</p>
-                    <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/twist-updo.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-twist-updo.png" alt="Dean Banowetz" class="iblock" /></a>
+                    <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/twist-updo.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Twist-Updo.png" alt="Beautiful, elegant hairstyle that is perfect for any occasion. Wedding hair, bridal shower hair, night out hair!" class="iblock" /></a>
                     <p class="p2"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/twist-updo.mp4" class="watch_demo fancy_video">Watch Me</a></p>
                 </div>
                 <div class="tips-right">
                     <p class="p1">Dean Banowetz – Modern Blow Out</p>
-                    <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blow-out.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-modern-blowout.png" alt="Dean Banowetz" class="iblock" /></a>
+                    <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blow-out.mp4" class="fancy_video"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Modern-Blowout.png" alt="Classic, gorgeous hairstyle that is perfect for any occasion. Volume and style will last all day with VOLAIRE." class="iblock" /></a>
                     <p class="p2"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/modern-blow-out.mp4" class="watch_demo fancy_video">Watch Me</a></p>
                 </div>
             </div>
@@ -60,10 +60,10 @@
         
         <div class="row tip-bottom">
             <div class="col span8 tips-quote-luke">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/tips-quote-luke-o-connor.png" alt="Luke O'Connor" class="block" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Luke-Oconnor-2.png" alt="Have the confidence to create gorgeous hair styles from your own home using VOLAIRE! Easy hairstyles with volume!" class="block" />
             </div>
             <div class="col span4">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after-selfies-wanted.jpg" alt="Before and After Selfies Wanted!" class="block tips-before-after-selfies-wanted" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after/Selfies-Wanted.jpg" alt="Send a selfie of your best hairstyle when using VOLAIRE to get a chance to be feautred on our infomercial!" class="block tips-before-after-selfies-wanted" />
             </div>
         </div>
     </div>

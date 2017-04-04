@@ -21,7 +21,7 @@
 <uc:Header ID="Header" runat="server" />
 
     <div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-care-usage.jpg" alt="Care & Usage" class="block full" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Care-Usage.jpg" alt="Use the shampoo, conditioner, mist/heat protectant & hair spray for best body and volume from your own home!" class="block full" />
         <a href="hair-styles-and-tips.aspx" class="maplink tipslink1">Tips</a>
     </div>
     

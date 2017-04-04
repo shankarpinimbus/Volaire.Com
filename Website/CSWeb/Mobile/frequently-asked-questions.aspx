@@ -21,7 +21,7 @@
 <div class="container">
 <uc:Header ID="Header" runat="server" />
 
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-faq.jpg" alt="Frequently Asked Volume" class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/FAQs.jpg" alt="How does VOLAIRE work? How does VOLAIRE give you volume? All the frequently asked questions about VOLAIRE." class="block full" />
 
 <div class="faq">
     <dl>
@@ -82,7 +82,7 @@
         <dd>Your satisfaction is important to us! We have a 30 day return policy. See the full details on our <a href="mega-promise-money-back-guarantee" class="med black scored">Guarantee page</a>.</dd>
     </dl>
     <div class="faq-quote">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/faq-quote-mell.jpg" alt="'It feels like there's air in my hair. It is unbelievable. It's great. I LOVE IT.' - Mell, Age 52" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/faq-quote-mell.jpg" alt="VOLAIRE is unbelievable! Great customer reviews about VOLAIRE as users are experiencing lasting, gorgeous volume!" class="block" />
         <%--<%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>--%>
     </div>
 </div>

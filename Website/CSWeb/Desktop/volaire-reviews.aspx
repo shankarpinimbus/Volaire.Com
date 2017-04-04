@@ -21,7 +21,7 @@
     
 <section class="hero hero-reviews">
     <div class="container">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-volaire-reviews.jpg" alt="Big Results, no teasing." class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Reviews.jpg" alt="Every woman can use VOLAIRE to achieve the best hair of her life! Get the volume you always dreamed of with VOLAIRE" class="block" />
         <h1>
             Big Results,
             <span class="line2"><span class="webfont1 ital uncaps lightblue">no teasing.</span></span>

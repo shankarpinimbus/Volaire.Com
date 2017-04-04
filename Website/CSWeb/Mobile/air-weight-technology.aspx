@@ -22,14 +22,14 @@
 <div class="container">
 <uc:Header ID="Header" runat="server" />
 
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-airweight-tech.jpg" alt="Thicker, Fuller Looking Hair with AirWeight™ Technology " class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/AirWeight-Technology.jpg" alt="Thicker, fuller, hair with more volume just by using VOLAIRE. Get amazing volume instantly with VOLAIRE" class="block full" />
      <div style="margin: .4rem 0 .8rem;">
          <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
      </div>
     
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/airweight-1.png" alt="VOLAIRE rises above the rest. Volume you can see." class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Rise-Above.png" alt="VOLAIRE hair care products do not weigh hair down. Hair care with coconut and vitamins to promote hair health" class="block full" />
     
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/airweight-2b.jpg" alt="" class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/airweight-2b.jpg" alt="Volume you can see" class="block full" />
     
     <div class="airweight-3">
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/airweight-3a.png" alt="VOLAIRE - instant, weightless volume; long-lasting, touchable style; enhances shine and color" class="block full" />
@@ -42,13 +42,13 @@
     <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/airweight-5.png" alt="Microspheres attach to hair to create space between strands without weighing down hair" class="block" />
     
     <div class="airweight-kristi">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/airweight-6.jpg" alt="VOLAIRE rises above the rest. Volume you can see." class="block full" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Kristi-1.jpg" alt="VOLAIRE gives you fun, sexy, alive hair that has volume that lasts all day! Instant and lasting volume with VOLAIRE." class="block full" />
         <a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/kristi.mp4" class="watch_demo fancy_video">Watch Her Story</a>
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
     </div>
     
     
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/airweight-7.jpg" alt="VOLAIRE rises above the rest. Volume you can see." class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Dean-Banowetz-1.jpg" alt="Get volume that lasts all day. Hair styles that take you from day to night, work to play with VOLAIRE!" class="block full" />
 
 
     

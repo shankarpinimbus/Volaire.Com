@@ -38,8 +38,8 @@
     </section>
     <section>
     	<div class="container clearfix">
-        	<div class="nav-logo"><h1><a href="index"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-logo.png" alt="Volaire" class="block" /></a></h1></div>
-            <div class="nav-btn"><a href="tv-introductory-offer"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-get-tv-offer.png" alt="Volaire" class="block" /></a></div>
+        	<div class="nav-logo"><h1><a href="index"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-LOGO-Bronze.png" alt="Best way to get hair volume is with VOLAIRE - no salon needed! Get beautiful, long-lasting volume that gives you 2xs the volume!" class="block" /></a></h1></div>
+            <div class="nav-btn"><a href="tv-introductory-offer"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Get-TV-Offer.png" alt="Get touchable, weightless volume INSTANTLY! Hairstyles that will last all day with VOLAIRE. Use coupon to get free shipping + free gift" class="block" /></a></div>
             <div class="nav-inner">
             	<h3 class="nav-phone"><%=GetDynamicSidData("phone") %></h3>
                 <ul class="nav">
@@ -50,7 +50,7 @@
                 	<li><a href="hair-styles-and-tips" class="hiddent nav-tips">Hair Styles & Tips</a></li>
                 </ul>
             </div>
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-v.png" alt="Volaire" class="block nav-v" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-LOGO-V.png" alt="VOLAIRE gives you softer, smoother hair with two times the volume. VOLAIRE supports stronger, healthier hair with each use!" class="block nav-v" />
         </div>
     </section>
 </header>

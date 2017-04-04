@@ -23,7 +23,7 @@
 <uc:Header ID="Header" runat="server" />
 
     <div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-customer-care.jpg" class="block full" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Customer-Care.jpg" alt="The VOLAIRE Hair Volumizing System was created to work perfectly together to give you effortless volume, all day long." class="block full" />
         <a href="frequently-asked-questions" class="maplink carelink1">FAQ</a>
     </div>
 
@@ -54,7 +54,7 @@
 
     <section class="container">
     <div class="customer-care-main">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/care-quote-yvette.jpg" alt="VOLAIRE, Yvette" class="block full" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/care-quote-yvette.jpg" alt="After using VOLAIRE hair has tons of body and it keeps your curl all day long! Perfect for all age types!" class="block full" />
         <div style="text-align:right; padding-right: 5%;"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/yvette.mp4" class="watch_demo fancy_video">Watch Her Story</a></div>
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
     </div>

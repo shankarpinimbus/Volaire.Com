@@ -21,7 +21,7 @@
     
 <section class="hero hero-care-usage gradient">
     <div class="container">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-care-usage.png" alt="Volaire" class="block" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Care-Usage.png" alt="Use the shampoo, conditioner, mist/heat protectant & hair spray for best body and volume from your own home!" class="block" />
         <h1>Care & Usage</h1>
         <div class="care_info care-1">
             <h2>Weightless Volumizing Shampoo</h2>
