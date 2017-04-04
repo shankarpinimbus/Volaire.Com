@@ -1544,10 +1544,10 @@ namespace CSWeb
             string RedirectVersion = "mobile_a1";
             if (!version.ToLower().Contains("mobile"))
             {
-                //if (version.ToLower().Contains("b2"))
-                //{
-                //    RedirectVersion = "mobile_b2";
-                //}                
+                if (version.ToLower().Contains("aa1"))
+                {
+                    RedirectVersion = "mobile_aa1";
+                }
 
                 if (HttpContext.Current.Request.QueryString.Count > 0)
                 {
