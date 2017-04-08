@@ -27,8 +27,16 @@ namespace CSWeb.Desktop
             {
                 OrderHelper.ChangeCart("120");
             }
+
+            if (OrderHelper.GetVersionName().ToLower().Equals("c2"))
+            {
+                Response.Redirect("cart");
+            }
+            else
+            {
+                Response.Redirect("mega-volume-collection");
+            }
             
-            Response.Redirect("mega-volume-collection");
         }
     }
 }

@@ -27,7 +27,14 @@ namespace CSWeb.Mobile
             {
                 OrderHelper.ChangeCart("120");
             }
-            Response.Redirect("mega-volume-collection");
+            if (OrderHelper.GetVersionName().ToLower().Equals("mobile_c2"))
+            {
+                Response.Redirect("cart");
+            }
+            else
+            {
+                Response.Redirect("mega-volume-collection");
+            }
         }
     }
 }

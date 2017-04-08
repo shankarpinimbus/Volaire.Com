@@ -1,5 +1,5 @@
 ﻿<%@Page Language="C#" AutoEventWireup="true" CodeBehind="PostSale.aspx.cs" Inherits="CSWeb.Mobile.Store.PostSale" EnableEventValidation="false" EnableSessionState="true" %>
-
+<%@ Register Src="~/Shared/UserControls/Header_Mobile.ascx" TagName="Header" TagPrefix="uc" %>
 <%@ Register Src="~/Shared/UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
 <!doctype html>
 <html>
@@ -26,7 +26,7 @@
 </asp:Panel>
 <div class="container">
 <%#CSBusiness.DynamicVersion.Helper.IncludeFile("popups.html")%>
-<%#CSBusiness.DynamicVersion.Helper.IncludeFile("header_upsell.html")%>
+<uc:Header ID="Header" runat="server" />
 
 <div class="content">
 
