@@ -22,8 +22,8 @@
 <uc:Header ID="Header" runat="server" />
 
     <div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Kristin-Davis-1.jpg" alt="Kristin Davis uses VOLAIRE "at home, herself" to achieve effortless volume that lasts all day. Get gorgeous hair today!" class="block full" />
-        <a href="tv-introductory-offer" class="maplink homelink1">Get TV Offer!</a>
+        <a href="tv-introductory-offer"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Kristin-Davis-1.jpg" alt="Kristin Davis uses VOLAIRE "at home, herself" to achieve effortless volume that lasts all day. Get gorgeous hair today!" class="block full" /></a>
+        <%--<a href="tv-introductory-offer" class="maplink homelink1">Get TV Offer!</a>--%>
     </div>
     <%--<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home2.png" alt="AirWeight Technology&trade; Hair Volumizing System" class="block" />--%>
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>

@@ -22,7 +22,7 @@
     	<div class="container">
         	<div class="home1top">
             	<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/home-1b.jpg" alt="ready. set. Va-Va Volume! Get touchable, weightless, long-lasting volume instantly!" class="block" />
-                <a href="tv-introductory-offer" class="maplink home1link">Get TV Offer</a>
+                <a href="tv-introductory-offer" class="home1link">Get TV Offer</a>
             </div>
         	<div class="home1bottom">
             	<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/home-1-bottom.jpg" alt="Hair Volumizing System with AirWeight Technology" class="block">
