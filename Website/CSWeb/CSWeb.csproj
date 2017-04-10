@@ -145,6 +145,7 @@
   <ItemGroup>
     <Content Include="400.aspx" />
     <Content Include="500.aspx" />
+    <Content Include="AA1\index.aspx" />
     <Content Include="Admin\AddNewSiteDB.aspx" />
     <Content Include="Admin\Attributes.aspx" />
     <Content Include="Admin\CampaignItem.aspx" />
@@ -386,6 +387,7 @@
     <Content Include="Mobile\shine-angel-brush.aspx" />
     <Content Include="Mobile\tangle-angel-brush.aspx" />
     <Content Include="Mobile\tv-introductory-offer.aspx" />
+    <Content Include="MOBILE_AA1\index.aspx" />
     <Content Include="MOBILE_B2\bottomcta.html" />
     <Content Include="MOBILE_B2\index.aspx" />
     <Content Include="MOBILE_B2\mega-volume-collection.aspx" />
