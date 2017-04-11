@@ -46,10 +46,10 @@ namespace CSWeb.Mobile.Store
                 string version = OrderHelper.GetVersionName().ToLower();
                 string strTermUrl = "";
                 strTermUrl = Request.Url.ToString().ToLower().Replace(":81", "");
-                if (version.Equals("mobile_b2"))
-                {
-                    Response.RedirectPermanent(strTermUrl.Replace("/mobile_b2/", "/mobile_a1/"));
-                }
+                //if (version.Equals("mobile_b2"))
+                //{
+                //    Response.RedirectPermanent(strTermUrl.Replace("/mobile_b2/", "/mobile_a1/"));
+                //}
 
                 SitePreference sitePrefCache = CSFactory.GetCacheSitePref();
                 if (!sitePrefCache.GeoLocationService)
