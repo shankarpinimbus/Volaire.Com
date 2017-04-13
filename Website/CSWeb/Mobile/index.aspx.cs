@@ -109,6 +109,11 @@ namespace CSWeb.Mobile.Store
 
                 }
 
+
+                
+                // versionName used in Header.ascx
+
+                string versioName = OrderHelper.GetVersionName().ToLower();
                 
                 if (Request["sid"] == null || Request["sid"].Equals(""))
                 {
@@ -117,17 +122,27 @@ namespace CSWeb.Mobile.Store
                     {
                         CommonHelper.SetCookie("sid", sid, new TimeSpan(1, 24, 1, 1));
                         qs.Set("sid", sid);
-                        Response.Redirect(Request.RawUrl + "?" + qs);
+                        if (Request.RawUrl.Contains("?"))
+                            Response.Redirect(Request.RawUrl.Substring(0, Request.RawUrl.IndexOf('?')) + "?" + qs);
+                        else
+                        {
+                            Response.Redirect(Request.RawUrl + "?" + qs);
+                        }
                     }
                 }
-                else if (Response.Cookies["sid"] != null && Response.Cookies["sid"].Value.Equals("1"))
+                else if (Response.Cookies["sid"] != null && Response.Cookies["sid"].Value != null && Response.Cookies["sid"].Value.Equals("1"))
                 {
                     string sid = OrderHelper.GetDynamicVersionData("sid");
                     if (sid.Length > 0)
                     {
                         CommonHelper.SetCookie("sid", sid, new TimeSpan(1, 24, 1, 1));
                         qs.Set("sid", sid);
-                        Response.Redirect(Request.RawUrl + "?" + qs);
+                        if (Request.RawUrl.Contains("?"))
+                            Response.Redirect(Request.RawUrl.Substring(0, Request.RawUrl.IndexOf('?')) + "?" + qs);
+                        else
+                        {
+                            Response.Redirect(Request.RawUrl + "?" + qs);
+                        }
                     }
                 }
                 else if (Request["sid"] != null && DynamicSidDAL.GetDynamicsid(Request["sid"].ToLower()).Count == 0)
@@ -137,7 +152,12 @@ namespace CSWeb.Mobile.Store
                     {
                         CommonHelper.SetCookie("sid", sid, new TimeSpan(1, 24, 1, 1));
                         qs.Set("sid", sid);
-                        Response.Redirect(Request.RawUrl + "?" + qs);
+                        if (Request.RawUrl.Contains("?"))
+                            Response.Redirect(Request.RawUrl.Substring(0, Request.RawUrl.IndexOf('?')) + "?" + qs);
+                        else
+                        {
+                            Response.Redirect(Request.RawUrl + "?" + qs);
+                        }
                     }
                 }
                 else if (Request["sid"] != null && DynamicSidDAL.GetDynamicsid(Request["sid"].ToLower()).Count == 0 && !Request["sid"].ToLower().Equals(OrderHelper.GetDynamicVersionData("sid").ToLower()))
@@ -157,7 +177,7 @@ namespace CSWeb.Mobile.Store
                     }
 
                 }
-                
+
 
             }
 

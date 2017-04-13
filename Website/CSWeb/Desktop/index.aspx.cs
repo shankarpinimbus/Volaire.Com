@@ -40,6 +40,7 @@ namespace CSWeb.Desktop
 
                 OrderHelper.SetDynamicLandingPageVersion(OrderHelper.GetVersionName(), ClientOrderData);
                 // versionName used in Header.ascx
+
                 string versioName = OrderHelper.GetVersionName().ToLower();
                 var qs = HttpUtility.ParseQueryString(Request.QueryString.ToString());
                 if (Request["sid"] == null || Request["sid"].Equals(""))
@@ -49,7 +50,12 @@ namespace CSWeb.Desktop
                     {
                         CommonHelper.SetCookie("sid", sid, new TimeSpan(1, 24, 1, 1));
                         qs.Set("sid", sid);
-                        Response.Redirect(Request.RawUrl + "?" + qs);
+                        if (Request.RawUrl.Contains("?"))
+                            Response.Redirect(Request.RawUrl.Substring(0, Request.RawUrl.IndexOf('?')) + "?" + qs);
+                        else
+                        {
+                            Response.Redirect(Request.RawUrl + "?" + qs);
+                        }
                     }
                 }
                 else if (Response.Cookies["sid"] != null && Response.Cookies["sid"].Value != null && Response.Cookies["sid"].Value.Equals("1"))
@@ -59,7 +65,12 @@ namespace CSWeb.Desktop
                     {
                         CommonHelper.SetCookie("sid", sid, new TimeSpan(1, 24, 1, 1));
                         qs.Set("sid", sid);
-                        Response.Redirect(Request.RawUrl + "?" + qs);
+                        if (Request.RawUrl.Contains("?"))
+                            Response.Redirect(Request.RawUrl.Substring(0, Request.RawUrl.IndexOf('?')) + "?" + qs);
+                        else
+                        {
+                            Response.Redirect(Request.RawUrl + "?" + qs);
+                        }
                     }
                 }
                 else if (Request["sid"] != null && DynamicSidDAL.GetDynamicsid(Request["sid"].ToLower()).Count == 0)
@@ -69,7 +80,12 @@ namespace CSWeb.Desktop
                     {
                         CommonHelper.SetCookie("sid", sid, new TimeSpan(1, 24, 1, 1));
                         qs.Set("sid", sid);
-                        Response.Redirect(Request.RawUrl + "?" + qs);
+                        if (Request.RawUrl.Contains("?"))
+                            Response.Redirect(Request.RawUrl.Substring(0, Request.RawUrl.IndexOf('?')) + "?" + qs);
+                        else
+                        {
+                            Response.Redirect(Request.RawUrl + "?" + qs);
+                        }
                     }
                 }
                 else if (Request["sid"] != null && DynamicSidDAL.GetDynamicsid(Request["sid"].ToLower()).Count == 0 && !Request["sid"].ToLower().Equals(OrderHelper.GetDynamicVersionData("sid").ToLower()))

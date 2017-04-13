@@ -1317,57 +1317,67 @@ namespace CSWeb
         {
             string radioVersionData = "";
             ClientCartContext context = (ClientCartContext)HttpContext.Current.Session["ClientOrderData"];
-            if (context.OrderAttributeValues != null && context.OrderAttributeValues.ContainsKey("DynamicVerionData"))
+            if (context.OrderAttributeValues != null && context.OrderAttributeValues.ContainsKey("dynamicveriondata"))
+            {
+                radioVersionData = context.OrderAttributeValues["dynamicveriondata"].Value;
+            }
+            else if (context.OrderAttributeValues != null && context.OrderAttributeValues.ContainsKey("DynamicVerionData"))
             {
                 radioVersionData = context.OrderAttributeValues["DynamicVerionData"].Value;
             }
-            XmlDocument doc = new XmlDocument();
-            doc.LoadXml(radioVersionData);
-            doc.SelectSingleNode("version");
-
-            string returnData = "";
-            switch (dataName)
+            if (!string.IsNullOrEmpty(radioVersionData))
             {
-                case "phone":
-                    returnData = doc.SelectSingleNode("Version")["Phone"].InnerText;
-                    break;
 
-                case "image1":
-                    returnData = doc.SelectSingleNode("Version")["Image1"].InnerText;
-                    break;
 
-                case "MainKitBlack":
-                    returnData = doc.SelectSingleNode("Version")["MainKitBlack"].InnerText;
-                    break;
+                XmlDocument doc = new XmlDocument();
+                doc.LoadXml(radioVersionData);
+                doc.SelectSingleNode("version");
 
-                case "MainKitDarkGray":
-                    returnData = doc.SelectSingleNode("Version")["MainKitDarkGray"].InnerText;
-                    break;
+                string returnData = "";
+                switch (dataName)
+                {
+                    case "phone":
+                        returnData = doc.SelectSingleNode("Version")["Phone"].InnerText;
+                        break;
 
-                case "MainKitLightGray":
-                    returnData = doc.SelectSingleNode("Version")["MainKitLightGray"].InnerText;
-                    break;
+                    case "image1":
+                        returnData = doc.SelectSingleNode("Version")["Image1"].InnerText;
+                        break;
 
-                case "imageSelector":
-                    returnData = doc.SelectSingleNode("Version")["imageSelector"].InnerText;
-                    break;
+                    case "MainKitBlack":
+                        returnData = doc.SelectSingleNode("Version")["MainKitBlack"].InnerText;
+                        break;
 
-                case "homepageimage":
-                    returnData = doc.SelectSingleNode("Version")["Image1"].InnerText;
-                    break;
+                    case "MainKitDarkGray":
+                        returnData = doc.SelectSingleNode("Version")["MainKitDarkGray"].InnerText;
+                        break;
 
-                case "ctaimage":
-                    returnData = doc.SelectSingleNode("Version")["Image2"].InnerText;
-                    break;
+                    case "MainKitLightGray":
+                        returnData = doc.SelectSingleNode("Version")["MainKitLightGray"].InnerText;
+                        break;
 
-                case "cartimage":
-                    returnData = doc.SelectSingleNode("Version")["Image3"].InnerText;
-                    break;
-                case "sid":
-                    returnData = doc.SelectSingleNode("Version")["sid"].InnerText;
-                    break;
+                    case "imageSelector":
+                        returnData = doc.SelectSingleNode("Version")["imageSelector"].InnerText;
+                        break;
+
+                    case "homepageimage":
+                        returnData = doc.SelectSingleNode("Version")["Image1"].InnerText;
+                        break;
+
+                    case "ctaimage":
+                        returnData = doc.SelectSingleNode("Version")["Image2"].InnerText;
+                        break;
+
+                    case "cartimage":
+                        returnData = doc.SelectSingleNode("Version")["Image3"].InnerText;
+                        break;
+                    case "sid":
+                        returnData = doc.SelectSingleNode("Version")["sid"].InnerText;
+                        break;
+                }
+                return returnData;
             }
-            return returnData;
+            return radioVersionData;
         }
 
         public static string GetVersionNameByReferrer(ClientCartContext CartContext)
@@ -1401,16 +1411,11 @@ namespace CSWeb
         public static bool SetDynamicLandingPageVersion(string version, ClientCartContext context)
         {
             string radioVersionData = "";
-            if (context.OrderAttributeValues != null && context.OrderAttributeValues.ContainsKey("DynamicVerionData"))
-            {
-                radioVersionData = context.OrderAttributeValues["DynamicVerionData"].Value;
-            }
-            else
-            {
+           
                 radioVersionData = DynamicVersionDAL.GetDynamicVersion(version);
-                context.OrderAttributeValues.Add("DynamicVerionData", new AttributeValue(radioVersionData));
+                context.OrderAttributeValues.AddOrUpdateAttributeValue("DynamicVerionData", new AttributeValue(radioVersionData));
                 HttpContext.Current.Session["ClientOrderData"] = context;
-            }
+           
             return true;
         }
 

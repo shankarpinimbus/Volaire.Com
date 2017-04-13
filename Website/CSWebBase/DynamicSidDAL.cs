@@ -49,27 +49,27 @@ namespace CSWebBase
             }
 
 
-            if (!hasRecord)
-            {
-                string sid1 = GetDynamicVersionData("sid");
-                ProcName = "pr_site_get_dynamic_sid";
-                SqlParameter[] ParamVal1 = new SqlParameter[6];
-                ParamVal1[0] = new SqlParameter("sid", sid1 ?? string.Empty);
-                ParamVal1[1] = new SqlParameter("@versionid", versionName);
-                using (SqlDataReader reader = BaseSqlHelper.ExecuteReader(connectionString, ProcName, ParamVal1))
-                {
-                    while (reader.Read())
-                    {
-                        dict.Add("sid", sid);
-                        dict.Add("source", reader["source"].ToString());
-                        dict.Add("media", reader["media"].ToString());
-                        dict.Add("ProjectCode", reader["ProjectCode"].ToString());
-                        dict.Add("PhoneNumber", reader["PhoneNumber"].ToString());
-                    }
-                }
+            //if (!hasRecord)
+            //{
+            //    string sid1 = GetDynamicVersionData("sid");
+            //    ProcName = "pr_site_get_dynamic_sid";
+            //    SqlParameter[] ParamVal1 = new SqlParameter[6];
+            //    ParamVal1[0] = new SqlParameter("sid", sid1 ?? string.Empty);
+            //    ParamVal1[1] = new SqlParameter("@versionid", versionName);
+            //    using (SqlDataReader reader = BaseSqlHelper.ExecuteReader(connectionString, ProcName, ParamVal1))
+            //    {
+            //        while (reader.Read())
+            //        {
+            //            dict.Add("sid", sid);
+            //            dict.Add("source", reader["source"].ToString());
+            //            dict.Add("media", reader["media"].ToString());
+            //            dict.Add("ProjectCode", reader["ProjectCode"].ToString());
+            //            dict.Add("PhoneNumber", reader["PhoneNumber"].ToString());
+            //        }
+            //    }
 
 
-            }
+            //}
             return dict;
         }
 
