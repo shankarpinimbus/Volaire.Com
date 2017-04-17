@@ -10,6 +10,8 @@
 <title>Volaire™| Hair Volumizing System </title>
 <meta name="description" content="Official Volaire Website. Hair care products that add instant, weightless, touchable, long-lasting volume and texture. Read product reviews and tips" />
 <meta name="keywords" content="" />
+<meta name="msvalidate.01" content="2CEE1A3503885CF1CDD417B1D2047698" />
+<meta name="google-site-verification" content="Bm6vS2kjurZvpEtP54CUs_xr8n6ZRmisY3aKoLaEMqQ" />
 
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
 <link rel="stylesheet" href="//d39hwjxo88pg52.cloudfront.net/scripts/slick/slick.css" />
