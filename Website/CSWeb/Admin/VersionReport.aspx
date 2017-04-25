@@ -37,7 +37,8 @@
             <div id="report_nav">
                 <span class="current">Version Report</span> | 
                 <a href="StandardReport.aspx">Standard Report</a> | 
-                <a href="SIdReport.aspx">SId Report</a>             
+                <a href="SIdReport.aspx">SId Report</a> |           
+                <a href="customerreport.aspx">Customer Detail Report</a>  
             </div>
             <div id="log_link">
                 <a id="lnk_logout" href="Logout.aspx">Logout</a></div>

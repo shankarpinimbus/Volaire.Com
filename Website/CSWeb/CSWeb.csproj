@@ -149,6 +149,7 @@
     <Content Include="Admin\AddNewSiteDB.aspx" />
     <Content Include="Admin\Attributes.aspx" />
     <Content Include="Admin\CampaignItem.aspx" />
+    <Content Include="Admin\customerreport.aspx" />
     <Content Include="Admin\docs_icons.aspx" />
     <Content Include="Admin\docs_reportpage.aspx" />
     <Content Include="Admin\docs_tablepage.aspx" />
@@ -754,6 +755,13 @@
     <Compile Include="Admin\CampaignItem.aspx.designer.cs">
       <DependentUpon>CampaignItem.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\customerreport.aspx.cs">
+      <DependentUpon>customerreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\customerreport.aspx.designer.cs">
+      <DependentUpon>customerreport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\docs_icons.aspx.cs">
       <DependentUpon>docs_icons.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1111,7 +1119,6 @@
     </Compile>
     <Compile Include="Admin\UserControls\PageControl.ascx.cs">
       <DependentUpon>PageControl.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\UserControls\RangeDateControl.ascx.cs">
       <DependentUpon>RangeDateControl.ascx</DependentUpon>
@@ -1582,7 +1589,6 @@
     </Compile>
     <Compile Include="NoCart\UserControls\PageControl.ascx.cs">
       <DependentUpon>PageControl.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NoCart\UserControls\RangeDateControl.ascx.cs">
       <DependentUpon>RangeDateControl.ascx</DependentUpon>
