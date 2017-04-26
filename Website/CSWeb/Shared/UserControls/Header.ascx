@@ -8,7 +8,7 @@
             	<a href="hair-styles-and-tips" class="visiblet nav-top-tips">&gt; Hair Styles & Tips</a>
             </div>
             <div class="topbanner-promo">
-                <% if (versionName.ToLower().EndsWith("b2") ) %>
+                <% if (versionName.ToLower().EndsWith("b2") || versionName.ToLower().EndsWith("b3") ) %>
     <% { %>
                     <h2>
                     <a href="tv-introductory-offer">
