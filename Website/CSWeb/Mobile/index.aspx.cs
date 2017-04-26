@@ -73,6 +73,15 @@ namespace CSWeb.Mobile.Store
                         }
                     }
                 }
+                if (!version.Equals("mobile_b2") && !version.Equals("mobile_b3") && !version.Equals("mobile_c2") && !version.Equals("mobile_aa1"))
+                {
+                    if (Request.QueryString.Count > 0)
+                        Response.Redirect("/mobile_b2/index?" + Request.QueryString);
+                    else
+                    {
+                        Response.Redirect("/mobile_b2/index");
+                    }
+                }
                 OrderHelper.SetDynamicLandingPageVersion(Version, clientData);
 
                 if (CartContext != null && CartContext.RequestParam.Equals(""))
