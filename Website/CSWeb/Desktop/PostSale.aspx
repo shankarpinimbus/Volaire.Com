@@ -31,6 +31,7 @@
     <asp:Button ID="btnYes" runat="server" Text="Button" OnClick="btnYes_OnClick" Visible="false" />
     <asp:Button ID="btnNo" runat="server" Text="Button" OnClick="btnNo_OnClick" Visible="false" />
     
+    <%#CSBusiness.DynamicVersion.Helper.IncludeFile("popups.html")%>
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
     </form>
     <uc:TrackingPixels ID="TrackingPixels" runat="server" />
