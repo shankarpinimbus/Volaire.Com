@@ -40,15 +40,6 @@ namespace CSWeb.Mobile.Store {
         protected global::System.Web.UI.WebControls.Panel pnlManual;
         
         /// <summary>
-        /// Header control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::CSWeb.Shared.UserControls.Header Header;
-        
-        /// <summary>
         /// mainContainer control.
         /// </summary>
         /// <remarks>

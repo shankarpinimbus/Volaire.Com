@@ -13,7 +13,7 @@
 </head>
  
  
-<body>
+<body id="upsells">
 <form id="form1" runat="server">
     
 <asp:ScriptManager ID="ScriptManager1" runat="server">
@@ -26,7 +26,8 @@
 </asp:Panel>
 <div class="container">
 <%#CSBusiness.DynamicVersion.Helper.IncludeFile("popups.html")%>
-<uc:Header ID="Header" runat="server" />
+<%--<uc:Header ID="Header" runat="server" />--%>
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/header_upsell.png" alt="VOLAIRE" class="block full" />
 
 <div class="content">
 
@@ -38,7 +39,7 @@
 
 
  </div>
-<%#CSBusiness.DynamicVersion.Helper.IncludeFile("footer_upsell.html")%>
+
 </div>
 
 

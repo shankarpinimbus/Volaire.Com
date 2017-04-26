@@ -258,6 +258,8 @@ sup {
     margin-top: 10.5%;
 }
 
+#upsells .content {margin-top: 0;}
+
 .contentpad {
 	padding: 2rem 2%;
 }
