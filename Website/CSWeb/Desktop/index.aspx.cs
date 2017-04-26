@@ -33,10 +33,10 @@ namespace CSWeb.Desktop
                 string version = OrderHelper.GetVersionName().ToLower();
                 string strTermUrl = "";
                 strTermUrl = Request.Url.ToString().ToLower().Replace(":81", "");
-                if (version.Equals("b2"))
-                {
-                    Response.RedirectPermanent(strTermUrl.Replace("/b2/", "/"));
-                }
+                //if (version.Equals("b2"))
+                //{
+                //    Response.RedirectPermanent(strTermUrl.Replace("/b2/", "/"));
+                //}
 
                 OrderHelper.SetDynamicLandingPageVersion(OrderHelper.GetVersionName(), ClientOrderData);
                 // versionName used in Header.ascx

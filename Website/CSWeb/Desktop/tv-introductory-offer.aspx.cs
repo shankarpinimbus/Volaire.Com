@@ -19,7 +19,7 @@ namespace CSWeb.Desktop
         protected void btnAddtoCart_OnClick(object sender, EventArgs e)
         {
             OrderHelper.EmptyCart();
-            if (OrderHelper.GetVersionName().ToLower().Equals("b2"))
+            if (OrderHelper.GetVersionName().ToLower().Equals("b2") || OrderHelper.GetVersionName().ToLower().Equals("b3"))
             {
                 OrderHelper.ChangeCart("128");
             }
@@ -28,7 +28,7 @@ namespace CSWeb.Desktop
                 OrderHelper.ChangeCart("120");
             }
 
-            if (OrderHelper.GetVersionName().ToLower().Equals("c2"))
+            if (OrderHelper.GetVersionName().ToLower().Equals("c2") || OrderHelper.GetVersionName().ToLower().Equals("b3"))
             {
                 Response.Redirect("cart");
             }

@@ -19,7 +19,7 @@ namespace CSWeb.Mobile
         protected void btnAddtoCart_OnClick(object sender, EventArgs e)
         {
             OrderHelper.EmptyCart();
-            if (OrderHelper.GetVersionName().ToLower().Equals("mobile_b2"))
+            if (OrderHelper.GetVersionName().ToLower().Equals("mobile_b2") || OrderHelper.GetVersionName().ToLower().Equals("mobile_b3"))
             {
                 OrderHelper.ChangeCart("128");
             }
@@ -27,7 +27,7 @@ namespace CSWeb.Mobile
             {
                 OrderHelper.ChangeCart("120");
             }
-            if (OrderHelper.GetVersionName().ToLower().Equals("mobile_c2"))
+            if (OrderHelper.GetVersionName().ToLower().Equals("mobile_c2") || OrderHelper.GetVersionName().ToLower().Equals("mobile_b3"))
             {
                 Response.Redirect("cart");
             }
