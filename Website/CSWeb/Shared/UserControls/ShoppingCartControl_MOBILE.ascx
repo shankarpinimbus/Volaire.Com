@@ -135,7 +135,7 @@
             </div>
         </div>
         
-        <% if (versionName.ToLower().EndsWith("b2") ) %>
+        <% if (versionName.ToLower().EndsWith("b2") || versionName.ToLower().EndsWith("b3") ) %>
     <% { %>
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_b2/cart-promo-code.png" class="block" />
     <% } else  { %>
