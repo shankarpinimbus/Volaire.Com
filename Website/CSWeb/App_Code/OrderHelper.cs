@@ -1572,22 +1572,28 @@ namespace CSWeb
 
         public static string getMobileSid(string sid)
         {
-            if (sid.Equals("vwebda1"))
+            try
             {
-                return "vwebma1";
+                if (sid.Equals("vwebda1"))
+                {
+                    return "vwebma1";
+                }
+                else if (sid.Equals("vpostd1"))
+                {
+                    return "vpostm1";
+                }
+                else if (sid.Equals("vwebdb1"))
+                {
+                    return "vwebmb1";
+                }
+                else if (sid.Length > 1 && sid.Substring(sid.Length - 1, 1).Equals("d"))
+                {
+                    return sid.Substring(0, sid.Length - 1) + "m";
+                }
             }
-            else if (sid.Equals("vpostd1"))
-            {
-                return "vpostm1";
-            }
-            else if (sid.Equals("vwebdb1"))
-            {
-                return "vwebmb1";
-            }
-            else if (sid.Substring(sid.Length - 1, 1).Equals("d"))
-            {
-                return sid.Substring(0, sid.Length - 1) + "m";
-            }
+            catch
+            {}
+            
             return sid;
         }
 
