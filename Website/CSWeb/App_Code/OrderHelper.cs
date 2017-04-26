@@ -1576,6 +1576,14 @@ namespace CSWeb
             {
                 return "vwebma1";
             }
+            else if (sid.Equals("vpostd1"))
+            {
+                return "vpostm1";
+            }
+            else if (sid.Equals("vwebdb1"))
+            {
+                return "vwebmb1";
+            }
             else if (sid.Substring(sid.Length - 1, 1).Equals("d"))
             {
                 return sid.Substring(0, sid.Length - 1) + "m";
