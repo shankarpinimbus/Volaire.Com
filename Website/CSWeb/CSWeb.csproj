@@ -518,6 +518,7 @@
     <Content Include="Shared\UserControls\AmazonPayment.js" />
     <Content Include="Shared\UserControls\CheckoutSummary.ascx" />
     <Content Include="Shared\UserControls\CheckoutThankYouModule2.ascx" />
+    <Content Include="Shared\UserControls\EmailPopup.ascx" />
     <Content Include="Shared\UserControls\Footer.ascx" />
     <Content Include="Shared\UserControls\Footer_Mobile.ascx" />
     <Content Include="Shared\UserControls\Header.ascx" />
@@ -1118,7 +1119,6 @@
     </Compile>
     <Compile Include="Admin\UserControls\PageControl.ascx.cs">
       <DependentUpon>PageControl.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\UserControls\RangeDateControl.ascx.cs">
       <DependentUpon>RangeDateControl.ascx</DependentUpon>
@@ -1389,6 +1389,13 @@
       <DependentUpon>CheckoutThankYouModule2.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Shared\UserControls\EmailPopup.ascx.cs">
+      <DependentUpon>EmailPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\UserControls\EmailPopup.ascx.designer.cs">
+      <DependentUpon>EmailPopup.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Shared\UserControls\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1589,7 +1596,6 @@
     </Compile>
     <Compile Include="NoCart\UserControls\PageControl.ascx.cs">
       <DependentUpon>PageControl.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NoCart\UserControls\RangeDateControl.ascx.cs">
       <DependentUpon>RangeDateControl.ascx</DependentUpon>
@@ -1643,6 +1649,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
+  <PropertyGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
