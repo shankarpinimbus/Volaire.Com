@@ -2,6 +2,8 @@
 <%@ Register Src="~/Shared/UserControls/Header.ascx" TagName="Header" TagPrefix="uc" %>
 <%@ Register Src="~/Shared/UserControls/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
 <%@ Register Src="~/Shared/UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
+<%@ Register Src="/shared/UserControls/EmailPopup.ascx" TagName="EmailPopUp" TagPrefix="uc" %>
+
 <!doctype html>
 <html>
 <head runat="server">
@@ -136,7 +138,9 @@
 
     
 <uc:Footer ID="Footer" runat="server" />
-
+<% if(CSBusiness.DynamicVersion.VersionManager.LandingVersion.ToLower().Contains("d2")) { %>
+   <uc:EmailPopUp ID="EmailPopUp" runat="server" />
+<% } %>
 </form>
 <script>
 $(document).ready(function () {
