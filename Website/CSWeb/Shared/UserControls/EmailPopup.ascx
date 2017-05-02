@@ -1,11 +1,12 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="EmailPopup.ascx.cs" Inherits="CSWeb.Shared.UserControls.EmailPopup" %>
-<script type="text/javascript">
-        $(document).ready(function () {
-            $('#close-button').click(function () {
-                $('#ltk-snippet').addClass('invisible');
-            });
+<%--        <script type="text/javascript" src="//nsg.symantec.com/private/rollover/rollover.js"></script>--%>
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $('#close-button').click(function () {
+              $('#ltk-snippet').addClass('invisible');
+          });
 
-        });
+      });
     </script>
 <style type="text/css">
     .pos-static {position:static!important}
@@ -19,13 +20,14 @@
         <a class="modalCloseImg simpleltkmodal-close" title="Close"></a>
         <div tabindex="-1" class="simpleltkmodal-wrap pos-static" style="height: 100%; outline: 0px; width: 100%; overflow: auto;">
             <div id="ltkmodal-content" class="simpleltkmodal-data pos-static">
+                <div class="products-email-signup-img"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/email-pop-woman.jpg" /></div>
                 <div id="ltkmodal-form" class="pos-static">
                     <!-- Modal Form -->
                     <div id="ltkmodal-wrapper" class="signup pos-static" name="version1">
 
 
                         <!-- SVG Close Button -->
-                        <div id="close-button" style="color: white">
+                        <div id="close-button">
                             <a class="ltkmodal-close" title="Close">
                                 <img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/xclose.png" alt="Close" />
                                 <%--<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 91 612 612" style="enable-background: new 0 91 612 612;" xml:space="preserve">
@@ -40,18 +42,18 @@
                         <fieldset class="form">
                             <div id="ltkmodal-contentarea" class="signup">
                                 <div id="contentInformation" class="ltk-clearfix" style="">
-                                    <h2>HELLO BEAUTIFUL!</h2>
-                                    <p class="med">Join our email list to make sure you're the first in line to receive our sneak peeks, beauty tips, and exclusive online offers.</p>
+                                    <%--<h1>YES!</h1>--%>
+                                    <h2 class="text-center"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hdr-mvp.png" alt="MVP - Mega Volume Perks insiders program" style="max-width: 75%;" /></h2>
+                                    <p class="p1">RSVP for the latest news, pro tips<br />                                        and exclusive offers!</p>
                                     <br />
                                     <div style="position: relative;">
-                                        <div><asp:Label runat="server" Visible="false" ID="lblmsg">Please enter a valid email</asp:Label></div>
-                                        <label class="label_signup" for="EmailPopUp_txtEmail">Email :</label>
-                                        <asp:TextBox runat="server" placeholder="" CssClass="ltkmodal-email" ID="txtEmail"></asp:TextBox>
-                                        <div class="buttons" style="text-align: center">
-                                            <asp:Button runat="server" Text="Submit" ID="subButton" CssClass="ltkmodal-subscribe med submit" OnClick="subButton_Click" />
+                                            <div><asp:Label runat="server" Visible="false" ID="lblmsg">Please enter a valid email</asp:Label></div>
+                                            <label class="label_signup" for="EmailPopUp_txtEmail">Email : </label>
+                                            <asp:TextBox runat="server" placeholder="" CssClass="ltkmodal-email" ID="txtEmail"></asp:TextBox>
+                                            <div class="buttons" style="text-align: center">
+                                                <asp:Button runat="server" Text="Submit" ID="subButton" CssClass="ltkmodal-subscribe med submit" OnClick="subButton_Click" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    
 
                                     <div class="ltk-clearfix"></div>
                                 </div>
@@ -60,6 +62,22 @@
                         </fieldset>
                     </div>
 <style type="text/css">
+    .products-email-signup-img {
+        float: left;
+        width: 52%;
+        z-index: 10;
+    }
+
+    #ltkmodal-form {
+        float: left;
+        width: 48%;
+        z-index: 10;
+        background: #bae2e4;
+    }
+    .products-email-signup-img img {
+        display: block;
+        width: 100%;
+    }
     #ltkmodal-overlay {
         z-index: 100001 !important;
         background-color: #000 !important;
@@ -74,12 +92,14 @@
     #ltkmodal-container {
         z-index: 100002 !important;
         position: fixed !important;
-        width: 620px !important;
+        width: 850px !important;
+        max-width: 94% !important;
         height: auto !important;
         top: 10% !important;
         left: 50% !important;
-        margin: 0 auto !important;
+        margin-left: 0 !important;
         border: #fff solid 3px;
+        background: #bae2e4;
         -webkit-transform: translateX(-50%) !important;
         -moz-transform: translateX(-50%) !important;
         -ms-transform: translateX(-50%) !important;
@@ -112,7 +132,6 @@
     #ltkmodal-wrapper {
         background: 0 0;
         font-size: 16px;
-        font-family: Arial,Helvetica,sans-serif;
     }
 
         #ltkmodal-wrapper .no-wrap {
@@ -133,9 +152,6 @@
                 display: block;
                 cursor: pointer;
             }
-            #ltkmodal-wrapper #close-button a:hover img {
-                opacity: .9;
-            }
 
                 #ltkmodal-wrapper #close-button a svg {
                     width: 100%;
@@ -151,37 +167,53 @@
                     }
 
         #ltkmodal-wrapper #contentInformation {
-            padding: 120px 20% 100px;
+            padding: 80px 2% 25px;
         }
 
     #contentInformation h1, #contentInformation h2, #contentInformation h3, #contentInformation h4, #contentInformation h5 {
         margin: 0;
         padding: 0;
     }
-
+    
     #ltkmodal-contentarea {
-        background: #087f7d url(//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/bg_email_signup.jpg);
-        background-size: cover;
         line-height: 20px;
         color: #333;
         text-align: center;
-        /*border-radius: 10px;*/
+    }
+
+    #contentInformation h1 {
+        width: 100%;
+        font: 700 110px/110px Arial,Helvetica,sans-serif;
+        color: #ab4b7b;
+        text-transform: uppercase;
+        text-align: center;
     }
 
     #contentInformation h2 {
-        font-size: 36px;
-        color: #fff;
+        font-size: 30px;
+        color: #ccb77c;
         text-transform: uppercase;
+        margin: 0 auto 40px;
         text-align: center;
-        margin: 0 auto 26px;
+        font-family: Quicksand, sans-serif;
         font-weight: bold;
     }
 
+    #contentInformation h3 {
+        font: 20px Arial,Helvetica,sans-serif;
+        color: #000;
+    }
+
     #contentInformation p {
-        font: 16px/1.5em Arial,Helvetica,sans-serif;
-        color: #fff;
+        font-size: 20px;
+        line-height: 1.4;
+        color: #000;
         margin: 0;
-        padding: 0 0 15px;
+        padding: 0 0 30px;
+        font-family: Lato, sans-serif;
+    }
+    #contentInformation p.p1 {
+        font-weight: 300;
     }
 
     .confirm #contentInformation h1 {
@@ -207,19 +239,23 @@
     .label_signup {
         display: inline-block;
         vertical-align: middle;
-        color: #fff;
+        color: #000;
+        font-family: Lato, sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+        margin-bottom: 3px;
     }
 
     #contentInformation input[type=email], #contentInformation input[type=number], #contentInformation input[type=text] {
-        width: 60%;
+        width: 70%;
         border: 1px solid #c2e4e3;
         color: #333;
         font-size: 15px;
         border-radius: 0 !important;
         box-shadow: none !important;
-        padding: .4rem .5rem .3rem .4rem;
+        padding: .5rem .5rem .4rem .4rem;
         display: inline-block;
-        margin: 0;
+        margin: 0 0 0 4px;
         -webkit-transition: all .11s linear;
         transition: all .11s linear;
         -webkit-appearance: none;
@@ -284,29 +320,48 @@
 
 
 
+    #contentInformation .hidden-select {
+        position: absolute;
+        top: -1px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent !important;
+        border: transparent;
+        outline: 0;
+        z-index: 99;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+
     #contentInformation .buttons {
         width: 100%;
         position: relative;
     }
 
     #contentInformation .ltk-close-button, #contentInformation .ltkmodal-subscribe {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 22px;
+        line-height: 1.1;
         cursor: pointer;
         border: 0;
         box-shadow: none !important;
-        color: #fec563;
-        background: #0e7472;
+        color: #fff;
+        background: #f17533;
         display: inline-block;
         text-decoration: none;
         vertical-align: middle;
-        margin: 15px 0 0 10%;
-        padding: 4px 20px;
+        margin: 25px 0 0 10%;
+        padding: 8px 26px;
         -webkit-appearance: none !important;
         -moz-appearance: none !important;
         appearance: none !important;
         -webkit-transition: all .11s linear;
         transition: all .11s linear;
+        font-family: Quicksand, sans-serif;
+        font-weight: bold;
+        font-size: 22px;
     }
 
     #contentInformation .ltk-close-button {
@@ -315,7 +370,7 @@
     }
 
         #contentInformation .ltk-close-button:hover, #contentInformation .ltkmodal-subscribe:hover {
-            background-color: #0b5c5a;
+            background-color: #cb5415;
         }
 
         #contentInformation .ltk-close-button:focus, #contentInformation .ltkmodal-subscribe:focus {
@@ -349,11 +404,38 @@
         display: block !important;
         position: absolute;
         top: -1.4rem;
-        left: 28%;
+        left: 24%;
         border: 0 !important;
     }
 
+    fieldset {border: 0;}
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        #ltkmodal-wrapper #contentInformation {
+            padding: 40px 2% 25px;
+        }
+    
+        #contentInformation h2 {
+            font-size: 26px;
+            margin: 0 auto 24px;
+        }
+
+        #contentInformation p {
+            font-size: 17px;
+            padding: 0 0 20px;
+        }
+
+    }
+
+
     @media only screen and (max-width:767px) {
+        .products-email-signup-img {
+            display: none
+        }
+        #ltkmodal-form {
+            float: none;
+            width: 100%;
+        }
 
         #ltkmodal-contentarea label.error {
             top: -1.25rem;
@@ -362,14 +444,12 @@
 
         #ltkmodal-container {
             position: absolute !important;
-            width: 92% !important;
+            width: 100% !important;
             top: 60px !important;
         }
 
-        #ltkmodal-contentarea {background-size: 150%;}
-
         #ltkmodal-wrapper {
-            width: 100% !important;
+            width: 94% !important;
         }
 
             #ltkmodal-wrapper .mobileHide {
@@ -379,7 +459,7 @@
             #ltkmodal-wrapper #contentInformation {
                 float: none;
                 width: 100%;
-                padding: 30px 5% 30px;
+                padding: 1.8rem 2% 1.5rem;
             }
 
         #contentInformation h1 {
@@ -388,9 +468,7 @@
 
         #contentInformation h2 {
             font-size: 24px;
-            text-transform: uppercase;
-            width: 100%;
-            margin-bottom: 1rem;
+            margin-bottom: 1.3rem;
         }
 
         #contentInformation h3 {
@@ -399,10 +477,9 @@
         }
 
         #contentInformation p {
-            font-size: 13px;
-            font-size: 4.2vw;
-            margin: 0;
-            padding: 0 0 .8rem;
+            font-size: 14px;
+            font-size: 4.4vw;
+            padding: 0 0 .6rem;
         }
 
         #contentInformation .casl {
@@ -419,19 +496,20 @@
         }
 
         #contentInformation input[type=email], #contentInformation input[type=number], #contentInformation input[type=text] {
-            margin: 0 auto;
+            width: 70%;
+            padding: .35rem .5rem .3rem .4rem;
         }
-        
+
 
         #contentInformation .close-button, #contentInformation .ltkmodal-subscribe {
-            font-size: 15px;
+            font-size: 17px;
             font-size: 5vw;
-            padding: .2rem 1em;
-            line-height: 1.2;
+            padding: 5px 24px;
+            margin: 1rem auto 0;
         }
         .label_signup {
-            font-size: 13px;
-            font-size: 4.2vw;
+            font-size: 14px;
+            font-size: 4.4vw;
         }
 
         #contentInformation .ltkmodal-no-thanks {
@@ -443,6 +521,10 @@
                 margin: 15px 0 0;
                 display: block;
             }
+
+
+        #EmailPopUp_lblmsg {font-size: 87%;}
+
     }
 </style>
                 </div>

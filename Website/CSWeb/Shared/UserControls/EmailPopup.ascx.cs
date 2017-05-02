@@ -56,7 +56,7 @@ namespace CSWeb.Shared.UserControls
                         {
 
                             lblmsg.Text = "Thank you for signing up!";
-                            lblmsg.ForeColor = System.Drawing.ColorTranslator.FromHtml("#ffe61f");
+                            lblmsg.ForeColor = System.Drawing.ColorTranslator.FromHtml("#039029");
 
                             SaveContact(this.txtEmail.Text);
                             this.txtEmail.Text = "";

@@ -203,6 +203,24 @@ function pageLoad() {
             }
         });
 
+
+        $("#fm_home").validateWebForm({
+            rules: {
+                //cart
+                EmailPopUp$txtEmail: {
+                    EmailValidation: true,
+                    required: true,
+                },
+            },
+            messages: {
+                EmailPopUp$txtEmail: {
+                    required: "Please enter an email address",
+                    EmailValidation: "Please enter a valid email address"
+                }
+            }
+        });
+
+
     });
 
 }
