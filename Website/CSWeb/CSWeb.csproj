@@ -112,7 +112,7 @@
     </Reference>
     <Reference Include="NLog.Extended, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\FujiKale.com\Website\CSDLL\NLog.Extended.dll</HintPath>
+      <HintPath>..\CSDLL\NLog.Extended.dll</HintPath>
     </Reference>
     <Reference Include="PayWithAmazon">
       <HintPath>..\CSDLL\PayWithAmazon.dll</HintPath>
