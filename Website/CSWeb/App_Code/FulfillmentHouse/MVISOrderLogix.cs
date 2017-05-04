@@ -207,7 +207,7 @@ namespace CSWeb.FulfillmentHouse
                             fieldnamePAIDPRICE = "PAID_PRICE_PROD" + counter;
                             fieldnameTAXRATE = "TAX_RATE" + counter;
                             fieldnameSHIPPING = "SHIPPING" + counter;
-                            xml.WriteElementString(fieldnamePRODUCT, GetSkuCode(sku.SkuId, orderItem.CustomerInfo.ShippingAddress.CountryId));
+                            xml.WriteElementString(fieldnamePRODUCT, GetSkuCode(sku.SkuId, orderItem.CustomerInfo.ShippingAddress.CountryId,orderItem.VersionName));
                             xml.WriteElementString(fieldnameQUANTITY, Item.Quantity.ToString());
                             xml.WriteElementString(fieldnamePRICE, sku.FullPrice.ToString("N2"));
                             xml.WriteElementString(fieldnameDISCOUNT, "");
@@ -384,6 +384,63 @@ namespace CSWeb.FulfillmentHouse
             {
                 return st.SkuCode;
             }
+            //return "";
+        }
+
+        public string GetSkuCode(int skuId, int countryId, string versionName)
+        {
+            Sku st = new SkuManager().GetSkuByID(skuId);
+            st.LoadAttributeValues();
+            bool isVersionE2 = versionName.ToUpper().Contains("E2");
+            if (!isVersionE2)
+            {
+                if (countryId == 46)
+                {
+                    if (st.GetAttributeValue<string>("skucodeca", string.Empty) != string.Empty)
+                    {
+                        return st.GetAttributeValue<string>("skucodeca", string.Empty);
+                    }
+                    else
+                    {
+                        return st.SkuCode;
+                    }
+                }
+                else
+                {
+                    return st.SkuCode;
+                }
+            }
+            else
+            {
+                if (countryId == 46)
+                {
+                    if (st.GetAttributeValue<string>("E2_SKUCODECA", string.Empty) != string.Empty)
+                    {
+                        return st.GetAttributeValue<string>("E2_SKUCODECA", string.Empty);
+                    }
+                    else if (st.GetAttributeValue<string>("skucodeca", string.Empty) != string.Empty)
+                    {
+                        return st.GetAttributeValue<string>("skucodeca", string.Empty);
+                    }
+                    else
+                    {
+                        return st.SkuCode;
+                    }
+                }
+                else
+                {
+                    if (st.GetAttributeValue<string>("E2_SKUCODE", string.Empty) != string.Empty)
+                    {
+                        return st.GetAttributeValue<string>("E2_SKUCODE", string.Empty);
+                    }
+                    else
+                    {
+                        return st.SkuCode;
+                    }
+                    
+                }
+            }
+            
             //return "";
         }
 
