@@ -82,11 +82,11 @@ namespace CSWeb.FulfillmentHouse
                     xml.WriteStartElement("Order");
                     xml.WriteElementString("CUSTOMER_NUMBER", CustomerNumber); // Store Billing Address ID as Customer Number
                     xml.WriteElementString("BILL_COMPANY", "");
-                    xml.WriteElementString("BILL_FIRST_NAME", orderItem.CustomerInfo.BillingAddress.FirstName);
-                    xml.WriteElementString("BILL_LAST_NAME", orderItem.CustomerInfo.BillingAddress.LastName);
-                    xml.WriteElementString("BILL_ADDRESS1", orderItem.CustomerInfo.BillingAddress.Address1);
-                    xml.WriteElementString("BILL_ADDRESS2", orderItem.CustomerInfo.BillingAddress.Address2);
-                    xml.WriteElementString("BILL_CITY", orderItem.CustomerInfo.BillingAddress.City);
+                    xml.WriteElementString("BILL_FIRST_NAME", orderItem.CustomerInfo.BillingAddress.FirstName.Replace("&","").Replace("'",""));
+                    xml.WriteElementString("BILL_LAST_NAME", orderItem.CustomerInfo.BillingAddress.LastName.Replace("&", "").Replace("'", ""));
+                    xml.WriteElementString("BILL_ADDRESS1", orderItem.CustomerInfo.BillingAddress.Address1.Replace("&", "").Replace("'", ""));
+                    xml.WriteElementString("BILL_ADDRESS2", orderItem.CustomerInfo.BillingAddress.Address2.Replace("&", "").Replace("'", ""));
+                    xml.WriteElementString("BILL_CITY", orderItem.CustomerInfo.BillingAddress.City.Replace("&", "").Replace("'", ""));
                     xml.WriteElementString("CUSTOM_2", sid);
                     xml.WriteElementString("CUSTOM_1", DynamicSidDAL.GetDynamicSidData("ProjectCode", sid, orderItem.OrderId));
                     StateProvince itemBillingStateProvince = states.FirstOrDefault(x => x.StateProvinceId == Convert.ToInt32(orderItem.CustomerInfo.BillingAddress.StateProvinceId));
@@ -114,11 +114,11 @@ namespace CSWeb.FulfillmentHouse
                     xml.WriteElementString("NO_SOLICITING", NoSoliciting);
 
                     xml.WriteElementString("SHIP_TO_COMPANY", "");
-                    xml.WriteElementString("SHIP_TO_FIRST_NAME", orderItem.CustomerInfo.ShippingAddress.FirstName);
-                    xml.WriteElementString("SHIP_TO_LAST_NAME", orderItem.CustomerInfo.ShippingAddress.LastName);
-                    xml.WriteElementString("SHIP_TO_ADDRESS1", orderItem.CustomerInfo.ShippingAddress.Address1);
-                    xml.WriteElementString("SHIP_TO_ADDRESS2", orderItem.CustomerInfo.ShippingAddress.Address2);
-                    xml.WriteElementString("SHIP_TO_CITY", orderItem.CustomerInfo.ShippingAddress.City);
+                    xml.WriteElementString("SHIP_TO_FIRST_NAME", orderItem.CustomerInfo.ShippingAddress.FirstName.Replace("&", "").Replace("'", ""));
+                    xml.WriteElementString("SHIP_TO_LAST_NAME", orderItem.CustomerInfo.ShippingAddress.LastName.Replace("&", "").Replace("'", ""));
+                    xml.WriteElementString("SHIP_TO_ADDRESS1", orderItem.CustomerInfo.ShippingAddress.Address1.Replace("&", "").Replace("'", ""));
+                    xml.WriteElementString("SHIP_TO_ADDRESS2", orderItem.CustomerInfo.ShippingAddress.Address2.Replace("&", "").Replace("'", ""));
+                    xml.WriteElementString("SHIP_TO_CITY", orderItem.CustomerInfo.ShippingAddress.City.Replace("&", "").Replace("'", ""));
                     StateProvince itemShippingStateProvince = states.FirstOrDefault(x => x.StateProvinceId == Convert.ToInt32(orderItem.CustomerInfo.ShippingAddress.StateProvinceId));
                     if (itemShippingStateProvince != null)
                     {
