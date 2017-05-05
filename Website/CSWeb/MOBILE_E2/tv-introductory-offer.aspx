@@ -5,8 +5,8 @@
 <html>
 <head runat="server">
 <meta charset="utf-8">
-<title>Buy Volaire™ Hair Care & Styling Products </title>
-<meta name="description" content="Buy Volaire Hair Volumizing Products. Choose which Volaire Hair Care system works best for your hair." />
+<title>Buy Volaire™ Hair Volumizing System</title>
+<meta name="description" content="Official Volaire Website. Hair care products that add instant, weightless, touchable, long-lasting volume and texture. Read product reviews and tips" />
 <meta name="keywords" content="" />
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
 </head>
