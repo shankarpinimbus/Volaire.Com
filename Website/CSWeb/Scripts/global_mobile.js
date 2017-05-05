@@ -113,6 +113,41 @@ $(document).ready(function () {
 
 
 
+    $(".more_link_1").on("click", function (e) {
+        e.preventDefault();
+        var el = $(this);
+        var el_less = '<span class="selector_moreinfo">Click for More Info</span>';
+        var el_more = '<span class="selector_hideinfo">Click to Close</span>';
+        el.html() == el_more
+		  ? el.html(el_less)
+		  : el.html(el_more);
+        $(this).parents('.kit_box').siblings('.kit_box').find('.offer_bottom_section').hide();
+        $(this).parents('.kit_box').find('.offer_bottom_section').slideToggle();
+
+
+        $('.kit_box').removeClass("kb_active");
+        $('.order_checkbox').removeClass("kb_active");
+        //$('.order-page-col-inner').removeClass("border_dark");
+        $(this).parents('.kit_box').addClass("kb_active");
+        //$(this).parents('.kit_box').children('.order-page-col-inner').addClass("border_dark");
+        $('.em1').removeClass("color2");
+        $(this).parents('.kit_box').find('.em1').addClass("color2");
+
+        $('.footnotes').hide();
+
+        if ($(this).parents('.kit_box').hasClass('kit_box_essentials')) {
+            $('#kit_essentials_legal').show();
+        } else if ($(this).parents('.kit_box').hasClass('kit_box_mega')) {
+            $('#kit_mega_legal').show();
+        }
+
+        $('html, body').animate({
+            scrollTop: $(this).parents('.kit_box').offset().top
+        }, 500);
+
+    });
+
+
 
 });
 

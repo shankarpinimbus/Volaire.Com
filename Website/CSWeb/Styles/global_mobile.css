@@ -1735,6 +1735,250 @@ label.error {display: none !important;}
 
 }
 
+
+.order_kits_wrap {
+    padding: 1rem 2.5%;
+}
+
+.order-page-1-col-1 {
+    
+}
+.order-page-1-col-2 {
+    
+}
+
+
+.kit_box {border: #c5c5c5 solid 3px; background: #fff; color: #3d4142; margin-bottom: 1rem;}
+.kb_active {border: #fc8d9e solid 3px;}
+.order-page-col-inner {border: #c5c5c5 solid 1px;}
+.border_dark {border: #c5c5c5 solid 1px;}
+
+.kb_active .border_dark, 
+.kb_active .order-page-col-inner {border: #fc8d9e solid 1px;}
+
+
+.orderhdr {
+    background: #eaebec;
+    padding: .2em .5% .3em 1.8%;
+}
+.kb_active .orderhdr {
+    background: #fc8d9e;
+}
+.order_checkbox {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/e2/checkmark_off.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.kb_active .order_checkbox {
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/e2/checkmark_on.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.orderhdr h2 {
+    display: inline-block;
+    font-size: 16px;
+    font-size: 5vw;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #000;
+    vertical-align: middle;
+    padding-bottom: 0;
+}
+
+.kit_box .benefits-txt {
+    font-size: 11px;
+    font-size: 3.6vw;
+}
+
+.offer_bottom_section {
+    display: none;
+}
+
+.order_bottom_txt {
+    padding: 1em 6% 1em 4%;
+    color: #000;
+}
+
+.order_bottom_txt p.p1, 
+.order_bottom_txt2 p.p1 {
+    line-height: 1.4;
+    padding-bottom: 1em;
+    font-family: Lato, Arial, sans-serif;
+    font-size: 11px;
+    font-size: 3.5vw;
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 1);
+}
+.order_bottom_txt p.p1 strong, 
+.order_bottom_txt2 p.p1 strong {
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 800;
+    text-shadow: none;
+}
+
+.order_bottom_txt h3.h3a, 
+.order_bottom_txt h3.h3b, 
+.order_bottom_txt2 h3.h3a, 
+.order_bottom_txt2 h3.h3b {
+    font-size: 11px;
+    font-size: 3.5vw;
+    font-weight: 900;
+    line-height: 1.3;
+    padding-bottom: 0;
+    color: #3d4142;
+    text-transform: uppercase;
+    /*letter-spacing: -.02em;*/
+}
+.order_bottom_txt h3.h3b {min-height: 1.4em;}
+
+.order_bottom_txt ul.ul_1a {
+    /*min-height: 8.7em;*/
+} 
+.order_bottom_txt ul.ul_1b {
+    /*min-height: 3em;*/
+}    
+
+.order_bottom_txt ul.ul_1, 
+.order_bottom_txt2 ul.ul_1 {
+    list-style: none;
+    font-size: 11px;
+    font-size: 3.5vw;
+    line-height: 1.2;
+    padding-bottom: .2em;
+}
+
+.order_bottom_txt ul.ul_1 li, 
+.order_bottom_txt2 ul.ul_1 li {
+    padding-bottom: .2em;
+    padding-left: 9px;
+}
+.order_bottom_txt ul.ul_1 li a, 
+.order_bottom_txt2 ul.ul_1 li a {
+    color: #000;
+}
+.order_bottom_txt ul.ul_1 li a:hover, 
+.order_bottom_txt2 ul.ul_1 li a:hover {
+    text-decoration: underline;
+}
+
+.order_bottom_txt ul.ul_1 li:before, 
+.order_bottom_txt2 ul.ul_1 li:before {
+    content: '-';
+    float: left;
+    margin-left: -9px;
+}
+.order_bottom_txt ul.ul_1 li.bold:before, 
+.order_bottom_txt2 ul.ul_1 li.bold:before {
+    font-weight: bold;
+}
+.order_bottom_txt ul.ul_1 li.plus, 
+.order_bottom_txt2 ul.ul_1 li.plus {
+    padding-left: 11px;
+}
+.order_bottom_txt ul.ul_1 li.plus:before, 
+.order_bottom_txt2 ul.ul_1 li.plus:before {
+    content: '+';
+    margin-left: -11px;
+}
+
+.order_bottom_txt ul.ul_1b li.plus:before, 
+.order_bottom_txt2 ul.ul_1b li.plus:before {
+    color: #ff4446;
+}
+
+
+.order_bottom_txt.order_bottom_txt_c2_col1-2 {
+    
+}
+
+.order_bottom_txt.order_bottom_txt_c2_col1-2 p.p1 {
+    
+}
+.order_bottom_txt.order_bottom_txt_c2_col1-2 ul.ul_1 {
+    padding-bottom: 1em;
+}
+
+.order_bottom_txt.order_bottom_txt_c2_col1-2 ul.ul_1 li {
+    padding-bottom: .4em;
+}
+
+.em1 {
+    font-family: Judson, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 17px;
+    font-size: 5.8vw;
+}
+.color1 {
+    color: #25cbd3;
+}
+.color2 {
+    color: #dff4f4;
+}
+
+.benefitsbar {
+    background: #dff4f4;
+    text-align: center;
+    font-size: 18px;
+    padding: .3rem 0;
+}
+.benefitsbar .benefits-pipe {
+    color: #25cbd3;
+}
+
+.kit_box .offer-links {
+    float: none;
+    width: 100%;
+}
+.kit_box .offer-links .last {
+    margin-top: .2rem;
+}
+.kit_box .offer-links h3 {
+    margin-bottom: .2rem;
+}
+
+.kit_box p.orderbtn {
+    width: 278px;
+    margin: 0 auto;
+}
+
+.more_link_1 {
+    position: absolute;
+    top: 75%;
+    left: .7%;
+    width: 50%;
+    font-size: 11px;
+    font-size: 3.4vw;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1.1;
+    color: #000;
+}
+.selector_moreinfo {
+    padding-left: 10.5%;
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_e2/icon-selector-plus.png) no-repeat 0 0;
+    background-size: auto 100%;
+}
+.selector_hideinfo {
+    padding-left: 10.5%;
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_e2/icon-selector-minus.png) no-repeat 0 0;
+    background-size: auto 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .stickynav {
     position: fixed;
     bottom: 0;
@@ -1758,9 +2002,11 @@ label.error {display: none !important;}
     width: 50%; height: 100%;
     display: block;
 }
+
 .offers-cart .stickynav,
 #cart .stickynav {display: none;}
 .stickynav-landscape {display: none;}
+
 
 @media all and (orientation: landscape) {
 

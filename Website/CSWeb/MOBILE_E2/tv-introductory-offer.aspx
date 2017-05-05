@@ -1,52 +1,34 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="tv-introductory-offer.aspx.cs" Inherits="CSWeb.Desktop.tvintroductoryoffer" EnableSessionState="True" %>
-<%@ Register Src="~/Shared/UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="tv-introductory-offer.aspx.cs" Inherits="CSWeb.Mobile.tvintroductoryoffer" EnableSessionState="True" %>
+<%@ Register Src="~/Shared/UserControls/Header_Mobile.ascx" TagName="Header" TagPrefix="uc" %>
 
 <!doctype html>
 <html>
 <head runat="server">
 <meta charset="utf-8">
-<title>Buy Volaire™ Hair Volumizing System</title>
-<meta name="description" content="Official Volaire Website. Hair care products that add instant, weightless, touchable, long-lasting volume and texture. Read product reviews and tips" />
+<title>Buy Volaire™ Hair Care & Styling Products </title>
+<meta name="description" content="Buy Volaire Hair Volumizing Products. Choose which Volaire Hair Care system works best for your hair." />
 <meta name="keywords" content="" />
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
 </head>
-<body id="kit_30day">
+<body class="offers-cart">
 <form id="form1" runat="server">
+<div class="container">
+<uc:Header ID="Header" runat="server" />
 
-<header>
-    <section>
-    	<div class="container clearfix">
-        	<div class="nav-logo"><h1><a href="index"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-logo.png" alt="Volaire" class="block" /></a></h1></div>
-        	<div class="nav-offer-promo">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hdr-banner-30-day-kit.png" alt="Limited Time - Get free shipping & instant savings! Save 40% with Promo Code SAVE40" class="block" />
-        	</div>
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-v.png" alt="Volaire" class="block nav-v" />
-        </div>
-    </section>
-</header>
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_e2/hero-volaire-volume-essentials.png" alt="VOLAIRE Volume Essentials" class="block full" />
+    <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
 
-<section class="hero hero-30-day-kit">
-    <div class="container">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/e2/hero-choose-kit.png" alt="Volaire Hair Volumizing System" class="block" />
-        <%--<h1>
-            TV Offer
-            <span class="line2"><span class="webfont1 ital uncaps orange">introductory kit.</span></span>
-        </h1>--%>
-    </div>
-</section>
-    
-
-
-<section class="container offer-content offer-30-day-kit clearfix">
-    <h1 class="offer-hdr-top caps">Select the Volumizing System <span class="webfont1 orange normal uncaps"><em>that's right for YOU!</em></span></h1>
+    <section class="container offer-content offer-30-day-kit clearfix">
     <div class="container3 clearfix order_kits_wrap">
             <div class="order-page-1-col-1 kit_box kit_box_mega kb_active ">
-                <div class="">
-                    <div class="orderhdr">
-                        <span class="order_checkbox"></span>
-                        <h2><span class="caps">Incredible Volume</span> <span class="em1 color1 color2">Collection</span></h2>
-                    </div>
-                    <a href="#" class="prodlink"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/e2/selector-incredible.jpg" class="full block" alt="Volaire Incredible Volume Hair Volumizing System" /></a>
+                <div class="orderhdr">
+                    <span class="order_checkbox"></span>
+                    <h2><span class="caps">Incredible Volume</span> <span class="em1 color1 color2">Collection</span></h2>
+                </div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_e2/selector-incredible.jpg" class="full block" alt="Volaire Incredible Volume Hair Volumizing System" />
+                    <a href="#" class="more_link_1"><span class="selector_moreinfo">Click for More Info</span></a>
+                </div>
+                <div class="offer_bottom_section">
                     <div class="benefitsbar"><%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%></div>
                     <div class="order_bottom_txt">
                         <p class="p1">This customer favorite includes the ultimate multitasker, <strong>Air Magic Texturizing Spray</strong> - it’s like five products – texturizer, style extender, oil absorber, revitalizer, and hair spray – all in one incredible formula!</p>
@@ -68,11 +50,13 @@
 
             <div class="order-page-1-col-2 kit_box kit_box_essentials ">
                 <div class="orderhdr">
-                        <span class="order_checkbox"></span>
-                        <h2><span class="caps">Volume Essentials</span> <span class="em1 color1">Collection</span></h2>
-                    </div>
-                <div class="">
-                    <a href="#" class="prodlink"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/e2/selector-essentials.jpg" class="full block" alt="Volaire Volume Essentials Hair Volumizing System" /></a>
+                    <span class="order_checkbox"></span>
+                    <h2><span class="caps">Volume Essentials</span> <span class="em1 color1">Collection</span></h2>
+                </div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_e2/selector-essentials.jpg" class="full block" alt="Volaire Volume Essentials Hair Volumizing System" />
+                    <a href="#" class="more_link_1"><span class="selector_moreinfo">Click for More Info</span></a>
+                </div>
+                <div class="offer_bottom_section">
                     <div class="benefitsbar"><%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%></div>
                     <div class="order_bottom_txt">
                         <p class="p1"><strong>Get gorgeous, weightless, lasting volume</strong> with this comprehensive system.</p>
@@ -95,8 +79,9 @@
                 
 
 </section>
-    
 
+
+    
 <section class="container offer-footer">
     <div class="offer-footer-content">
         <p><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/ssl.png" alt="" class="iblock" /></p>
@@ -110,17 +95,15 @@
             <p>This offer includes enrollment in the VOLAIRE MVP Subscription Program. Approximately 4 weeks after your first order is shipped, and then approximately every 12 weeks thereafter, you will be sent a new 90 Day supply of the Volume Essentials Collection. Each shipment will be charged to the card you provide today, in three installments, approximately every 4 weeks at the guaranteed low price of $29.95, per installment plus $3.33 per installment for shipping and handling, plus any applicable sales tax, unless you call to cancel. </p>
             <p>There is no commitment and no minimum to buy. Please note exact shipment times may vary. To customize future shipments and charges, <span class="iblock">call customer service anytime a 1-800-201-6539.</span></p>
         </div>
-        
         <p class="footer-copyright">© <script>document.write(new Date().getFullYear())</script> VOLAIRE™. All Rights Reserved.</p>
     </div>
     
 </section>
 
 
-
+</div>
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("popups.html")%>
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
 </form>
-<uc:TrackingPixels ID="TrackingPixels" runat="server" />
 </body>
 </html>
