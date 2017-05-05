@@ -49,6 +49,21 @@ namespace CSWeb.Desktop
                 OrderHelper.EmptyCart();
                 OrderHelper.ChangeCart("131");
             }
+            else if (SiteBasePage.CartContext.CartInfo.SkuExists(132))
+            {
+                OrderHelper.EmptyCart();
+                OrderHelper.ChangeCart("137");
+            }
+            else if (SiteBasePage.CartContext.CartInfo.SkuExists(133))
+            {
+                OrderHelper.EmptyCart();
+                OrderHelper.ChangeCart("134");
+            }
+            else if (SiteBasePage.CartContext.CartInfo.SkuExists(135))
+            {
+                OrderHelper.EmptyCart();
+                OrderHelper.ChangeCart("136");
+            }
 
             if (rbMedium.Checked)
             {
