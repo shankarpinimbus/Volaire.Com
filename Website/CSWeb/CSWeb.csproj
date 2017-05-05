@@ -369,6 +369,11 @@
     <Content Include="Desktop\scripts-bottom.html" />
     <Content Include="Desktop\scripts-top.html" />
     <Content Include="Desktop\videoplayers.aspx" />
+    <Content Include="E2\bottomcta.html" />
+    <Content Include="E2\Cart.aspx" />
+    <Content Include="E2\index.aspx" />
+    <Content Include="E2\mega-volume-collection.aspx" />
+    <Content Include="E2\tv-introductory-offer.aspx" />
     <Content Include="Mobile\volaire-customer-care.aspx" />
     <Content Include="Mobile\privacy-policy.aspx" />
     <Content Include="Mobile\terms-and-conditions.aspx" />

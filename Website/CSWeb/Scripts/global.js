@@ -88,6 +88,33 @@ $(document).ready(function () {
         }
     });
 
+    //Offer page rollovers (borders plus offer details at bottom of page
+    $('.kit_box').hover(
+      function () {
+          $('.kit_box').removeClass("kb_active");
+          $('.order_checkbox').removeClass("kb_active");
+          $('.order-page-col-inner').removeClass("border_dark");
+          $(this).addClass("kb_active");
+          $(this).children('.order-page-col-inner').addClass("border_dark");
+          $('.em1').removeClass("color2");
+          $(this).find('.em1').addClass("color2");
+         
+          $('.footnotes').hide();
+
+
+          if ($(this).hasClass('kit_box_essentials')) {
+              $('#kit_essentials_legal').show();
+          } else if ($(this).hasClass('kit_box_mega')) {
+              $('#kit_mega_legal').show();
+          } 
+
+      }
+    );
+
+    $('.prodlink').click(function (e) {
+        e.preventDefault();
+        $(this).siblings('.orderbtn').children("input[type = 'submit']").trigger("click");
+    });
 
 });
 

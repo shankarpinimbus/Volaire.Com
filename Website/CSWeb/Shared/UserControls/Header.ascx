@@ -19,6 +19,16 @@
                 	    <span class="part4">VOL33</span>
                     </a>
                 </h2>
+    <% } else if  (versionName.ToLower().EndsWith("e2") ) { %>
+                <h2>
+                    <a href="tv-introductory-offer">
+                	    <span class="part1">Save 40%</span> 
+                	    <span class="part2a">+</span> 
+                	    <span class="part2b">Free Shipping</span> 
+                	    <span class="part3"><span style="margin-right: 2px;">|</span> Promo Code</span> 
+                	    <span class="part4">VOL40</span>
+                    </a>
+                </h2>
     <% } else  { %>
                 <h2>
                     <a href="tv-introductory-offer">

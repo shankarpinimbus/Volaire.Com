@@ -48,5 +48,22 @@ namespace CSWeb.Desktop
             }
             
         }
+
+        protected void btnAddtoCartE2_OnClick(object sender, EventArgs e)
+        {
+            OrderHelper.EmptyCart();
+            Button btn = (Button)(sender);
+            string btnArgs = btn.CommandArgument;
+            if (OrderHelper.GetVersionName().ToLower().Equals("b2"))
+            {
+                OrderHelper.ChangeCart("130");
+            }
+            else
+            {
+                OrderHelper.ChangeCart(btnArgs);
+            }
+
+            Response.Redirect("mega-volume-collection");
+        }
     }
 }
