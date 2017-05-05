@@ -436,6 +436,8 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                         <% if (versionName.ToLower().EndsWith("b2") || versionName.ToLower().EndsWith("b3")  ) %>
     <% { %>
                 <input type="text" value="VOL33" class="text-2 text-promocode" disabled />
+    <% } else if (versionName.ToLower().EndsWith("e2") )  { %>
+                <input type="text" value="VOL40" class="text-1 text-promocode" disabled />
     <% } else  { %>
                 <input type="text" value="SAVE40" class="text-2 text-promocode" disabled />
     <% } %>
