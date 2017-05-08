@@ -75,9 +75,9 @@
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("note-txt.html")%>
 </section>
 
-<section class="home3">
+<section class="home3 home3_e2">
     <div class="container">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Richard-Ward-Volume.jpg" class="block" alt="Top hairstylists use VOLAIRE to give their clients lasting and effortless volume. Have salon quality hair everyday." />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/e2/Richard-Ward-Volume.jpg" class="block" alt="Top hairstylists use VOLAIRE to give their clients lasting and effortless volume. Have salon quality hair everyday." />
         <a href="tv-introductory-offer" class="maplink home3link">Save 40% Get Offer</a>
     </div>
 </section>

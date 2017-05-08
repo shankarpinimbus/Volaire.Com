@@ -56,7 +56,7 @@
 
 
     <div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home4.jpg" alt="Get Everyday, effortless volume - no stylist needed." class="block full" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_e2/home4.jpg" alt="Get Everyday, effortless volume - no stylist needed." class="block full" />
         <a href="tv-introductory-offer" class="maplink homelink4">Save 40% - Get Offer!</a>
     </div>
 
