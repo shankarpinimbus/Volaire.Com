@@ -43,7 +43,7 @@
                             </ul>
                         </div>
                     </div>
-                    <p class="orderbtn"><asp:Button runat="server" id="btnAddtoCart2" CssClass="btn_ordernow btn_ordernow-1" CommandArgument="130" OnClick="btnAddtoCartE2_OnClick"/></p>
+                    <p class="orderbtn"><asp:Button runat="server" id="btnAddtoCart2" CssClass="btn_ordernow btn_ordernow-1" CommandArgument="132" OnClick="btnAddtoCartE2_OnClick"/></p>
                 </div>
             </div>
 
@@ -70,7 +70,7 @@
                             </ul>
                         </div>
                     </div>
-                    <p class="orderbtn"><asp:Button runat="server" id="btnAddtoCart" CssClass="btn_ordernow btn_ordernow-1" CommandArgument="120" OnClick="btnAddtoCartE2_OnClick"/></p>
+                    <p class="orderbtn"><asp:Button runat="server" id="btnAddtoCart" CssClass="btn_ordernow btn_ordernow-1" CommandArgument="133" OnClick="btnAddtoCartE2_OnClick"/></p>
                 </div>
                 
             </div>    </div>
