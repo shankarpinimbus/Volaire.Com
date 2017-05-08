@@ -33,7 +33,7 @@ namespace CSWeb.Desktop
                 string version = OrderHelper.GetVersionName().ToLower();
                 string strTermUrl = "";
                 strTermUrl = Request.Url.ToString().ToLower().Replace(":81", "");
-                if (!version.Equals("aa1") && !version.Equals("e2"))
+                if (!version.Equals("aa1") && !version.Equals("e2") && !version.Equals("e3"))
                 {
                     if (Request.QueryString.Count > 0)
                         Response.Redirect("/e2/index?" + Request.QueryString);
