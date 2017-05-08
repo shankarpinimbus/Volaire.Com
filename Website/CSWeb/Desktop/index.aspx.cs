@@ -33,13 +33,13 @@ namespace CSWeb.Desktop
                 string version = OrderHelper.GetVersionName().ToLower();
                 string strTermUrl = "";
                 strTermUrl = Request.Url.ToString().ToLower().Replace(":81", "");
-                if (!version.Equals("b2") && !version.Equals("b3") && !version.Equals("aa1") && !version.Equals("d2") && !version.Equals("e2"))
+                if (!version.Equals("aa1") && !version.Equals("e2"))
                 {
                     if (Request.QueryString.Count > 0)
-                        Response.Redirect("/b2/index?" + Request.QueryString);
+                        Response.Redirect("/e2/index?" + Request.QueryString);
                     else
                     {
-                        Response.Redirect("/b2/index");
+                        Response.Redirect("/e2/index");
                     }
                 }
 
