@@ -14,7 +14,7 @@ namespace CSWeb.Desktop
         {
             base.Page_Load(sender, e);
             string version = OrderHelper.GetVersionName().ToLower();
-            if (!version.Equals("aa1") && !version.Equals("e2"))
+            if (!version.Equals("aa1") && !version.Equals("e2") && !version.Equals("e3"))
             {
                 if (Request.QueryString.Count > 0)
                     Response.Redirect("/e2/tv-introductory-offer?" + Request.QueryString);
@@ -55,7 +55,15 @@ namespace CSWeb.Desktop
             Button btn = (Button)(sender);
             string btnArgs = btn.CommandArgument;
             OrderHelper.ChangeCart(btnArgs);
-            Response.Redirect("mega-volume-collection");
+            if (OrderHelper.GetVersionName().ToLower().Equals("e3"))
+            {
+                Response.Redirect("cart");
+            }
+            else
+            {
+                Response.Redirect("mega-volume-collection");
+            }
+            //Response.Redirect("mega-volume-collection");
         }
     }
 }

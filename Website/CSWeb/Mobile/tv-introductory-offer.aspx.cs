@@ -52,7 +52,15 @@ namespace CSWeb.Mobile
             Button btn = (Button)(sender);
             string btnArgs = btn.CommandArgument;
             OrderHelper.ChangeCart(btnArgs);
-            Response.Redirect("mega-volume-collection");
+            if (OrderHelper.GetVersionName().ToLower().Equals("mobile_e3"))
+            {
+                Response.Redirect("cart");
+            }
+            else
+            {
+                Response.Redirect("mega-volume-collection");
+            }
+            //Response.Redirect("mega-volume-collection");
         }
     }
 }
