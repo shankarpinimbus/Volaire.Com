@@ -14,13 +14,13 @@ namespace CSWeb.Mobile
         {
             base.Page_Load(sender, e);
             string version = OrderHelper.GetVersionName().ToLower();
-            if (!version.Equals("mobile_aa1") && !version.Equals("mobile_e2") && !version.Equals("mobile_e3"))
+            if (!version.Equals("mobile_aa1") && !version.Equals("mobile_a1")/* && !version.Equals("mobile_e3")*/)
             {
                 if (Request.QueryString.Count > 0)
-                    Response.Redirect("/mobile_e2/tv-introductory-offer?" + Request.QueryString);
+                    Response.Redirect("/mobile_a1/tv-introductory-offer?" + Request.QueryString);
                 else
                 {
-                    Response.Redirect("/mobile_e2/tv-introductory-offer");
+                    Response.Redirect("/mobile_a1/tv-introductory-offer");
                 }
             }
         }

@@ -14,13 +14,13 @@ namespace CSWeb.Mobile
         {
             base.Page_Load(sender, e);
             string version = OrderHelper.GetVersionName().ToLower();
-            if (!version.Equals("mobile_aa1") && !version.Equals("mobile_e2"))
+            if (!version.Equals("mobile_aa1") && !version.Equals("mobile_a1"))
             {
                 if (Request.QueryString.Count > 0)
-                    Response.Redirect("/mobile_e2/tangle-angel-brush?" + Request.QueryString);
+                    Response.Redirect("/mobile_a1/tangle-angel-brush?" + Request.QueryString);
                 else
                 {
-                    Response.Redirect("/mobile_e2/tangle-angel-brush");
+                    Response.Redirect("/mobile_a1/tangle-angel-brush");
                 }
             }
         }

@@ -14,13 +14,13 @@ namespace CSWeb.Desktop
         {
             base.Page_Load(sender, e);
             string version = OrderHelper.GetVersionName().ToLower();
-            if (!version.Equals("aa1") && !version.Equals("e2") && !version.Equals("e3"))
+            if (!version.Equals("aa1") && !version.Equals("a1") /*&& !version.Equals("e3")*/)
             {
                 if (Request.QueryString.Count > 0)
-                    Response.Redirect("/e2/tv-introductory-offer?" + Request.QueryString);
+                    Response.Redirect("/tv-introductory-offer?" + Request.QueryString);
                 else
                 {
-                    Response.Redirect("/e2/tv-introductory-offer");
+                    Response.Redirect("/tv-introductory-offer");
                 }
             }
         }

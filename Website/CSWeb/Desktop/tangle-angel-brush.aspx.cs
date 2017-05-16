@@ -14,13 +14,13 @@ namespace CSWeb.Desktop
         {
             base.Page_Load(sender, e);
             string version = OrderHelper.GetVersionName().ToLower();
-            if (!version.Equals("aa1") && !version.Equals("e2"))
+            if (!version.Equals("aa1") && !version.Equals("a1"))
             {
                 if (Request.QueryString.Count > 0)
-                    Response.Redirect("/e2/tangle-angel-brush?" + Request.QueryString);
+                    Response.Redirect("/tangle-angel-brush?" + Request.QueryString);
                 else
                 {
-                    Response.Redirect("/e2/tangle-angel-brush");
+                    Response.Redirect("/tangle-angel-brush");
                 }
             }
         }
