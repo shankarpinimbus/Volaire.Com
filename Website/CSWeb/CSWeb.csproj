@@ -374,6 +374,7 @@
     <Content Include="E2\index.aspx" />
     <Content Include="E2\mega-volume-collection.aspx" />
     <Content Include="E2\tv-introductory-offer.aspx" />
+    <Content Include="F2\index.aspx" />
     <Content Include="Mobile\volaire-customer-care.aspx" />
     <Content Include="Mobile\privacy-policy.aspx" />
     <Content Include="Mobile\terms-and-conditions.aspx" />
@@ -402,6 +403,7 @@
     <Content Include="MOBILE_E2\index.aspx" />
     <Content Include="MOBILE_E2\mega-volume-collection.aspx" />
     <Content Include="MOBILE_E2\tv-introductory-offer.aspx" />
+    <Content Include="MOBILE_F2\index.aspx" />
     <Content Include="NoCart\400.aspx" />
     <Content Include="NoCart\footer.html" />
     <Content Include="NoCart\contact.aspx" />

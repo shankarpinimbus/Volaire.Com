@@ -73,7 +73,7 @@ namespace CSWeb.Mobile.Store
                         }
                     }
                 }
-                if (!version.Equals("mobile_aa1") && !version.Equals("mobile_a1") /*&& !version.Equals("mobile_e3")*/)
+                if (!version.Equals("mobile_aa1") && !version.Equals("mobile_a1") && !version.Equals("mobile_f2"))
                 {
                     if (Request.QueryString.Count > 0)
                         Response.Redirect("/mobile_a1/index?" + Request.QueryString);
