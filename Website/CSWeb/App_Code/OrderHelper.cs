@@ -1569,6 +1569,10 @@ namespace CSWeb
                 {
                     RedirectVersion = "mobile_e3";
                 }
+                if (version.ToLower().Contains("f2"))
+                {
+                    RedirectVersion = "mobile_f2";
+                }
 
                 if (HttpContext.Current.Request.QueryString.Count > 0)
                 {
