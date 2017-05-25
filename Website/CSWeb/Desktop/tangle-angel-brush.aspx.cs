@@ -14,7 +14,7 @@ namespace CSWeb.Desktop
         {
             base.Page_Load(sender, e);
             string version = OrderHelper.GetVersionName().ToLower();
-            if (!version.Equals("aa1") && !version.Equals("a1"))
+            if (!version.Equals("aa1") && !version.Equals("a1") && !version.Equals("f2"))
             {
                 if (Request.QueryString.Count > 0)
                     Response.Redirect("/tangle-angel-brush?" + Request.QueryString);
