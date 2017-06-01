@@ -14,13 +14,13 @@ namespace CSWeb.Desktop
         {
             base.Page_Load(sender, e);
             string version = OrderHelper.GetVersionName().ToLower();
-            if (!version.Equals("aa1") && !version.Equals("a1") && !version.Equals("f2"))
+            if (!version.Equals("aa1") && !version.Equals("a1") /*&& !version.Equals("f2")*/)
             {
                 if (Request.QueryString.Count > 0)
-                    Response.Redirect("/mega-volume-collection?" + Request.QueryString);
+                    Response.Redirect("/b2/mega-volume-collection?" + Request.QueryString);
                 else
                 {
-                    Response.Redirect("/mega-volume-collection");
+                    Response.Redirect("/b2/mega-volume-collection");
                 }
             }
         }
