@@ -14,7 +14,7 @@ namespace CSWeb.Mobile
         {
             base.Page_Load(sender, e);
             string version = OrderHelper.GetVersionName().ToLower();
-            if (!version.Equals("mobile_aa1") && !version.Equals("mobile_b2")/* && !version.Equals("mobile_f2")*/)
+            if (!version.Equals("mobile_aa1") && !version.Equals("mobile_b2") && !version.Equals("mobile_b4"))
             {
                 if (Request.QueryString.Count > 0)
                     Response.Redirect("/mobile_b2/mega-volume-collection?" + Request.QueryString);
@@ -29,7 +29,7 @@ namespace CSWeb.Mobile
         protected void btnAddtoCart_OnClick(object sender, EventArgs e)
         {
             OrderHelper.EmptyCart();
-            if (OrderHelper.GetVersionName().ToLower().Equals("mobile_b2"))
+            if (OrderHelper.GetVersionName().ToLower().Equals("mobile_b2") || OrderHelper.GetVersionName().ToLower().Equals("mobile_b4"))
             {
                 OrderHelper.ChangeCart("130");
             }

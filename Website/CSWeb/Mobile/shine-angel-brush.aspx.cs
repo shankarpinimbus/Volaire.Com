@@ -14,7 +14,7 @@ namespace CSWeb.Mobile
         {
             base.Page_Load(sender, e);
             string version = OrderHelper.GetVersionName().ToLower();
-            if (!version.Equals("mobile_aa1") && !version.Equals("mobile_b2") /*&& !version.Equals("mobile_f2")*/)
+            if (!version.Equals("mobile_aa1") && !version.Equals("mobile_b2") && !version.Equals("mobile_b4"))
             {
                 if (Request.QueryString.Count > 0)
                     Response.Redirect("/mobile_b2/shine-angel-brush?" + Request.QueryString);

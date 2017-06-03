@@ -14,7 +14,7 @@ namespace CSWeb.Desktop
         {
             base.Page_Load(sender, e);
             string version = OrderHelper.GetVersionName().ToLower();
-            if (!version.Equals("aa1") && !version.Equals("b2")/* && !version.Equals("f2")*/)
+            if (!version.Equals("aa1") && !version.Equals("b2") && !version.Equals("b4"))
             {
                 if (Request.QueryString.Count > 0)
                     Response.Redirect("/b2/tv-introductory-offer?" + Request.QueryString);
@@ -29,7 +29,7 @@ namespace CSWeb.Desktop
         protected void btnAddtoCart_OnClick(object sender, EventArgs e)
         {
             OrderHelper.EmptyCart();
-            if (OrderHelper.GetVersionName().ToLower().Equals("b2") || OrderHelper.GetVersionName().ToLower().Equals("b3"))
+            if (OrderHelper.GetVersionName().ToLower().Equals("b2") || OrderHelper.GetVersionName().ToLower().Equals("b3") || OrderHelper.GetVersionName().ToLower().Equals("b4"))
             {
                 OrderHelper.ChangeCart("128");
             }
