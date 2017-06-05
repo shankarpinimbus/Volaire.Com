@@ -433,7 +433,7 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
                     <div class="clear"></div>
 
                     <div class="main_cart_hdr">Promocode: 
-                        <% if (versionName.ToLower().EndsWith("b2") || versionName.ToLower().EndsWith("b3")  ) %>
+                        <% if (versionName.ToLower().EndsWith("b2") || versionName.ToLower().EndsWith("b3") || versionName.ToLower().EndsWith("b4")) %>
     <% { %>
                 <input type="text" value="VOL33" class="text-2 text-promocode" disabled />
     <% } else if (versionName.ToLower().EndsWith("e2") )  { %>

@@ -2,7 +2,7 @@
 <header>
 	<section class="topbanner">
         <div class="topbanner-promo">
-            <% if (versionName.ToLower().EndsWith("b2") || versionName.ToLower().EndsWith("b3") ) %>
+            <% if (versionName.ToLower().EndsWith("b2") || versionName.ToLower().EndsWith("b3") || versionName.ToLower().EndsWith("b4")) %>
     <% { %>
                     <h2>
                     <a href="tv-introductory-offer">
