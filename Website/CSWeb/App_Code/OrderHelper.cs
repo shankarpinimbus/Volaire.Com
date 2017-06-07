@@ -1553,6 +1553,14 @@ namespace CSWeb
                 {
                     RedirectVersion = "mobile_aa1";
                 }
+                if (version.ToLower().Contains("get_aa1"))
+                {
+                    RedirectVersion = "get_mobile_aa1";
+                }
+                if (version.ToLower().Contains("get_a1"))
+                {
+                    RedirectVersion = "get_mobile_a1";
+                }
                 if (version.ToLower().Contains("c2"))
                 {
                     RedirectVersion = "mobile_c2";
