@@ -20,8 +20,8 @@
 <section class="hero hero-guarantee gradient">
     <div class="hero-guarantee1">
         <div class="container">
-            <div class="visibled"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Guarantee.png" alt="No risk money back guarantee with VOLAIRE Hair Volumizing System! Try our products risk free for 30 days!" class="block" /></div>
-            <div class="visiblet"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-guarantee-t.jpg" alt="Our Mega Promise" class="block" /></div>
+            <div class="visibled"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Guarantee-60day.png" alt="No risk money back guarantee with VOLAIRE Hair Volumizing System! Try our products risk free for 60 days!" class="block" /></div>
+            <div class="visiblet"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hero-guarantee-60day-t.jpg" alt="Our Mega Promise" class="block" /></div>
         </div>
     </div>
 </section> 

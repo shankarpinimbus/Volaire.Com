@@ -67,7 +67,7 @@
                     <a href="shine-angel-brush" class="btn_no_thanks">No, thank you.</a>
                 </div>
             </div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-30-day-money-back-guarantee.png" alt="30 Day Money Back Guarantee" class="iblock offer-mbg" style="margin-top: 2rem; margin-left: 1%;" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="60 Day Money Back Guarantee" class="iblock offer-mbg" style="margin-top: 2rem; margin-left: 1%;" />
         </div>
     </div>
 </section>

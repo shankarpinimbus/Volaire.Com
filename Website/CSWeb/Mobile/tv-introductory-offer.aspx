@@ -23,7 +23,7 @@
 
         <div class="offer-links">
             <h3>Includes a 30 Day Supply of:</h3>
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-30-day-money-back-guarantee.png" alt="30 Day Money Back Guarantee" class="fright" style="width: 28.75%; margin: 1rem 0 1rem 1%;" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="60 Day Money Back Guarantee" class="fright" style="width: 28.75%; margin: 1rem 0 1rem 1%;" />
             <ul>
                 <li><a href="#pop-weightless-volumizing-shampoo" class="product-pop">Weightless Volumizing Shampoo</a></li>
                 <li><a href="#pop-weightless-fortifying-conditioner" class="product-pop">Weightless Fortifying Conditioner</a></li>

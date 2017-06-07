@@ -79,7 +79,7 @@
         <dd>When your order ships from our fulfillment center, you will receive a shipment confirmation email that includes a tracking number from a major US carrier.</dd>
 
         <dt>RETURNS / EXCHANGES</dt>
-        <dd>Your satisfaction is important to us! We have a 30 day return policy. See the full details on our <a href="mega-promise-money-back-guarantee" class="med black scored">Guarantee page</a>.</dd>
+        <dd>Your satisfaction is important to us! We have a 60 day return policy. See the full details on our <a href="mega-promise-money-back-guarantee" class="med black scored">Guarantee page</a>.</dd>
     </dl>
     <div class="faq-quote">
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/faq-quote-mell.jpg" alt="VOLAIRE is unbelievable! Great customer reviews about VOLAIRE as users are experiencing lasting, gorgeous volume!" class="block" />

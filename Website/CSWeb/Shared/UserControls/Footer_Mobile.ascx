@@ -17,7 +17,7 @@
 </section>--%>
 <section class="footer">
 
-    <p><a href="mega-promise-money-back-guarantee"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-30-day-money-back-guarantee.png" alt="30 Day Money Back Guarantee" class="iblock footer-mbg" /></a></p>
+    <p><a href="mega-promise-money-back-guarantee"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="60 Day Money Back Guarantee" class="iblock footer-mbg" /></a></p>
 
     <p><a href="index"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-logo-black.png" alt="Volaire" class="iblock footer-logo" /></a></p>
 

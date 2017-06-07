@@ -132,10 +132,18 @@ Subtotal:<br />
             <asp:Literal runat="server" ID="ltOfferDetails"></asp:Literal>
         </div>
     </div>
-
-    <p class="text-center" style="padding-top: 1rem;">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/cart-guarantee.png" alt="30 Day Money Back Guarantee - SSL Secured Online Ordering" />
-    </p>
+        <br /><br />
+    <div class="clearfix">
+                    <div class="cart-guarantee-1"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="No risk 60 day money back guarentee with VOLAIRE. Volume that is easy to achieve and lasts all day long with VOLAIRE." /></div>
+                    <div class="cart-guarantee-2">
+                        <h2>OUR MEGA &nbsp;<span class="webfont1 orange ital normal">promise</span></h2>
+                        <p>At VOLAIRE<sup>™</sup> we are committed to you achieving the full-bodied, touchable volume you’ve always dreamed of. If, for any reason, you’re not 100% satisfied with any of our products, simply return them within 60 days of purchase for a full refund (less s&h). </p>
+                    </div>
+                    <div class="cart-guarantee-3"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/ssl.png" alt="SSL Secured Online Ordering" /></div>
+                    <%--<p class="text-center">
+                        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/cart-guarantee.png" alt="30 Day Money Back Guarantee - SSL Secured Online Ordering" />
+                    </p>--%>
+            </div>
 
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("include_guarantee.html")%>
     <br />

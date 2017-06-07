@@ -137,8 +137,8 @@
 </div>
 
 <div class="receipt_guarantee">
-    <p><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-30-day-money-back-guarantee.png" alt="30 Day Money Back Guarantee" class="iblock footer-mbg" /></p>
-    <p>At VOLAIRE™ we are committed to you achieving the full-bodied, touchable volume you’ve always dreamed of. If for any reason you’re not 100% satisfied with any of our products, simply return them within 30 days of purchase for a full refund (less s&h). 
+    <p><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="60 Day Money Back Guarantee" class="iblock footer-mbg" /></p>
+    <p>At VOLAIRE™ we are committed to you achieving the full-bodied, touchable volume you’ve always dreamed of. If for any reason you’re not 100% satisfied with any of our products, simply return them within 60 days of purchase for a full refund (less s&h). 
 
     </p>
 </div>

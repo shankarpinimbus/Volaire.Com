@@ -35,7 +35,7 @@
                 <p class="footer-copyright">© <script>document.write(new Date().getFullYear())</script> VOLAIRE™. All Rights Reserved.</p>
             </div>
             <div class="col span4 footer-right">
-                <a href="mega-promise-money-back-guarantee"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-30DMBG.png" alt="No risk 30 day money back guarentee with VOLAIRE. Volume that is easy to achieve and lasts all day long with VOLAIRE." class="iblock" style="margin-bottom: .6rem;" /></a>
+                <a href="mega-promise-money-back-guarantee"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="No risk 60 day money back guarentee with VOLAIRE. Volume that is easy to achieve and lasts all day long with VOLAIRE." class="iblock" style="margin-bottom: .6rem;" /></a>
                 <p class="footer-note">**Includes enrollment in MVP program.</p>
             </div>
         </div>

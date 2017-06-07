@@ -492,10 +492,16 @@ document.getElementById('<%= lblMessage.ClientID %>').innerText = "Processing...
 
                 </asp:Panel>
 
-                <div>
+                <div class="cart_guarantee">
                     
                     <p class="text-center">
-                        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/cart-guarantee.png" alt="30 Day Money Back Guarantee - SSL Secured Online Ordering" />
+                        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/ssl.png" alt="SSL Secured Online Ordering" class="cart_guarantee_ssl" />
+                    </p>
+                    <p class="text-center">
+                        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="60 Day Money Back Guarantee" class="cart_guarantee_img" />
+                    </p>
+                    <p class="text-center">
+                        At VOLAIRE™ we are committed to you achieving the full-bodied, touchable volume you’ve always dreamed of. If for any reason you’re not 100% satisfied with any of our products, simply return them within 60 days of purchase for a full refund (less s&h).
                     </p>
             </div>
      

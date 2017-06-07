@@ -1683,7 +1683,7 @@ label.error {display: none !important;}
 }
 
 .receipt_guarantee {
-    padding: .5rem 3% 0;
+    padding: .5rem 3.5% 0;
     text-align: center;
 }
 
@@ -2006,6 +2006,25 @@ label.error {display: none !important;}
 .offers-cart .stickynav,
 #cart .stickynav {display: none;}
 .stickynav-landscape {display: none;}
+
+
+.cart_guarantee {
+    width: 93%;
+    margin: 1.3rem auto;
+}
+
+.cart_guarantee_ssl {
+    width: 45%;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.cart_guarantee_img {
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+}
+
 
 
 @media all and (orientation: landscape) {

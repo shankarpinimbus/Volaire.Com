@@ -62,7 +62,7 @@
         <div class="offer-benefits">
             <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
         </div>
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-30-day-money-back-guarantee.png" alt="30 Day Money Back Guarantee" class="iblock offer-mbg" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="60 Day Money Back Guarantee" class="iblock offer-mbg" />
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/b2/promo-code-save-33-percent-big.png" alt="Save 33% - Promo Code VOL33" class="fright" style="margin-top: .8rem;" />
     </div>
 </section>

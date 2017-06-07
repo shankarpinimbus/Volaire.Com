@@ -18,7 +18,7 @@
 <div class="container">
 <uc:Header ID="Header" runat="server" />
     
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Guarantee.jpg" alt="No risk money back guarantee with VOLAIRE Hair Volumizing System! Try our products risk free for 30 days!" class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-guarantee-mega-promise-60day.jpg" alt="No risk money back guarantee with VOLAIRE Hair Volumizing System! Try our products risk free for 60 days!" class="block full" />
     <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Richard-Ward-Guarantee.jpg" alt="VOLAIRE gives your hair texture, volume, bounce and life! Best offer on VOLAIRE Hair Volumizing System!" class="block full" />
     
     
