@@ -1669,28 +1669,60 @@ namespace CSWeb
         public static void RedirectDesktop()
         {
             string version = GetVersionName().ToLower();
-            if (!version.Equals("aa1") && !version.Equals("a1") && !version.Equals("f2"))
+            if (HttpContext.Current.Request.Url.ToString().ToLower().Contains("getvolaire"))
             {
-                if (HttpContext.Current.Request.QueryString.Count > 0)
-                    HttpContext.Current.Response.Redirect("/index?" + HttpContext.Current.Request.QueryString);
-                else
+                if (!version.Equals("get_aa1") && !version.Equals("get_a1"))
                 {
-                    HttpContext.Current.Response.Redirect("/index");
+                    if (HttpContext.Current.Request.QueryString.Count > 0)
+                        HttpContext.Current.Response.Redirect("/get_a1/index?" + HttpContext.Current.Request.QueryString);
+                    else
+                    {
+                        HttpContext.Current.Response.Redirect("/get_a1/index");
+                    }
                 }
             }
+            else
+            {
+                if (!version.Equals("aa1") && !version.Equals("a1") && !version.Equals("f2"))
+                {
+                    if (HttpContext.Current.Request.QueryString.Count > 0)
+                        HttpContext.Current.Response.Redirect("/index?" + HttpContext.Current.Request.QueryString);
+                    else
+                    {
+                        HttpContext.Current.Response.Redirect("/index");
+                    }
+                }
+            }
+            
         }
         public static void RedirectMobile()
         {
             string version = GetVersionName().ToLower();
-            if (!version.Equals("mobile_aa1") && !version.Equals("mobile_a1") && !version.Equals("mobile_f2"))
+            if (HttpContext.Current.Request.Url.ToString().ToLower().Contains("getvolaire"))
             {
-                if (HttpContext.Current.Request.QueryString.Count > 0)
-                    HttpContext.Current.Response.Redirect("/mobile_a1/index?" + HttpContext.Current.Request.QueryString);
-                else
+                if (!version.Equals("get_mobile_aa1") && !version.Equals("get_mobile_a1"))
                 {
-                    HttpContext.Current.Response.Redirect("/mobile_a1/index");
+                    if (HttpContext.Current.Request.QueryString.Count > 0)
+                        HttpContext.Current.Response.Redirect("/get_mobile_a1/index?" + HttpContext.Current.Request.QueryString);
+                    else
+                    {
+                        HttpContext.Current.Response.Redirect("/get_mobile_a1/index");
+                    }
                 }
             }
+            else
+            {
+                if (!version.Equals("mobile_aa1") && !version.Equals("mobile_a1") && !version.Equals("mobile_f2"))
+                {
+                    if (HttpContext.Current.Request.QueryString.Count > 0)
+                        HttpContext.Current.Response.Redirect("/mobile_a1/index?" + HttpContext.Current.Request.QueryString);
+                    else
+                    {
+                        HttpContext.Current.Response.Redirect("/mobile_a1/index");
+                    }
+                }
+            }
+            
         }
     }
 }
