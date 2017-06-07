@@ -13,16 +13,7 @@ namespace CSWeb.Desktop
         protected override void Page_Load(object sender, EventArgs e)
         {
             base.Page_Load(sender, e);
-            string version = OrderHelper.GetVersionName().ToLower();
-            if (!version.Equals("aa1") && !version.Equals("b2") && !version.Equals("b4"))
-            {
-                if (Request.QueryString.Count > 0)
-                    Response.Redirect("/b2/tangle-angel-brush?" + Request.QueryString);
-                else
-                {
-                    Response.Redirect("/b2/tangle-angel-brush");
-                }
-            }
+            OrderHelper.RedirectDesktop();
         }
 
 

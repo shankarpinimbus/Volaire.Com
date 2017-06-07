@@ -33,15 +33,7 @@ namespace CSWeb.Desktop
                 string version = OrderHelper.GetVersionName().ToLower();
                 string strTermUrl = "";
                 strTermUrl = Request.Url.ToString().ToLower().Replace(":81", "");
-                if (!version.Equals("aa1") && !version.Equals("b2") && !version.Equals("b4"))
-                {
-                    if (Request.QueryString.Count > 0)
-                        Response.Redirect("/b2/index?" + Request.QueryString);
-                    else
-                    {
-                        Response.Redirect("/b2/index");
-                    }
-                }
+                OrderHelper.RedirectDesktop();
 
                 OrderHelper.SetDynamicLandingPageVersion(OrderHelper.GetVersionName(), ClientOrderData);
                 // versionName used in Header.ascx

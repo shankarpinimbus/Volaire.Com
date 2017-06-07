@@ -1665,6 +1665,33 @@ namespace CSWeb
 
             return strDynamic;
         }
+
+        public static void RedirectDesktop()
+        {
+            string version = GetVersionName().ToLower();
+            if (!version.Equals("aa1") && !version.Equals("a1") && !version.Equals("f2"))
+            {
+                if (HttpContext.Current.Request.QueryString.Count > 0)
+                    HttpContext.Current.Response.Redirect("/index?" + HttpContext.Current.Request.QueryString);
+                else
+                {
+                    HttpContext.Current.Response.Redirect("/index");
+                }
+            }
+        }
+        public static void RedirectMobile()
+        {
+            string version = GetVersionName().ToLower();
+            if (!version.Equals("mobile_aa1") && !version.Equals("mobile_a1") && !version.Equals("mobile_f2"))
+            {
+                if (HttpContext.Current.Request.QueryString.Count > 0)
+                    HttpContext.Current.Response.Redirect("/mobile_a1/index?" + HttpContext.Current.Request.QueryString);
+                else
+                {
+                    HttpContext.Current.Response.Redirect("/mobile_a1/index");
+                }
+            }
+        }
     }
 }
 
