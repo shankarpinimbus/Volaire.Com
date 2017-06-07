@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel.Configuration;
 using System.Text;
 using System.Web;
 using System.Web.UI;
@@ -53,6 +54,16 @@ namespace CSWeb.Shared.UserControls
             SetReceiptPagePnl();
             BindGoogleTagManager();
             SetGtmParameters();
+            if (Request.Url.ToString().ToLower().Contains("getvolaire"))
+            {
+                pnlVolaire.Visible = false;
+                pnlGetVolaire.Visible = true;
+            }
+            else
+            {
+                pnlVolaire.Visible = true;
+                pnlGetVolaire.Visible = false;
+            }
 
         }
 
