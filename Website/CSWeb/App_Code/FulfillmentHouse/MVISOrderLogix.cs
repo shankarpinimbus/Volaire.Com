@@ -391,7 +391,7 @@ namespace CSWeb.FulfillmentHouse
         {
             Sku st = new SkuManager().GetSkuByID(skuId);
             st.LoadAttributeValues();
-            bool isVersionE2 = versionName.ToUpper().Contains("E2");
+            bool isVersionE2 = versionName.ToUpper().Contains("E2") || versionName.ToUpper().Contains("GET");
             if (!isVersionE2)
             {
                 if (countryId == 46)
