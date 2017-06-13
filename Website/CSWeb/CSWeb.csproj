@@ -376,6 +376,8 @@
     <Content Include="E2\mega-volume-collection.aspx" />
     <Content Include="E2\tv-introductory-offer.aspx" />
     <Content Include="F2\index.aspx" />
+    <Content Include="G2\productdetail.aspx" />
+    <Content Include="G2\products.aspx" />
     <Content Include="Mobile\volaire-customer-care.aspx" />
     <Content Include="Mobile\privacy-policy.aspx" />
     <Content Include="Mobile\terms-and-conditions.aspx" />
@@ -406,6 +408,8 @@
     <Content Include="MOBILE_E2\mega-volume-collection.aspx" />
     <Content Include="MOBILE_E2\tv-introductory-offer.aspx" />
     <Content Include="MOBILE_F2\index.aspx" />
+    <Content Include="MOBILE_G2\productdetail.aspx" />
+    <Content Include="MOBILE_G2\products.aspx" />
     <Content Include="NoCart\400.aspx" />
     <Content Include="NoCart\footer.html" />
     <Content Include="NoCart\contact.aspx" />
@@ -536,6 +540,8 @@
     <Content Include="Shared\UserControls\Footer_Mobile.ascx" />
     <Content Include="Shared\UserControls\Header.ascx" />
     <Content Include="Shared\UserControls\Header_Mobile.ascx" />
+    <Content Include="Shared\UserControls\Products.ascx" />
+    <Content Include="Shared\UserControls\Products_Mobile.ascx" />
     <Content Include="Shared\UserControls\ShippingBillingCreditForm.ascx" />
     <Content Include="Shared\UserControls\CheckoutThankYouModule.ascx" />
     <Content Include="Shared\UserControls\PayPalResponseForm.ascx" />
@@ -1315,6 +1321,20 @@
     <Compile Include="Desktop\ReviewOrder.aspx.designer.cs">
       <DependentUpon>ReviewOrder.aspx</DependentUpon>
     </Compile>
+    <Compile Include="G2\productdetail.aspx.cs">
+      <DependentUpon>productdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G2\productdetail.aspx.designer.cs">
+      <DependentUpon>productdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G2\products.aspx.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G2\products.aspx.designer.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Mobile\mega-volume-collection.aspx.cs">
       <DependentUpon>mega-volume-collection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1342,6 +1362,20 @@
     </Compile>
     <Compile Include="Mobile\tv-introductory-offer.aspx.designer.cs">
       <DependentUpon>tv-introductory-offer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE_G2\productdetail.aspx.cs">
+      <DependentUpon>productdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE_G2\productdetail.aspx.designer.cs">
+      <DependentUpon>productdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE_G2\products.aspx.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE_G2\products.aspx.designer.cs">
+      <DependentUpon>products.aspx</DependentUpon>
     </Compile>
     <Compile Include="NoCart\400.aspx.cs">
       <DependentUpon>400.aspx</DependentUpon>
@@ -1423,6 +1457,20 @@
     </Compile>
     <Compile Include="Shared\UserControls\Header.ascx.designer.cs">
       <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UserControls\Products.ascx.cs">
+      <DependentUpon>Products.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\UserControls\Products.ascx.designer.cs">
+      <DependentUpon>Products.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UserControls\Products_Mobile.ascx.cs">
+      <DependentUpon>Products_Mobile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\UserControls\Products_Mobile.ascx.designer.cs">
+      <DependentUpon>Products_Mobile.ascx</DependentUpon>
     </Compile>
     <Compile Include="Shared\UserControls\ShippingBillingCreditForm.ascx.cs">
       <DependentUpon>ShippingBillingCreditForm.ascx</DependentUpon>

@@ -116,6 +116,55 @@ namespace CSWebBase
 
             return taxToReturn;
         }
+        #region Catalog
+        public static string GetHtmlDecoratedDollarCents(string dollarAmount)
+        {
+            return GetHtmlDecoratedDollarCents(dollarAmount, false);
+        }
+
+        public static string GetHtmlDecoratedDollarCents(string dollarAmount, bool regularPrice)
+        {
+            return dollarAmount;
+        }
+
+        public static void SetCatalogShipping()
+        {
+            ClientCartContext CartContext1 = new ClientCartContext();
+            CartContext1 = HttpContext.Current.Session["ClientOrderData"] as ClientCartContext;
+            bool withQuantity1 = false;
+            decimal cartWeight = 0;
+
+            if (CartContext1.CartInfo.SkuExists(153))
+            {
+                CartContext1.CartInfo.RemoveSku(153);
+            }
+            //if (CartContext1.CartInfo.SkuExists(176))
+            //{
+            //    CartContext1.CartInfo.RemoveSku(176);
+            //}
+            //decimal subTotal = 0;
+            //foreach (Sku sku in CartContext1.CartInfo.CartItems)
+            //{
+            //    if (sku.CategoryId == 13)
+            //    {
+            //        subTotal += sku.InitialPrice;
+            //    }
+            //}
+            //if (subTotal >= 50)
+            //{
+            //    CartContext1.CartInfo.AddItem(176, 1, false, true);
+            //}
+            //else
+            //{
+                CartContext1.CartInfo.AddItem(153, 1, false, true);
+            //}
+
+            CartContext1.CartInfo.Compute();
+            HttpContext.Current.Session["ClientOrderData"] = CartContext1;
+
+        }
+
+        #endregion
     }
 
 }

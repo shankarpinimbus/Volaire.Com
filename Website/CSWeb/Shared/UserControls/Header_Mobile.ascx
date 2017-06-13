@@ -62,7 +62,7 @@
             <ul id="headernav" class="nav">
                 <li><a href="index">Home</a></li>
                 <li><a href="air-weight-technology">Airweight Technology™</a></li>
-                <li><a href="hair-volumizing-products">Products</a></li>
+                <li><a href="products">Products</a></li>
                 <li><a href="volaire-reviews">Reviews</a></li>
                 <li><a href="volaire-befores-and-afters">Before & Afters</a></li>
                 <li><a href="hair-styles-and-tips">Hair Styles & Tips</a></li>

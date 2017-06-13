@@ -135,7 +135,7 @@ namespace CSWeb.Admin
 
                     CSFactory.UpdateCoupon(cId, CommonHelper.fixquotesAccents(txtDiscountTitle.Text.Trim()),
                         percentage, totalAmount, Convert.ToInt32(ddlDiscountType.SelectedValue),
-                        skuId, relatedskuId, itemDiscountType, itemDiscount, true, cbIncludeShipping.Checked);
+                        skuId, relatedskuId, itemDiscountType, itemDiscount, true, cbIncludeShipping.Checked,0);
 
                     //CSFactory.ResetCouponCache();
 
