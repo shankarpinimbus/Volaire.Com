@@ -85,15 +85,6 @@ namespace CSWeb.Mobile {
         protected global::System.Web.UI.WebControls.Label retailPrice;
         
         /// <summary>
-        /// lblRetailPrice control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRetailPrice;
-        
-        /// <summary>
         /// lblSkuPrice control.
         /// </summary>
         /// <remarks>
@@ -128,6 +119,15 @@ namespace CSWeb.Mobile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton btnAddToCart;
+        
+        /// <summary>
+        /// lblRetailPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRetailPrice;
         
         /// <summary>
         /// ltDetailDescription control.

@@ -190,25 +190,13 @@ namespace CSWeb
                 {
                     this.chooseSizePanel.Visible = false;
                     this.productRetailPricePanel.Visible = true;
-                    if (sku.SkuId == 149)
+
+                    if (!sku.AttributeValuesLoaded)
+                        sku.LoadAttributeValues();
+                    if (sku.ContainsAttribute("productprice") && sku.AttributeValues["productprice"].Value != null && sku.ContainsAttribute("retailprice") && sku.AttributeValues["retailprice"].Value!=null)
                     {
-                        this.productValue.Text = "$38.00";
-                        this.retailPrice.Text = "$32.00";
-                    }
-                    else if (sku.SkuId == 150)
-                    {
-                        this.productValue.Text = "$80.00";
-                        this.retailPrice.Text = "$59.00";
-                    }
-                    else if (sku.SkuId == 151)
-                    {
-                        this.productValue.Text = "$78.00";
-                        this.retailPrice.Text = "$59.00";
-                    }
-                    else if (sku.SkuId == 152)
-                    {
-                        this.productValue.Text = "$54.00";
-                        this.retailPrice.Text = "$44.00";
+                        this.productValue.Text = sku.AttributeValues["productprice"].Value.ToString();
+                        this.retailPrice.Text = sku.AttributeValues["retailprice"].Value.ToString();
                     }
                 }
             }
@@ -216,9 +204,6 @@ namespace CSWeb
 
         protected void btnAddToCart_Click(object sender, EventArgs e)
         {
-
-
-
             if (Session["ClientOrderData"] == null)
             {
                 clientData = new ClientCartContext();
@@ -233,8 +218,13 @@ namespace CSWeb
                     clientData.CartInfo.ShippingAddress = new CSBusiness.CustomerManagement.Address();
                 }
             }
+            if (Session["skuID_AddtoCart"]!=null && Session["skuID_AddtoCart"].ToString()!="") // adding dynamic product to cart based on selected size of product
+            {
+                var id =  Convert.ToInt32(Session["skuID_AddtoCart"].ToString());
+                clientData.CartInfo.AddItem(id, Convert.ToInt32(ddlQuantity.SelectedValue), true, false);
+            }
 
-            if (SkuId > 0)
+            else if (SkuId > 0)
             {
                 clientData.CartInfo.AddItem(SkuId, Convert.ToInt32(ddlQuantity.SelectedValue), true, false);
             }
@@ -242,6 +232,7 @@ namespace CSWeb
             {
                 clientData.CartInfo.AddItem(skuID, Convert.ToInt32(ddlQuantity.SelectedValue), true, false);
             }
+
 
 
             //clientData.CartInfo.ShippingMethod = UserShippingMethodType.Rush;
@@ -252,6 +243,83 @@ namespace CSWeb
             Session["ClientOrderData"] = clientData;
 
             Response.Redirect("cart.aspx");
+        }
+
+        protected void smallSizeSelectButton_Click(object sender, EventArgs e)
+        {
+            Sku sku = CSResolve.Resolve<ISkuService>().GetSkuByID(Convert.ToInt32(skuID));
+            sku.LoadAttributeValues();
+
+            List<Sku> skus = CSResolve.Resolve<ISkuService>().GetAllSkus();
+
+            foreach (var item in skus)
+            {
+                item.LoadAttributeValues();
+                if (item.ContainsAttribute("groupname") && item.AttributeValues["groupname"].Value != null && (item.AttributeValues["groupname"].Value == sku.AttributeValues["groupname"].Value))
+                {
+                    if (item.ContainsAttribute("sizeofproduct") && item.AttributeValues["sizeofproduct"].Value =="small")
+                    {
+                        skuID = item.SkuId;
+                        Session["skuID_AddtoCart"] = skuID.ToString();
+                        RefreshControls_OnProductSizeSelected();
+                    }
+                }
+            }
+        }
+
+        protected void bigSizeSelectButton_Click(object sender, EventArgs e)
+        {
+            Sku sku = CSResolve.Resolve<ISkuService>().GetSkuByID(Convert.ToInt32(skuID));
+            sku.LoadAttributeValues();
+
+            List<Sku> skus = CSResolve.Resolve<ISkuService>().GetAllSkus();
+
+            foreach (var item in skus)
+            {
+                item.LoadAttributeValues();
+                if (item.ContainsAttribute("groupname") && item.AttributeValues["groupname"].Value != null && (item.AttributeValues["groupname"].Value == sku.AttributeValues["groupname"].Value))
+                {
+                    if (item.ContainsAttribute("sizeofproduct") && item.AttributeValues["sizeofproduct"].Value == "big")
+                    {
+                        skuID = item.SkuId;
+                        Session["skuID_AddtoCart"] = skuID.ToString();
+                        RefreshControls_OnProductSizeSelected();
+                    }
+                }
+            }
+        }
+        private void RefreshControls_OnProductSizeSelected()
+        {
+            Sku sku = new Sku();
+            sku = CSResolve.Resolve<ISkuService>().GetSkuByID(skuID);
+            imgSku.ImageUrl = sku.GetAttributeValue("ProductDetailImage", sku.ImagePath);
+            lblSkuTitle.Text = sku.Title;
+            lblSkuDescription.Text = sku.LongDescription;
+            lblSkuPrice.Text = GetHtmlDecoratedDollarCents(sku.InitialPrice.ToString("C"));
+            lblRetailPrice.Text = sku
+                .GetAttributeValue<string>("RetailPrice", sku.InitialPrice.ToString("n2")).Trim();
+            //ltDirection.Text = sku
+            //    .GetAttributeValue<string>("Directions", string.Empty);
+            ltIngredients.Text = sku
+                .GetAttributeValue<string>("Ingredients", string.Empty);
+            lblSize.Text = sku.GetAttributeValue<string>("ProductSize", String.Empty);
+            ltDetailDescription.Text = sku.GetAttributeValue<string>("DetailDescription", String.Empty);
+            imagePath = sku.ImagePath;
+            
+            if (!(sku.ContainsAttribute("sizeofProduct") && sku.AttributeValues["sizeofproduct"].Value != null))
+            {
+
+                this.chooseSizePanel.Visible = false;
+                this.productRetailPricePanel.Visible = true;
+                if (!sku.AttributeValuesLoaded)
+                        sku.LoadAttributeValues();
+
+                if (sku.ContainsAttribute("productprice") && sku.AttributeValues["productprice"].Value != null && sku.ContainsAttribute("retailprice") && sku.AttributeValues["retailprice"].Value!=null)
+                {
+                    this.productValue.Text = sku.AttributeValues["productprice"].Value.ToString();
+                    this.retailPrice.Text = sku.AttributeValues["retailprice"].Value.ToString();
+                }
+            }
         }
     }
 }

@@ -10,8 +10,8 @@
        <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
 <link href="/styles/global_store.css" rel="stylesheet" type="text/css" />
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts.html")%>
-    <script type="text/javascript">
-        (function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/q7aSfVYvWU7lRAFGbTPY2DwzuBBm72cg1baI71Yt/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();
+      <script type="text/javascript">
+          (function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/itGFmlqh7twU16FRq19FlRC31nQvBIQab9nDaHuQ/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();
     </script>
 </head>
 <body class="productpages">
@@ -25,13 +25,15 @@
 
     
             <div class="productdetail_box clearfix">
-					<p class="breadcrumbs"><a href="index">Home</a> &gt; <a href="products.aspx">Shop Skin Care Products</a> &gt; <span class="caps red"><asp:Label ID="lblSkuTitle" runat="server" /></span>
+					<p class="breadcrumbs"><a href="index">Home</a> &gt; <a href="products.aspx">Shop Products</a> &gt; <span class="caps red"><asp:Label ID="lblSkuTitle" runat="server" /></span>
 					</p>
 					<!-- left column -->
 							<div class="productdetail_img">
 								<asp:Image ID="imgSku" runat="server" />
 							</div>
-					
+					 <div class="yotpo bottomLine"
+                            data-product-id="<%=skuID.ToString() %>">
+                        </div>
 					<!-- right column -->
 					
                 <div class="productdetail_text">
@@ -39,13 +41,17 @@
 							  <h1><%=lblSkuTitle.Text %></h1>
 			 					
 			 			</div>
-                     <asp:Panel runat="server" visible="false" id="chooseSizePanel">
-                        Choose Size <asp:Button runat="server" ID="bigSizeSelectButton"/> &nbsp&nbsp&nbsp&nbsp<asp:Button runat="server" ID="smallSizeSelectButton" />
-                    </asp:Panel>
-                    <asp:Panel runat="server" Visible="false" ID="productRetailPricePanel">
-                        Product Value : <asp:Label runat="server" ID="productValue"></asp:Label><br />
-                        Retail Price : <asp:Label runat="server" ID="retailPrice"></asp:Label>
-                    </asp:Panel>
+                   <asp:Panel runat="server" Visible="false" ID="chooseSizePanel">
+                            Choose Size
+                            <asp:Button runat="server" ID="bigSizeSelectButton" OnClick="bigSizeSelectButton_Click" style="height: 26px" CommandArgument=""/>
+                            &nbsp&nbsp&nbsp&nbsp<asp:Button runat="server" ID="smallSizeSelectButton" OnClick="smallSizeSelectButton_Click" />
+                        </asp:Panel>
+                        <asp:Panel runat="server" Visible="false" ID="productRetailPricePanel">
+                            Product Value :
+                            <asp:Label runat="server" ID="productValue"></asp:Label><br />
+                            Retail Price :
+                            <asp:Label runat="server" ID="retailPrice"></asp:Label>
+                        </asp:Panel>
 
                  <div class="product_various_info clearfix">
                    
@@ -53,7 +59,7 @@
 						  
 						 <div class="product_various_info_top">
                                 <div class="productdetail_price" style="display:none;">
-		 					    <span class="price_label">Product Value: </span> $<asp:Label ID="lblRetailPrice" runat="server" />
+		 					    <span class="price_label">Product Value: </span> <%--$<asp:Label ID="lblRetailPrice" runat="server" />--%>
 		 				     </div>
 						     <div class="productdetail_price" style="display:none;">
 		 					    <span class="price_label">Retail Value: </span> <asp:Label ID="lblSkuPrice" runat="server" />
@@ -80,7 +86,7 @@
 						
 						    </div> 
                              <asp:ImageButton ID="btnAddToCart" OnClick="btnAddToCart_Click" runat="server" ImageUrl="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/btn_addtocart.png" CssClass="product_btn_addtocart" />
-		
+                            <asp:Label ID="lblRetailPrice" runat="server" />
 						 </div>
             <asp:Literal ID="ltDetailDescription" runat="server" />
 					 </div> 
@@ -126,26 +132,28 @@
 					 <div>
                                      <asp:Literal ID="ltIngredients" runat="server" />
 					 </div>
-					<%--<!-- begin tabs -->
+					<!-- begin tabs -->
+                  <div class="reviewlink">
+                    <span class="reviewlinkoverlay"></span>
 						<a name="tabs"></a>
 						<div class="productdetail_tabs">
 							<ul class="tablinks">
 							<li>
-							<a href="#tab-1" data-tab="tab-1" class="tablink active">Directions</a> 
+							<%--<a href="#tab-1" data-tab="tab-1" class="tablink active">Directions</a> 
 							</li>
 							<li>
 							<a href="#tab-2" data-tab="tab-2" class="tablink">Ingredients</a> 
 							</li>
-							<li>
+							<li>--%>
 							<a href="#tab-3" data-tab="tab-3" class="tablink tablink3">Reviews</a> 
 							</li>
 							</ul>
 							<div class="tabcontent">
-								<div class="tab tab-1 tab-directions">
+								<%--<div class="tab tab-1 tab-directions">
 									<asp:Literal runat="server" ID="ltDirection"></asp:Literal></div>
 
 								<div class="tab tab-2 tab-ingredients" style="display: none;">
-									<asp:Literal runat="server" ID="ltIngredients"></asp:Literal></div>
+									<asp:Literal runat="server" ID="ltIngredients"></asp:Literal></div>--%>
 
 								<div class="tab tab-3 tab-reviews" style="display: none;">
 									<div class="yotpo yotpo-main-widget"
@@ -158,7 +166,7 @@
 								</div>
 							</div>
 						</div>
-					<!-- end tabs -->--%>
+					<!-- end tabs -->
             </div>
 
             

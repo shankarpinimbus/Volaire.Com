@@ -16,7 +16,7 @@
                 <% if (versionName.ToLower().Contains("g2")) %>
                 <%
                    { %>
-                <div class="shopping_cart_nav"><a href="cart"><span class="cart_item_count">2</span >Shopping Bag</a></div>
+                <div class="shopping_cart_nav"><a href="cart"><span class="cart_item_count"><%= itemCount %></span >Shopping Bag</a></div>
                 <% } %>
 
 

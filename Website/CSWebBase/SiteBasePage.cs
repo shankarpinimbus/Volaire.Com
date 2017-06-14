@@ -138,26 +138,20 @@ namespace CSWebBase
             {
                 CartContext1.CartInfo.RemoveSku(153);
             }
-            //if (CartContext1.CartInfo.SkuExists(176))
-            //{
-            //    CartContext1.CartInfo.RemoveSku(176);
-            //}
-            //decimal subTotal = 0;
-            //foreach (Sku sku in CartContext1.CartInfo.CartItems)
-            //{
-            //    if (sku.CategoryId == 13)
-            //    {
-            //        subTotal += sku.InitialPrice;
-            //    }
-            //}
-            //if (subTotal >= 50)
-            //{
-            //    CartContext1.CartInfo.AddItem(176, 1, false, true);
-            //}
-            //else
-            //{
+            bool flag = false;
+            decimal subTotal = 0;
+            foreach (Sku sku in CartContext1.CartInfo.CartItems)
+            {
+                if (sku.SkuId>=138) // g2 individual products
+                {
+                    flag = true;
+                }
+            }
+            if (flag == true)
+            {
                 CartContext1.CartInfo.AddItem(153, 1, false, true);
-            //}
+            }
+            
 
             CartContext1.CartInfo.Compute();
             HttpContext.Current.Session["ClientOrderData"] = CartContext1;

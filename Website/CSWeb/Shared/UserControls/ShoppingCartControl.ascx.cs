@@ -5,6 +5,7 @@ using CSBusiness;
 using System.Web.UI.HtmlControls;
 using CSBusiness.Preference;
 using CSBusiness.Shipping;
+using CSWebBase;
 
 namespace CSWeb.Shared.UserControls
 {
@@ -132,9 +133,9 @@ namespace CSWeb.Shared.UserControls
                 lblOrderTotal.Text = String.Format("${0:0.00}", CartContext.CartInfo.Total);
 
                 
-                ltOfferDetail.Text = OrderHelper.GetOfferDatails(); 
-                
-                    
+                ltOfferDetail.Text = OrderHelper.GetOfferDatails();
+
+                var flag = false; 
                 
 
                 foreach (Sku sku in CartContext.CartInfo.CartItems)
@@ -148,6 +149,19 @@ namespace CSWeb.Shared.UserControls
                     if (!string.IsNullOrEmpty(sku.GetAttributeValue<string>("freegift_description", string.Empty)))
                     {
                         ltImageDescription.Text = sku.GetAttributeValue<string>("freegift_description", string.Empty);
+                    }
+                    if (sku.SkuId<138) //old skus prior to g2 version
+                    {
+                        flag = true;
+                    }
+                }
+
+                // for version g2 user can add single products with out main kit hence not showing the free gifts panel if there is no main product in cart
+                if (OrderHelper.GetVersionName().ToLower().Contains("g2"))
+                {
+                    if (flag ==false)
+                    {
+                        this.dfreeGift.Visible = false;
                     }
                 }
 
@@ -193,7 +207,10 @@ namespace CSWeb.Shared.UserControls
                 else
                 {
                     imgProduct.Visible = false;
-                    lblSkuCode.Text = cartItem.SkuCode.ToString();
+                    if (!OrderHelper.GetVersionName().ToLower().Contains("g2"))
+                    {
+                        lblSkuCode.Text = cartItem.SkuCode.ToString();
+                    }
                 }
                 DropDownList ddlQty = e.Item.FindControl("ddlQty") as DropDownList;
                 HiddenField hidSkuId = e.Item.FindControl("hidSkuId") as HiddenField;
@@ -295,6 +312,10 @@ namespace CSWeb.Shared.UserControls
                                 }
                             }
                             
+                        }
+                        if (OrderHelper.GetVersionName().ToLower().Contains("g2"))
+                        {
+                            SiteBasePage.SetCatalogShipping();    
                         }
                         BindControls();
 						if (UpdateCart != null)
