@@ -7,6 +7,7 @@
 <html>
 <head runat="server">
 <meta charset="utf-8">    
+       <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
 <link href="/styles/global_store.css" rel="stylesheet" type="text/css" />
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts.html")%>
     <script type="text/javascript">
@@ -27,6 +28,7 @@
         <div class="clearfix"><uc:Products runat="server"></uc:Products></div>
 
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("bottomcta.html")%>
+           <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
     </div>
 
 

@@ -7,7 +7,7 @@
 <html>
 <head runat="server">
 <meta charset="utf-8">
-
+       <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
 <link href="/styles/global_store.css" rel="stylesheet" type="text/css" />
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts.html")%>
     <script type="text/javascript">
@@ -37,9 +37,15 @@
                 <div class="productdetail_text">
 			 			<div class="productdetail_text_top">
 							  <h1><%=lblSkuTitle.Text %></h1>
-			 					<asp:Literal ID="ltDetailDescription" runat="server" />
+			 					
 			 			</div>
-
+                     <asp:Panel runat="server" visible="false" id="chooseSizePanel">
+                        Choose Size <asp:Button runat="server" ID="bigSizeSelectButton"/> &nbsp&nbsp&nbsp&nbsp<asp:Button runat="server" ID="smallSizeSelectButton" />
+                    </asp:Panel>
+                    <asp:Panel runat="server" Visible="false" ID="productRetailPricePanel">
+                        Product Value : <asp:Label runat="server" ID="productValue"></asp:Label><br />
+                        Retail Price : <asp:Label runat="server" ID="retailPrice"></asp:Label>
+                    </asp:Panel>
 
                  <div class="product_various_info clearfix">
                    
@@ -49,10 +55,10 @@
                                 <div class="productdetail_price" style="display:none;">
 		 					    <span class="price_label">Product Value: </span> $<asp:Label ID="lblRetailPrice" runat="server" />
 		 				     </div>
-						     <div class="productdetail_price">
+						     <div class="productdetail_price" style="display:none;">
 		 					    <span class="price_label">Retail Value: </span> <asp:Label ID="lblSkuPrice" runat="server" />
 		 				     </div>
-                             <div class="product_various_info_bottom">
+                             <div class="product_various_info_bottom" style="display:none;">
 							  	<p class="product_size"><asp:Label runat="server" ID="lblSize"></asp:Label></p>
 								    
 						     </div> 
@@ -74,11 +80,9 @@
 						
 						    </div> 
                              <asp:ImageButton ID="btnAddToCart" OnClick="btnAddToCart_Click" runat="server" ImageUrl="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/btn_addtocart.png" CssClass="product_btn_addtocart" />
-						  
 		
-                  
 						 </div>
-            
+            <asp:Literal ID="ltDetailDescription" runat="server" />
 					 </div> 
 						  
 						  <!-- begin stars  -->
@@ -119,8 +123,10 @@
 						</p>
 						<!-- end social --> 
 					 
-					 
-					<!-- begin tabs -->
+					 <div>
+                                     <asp:Literal ID="ltIngredients" runat="server" />
+					 </div>
+					<%--<!-- begin tabs -->
 						<a name="tabs"></a>
 						<div class="productdetail_tabs">
 							<ul class="tablinks">
@@ -152,7 +158,7 @@
 								</div>
 							</div>
 						</div>
-					<!-- end tabs -->
+					<!-- end tabs -->--%>
             </div>
 
             
@@ -171,7 +177,7 @@
     </div>
 
         <!-- end content area -->
-
+           <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
 <uc:Footer ID="Footer" runat="server" />
     </form>
 <uc:TrackingPixels ID="TrackingPixels" runat="server" />

@@ -200,6 +200,21 @@ namespace CSWeb.Shared.UserControls
                 hidSkuId.Value = cartItem.SkuId.ToString();
                 ddlQty.SelectedValue = cartItem.Quantity.ToString();
 
+                if (OrderHelper.GetVersionName().ToLower().Contains("g2"))
+                {
+                    // for this version, qty can be maximum of 9 
+                    ddlQty.Items.Clear();
+                    ddlQty.Items.Add(new ListItem("1", "1"));
+                    ddlQty.Items.Add(new ListItem("2", "2"));
+                    ddlQty.Items.Add(new ListItem("3", "3"));
+                    ddlQty.Items.Add(new ListItem("4", "4"));
+                    ddlQty.Items.Add(new ListItem("5", "5"));
+                    ddlQty.Items.Add(new ListItem("6", "6"));
+                    ddlQty.Items.Add(new ListItem("7", "7"));
+                    ddlQty.Items.Add(new ListItem("8", "8"));
+                    ddlQty.Items.Add(new ListItem("9", "9"));
+                    ddlQty.SelectedValue = cartItem.Quantity.ToString();
+                }
                 btnRemoveItem.CommandArgument = cartItem.SkuId.ToString();
 
                 txtQuantity.Attributes["onchange"] = Page.ClientScript.GetPostBackEventReference(refresh, "");

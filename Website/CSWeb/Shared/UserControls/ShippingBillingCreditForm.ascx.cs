@@ -63,8 +63,8 @@ namespace CSWeb.Shared.UserControls
 
             if (!IsPostBack)
             {
-                txtFirstName.Attributes.Add("oninvalid","this.setCustomValidity('" + ResourceHelper.GetResoureValue("FirstNameErrorMsg") + "')");
-                txtFirstName.Attributes.Add("oninput","this.setCustomValidity('')");
+                txtFirstName.Attributes.Add("oninvalid", "this.setCustomValidity('" + ResourceHelper.GetResoureValue("FirstNameErrorMsg") + "')");
+                txtFirstName.Attributes.Add("oninput", "this.setCustomValidity('')");
                 txtLastName.Attributes.Add("oninvalid", "this.setCustomValidity('" + ResourceHelper.GetResoureValue("LastNameErrorMsg") + "')");
                 txtLastName.Attributes.Add("oninput", "this.setCustomValidity('')");
                 txtAddress1.Attributes.Add("oninvalid", "this.setCustomValidity('" + ResourceHelper.GetResoureValue("BillingAddress1ErrorMsg") + "')");
@@ -133,6 +133,31 @@ namespace CSWeb.Shared.UserControls
                 RegionChanged();
                 BindControls();
             }
+            // version g2 hide the disclaimer for the products
+            if (OrderHelper.GetVersionName().ToLower().Contains("g2"))
+            {
+                bool mainKitPresent = false;
+                foreach (Sku sku in ClientOrderData.CartInfo.CartItems)
+                {
+                    sku.LoadAttributeValues();
+                    if (sku.GetAttributeValue<bool>("isMainKit", false))
+                    {
+                        mainKitPresent = true;
+
+                    }
+                }
+
+                if (mainKitPresent)
+                {
+                    dagree.Visible = true;
+                    pnlPromoCode.Visible = true;
+                }
+                else
+                {
+                    dagree.Visible = false;
+                    pnlPromoCode.Visible = false;
+                }
+            }
         }
 
         private void BindEmptyCart()
@@ -143,7 +168,7 @@ namespace CSWeb.Shared.UserControls
                 cartObject = new Cart();
                 int pid = OrderHelper.GetMainSkuKit();
                 cartObject.AddItem(pid, 1, true, false);
-                
+
                 if (clientData.CustomerInfo != null)
                 {
                     cartObject.ShippingAddress = clientData.CustomerInfo.BillingAddress;
@@ -160,7 +185,7 @@ namespace CSWeb.Shared.UserControls
                 ShoppingCartControl.BindControls();
                 BindControls();
             }
-            
+
         }
         public void CheckAmazonOrder()
         {
@@ -321,11 +346,11 @@ namespace CSWeb.Shared.UserControls
                     {
                         if (!string.IsNullOrEmpty(SiteBasePage.PayPalInvoice) && !string.IsNullOrEmpty(SiteBasePage.PayPalToken))
                         {
-                            if(Request.Path.ToLower().Contains("mobile"))
+                            if (Request.Path.ToLower().Contains("mobile"))
                                 Response.Redirect("Cart2.aspx?ppsubmit=1");
                             else
                                 Response.Redirect("Cart.aspx?ppsubmit=1");
-                            
+
                         }
                         else
                         {
@@ -343,7 +368,7 @@ namespace CSWeb.Shared.UserControls
                 }
                 else
                 {
-                   // pnlShippingInfo.Visible = true;
+                    // pnlShippingInfo.Visible = true;
                 }
             }
             else
@@ -369,9 +394,9 @@ namespace CSWeb.Shared.UserControls
         protected void setPaymentMethod()
         {
             pnlCreditCard.Visible = false;
-            AmazonPayment.Visible = false;            
+            AmazonPayment.Visible = false;
             if (ddlPaymentMethod.SelectedValue.Equals("1"))
-            {               
+            {
                 pnlCreditCard.Visible = true;
                 pnlShippingBillingCreditForm.Visible = true;
                 dCompleteOrder.Visible = true;
@@ -398,8 +423,8 @@ namespace CSWeb.Shared.UserControls
 
             dCompleteOrder.Visible = true;
 
-        }      
-              
+        }
+
         protected void FillBillingInfo()
         {
             try
@@ -467,7 +492,7 @@ namespace CSWeb.Shared.UserControls
             if (ClientOrderData != null && ClientOrderData.CartInfo.CartItems.Count == 0)
             {
                 int pid = OrderHelper.GetMainSkuKit();
-               AddProductToShoppingCart(pid, true);
+                AddProductToShoppingCart(pid, true);
             }
         }
 
@@ -501,13 +526,13 @@ namespace CSWeb.Shared.UserControls
             //ScriptManager.RegisterClientScriptInclude(Page, Page.GetType(), "jquery", Page.ResolveUrl("~/Scripts/jquery-1.6.4.min.js"));
             //ScriptManager.RegisterClientScriptInclude(Page, Page.GetType(), "jquery.autotab", Page.ResolveUrl("~/Scripts/jquery.autotab-1.1b.js"));
 
-          //  ScriptManager.RegisterStartupScript(this, this.GetType(), "autotab" + this.ClientID,
-          //  String.Format(@"$(function() {{$('#{0}').autotab_magic().autotab_filter('numeric')}});",
-          //          txtPhoneNumber.ClientID), true);
+            //  ScriptManager.RegisterStartupScript(this, this.GetType(), "autotab" + this.ClientID,
+            //  String.Format(@"$(function() {{$('#{0}').autotab_magic().autotab_filter('numeric')}});",
+            //          txtPhoneNumber.ClientID), true);
 
-          //  ScriptManager.RegisterStartupScript(this, this.GetType(), "autotab1" + this.ClientID,
-          //String.Format(@"$(function() {{$('#{0}, #{1}, #{2},#{3}').autotab_magic().autotab_filter('numeric')}});",
-          //        txtCCNumber1.ClientID, txtCCNumber2.ClientID, txtCCNumber3.ClientID, txtCCNumber4.ClientID), true);
+            //  ScriptManager.RegisterStartupScript(this, this.GetType(), "autotab1" + this.ClientID,
+            //String.Format(@"$(function() {{$('#{0}, #{1}, #{2},#{3}').autotab_magic().autotab_filter('numeric')}});",
+            //        txtCCNumber1.ClientID, txtCCNumber2.ClientID, txtCCNumber3.ClientID, txtCCNumber4.ClientID), true);
 
         }
 
@@ -559,7 +584,7 @@ namespace CSWeb.Shared.UserControls
 
         private void BindCreditCard()
         {
-            
+
             ddlCCType.Items.Clear();
             ddlCCType.DataSource = CommonHelper.BindToEnum(typeof(CreditCardTypeEnum));
             ddlCCType.DataTextField = "Key";
@@ -613,7 +638,7 @@ namespace CSWeb.Shared.UserControls
             catch
             { }
             RegionChanged();
-            
+
         }
 
         protected void ShippingState_SelectedIndexChanged(object sender, System.EventArgs e)
@@ -648,7 +673,7 @@ namespace CSWeb.Shared.UserControls
                 shippingAddress.ZipPostalCode = txtZipCode.Text;
                 cartObject.ShippingAddress = shippingAddress;
             }
-            
+
 
             clientData.CartInfo = cartObject;
             clientData.CartInfo.Compute();
@@ -734,7 +759,7 @@ namespace CSWeb.Shared.UserControls
                 else
                     lblEmailError.Visible = false;
             }
-                        
+
             SitePreference sitePrefCache = CSFactory.GetCacheSitePref();
 
             if (!sitePrefCache.AttributeValuesLoaded)
@@ -872,7 +897,7 @@ namespace CSWeb.Shared.UserControls
                 else
                     lblExpDate.Visible = false;
 
-               
+
 
                 if (c.Equals(""))
                 {
@@ -925,7 +950,7 @@ namespace CSWeb.Shared.UserControls
                         lblCvvError.Visible = false;
                 }
 
-                
+
 
             }
             #endregion
@@ -962,7 +987,7 @@ namespace CSWeb.Shared.UserControls
             }
             ddlExpYear.Items[0].Selected = true;
         }
-        
+
         protected void cbShippingSame_CheckedChanged(object sender, EventArgs e)
         {
             if (!cbShippingSame.Checked)
@@ -1004,7 +1029,7 @@ namespace CSWeb.Shared.UserControls
                 }
                 else
                     PerformEvents();
-                
+
             }
             else
             {
@@ -1016,7 +1041,7 @@ namespace CSWeb.Shared.UserControls
 
 
         }
-        
+
 
         public void SaveData()
         {
@@ -1043,7 +1068,7 @@ namespace CSWeb.Shared.UserControls
                 shippingAddress.CountryId = Convert.ToInt32(ddlShippingCountry.SelectedValue);
                 shippingAddress.ZipPostalCode = CommonHelper.fixquotesAccents(txtShippingZipCode.Text);
 
-                
+
                 Customer CustData = new Customer();
                 CustData.FirstName = CommonHelper.fixquotesAccents(txtFirstName.Value);
                 CustData.LastName = CommonHelper.fixquotesAccents(txtLastName.Value);
@@ -1051,8 +1076,8 @@ namespace CSWeb.Shared.UserControls
                 CustData.Email = CommonHelper.fixquotesAccents(txtEmail.Text);
                 CustData.Username = CommonHelper.fixquotesAccents(txtEmail.Text);
                 CustData.ShippingAddress = shippingAddress;
-                
-                
+
+
 
                 if (!pnlShippingAddress.Visible)
                 {
@@ -1098,20 +1123,20 @@ namespace CSWeb.Shared.UserControls
 
                 // add rush shipping level to cart object
                 if (!string.IsNullOrEmpty(ddlAdditionShippingCharge.SelectedValue))
-                {                    
+                {
                     clientData.CartInfo.ShippingChargeKey = ddlAdditionShippingCharge.SelectedValue;
                 }
 
                 ClientOrderData = clientData;
-               
-               
+
+
                 //Set the Client Order objects
                 ClientCartContext contextData = (ClientCartContext)Session["ClientOrderData"];
                 contextData.CustomerInfo = CustData;
                 contextData.CartAbandonmentId = CSResolve.Resolve<ICustomerService>().InsertCartAbandonment(CustData, contextData);
                 Session["ClientOrderData"] = contextData;
 
-               
+
             }
         }
 
@@ -1155,7 +1180,7 @@ namespace CSWeb.Shared.UserControls
                     lblZiPError.Visible = false;
                 }
             }
-            
+
             //if (pnlShippingAddress.Visible)
             //{
             //    txtShippingZipCode.Focus();

@@ -15,7 +15,6 @@ namespace CSWeb
         public static void RegisterRoutes()
         {
             VersionManager.InitializeRouting();
-            RouteTable.Routes.MapPageRoute("personal_route", "{version}/{pageName}", "~/{version}/productdetail.aspx");
             AddDynamicVersions();
         }
 

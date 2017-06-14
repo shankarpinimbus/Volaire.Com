@@ -79,9 +79,21 @@ namespace CSWeb.Store.UserControls
                     skus.RemoveAt(i--);
                     continue;
                 }
-
+                if (skus[i].ContainsAttribute("sizeofproduct") && skus[i].AttributeValues["sizeofproduct"].Value != "" && skus[i].AttributeValues["sizeofproduct"].Value == "small")
+                {
+                    skus.Remove(skus[i]);
+                }
             }
-            skus.Sort(new SkuSortComparer());
+
+
+            //skus.Sort(new SkuSortComparer());
+            skus.Sort(delegate(Sku x, Sku y)
+            {
+                x.LoadAttributeValues();
+                y.LoadAttributeValues();
+                return Convert.ToInt32(x.AttributeValues["order"].Value.Trim()).CompareTo(Convert.ToInt32(y.AttributeValues["order"].Value.Trim()));
+            });
+            
             rptProducts.DataSource = skus;
             rptProducts.DataBind();
         }

@@ -32,13 +32,18 @@
                 </div>
 
                 <div class="productdetail_text">
-                    <div class="productdetail_text_top">
-                        <asp:Literal ID="ltDetailDescription" runat="server" />
-                    </div>
-                    
-
+                   <div class="productdetail_text_top">
+                       <h1><%=lblSkuTitle.Text %></h1>
+			 			</div>
+                    <asp:Panel runat="server" visible="false" id="chooseSizePanel">
+                        Choose Size <asp:Button runat="server" ID="bigSizeSelectButton"/> &nbsp&nbsp&nbsp&nbsp<asp:Button runat="server" ID="smallSizeSelectButton" />
+                    </asp:Panel>
+                    <asp:Panel runat="server" Visible="false" ID="productRetailPricePanel">
+                        Product Value : <asp:Label runat="server" ID="productValue"></asp:Label><br />
+                        Retail Price : <asp:Label runat="server" ID="retailPrice"></asp:Label>
+                    </asp:Panel>
                     <div class="product_various_info clearfix">
-                        <div class="product_various_info_left">
+                        <div class="product_various_info_left" style="display:none">
                             <div class="productdetail_price" style="display: none"><span class="price_label">Product Value: </span> $<asp:Label ID="lblRetailPrice" runat="server" /></div>
                             <div class="productdetail_price"><span class="price_label"><strong>Retail Price: </strong></span> <strong><asp:Label ID="lblSkuPrice" runat="server" /></strong></div>
                             <p class="product_size"><asp:Label runat="server" ID="lblSize"></asp:Label></p>
@@ -59,9 +64,12 @@
                                 </asp:DropDownList>
                             </div>
                             <asp:ImageButton ID="btnAddToCart" OnClick="btnAddToCart_Click" runat="server" ImageUrl="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/btn_addtocart.png" CssClass="btn_addtocart" />
+
                         </div>
                     </div>
-
+                     <div class="productdetail_text_top">
+                        <asp:Literal ID="ltDetailDescription" runat="server" />
+                    </div>
                    <div class="reviewlink"><span class="reviewlinkoverlay"></span>
 <%--<div class="yotpo bottomLine"
   data-appkey="q7aSfVYvWU7lRAFGbTPY2DwzuBBm72cg1baI71Yt"
@@ -94,8 +102,10 @@
                     <a href="mailto:?Subject=Specific Beauty"><img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/productdetails/icon-email.png" alt="Email a friend" /></a>
                 </p>
                 
-
-                <a name="tabs"></a>
+                 <div>
+                                     <asp:Literal ID="ltIngredients" runat="server" />
+					 </div>
+               <%-- <a name="tabs"></a>
                 <div class="productdetail_tabs">
                     <ul class="tablinks">
                         <li>
@@ -128,7 +138,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
 
             </div>
 

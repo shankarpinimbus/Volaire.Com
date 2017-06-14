@@ -40,13 +40,58 @@ namespace CSWeb {
         protected global::System.Web.UI.WebControls.Image imgSku;
         
         /// <summary>
-        /// ltDetailDescription control.
+        /// chooseSizePanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltDetailDescription;
+        protected global::System.Web.UI.WebControls.Panel chooseSizePanel;
+        
+        /// <summary>
+        /// bigSizeSelectButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button bigSizeSelectButton;
+        
+        /// <summary>
+        /// smallSizeSelectButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button smallSizeSelectButton;
+        
+        /// <summary>
+        /// productRetailPricePanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel productRetailPricePanel;
+        
+        /// <summary>
+        /// productValue control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label productValue;
+        
+        /// <summary>
+        /// retailPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label retailPrice;
         
         /// <summary>
         /// lblRetailPrice control.
@@ -94,13 +139,13 @@ namespace CSWeb {
         protected global::System.Web.UI.WebControls.ImageButton btnAddToCart;
         
         /// <summary>
-        /// ltDirection control.
+        /// ltDetailDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltDirection;
+        protected global::System.Web.UI.WebControls.Literal ltDetailDescription;
         
         /// <summary>
         /// ltIngredients control.
