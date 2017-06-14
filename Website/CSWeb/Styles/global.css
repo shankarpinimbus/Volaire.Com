@@ -245,9 +245,43 @@ header {
 	text-transform: uppercase;
 	margin-right: 1em;
 }
-.topbanner-links a:hover {
+.topbanner-links a.nav-top-shop {
+    color: #ff5a34;
+}
+
+.topbanner-links a:hover, 
+.topbanner-links a.nav-top-shop:hover {
 	color: #4a3f34;
 }
+
+.shopping_cart_nav {
+    display: inline-block;
+    margin-right: .4rem;
+}
+.shopping_cart_nav a {
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/cartnum_bottle.png) no-repeat 0 0;
+    padding: .2rem 0 .2rem .4rem;
+    color: #9a846d;
+    font-size: 12px;
+    text-transform: uppercase;
+
+}
+
+.cart_item_count {
+    display: inline-block;
+    position: relative;
+    left: -.25rem;
+    top: -.25rem;
+    width: .8rem;
+    height: .8rem;
+    background: #eb1c74;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 9px;
+    text-align: center;
+    line-height: 1.5;
+}
+
 
 .topbanner-promo {
 	float: right;
@@ -289,7 +323,7 @@ header {
 }
 .topbanner-promo h2 .part4 {
 	font-weight: 900;
-	letter-spacing: .15em;
+	letter-spacing: .05em;
 	margin-right: 2px;
 }
 

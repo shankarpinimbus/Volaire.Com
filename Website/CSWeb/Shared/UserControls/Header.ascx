@@ -3,12 +3,25 @@
 	<section class="topbanner">
     	<div class="container clearfix">
         	<div class="topbanner-links">
-            	<a href="frequently-asked-questions" class="nav-top-faqs">&gt; FAQS</a>
+            	<a href="frequently-asked-questions" class="nav-top-faqs uncaps">&gt; FAQ's</a>
             	<a href="mega-promise-money-back-guarantee" class="nav-top-guarantee">&gt; Guarantee</a>
             	<a href="hair-styles-and-tips" class="visiblet nav-top-tips">&gt; Hair Styles & Tips</a>
-                <a href="products" class="nav-top-tips">&gt; Shop Products</a>
+
+                <% if (versionName.ToLower().Contains("g2")) %>
+                <%
+                   { %><a href="products" class="nav-top-shop">&gt; Shop Products</a>
+                <% } %>
             </div>
             <div class="topbanner-promo">
+                <% if (versionName.ToLower().Contains("g2")) %>
+                <%
+                   { %>
+                <div class="shopping_cart_nav"><a href="cart"><span class="cart_item_count">2</span >Shopping Bag</a></div>
+                <% } %>
+
+
+
+
                 <% if (versionName.ToLower().EndsWith("b2") || versionName.ToLower().EndsWith("b3") || versionName.ToLower().EndsWith("b4")) %>
     <% { %>
                     <h2>
@@ -55,8 +68,14 @@
             	<h3 class="nav-phone"><%=GetDynamicSidData("phone") %></h3>
                 <ul class="nav">
                 	<li><a href="air-weight-technology" class="nav-tech">Airweight Technology™</a></li>
-                	<%--<li><a href="hair-volumizing-products" class="nav-products">Products</a></li>--%>
-                    <li><a href="products" class="nav_products">Products</a></li>
+                    <% if (versionName.ToLower().Contains("g2")) %>
+                <%
+                   { %><li><a href="products" class="nav_products">Products</a></li>
+                <% }  else  { %>
+                <li><a href="hair-volumizing-products" class="nav-products">Products</a></li>
+                <% } %>
+
+                    
                 	<li><a href="volaire-reviews" class="nav-reviews">Reviews</a></li>
                 	<li class="tablet-last"><a href="volaire-befores-and-afters" class="nav-before-afters">Before & Afters</a></li>
                 	<li><a href="hair-styles-and-tips" class="hiddent nav-tips">Hair Styles & Tips</a></li>
