@@ -13,7 +13,7 @@
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts.html")%>
 
     <script type="text/javascript">
-        (function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/q7aSfVYvWU7lRAFGbTPY2DwzuBBm72cg1baI71Yt/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();
+        (function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/itGFmlqh7twU16FRq19FlRC31nQvBIQab9nDaHuQ/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();
     </script>
 </head>
 <body class="products_page">
