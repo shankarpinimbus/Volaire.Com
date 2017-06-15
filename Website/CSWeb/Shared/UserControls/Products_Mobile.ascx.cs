@@ -118,35 +118,32 @@ namespace CSWeb.UserControls
             if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
             {
                 Sku cartItem = e.Item.DataItem as Sku;
-                if (cartItem.SkuId >= 141 && cartItem.SkuId <= 148)
-                {
-                    Image imgProduct = e.Item.FindControl("imgProduct") as Image;
-                    Label lblSkuTitle = e.Item.FindControl("lblSkuTitle") as Label;
-                    Label lblSkuDescription = e.Item.FindControl("lblSkuDescription") as Label;
-                    Label lblSkuInitialPrice = e.Item.FindControl("lblSkuInitialPrice") as Label;
-                    Label lblRetailPrice = e.Item.FindControl("lblRetailPrice") as Label;
+                Image imgProduct = e.Item.FindControl("imgProduct") as Image;
+                Label lblSkuTitle = e.Item.FindControl("lblSkuTitle") as Label;
+                Label lblSkuDescription = e.Item.FindControl("lblSkuDescription") as Label;
+                Label lblSkuInitialPrice = e.Item.FindControl("lblSkuInitialPrice") as Label;
+                Label lblRetailPrice = e.Item.FindControl("lblRetailPrice") as Label;
 
 
-                    ImageButton btnViewProduct = e.Item.FindControl("btnViewProduct") as ImageButton;
-                    Literal litRegularPrice = e.Item.FindControl("litRegularPrice") as Literal;
-                    LinkButton product_anchor = e.Item.FindControl("product_anchor") as LinkButton;
-                    LinkButton product_anchor2 = e.Item.FindControl("product_anchor2") as LinkButton;
-                    Label lblSize = e.Item.FindControl("lblSize") as Label;
-                    imgProduct.ImageUrl = cartItem.GetAttributeValue("ProductDetailImage", cartItem.ImagePath);
-                    lblSkuTitle.Text = cartItem.GetAttributeValue<string>("title", cartItem.Title);//cartItem.LongDescription;//cartItem.Title;
-                    lblSkuDescription.Text = cartItem.GetAttributeValue<string>("SubDescription", cartItem.Title);//cartItem.LongDescription;
-                    lblSkuInitialPrice.Text = cartItem.InitialPrice.ToString("C");
-                    lblSize.Text = cartItem.GetAttributeValue<string>("ProductSize", String.Empty);
+                ImageButton btnViewProduct = e.Item.FindControl("btnViewProduct") as ImageButton;
+                Literal litRegularPrice = e.Item.FindControl("litRegularPrice") as Literal;
+                LinkButton product_anchor = e.Item.FindControl("product_anchor") as LinkButton;
+                LinkButton product_anchor2 = e.Item.FindControl("product_anchor2") as LinkButton;
+                Label lblSize = e.Item.FindControl("lblSize") as Label;
+                imgProduct.ImageUrl = cartItem.GetAttributeValue("ProductDetailImage", cartItem.ImagePath);
+                lblSkuTitle.Text = cartItem.GetAttributeValue<string>("title", cartItem.Title);//cartItem.LongDescription;//cartItem.Title;
+                lblSkuDescription.Text = cartItem.GetAttributeValue<string>("SubDescription", cartItem.Title);//cartItem.LongDescription;
+                lblSkuInitialPrice.Text = cartItem.InitialPrice.ToString("C");
+                lblSize.Text = cartItem.GetAttributeValue<string>("ProductSize", String.Empty);
 
-                    decimal regPrice;
-                    if (decimal.TryParse(cartItem.GetAttributeValue<string>("RetailPrice", cartItem.InitialPrice.ToString("n2")).Trim(), out regPrice))
-                        lblRetailPrice.Text = regPrice.ToString("C");
+                decimal regPrice;
+                if (decimal.TryParse(cartItem.GetAttributeValue<string>("RetailPrice", cartItem.InitialPrice.ToString("n2")).Trim(), out regPrice))
+                    lblRetailPrice.Text = regPrice.ToString("C");
 
-                    product_anchor.PostBackUrl = "/" + OrderHelper.GetVersionName() + "/" + cartItem.GetAttributeValue<string>("skuRoutingName", string.Empty).Trim().ToLower();
-                    product_anchor2.PostBackUrl = "/" + OrderHelper.GetVersionName() + "/" + cartItem.GetAttributeValue<string>("skuRoutingName", string.Empty).Trim().ToLower();
-                    btnViewProduct.CommandArgument = cartItem.SkuId.ToString();
-                    lblSize.Text = cartItem.GetAttributeValue<string>("ProductSize", String.Empty);
-                }
+                product_anchor.PostBackUrl = "/" + OrderHelper.GetVersionName() + "/" + cartItem.GetAttributeValue<string>("skuRoutingName", string.Empty).Trim().ToLower();
+                product_anchor2.PostBackUrl = "/" + OrderHelper.GetVersionName() + "/" + cartItem.GetAttributeValue<string>("skuRoutingName", string.Empty).Trim().ToLower();
+                btnViewProduct.CommandArgument = cartItem.SkuId.ToString();
+                lblSize.Text = cartItem.GetAttributeValue<string>("ProductSize", String.Empty);
             }
         }
 
