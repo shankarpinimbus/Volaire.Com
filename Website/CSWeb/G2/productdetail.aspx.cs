@@ -32,6 +32,7 @@ namespace CSWeb
 
         public int skuID = 0;
         public string imagePath = "";
+        public string GroupId = "";
         public int SkuId
         {
             get
@@ -136,6 +137,7 @@ namespace CSWeb
                 lblSize.Text = sku.GetAttributeValue<string>("ProductSize", String.Empty);
                 ltDetailDescription.Text = sku.GetAttributeValue<string>("DetailDescription", String.Empty);
                 imagePath = sku.ImagePath;
+                GroupId = sku.AttributeValues["groupid_review"].Value;
                 if (sku.ContainsAttribute("smallproductimage1"))
                 {
                     smallImage1.ImageUrl = sku.AttributeValues["smallproductimage1"].Value;
@@ -312,7 +314,7 @@ namespace CSWeb
             lblSize.Text = sku.GetAttributeValue<string>("ProductSize", String.Empty);
             ltDetailDescription.Text = sku.GetAttributeValue<string>("DetailDescription", String.Empty);
             imagePath = sku.ImagePath;
-            
+            GroupId = sku.AttributeValues["groupid_review"].Value;
             if (!(sku.ContainsAttribute("sizeofProduct") && sku.AttributeValues["sizeofproduct"].Value != null))
             {
 

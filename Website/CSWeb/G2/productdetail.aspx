@@ -44,7 +44,7 @@
                             <h1><%=lblSkuTitle.Text %></h1>
                         </div>
                        <div class="yotpo bottomLine"
-                            data-product-id="<%=SkuId.ToString() %>">
+                            data-product-id="<%=GroupId %>">
                         </div>
                         <asp:Panel runat="server" Visible="false" ID="chooseSizePanel">
                             Choose Size
@@ -151,7 +151,7 @@
 
                            <div class="tab tab-3 tab-reviews">
                                 <div class="yotpo yotpo-main-widget"
-                                    data-product-id="<%=SkuId.ToString() %>"
+                                    data-product-id="<%=GroupId%>"
                                     data-name="<%=lblSkuTitle.Text %>"
                                     data-url="https://www.volaire.com/"
                                     data-image-url="<%=imagePath %>"
