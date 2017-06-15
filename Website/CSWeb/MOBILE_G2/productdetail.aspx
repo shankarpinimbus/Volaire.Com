@@ -31,16 +31,23 @@
 							<div class="productdetail_img">
 								<asp:Image ID="imgSku" runat="server" />
 							</div>
-					 <div class="yotpo bottomLine"
-                            data-product-id="<%=skuID.ToString() %>">
+                <!-- smaller product images-->
+                        <div>
+                            <asp:Image ID="smallImage1" runat="server" />
+                            <asp:Image ID="smallImage2" runat="server" />
+                            <asp:Image ID="smallImage3" runat="server" />
+                            <asp:Image ID="smallImage4" runat="server" />
                         </div>
+					
 					<!-- right column -->
 					
                 <div class="productdetail_text">
 			 			<div class="productdetail_text_top">
 							  <h1><%=lblSkuTitle.Text %></h1>
-			 					
 			 			</div>
+                     <div class="yotpo bottomLine"
+                            data-product-id="<%=SkuId.ToString() %>">
+                        </div>
                    <asp:Panel runat="server" Visible="false" ID="chooseSizePanel">
                             Choose Size
                             <asp:Button runat="server" ID="bigSizeSelectButton" OnClick="bigSizeSelectButton_Click" style="height: 26px" CommandArgument=""/>
@@ -105,9 +112,6 @@
 						  			data-bread-crumbs="Product categories">
 						  			</div>
 						  		</div>--%>
-                    <div class="yotpo bottomLine" 
-                         data-product-id="<%=skuID.ToString() %>"> 
-                    </div>
 						  <!-- end stars -->
 						  
                 </div>
@@ -157,7 +161,7 @@
 
 								<div class="tab tab-3 tab-reviews" style="display: none;">
 									<div class="yotpo yotpo-main-widget"
-									data-product-id="<%=skuID.ToString() %>"
+									data-product-id="<%=SkuId.ToString() %>"
 									data-name="<%=lblSkuTitle.Text %>"
 									data-url="https://www.specificbeauty.com"
 									data-image-url="<%=imagePath %>"
@@ -183,7 +187,7 @@
             </div>
         </div>
     </div>
-
+            </div>
         <!-- end content area -->
            <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
 <uc:Footer ID="Footer" runat="server" />

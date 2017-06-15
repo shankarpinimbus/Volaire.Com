@@ -136,6 +136,13 @@ namespace CSWeb
                 lblSize.Text = sku.GetAttributeValue<string>("ProductSize", String.Empty);
                 ltDetailDescription.Text = sku.GetAttributeValue<string>("DetailDescription", String.Empty);
                 imagePath = sku.ImagePath;
+                if (sku.ContainsAttribute("smallproductimage1"))
+                {
+                    smallImage1.ImageUrl = sku.AttributeValues["smallproductimage1"].Value;
+                    smallImage2.ImageUrl = sku.AttributeValues["smallproductimage2"].Value;
+                    smallImage3.ImageUrl = sku.AttributeValues["smallproductimage3"].Value;
+                    smallImage4.ImageUrl = sku.AttributeValues["smallproductimage4"].Value;
+                }
 
                 if (sku.ContainsAttribute("sizeofProduct") && sku.AttributeValues["sizeofproduct"].Value!=null)
                 {

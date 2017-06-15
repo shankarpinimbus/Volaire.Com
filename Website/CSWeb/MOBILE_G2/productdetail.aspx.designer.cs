@@ -31,6 +31,42 @@ namespace CSWeb.Mobile {
         protected global::System.Web.UI.WebControls.Image imgSku;
         
         /// <summary>
+        /// smallImage1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image smallImage1;
+        
+        /// <summary>
+        /// smallImage2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image smallImage2;
+        
+        /// <summary>
+        /// smallImage3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image smallImage3;
+        
+        /// <summary>
+        /// smallImage4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image smallImage4;
+        
+        /// <summary>
         /// chooseSizePanel control.
         /// </summary>
         /// <remarks>
