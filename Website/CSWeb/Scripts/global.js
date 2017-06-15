@@ -116,6 +116,13 @@ $(document).ready(function () {
         $(this).siblings('.orderbtn').children("input[type = 'submit']").trigger("click");
     });
 
+    $('.products_img').hover(function() {
+        $(this).children('.productimginfo').fadeIn(100);
+    }, function() {
+        $(this).children('.productimginfo').fadeOut(100);
+    });
+
+
 });
 
 

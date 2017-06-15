@@ -31,8 +31,7 @@
 </section>
 
 
-    <div class="container" style="padding-top: 1em; padding-bottom: 3em;">
-        <h2 class="products_hdr">Volumizers</h2>
+    <div class="container shop_products_main">
         <div class="clearfix"><uc:Products runat="server"></uc:Products></div>
     </div>
 
@@ -42,7 +41,6 @@
 
 
     <!-- spacer so bottomcta doesn't cover up content above -->
-    <div style="height: 10rem;"></div>
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("bottomcta.html")%>
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
    <uc:Footer ID="Footer1" runat="server" />
