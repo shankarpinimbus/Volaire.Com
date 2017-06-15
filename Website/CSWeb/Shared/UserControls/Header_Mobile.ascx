@@ -66,7 +66,7 @@
                 <li><a href="volaire-reviews">Reviews</a></li>
                 <li><a href="volaire-befores-and-afters">Before & Afters</a></li>
                 <li><a href="hair-styles-and-tips">Hair Styles & Tips</a></li>
-                <li><a href="frequently-asked-questions">FAQs</a></li>
+                <li><a href="frequently-asked-questions">FAQ's</a></li>
                 <li><a href="mega-promise-money-back-guarantee">Guarantee</a></li>
                 <li><a href="volaire-customer-care">Customer Care</a></li>
                 <li><a href="care-and-usage">Care and Usage</a></li>

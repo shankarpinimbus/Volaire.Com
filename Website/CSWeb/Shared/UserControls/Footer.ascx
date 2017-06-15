@@ -5,7 +5,7 @@
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-LOGO-V2.png" alt="VOLAIRE is sulfate free, paraban free & color safe. Volumizing product that works on every type of hair! Get instant volume!" class="iblock footer-logo-v" /> 
         <span class="footer-social-txt caps">Post. Gram. Share.</span>
         <a href="https://www.facebook.com/VolaireHairVolumizingSystem/" class="footer-social-link iblock" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-Facebook.png" alt="VOLAIRE Facebook page. Volumizing products that let you achieve instant volume no matter what hair type you have." /></a> 
-        <a href="https://twitter.com/VolaireHair" class="footer-social-link iblock" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-Twitter.png" alt="VOLAIRE Twitter page. Get softer, fuller, healthier hair with instant volume when you use the VOLAIRE shampoo and conditioner" /></a> 
+        <%--<a href="https://twitter.com/VolaireHair" class="footer-social-link iblock" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-Twitter.png" alt="VOLAIRE Twitter page. Get softer, fuller, healthier hair with instant volume when you use the VOLAIRE shampoo and conditioner" /></a> --%>
         <a href="https://www.instagram.com/volairehair/" class="footer-social-link iblock" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-Instagram.png" alt="VOLAIRE Instagram page.Get instantaneous volume, just by using VOLAIRE. Best hair care system for lasting, instant volume." /></a> 
         <a href="https://www.pinterest.com/volairehair/" class="footer-social-link iblock" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-Pinterest.png" alt="VOLAIRE Pinterest page: VOLAIRE gives you thicker, fuller looking hair and volume instantly with our hair care products." /></a> 
     </div>
@@ -17,8 +17,9 @@
                 <div class="row">
                     <ul class="footer-list-1">
                         <li><a href="air-weight-technology">AirWeight Technology<sup>™</sup></a></li>
-                        <li><a href="volaire-reviews">VOLAIRE Reviews</a></li>
-                        <li><a href="volaire-befores-and-afters">VOLAIRE Before and Afters</a></li>
+                        <li><a href="volaire-reviews">Reviews</a></li>
+                        <li><a href="volaire-befores-and-afters">Before and Afters</a></li>
+                        <li><a href="care-and-usage">Care and Usage</a></li>
                     </ul>
                     <ul class="footer-list-2">
                         <li><a href="volaire-customer-care">Customer Care</a></li>
@@ -26,7 +27,6 @@
                         <li><a href="mega-promise-money-back-guarantee">Guarantee</a></li>
                     </ul>
                     <ul class="footer-list-3">
-                        <li><a href="care-and-usage">Care and Usage</a></li>
                         <li><a href="terms-and-conditions">Terms and Conditions</a></li>
                         <li><a href="privacy-policy">Privacy Policy</a></li>
                     </ul>

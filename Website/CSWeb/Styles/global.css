@@ -3128,6 +3128,20 @@ h2.ccdecline_hdr {
     margin: 2rem 0 1.2rem;
 }
 
+.shop_products_1 {
+	background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/products/hero-products-bg.jpg) repeat-x center 0;
+}
+.shop_productstop {position: relative;}
+
+h2.products_hdr {
+    font-size: 120px;
+    color: #dff4f4;
+    text-transform: uppercase;
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+
 
 
 

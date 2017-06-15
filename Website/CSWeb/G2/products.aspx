@@ -9,8 +9,6 @@
 <head runat="server">
 <meta charset="utf-8">    
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
-<link href="/styles/global.css" rel="stylesheet" type="text/css" />
-    <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts.html")%>
 
     <script type="text/javascript">
         (function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/itGFmlqh7twU16FRq19FlRC31nQvBIQab9nDaHuQ/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();
@@ -20,12 +18,21 @@
 
 <form runat="server" id="fm1">
     <uc:Header runat="server"/>
-    <div class="toppad"></div>
 
-    <div class="content">
-      	<div class="container"></div>
+<section>
+	<div class="shop_products_1">
+    	<div class="container">
+        	<div class="shop_productstop">
+            	<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products/hero-products-2-1.jpg" alt="Kristin Davis uses VOLAIRE 'at home, herself' to achieve effortless volume that lasts all day. Get gorgeous hair today!" class="block" />
+                <a href="tv-introductory-offer" class="home1link">Get TV Offer</a>
+            </div>
+        </div>
     </div>
-    <div class="content" style="padding-top: 1em; padding-bottom: 3em;">
+</section>
+
+
+    <div class="container" style="padding-top: 1em; padding-bottom: 3em;">
+        <h2 class="products_hdr">Volumizers</h2>
         <div class="clearfix"><uc:Products runat="server"></uc:Products></div>
     </div>
 
