@@ -46,22 +46,29 @@
   </div></div>
       
       
-         <div class="control-group">
-<label class="control-label">Discount (% or amount)</label>
+         <div class="control-group" runat="server" id="dPercentage">
+<label class="control-label">Discount (%)</label>
 <div class="controls">      
      <asp:TextBox ID="txtPercentage" runat="Server" MaxLength="7" />
                 <asp:RequiredFieldValidator runat="server" Display="None" ControlToValidate="txtPercentage" ID="rfvPercentage" ValidationGroup="valError" ErrorMessage="Discount is a required field.">*</asp:RequiredFieldValidator>
                 <asp:CompareValidator ID="cmpPercentage" runat="server" ControlToValidate="txtPercentage" Type="Double" ErrorMessage="Discount must be a double." Operator="DataTypeCheck" ValidationGroup="valError" CssClass="text-error" ValueToCompare="0">*</asp:CompareValidator><span class="help-inline"><code>required</code></span>
          </div></div>
          
-            <div class="control-group">
+            <div class="control-group" runat="server" id="dAmount">
 <label class="control-label">Total Amount</label>
 <div class="controls">      
   <asp:TextBox ID="txttotalAmount" runat="Server" MaxLength="7" />
      </div></div>
+     <div runat="server" id="dFreeShipping" Visible="False">
+        <div class="control-group" runat="server" id="Div1">
+<label class="control-label">Minimum Amount</label>
+<div class="controls">      
+  <asp:TextBox ID="txtMinAmount" runat="Server" MaxLength="7" />
+     </div></div> 
+     </div>
           
           
-    <div class="control-group">
+    <div class="control-group" runat="server" id="dIncludeShipping">
 <label class="control-label">Include Shipping <br>(For % only)</label>
 <div class="controls">    
     <label class="checkbox">
@@ -76,7 +83,6 @@
           
                         <asp:DropDownList ID="ddlSkuList" runat="server">
                         </asp:DropDownList>
-
                    
                         <asp:DropDownList runat="server" ID='ddlRelatedSkuList' />
                     
@@ -100,9 +106,6 @@
                                 Item
                             </th>
                             <th>
-                                Related Item
-                            </th>
-                            <th>
                                 Discount Type
                             </th>
                             <th>
@@ -114,9 +117,6 @@
                         <tr>
                             <td>
                                 <asp:DropDownList runat="server" ID='ddlSkuList' CssClass="input-medium" />
-                            </td>
-                            <td>
-                                <asp:DropDownList runat="server" ID='ddlRelatedSkuList' CssClass="input-medium" />
                             </td>
                             <td>
                                 <asp:DropDownList runat="server" ID='ddlItemDiscountType' CssClass="input-medium" />

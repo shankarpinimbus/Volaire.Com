@@ -121,22 +121,54 @@ namespace CSWeb.Shared.UserControls
         {
             if (CartContext.CartInfo.CartItems.Count > 0)
             {
-                rptShoppingCart.DataSource = CartContext.CartInfo.CartItems.FindAll(x => x.Visible==true);
+                bool mainKit = false;
+                foreach (Sku sku in CartContext.CartInfo.CartItems)
+                {
+                    sku.LoadAttributeValues();
+                    if (sku.GetAttributeValue<bool>("isMainKit", false))
+                    {
+                        mainKit = true;
+
+                    }
+                }
+
+                if (mainKit)
+                {
+                    dfreeGift.Visible = true;
+                    imgOffer.Visible = true;
+                    hPromoCode.Visible = true;
+                    pnlDiscount.Visible = false;
+                    if (CartContext.CartInfo.DiscountCode.Length > 0)
+                    {
+                        CartContext.CartInfo.DiscountCode = "";
+                        CartContext.CartInfo.Compute();
+                    }
+                }
+                else
+                {
+                    dfreeGift.Visible = false;
+                    imgOffer.Visible = false;
+                    hPromoCode.Visible = false;
+                    pnlDiscount.Visible = true;
+                    if (horizon_dots!=null)
+                    {
+                        horizon_dots.Visible = false;
+                    }
+                }
+                rptShoppingCart.DataSource = CartContext.CartInfo.CartItems.FindAll(x => x.Visible == true);
                 rptShoppingCart.DataBind();
 
                 pnlTotal.Visible = true;
-                
+
                 lblSubtotal.Text = String.Format("${0:0.00}", CartContext.CartInfo.SubTotal);
                 lblTax.Text = String.Format("${0:0.00}", CartContext.CartInfo.TaxCost);
                 lblShipping.Text = String.Format("${0:0.00}", CartContext.CartInfo.ShippingCost);
                 lblRushShipping.Text = String.Format("${0:0.00}", CartContext.CartInfo.RushShippingCost);
                 lblOrderTotal.Text = String.Format("${0:0.00}", CartContext.CartInfo.Total);
 
-                
+
                 ltOfferDetail.Text = OrderHelper.GetOfferDatails();
 
-                var flag = false; 
-                
 
                 foreach (Sku sku in CartContext.CartInfo.CartItems)
                 {
@@ -150,20 +182,8 @@ namespace CSWeb.Shared.UserControls
                     {
                         ltImageDescription.Text = sku.GetAttributeValue<string>("freegift_description", string.Empty);
                     }
-                    if (sku.SkuId<138) //old skus prior to g2 version
-                    {
-                        flag = true;
-                    }
                 }
-
-                // for version g2 user can add single products with out main kit hence not showing the free gifts panel if there is no main product in cart
-                if (OrderHelper.GetVersionName().ToLower().Contains("g2"))
-                {
-                    if (flag ==false)
-                    {
-                        this.dfreeGift.Visible = false;
-                    }
-                }
+                
 
                 //Sri Comments on 11/15: Need to Plug-in to Custom Shipping option Model
                 SitePreference shippingGetShippingPref = CSFactory.GetCacheSitePref();
@@ -176,6 +196,35 @@ namespace CSWeb.Shared.UserControls
                 rptShoppingCart.Visible = false;
             }
 
+        }
+
+        protected void btnPromitionCode_OnCommand(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(CartContext.CartInfo.DiscountCode))
+            {
+                CartContext.CartInfo.DiscountCode = txtPromotion.Text.ToLower().Trim();
+                lblCouponMsg.Visible = true;
+                if (CartContext.CartInfo.CalculateDiscount())
+                {
+
+                    lblCouponMsg.ForeColor = System.Drawing.Color.Green;
+                    lblCouponMsg.Text = "Thank You! Your discount has been applied.";
+                }
+                else
+                {
+                    CartContext.CartInfo.DiscountCode = ""; // Making sure that we dont store any invalid code so they dont get passed to motivational.
+                    lblCouponMsg.ForeColor = System.Drawing.Color.Red;
+                    lblCouponMsg.Text = "Invalid Promo Code";
+                }
+            }
+            else
+            {
+                lblCouponMsg.Visible = true;
+                lblCouponMsg.ForeColor = System.Drawing.Color.Red;
+                lblCouponMsg.Text = "<br /><br />" + CartContext.CartInfo.DiscountCode + " is already applied. You can't use two coupons with same order.";
+            }
+            //showorhideDiscountPanels();
+            BindControls();
         }
 
         protected void rptShoppingCart_OnItemDataBound(object sender, RepeaterItemEventArgs e)

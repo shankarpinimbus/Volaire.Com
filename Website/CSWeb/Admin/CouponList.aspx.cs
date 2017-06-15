@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using CSData;
@@ -85,18 +86,48 @@ namespace CSWeb.Admin
                 LinkButton lbRemove = e.Item.FindControl("lbRemove") as LinkButton;
                 HyperLink hlEditLink = e.Item.FindControl("hlEditLink") as HyperLink;
                 lblTitle.Text = couponItem.Title;
-               
-                lblTotalAmount.Text = String.Format("{0:C}", couponItem.TotalAmount);
+
+                lblTotalAmount.Text = "-";
+                lblDiscount.Text = "-";
                 lblStatus.Text = couponItem.Active ? "Active" : "Inactive";
-                if ((int)couponItem.DiscountType == 1)
+                if ((int)couponItem.DiscountType == (int)CouponTypeEnum.Percentage)
                 {
                     lblDiscountType.Text = "%";
-                    lblDiscount.Text = String.Format("{0:0.##}%", Math.Round(couponItem.Discount,2));
+                    lblDiscount.Text = String.Format("{0:0.##}%", Math.Round(couponItem.Discount, 2));
                 }
-                else
+                else if ((int)couponItem.DiscountType == (int)CouponTypeEnum.Amount)
                 {
                     lblDiscountType.Text = "$";
-                    lblDiscount.Text = String.Format("{0:C}", couponItem.Discount);
+                    lblTotalAmount.Text = String.Format("{0:C}", couponItem.TotalAmount);
+                }
+                else if ((int)couponItem.DiscountType == (int)CouponTypeEnum.FreeShipping)
+                {
+                    lblDiscountType.Text = "Free Shipping";
+                    //lblDiscount.Text = String.Format("{0:C}", couponItem.Discount);
+                }
+                else if ((int)couponItem.DiscountType == (int)CouponTypeEnum.NoSalesTax)
+                {
+                    lblDiscountType.Text = "Free Tax";
+                    //lblDiscount.Text = String.Format("{0:C}", couponItem.Discount);
+                }
+                else if ((int)couponItem.DiscountType == (int)CouponTypeEnum.ItemType)
+                {
+                    List<CouponItems> items = couponItem.ItemsDiscount;
+                    foreach (CouponItems itemInfo in items)
+                    {
+                        if ((int)itemInfo.DiscountType == (int)CouponItemEnum.Amount)
+                        {
+                            //lblDiscountType.Text = "$";
+                            lblTotalAmount.Text = String.Format("{0:C}", Math.Round(itemInfo.DiscountAmount, 2));
+                        }
+                        else if ((int)itemInfo.DiscountType == (int)CouponItemEnum.Percentage)
+                        {
+                            //lblDiscountType.Text = "%";
+                            lblDiscount.Text = String.Format("{0:0.##}%", Math.Round(itemInfo.DiscountAmount, 2));
+                        }
+                    }
+                    lblDiscountType.Text = "Item Type";
+                    //lblDiscount.Text = String.Format("{0:C}", couponItem.Discount);
                 }
                 hlEditLink.NavigateUrl = "CouponItem.aspx?cId=" + couponItem.CouponId;
 

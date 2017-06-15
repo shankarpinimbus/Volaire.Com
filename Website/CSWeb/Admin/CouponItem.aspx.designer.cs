@@ -76,6 +76,15 @@ namespace CSWeb.Admin {
         protected global::System.Web.UI.WebControls.DropDownList ddlDiscountType;
         
         /// <summary>
+        /// dPercentage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dPercentage;
+        
+        /// <summary>
         /// txtPercentage control.
         /// </summary>
         /// <remarks>
@@ -103,6 +112,15 @@ namespace CSWeb.Admin {
         protected global::System.Web.UI.WebControls.CompareValidator cmpPercentage;
         
         /// <summary>
+        /// dAmount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dAmount;
+        
+        /// <summary>
         /// txttotalAmount control.
         /// </summary>
         /// <remarks>
@@ -110,6 +128,42 @@ namespace CSWeb.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txttotalAmount;
+        
+        /// <summary>
+        /// dFreeShipping control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dFreeShipping;
+        
+        /// <summary>
+        /// Div1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div1;
+        
+        /// <summary>
+        /// txtMinAmount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMinAmount;
+        
+        /// <summary>
+        /// dIncludeShipping control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dIncludeShipping;
         
         /// <summary>
         /// cbIncludeShipping control.
@@ -146,15 +200,6 @@ namespace CSWeb.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlSkuList;
-        
-        /// <summary>
-        /// ddlRelatedSkuList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlRelatedSkuList;
         
         /// <summary>
         /// ddlItemDiscountType control.

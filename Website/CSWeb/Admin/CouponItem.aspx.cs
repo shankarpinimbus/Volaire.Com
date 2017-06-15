@@ -39,13 +39,41 @@ namespace CSWeb.Admin
             txtDiscountTitle.Text = cItem.Title;
             txtPercentage.Text = Math.Round(cItem.Discount, 2).ToString();
             txttotalAmount.Text = Math.Round(cItem.TotalAmount, 2).ToString();
+            txtMinAmount.Text = Math.Round(cItem.MinAmount, 2).ToString();
             ddlDiscountType.ClearSelection();
             ddlDiscountType.Items.FindByValue(((int)cItem.DiscountType).ToString()).Selected = true;
             cbIncludeShipping.Checked = cItem.IncludeShipping;
+            BindCouponFields();
+            //if(cItem.)
+            List<CouponItems> items = cItem.ItemsDiscount;
+            foreach (CouponItems itemInfo in items)
+            {
+                ddlSkuList.SelectedValue = itemInfo.SkuId.ToString();
+                txtItemDiscount.Text = itemInfo.DiscountAmount.ToString("n2");
+                ddlItemDiscountType.Items.FindByValue(((int)itemInfo.DiscountType).ToString()).Selected = true;
+            }
         }
 
         protected void ddlDiscountType_OnSelectedIndexChanged(object sender, System.EventArgs e)
         {
+            int itemType = Convert.ToInt32(ddlDiscountType.SelectedItem.Value);
+            dAmount.Visible = true;
+            dPercentage.Visible = true;
+            dIncludeShipping.Visible = true;
+            txttotalAmount.Visible = true;
+            pnlItem.Visible = false;
+            BindCouponFields();
+
+
+        }
+
+        protected void BindCouponFields()
+        {
+            pnlItem.Visible = false;
+            dFreeShipping.Visible = false;
+            dAmount.Visible = false;
+            dPercentage.Visible = false;
+            dIncludeShipping.Visible = false;
             int itemType = Convert.ToInt32(ddlDiscountType.SelectedItem.Value);
             if (itemType == (int)CouponTypeEnum.ItemType)
             {
@@ -54,12 +82,37 @@ namespace CSWeb.Admin
                 cmpPercentage.Enabled = false;
                 txtPercentage.Text = "";
                 txttotalAmount.Text = "";
+                dFreeShipping.Visible = false;
+                dAmount.Visible = false;
+                dPercentage.Visible = false;
+                dIncludeShipping.Visible = false;
                 BindItemDiscountType();
                 BindSkus();
+                //ddlSkuList.SelectedValue = itemType.
+
             }
-            else if (itemType == (int)CouponTypeEnum.Percentage)
+            else if (itemType == (int)CouponTypeEnum.Percentage /*|| itemType == (int)CouponTypeEnum.NoSalesTaxAndPercentage || itemType == (int)CouponTypeEnum.FreeShippingAndPercentage*/)
             {
                 txttotalAmount.Text = "";
+                dAmount.Visible = false;
+            }
+            else if (itemType == (int)CouponTypeEnum.Amount/* || itemType == (int)CouponTypeEnum.NoSalesTaxAndAmount || itemType == (int)CouponTypeEnum.FreeShippingAndAmout*/)
+            {
+                txtPercentage.Text = "";
+                dAmount.Visible = true;
+                //txtPercentage.Visible = false;
+                //cbIncludeShipping.Visible = false;
+                dPercentage.Visible = false;
+                dIncludeShipping.Visible = false;
+            }
+            else if (itemType == (int)CouponTypeEnum.FreeShipping || itemType == (int)CouponTypeEnum.NoSalesTax)
+            {
+                txtPercentage.Text = "";
+                txttotalAmount.Text = "";
+                dAmount.Visible = false;
+                dPercentage.Visible = false;
+                dIncludeShipping.Visible = false;
+                dFreeShipping.Visible = true;
             }
             else
             {
@@ -89,10 +142,10 @@ namespace CSWeb.Admin
             ddlSkuList.DataValueField = "SkuId";
             ddlSkuList.DataBind();
 
-            ddlRelatedSkuList.DataSource = skuItems;
-            ddlRelatedSkuList.DataTextField = "SkuTitleCode";
-            ddlRelatedSkuList.DataValueField = "SkuId";
-            ddlRelatedSkuList.DataBind();
+            //ddlRelatedSkuList.DataSource = skuItems;
+            //ddlRelatedSkuList.DataTextField = "SkuTitleCode";
+            //ddlRelatedSkuList.DataValueField = "SkuId";
+            //ddlRelatedSkuList.DataBind();
 
         }
 
@@ -100,11 +153,13 @@ namespace CSWeb.Admin
         {
 
             ddlItemDiscountType.Items.Clear();
-            ddlItemDiscountType.DataSource = CommonHelper.BindToEnum(typeof(CouponTypeEnum));
+            ddlItemDiscountType.DataSource = CommonHelper.BindToEnum(typeof(CouponItemEnum));
             ddlItemDiscountType.DataTextField = "Key";
             ddlItemDiscountType.DataValueField = "Value";
             ddlItemDiscountType.DataBind();
-            ddlItemDiscountType.Items.Remove("ItemType");
+            //ddlItemDiscountType.Items.Remove("ItemType");
+            //ddlItemDiscountType.Items.Remove("FreeShipping");
+            //ddlItemDiscountType.Items.Remove("NoSalesTax");
 
         }
 
@@ -114,10 +169,13 @@ namespace CSWeb.Admin
             {
                 if (Page.IsValid)
                 {
-                    decimal totalAmount = 0, percentage = 0, itemDiscount = 0;
+                    decimal totalAmount = 0, percentage = 0, itemDiscount = 0, minAmount = 0;
                     int skuId = 0, relatedskuId = 0, itemDiscountType = 0;
                     if (txttotalAmount.Text.Length > 0)
-                        totalAmount = Convert.ToDecimal(txttotalAmount.Text);
+                    {
+                        itemDiscount = Convert.ToDecimal(txttotalAmount.Text);
+                        totalAmount = itemDiscount;
+                    }
 
                     if (txtPercentage.Text.Length > 0)
                         percentage = Math.Round(Convert.ToDecimal(txtPercentage.Text), 2);
@@ -125,17 +183,21 @@ namespace CSWeb.Admin
                     if (txtItemDiscount.Text.Length > 0)
                         itemDiscount = Math.Round(Convert.ToDecimal(txtItemDiscount.Text), 2);
 
+                    if (txtMinAmount.Text.Length > 0)
+                        minAmount = Math.Round(Convert.ToDecimal(txtMinAmount.Text), 2);
+
                     if (Convert.ToInt32(ddlDiscountType.SelectedValue) == (int)CouponTypeEnum.ItemType)
                     {
                         skuId = Convert.ToInt32(ddlSkuList.SelectedItem.Value);
-                        relatedskuId = Convert.ToInt32(ddlRelatedSkuList.SelectedItem.Value);
+                        relatedskuId = 0;
                         itemDiscountType = Convert.ToInt32(ddlItemDiscountType.SelectedValue);
+                        itemDiscount = Math.Round(Convert.ToDecimal(txtItemDiscount.Text), 2);
                     }
 
 
                     CSFactory.UpdateCoupon(cId, CommonHelper.fixquotesAccents(txtDiscountTitle.Text.Trim()),
                         percentage, totalAmount, Convert.ToInt32(ddlDiscountType.SelectedValue),
-                        skuId, relatedskuId, itemDiscountType, itemDiscount, true, cbIncludeShipping.Checked,0);
+                        skuId, relatedskuId, itemDiscountType, itemDiscount, true, cbIncludeShipping.Checked, minAmount);
 
                     //CSFactory.ResetCouponCache();
 

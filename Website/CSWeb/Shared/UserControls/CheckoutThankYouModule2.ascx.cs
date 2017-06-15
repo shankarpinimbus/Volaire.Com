@@ -96,7 +96,7 @@ namespace CSWeb.Mobile.UserControls
             {
                 Order orderData = CSResolve.Resolve<IOrderService>().GetOrderDetails(orderId,true);
 
-                dlordersList.DataSource = orderData.SkuItems;
+                dlordersList.DataSource = orderData.SkuItems.FindAll(x => x.SkuId != 153);;
                 dlordersList.DataBind();
                 ltOfferDetails.Text = OrderHelper.GetOfferDatails();
                 LiteralSubTotal.Text = Math.Round(orderData.SubTotal, 2).ToString();

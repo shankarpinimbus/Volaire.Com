@@ -27,12 +27,12 @@
                 Promotion/Coupon Code
             </th>
             <th>
-                Discount
+               % Discount
             </th>
             <th>
                 Total Amount
             </th>
-            <th class="span1 text-center">
+            <th>
                 Type
             </th>
             <th class="span1 text-center">
@@ -56,7 +56,7 @@
                     <td>
                         <asp:Literal runat="server" ID='lblTotalAmount'></asp:Literal>
                     </td>
-                    <td class="span1 text-center">
+                    <td>
                         <asp:Literal runat="server" ID='lblDiscountType'></asp:Literal>
                     </td>
                     <td class="span1 text-center">

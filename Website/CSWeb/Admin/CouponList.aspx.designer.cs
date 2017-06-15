@@ -22,15 +22,6 @@ namespace CSWeb.Admin {
         protected global::System.Web.UI.WebControls.ValidationSummary valError;
         
         /// <summary>
-        /// imgAddItem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgAddItem;
-        
-        /// <summary>
         /// hlItem control.
         /// </summary>
         /// <remarks>
@@ -47,14 +38,5 @@ namespace CSWeb.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DataList dlCouponList;
-        
-        /// <summary>
-        /// btnCancel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancel;
     }
 }

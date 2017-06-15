@@ -32,9 +32,9 @@
 
                         
                         <div class="cart_remove">
-                            <td runat="server" width="1%" id='holderRemove' visible="false">
+                            <td runat="server" width="1%" id='holderRemove' visible="true">
                                 <asp:ImageButton ID="btnRemoveItem" runat="server" CommandName="delete" CausesValidation="false"
-                                    Visible="" CssClass="ucRemoveButtonOverlay" ImageUrl="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/remove.png" />
+                                    Visible="true" CssClass="ucRemoveButtonOverlay" ImageUrl="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/remove.png" />
                             </td>
                         </div>
                     </div>
@@ -102,9 +102,29 @@
 <asp:Literal runat="server" id="ltImageDescription" Visible="False"></asp:Literal>
 
 <asp:Panel ID="pnlTotal" runat="server">
+     <asp:PlaceHolder runat="server" ID="pnlDiscount" Visible="false">
+                <div class="form_line clearfix">
+                    <span>
+                        <asp:Label ID="lblCouponMsg" ForeColor="Red" runat="server" Visible="false" Text="<br /><br />Your Shopping Cart is currently empty <br /><br />"></asp:Label></span>
+                    <asp:Panel ID="pnlDiscountApply" runat="server" DefaultButton="btnDisount">
+                        <div class="shopping_top_totals_shipdrop" id="Shopping_Discount_Div" runat="server">
+                            <asp:TextBox runat="server" ID="txtPromotion" serverMaxLength="20" CssClass="input-1b"
+                                ValidationGroup="vgPromotion" placeholder="Enter Promo Code" />
+                            <asp:LinkButton ID="btnDisount" runat="server" OnClick="btnPromitionCode_OnCommand"
+                                ValidationGroup="vgPromotion" CssClass="addcoupon_btn">Apply</asp:LinkButton>
+
+                        </div>
+
+                    </asp:Panel>
+                    
+                    <asp:Panel runat="server" ID="pnlDiscountCode" DefaultButton="btnRemoveDiscount" Visible="False">
+                    </asp:Panel>
+                </div>
+                    
+                </asp:PlaceHolder>
     <asp:PlaceHolder runat="server" ID="holderTaxAndShipping">
         <div class="cart_totals clearfix">
-            <div class="cart-promo-code-txt">**Promo Code Applied</div>
+            <div class="cart-promo-code-txt" runat="server" id="hPromoCode">**Promo Code Applied</div>
             <div class="cart_totals_left caps med">
                 Subtotal:<br />
                 Tax:<br />
@@ -134,7 +154,7 @@
                 </table>
             </div>
         </div>
-        
+        <asp:Panel runat="server" ID="imgOffer">
         <% if (versionName.ToLower().EndsWith("b2") || versionName.ToLower().EndsWith("b3") || versionName.ToLower().EndsWith("b4")) %>
     <% { %>
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_b2/cart-promo-code.png" class="block" />
@@ -143,7 +163,7 @@
     <% } else  { %>
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/cart-promo-code.png" class="block" />
     <% } %>
-
+            </asp:Panel>
             <div class="cart-hr"></div>
     </asp:PlaceHolder>
 </asp:Panel>
