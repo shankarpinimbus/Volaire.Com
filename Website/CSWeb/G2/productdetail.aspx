@@ -12,12 +12,30 @@
     <script type="text/javascript">
         (function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/itGFmlqh7twU16FRq19FlRC31nQvBIQab9nDaHuQ/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();
     </script>
+    <script type="text/javascript">
+        
+        $(document).ready(function () {
+            if (buttonClicked.value == "" || buttonClicked.value == undefined) {
+                $("#bigSizeSelectButton").addClass('btn_on');
+                $("#smallSizeSelectButton").removeClass('btn_on');
+            }
+            else if (buttonClicked.value == "small") {
+                $("#bigSizeSelectButton").removeClass('btn_on');
+                $("#smallSizeSelectButton").addClass('btn_on');
+            }
+            else if (buttonClicked.value == "big") {
+                $("#bigSizeSelectButton").addClass('btn_on');
+                $("#smallSizeSelectButton").removeClass('btn_on');
+            }
+        });
+
+    </script>
 </head>
 <body>
 
 <form runat="server">
 <uc:Header runat="server" />
-
+    <asp:HiddenField id="buttonClicked" runat="server"/>
 <div id="page_products">
     <div class="container product_detail_top">
         <div style="display: none;">

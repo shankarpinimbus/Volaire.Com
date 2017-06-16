@@ -265,6 +265,7 @@ namespace CSWeb
 
         protected void smallSizeSelectButton_Click(object sender, EventArgs e)
         {
+            buttonClicked.Value = "small";
             Sku sku = CSResolve.Resolve<ISkuService>().GetSkuByID(Convert.ToInt32(skuID));
             sku.LoadAttributeValues();
 
@@ -287,6 +288,7 @@ namespace CSWeb
 
         protected void bigSizeSelectButton_Click(object sender, EventArgs e)
         {
+            buttonClicked.Value = "big";
             Sku sku = CSResolve.Resolve<ISkuService>().GetSkuByID(Convert.ToInt32(skuID));
             sku.LoadAttributeValues();
 
