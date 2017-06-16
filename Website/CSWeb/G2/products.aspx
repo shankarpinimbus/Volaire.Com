@@ -7,7 +7,8 @@
 <!doctype html>
 <html>
 <head runat="server">
-<meta charset="utf-8">    
+<meta charset="utf-8">
+    <title>Volaire™| Hair Volumizing Products</title>
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
 
     <script type="text/javascript">
@@ -23,7 +24,7 @@
 	<div class="shop_products_1">
     	<div class="container">
         	<div class="shop_productstop">
-            	<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products/hero-products-2-1.jpg" alt="Kristin Davis uses VOLAIRE 'at home, herself' to achieve effortless volume that lasts all day. Get gorgeous hair today!" class="block" />
+            	<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products/hero-products-3-1.jpg" alt="BEST offer! Volume Essentials Collection - Get TV Offer!" class="block" />
                 <a href="tv-introductory-offer" class="home1link">Get TV Offer</a>
             </div>
         </div>

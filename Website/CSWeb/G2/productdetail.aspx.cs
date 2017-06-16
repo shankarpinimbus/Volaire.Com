@@ -124,8 +124,17 @@ namespace CSWeb
                 {
                     Response.Redirect("Products.aspx", true);
                 }
-                imgSku.ImageUrl = sku.GetAttributeValue("ProductDetailImage", sku.ImagePath);
-                lblSkuTitle.Text = sku.Title;
+                //imgSku.ImageUrl = sku.GetAttributeValue("ProductDetailImage", sku.ImagePath);
+                imgSku.ImageUrl = sku.AttributeValues["bigproductimage1"].Value;
+                if (sku.ContainsAttribute("title") && sku.AttributeValues["title"].Value!="")
+                {
+                    lblSkuTitle.Text = sku.AttributeValues["title"].Value;
+                }
+                else
+                {
+                    lblSkuTitle.Text = sku.Title;
+                }
+               
                 lblSkuDescription.Text = sku.LongDescription;
                 lblSkuPrice.Text = GetHtmlDecoratedDollarCents(sku.InitialPrice.ToString("C"));
                 lblRetailPrice.Text = sku
@@ -301,8 +310,19 @@ namespace CSWeb
         {
             Sku sku = new Sku();
             sku = CSResolve.Resolve<ISkuService>().GetSkuByID(skuID);
-            imgSku.ImageUrl = sku.GetAttributeValue("ProductDetailImage", sku.ImagePath);
-            lblSkuTitle.Text = sku.Title;
+            if (!sku.AttributeValuesLoaded)
+                sku.LoadAttributeValues();
+            //imgSku.ImageUrl = sku.GetAttributeValue("ProductDetailImage", sku.ImagePath);
+            imgSku.ImageUrl = sku.AttributeValues["bigproductimage1"].Value;
+            if (sku.ContainsAttribute("title") && sku.AttributeValues["title"].Value != "")
+            {
+                lblSkuTitle.Text = sku.AttributeValues["title"].Value;
+            }
+            else
+            {
+                lblSkuTitle.Text = sku.Title;
+            }
+               
             lblSkuDescription.Text = sku.LongDescription;
             lblSkuPrice.Text = GetHtmlDecoratedDollarCents(sku.InitialPrice.ToString("C"));
             lblRetailPrice.Text = sku

@@ -3270,6 +3270,70 @@ h2.products_hdr {
 }
 
 
+.product_detail_top {
+    padding: 2rem 2.2%;
+}
+
+.breadcrumbs {
+    text-align: right;
+    padding-bottom: 3rem;
+}
+
+.productdetail_img {
+    float: left; 
+    width: 47%;
+    margin-right: 4.4%;
+}
+
+.main_img {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.productdetail_text {
+    float: left;
+    width: 48.6%;
+}
+
+.thumbnail {
+    display: inline-block;
+    margin-right: .8rem;
+}
+
+.productdetail_social {
+    float: right;
+    width: 25%;
+    text-align: right;
+    white-space: nowrap;
+    padding-top: 1rem;
+}
+
+.productdetail_social img {
+    width: 20px;
+    margin-left: .5rem;
+}
+.productdetail_social a:nth-child(2) img {
+    margin-left: .25rem;
+}
+.productdetail_social a:hover {
+    opacity: .85;
+}
+
+.sizebtn {
+    border: #8c7359 solid 1px;
+    background: #fff;
+    color: #8c7359;
+    font-size: 16px;
+    padding: .5rem 1rem;
+}
+.btn_on {
+    border-left: #8c7359 solid 2px;
+    border-right: #8c7359 solid 2px;
+    background: #dff4f4;
+}
+
+
+
 /* YOTPO - get rid of 'x' on thank you for posting a review message */
 .yotpo-icon.yotpo-icon-cross {display: none !important;}
 

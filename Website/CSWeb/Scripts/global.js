@@ -116,11 +116,34 @@ $(document).ready(function () {
         $(this).siblings('.orderbtn').children("input[type = 'submit']").trigger("click");
     });
 
+    //Products page rollover text
     $('.products_img').hover(function() {
         $(this).children('.productimginfo').fadeIn(100);
     }, function() {
         $(this).children('.productimginfo').fadeOut(100);
     });
+
+    //Products Detail page thumbnails - > main img swap
+
+    $('.thumbnail').hover(function () {
+        var imgpath = $('.main_img').attr("src");
+        var imgnum = $(this).data("thumb");
+        imgpath1 = imgpath.slice(0, -5);
+        imgpath2 = imgnum + ".jpg";
+        imgpath3 = imgpath1 + imgpath2;
+        $('.main_img').attr("src", imgpath3);
+    });
+    $('.thumbnail').click(function () {
+        var imgpath = $('.main_img').attr("src");
+        var imgnum = $(this).data("thumb");
+        imgpath1 = imgpath.slice(0, -5);
+        imgpath2 = imgnum + ".jpg";
+        imgpath3 = imgpath1 + imgpath2;
+        $('.main_img').attr("src", imgpath3);
+    });
+
+    
+    
 
 
 });
