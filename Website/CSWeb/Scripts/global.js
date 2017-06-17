@@ -205,6 +205,12 @@ jQuery(document).ready(function ($) {
 
 //use to resolve postback issues
 function pageLoad() {
+    //$('.sizebtn').click(function () {
+    //    alert('hi');
+    //    $(".sizebtn").removeClass("btn_on");
+    //    $(this).addClass("btn_on");
+    //});
+
 
     $(function () {
         jQuery.validator.addMethod('EmailValidation', function (phone_number, element) {
@@ -280,6 +286,7 @@ function pageLoad() {
 
     });
 
+    
 }
 function MM_showHideLayers() { //v9.0  
     window.scrollTo(0, 0);

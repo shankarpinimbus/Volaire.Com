@@ -37,7 +37,7 @@
 <uc:Header runat="server" />
     <asp:HiddenField id="buttonClicked" runat="server"/>
 <div id="page_products">
-    <div class="container product_detail_top">
+    <div class="container product_detail_top clearfix">
         <div style="display: none;">
             <asp:Label ID="lblSkuDescription" runat="server" /></div>
         <div class="productdetail_box clearfix">
@@ -51,6 +51,9 @@
                     <asp:Image CssClass="thumbnail" data-thumb="2" ID="smallImage2" runat="server" />
                     <asp:Image CssClass="thumbnail" data-thumb="3" ID="smallImage3" runat="server" />
                     <asp:Image CssClass="thumbnail" data-thumb="4" ID="smallImage4" runat="server" />
+
+
+                    
 
                     <div class="productdetail_social">
                         <script>
@@ -89,42 +92,30 @@
                 <div class="productdetail_text_top">
                     <h1><%=lblSkuTitle.Text %></h1>
                 </div>
-                <div class="yotpo bottomLine"
+                <div class="yotpo bottomLine product_reviewsnip"
                     data-product-id="<%=GroupId %>">
                 </div>
-                <script>
-                    function switch1() {
-                        $(".sizebtn").removeClass("btn_on");
-                        $(this).addClass("btn_on");
-                    }
-                    function switch2() {
-                        $(".sizebtn").removeClass("btn_on");
-                        $(this).addClass("btn_on");
-                    }
-                    
-                </script>
                 <asp:Panel runat="server" Visible="false" ID="chooseSizePanel">
-                    Choose Size
-                    <asp:Button runat="server" ID="bigSizeSelectButton" CssClass="btn1 sizebtn" OnClick="bigSizeSelectButton_Click" CommandArgument="" />
-                    &nbsp&nbsp&nbsp&nbsp<asp:Button runat="server" ID="smallSizeSelectButton" CssClass="btn2 sizebtn" OnClick="smallSizeSelectButton_Click" />
+                    <p class="webfont2 choosesize">
+                        <span style="font-size: 1.125rem;">Choose Size:</span> &nbsp;&nbsp; 
+                        <asp:Button runat="server" ID="bigSizeSelectButton" CssClass="btn1 sizebtn" OnClick="bigSizeSelectButton_Click" CommandArgument="" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;<asp:Button runat="server" ID="smallSizeSelectButton" CssClass="btn2 sizebtn" OnClick="smallSizeSelectButton_Click" />
+                    </p>
                 </asp:Panel>
-                <asp:Panel runat="server" Visible="false" ID="productRetailPricePanel">
-                    Product Value :
-                    <asp:Label runat="server" ID="productValue"></asp:Label><br />
-                    Retail Price :
-                    <asp:Label runat="server" ID="retailPrice"></asp:Label>
+                <asp:Panel runat="server" CssClass="kitprices" Visible="false" ID="productRetailPricePanel">
+                    <span class="price_title">Product Value: </span>
+                    $<asp:Label runat="server" ID="productValue"></asp:Label><br />
+                    <span class="price_title">Retail Price: </span>
+                    $<asp:Label runat="server" ID="retailPrice"></asp:Label>
                 </asp:Panel>
                 <div class="product_various_info clearfix">
-                    <div class="product_various_info_left" style="display: none">
-                        <div class="productdetail_price" style="display: none"><span class="price_label">Product Value: </span><%--$<asp:Label ID="lblRetailPrice" runat="server" />--%></div>
-                        <div class="productdetail_price"><span class="price_label"><strong>Retail Price: </strong></span><strong>
-                            <asp:Label ID="lblSkuPrice" runat="server" /></strong></div>
-                        <p class="product_size">
-                            <asp:Label runat="server" ID="lblSize"></asp:Label></p>
-                    </div>
+                    <span class="product_add-price">
+                        <span class="product_various_info_add"><asp:LinkButton ID="btnAddToCart" OnClick="btnAddToCart_Click" runat="server" Text="Add to Bag" CssClass="txtbtn_addtocart" /></span>
+                        | <span class="product_various_info_price webfont2">$<asp:Label ID="lblRetailPrice" runat="server" /></span>
+                    </span>
                     <div class="product_various_info_right">
-                        <div>
-                            <strong>Quantity:</strong>
+                        <div class="webfont2 choosesize">
+                            Quantity: &nbsp; &nbsp;
                             <asp:DropDownList runat="server" ID="ddlQuantity" CssClass="product_detail_select">
                                 <asp:ListItem Text="1" Value="1" Selected="True"></asp:ListItem>
                                 <asp:ListItem Text="2" Value="2"></asp:ListItem>
@@ -137,9 +128,21 @@
                                 <asp:ListItem Text="9" Value="9"></asp:ListItem>
                             </asp:DropDownList>
                         </div>
-                        <asp:ImageButton ID="btnAddToCart" OnClick="btnAddToCart_Click" runat="server" ImageUrl="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/btn_addtocart.png" CssClass="btn_addtocart" />
-                        $<asp:Label ID="lblRetailPrice" runat="server" />
+                        
                     </div>
+
+
+
+
+<div class="product_various_info_left" style="display: none">
+    <div class="productdetail_price" style="display: none"><span class="price_label">Product Value: </span><%--$<asp:Label ID="lblRetailPrice" runat="server" />--%></div>
+    <div class="productdetail_price"><span class="price_label"><strong>Retail Price: </strong></span><strong>
+        <asp:Label ID="lblSkuPrice" runat="server" /></strong></div>
+    <p class="product_size">
+        <asp:Label runat="server" ID="lblSize"></asp:Label></p>
+</div>
+
+                    
                 </div>
                 <div class="productdetail_text_top">
                     <asp:Literal ID="ltDetailDescription" runat="server" />
@@ -152,19 +155,6 @@
 
 
 
-        <p class="product_social">
-            <strong>Share it </strong>
-            <a href="https://www.facebook.com/SpecificBeauty" target="_blank">
-                <img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/productdetails/icon-fb.png" alt="Follow us on Facebook" /></a>
-            <%--<a href="https://twitter.com/SpecificBeauty" target="_blank">
-                <img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/productdetails/icon-tw.png" alt="Follow us on Twitter" /></a>--%>
-            <a href="https://www.instagram.com/specificbeautyskincare/" target="_blank">
-                <img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/productdetails/icon-ig.png" alt="Follow us on Instagram" /></a>
-            <a href="https://www.pinterest.com/specificbeauty/" target="_blank">
-                <img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/productdetails/icon-pn.png" alt="Follow us on Pinterest" /></a>
-            <a href="mailto:?Subject=Specific Beauty">
-                <img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/productdetails/icon-email.png" alt="Email a friend" /></a>
-        </p>
     <div class="product_detail_mid">
         <div class="container">
             <div class="product_detail_mid_content">
@@ -172,8 +162,17 @@
             </div>
         </div>
     </div>
+
+<script>
+    //hide above section if it has no content
+    $(document).ready(function() {
+        if (!$.trim($('.product_detail_mid_content').html()).length) {
+            $('.product_detail_mid').hide();
+        }
+    });
+</script>
             
-        <div class="container">
+        <div class="container product_reviews">
             <div class="reviewlink">
                 <span class="reviewlinkoverlay"></span>
                 <a name="tabs"></a>
@@ -204,7 +203,12 @@
 
 
 
-
+<div style="display: none;"><%--just preloading images for the rollovers--%>
+    <asp:Image ID="bigImage1" runat="server" />
+    <asp:Image ID="bigImage2" runat="server" />
+    <asp:Image ID="bigImage3" runat="server" />
+    <asp:Image ID="bigImage4" runat="server" />
+</div>
 <!-- end content area -->
 
 

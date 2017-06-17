@@ -155,6 +155,14 @@ namespace CSWeb
                     smallImage4.ImageUrl = sku.AttributeValues["smallproductimage4"].Value;
                 }
 
+                if (sku.ContainsAttribute("bigproductimage2"))
+                {
+                    bigImage1.ImageUrl = sku.AttributeValues["bigproductimage1"].Value;
+                    bigImage2.ImageUrl = sku.AttributeValues["bigproductimage2"].Value;
+                    bigImage3.ImageUrl = sku.AttributeValues["bigproductimage3"].Value;
+                    bigImage4.ImageUrl = sku.AttributeValues["bigproductimage4"].Value;
+                }
+
                 if (sku.ContainsAttribute("sizeofProduct") && sku.AttributeValues["sizeofproduct"].Value!=null)
                 {
                     this.chooseSizePanel.Visible = true;
