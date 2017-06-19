@@ -2237,6 +2237,13 @@ h2.products_hdr {
 }
 
 .sizebtn {
+    -webkit-appearance: none; /*Safari/Chrome*/
+    -moz-appearance: none; /*Firefox*/
+    -ms-appearance: none; /*IE*/
+    -o-appearance: none; /*Opera*/
+    appearance: none;
+
+    -webkit-border-radius: 0; 
     border: #8c7359 solid 1px;
     background: #fff;
     color: #8c7359;
