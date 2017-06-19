@@ -123,6 +123,8 @@
                     
                 </asp:PlaceHolder>
     <asp:PlaceHolder runat="server" ID="holderTaxAndShipping">
+        <div class="horizontal_dots" runat="server" id="horizon_dots" style="display: none;">
+        </div>
         <div class="cart_totals clearfix">
             <div class="cart-promo-code-txt" runat="server" id="hPromoCode">**Promo Code Applied</div>
             <div class="cart_totals_left caps med">

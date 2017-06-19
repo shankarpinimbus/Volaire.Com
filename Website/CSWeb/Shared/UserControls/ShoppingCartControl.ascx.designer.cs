@@ -139,6 +139,15 @@ namespace CSWeb.Shared.UserControls {
         protected global::System.Web.UI.WebControls.PlaceHolder holderTaxAndShipping;
         
         /// <summary>
+        /// horizon_dots control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl horizon_dots;
+        
+        /// <summary>
         /// hPromoCode control.
         /// </summary>
         /// <remarks>
