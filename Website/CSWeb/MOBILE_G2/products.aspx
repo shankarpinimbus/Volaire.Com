@@ -8,8 +8,6 @@
 <head runat="server">
 <meta charset="utf-8">    
        <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
-<link href="/styles/global_store.css" rel="stylesheet" type="text/css" />
-    <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts.html")%>
     <script type="text/javascript">
         (function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/itGFmlqh7twU16FRq19FlRC31nQvBIQab9nDaHuQ/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();
     </script>
@@ -19,19 +17,18 @@
 
 <form runat="server" id="fm1">
     <uc:Header runat="server"/>
-    <div class="toppad"></div>
 
-    <div class="content">
-       	<div class="container"><a href="order-page"><img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/all_products_hero_mobile.jpg" class="scale-with-grid all_products_hero" /></a></div>
-    </div>
-    <div class="content" style="padding-top: 1em;">
+    <a href="tv-introductory-offer"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_g2/hero-VOLAIRE-Volume-Essentials-3-1.jpg" alt="BEST offer! Volume Essentials Collection" class="block full" /></a>
+
+
+    <div class="shop_products_main">
         <div class="clearfix"><uc:Products runat="server"></uc:Products></div>
 
-        <%# CSBusiness.DynamicVersion.Helper.IncludeFile("bottomcta.html")%>
-           <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
+        
     </div>
 
-
+    <%# CSBusiness.DynamicVersion.Helper.IncludeFile("bottomcta.html")%>
+    <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
     
 <!-- end content area -->
 <uc:Footer ID="Footer" runat="server" />

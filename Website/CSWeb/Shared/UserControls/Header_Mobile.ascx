@@ -61,8 +61,17 @@
 
             <ul id="headernav" class="nav">
                 <li><a href="index">Home</a></li>
+                <% if (versionName.ToLower().Contains("g2")) %>
+                <%
+                   { %><li><a href="cart" class="nav_products">Shopping Cart</a></li>
+                <% }  %>
                 <li><a href="air-weight-technology">Airweight Technology™</a></li>
-                <li><a href="products">Products</a></li>
+                <% if (versionName.ToLower().Contains("g2")) %>
+                <%
+                   { %><li><a href="products" class="nav_products">Products</a></li>
+                <% }  else  { %>
+                <li><a href="hair-volumizing-products" class="nav-products">Products</a></li>
+                <% } %>
                 <li><a href="volaire-reviews">Reviews</a></li>
                 <li><a href="volaire-befores-and-afters">Before & Afters</a></li>
                 <li><a href="hair-styles-and-tips">Hair Styles & Tips</a></li>

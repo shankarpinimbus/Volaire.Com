@@ -8,8 +8,6 @@
 <head runat="server">
 <meta charset="utf-8">
        <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
-<link href="/styles/global_store.css" rel="stylesheet" type="text/css" />
-    <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts.html")%>
       <script type="text/javascript">
           (function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/itGFmlqh7twU16FRq19FlRC31nQvBIQab9nDaHuQ/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();
     </script>
@@ -18,10 +16,9 @@
    
     <form runat="server">
         <uc:Header runat="server"/>
-        <div class="toppad"></div>
 
 
-        <div id="page_products" class="content">
+        <div id="page_products" class="shop_products_main">
 
     
             <div class="productdetail_box clearfix">

@@ -2026,6 +2026,417 @@ label.error {display: none !important;}
 }
 
 
+.shop_products_main {
+    padding: 1.2rem 4% 2rem;
+}
+
+h2.products_hdr {
+    font-size: 45px;
+    font-size:  14vw;
+    color: #dff4f4;
+    text-transform: uppercase;
+    line-height: 1.1;
+    font-weight: 900;
+    padding-bottom: .8rem;
+}
+
+.products_list {
+    list-style: none;
+    margin-bottom: 2.5rem;
+}
+.products_list > li {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.products_grid_img {
+    width: 100%;
+}
+
+.productimginfo {
+    display: block;
+    position: absolute;
+    top: 63%;
+    left: 0;
+    height: 37%;
+    width: 100%;
+    color: #000;
+}
+
+.row_brushes .productimginfo {
+    top: 65%;
+    height: 35%;
+}
+.row_kits .productimginfo {
+    top: 60%;
+    height: 40%;
+    display: none;
+}
+
+.productinfo_description {
+    background: #b9e2e4;
+    padding: .8rem 4%;
+    line-height: 1.2;
+    /*font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 1);*/
+}
+.productinfo_description p {
+    padding: 0;
+    letter-spacing: -.008rem;
+}
+.productinfo_description sup {
+    text-shadow: none;
+    font-size: 75%;
+}
+
+.products_learn_link {
+    position: absolute;
+    bottom: .8rem;
+    left: 3%;
+    font-size: 12px;
+    font-size: 3.6vw;
+    text-transform: uppercase;
+}
+
+.product_grid_item_bottom {
+    
+}
+
+.product_info_wrap {
+    padding-top: .5rem;
+}
+
+.product_info_left {
+    float: left;
+    width: 50%;
+}
+.product_info_right {
+    float: left;
+    width: 50%;
+}
+.product_info_left h3 {
+	font-family: Judson, "Times New Roman", serif;
+    font-size: 19px;
+    font-size: 5.9vw;
+    line-height: 1.15;
+    color: #54d2d9;
+}
+
+.product_info_left h3 .products_br {display: block;}
+
+.productinfo_retail {
+    text-align: right;
+    font-family: Judson, "Times New Roman", serif;
+    font-size: 16px;
+    font-size: 5vw;
+    line-height: 1.15;
+    color: #8c7359;
+}
+
+.detail_label {
+    display: block;
+}
+
+.product_grid_item_bottom_left {
+    float: left;
+    width: 50%;
+    padding-top: 1.2rem;
+}
+.product_grid_item_bottom_right {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.add_to_cart:hover {
+    opacity: .85;
+}
+
+.yotpo div, .yotpo span, .yotpo p, .yotpo a, .yotpo img, .yotpo i, .yotpo strong, .yotpo sup, .yotpo ul, .yotpo li, .yotpo form, .yotpo label {
+    line-height: 22px !important;
+}
+
+.yotpo.bottomLine .yotpo-bottomline .yotpo-icon-star, .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-half-star, .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-empty-star, .yotpo.bottomline .yotpo-bottomline .yotpo-icon-star, .yotpo.bottomline .yotpo-bottomline .yotpo-icon-half-star, .yotpo.bottomline .yotpo-bottomline .yotpo-icon-empty-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-icon-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-icon-half-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-icon-empty-star {
+    font-size: 22px !important;
+    line-height: 22px !important;
+}
+
+.yotpo .yotpo-bottomline .yotpo-icon-star, .yotpo .yotpo-bottomline .yotpo-icon-half-star, .yotpo .yotpo-bottomline .yotpo-icon-empty-star {
+    color: #ff5a34 !important;
+}
+
+.yotpo .text-m {
+    font-size: 14px !important;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+
+.product_detail_top {
+    padding: 2rem 2%;
+}
+
+.breadcrumbs {
+    margin-left: 35%;
+    padding-bottom: 3rem;
+}
+
+.breadcrumbs a {
+    color: #000;
+    text-decoration: none;
+}
+
+.productdetail_img {
+    float: left; 
+    width: 48.7%;
+    margin-right: 2.7%;
+}
+
+.main_img {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.productdetail_text {
+    float: left;
+    width: 48.6%;
+    padding-left: 1%;
+}
+
+.thumbnail {
+    display: inline-block;
+    margin-right: .8rem;
+}
+
+.productdetail_social {
+    float: right;
+    width: 25%;
+    text-align: right;
+    white-space: nowrap;
+    padding-top: 1rem;
+}
+
+.productdetail_social img {
+    width: 20px;
+    margin-left: .5rem;
+}
+.productdetail_social a:nth-child(2) img {
+    margin-left: .25rem;
+}
+.productdetail_social a:hover {
+    opacity: .85;
+}
+
+.sizebtn {
+    border: #8c7359 solid 1px;
+    background: #fff;
+    color: #8c7359;
+    font-family: Judson, 'Times New Roman', serif;
+    font-size: 16px;
+    padding: .5rem 1rem;
+}
+.btn_on {
+    border-left: #8c7359 solid 2px;
+    border-right: #8c7359 solid 2px;
+    background: #dff4f4;
+}
+
+.productdetail_text_top h1 {
+    font-family: Judson, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: normal;
+    color: #54d2d9;
+    padding-bottom: .5rem;
+    line-height: 1.1;
+}
+
+.productdetail_text .yotpo a.text-m {
+    font-size: .93rem;
+    color: #ff5a34 !important;
+    line-height: 1.7 !important;
+    margin-left: 8px;
+}
+
+.choosesize {
+    font-size: 1.125rem;
+    color: #8c7359;
+}
+
+.product_add-price {
+    display: inline-block;
+    vertical-align: middle;
+    background: #ff5a34;
+    padding: .3rem;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.product_various_info {
+    padding-bottom: 1.7rem;
+}
+
+.product_various_info_add {
+    padding: .2rem 1rem;
+}
+.product_various_info_price {
+    padding: .2rem 1rem;
+    font-size: 1.25rem;
+}
+
+.txtbtn_addtocart {
+    font-family: Lato, Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.product_reviewsnip {
+    padding-bottom: .6rem;
+}
+
+.product_various_info_right {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+.product_detail_select {
+    font-family: Lato, Arial, sans-serif;
+    color: #8c7359;
+    font-size: 1.25rem;
+    padding: .2rem .7rem;
+}
+
+.productdetail_text_top p.intro {
+    line-height: 1.25;
+    padding-bottom: 1.7rem;
+}
+
+.productdetail_text_top h3 {
+    font-family: Judson, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding-bottom: 0;
+}
+.productdetail_text_top p.p2 {
+    font-size: .95rem;
+    line-height: 2;
+}
+.productdetail_text_top p.narrow {
+    width: 80%;
+}
+
+.product_features {
+    padding-bottom: 1.4rem;
+}
+
+.product_features_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 9%;
+    margin-right: 3%;
+}
+.product_features_txt {
+    display: inline-block;
+    vertical-align: middle;
+    width: 87%;
+    font-size: .875rem;
+    line-height: 1.28;
+}
+.product_features_txt p {
+    padding-bottom: 0;
+}
+
+.product_detail_mid {
+    margin-top: 2rem;
+    background: #dff4f4;
+}
+
+.product_detail_mid_content {
+    padding: 2rem 2.1% 1rem;
+}
+
+.product_detail_mid_content h3 {
+    font-family: Judson, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: normal;
+    padding: 0;
+}
+.product_detail_mid_content p.intro {
+    width: 75%;
+    font-size: 1.125rem;
+    line-height: 1.25;
+    padding-bottom: 2rem;
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 1);
+}
+ul.product_steps {
+    list-style: none;
+    width: 80%;
+    font-size: 1.125rem;
+    line-height: 1.25;
+    padding-bottom: 1.7rem;
+}
+ul.product_steps li {
+    padding-bottom: .4rem;
+    clear: left;
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 1);
+}
+
+.product_step_hdr {
+    float: left;
+    width: 6.5em;
+    margin-bottom: .5rem;
+    font-family: Judson, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+.product_ingredients {
+    width: 95%;
+    font-size: .875rem;
+    line-height: 1.2;
+    font-weight: 300;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 1);
+}
+.product_ingredients strong {
+    font-weight: bold;
+    text-shadow: none;
+}
+.product_ingredients.first {
+    padding-bottom: 2rem;
+}
+
+.product_reviews {
+    margin-top: 2rem;
+}
+
+.kitprices {
+    font-family: Judson, 'Times New Roman', serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #8c7359;
+    margin-bottom: .7rem;
+}
+
+.price_title {
+    display: inline-block;
+    width: 7em;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media all and (orientation: landscape) {
 
