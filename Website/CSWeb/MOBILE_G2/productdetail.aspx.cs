@@ -145,6 +145,13 @@ namespace CSWeb.Mobile
                     smallImage3.ImageUrl = sku.AttributeValues["smallproductimage3"].Value;
                     smallImage4.ImageUrl = sku.AttributeValues["smallproductimage4"].Value;
                 }
+                if (sku.ContainsAttribute("bigproductimage2"))
+                {
+                    bigImage1.ImageUrl = sku.AttributeValues["bigproductimage1"].Value;
+                    bigImage2.ImageUrl = sku.AttributeValues["bigproductimage2"].Value;
+                    bigImage3.ImageUrl = sku.AttributeValues["bigproductimage3"].Value;
+                    bigImage4.ImageUrl = sku.AttributeValues["bigproductimage4"].Value;
+                }
 
                 if (sku.ContainsAttribute("sizeofProduct") && sku.AttributeValues["sizeofproduct"].Value != null)
                 {
@@ -252,6 +259,7 @@ namespace CSWeb.Mobile
         }
         protected void smallSizeSelectButton_Click(object sender, EventArgs e)
         {
+            buttonClicked.Value = "small";
             Sku sku = CSResolve.Resolve<ISkuService>().GetSkuByID(Convert.ToInt32(skuID));
             sku.LoadAttributeValues();
 
@@ -273,6 +281,7 @@ namespace CSWeb.Mobile
         }
         protected void bigSizeSelectButton_Click(object sender, EventArgs e)
         {
+            buttonClicked.Value = "big";
             Sku sku = CSResolve.Resolve<ISkuService>().GetSkuByID(Convert.ToInt32(skuID));
             sku.LoadAttributeValues();
 

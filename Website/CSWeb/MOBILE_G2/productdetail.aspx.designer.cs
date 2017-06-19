@@ -11,6 +11,15 @@ namespace CSWeb.Mobile {
     
     
     public partial class ProductDetail {
+
+        /// <summary>
+        /// buttonClicked control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField buttonClicked;
         
         /// <summary>
         /// lblSkuTitle control.
@@ -182,6 +191,42 @@ namespace CSWeb.Mobile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal ltIngredients;
+        
+        /// <summary>
+        /// bigImage1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image bigImage1;
+        
+        /// <summary>
+        /// bigImage2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image bigImage2;
+        
+        /// <summary>
+        /// bigImage3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image bigImage3;
+        
+        /// <summary>
+        /// bigImage4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image bigImage4;
         
         /// <summary>
         /// Footer control.
