@@ -105,7 +105,7 @@
         <div class="horizontal_dots" runat="server" id="horizon_dots">
         </div>
          <asp:PlaceHolder runat="server" ID="pnlDiscount" Visible="false">
-                <div class="form_line clearfix">
+                <div class="form_line shoppingcart_btns clearfix">
                     <span>
                         <asp:Label ID="lblCouponMsg" ForeColor="Red" runat="server" Visible="false" Text="<br /><br />Your Shopping Cart is currently empty <br /><br />"></asp:Label></span>
                     <asp:Panel ID="pnlDiscountApply" runat="server" DefaultButton="btnDisount">
@@ -121,7 +121,10 @@
                     
                     <asp:Panel runat="server" ID="pnlDiscountCode" DefaultButton="btnRemoveDiscount" Visible="False">
                     </asp:Panel>
+
+                    <p style="padding-top: 1.2rem;"><a href="Products" class="btn_continueshopping">Continue Shopping</a></p>
                 </div>
+                
                     
                 </asp:PlaceHolder>
         <div class="cart_totals clearfix">

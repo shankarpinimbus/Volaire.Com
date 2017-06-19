@@ -2525,6 +2525,20 @@ ul.product_steps li {
     text-decoration: none;
 }
 
+.shopmore {
+    padding: 1.2rem 0 0;
+    margin-bottom: -2rem;
+}
+
+.btn_continueshopping {
+    background: #ff5a34;
+    color: #fff;
+    padding: .4rem .8rem .4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    z-index: 3;
+}
 
 
 

@@ -114,7 +114,7 @@
                                 ValidationGroup="vgPromotion" CssClass="addcoupon_btn">Apply</asp:LinkButton>
 
                         </div>
-
+                        <p class="shopmore"><a href="Products" class="btn_continueshopping">Continue Shopping</a></p>
                     </asp:Panel>
                     
                     <asp:Panel runat="server" ID="pnlDiscountCode" DefaultButton="btnRemoveDiscount" Visible="False">
