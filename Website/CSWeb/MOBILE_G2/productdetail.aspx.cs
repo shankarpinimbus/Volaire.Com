@@ -32,6 +32,7 @@ namespace CSWeb.Mobile
 
         public int skuID = 0;
         public string imagePath = "";
+        public string GroupId = "";
         public int SkuId
         {
             get
@@ -123,8 +124,17 @@ namespace CSWeb.Mobile
                 {
                     Response.Redirect("Products.aspx", true);
                 }
-                imgSku.ImageUrl = sku.GetAttributeValue("ProductDetailImage", sku.ImagePath);
+                //imgSku.ImageUrl = sku.GetAttributeValue("ProductDetailImage", sku.ImagePath);
+                imgSku.ImageUrl = sku.AttributeValues["bigproductimage1"].Value;
                 //lblSkuTitle.Text = sku.Title;
+                if (sku.ContainsAttribute("title") && sku.AttributeValues["title"].Value != "")
+                {
+                    lblSkuTitle.Text = sku.AttributeValues["title"].Value;
+                }
+                else
+                {
+                    lblSkuTitle.Text = sku.Title;
+                }
                 lblSkuPrice.Text = GetHtmlDecoratedDollarCents(sku.InitialPrice.ToString("C"));
                 ltDetailDescription.Text = sku.GetAttributeValue<string>("DetailDescription", String.Empty);
                 ltIngredients.Text = sku.GetAttributeValue<string>("Ingredients", String.Empty);
@@ -137,6 +147,7 @@ namespace CSWeb.Mobile
                 //    .GetAttributeValue<string>("Ingredients", string.Empty);
                 lblSize.Text = sku.GetAttributeValue<string>("ProductSize", String.Empty);
                 imagePath = sku.ImagePath;
+                GroupId = sku.AttributeValues["groupid_review"].Value;
 
                 if (sku.ContainsAttribute("smallproductimage1"))
                 {
@@ -319,6 +330,7 @@ namespace CSWeb.Mobile
             //    .GetAttributeValue<string>("Ingredients", string.Empty);
             lblSize.Text = sku.GetAttributeValue<string>("ProductSize", String.Empty);
             imagePath = sku.ImagePath;
+            GroupId = sku.AttributeValues["groupid_review"].Value;
             if (!(sku.ContainsAttribute("sizeofProduct") && sku.AttributeValues["sizeofproduct"].Value != null))
             {
 

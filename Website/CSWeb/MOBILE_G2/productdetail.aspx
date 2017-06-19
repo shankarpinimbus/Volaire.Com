@@ -7,6 +7,7 @@
 <!doctype html>
 <html>
 <head runat="server">
+    <title>Volaire™| Hair Volumizing Products</title>
     <meta charset="utf-8">
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
     <script type="text/javascript">
@@ -37,7 +38,7 @@
         <uc:Header runat="server" />
          <asp:HiddenField id="buttonClicked" runat="server"/>
 
-        <div id="page_products" class="shop_products_main">
+        <div class="shop_products_detail">
 
 
             <div class="productdetail_box clearfix">
@@ -46,60 +47,91 @@
                         <asp:Label ID="lblSkuTitle" runat="server" /></span>
                 </p>
                 <!-- left column -->
+                <div class="productdetail_text_top">
+                    <h1><%=lblSkuTitle.Text %></h1>
+                </div>
+
                 <div class="productdetail_img">
-                    <asp:Image ID="imgSku" runat="server" />
+                    <asp:Image ID="imgSku" CssClass="main_img" runat="server" />
                 </div>
                 <!-- smaller product images-->
-                <div>
-                    <asp:Image ID="smallImage1" runat="server" />
-                    <asp:Image ID="smallImage2" runat="server" />
-                    <asp:Image ID="smallImage3" runat="server" />
-                    <asp:Image ID="smallImage4" runat="server" />
+                <div class="imgcheck clearfix">
+                    <asp:Image CssClass="thumbnail" data-thumb="1" ID="smallImage1" runat="server" />
+                    <asp:Image CssClass="thumbnail" data-thumb="2" ID="smallImage2" runat="server" />
+                    <asp:Image CssClass="thumbnail" data-thumb="3" ID="smallImage3" runat="server" />
+                    <asp:Image CssClass="thumbnail" data-thumb="4" ID="smallImage4" runat="server" />
+
+                    <div class="productdetail_social">
+                        <div class="yotpo bottomLine"
+                            data-product-id="<%=SkuId.ToString() %>">
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var thispage = window.location.href;
+                                thispage = encodeURIComponent(thispage);
+                                var fblink = "https://www.facebook.com/sharer/sharer.php?u=";
+                                $('.social_link_fb').attr("href", fblink + thispage);
+                                var pn_attr2 = $('.main_img').attr("src");
+                                pn_attr2 = "http://" + pn_attr2;
+                                pn_attr2 = encodeURIComponent(pn_attr2);
+                                var pn_link = "https://pinterest.com/pin/create/button/?url=" + thispage + "&media=" + pn_attr2;
+                                $('.social_link_pn').hover(function () {
+                                    pn_attr2 = $('.main_img').attr("src");
+                                    pn_attr2 = "http://" + pn_attr2;
+                                    pn_attr2 = encodeURIComponent(pn_attr2);
+                                    pn_link = "https://pinterest.com/pin/create/button/?url=" + thispage + "&media=" + pn_attr2;
+                                    $('.social_link_pn').attr("href", pn_link);
+                                });
+                                $('.social_link_pn').attr("href", pn_link);
+                            });
+                        </script>
+                        <a href="https://www.facebook.com/VolaireHairVolumizingSystem/" class="iblock social_link_fb" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-Facebook.png" alt="VOLAIRE Facebook page. Volumizing products that let you achieve instant volume no matter what hair type you have."></a> 
+                        <a href="https://www.instagram.com/volairehair/" class="iblock social_link_ig" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-Instagram.png" alt="VOLAIRE Instagram page.Get instantaneous volume, just by using VOLAIRE. Best hair care system for lasting, instant volume."></a> 
+                        <a href="https://www.pinterest.com/volairehair/" class="iblock social_link_pn" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-Pinterest.png" alt="VOLAIRE Pinterest page: VOLAIRE gives you thicker, fuller looking hair and volume instantly with our hair care products."></a> 
+                    </div>
                 </div>
 
                 <!-- right column -->
 
                 <div class="productdetail_text">
-                    <div class="productdetail_text_top">
-                        <h1><%=lblSkuTitle.Text %></h1>
-                    </div>
-                    <div class="yotpo bottomLine"
-                        data-product-id="<%=SkuId.ToString() %>">
-                    </div>
+                    
+                    
                     <asp:Panel runat="server" Visible="false" ID="chooseSizePanel">
-                        Choose Size
-                            <asp:Button runat="server" ID="bigSizeSelectButton" OnClick="bigSizeSelectButton_Click" Style="height: 26px" CommandArgument="" />
-                        &nbsp&nbsp&nbsp&nbsp<asp:Button runat="server" ID="smallSizeSelectButton" OnClick="smallSizeSelectButton_Click" />
+                        <p class="webfont2 choosesize">
+                            Choose Size: &nbsp; 
+                            <asp:Button runat="server" ID="bigSizeSelectButton" OnClick="bigSizeSelectButton_Click" CssClass="btn1 sizebtn" CommandArgument="" />
+                        &nbsp&nbsp&nbsp&nbsp<asp:Button runat="server" ID="smallSizeSelectButton" CssClass="btn2 sizebtn" OnClick="smallSizeSelectButton_Click" />
+                        </p>
+                        
                     </asp:Panel>
-                    <asp:Panel runat="server" Visible="false" ID="productRetailPricePanel">
+                    <asp:Panel runat="server" CssClass="kitprices" Visible="false" ID="productRetailPricePanel">
                         Product Value :
                             <asp:Label runat="server" ID="productValue"></asp:Label><br />
                         Retail Price :
                             <asp:Label runat="server" ID="retailPrice"></asp:Label>
                     </asp:Panel>
 
+<div class="productdetail_price" style="display: none;">
+    <span class="price_label">Product Value: </span><%--$<asp:Label ID="lblRetailPrice" runat="server" />--%>
+</div>
+<div class="productdetail_price" style="display: none;">
+    <span class="price_label">Retail Value: </span>
+    <asp:Label ID="lblSkuPrice" runat="server" />
+</div>
+<div class="product_various_info_bottom" style="display: none;">
+    <p class="product_size">
+        <asp:Label runat="server" ID="lblSize"></asp:Label></p>
+</div>
+
                     <div class="product_various_info clearfix">
-
-
-
-                        <div class="product_various_info_top">
-                            <div class="productdetail_price" style="display: none;">
-                                <span class="price_label">Product Value: </span><%--$<asp:Label ID="lblRetailPrice" runat="server" />--%>
-                            </div>
-                            <div class="productdetail_price" style="display: none;">
-                                <span class="price_label">Retail Value: </span>
-                                <asp:Label ID="lblSkuPrice" runat="server" />
-                            </div>
-                            <div class="product_various_info_bottom" style="display: none;">
-                                <p class="product_size">
-                                    <asp:Label runat="server" ID="lblSize"></asp:Label></p>
-
-                            </div>
-
-
-                            <div class="quantity_drop">
+                        <span class="product_add-price">
+                            <span class="product_various_info_add"><asp:LinkButton ID="btnAddToCart" OnClick="btnAddToCart_Click" runat="server" Text="Add to Bag" CssClass="txtbtn_addtocart" /></span>
+                            | <span class="product_various_info_price webfont2"><asp:Label ID="lblRetailPrice" runat="server" /></span>
+                        </span>
+                        <div class="product_various_info_right">
+                            <div class="webfont2 choosesize">
                                 <strong>Quantity:</strong>
-                                <asp:DropDownList runat="server" ID="ddlQuantity" CssClass="qty_select">
+                                <asp:DropDownList runat="server" ID="ddlQuantity" CssClass="product_detail_select">
                                     <asp:ListItem Text="1" Value="1" Selected="True"></asp:ListItem>
                                     <asp:ListItem Text="2" Value="2"></asp:ListItem>
                                     <asp:ListItem Text="3" Value="3"></asp:ListItem>
@@ -112,119 +144,73 @@
                                 </asp:DropDownList>
 
                             </div>
-                            <asp:ImageButton ID="btnAddToCart" OnClick="btnAddToCart_Click" runat="server" ImageUrl="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/btn_addtocart.png" CssClass="product_btn_addtocart" />
-                            <asp:Label ID="lblRetailPrice" runat="server" />
                         </div>
+                        
+                            
                         <asp:Literal ID="ltDetailDescription" runat="server" />
                     </div>
-
-                    <!-- begin stars  -->
-                    <%--<div class="reviewlink"><span class="reviewlinkoverlay"></span>
-						  			<div class="yotpo bottomLine"
-						  			data-appkey="q7aSfVYvWU7lRAFGbTPY2DwzuBBm72cg1baI71Yt"
-						  			data-domain="specificbeauty.com"
-						  			data-product-id="<%=skuID.ToString() %>"
-						  			data-product-models="<%=lblSkuTitle.Text %>"
-						  			data-name="<%=lblSkuTitle.Text %>"
-						  			data-url="The url to the page where the product is url escaped"
-						  			data-image-url="<%=imagePath %>"
-						  			data-description="<%=lblSkuTitle.Text %>"
-						  			data-bread-crumbs="Product categories">
-						  			</div>
-						  		</div>--%>
-                    <!-- end stars -->
 
                 </div>
                 <div class="clear"></div>
 
 
+    </div>
+</div>
+
+
+
+<div class="product_detail_mid">
+        <div class="product_detail_mid_content">
+            <asp:Literal ID="ltIngredients" runat="server" />
+        </div>
+</div>
 
 
 
 
-                <!-- begin social -->
-                <p class="product_social">
-                    <strong>Share it </strong>
-                    <a href="https://www.facebook.com/SpecificBeauty" target="_blank">
-                        <img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/productdetails/icon-fb.png" alt="Follow us on Facebook" /></a>
-                    <a href="https://twitter.com/SpecificBeauty" target="_blank">
-                        <img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/productdetails/icon-tw.png" alt="Follow us on Twitter" /></a>
-                    <a href="https://www.instagram.com/specificbeautyskincare/" target="_blank">
-                        <img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/productdetails/icon-ig.png" alt="Follow us on Instagram" /></a>
-                    <a href="https://www.pinterest.com/specificbeauty/" target="_blank">
-                        <img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/productdetails/icon-pn.png" alt="Follow us on Pinterest" /></a>
-                    <a href="mailto:?Subject=Specific Beauty">
-                        <img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/productdetails/icon-email.png" alt="Email a friend" /></a>
-                </p>
-                <!-- end social -->
-
-                <div>
-                    <asp:Literal ID="ltIngredients" runat="server" />
-                </div>
+<div class="shop_products_detail">
                 <!-- begin tabs -->
-                <script>
-                    //hide above section if it has no content
-                    $(document).ready(function () {
-                        if (!$.trim($('.product_detail_mid_content').html()).length) {
-                            $('.product_detail_mid').hide();
-                        }
-                    });
-                </script>
-                <div class="reviewlink">
-                    <span class="reviewlinkoverlay"></span>
-                    <a name="tabs"></a>
-                    <div class="productdetail_tabs">
-                        <ul class="tablinks">
-                            <li>
-                                <%--<a href="#tab-1" data-tab="tab-1" class="tablink active">Directions</a> 
-							</li>
-							<li>
-							<a href="#tab-2" data-tab="tab-2" class="tablink">Ingredients</a> 
-							</li>
-							<li>--%>
-                                <a href="#tab-3" data-tab="tab-3" class="tablink tablink3">Reviews</a>
-                            </li>
-                        </ul>
-                        <div class="tabcontent">
-                            <%--<div class="tab tab-1 tab-directions">
-									<asp:Literal runat="server" ID="ltDirection"></asp:Literal></div>
+<script>
+    //hide above section if it has no content
+    $(document).ready(function () {
+        if (!$.trim($('.product_detail_mid_content').html()).length) {
+            $('.product_detail_mid').hide();
+        }
 
-								<div class="tab tab-2 tab-ingredients" style="display: none;">
-									<asp:Literal runat="server" ID="ltIngredients"></asp:Literal></div>--%>
+        $('img[src=""]').css("display","none");
 
-                            <div class="tab tab-3 tab-reviews" style="display: none;">
-                                <div class="yotpo yotpo-main-widget"
-                                    data-product-id="<%=SkuId.ToString() %>"
-                                    data-name="<%=lblSkuTitle.Text %>"
-                                    data-url="https://www.specificbeauty.com"
-                                    data-image-url="<%=imagePath %>"
-                                    data-description="<%=lblSkuTitle.Text %>">
-                                </div>
+    });
+</script>
+                <div class="container product_reviews">
+            <div class="reviewlink">
+                <span class="reviewlinkoverlay"></span>
+                <a name="tabs"></a>
+                <div class="productdetail_tabs">
+
+                    <div class="tabcontent">
+
+                        <div class="tab tab-3 tab-reviews">
+                            <div class="yotpo yotpo-main-widget"
+                                data-product-id="<%=GroupId%>"
+                                data-name="<%=lblSkuTitle.Text %>"
+                                data-url="https://www.volaire.com/"
+                                data-image-url="<%=imagePath %>"
+                                data-description="<%=lblSkuTitle.Text %>">
                             </div>
                         </div>
-                    </div>
-                    <!-- end tabs -->
-                </div>
 
-
-
-            </div>
-            <div class="mbg-care-usage">
-                <h2 class="la">Our LIVE EVEN<sup>®</sup> Promise</h2>
-                <div class="row">
-                    <div class="col spanm8">
-                        <p class="sgreen">
-                            At Specific Beauty,<sup>®</sup> we are committed to helping you achieve the brighter, smoother, more even-toned skin you deserve. If for any reason you arenot 100% satisfied with any of our products, simply return them within <span class="iblock">30 days</span> of purchase for a full refund <span class="iblock">(less s&h).</span>
-                        </p>
-                    </div>
-                    <div class="col spanm4 text-center">
-                        <img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/mobile/mbg.png" alt="30 Day Money Back Guarantee" />
                     </div>
                 </div>
+
             </div>
-        </div>
+        </div> 
+
+
+
+</div>
+
         
-<div style="display: none;"><%--just preloading images for the rollovers--%>
+<div class="imgcheck" style="display: none;"><%--just preloading images for the rollovers--%>
     <asp:Image ID="bigImage1" runat="server" />
     <asp:Image ID="bigImage2" runat="server" />
     <asp:Image ID="bigImage3" runat="server" />

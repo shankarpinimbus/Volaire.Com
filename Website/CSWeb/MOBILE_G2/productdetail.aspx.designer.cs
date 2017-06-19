@@ -11,7 +11,7 @@ namespace CSWeb.Mobile {
     
     
     public partial class ProductDetail {
-
+        
         /// <summary>
         /// buttonClicked control.
         /// </summary>
@@ -148,22 +148,13 @@ namespace CSWeb.Mobile {
         protected global::System.Web.UI.WebControls.Label lblSize;
         
         /// <summary>
-        /// ddlQuantity control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlQuantity;
-        
-        /// <summary>
         /// btnAddToCart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnAddToCart;
+        protected global::System.Web.UI.WebControls.LinkButton btnAddToCart;
         
         /// <summary>
         /// lblRetailPrice control.
@@ -173,6 +164,15 @@ namespace CSWeb.Mobile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblRetailPrice;
+        
+        /// <summary>
+        /// ddlQuantity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlQuantity;
         
         /// <summary>
         /// ltDetailDescription control.

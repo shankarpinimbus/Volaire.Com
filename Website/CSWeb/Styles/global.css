@@ -3414,10 +3414,28 @@ h2.products_hdr {
     font-weight: normal;
     padding-bottom: 0;
 }
-.productdetail_text_top p.p2 {
+h4.kit_includes_hdr {
     font-size: .95rem;
-    line-height: 2;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: .4rem;
 }
+ul.kit_includes {
+    list-style: none;
+    font-size: .95rem;
+    padding-bottom: 1.3rem;
+}
+ul.kit_includes li {
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    line-height: 1.2;
+}
+ul.kit_includes li:before {
+    content: '–';
+    float: left;
+    margin-left: -1rem;
+}
+
 .productdetail_text_top p.narrow {
     width: 80%;
 }

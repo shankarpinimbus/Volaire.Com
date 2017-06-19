@@ -202,6 +202,17 @@ jQuery(document).ready(function ($) {
             };
         }
     });
+
+
+    $('.thumbnail').click(function () {
+        var imgpath = $('.main_img').attr("src");
+        var imgnum = $(this).data("thumb");
+        imgpath1 = imgpath.slice(0, -5);
+        imgpath2 = imgnum + ".jpg";
+        imgpath3 = imgpath1 + imgpath2;
+        $('.main_img').attr("src", imgpath3);
+    });
+
 }); // ready
 
 
