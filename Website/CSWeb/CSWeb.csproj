@@ -420,6 +420,10 @@
     <Content Include="Scripts\location.autocomplete.js" />
     <Content Include="Scripts\string.min.js" />
     <Content Include="Scripts\videoplayer.js" />
+    <Content Include="E2\home" />
+    <Content Include="G2\home" />
+    <Content Include="MOBILE_G2\home" />
+    <Content Include="MOBILE_E2\home" />
     <None Include="Service References\InnotracWS\configuration91.svcinfo" />
     <None Include="Service References\InnotracWS\configuration.svcinfo" />
     <Content Include="Scripts\jquery.cookie.min.js" />
