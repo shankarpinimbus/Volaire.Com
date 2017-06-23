@@ -24,6 +24,10 @@ namespace CSWeb
 
         public void Application_BeginRequest(object sender, EventArgs e)
         {
+            if (Request.RawUrl.Equals("/"))
+            {
+                Response.Redirect("/index");
+            }
             //Redirect to https if request is already in http
             if (!CommonHelper.IsHttps(HttpContext.Current))
                 CommonHelper.EnsureSsl();
