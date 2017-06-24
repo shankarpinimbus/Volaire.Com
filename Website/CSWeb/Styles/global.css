@@ -3511,6 +3511,14 @@ ul.product_steps li {
     text-shadow: none;
 }
 
+.product_step_txt {
+    float: left;
+    width: 70%;
+}
+.special_step {
+    width: 60%;
+}
+
 .product_ingredients {
     width: 95%;
     font-size: .875rem;
@@ -3582,7 +3590,24 @@ ul.product_steps li {
 }
 
 
+.strikeout {
+  position: relative;
+}
+.strikeout:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
 
+  -webkit-transform:rotate(-10deg);
+  -moz-transform:rotate(-10deg);
+  -ms-transform:rotate(-10deg);
+  -o-transform:rotate(-10deg);
+  transform:rotate(-10deg);
+}
 
 
 

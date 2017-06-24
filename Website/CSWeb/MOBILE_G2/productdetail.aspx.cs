@@ -316,7 +316,8 @@ namespace CSWeb.Mobile
         {
             Sku sku = new Sku();
             sku = CSResolve.Resolve<ISkuService>().GetSkuByID(skuID);
-            imgSku.ImageUrl = sku.GetAttributeValue("ProductDetailImage", sku.ImagePath);
+            //imgSku.ImageUrl = sku.GetAttributeValue("ProductDetailImage", sku.ImagePath);
+            imgSku.ImageUrl = sku.AttributeValues["bigproductimage1"].Value;
             //lblSkuTitle.Text = sku.Title;
             lblSkuPrice.Text = GetHtmlDecoratedDollarCents(sku.InitialPrice.ToString("C"));
             ltDetailDescription.Text = sku.GetAttributeValue<string>("DetailDescription", String.Empty);

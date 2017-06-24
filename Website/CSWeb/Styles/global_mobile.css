@@ -346,7 +346,7 @@ p {padding-bottom: 1rem;}
 
 .benefits-txt {
     font-size: 12px;
-    font-size: 4vw;
+    font-size: 3.7vw;
     font-weight: 300;
     text-transform: uppercase;
     text-align: center;
@@ -2032,7 +2032,7 @@ label.error {display: none !important;}
 }
 
 .shop_products_detail {
-    padding:.5rem 5.5% 1rem;
+    padding:.5rem 5.2% 1rem;
 }
 
 h2.products_hdr {
@@ -2079,10 +2079,11 @@ h2.products_hdr {
 }
 
 .productinfo_description {
-    background: #b9e2e4;
+    display: none;
+    /*background: #b9e2e4;
     padding: .8rem 4%;
     line-height: 1.2;
-    /*font-weight: 300;
+    font-weight: 300;
     text-shadow: 0 0 0 rgba(0, 0, 0, 1);*/
 }
 .productinfo_description p {
@@ -2448,8 +2449,9 @@ ul.product_steps li {
 
 .product_step_hdr {
     float: left;
-    width: 6em;
-    margin-bottom: 1rem;
+    /*width: 6em;*/
+    width: 34%;
+    margin-bottom: 1.35rem;
     font-family: Judson, 'Times New Roman', serif;
     font-size: 16px;
     font-size: 5vw;
@@ -2458,13 +2460,20 @@ ul.product_steps li {
     text-shadow: none;
 }
 
+.product_step_txt {
+    float: left;
+    width: 66%;
+}
+.special_step {
+
+}
+
 .product_ingredients {
     font-size: 11px;
     font-size: 3.2vw;
     line-height: 1.2;
     font-weight: 300;
     text-shadow: 0 0 0 rgba(0, 0, 0, 1);
-    text-align: justify;
 }
 .product_ingredients strong {
     font-weight: bold;
@@ -2541,6 +2550,24 @@ ul.product_steps li {
 }
 
 
+.strikeout {
+  position: relative;
+}
+.strikeout:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-10deg);
+  -moz-transform:rotate(-10deg);
+  -ms-transform:rotate(-10deg);
+  -o-transform:rotate(-10deg);
+  transform:rotate(-10deg);
+}
 
 
 

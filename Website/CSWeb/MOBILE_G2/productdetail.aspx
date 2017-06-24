@@ -62,8 +62,8 @@
                     <asp:Image CssClass="thumbnail" data-thumb="4" ID="smallImage4" runat="server" />
 
                     <div class="productdetail_social">
-                        <div class="yotpo bottomLine"
-                            data-product-id="<%=SkuId.ToString() %>">
+                        <div class="yotpo bottomLine product_reviewsnip"
+                    data-product-id="<%=GroupId %>">
                         </div>
                         <script>
                             $(document).ready(function () {
@@ -106,9 +106,9 @@
                     </asp:Panel>
                     <asp:Panel runat="server" CssClass="kitprices" Visible="false" ID="productRetailPricePanel">
                         Product Value :
-                            <asp:Label runat="server" ID="productValue"></asp:Label><br />
+                            <span class="strikeout">$<asp:Label runat="server" ID="productValue"></asp:Label></span><br />
                         Retail Price :
-                            <asp:Label runat="server" ID="retailPrice"></asp:Label>
+                            $<asp:Label runat="server" ID="retailPrice"></asp:Label>
                     </asp:Panel>
 
 <div class="productdetail_price" style="display: none;">

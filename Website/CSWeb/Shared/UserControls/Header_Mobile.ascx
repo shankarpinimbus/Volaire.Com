@@ -88,12 +88,22 @@
 </header>
 
 <div class="stickynav">
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav.png" alt="Menu" class="block full" />
+    <% if (versionName.ToLower().EndsWith("g2")) %>
+    <% { %>
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav_g2.png" alt="Menu" class="block full" />
+    <% } else  { %>
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav.png" alt="Menu" class="block full" />
+    <% } %>
     <a href="tel:<%= GetCleanPhoneNumber(GetDynamicSidData("phone"))%>" class="maplink stickylink1">Call Now</a>
     <a href="tv-introductory-offer" class="maplink stickylink2">Order Now!</a>
 </div>
 <div class="stickynav-landscape">
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav-landscape.png" alt="Menu" class="block full" />
+    <% if (versionName.ToLower().EndsWith("g2")) %>
+    <% { %>
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav-landscape_g2.png" alt="Menu" class="block full" />
+    <% } else  { %>
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav-landscape.png" alt="Menu" class="block full" />
+    <% } %>
     <a href="tel:<%= GetCleanPhoneNumber(GetDynamicSidData("phone"))%>" class="maplink stickylink1">Call Now</a>
     <a href="tv-introductory-offer" class="maplink stickylink2">Order Now!</a>
 </div>

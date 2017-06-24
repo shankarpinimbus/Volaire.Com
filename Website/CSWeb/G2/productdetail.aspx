@@ -104,7 +104,7 @@
                 </asp:Panel>
                 <asp:Panel runat="server" CssClass="kitprices" Visible="false" ID="productRetailPricePanel">
                     <span class="price_title">Product Value: </span>
-                    $<asp:Label runat="server" ID="productValue"></asp:Label><br />
+                    <span class="strikeout">$<asp:Label runat="server" ID="productValue"></asp:Label></span><br />
                     <span class="price_title">Retail Price: </span>
                     $<asp:Label runat="server" ID="retailPrice"></asp:Label>
                 </asp:Panel>

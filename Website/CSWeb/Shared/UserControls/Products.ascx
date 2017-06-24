@@ -23,7 +23,7 @@
                                     </div>
                                     <div class="product_info_right">
                                         <div class="productinfo <%--productinfo_value --%>productinfo_retail">
-                                            <label class="detail_label">Retail Value:</label>
+                                            <label class="detail_label">Retail Price:</label>
                                             <asp:Label ID="lblSkuInitialPrice" runat="server" />
                                         </div>
                                     </div>
@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="product_info_right">
                                         <div class="productinfo <%--productinfo_value --%>productinfo_retail">
-                                            <label class="detail_label">Retail Value:</label>
+                                            <label class="detail_label">Retail Price:</label>
                                             <asp:Label ID="lblSkuInitialPrice" runat="server" />
                                         </div>
                                     </div>
@@ -144,9 +144,9 @@
                             <div class="product_grid_item">
                                 <div class="products_img">
                                     <asp:Image ID="imgProduct" CssClass="products_grid_img" runat="server" />
-                                    <div class="productimginfo productinfo_description">
-                                        <asp:Label ID="lblSkuDescription" runat="server" />
-                                    </div>
+                                    <%--<div class="productimginfo productinfo_description">--%>
+                                        <asp:Label ID="lblSkuDescription" runat="server" Visible="false" />
+                                    <%--</div>--%>
                                 </div>
                                 <div class="product_info_wrap clearfix">
                                     <div class="product_info_left">
@@ -154,7 +154,7 @@
                                     </div>
                                     <div class="product_info_right">
                                         <div class="productinfo <%--productinfo_value --%>productinfo_retail">
-                                            <label class="detail_label">Retail Value:</label>
+                                            <label class="detail_label">Retail Price:</label>
                                             <asp:Label ID="lblSkuInitialPrice" runat="server" />
                                         </div>
                                     </div>

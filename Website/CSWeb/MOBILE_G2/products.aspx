@@ -18,7 +18,7 @@
 <form runat="server" id="fm1">
     <uc:Header runat="server"/>
 
-    <a href="tv-introductory-offer"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_g2/hero-VOLAIRE-Volume-Essentials-3-1.jpg" alt="BEST offer! Volume Essentials Collection" class="block full" /></a>
+    <a href="tv-introductory-offer"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_g2/hero-VOLAIRE-Volume-Essentials-2-1.jpg" alt="BEST offer! Volume Essentials Collection" class="block full" /></a>
 
 
     <div class="shop_products_main">
