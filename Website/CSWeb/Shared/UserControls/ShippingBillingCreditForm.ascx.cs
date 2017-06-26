@@ -692,7 +692,7 @@ namespace CSWeb.Shared.UserControls
         {
             if (ClientOrderData.CartInfo.CartItems.Count == 0)
             {
-                lblShippingFirstName.Text = "Your Shopping Cart is currently empty.";
+                lblErrorSummary.Text = "Your Shopping Cart is currently empty.";
                 lblErrorSummary.Text = lblErrorSummary.Text + lblShippingFirstName.Text + "</br>";
                 _bError = true;
             }

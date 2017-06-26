@@ -479,7 +479,7 @@ $('#bfcBillingShippingCreditInfo_imgBtn').click(function() {
 
 
                             <div class="form_line_btn" runat="server" id="dCompleteOrder" visible="False">
-                                <div style="display: none;">
+                                <div>
                                     <asp:ValidationSummary ID="valSum" CssClass="error-1" DisplayMode="List" runat="server" HeaderText="Please fix the below errors: " />
                                     <asp:Label runat="server" ID="lblErrorSummary" Visible="False" ForeColor="Red"></asp:Label>
                                     <asp:Label ID="lblMessage" runat="server" ForeColor="Red" />
