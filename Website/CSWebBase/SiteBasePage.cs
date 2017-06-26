@@ -149,7 +149,7 @@ namespace CSWebBase
                 if (sku.SkuId>=138) // g2 individual products
                 {
                     flag = true;
-                    subTotal += sku.InitialPrice;
+                    subTotal += sku.InitialPrice * sku.Quantity;
                 }
             }
             if (flag == true)
