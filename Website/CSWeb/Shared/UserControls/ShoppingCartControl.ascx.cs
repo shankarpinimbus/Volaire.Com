@@ -114,6 +114,18 @@ namespace CSWeb.Shared.UserControls
 
                 }
             }
+            bool flag = false;
+            foreach (Sku sku in ClientOrderData.CartInfo.CartItems)
+            {
+                if (sku.SkuId >= 138) // g2 individual products
+                {
+                    flag = true;
+                }
+            }
+            if (flag)
+            {
+                SiteBasePage.SetCatalogShipping();
+            }
             BindControls();
         }
 
@@ -362,9 +374,17 @@ namespace CSWeb.Shared.UserControls
                             }
                             
                         }
-                        if (OrderHelper.GetVersionName().ToLower().Contains("g2"))
+                        bool flag = false;
+                        foreach (Sku sku1 in ClientOrderData.CartInfo.CartItems)
                         {
-                            SiteBasePage.SetCatalogShipping();    
+                            if (sku1.SkuId >= 138) // g2 individual products
+                            {
+                                flag = true;
+                            }
+                        }
+                        if (flag)
+                        {
+                            SiteBasePage.SetCatalogShipping();
                         }
                         BindControls();
 						if (UpdateCart != null)
