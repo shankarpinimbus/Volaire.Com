@@ -690,6 +690,12 @@ namespace CSWeb.Shared.UserControls
         }
         public bool validateInput()
         {
+            if (ClientOrderData.CartInfo.CartItems.Count == 0)
+            {
+                lblShippingFirstName.Text = "Your Shopping Cart is currently empty.";
+                lblErrorSummary.Text = lblErrorSummary.Text + lblShippingFirstName.Text + "</br>";
+                _bError = true;
+            }
             if (ddlShippingState.SelectedItem.Equals("select"))
             {
                 lblShippingStateError.Text = ResourceHelper.GetResoureValue("StateErrorMsg");
