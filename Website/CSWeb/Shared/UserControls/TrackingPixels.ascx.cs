@@ -149,7 +149,7 @@ namespace CSWeb.Shared.UserControls
                             sbListrakPixel.AppendLine("_ltk.Order.AddItem('" + sku.SkuCode + "', " + sku.Quantity + ", '" + Math.Round(sku.InitialPrice, 2) + "');");
                             sbListrakPixelCart.AppendLine("_ltk.SCA.AddItemWithLinks('" + sku.SkuCode + "', " + sku.Quantity + ", '" + Math.Round(sku.InitialPrice, 2) + "', '" + sku.Title + "', '" + sku.ImagePath + "', 'index.aspx');"); // one line per item
                             sbFriendBuy.AppendLine("{sku: '" + sku.SkuCode + "',price: '" + sku.FullPrice.ToString("n2") + "',quantity: '" + sku.Quantity + "'}");
-                            sbGTMtransactionProducts.AppendLine("{\"sku\": " + productCount + ",\"name\": \" " + sku.SkuCode + " \",\"price\": \"" + sku.FullPrice.ToString("n2") + "\",\"currency\": \"USD\",\"quantity\": " + sku.Quantity + "}");
+                            sbGTMtransactionProducts.AppendLine("{\"sku\": " + productCount + ",\"name\": \" " + sku.SkuCode + " \",\"price\": \"" + sku.FullPrice.ToString("n2") + "\",\"currency\": \"USD\",\"quantity\": " + sku.Quantity + "},");
 
                         }
                     }
