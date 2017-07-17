@@ -1011,6 +1011,14 @@ p.note {
     padding-right: 38%;
 }
 
+.products-txt-link {padding-top: .3rem;}
+.products-txt a {
+    color: #ff5a34;
+}
+.products-txt a:hover {
+    text-decoration: underline;
+}
+.products-txt-link {padding-top: .3rem;}
 .products-1 {margin-top: -13.5%;}
 .products-3 {margin-top: -3%;}
 .products-3b {margin-bottom: 13.5%;}

@@ -413,6 +413,7 @@
     <Content Include="MOBILE_F2\index.aspx" />
     <Content Include="MOBILE_G2\productdetail.aspx" />
     <Content Include="MOBILE_G2\products.aspx" />
+    <Content Include="MOBILE_H2\hair-volumizing-products.aspx" />
     <Content Include="NoCart\400.aspx" />
     <Content Include="NoCart\footer.html" />
     <Content Include="NoCart\contact.aspx" />
@@ -1686,7 +1687,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
-    <Folder Include="MOBILE_H2\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSWebBase\CSWebBase.csproj">
