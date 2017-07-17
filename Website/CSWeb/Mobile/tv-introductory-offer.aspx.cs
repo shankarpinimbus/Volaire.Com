@@ -24,6 +24,10 @@ namespace CSWeb.Mobile
             {
                 OrderHelper.ChangeCart("128");
             }
+            else if (OrderHelper.GetVersionName().ToLower().Equals("mobile_h2"))
+            {
+                OrderHelper.ChangeCart("133");
+            }
             else
             {
                 OrderHelper.ChangeCart("120");

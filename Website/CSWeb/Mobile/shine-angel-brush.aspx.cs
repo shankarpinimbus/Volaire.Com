@@ -55,6 +55,11 @@ namespace CSWeb.Mobile
                 OrderHelper.EmptyCart();
                 OrderHelper.ChangeCart("136");
             }
+            else if (SiteBasePage.CartContext.CartInfo.SkuExists(155))
+            {
+                OrderHelper.EmptyCart();
+                OrderHelper.ChangeCart("156");
+            }
 
             if (rbMedium.Checked)
             {
