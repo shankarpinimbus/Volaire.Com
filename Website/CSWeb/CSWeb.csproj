@@ -376,8 +376,11 @@
     <Content Include="E2\mega-volume-collection.aspx" />
     <Content Include="E2\tv-introductory-offer.aspx" />
     <Content Include="F2\index.aspx" />
+    <Content Include="G2\hair-volumizing-products.aspx" />
+    <Content Include="H2\hair-volumizing-products.aspx" />
     <Content Include="G2\productdetail.aspx" />
     <Content Include="G2\products.aspx" />
+    <Content Include="H2\tv-introductory-offer.aspx" />
     <Content Include="Mobile\volaire-customer-care.aspx" />
     <Content Include="Mobile\privacy-policy.aspx" />
     <Content Include="Mobile\terms-and-conditions.aspx" />
@@ -1683,6 +1686,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="MOBILE_H2\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSWebBase\CSWebBase.csproj">

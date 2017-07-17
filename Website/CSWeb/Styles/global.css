@@ -402,6 +402,49 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 #before-afters .nav-before-afters, 
 #tips .nav-tips  {color: #ff5b35; font-weight: bold;}
 
+#cssmenu > ul li.has-sub {
+  position: relative;
+}
+
+#cssmenu > ul li.has-sub:hover ul {
+  display: block;
+  text-align: left;
+}
+#cssmenu > ul li.has-sub ul {
+  display: none;
+  width: 220%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: .3rem 0 0 0;
+  list-style-type: none;
+  background: #ffffff;
+  z-index: 1000;
+  border-bottom: #dadada solid 1px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .3);
+}
+
+.nav > li.has-sub > ul li {
+  display: block;
+  padding: 0;
+  border-top: #dadada solid 1px;
+  text-align: left;
+  height: auto;
+  width: 100%;
+}
+
+.nav > li.has-sub > ul li a {
+  display: block;
+  padding: 10px 8px 10px 8px;
+  height: auto;
+  line-height: 1.25;
+}
+.nav > li.has-sub > ul li a:Hover {
+    background-color: #dff4f4;
+}
+
+
 .home1 {
 	background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/bg_home1b.jpg) repeat-x center 0;
 }
@@ -918,8 +961,77 @@ p.note {
     padding: .8rem 0;
 }
 
+.products-txt {
+    position: absolute;
+    z-index: 3;
+}
+
+.products-txt h1 {
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.products-txt h2 {
+    font-size: 30px;
+    color: #25cbd3;
+    line-height: 1;
+    padding-bottom: .8rem;
+    font-weight: normal;
+}
+.products-txt p {
+    font-weight: 300;
+    line-height: 1.25;
+    padding-bottom: .85rem;
+}
+
+.products-1-txt {
+    top: 42%;
+    left: 0;
+    width: 45%;
+}
+.products-2-txt {
+    top: 38%;
+    left: 27%;
+    width: 45%;
+}
+.products-3-txt {
+    top: 40.5%;
+    left: 40%;
+    width: 45%;
+}
+
+.products-txt h2 .line2 {
+    margin-left: 9%;
+}
+
+.products-2-txt p {
+    margin-left: 13%;
+}
+.products-3-txt p {
+    padding-right: 38%;
+}
+
 .products-1 {margin-top: -13.5%;}
 .products-3 {margin-top: -3%;}
+.products-3b {margin-bottom: 13.5%;}
+
+.products-ingredients {
+    position: absolute;
+    top: 74.3%;
+    left: 6.4%;
+    width: 25%;
+    padding: .8rem 3% 0;
+    overflow: visible;
+    z-index: 10;
+    border: #a99784 solid 1px;
+    background: #fff;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.55;
+}
+
+
+
 
 .products-quotes {
     padding: 2.5rem 0;
@@ -938,6 +1050,7 @@ p.note {
     width: 47%;
     margin-top: -12%;
 }
+
 
 .products-quotes-2 .watch_demo {
     bottom: auto;
@@ -3703,6 +3816,18 @@ ul.product_steps li {
 .order_bottom_txt p.p1, .order_bottom_txt2 p.p1 {font-size: 16px;}
 
 
+.products-txt h1 {font-size: 42px;}
+.products-txt h2 {
+    font-size: 26px;
+    padding-bottom: .7rem;
+}
+.products-txt p {font-size: .9375rem;}
+.products-ingredients {
+    padding: .7rem 3% 0;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.45;
+}
 
 }
 
@@ -3938,6 +4063,22 @@ ul.nav li.tablet-last {margin-right: -6px;}
 
 .productdetail_text .yotpo a.text-m {
     line-height: 1.3 !important;
+}
+
+.products-txt h1 {font-size: 36px;}
+.products-txt h2 {
+    font-size: 20px;
+    padding-bottom: .7rem;
+}
+.products-txt p {
+    font-size: 14px;
+}
+.products-2-txt {width: 50%;}
+.products-ingredients {
+    padding: .7rem 2% 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.45;
 }
 
 
