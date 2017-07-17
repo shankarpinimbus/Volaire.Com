@@ -74,6 +74,30 @@ namespace CSWeb.Shared.UserControls
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request["regerateurl"] == "true")
+            {
+                if (Request["skuid_g"] != null && Request["skuid_g"] != "")
+                {
+                    var skus = Request["skuid_g"].ToString();
+                    var skuids = skus.Split(',');
+                    for (int i = 0; i < skuids.Length; i++)
+                    {
+                        if (skuids[i] != "")
+                        {
+                            var flag = IsDigitsOnly(skuids[i]);
+                            if (flag)
+                            {
+                                if (Convert.ToInt32(skuids[i]) != 153 && Convert.ToInt32(skuids[i]) != 154)
+                                {
+                                    ClientOrderData.CartInfo.AddOrUpdate(Convert.ToInt32(skuids[i]), 1, true, false, false);
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
             versionName = CSWeb.OrderHelper.GetVersionName();
 
             if (!Page.IsPostBack)
@@ -131,6 +155,29 @@ namespace CSWeb.Shared.UserControls
 
         public void BindControls()
         {
+            if (Request["regerateurl"] == "true")
+            {
+                if (Request["skuid_g"] != null && Request["skuid_g"] != "")
+                {
+                    var skus = Request["skuid_g"].ToString();
+                    var skuids = skus.Split(',');
+                    for (int i = 0; i < skuids.Length; i++)
+                    {
+                        if (skuids[i] != "")
+                        {
+                            var flag = IsDigitsOnly(skuids[i]);
+                            if (flag)
+                            {
+                                if (Convert.ToInt32(skuids[i]) != 153 && Convert.ToInt32(skuids[i]) != 154)
+                                {
+                                    ClientOrderData.CartInfo.AddOrUpdate(Convert.ToInt32(skuids[i]), 1, true, false, false);
+                                }
+                            }
+                        }
+                    }
+                    ClientOrderData.CartInfo.RemoveSku(0);
+                }
+            }
             if (CartContext.CartInfo.CartItems.Count > 0)
             {
                 bool mainKit = false;
@@ -207,7 +254,29 @@ namespace CSWeb.Shared.UserControls
                 pnlTotal.Visible = false;
                 rptShoppingCart.Visible = false;
             }
+            Session["RegenerateUrl"] = RegenerateCartUrl();
+        }
 
+        bool IsDigitsOnly(string str)
+        {
+            foreach (char c in str)
+            {
+                if (c < '0' || c > '9')
+                    return false;
+            }
+
+            return true;
+        }
+
+        private string RegenerateCartUrl()
+        {
+            var regenerateCartUrl = "";
+            regenerateCartUrl = Request.Url.AbsoluteUri.Replace(Request.Url.AbsolutePath, "/" + OrderHelper.GetVersionName() + "/" + "cart.aspx?" + "regerateurl=true&skuid_g=");
+            foreach (Sku item in ClientOrderData.CartInfo.CartItems)
+            {
+                regenerateCartUrl = regenerateCartUrl + item.SkuId.ToString() + ",";
+            }
+            return regenerateCartUrl;
         }
 
         protected void btnPromitionCode_OnCommand(object sender, EventArgs e)

@@ -29,6 +29,7 @@
         dataLayer = [{
             "transactionTotal": <%= ltTotal.Text%>,
             "transactionCurrency": "USD",
+            "returnUrl": "<%= ltReturnUrl.Text%>",
             "transactionProducts": [
         <%= ltGTMtransactionProducts.Text%>
             ]
@@ -55,6 +56,7 @@
             },
             "transactionId": "<%= ltOrderId.Text%>",
             "transactionDate": "<%= lttransactionDate.Text%>",
+            "returnUrl": "<%= ltReturnUrl.Text%>",
             "transactionTotal": <%= ltTotal.Text%>,
             "transactionCurrency": "USD"
         }];
@@ -74,6 +76,7 @@
 <asp:Literal runat="server" Visible="False" ID="ltTax"></asp:Literal>
 <asp:Literal runat="server" Visible="False" ID="ltHandling" Text="0.00"></asp:Literal>
 <asp:Literal runat="server" Visible="False" ID="ltTotal"></asp:Literal>
+<asp:Literal runat="server" Visible="False" ID="ltReturnUrl"></asp:Literal>
 <asp:Literal runat="server" Visible="False" ID="ltSkuItem"></asp:Literal>
 <asp:Literal runat="server" Visible="False" ID="ltCartSkuItem"></asp:Literal>
 <asp:Literal runat="server" Visible="False" ID="ltGTMSkuItem"></asp:Literal>

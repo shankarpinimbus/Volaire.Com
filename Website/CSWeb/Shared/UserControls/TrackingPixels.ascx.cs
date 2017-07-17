@@ -85,6 +85,10 @@ namespace CSWeb.Shared.UserControls
                     ltSubTotal.Text = CartContext.CartInfo.SubTotal.ToString("n2");
                     ltShipping.Text = CartContext.CartInfo.ShippingCost.ToString("n2");
                     ltTotal.Text = (CartContext.CartInfo.SubTotalFullPrice + CartContext.CartInfo.TaxFullPrice + CartContext.CartInfo.ShippingCost).ToString("n2");
+                    if (Session["RegenerateUrl"] != null && Session["RegenerateUrl"] != "")
+                    {
+                        ltReturnUrl.Text = Session["RegenerateUrl"].ToString();
+                    }
                     Session["wppoTotal"] = (CartContext.CartInfo.SubTotalFullPrice + CartContext.CartInfo.TaxFullPrice + CartContext.CartInfo.ShippingCost).ToString("n2");
                     ltTax.Text = CartContext.CartInfo.TaxCost.ToString("n2");
                     lttransactionDate.Text = DateTime.Now.ToShortDateString();
@@ -149,7 +153,40 @@ namespace CSWeb.Shared.UserControls
                             sbListrakPixel.AppendLine("_ltk.Order.AddItem('" + sku.SkuCode + "', " + sku.Quantity + ", '" + Math.Round(sku.InitialPrice, 2) + "');");
                             sbListrakPixelCart.AppendLine("_ltk.SCA.AddItemWithLinks('" + sku.SkuCode + "', " + sku.Quantity + ", '" + Math.Round(sku.InitialPrice, 2) + "', '" + sku.Title + "', '" + sku.ImagePath + "', 'index.aspx');"); // one line per item
                             sbFriendBuy.AppendLine("{sku: '" + sku.SkuCode + "',price: '" + sku.FullPrice.ToString("n2") + "',quantity: '" + sku.Quantity + "'}");
-                            sbGTMtransactionProducts.AppendLine("{\"sku\": " + productCount + ",\"name\": \" " + sku.SkuCode + " \",\"price\": \"" + sku.FullPrice.ToString("n2") + "\",\"currency\": \"USD\",\"quantity\": " + sku.Quantity + "},");
+                           // sbGTMtransactionProducts.AppendLine("{\"sku\": " + productCount + ",\"name\": \" " + sku.SkuCode + " \",\"price\": \"" + sku.FullPrice.ToString("n2") + "\",\"currency\": \"USD\",\"quantity\": " + sku.Quantity + "},");
+                            sku.LoadAttributeValues();
+                            var image_url = "";
+                            if (sku.ContainsAttribute("bigproductimage1"))
+                            {
+                                if (sku.AttributeValues["bigproductimage1"] != null)
+                                {
+                                    image_url = sku.GetAttributeValue<string>("bigproductimage1", "");
+                                }
+                            }
+                            else if (sku.ContainsAttribute("productimage"))
+                            {
+                                image_url = sku.GetAttributeValue<string>("productimage", "");
+                            }
+                            else
+                            {
+                                image_url = sku.ImagePath;
+                            }
+                            var skuRoutingName = "";
+                            if (sku.ContainsAttribute("skuroutingname"))
+                            {
+                                if (sku.AttributeValues["skuroutingname"] != null)
+                                {
+                                    skuRoutingName = sku.GetAttributeValue<string>("skuroutingname", "");
+                                }
+                                else
+                                {
+                                    skuRoutingName = sku.ImagePath;
+                                }
+                            }
+                            var product_url = Request.Url.AbsoluteUri.Replace(Request.Url.AbsolutePath, "/" + OrderHelper.GetVersionName() + "/" + skuRoutingName);
+
+                            sbGTMtransactionProducts.AppendLine("{\"sku\": " + sku.SkuId + ",\"name\": \" " + sku.Title + " \",\"price\": \"" + sku.FullPrice.ToString("n2") + "\",\"currency\": \"USD\",\"quantity\": " + sku.Quantity + ",\"qty_price\": \" " + sku.Quantity * sku.FullPrice + "\",\"image_url\": \" " + image_url + "\",\"product_url\": \" " + product_url + "\"},");
+
 
                         }
                     }
