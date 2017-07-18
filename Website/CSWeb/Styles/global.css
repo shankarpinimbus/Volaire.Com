@@ -412,7 +412,7 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 }
 #cssmenu > ul li.has-sub ul {
   display: none;
-  width: 220%;
+  width: 250%;
   position: absolute;
   top: 100%;
   left: 0;
