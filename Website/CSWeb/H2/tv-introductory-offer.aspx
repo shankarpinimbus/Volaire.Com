@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="tv-introductory-offer.aspx.cs" Inherits="CSWeb.Desktop.tvintroductoryoffer" EnableSessionState="True" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="/Desktop/tv-introductory-offer.aspx.cs" Inherits="CSWeb.Desktop.tvintroductoryoffer" EnableSessionState="True" %>
 <%@ Register Src="~/Shared/UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
 
 <!doctype html>
@@ -10,7 +10,7 @@
 <meta name="keywords" content="" />
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
 </head>
-<body id="kit_30day">
+<body id="kit_30day" class="h2 h2-tv-offer">
 <form id="form1" runat="server">
 
 <header>
@@ -38,16 +38,15 @@
 <section class="container offer-content offer-30-day-kit clearfix">
     <div class="offer-left">
         <h2>Volume Essentials <span class="part2 ital brown2 uncaps">Collection</span></h2>
-        <p><strong>Get gorgeous, weightless, lasting volume</strong> with our <span class="iblock">VOLUME ESSENTIALS COLLECTION.</span> Plus, enjoy the ultimate multitasker, <strong>Air Magic Texturizing Spray</strong> for <strong class="magenta">FREE</strong>. It’s like five products – texturizer, style extender, oil absorber, revitalizer, and hair spray – all in one incredible formula!</p>
+        <p><strong>Get gorgeous, weightless, lasting volume</strong> with our <span class="iblock">VOLUME ESSENTIALS COLLECTION.</span> Plus, build everyday, effortless volume with <strong>Uplift Volumizing Mist</strong> for <strong class="magenta">FREE</strong>.</p>
         <div class="clearfix">
             <div class="offer-links">
                 <h3>Includes a 30 Day Supply of:</h3>
                 <ul>
                     <li><a href="#pop-weightless-volumizing-shampoo" class="product-pop">Weightless Volumizing Shampoo</a></li>
                     <li><a href="#pop-weightless-fortifying-conditioner" class="product-pop">Weightless Fortifying Conditioner</a></li>
-                    <li><a href="#pop-uplift-volumizing-mist" class="product-pop">Uplift Volumizing Mist</a></li>
                     <li class="last"><strong class="magenta">FREE GIFT</strong><br />
-                        <a href="#pop-air-magic" class="magenta med product-pop">Air Magic Texturizing Spray</a></li>
+                        <a href="#pop-uplift-volumizing-mist" class="magenta med product-pop">Uplift Volumizing Mist</a></li>
                 </ul>
             </div>
             <div class="offer-cta">
@@ -58,12 +57,12 @@
         
     </div>
     <div class="offer-right">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/offer-30-day-kit.png" alt="Volaire 30 Day Kit" class="offer-30-day-kit-img" />
-        <div class="offer-benefits">
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/offer-volume-essentials.png" alt="Volaire Volume Essentials" class="offer-30-day-kit-img" />
+        <div class="offer-benefits offer-benefits-h2">
             <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
         </div>
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="60 Day Money Back Guarantee" class="iblock offer-mbg" />
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/promo-code-save-40-percent-big.png" alt="Save 40% - Promo Code SAVE40" class="fright" style="margin-top: .8rem;" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/promo-code-save-40-percent-big.png" alt="Save 40% - Promo Code SAVE40" class="fright" style="margin-top: .8rem; margin-right: 5%;" />
     </div>
 </section>
     

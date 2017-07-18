@@ -27,7 +27,7 @@
         <p class="text-center intro">The <strong class="caps">Volaire<sup>™</sup> Hair Volumizing System</strong> is a game-changer for everyone, regardless of hair type or challenge – long, short, curly, straight, thin, fine, flat, or just plain unruly. Whether you want airy, bouncy volume or full-bodied, mega volume, <strong class="med">AirWeight Technology<sup>™</sup></strong> will make you look like you just left the salon – every day. </p>
     </div>--%>
 
-    <p style="padding: .7rem 4% 1.2rem;">The <strong class="caps">Volaire™ Hair Volumizing System</strong> is a game-changer for everyone, regardless of hair type or challenge – long, short, curly, straight, thin, fine, flat, or just plain unruly. Whether you want airy, bouncy volume or full-bodied, mega volume, <span class="med">AirWeight Technology™</span> will make you look like you just left the salon – every day.</p>
+    <p class="text-center" style="padding: .7rem 3% 1rem;">The <strong class="caps">Volaire™ Hair Volumizing System</strong> is a game-changer for everyone, regardless of hair type or challenge – long, short, curly, straight, thin, fine, flat, or just plain unruly. Whether you want airy, bouncy volume or full-bodied, mega volume, <strong>AirWeight Technology™</strong> will make you look like you just left the salon – every day.</p>
 
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
 

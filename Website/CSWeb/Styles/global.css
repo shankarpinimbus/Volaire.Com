@@ -428,6 +428,7 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
 .nav > li.has-sub > ul li {
   display: block;
   padding: 0;
+  margin: 0;
   border-top: #dadada solid 1px;
   text-align: left;
   height: auto;
@@ -497,6 +498,9 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
     font-weight: 700;
     color: #ee5c24;
     margin: 0 7px;
+}
+.h2 .benefits-pipe {
+    color: #25cbd3;
 }
 
 .home1bottom-benefits {
@@ -1212,6 +1216,8 @@ p.note {
     padding-top: 3rem;
 }
 
+.h2 .offer-cta {padding-top: 6rem;}
+
 .offer-links ul, 
 .offer-left ul {
     list-style: none;
@@ -1247,6 +1253,8 @@ p.note {
     left: 3px;
 }
 
+.h2 .offer-links li.last {padding-top: .3rem;}
+
 .offer-links li a {
     color: #000;
     text-decoration: none;
@@ -1259,8 +1267,16 @@ p.note {
     margin-top: -43%;
 }
 
+.h2 .offer-30-day-kit-img {
+    margin-left: 5%;
+}
+
 .offer-30-day-kit .offer-benefits {
     margin: -3rem 0 1.5rem 3%;
+}
+
+.offer-30-day-kit .offer-benefits-h2 {
+    margin: -3rem 0 1.5rem -10%;
 }
 
 .offer-mbg {
@@ -1268,9 +1284,19 @@ p.note {
     max-width: 105px;
 }
 
+.h2 .offer-mbg {
+    margin-top: -.9rem;
+    width: 30%;
+    max-width: 125px;
+}
+
 #kit_90day .offer-mbg {
     width: 20%;
     max-width: 105px;
+}
+#kit_90day.h2-mega-offer .offer-mbg {
+    width: 25%;
+    max-width: 125px;
 }
 
 

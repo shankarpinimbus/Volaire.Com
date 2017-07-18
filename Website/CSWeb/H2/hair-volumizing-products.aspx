@@ -48,6 +48,7 @@
                 <p>A revolutionary innovation in sulfate-free shampoos that gives you the lather you love without stripping away essential moisture</p>
                 <p>Unique Oxygen-infused formulas create lasting volume and natural shine without weighing down the hair</p>
                 <p>Fortifying properties help strengthen hair to prevent breakage</p>
+                <p class="products-txt-link"><a href="products.aspx" class="caps med">&gt; Shop All Products</a></p>
             </div>
         </div>
         <div class="products-2">
@@ -58,16 +59,23 @@
                 <p>Ultra-lightweight mist locks onto roots and strands of hair to deliver super-charged lift and continuous volume  </p>
                 <p>Heat protectants help maintain hair health during styling</p>
                 <p>Delivers touchable, tossable movement that you can run your fingers through – never stiff, tacky, or sticky</p>
+                <p class="products-txt-link"><a href="products.aspx" class="caps med">&gt; Shop All Products</a></p>
             </div>
         </div>
-        <div class="products-3">
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Air-Magic-Spray-3.png" alt="Best texturizing spray and hair spray for hair volume. Instantly get two times the volume over hair without VOLAIRE" class="block" />
+        <div class="products-3 products-3b">
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Air-Magic-Spray-2.png" alt="Best texturizing spray and hair spray for hair volume. Instantly get two times the volume over hair without VOLAIRE" class="block" />
             <div class="products-txt products-3-txt">
                 <h1>LOCK <span class="webfont1 ital brown2 normal">and load.</span></h1>
                 <h2 class="webfont2">Air Magic Texturizing Spray</h2>
                 <p>Thickens and texturizes hair, reviving limp locks with INSTANT volume</p>
                 <p>Lightweight, invisible hold allows workable styling without build-up</p>
                 <p>Extends your style so you can go longer between washings</p>
+                <p class="products-txt-link"><a href="products.aspx" class="caps med">&gt; Shop All Products</a></p>
+            </div>
+            <div class="products-ingredients text-center brown2">
+                <h1><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/v.png" alt="Volaire" /></h1>
+                <p><span class="caps med">Help revive</span><br />
+                    the look of lifeless hair and restore a vibrant luster with <span class="med ital">natural conditioning, including Avocado Oil, Essential Fatty Acids, and Red & Green Algae</span></p>
             </div>
         </div>
     </div>

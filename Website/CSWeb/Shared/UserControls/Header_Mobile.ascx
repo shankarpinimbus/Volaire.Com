@@ -69,8 +69,9 @@
                 <% if (versionName.ToLower().Contains("g2")) %>
                 <%
                    { %><li><a href="products" class="nav_products">Products</a></li>
-                <% }  else  { %>
-                <li><a href="hair-volumizing-products" class="nav-products">Products</a></li>
+                <% } else if (versionName.ToLower().Contains("h2")) { %>
+                <li><a href="products" class="nav-products">Products</a></li>
+                <li><a href="hair-volumizing-products" class="nav-products">About Products</a></li>
                 <% } %>
                 <li><a href="volaire-reviews">Reviews</a></li>
                 <li><a href="volaire-befores-and-afters">Before & Afters</a></li>
