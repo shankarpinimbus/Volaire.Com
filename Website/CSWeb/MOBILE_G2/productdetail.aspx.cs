@@ -44,6 +44,7 @@ namespace CSWeb.Mobile
         protected override void Page_Load(object sender, EventArgs e)
         {
             base.Page_Load(sender, e);
+            OrderHelper.RedirectMobile();
             string qs = "";
             try
             {

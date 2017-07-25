@@ -17,5 +17,11 @@ namespace CSWeb.Store
                 return true;
             }
         }
+
+        protected override void Page_Load(object sender, EventArgs e)
+        {
+            base.Page_Load(sender, e);
+            OrderHelper.RedirectDesktop();
+        }
     }
 }
