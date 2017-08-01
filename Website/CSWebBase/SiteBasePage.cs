@@ -144,15 +144,20 @@ namespace CSWebBase
             }
             bool flag = false;
             decimal subTotal = 0;
+            bool mainKit = false;
             foreach (Sku sku in CartContext1.CartInfo.CartItems)
             {
-                if (sku.SkuId>=138) // g2 individual products
+                if (sku.SkuId>=138 && sku.SkuId<=152) // g2 individual products
                 {
                     flag = true;
                     subTotal += sku.InitialPrice * sku.Quantity;
                 }
+                else
+                {
+                    mainKit = true;
+                }
             }
-            if (flag == true)
+            if (flag == true && mainKit ==false)
             {
                 //CartContext1.CartInfo.AddItem(153, 1, false, true);
                 if (subTotal >= 50)
