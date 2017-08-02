@@ -13,6 +13,10 @@ namespace CSWeb.Desktop
     {
         protected override void Page_Load(object sender, EventArgs e)
         {
+            if (OrderHelper.GetVersionName().ToLower().Contains("g2"))
+            {
+                 HttpContext.Current.Response.Redirect("/index");
+            }
             base.Page_Load(sender, e);
         }
     }
