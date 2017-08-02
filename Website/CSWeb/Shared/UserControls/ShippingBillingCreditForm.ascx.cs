@@ -134,8 +134,8 @@ namespace CSWeb.Shared.UserControls
                 BindControls();
             }
             // version g2 hide the disclaimer for the products
-            if (OrderHelper.GetVersionName().ToLower().Contains("g2"))
-            {
+            //if (OrderHelper.GetVersionName().ToLower().Contains("g2"))
+            //{
                 bool mainKitPresent = false;
                 foreach (Sku sku in ClientOrderData.CartInfo.CartItems)
                 {
@@ -157,7 +157,7 @@ namespace CSWeb.Shared.UserControls
                     dagree.Visible = false;
                     pnlPromoCode.Visible = false;
                 }
-            }
+            //}
         }
 
         private void BindEmptyCart()
