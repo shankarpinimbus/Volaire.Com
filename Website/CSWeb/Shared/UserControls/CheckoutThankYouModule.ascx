@@ -127,11 +127,11 @@ Subtotal:<br />
 
     <br />
 
-    <div class="cart_offer_details_wrap">
+    <asp:Panel class="cart_offer_details_wrap" runat="server" id="cart_offer_wrap">
         <div class="cart_offer_details">
             <asp:Literal runat="server" ID="ltOfferDetails"></asp:Literal>
         </div>
-    </div>
+    </asp:Panel>
         <br /><br />
     <div class="clearfix">
                     <div class="cart-guarantee-1"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="No risk 60 day money back guarentee with VOLAIRE. Volume that is easy to achieve and lasts all day long with VOLAIRE." /></div>

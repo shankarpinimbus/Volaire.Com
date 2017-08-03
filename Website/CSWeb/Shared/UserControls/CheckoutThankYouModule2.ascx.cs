@@ -27,7 +27,7 @@ namespace CSWeb.Mobile.UserControls
 
         protected DataList dlordersList;
         protected Label lblPurchaseName, lblPromotionPrice;
-        protected System.Web.UI.WebControls.Panel pnlRushLabel, pnlRush, pnlPromotionalAmount, pnlPromotionLabel, pnlBAddress2, pnlSAddress2;
+        protected System.Web.UI.WebControls.Panel pnlRushLabel, pnlRush, pnlPromotionalAmount, pnlPromotionLabel, pnlBAddress2, pnlSAddress2, cart_offer_wrap_m;
         protected HyperLink hlPrintLink;
         public int orderId = 0;
 
@@ -99,6 +99,14 @@ namespace CSWeb.Mobile.UserControls
                 dlordersList.DataSource = orderData.SkuItems.FindAll(x => x.SkuId != 153);;
                 dlordersList.DataBind();
                 ltOfferDetails.Text = OrderHelper.GetOfferDatails();
+                if (string.IsNullOrEmpty(ltOfferDetails.Text))
+                {
+                    cart_offer_wrap_m.Visible = false;
+                }
+                else
+                {
+                    cart_offer_wrap_m.Visible = true;
+                }
                 LiteralSubTotal.Text = Math.Round(orderData.SubTotal, 2).ToString();
                 LiteralShipping.Text = Math.Round(orderData.ShippingCost, 2).ToString();
                 LiteralTax.Text = Math.Round(orderData.Tax, 2).ToString();

@@ -130,11 +130,11 @@
 </tr></table>
          
          
-<div class="cart_offer_details_wrap offerdetailsreceipt">
+<asp:Panel class="cart_offer_details_wrap offerdetailsreceipt" runat="server" id="cart_offer_wrap_m">
     <div class="cart_offer_details">
         <asp:Literal runat="server" ID="ltOfferDetails"></asp:Literal>
     </div>
-</div>
+</asp:Panel>
 
 <div class="receipt_guarantee">
     <p><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="60 Day Money Back Guarantee" class="iblock footer-mbg" /></p>
