@@ -85,7 +85,7 @@
                                 $('.social_link_pn').attr("href", pn_link);
                             });
                         </script>
-                        <a href="https://www.facebook.com/VolaireHairVolumizingSystem/" class="iblock social_link_fb" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-Facebook.png" alt="VOLAIRE Facebook page. Volumizing products that let you achieve instant volume no matter what hair type you have."></a> 
+                        <a href="https://www.facebook.com/VolaireHair/" class="iblock social_link_fb" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-Facebook.png" alt="VOLAIRE Facebook page. Volumizing products that let you achieve instant volume no matter what hair type you have."></a> 
                         <a href="https://www.instagram.com/volairehair/" class="iblock social_link_ig" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-Instagram.png" alt="VOLAIRE Instagram page.Get instantaneous volume, just by using VOLAIRE. Best hair care system for lasting, instant volume."></a> 
                         <a href="https://www.pinterest.com/volairehair/" class="iblock social_link_pn" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-Pinterest.png" alt="VOLAIRE Pinterest page: VOLAIRE gives you thicker, fuller looking hair and volume instantly with our hair care products."></a> 
                     </div>

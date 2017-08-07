@@ -8,7 +8,7 @@
 
         <p>
             <span class="footer-social-txt caps">Post. Gram. Share.</span>
-            <a href="https://www.facebook.com/VolaireHairVolumizingSystem/" class="footer-social-link iblock" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/icon-fb.png" alt="Visit us on Facebook" /></a> 
+            <a href="https://www.facebook.com/VolaireHair/" class="footer-social-link iblock" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/icon-fb.png" alt="Visit us on Facebook" /></a> 
             <a href="https://twitter.com/VolaireHair" class="footer-social-link iblock" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/icon-tw.png" alt="Visit us on Twitter" /></a> 
             <a href="https://www.instagram.com/volairehair/" class="footer-social-link iblock" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/icon-ig.png" alt="Visit us on Ingstagram" /></a> 
             <a href="https://www.pinterest.com/volairehair/" class="footer-social-link iblock" target="_blank"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/icon-pn.png" alt="Visit us on Pinterest" /></a> 
