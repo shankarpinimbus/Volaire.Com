@@ -41,7 +41,7 @@
 
         <div class="offer-links" style="margin-top: .7rem;">
             <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_i2/price-offer2.png" alt="Just 3 Payments of $29.95 + Free Shipping" class="iblock vmid" style="width: 70%;" />
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG-sh.png" alt="60 Day Money Back Guarantee" class="iblock vmid" style="width: 28.7%;" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="60 Day Money Back Guarantee" class="iblock vmid" style="width: 28.7%;" />
             <asp:Button runat="server" id="btnAddtoCart" CssClass="btn_ordernow btn_ordernow-2" OnClick="btnAddtoCart_OnClick"/>
             <div class="text-center">
                 <a href="shine-angel-brush" class="btn_no_thanks caps">No, thank you.</a>

@@ -2,16 +2,25 @@
 <header>
 	<section class="topbanner">
     	<div class="container clearfix">
-        	<div class="topbanner-links">
-            	<a href="frequently-asked-questions" class="nav-top-faqs uncaps">&gt; FAQ's</a>
-            	<a href="mega-promise-money-back-guarantee" class="nav-top-guarantee">&gt; Guarantee</a>
-            	<a href="hair-styles-and-tips" class="visiblet nav-top-tips">&gt; Hair Styles & Tips</a>
-
+        	
+            	
                 <% if (versionName.ToLower().Contains("g2") || versionName.ToLower().Contains("h2") || versionName.ToLower().Contains("i2")) %>
                 <%
-                   { %><a href="products" class="nav-top-shop">&gt; Shop Products</a>
-                <% } %>
-            </div>
+                   { %>
+                        <div class="topbanner-links topbanner-links-shop">
+                            <a href="frequently-asked-questions" class="nav-top-faqs uncaps">&gt; FAQ's</a>
+            	            <a href="mega-promise-money-back-guarantee" class="nav-top-guarantee">&gt; Guarantee</a>
+            	            <a href="hair-styles-and-tips" class="visiblet nav-top-tips">&gt; Hair Styles & Tips</a>
+                            <a href="products" class="nav-top-shop">&gt; Shop Products</a>
+                        </div>
+                <% }  else  { %>
+                        <div class="topbanner-links">
+                            <a href="frequently-asked-questions" class="nav-top-faqs uncaps">&gt; FAQ's</a>
+            	            <a href="mega-promise-money-back-guarantee" class="nav-top-guarantee">&gt; Guarantee</a>
+            	            <a href="hair-styles-and-tips" class="visiblet nav-top-tips">&gt; Hair Styles & Tips</a>
+                        </div>
+    <% } %>
+            
             <div class="topbanner-promo">
                 <% if (versionName.ToLower().Contains("g2") || versionName.ToLower().Contains("h2") || versionName.ToLower().Contains("i2")) %>
                 <%

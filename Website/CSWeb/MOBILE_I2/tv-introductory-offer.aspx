@@ -15,7 +15,7 @@
 <div class="container">
 <uc:Header ID="Header" runat="server" />
 
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-volaire-volume-essentials.jpg" alt="VOLAIRE Volume Essentials" class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-volaire-volume-essentials-vol40.jpg" alt="VOLAIRE Volume Essentials" class="block full" />
     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
 
     <div class="contentpad2" style="margin-top: .6rem; padding-bottom: 1rem;">

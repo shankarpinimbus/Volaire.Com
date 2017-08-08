@@ -2,7 +2,15 @@
     Inherits="CSWeb.Shared.UserControls.ShoppingCartControl" %>
 <asp:LinkButton ID="refresh" runat="server" CausesValidation="false"></asp:LinkButton>
 
-<h1 class="shopping-cart-hdr orange">Your Shopping Cart</h1>
+
+<% if ( versionName.ToLower().EndsWith("i2") ) %>
+    <% { %>
+                <h1 class="shopping-cart-hdr orange"><a href="products" class="orange">Continue Shopping</a></h1>
+   
+    <% } else  { %>
+                <h1 class="shopping-cart-hdr orange">Your Shopping Cart</h1>
+    <% } %>
+
 
 <asp:Repeater runat="server" ID="rptShoppingCart" OnItemDataBound="rptShoppingCart_OnItemDataBound" OnItemCommand="rptShoppingCart_OnItemCommand">
     <HeaderTemplate>

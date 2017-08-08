@@ -87,7 +87,7 @@
         </div>
         <div class="clearfix text-right">
             
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG-sh.png" alt="60 Day Money Back Guarantee" class="iblock offer-mbg" style="margin-top: 2rem; margin-left: 1%;" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="60 Day Money Back Guarantee" class="iblock offer-mbg" style="margin-top: 2rem; margin-left: 1%;" />
         </div>
     </div>
 </section>

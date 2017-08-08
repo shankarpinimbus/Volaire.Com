@@ -243,6 +243,9 @@ header {
 	font-size: 12px;
 	line-height: 1.2;
 }
+.topbanner-links-shop {
+    padding-left: 2.3%;
+}
 .topbanner-links a {
 	color: #9a846d;
 	text-transform: uppercase;
@@ -1110,6 +1113,11 @@ background: -moz-linear-gradient(left, #ff5a34 0%, #ff5a34 50%, #e0f2f5 51%, #e0
 background: -webkit-linear-gradient(left, #ff5a34 0%,#ff5a34 50%,#e0f2f5 51%,#e0f2f5 100%);
 background: linear-gradient(to right, #ff5a34 0%,#ff5a34 50%,#e0f2f5 51%,#e0f2f5 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a34', endColorstr='#e0f2f5',GradientType=1 );
+}
+
+.receipt_i2 .steps_hdr {
+    background: #ff5a34;
+    margin-top: 6%;
 }
 
 .steps_hdr_step {
@@ -2745,6 +2753,10 @@ p.form_note {
     padding: 5rem 3.9%;
 }
 
+.receipt_i2 .receipt .container {
+    padding: 3rem 3.9% 5rem;
+}
+
 
 
 .receipt_content h1.receipt_top {
@@ -3861,6 +3873,11 @@ ul.product_steps li {
     background-size: 100%;
 }
 
+}
+
+@media all and (min-width: 1170px) {
+
+    .receipt_i2 .steps_hdr {margin-top: 5rem;}
 }
 
 @media all and (max-width:1330px) and (min-width: 1025px) {

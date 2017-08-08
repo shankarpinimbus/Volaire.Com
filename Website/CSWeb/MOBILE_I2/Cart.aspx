@@ -16,11 +16,26 @@
 
 </head>
  
-<body id="cart">
+<body id="cart" class="cart_i2">
 <form runat="server" id="fm_credit">
 <div class="container">
 <uc:Header ID="Header" runat="server" />
-
+    <section class="steps_hdr  gradient">
+        <div class="container clearfix">
+            <div class="steps_hdr_step step_a step_on step_on_1b">
+                <strong class="steptxt">STEP 1</strong> Upgrade Your Kit
+            </div>
+            <div class="steps_hdr_step step_b step_on step_on_1b">
+                <strong class="steptxt">STEP 2</strong> Add Ons
+            </div>
+            <div class="steps_hdr_step step_c step_on step_on_1">
+                <strong class="steptxt">STEP 3</strong> Check Out
+            </div>
+            <div class="steps_hdr_step step_d step_off step_off_1b">
+                <strong class="steptxt">STEP 4</strong> Confirmation
+            </div>
+        </div>
+    </section>
 
  <uc:ShippingBillingCreditForm ID="sbcfShippingBillingCreditForm" runat="server" RedirectUrl="AddProduct.aspx" />
 

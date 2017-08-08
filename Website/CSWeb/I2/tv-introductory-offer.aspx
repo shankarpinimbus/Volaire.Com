@@ -18,7 +18,7 @@
     	<div class="container clearfix">
         	<div class="nav-logo"><h1><a href="index"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-logo.png" alt="Volaire" class="block" /></a></h1></div>
         	<div class="nav-offer-promo">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hdr-banner-30-day-kit.png" alt="Limited Time - Get free shipping & instant savings! Save 40% with Promo Code SAVE40" class="block" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hdr-banner-30-day-kit-vol40.png" alt="Limited Time - Get free shipping & instant savings! Save 40% with Promo Code SAVE40" class="block" />
         	</div>
             <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-v.png" alt="Volaire" class="block nav-v" />
         </div>
@@ -63,7 +63,7 @@
             <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
         </div>
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="60 Day Money Back Guarantee" class="iblock offer-mbg" />
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/promo-code-save-40-percent-big.png" alt="Save 40% - Promo Code SAVE40" class="fright" style="margin-top: .8rem;" />
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/promo-code-vol-40-percent-big.png" alt="Save 40% - Promo Code SAVE40" class="fright" style="margin-top: .8rem;" />
     </div>
 </section>
     
