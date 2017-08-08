@@ -61,7 +61,7 @@
 
             <ul id="headernav" class="nav">
                 <li><a href="index">Home</a></li>
-                <% if (versionName.ToLower().Contains("g2")) %>
+                <% if (versionName.ToLower().Contains("g2") || versionName.ToLower().Contains("h2") || versionName.ToLower().Contains("i2")) %>
                 <%
                    { %><li><a href="cart" class="nav_products">Shopping Cart</a></li>
                 <% }  %>
@@ -69,7 +69,9 @@
                 <% if (versionName.ToLower().Contains("g2")) %>
                 <%
                    { %><li><a href="products" class="nav_products">Products</a></li>
-                <% } else if (versionName.ToLower().Contains("h2")) { %>
+                <% }
+                   else if (versionName.ToLower().Contains("h2") || versionName.ToLower().Contains("i2"))
+                   { %>
                 <li><a href="products" class="nav-products">Products</a></li>
                 <li><a href="hair-volumizing-products" class="nav-products">About Our Products</a></li>
                 <% } %>
@@ -89,7 +91,7 @@
 </header>
 
 <div class="stickynav">
-    <% if (versionName.ToLower().EndsWith("g2")) %>
+    <% if (versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2")) %>
     <% { %>
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav_g2.png" alt="Menu" class="block full" />
     <% } else  { %>
@@ -99,7 +101,7 @@
     <a href="tv-introductory-offer" class="maplink stickylink2">Order Now!</a>
 </div>
 <div class="stickynav-landscape">
-    <% if (versionName.ToLower().EndsWith("g2")) %>
+    <% if (versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2")) %>
     <% { %>
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav-landscape_g2.png" alt="Menu" class="block full" />
     <% } else  { %>

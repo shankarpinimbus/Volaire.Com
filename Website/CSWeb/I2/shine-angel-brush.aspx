@@ -14,11 +14,28 @@
 <form id="form1" runat="server">
 
 <header>
-    <section>
+    <section class="steps_hdr  gradient">
+        <div class="container clearfix">
+            <div class="steps_hdr_step step_on step_on_1b">
+                <a href="mega-volume-collection"><strong>STEP 1</strong> <span class="steps_spacer">></span> Upgrade Your Kit</a>
+            </div>
+            <div class="steps_hdr_step step_on step_on_1">
+                <strong>STEP 2</strong> <span class="steps_spacer">></span> Add Ons
+            </div>
+            <div class="steps_hdr_step step_off step_off_1">
+                <strong>STEP 3</strong> <span class="steps_spacer">></span> Check Out
+            </div>
+            <div class="steps_hdr_step step_off step_off_1b">
+                <strong>STEP 4</strong> <span class="steps_spacer">></span> Confirmation
+            </div>
+        </div>
+    </section>
+    <section class="hdr_shadow bgwhite">
     	<div class="container clearfix">
         	<div class="nav-logo"><h1><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-logo.png" alt="Volaire" class="block" /></h1></div>
         	<div class="nav-offer-promo">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hdr-banner-shine-angel-brush.png" alt="Make Your Results Shine Today!" class="block" />
+                <%--<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hdr-banner-shine-angel-brush.png" alt="Make Your Results Shine Today!" class="block" />--%>
+                &nbsp;
         	</div>
             <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-v.png" alt="Volaire" class="block nav-v" />
         </div>

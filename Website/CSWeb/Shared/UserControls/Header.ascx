@@ -7,19 +7,17 @@
             	<a href="mega-promise-money-back-guarantee" class="nav-top-guarantee">&gt; Guarantee</a>
             	<a href="hair-styles-and-tips" class="visiblet nav-top-tips">&gt; Hair Styles & Tips</a>
 
-                <% if (versionName.ToLower().Contains("g2")) %>
+                <% if (versionName.ToLower().Contains("g2") || versionName.ToLower().Contains("h2") || versionName.ToLower().Contains("i2")) %>
                 <%
                    { %><a href="products" class="nav-top-shop">&gt; Shop Products</a>
                 <% } %>
             </div>
             <div class="topbanner-promo">
-                <% if (versionName.ToLower().Contains("g2") || versionName.ToLower().Contains("i2")) %>
+                <% if (versionName.ToLower().Contains("g2") || versionName.ToLower().Contains("h2") || versionName.ToLower().Contains("i2")) %>
                 <%
                    { %>
                 <div class="shopping_cart_nav"><a href="cart"><span class="cart_item_count"><%= itemCount %></span >Shopping Bag</a></div>
                 <% } %>
-
-
 
 
                 <% if (versionName.ToLower().EndsWith("b2") || versionName.ToLower().EndsWith("b3") || versionName.ToLower().EndsWith("b4")) %>
@@ -71,7 +69,9 @@
                     <% if (versionName.ToLower().Contains("g2")) %>
                 <%
                    { %> <li><a href="products" class="nav_products">Products</a>
-                <% }  else if  (versionName.ToLower().Contains("h2")) { %>
+                <% }
+                       else if (versionName.ToLower().Contains("g2") || versionName.ToLower().Contains("h2") || versionName.ToLower().Contains("i2"))
+                       { %>
                         <li class='has-sub'><a href="products" class="nav_products">Products</a>
                         <ul class="subnav">
                             <li><a href="hair-volumizing-products" class="nav-reviews">About Our Products</a></li>

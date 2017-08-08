@@ -140,6 +140,7 @@ img, input[type=image] {max-width: 100%;}
 sup {font-size: 60%; line-height: 0}
 .webfont1 {font-family: Didot, Judson, 'Times New Roman', sans-serif;}
 .webfont2 {font-family: Judson, 'Times New Roman', sans-serif;}
+.bgwhite {background-color: #fff;}
 html, body {height: 100%;width: 100%; min-height: 100%;}
 html {font-size: 100%;}
 h1,h2,h3,h4,h5 {
@@ -1101,6 +1102,61 @@ p.note {
     position: relative;
 }
 
+.steps_hdr {
+    height: 34px;
+    background: #ff5a34;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmNWEzNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmNWEzNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2UwZjJmNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMGYyZjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left, #ff5a34 0%, #ff5a34 50%, #e0f2f5 51%, #e0f2f5 100%);
+background: -webkit-linear-gradient(left, #ff5a34 0%,#ff5a34 50%,#e0f2f5 51%,#e0f2f5 100%);
+background: linear-gradient(to right, #ff5a34 0%,#ff5a34 50%,#e0f2f5 51%,#e0f2f5 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a34', endColorstr='#e0f2f5',GradientType=1 );
+}
+
+.steps_hdr_step {
+    height: 34px;
+    padding: .4rem 2.2% 0 0;
+    float: left;
+    width: 24%;
+    font-size: .9rem;
+    text-align: right;
+}
+
+.step_on {background-color: #ff5a34; color: #fff;}
+.step_off {background-color: #e0f2f5;}
+
+.steps_hdr_step a {text-decoration: none;}
+.step_on a {color: #fff;}
+.step_off a {color: #000;}
+
+.step_on_1 {
+    background: #ff5a34 url(//d39hwjxo88pg52.cloudfront.net/volaire/images/i2/nav-steps-bg-arrow-orange-blue.png) no-repeat right top;
+    background-size: auto 100%;
+}
+.step_on_1b {
+    background: #ff5a34 url(//d39hwjxo88pg52.cloudfront.net/volaire/images/i2/nav-steps-bg-arrow-orange.png) no-repeat right top;
+    background-size: auto 100%;
+}
+
+.step_off_1 {
+    background: #e0f2f5 url(//d39hwjxo88pg52.cloudfront.net/volaire/images/i2/nav-steps-bg-arrow-blue.png) no-repeat right top;
+    background-size: auto 100%;
+}
+.step_off_1b {
+    background-image: none;
+    border-right: #fff solid 2px;
+}
+
+.steps_spacer {
+    margin: 0 .3rem;
+}
+
+.hdr_shadow {
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .4);
+    position: relative;
+    z-index: 2;
+}
+
+
 .hero-30-day-kit {
     background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/bg-30daykit.jpg) no-repeat center top;
     background-size: cover;
@@ -1299,6 +1355,10 @@ p.note {
     max-width: 125px;
 }
 
+#kit_90day.i2 .offer-mbg {
+    width: 30%;
+    max-width: 138px;
+}
 
 .offer-footer {
     margin: 1.5rem auto;
@@ -1337,6 +1397,14 @@ p.note {
     line-height: 1;
 }
 
+.hero-90-day-kit-whitebg {
+    padding: 3rem 0 2rem;
+}
+.hero-90-day-kit-whitebg h1 {
+    padding-left: 21%;
+    color: #000;
+}
+
 #kit_90day .offer-links {
     float: none;
     width: 100%;
@@ -1345,8 +1413,9 @@ p.note {
 
 .offer-90-day-kit-img {
     margin-top: -43%;
-
 }
+
+.offer-90-day-kit-img-i2 {margin-top: -36%;}
 
 #kit_90day .offer-left {
     width: 43.9%;
@@ -1355,6 +1424,13 @@ p.note {
 #kit_90day .offer-right {
     width: 56%;
 }
+#kit_90day.i2 .offer-left {
+    width: 57%;
+    padding: 0 1% 0 .5%;
+}
+#kit_90day.i2 .offer-right {
+    width: 43%;
+}
 #kit_90day .offer-left p {
     padding: 0 2% 2rem 0;
     text-shadow: 0 0 0 rgba(0, 0, 0, 1);
@@ -1362,11 +1438,28 @@ p.note {
 #kit_90day .offer-left p strong {
     text-shadow: none;
 }
+#kit_90day .offer-left p.p1 {
+    font-size: 1.375rem;
+    line-height: 1.3;
+}
 
 #kit_90day .offer-cta {
     float: left;
     width: 75%;
     padding-top: 0;
+}
+
+#kit_90day.i2 .offer-cta {
+    float: none;
+    width: 73%;
+    padding-top: 0;
+    margin: 0 auto;
+}
+
+.offer-bottom-wrap {
+    width: 73%;
+    padding-top: 1rem;
+    margin: 0 auto;
 }
 
 
@@ -4013,6 +4106,7 @@ ul.nav li.tablet-last {margin-right: -6px;}
 
 .offer-left h2 {font-size: 1.75rem;}
 .offer-left p {font-size: 1rem;}
+#kit_90day .offer-left p.p1 {font-size: 1.2rem;}
 .offer-left h3 {font-size: 1.1rem;}
 #kit_90day .offer-left h3 {font-size: 1rem;}
 .offer-links li, .offer-left li {font-size: 1rem;}

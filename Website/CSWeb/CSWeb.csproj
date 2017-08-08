@@ -381,6 +381,8 @@
     <Content Include="G2\products.aspx" />
     <Content Include="H2\mega-volume-collection.aspx" />
     <Content Include="H2\tv-introductory-offer.aspx" />
+    <Content Include="I2\Cart.aspx" />
+    <Content Include="I2\index.aspx" />
     <Content Include="I2\mega-volume-collection.aspx" />
     <Content Include="I2\shine-angel-brush.aspx" />
     <Content Include="I2\tangle-angel-brush.aspx" />
