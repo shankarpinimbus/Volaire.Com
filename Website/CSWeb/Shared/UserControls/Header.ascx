@@ -13,7 +13,7 @@
                 <% } %>
             </div>
             <div class="topbanner-promo">
-                <% if (versionName.ToLower().Contains("g2")) %>
+                <% if (versionName.ToLower().Contains("g2") || versionName.ToLower().Contains("i2")) %>
                 <%
                    { %>
                 <div class="shopping_cart_nav"><a href="cart"><span class="cart_item_count"><%= itemCount %></span >Shopping Bag</a></div>

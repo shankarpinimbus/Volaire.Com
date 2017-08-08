@@ -337,7 +337,7 @@ namespace CSWeb.Shared.UserControls
                 else
                 {
                     imgProduct.Visible = false;
-                    if (!OrderHelper.GetVersionName().ToLower().Contains("g2"))
+                    if (!OrderHelper.GetVersionName().ToLower().Contains("g2") && !OrderHelper.GetVersionName().ToLower().Contains("i2"))
                     {
                         lblSkuCode.Text = cartItem.SkuCode.ToString();
                     }
