@@ -138,7 +138,7 @@
 
     
 <uc:Footer ID="Footer" runat="server" />
-<% if (CSBusiness.DynamicVersion.VersionManager.LandingVersion.ToLower().Contains("d2") || CSBusiness.DynamicVersion.VersionManager.LandingVersion.ToLower().Contains("i2"))
+<% if (CSBusiness.DynamicVersion.VersionManager.LandingVersion.ToLower().Contains("d2"))
    { %>
    <uc:EmailPopUp ID="EmailPopUp" runat="server" />
 <% } %>
