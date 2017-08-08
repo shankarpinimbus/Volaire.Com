@@ -13,7 +13,9 @@
                 	    <span class="part4">VOL33</span>
                     </a>
                 </h2>
-    <% } else if (versionName.ToLower().EndsWith("e2") ) { %>
+    <% }
+               else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2") )
+               { %>
                 <h2>
                     <a href="tv-introductory-offer">
                 	    <span class="part1">Save 40%</span> 

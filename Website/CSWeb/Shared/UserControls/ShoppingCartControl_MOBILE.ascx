@@ -160,7 +160,9 @@
         <% if (versionName.ToLower().EndsWith("b2") || versionName.ToLower().EndsWith("b3") || versionName.ToLower().EndsWith("b4")) %>
     <% { %>
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_b2/cart-promo-code.png" class="block" />
-    <% } else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") ) { %>
+    <% }
+           else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2"))
+           { %>
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_e2/cart-promo-code.png" class="block" />
     <% } else  { %>
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/cart-promo-code.png" class="block" />

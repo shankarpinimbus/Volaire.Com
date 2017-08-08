@@ -443,7 +443,7 @@ $('#bfcBillingShippingCreditInfo_imgBtn').click(function() {
                                     <% { %>
                                     <input type="text" value="VOL33" class="text-1 text-promocode" disabled />
                                     <% }
-                                       else if (versionName.ToLower().EndsWith("e2"))
+                                       else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2"))
                                        { %>
                                     <input type="text" value="VOL40" class="text-1 text-promocode" disabled />
                                     <% }
