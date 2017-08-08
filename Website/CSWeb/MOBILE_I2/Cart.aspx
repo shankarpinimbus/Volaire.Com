@@ -20,7 +20,7 @@
 <form runat="server" id="fm_credit">
 <div class="container">
 <uc:Header ID="Header" runat="server" />
-    <section class="steps_hdr  gradient">
+    <section class="steps_hdr  gradient" runat="server" id="steps_hdr_id">
         <div class="container clearfix">
             <div class="steps_hdr_step step_a step_on step_on_1b">
                 <strong class="steptxt">STEP 1</strong> Upgrade Your Kit

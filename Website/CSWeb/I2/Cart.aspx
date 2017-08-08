@@ -40,7 +40,7 @@
     </div>
 </section>
 
-<section class="steps_hdr gradient" style="margin-top: 1rem;">
+<section class="steps_hdr gradient" style="margin-top: 1rem;" runat="server" id="steps_hdr_id">
     <div class="container clearfix">
         <div class="steps_hdr_step step_on step_on_1b">
             <a href="mega-volume-collection"><strong>STEP 1</strong> <span class="steps_spacer">></span> Upgrade Your Kit</a>

@@ -19,7 +19,7 @@
 <body class="receipt_i2">
 <uc:Header ID="Header" runat="server" />
 
-    <section class="steps_hdr  gradient">
+    <section class="steps_hdr  gradient" id="steps_hdr_id" runat="server">
         <div class="container clearfix">
             <div class="steps_hdr_step step_a step_on step_on_1b">
                 <strong class="steptxt">STEP 1</strong> Upgrade Your Kit

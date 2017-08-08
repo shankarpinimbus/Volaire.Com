@@ -158,6 +158,41 @@ namespace CSWeb.Shared.UserControls
                     pnlPromoCode.Visible = false;
                 }
             //}
+
+                if (OrderHelper.GetVersionName().ToLower().Contains("i2"))
+                {
+                    var mainKit = false;
+                    ClientCartContext clientData = (ClientCartContext)Session["ClientOrderData"];
+                    foreach (Sku sku in clientData.CartInfo.CartItems)
+                    {
+                        sku.LoadAttributeValues();
+                        if (sku.GetAttributeValue<bool>("isMainKit", false))
+                        {
+                            mainKit = true;
+                        }
+                    }
+                    if (mainKit)
+                    {
+                        foreach (Control ctrl in this.Parent.Controls)
+                        {
+                            if (ctrl.ClientID == "steps_hdr_id")
+                            {
+                                ctrl.Visible = true;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        foreach (Control ctrl in this.Parent.Controls)
+                        {
+                            if (ctrl.ClientID == "steps_hdr_id")
+                            {
+                                ctrl.Visible = false;
+                            }
+                        }
+                    }
+
+                }
         }
 
         private void BindEmptyCart()
