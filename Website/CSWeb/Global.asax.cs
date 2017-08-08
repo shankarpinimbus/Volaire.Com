@@ -24,7 +24,13 @@ namespace CSWeb
 
         public void Application_BeginRequest(object sender, EventArgs e)
         {
-            if (Request.RawUrl.Equals("/") || Request.RawUrl.Equals("/i2/") || Request.RawUrl.Equals("/i2"))
+            if (Request.RawUrl.Equals("/"))
+            {
+                Response.Redirect("/index");
+            }
+
+            //This redirects are only for the i2 version, we needed this to redirect to index for i2 version.
+            if ( Request.RawUrl.Equals("/i2/") || Request.RawUrl.Equals("/i2"))
             {
                 Response.Redirect("/i2/index");
             }
@@ -32,6 +38,7 @@ namespace CSWeb
             {
                 Response.Redirect("/mobile_i2/index");
             }
+
             //Redirect to https if request is already in http
             if (!CommonHelper.IsHttps(HttpContext.Current))
                 CommonHelper.EnsureSsl();

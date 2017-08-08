@@ -70,6 +70,16 @@ namespace CSWeb.Mobile
                 OrderHelper.EmptyCart();
                 OrderHelper.ChangeCart("156");
             }
+            else if (SiteBasePage.CartContext.CartInfo.SkuExists(157))
+            {
+                OrderHelper.EmptyCart();
+                OrderHelper.ChangeCart("158");
+            }
+            else if (SiteBasePage.CartContext.CartInfo.SkuExists(159))
+            {
+                OrderHelper.EmptyCart();
+                OrderHelper.ChangeCart("160");
+            }
 
             if (shineAngel > 0)
             {

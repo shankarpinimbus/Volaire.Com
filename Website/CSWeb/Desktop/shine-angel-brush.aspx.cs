@@ -60,6 +60,17 @@ namespace CSWeb.Desktop
                 OrderHelper.EmptyCart();
                 OrderHelper.ChangeCart("156");
             }
+            else if (SiteBasePage.CartContext.CartInfo.SkuExists(159))
+            {
+                OrderHelper.EmptyCart();
+                OrderHelper.ChangeCart("160");
+            }
+            else if (SiteBasePage.CartContext.CartInfo.SkuExists(157))
+            {
+                OrderHelper.EmptyCart();
+                OrderHelper.ChangeCart("158");
+            }
+            
 
             if (rbMedium.Checked)
             {
