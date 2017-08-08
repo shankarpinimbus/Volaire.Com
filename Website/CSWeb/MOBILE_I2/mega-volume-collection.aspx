@@ -10,35 +10,56 @@
 <meta name="keywords" content="" />
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
 </head>
-<body class="offers-cart mega-collection-page">
+<body class="offers-cart mega-collection-page i2 tv-offer-upsells">
 <form id="form1" runat="server">
 <div class="container">
+    <section class="steps_hdr  gradient">
+        <div class="container clearfix">
+            <div class="steps_hdr_step step_a step_on step_on_1">
+                <strong class="steptxt">STEP 1</strong> Upgrade Your Kit
+            </div>
+            <div class="steps_hdr_step step_b step_off step_off_1">
+                <strong class="steptxt">STEP 2</strong> Add Ons
+            </div>
+            <div class="steps_hdr_step step_c step_off step_off_1">
+                <strong class="steptxt">STEP 3</strong> Check Out
+            </div>
+            <div class="steps_hdr_step step_d step_off step_off_1b">
+                <strong class="steptxt">STEP 4</strong> Confirmation
+            </div>
+        </div>
+    </section>
 <uc:Header ID="Header" runat="server" />
 
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-mega.jpg" alt="VOLAIRE Mega Volumizing System" class="block full" />
-    <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_i2/hero-mega.jpg" alt="VOLAIRE Mega Volumizing System" class="block full" />
+    
 
     <div class="contentpad2" style="margin-top: .6rem; padding-bottom: 1rem;">
-        <p>Upgrade now to our <span class="iblock">MEGA VOLUME COLLECTION.</span> and receive our 90 Day supply of VOLAIRE. Plus, <strong>GET&nbsp;A&nbsp;FREE <span class="orange">JUMBO SIZE GIFT</span></strong> + <strong>FREE SHIPPING</strong> on&nbsp;today's&nbsp;order!</p>
+        <p class="p1 text-center">Save yourself some time (and <span style="border-bottom: #222 solid 1px;">money</span>!) and upgrade to the <strong class="iblock">Mega Volume Collection &ndash;</strong> the same 4 great products in our&nbsp;JUMBO sizes. his way you’ll be saving more, have  <strong class="iblock">3 easy payments of $29.95,</strong> and be  <strong>covered for 90 days.</strong></p>
 
-        <div class="offer-links">
-            <h3>The 4-Piece, 90 Day Mega Volume<br />
-                Collection Includes <span class="orange">Jumbo</span> Sizes of:
-            </h3>
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png" alt="60 Day Money Back Guarantee" class="fright" style="width: 28.75%; margin: 1rem 0 1rem 1%;" />
-            <ul>
-                <li><a href="#pop-weightless-volumizing-shampoo" class="product-pop">Weightless Volumizing Shampoo</a></li>
-                <li><a href="#pop-weightless-fortifying-conditioner" class="product-pop">Weightless Fortifying Conditioner</a></li>
-                <li><a href="#pop-uplift-volumizing-mist" class="product-pop">Uplift Volumizing Mist</a></li>
-                <li class="last"><strong><span class="magenta">INSTANT UPGRADE TO A</span> <span class="orange">JUMBO SIZE GIFT</span></strong><br />
-                    <a href="#pop-air-magic" class="magenta med product-pop">Air Magic Texturizing Spray</a></li>
-            </ul>
-            
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/price-offer2.png" alt="Just 3 Payments of $29.95 + Free Shipping" class="block" style="margin-top: .5rem; width: 98%;" />
+        <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
+
+        <div class="offer-links" style="margin-top: .7rem;">
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_i2/price-offer2.png" alt="Just 3 Payments of $29.95 + Free Shipping" class="iblock vmid" style="width: 70%;" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG-sh.png" alt="60 Day Money Back Guarantee" class="iblock vmid" style="width: 28.7%;" />
             <asp:Button runat="server" id="btnAddtoCart" CssClass="btn_ordernow btn_ordernow-2" OnClick="btnAddtoCart_OnClick"/>
             <div class="text-center">
-                <a href="shine-angel-brush" class="btn_no_thanks">No, thank you</a>
+                <a href="shine-angel-brush" class="btn_no_thanks caps">No, thank you.</a>
             </div>
+
+            <h2 class="tvoffer-upsells-hdr">Mega Volume <span class="part2 ital brown2 uncaps webfont2 normal">Collection</span></h2>
+            
+            <h3>The 4-Piece, 90 Day Collection Includes:
+            </h3>
+            
+            <ul>
+                <li><a href="#pop-weightless-volumizing-shampoo" class="product-pop">Weightless Volumizing Shampoo - Jumbo Size</a></li>
+                <li><a href="#pop-weightless-fortifying-conditioner" class="product-pop">Weightless Fortifying Conditioner - Jumbo Size</a></li>
+                <li><a href="#pop-uplift-volumizing-mist" class="product-pop">Uplift Volumizing Mist - Jumbo Size</a></li>
+                <li class="last"><a href="#pop-air-magic" class="magenta bold product-pop">FREE Air Magic Texturizing Spray - Jumbo Size</a></li>
+            </ul>
+            
+            
         </div>
     </div>
 

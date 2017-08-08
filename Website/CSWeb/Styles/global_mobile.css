@@ -230,6 +230,11 @@ sup {
 	font-weight: 900;
 	letter-spacing: .01em;
 }
+
+.tv-offer-upsells .topbanner-promo {
+    display: none;
+}
+
 .header-ssl {display: none;}
 .offers-cart .header-ssl, 
 #cart .header-ssl {
@@ -249,7 +254,10 @@ sup {
 .header-tangle {display: none;}
 .mega-collection-page .header-mega {display: block;}
 .shine-angel-brush-page .header-shine {display: block;}
-.tangle-angel-brush-page .header-tangle {display: block;}
+.tangle-angel-brush-page.i2 .header-tangle {display: block;}
+.mega-collection-page.i2 .header-mega {display: none;}
+.shine-angel-brush-page.i2 .header-shine {display: none;}
+.tangle-angel-brush-page.i2 .header-tangle {display: none;}
 
 
 
@@ -342,6 +350,73 @@ p {padding-bottom: 1rem;}
 }
 
 
+h2.tvoffer-upsells-hdr {
+    font-weight: 500;
+    font-size: 23px;
+    font-size: 7vw;
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+}
+h2.tvoffer-upsells-hdr .part2 {
+    font-weight: 500;
+    font-size: 24px;
+    font-size: 7.2vw;
+}
+
+.steps_hdr {
+    height: 2.3rem;
+    height: 10vw;
+    background: #ff5a34;
+}
+
+.steps_hdr_step {
+    height: 2.3rem;
+    height: 10vw;
+    padding: .4rem 5% 0 0;
+    float: left;
+    width: 25%;
+    font-size: 8px;
+    font-size: 2.6vw;
+    line-height: 1.2;
+    text-align: right;
+}
+
+.step_a {width: 27.5%;}
+.step_b {width: 24.5%;}
+.step_c {width: 24%;}
+.step_d {width: 24%;}
+
+.steptxt {
+    display: block;
+    font-size: 9px;
+    font-size: 3vw;
+}
+
+.step_on {background-color: #ff5a34; color: #fff;}
+.step_off {background-color: #e0f2f5;}
+
+.steps_hdr_step a {text-decoration: none;}
+.step_on a {color: #fff;}
+.step_off a {color: #000;}
+
+.step_on_1 {
+    background: #ff5a34 url(//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_i2/nav-steps-bg-arrow-orange-blue.png) no-repeat right top;
+    background-size: auto 100%;
+}
+.step_on_1b {
+    background: #ff5a34 url(//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_i2/nav-steps-bg-arrow-orange.png) no-repeat right top;
+    background-size: auto 100%;
+}
+
+.step_off_1 {
+    background: #e0f2f5 url(//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_i2/nav-steps-bg-arrow-blue.png) no-repeat right top;
+    background-size: auto 100%;
+}
+.step_off_1b {
+    background-image: none;
+    padding-right: 3%;
+}
+
 
 
 .benefits-txt {
@@ -357,6 +432,9 @@ p {padding-bottom: 1rem;}
     font-weight: 700;
     color: #ee5c24;
     margin: 0 3px;
+}
+.i2 .benefits-pipe {
+    color: #5ac7cf;
 }
 .watch_demo {
     font-weight: 700;

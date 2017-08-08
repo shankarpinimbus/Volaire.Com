@@ -10,9 +10,25 @@
 <meta name="keywords" content="" />
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
 </head>
-<body class="offers-cart shine-angel-brush-page">
+<body class="offers-cart shine-angel-brush-page i2">
 <form id="form1" runat="server">
 <div class="container">
+    <section class="steps_hdr  gradient">
+        <div class="container clearfix">
+            <div class="steps_hdr_step step_a step_on step_on_1b">
+                <strong class="steptxt">STEP 1</strong> Upgrade Your Kit
+            </div>
+            <div class="steps_hdr_step step_b step_on step_on_1">
+                <strong class="steptxt">STEP 2</strong> Add Ons
+            </div>
+            <div class="steps_hdr_step step_c step_off step_off_1">
+                <strong class="steptxt">STEP 3</strong> Check Out
+            </div>
+            <div class="steps_hdr_step step_d step_off step_off_1b">
+                <strong class="steptxt">STEP 4</strong> Confirmation
+            </div>
+        </div>
+    </section>
 <uc:Header ID="Header" runat="server" />
 
     <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/hero-shine.jpg" alt="Style like a pro. Shine Angel Pro Styling Brush" class="block full" />
