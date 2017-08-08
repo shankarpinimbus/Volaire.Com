@@ -105,7 +105,8 @@
         });
     });
 </script>
-<% if(CSBusiness.DynamicVersion.VersionManager.LandingVersion.ToLower().Contains("d2")) { %>
+<% if (CSBusiness.DynamicVersion.VersionManager.LandingVersion.ToLower().Contains("d2") || CSBusiness.DynamicVersion.VersionManager.LandingVersion.ToLower().Contains("i2"))
+   { %>
    <uc:EmailPopUp ID="EmailPopUp" runat="server" />
 <% } %>
 </form>

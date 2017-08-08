@@ -28,6 +28,10 @@ namespace CSWeb
             {
                 Response.Redirect("/i2/index");
             }
+            if (Request.RawUrl.Equals("/mobile_i2/") || Request.RawUrl.Equals("/mobile_i2"))
+            {
+                Response.Redirect("/mobile_i2/index");
+            }
             //Redirect to https if request is already in http
             if (!CommonHelper.IsHttps(HttpContext.Current))
                 CommonHelper.EnsureSsl();
