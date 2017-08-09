@@ -31,7 +31,7 @@
             </div>
         	<div class="home1bottom">
             	<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/home-1-bottom.jpg" alt="Hair Volumizing System with AirWeight Technology" class="block">
-                <a href="tv-introductory-offer" class="home1bottomlink"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/SAVE-40.png" alt="Save 40% off of VOLAIRE hair care volumizing system when you order online or call. Best deal for getting gorgeous hair." class="block" /></a>
+                <a href="tv-introductory-offer" class="home1bottomlink"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/e2/promo-code-vol40.png" alt="Save 40% off of VOLAIRE hair care volumizing system when you order online or call. Best deal for getting gorgeous hair." class="block" /></a>
                 <div class="home1bottom-benefits">
                     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
                 </div>
