@@ -25,7 +25,7 @@
 <uc:Header ID="Header" runat="server" />
 
     <div>
-        <a href="tv-introductory-offer"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Kristin-Davis-1.jpg" alt="Kristin Davis uses VOLAIRE "at home, herself" to achieve effortless volume that lasts all day. Get gorgeous hair today!" class="block full" /></a>
+        <a href="tv-introductory-offer"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_i2/Kristin-Davis-1.jpg" alt="Kristin Davis uses VOLAIRE "at home, herself" to achieve effortless volume that lasts all day. Get gorgeous hair today!" class="block full" /></a>
         <%--<a href="tv-introductory-offer" class="maplink homelink1">Get TV Offer!</a>--%>
     </div>
     <%--<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home2.png" alt="AirWeight Technology&trade; Hair Volumizing System" class="block" />--%>
@@ -60,7 +60,7 @@
         <a href="tv-introductory-offer" class="maplink homelink4">Save 40% - Get Offer!</a>
     </div>
 
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Richard-Ward-Volume.jpg" alt="Top hairstylists use VOLAIRE to give their clients lasting and effortless volume. Have salon quality hair everyday." class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_i2/Richard-Ward-Volume.jpg" alt="Top hairstylists use VOLAIRE to give their clients lasting and effortless volume. Have salon quality hair everyday." class="block full" />
 
     <div class="home6">
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home6.png" alt="STYLE to the fullest. See how VOLAIRE™ rises above the rest!" class="block full" />

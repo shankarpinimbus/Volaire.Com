@@ -426,6 +426,7 @@
     <Content Include="MOBILE_H2\hair-volumizing-products.aspx" />
     <Content Include="MOBILE_H2\mega-volume-collection.aspx" />
     <Content Include="MOBILE_H2\tv-introductory-offer.aspx" />
+    <Content Include="MOBILE_I2\bottomcta.html" />
     <Content Include="MOBILE_I2\Cart.aspx" />
     <Content Include="MOBILE_I2\index.aspx" />
     <Content Include="MOBILE_I2\mega-volume-collection.aspx" />
