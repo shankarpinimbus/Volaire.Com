@@ -443,7 +443,7 @@ $('#bfcBillingShippingCreditInfo_imgBtn').click(function() {
                                     <% { %>
                                     <input type="text" value="VOL33" class="text-1 text-promocode" disabled />
                                     <% }
-                                       else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2"))
+                                       else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("get_mobile_a1") || versionName.ToLower().EndsWith("get_mobile_aa1") )
                                        { %>
                                     <input type="text" value="VOL40" class="text-1 text-promocode" disabled />
                                     <% }
