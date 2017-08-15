@@ -18,7 +18,7 @@
     	<div class="container clearfix">
         	<div class="nav-logo"><h1><a href="index"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-logo.png" alt="Volaire" class="block" /></a></h1></div>
         	<div class="nav-offer-promo">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hdr-banner-30-day-kit.png" alt="Limited Time - Get free shipping & instant savings! Save 40% with Promo Code SAVE40" class="block" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/hdr-banner-30-day-kit-vol40.png" alt="Limited Time - Get free shipping & instant savings! Save 40% with Promo Code SAVE40" class="block" />
         	</div>
             <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/volaire-v.png" alt="Volaire" class="block nav-v" />
         </div>
