@@ -1,9 +1,3 @@
 User-agent: *
 Disallow: /ADMIN/
 Disallow: /admin/
-Disallow: /mobile/
-Disallow: /MOBILE/
-Disallow: /mobile_g2/
-Disallow: /MOBILE_G2/
-Disallow: /g2/
-Disallow: /G2/
