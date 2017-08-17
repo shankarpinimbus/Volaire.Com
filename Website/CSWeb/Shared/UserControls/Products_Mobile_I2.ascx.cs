@@ -38,7 +38,7 @@ namespace CSWeb.UserControls
             if (!IsPostBack)
             {
                 //lblMessage.Text = string.Empty;
-                Products.GetSkus();
+                GetSkus();
                 PopulatePage();
             }
 
