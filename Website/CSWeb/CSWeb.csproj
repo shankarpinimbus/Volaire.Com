@@ -573,6 +573,7 @@
     <Content Include="Shared\UserControls\Footer_Mobile.ascx" />
     <Content Include="Shared\UserControls\Header.ascx" />
     <Content Include="Shared\UserControls\Header_Mobile.ascx" />
+    <Content Include="Shared\UserControls\Products_I2.ascx" />
     <Content Include="Shared\UserControls\Products.ascx" />
     <Content Include="Shared\UserControls\Products_Mobile.ascx" />
     <Content Include="Shared\UserControls\ShippingBillingCreditForm.ascx" />
@@ -1367,6 +1368,13 @@
     <Compile Include="G2\products.aspx.designer.cs">
       <DependentUpon>products.aspx</DependentUpon>
     </Compile>
+    <Compile Include="I2\productdetail.aspx.cs">
+      <DependentUpon>productdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="I2\productdetail.aspx.designer.cs">
+      <DependentUpon>productdetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Mobile\mega-volume-collection.aspx.cs">
       <DependentUpon>mega-volume-collection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1489,6 +1497,13 @@
     </Compile>
     <Compile Include="Shared\UserControls\Header.ascx.designer.cs">
       <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UserControls\Products_I2.ascx.cs">
+      <DependentUpon>Products_I2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\UserControls\Products_I2.ascx.designer.cs">
+      <DependentUpon>Products_I2.ascx</DependentUpon>
     </Compile>
     <Compile Include="Shared\UserControls\Products.ascx.cs">
       <DependentUpon>Products.ascx</DependentUpon>

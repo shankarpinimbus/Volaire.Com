@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductDetail.aspx.cs"
-    Inherits="CSWeb.ProductDetail"  MaintainScrollPositionOnPostback="true" EnableSessionState="True" %>
+    Inherits="CSWeb.ProductDetail_I2"  MaintainScrollPositionOnPostback="true" EnableSessionState="True" %>
 <%@ Register Src="/Shared/UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
 <%@ Register Src="/Shared/UserControls/Header.ascx" TagName="Header" TagPrefix="uc" %>
 <%@ Register Src="/Shared/UserControls/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
@@ -107,6 +107,10 @@
                     <span class="strikeout">$<asp:Label runat="server" ID="productValue"></asp:Label></span><br />
                     <span class="price_title">Retail Price: </span>
                     $<asp:Label runat="server" ID="retailPrice"></asp:Label>
+                </asp:Panel>
+                <asp:Panel runat="server" CssClass="kitprices" Visible="false" ID="pnlKitSelection">
+                    <asp:RadioButton runat="server" GroupName="KitSelection" ID="rbOneTime" AutoPostBack="True" OnCheckedChanged="OnCheckedChanged"/><p> One Time Payment $39.95</p>
+                    <asp:RadioButton runat="server" GroupName="KitSelection" ID="rbAuto" Checked="True" AutoPostBack="True" OnCheckedChanged="OnCheckedChanged"/><p> Auto Delivery $29.95</p>
                 </asp:Panel>
                 <div class="product_various_info clearfix">
                     <span class="product_add-price">

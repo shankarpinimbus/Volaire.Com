@@ -1,6 +1,6 @@
 ﻿<%@Page Language="C#" AutoEventWireup="true" Inherits="CSWeb.Store.products" EnableSessionState="True" %>
 <%@ Register Src="/shared/UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
-<%@ Register Src="/shared/UserControls/Products.ascx" TagName="Products" TagPrefix="uc" %>
+<%@ Register Src="/shared/UserControls/Products_I2.ascx" TagName="Products" TagPrefix="uc" %>
 <%@ Register Src="/shared/UserControls/Header.ascx" TagName="Header" TagPrefix="uc" %>
 <%@ Register Src="/Shared/UserControls/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
 
