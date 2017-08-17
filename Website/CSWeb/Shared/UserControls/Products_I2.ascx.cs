@@ -398,8 +398,8 @@ namespace CSWeb.Store.UserControls
                 if (cartItem.SkuId == 161)
                 {
                     lblSkuInitialPrice.Text = cartItem.GetAttributeValue<string>("Product_Price", cartItem.InitialPrice.ToString());
-                    btnViewProduct.AlternateText = "SAVE & LEARN MORE";
-                    btnViewProduct.ImageUrl = "";
+                    btnViewProduct.AlternateText = "SAVE $ LEARN MORE";
+                    btnViewProduct.ImageUrl = "//d39hwjxo88pg52.cloudfront.net/volaire/images/products/btn_save_learn_more.png";
                 }
                 lblSize.Text = cartItem.GetAttributeValue<string>("ProductSize", String.Empty);
 

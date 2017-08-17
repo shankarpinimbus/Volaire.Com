@@ -3620,6 +3620,46 @@ h2.products_hdr {
     line-height: 1.4;
 }
 
+.checkboxwrap {
+    padding: .3rem 0;
+}
+.checkboxwrap input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.label_purchase_type {
+    background: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/products/main/checkbox_off.png) no-repeat 0 0;
+    padding: .05rem 0 .2rem 2.1rem;
+    font-family: Judson, 'Times New Roman', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.3;
+}
+
+.checkboxwrap input[type=radio]:checked + .label_purchase_type {
+    background-image: url(//d39hwjxo88pg52.cloudfront.net/volaire/images/products/main/checkbox_on.png);
+}
+
+.label_price_txt_1 {
+    display: inline-block;
+    width: 10rem;
+}
+.label_price_txt_2 {
+    display: inline-block;
+    padding-right: .5rem;
+}
+.label_price_txt_3 {
+    font-size: .9375rem;
+}
+
+.subsription_details {
+    font-size: .875rem;
+    margin-top: -.4rem;
+    padding-right: 10%;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
 .product_various_info {
     padding-bottom: 1.7rem;
 }
@@ -3667,6 +3707,15 @@ h2.products_hdr {
     font-weight: normal;
     padding-bottom: 0;
 }
+.details_hdr2 {
+    line-height: 1.1;
+}
+
+.details_sm {
+    font-size: .875rem;
+    padding-bottom: .8rem;
+}
+
 h4.kit_includes_hdr {
     font-size: .95rem;
     font-weight: bold;
@@ -3691,6 +3740,9 @@ ul.kit_includes li:before {
 
 .productdetail_text_top p.narrow {
     width: 80%;
+}
+.productdetail_text_top p.narrow2 {
+    width: 96%;
 }
 
 .product_features {

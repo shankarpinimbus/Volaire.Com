@@ -236,12 +236,14 @@ namespace CSWeb
                         Session["skuID_AddtoCart"] = "120";
                         lblRetailPrice.Text = "29.95";
                         ddlQuantity.Enabled = false;
+                        subscriptionDetails.Visible = true;
                     }
                     else
                     {
                         Session["skuID_AddtoCart"] = "161";
                         lblRetailPrice.Text = "39.95";
                         ddlQuantity.Enabled = true;
+                        subscriptionDetails.Visible = false;
                     }
                 }
             }

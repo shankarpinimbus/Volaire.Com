@@ -109,8 +109,14 @@
                     $<asp:Label runat="server" ID="retailPrice"></asp:Label>
                 </asp:Panel>
                 <asp:Panel runat="server" CssClass="kitprices" Visible="false" ID="pnlKitSelection">
-                    <asp:RadioButton runat="server" GroupName="KitSelection" ID="rbOneTime" AutoPostBack="True" OnCheckedChanged="OnCheckedChanged"/><p> One Time Payment $39.95</p>
-                    <asp:RadioButton runat="server" GroupName="KitSelection" ID="rbAuto" Checked="True" AutoPostBack="True" OnCheckedChanged="OnCheckedChanged"/><p> Auto Delivery $29.95</p>
+                    <div class="checkboxwrap">
+                        <asp:RadioButton runat="server" GroupName="KitSelection" ID="rbOneTime" AutoPostBack="True" OnCheckedChanged="OnCheckedChanged"/>
+                        <label for="rbOneTime" class="label_purchase_type"><span class="label_price_txt_1">One Time Payment: </span> <span class="label_price_txt_2">$39.95</span></label>
+                    </div>
+                    <div class="checkboxwrap">
+                        <asp:RadioButton runat="server" GroupName="KitSelection" ID="rbAuto" Checked="True" AutoPostBack="True" OnCheckedChanged="OnCheckedChanged"/>
+                        <label for="rbAuto" class="label_purchase_type"><span class="label_price_txt_1">Auto Delivery: </span> <span class="label_price_txt_2 red">$29.95*</span> <span class="label_price_txt_3 red">(Save an additional 20% + FREE S&H)</span></label>
+                    </div>
                 </asp:Panel>
                 <div class="product_various_info clearfix">
                     <span class="product_add-price">
@@ -149,6 +155,9 @@
                     
                 </div>
                 <div class="productdetail_text_top">
+                    <asp:Panel runat="server" CssClass="subsription_details" Visible="false" ID="subscriptionDetails">
+                        <p>*In approximately 4 weeks, you'll automatically receive a new 90-day supply and then every 3 months thereafter for only $29.95 and $3.33 S&H per month. Cancel anytime.</p>
+                    </asp:Panel>
                     <asp:Literal ID="ltDetailDescription" runat="server" />
                 </div>
             </div>
