@@ -89,7 +89,8 @@
                     <p class="orderbtn"><asp:Button runat="server" id="btnAddtoCart" CssClass="btn_ordernow btn_ordernow-1" CommandArgument="133" OnClick="btnAddtoCartE2_OnClick"/></p>
                 </div>
                 
-            </div></div>
+            </div>
+</div>
                 
                 
                 
