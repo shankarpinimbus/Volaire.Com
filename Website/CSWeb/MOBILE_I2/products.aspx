@@ -1,6 +1,6 @@
 ﻿<%@Page Language="C#" AutoEventWireup="true" Inherits="CSWeb.Mobile.products" EnableSessionState="True" %>
 <%@ Register Src="/shared/UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
-<%@ Register Src="/shared/UserControls/Products_Mobile_I2.ascx" TagName="Products" TagPrefix="uc" %>
+<%@ Register Src="/shared/UserControls/Products_I2.ascx" TagName="Products" TagPrefix="uc" %>
 <%@ Register Src="/shared/UserControls/Header_Mobile.ascx" TagName="Header" TagPrefix="uc" %>
 <%@ Register Src="/shared/UserControls/Footer_Mobile.ascx" TagName="Footer" TagPrefix="uc" %>
 <!doctype html>

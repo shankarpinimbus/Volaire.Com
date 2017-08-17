@@ -158,11 +158,13 @@
 
                             </div>
                         </div>
-                        <asp:Panel runat="server" CssClass="subscription_details" Visible="false" ID="subscriptionDetails">
-                        <p>*In approximately 4 weeks, you'll automatically receive a new 90-day supply and then every 3 months thereafter for only $29.95 and $3.33 S&H per month. Cancel anytime.</p>
-                    </asp:Panel>
+                        <div class="product_desc">
+                            <asp:Panel runat="server" CssClass="subscription_details" Visible="false" ID="subscriptionDetails">
+                                <p>*In approximately 4 weeks, you'll automatically receive a new 90-day supply and then every 3 months thereafter for only $29.95 and $3.33 S&H per month. Cancel anytime.</p>
+                            </asp:Panel>
                             
-                        <asp:Literal ID="ltDetailDescription" runat="server" />
+                            <asp:Literal ID="ltDetailDescription" runat="server" />
+                        </div>
                     </div>
 
                 </div>
