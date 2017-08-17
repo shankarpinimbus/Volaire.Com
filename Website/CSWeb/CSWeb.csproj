@@ -575,6 +575,7 @@
     <Content Include="Shared\UserControls\Header_Mobile.ascx" />
     <Content Include="Shared\UserControls\Products_I2.ascx" />
     <Content Include="Shared\UserControls\Products.ascx" />
+    <Content Include="Shared\UserControls\Products_Mobile_I2.ascx" />
     <Content Include="Shared\UserControls\Products_Mobile.ascx" />
     <Content Include="Shared\UserControls\ShippingBillingCreditForm.ascx" />
     <Content Include="Shared\UserControls\CheckoutThankYouModule.ascx" />
@@ -1417,6 +1418,13 @@
     <Compile Include="MOBILE_G2\products.aspx.designer.cs">
       <DependentUpon>products.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MOBILE_I2\productdetail.aspx.cs">
+      <DependentUpon>productdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE_I2\productdetail.aspx.designer.cs">
+      <DependentUpon>productdetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="NoCart\400.aspx.cs">
       <DependentUpon>400.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1511,6 +1519,13 @@
     </Compile>
     <Compile Include="Shared\UserControls\Products.ascx.designer.cs">
       <DependentUpon>Products.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UserControls\Products_Mobile_I2.ascx.cs">
+      <DependentUpon>Products_Mobile_I2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\UserControls\Products_Mobile_I2.ascx.designer.cs">
+      <DependentUpon>Products_Mobile_I2.ascx</DependentUpon>
     </Compile>
     <Compile Include="Shared\UserControls\Products_Mobile.ascx.cs">
       <DependentUpon>Products_Mobile.ascx</DependentUpon>

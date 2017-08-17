@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductDetail.aspx.cs"
-    Inherits="CSWeb.Mobile.ProductDetail" MaintainScrollPositionOnPostback="true" EnableSessionState="True" %>
+    Inherits="CSWeb.Mobile.ProductDetail_MobileI2" MaintainScrollPositionOnPostback="true" EnableSessionState="True" %>
 
 <%@ Register Src="/Shared/UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
 <%@ Register Src="/Shared/UserControls/Header_Mobile.ascx" TagName="Header" TagPrefix="uc" %>
@@ -110,6 +110,17 @@
                         Retail Price :
                             $<asp:Label runat="server" ID="retailPrice"></asp:Label>
                     </asp:Panel>
+                     <asp:Panel runat="server" CssClass="kitprices" Visible="false" ID="pnlKitSelection">
+                    <div class="checkboxwrap">
+                        <asp:RadioButton runat="server" GroupName="KitSelection" ID="rbOneTime" AutoPostBack="True" OnCheckedChanged="OnCheckedChanged"/>
+                        <label for="rbOneTime" class="label_purchase_type"><span class="label_price_txt_1">One Time Purchase: </span> <span class="label_price_txt_2">$39.95</span></label>
+                    </div>
+                    <div class="checkboxwrap">
+                        <asp:RadioButton runat="server" GroupName="KitSelection" ID="rbAuto" Checked="True" AutoPostBack="True" OnCheckedChanged="OnCheckedChanged"/>
+                        <label for="rbAuto" class="label_purchase_type"><span class="label_price_txt_1">Auto Delivery: </span> <span class="label_price_txt_2 red">$29.95*</span> <span class="label_price_txt_3 red">(Save an additional 20% + FREE S&H)</span></label>
+                    </div>
+                </asp:Panel>
+               
 
 <div class="productdetail_price" style="display: none;">
     <span class="price_label">Product Value: </span><%--$<asp:Label ID="lblRetailPrice" runat="server" />--%>
@@ -145,7 +156,9 @@
 
                             </div>
                         </div>
-                        
+                        <asp:Panel runat="server" CssClass="subscription_details" Visible="false" ID="subscriptionDetails">
+                        <p>*In approximately 4 weeks, you'll automatically receive a new 90-day supply and then every 3 months thereafter for only $29.95 and $3.33 S&H per month. Cancel anytime.</p>
+                    </asp:Panel>
                             
                         <asp:Literal ID="ltDetailDescription" runat="server" />
                     </div>
