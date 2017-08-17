@@ -34,6 +34,8 @@
 <body>
 
 <form runat="server">
+    <asp:ScriptManager runat="server"></asp:ScriptManager>
+    <asp:UpdatePanel runat="server"> <ContentTemplate>
 <uc:Header runat="server" />
     <asp:HiddenField id="buttonClicked" runat="server"/>
 <div id="page_products">
@@ -230,6 +232,7 @@
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("bottomcta.html")%>
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
 <uc:Footer ID="Footer1" runat="server" />
+    </ContentTemplate></asp:UpdatePanel>
 </form>
     <uc:TrackingPixels ID="TrackingPixels" runat="server" />
 </body>
