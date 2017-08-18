@@ -67,6 +67,24 @@ namespace CSWeb.Shared.UserControls {
         protected global::System.Web.UI.WebControls.Panel pnlTotal;
         
         /// <summary>
+        /// holderTaxAndShipping control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder holderTaxAndShipping;
+        
+        /// <summary>
+        /// horizon_dots control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl horizon_dots;
+        
+        /// <summary>
         /// pnlDiscount control.
         /// </summary>
         /// <remarks>
@@ -130,22 +148,13 @@ namespace CSWeb.Shared.UserControls {
         protected global::System.Web.UI.WebControls.Panel pnlDiscountCode;
         
         /// <summary>
-        /// holderTaxAndShipping control.
+        /// imgOffer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder holderTaxAndShipping;
-        
-        /// <summary>
-        /// horizon_dots control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl horizon_dots;
+        protected global::System.Web.UI.WebControls.Panel imgOffer;
         
         /// <summary>
         /// hPromoCode control.
@@ -227,15 +236,6 @@ namespace CSWeb.Shared.UserControls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkIncludeRushShipping;
-        
-        /// <summary>
-        /// imgOffer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel imgOffer;
         
         /// <summary>
         /// ltOfferDetail control.

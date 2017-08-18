@@ -130,7 +130,7 @@
                     <asp:Panel runat="server" ID="pnlDiscountCode" DefaultButton="btnRemoveDiscount" Visible="False">
                     </asp:Panel>
 
-                    <p style="padding-top: 1.2rem;"><a href="Products" class="btn_continueshopping">Continue Shopping</a></p>
+                    <%--<p style="padding-top: 1.2rem;"><a href="Products" class="btn_continueshopping">Continue Shopping</a></p>--%>
                 </div>
                 
                     
