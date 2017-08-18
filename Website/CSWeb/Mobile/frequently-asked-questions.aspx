@@ -70,7 +70,7 @@
             We accept debit and credit cards including Visa, MasterCard, American Express, and Discover. We do not accept cash, personal checks, money orders, or cash-on-delivery.</dd>
 
         <dt>SALES TAX</dt>
-        <dd>Sales tax will be applied to orders shipping to California, Georgia, Ohio, and West Virginia.</dd>
+        <dd>Sales tax will be applied to orders shipping to California, Georgia, Ohio, Rhode Island and West Virginia.</dd>
 
         <dt>ORDER PROCESSING AND SHIPPING</dt>
         <dd>Orders are typically processed within 1-2 business days, and delivered within 5-7 days, Monday through Saturday, excluding holidays. </dd>
