@@ -694,8 +694,8 @@ namespace CSWeb.Shared.UserControls
 
             Address shippingAddress = new Address();
 
-            if (pnlShippingAddress.Visible)
-            {
+            if (pnlBillingInfo.Visible)
+            { 
                 shippingAddress.StateProvinceId = Convert.ToInt32(ddlShippingState.SelectedValue);
                 shippingAddress.CountryId = Convert.ToInt32(ddlShippingCountry.SelectedValue);
                 shippingAddress.ZipPostalCode = txtShippingZipCode.Text;
@@ -1183,7 +1183,7 @@ namespace CSWeb.Shared.UserControls
 
         protected void ZipCode_TextChanged(object sender, System.EventArgs e)
         {
-            if (pnlShippingAddress.Visible)
+            if (pnlBillingInfo.Visible)
             {
                 if (CommonHelper.EnsureNotNull(txtShippingZipCode.Text) == String.Empty)
                 {
