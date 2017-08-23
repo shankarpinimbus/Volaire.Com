@@ -446,7 +446,7 @@ namespace CSWeb.Shared.UserControls
                         bool flag = false;
                         foreach (Sku sku1 in ClientOrderData.CartInfo.CartItems)
                         {
-                            if (sku1.SkuId >= 138) // g2 individual products
+                            if ((sku1.SkuId >= 138 && sku1.SkuId <= 152) || sku1.SkuId == 161) // g2 individual products
                             {
                                 flag = true;
                             }

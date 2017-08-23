@@ -147,7 +147,7 @@ namespace CSWebBase
             bool mainKit = false;
             foreach (Sku sku in CartContext1.CartInfo.CartItems)
             {
-                if (sku.SkuId>=138 && sku.SkuId<=152) // g2 individual products
+                if ((sku.SkuId>=138 && sku.SkuId<=152) || sku.SkuId == 161) // g2 individual products
                 {
                     flag = true;
                     subTotal += sku.InitialPrice * sku.Quantity;

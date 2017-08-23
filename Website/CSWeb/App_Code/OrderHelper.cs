@@ -1151,6 +1151,28 @@ namespace CSWeb
         {
             Cart cartObject = new Cart();
             ClientCartContext CartContext = (ClientCartContext)HttpContext.Current.Session["ClientOrderData"];
+            if (CartContext.CartInfo != null)
+            {
+                cartObject = CartContext.CartInfo;
+                List<int> RemoveSku = new List<int>();
+                foreach (Sku sku in CartContext.CartInfo.CartItems)
+                {
+                    if ((sku.SkuId >= 138 && sku.SkuId <= 152) || sku.SkuId == 161) // g2 individual products
+                    {
+                        
+                    }
+                    else
+                    {
+                        RemoveSku.Add(sku.SkuId);
+                    }
+                }
+                foreach (int skuid in RemoveSku)
+                {
+                    cartObject.RemoveSku(skuid);
+                }
+
+            }
+            
             if (CartContext.CustomerInfo != null && CartContext.CustomerInfo.ShippingAddress != null)
                 cartObject.ShippingAddress = CartContext.CustomerInfo.ShippingAddress;
             CartContext.CartInfo = cartObject;
