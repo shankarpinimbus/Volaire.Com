@@ -53,7 +53,7 @@
 
 <section class="container offer-content offer-30-day-kit clearfix">
     <div class="offer-left">
-        <p class="p1 text-center">Save yourself some time (and <span style="border-bottom: #222 solid 1px;">money</span>!) and upgrade to the <strong class="iblock">Mega Volume Collection &ndash;</strong> the same 4 great products in our&nbsp;JUMBO sizes. his way you’ll be saving more, have  <strong class="iblock">3 easy payments of $29.95,</strong> and be  <strong>covered for 90 days.</strong></p>
+        <p class="p1 text-center">Save yourself some time (and <span style="border-bottom: #222 solid 1px;">money</span>!) and upgrade to the <strong class="iblock">Mega Volume Collection &ndash;</strong> the same 4 great products in our&nbsp;JUMBO sizes. This way you’ll be saving more, have  <strong class="iblock">3 easy payments of $29.95,</strong> and be  <strong>covered for 90 days.</strong></p>
 
         <div class="offer-cta">
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/price-90-day-kit.png" alt="Just 3 Payments of $29.95* + Free Shipping" class="block" />

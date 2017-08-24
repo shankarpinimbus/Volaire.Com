@@ -35,7 +35,7 @@
     
 
     <div class="contentpad2" style="margin-top: .6rem; padding-bottom: 1rem;">
-        <p class="p1 text-center">Save yourself some time (and <span style="border-bottom: #222 solid 1px;">money</span>!) and upgrade to the <strong class="iblock">Mega Volume Collection &ndash;</strong> the same 4 great products in our&nbsp;JUMBO sizes. his way you’ll be saving more, have  <strong class="iblock">3 easy payments of $29.95,</strong> and be  <strong>covered for 90 days.</strong></p>
+        <p class="p1 text-center">Save yourself some time (and <span style="border-bottom: #222 solid 1px;">money</span>!) and upgrade to the <strong class="iblock">Mega Volume Collection &ndash;</strong> the same 4 great products in our&nbsp;JUMBO sizes. This way you’ll be saving more, have  <strong class="iblock">3 easy payments of $29.95,</strong> and be  <strong>covered for 90 days.</strong></p>
 
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
 
