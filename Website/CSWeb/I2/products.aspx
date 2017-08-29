@@ -15,8 +15,7 @@
         (function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/itGFmlqh7twU16FRq19FlRC31nQvBIQab9nDaHuQ/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();
     </script>
 </head>
-<body class="products_page">
-
+<body class="products_page products_page_i2">
 <form runat="server" id="fm1">
     <uc:Header runat="server"/>
 
@@ -24,7 +23,7 @@
 	<div class="shop_products_1">
     	<div class="container">
         	<div class="shop_productstop">
-            	<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products/hero-products-2-1.jpg" alt="BEST offer! Volume Essentials Collection - Get TV Offer!" class="block" />
+            	<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products/hero-products-2-1b.jpg" alt="BEST offer! Volume Essentials Collection - Get TV Offer!" class="block" />
                 <a href="tv-introductory-offer" class="home1link">Get TV Offer</a>
             </div>
         </div>
