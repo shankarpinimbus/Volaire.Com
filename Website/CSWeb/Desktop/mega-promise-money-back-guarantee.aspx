@@ -7,8 +7,8 @@
 <html>
 <head runat="server">
 <meta charset="utf-8">
-<title>Volaire™ 30-day Mega Promise Guarantee</title>
-<meta name="description" content="Learn more about Volaire Mega Promise 30-day Money Back Guarantee" />
+<title>Volaire™ 60-day Mega Promise Guarantee</title>
+<meta name="description" content="Learn more about Volaire Mega Promise 60-day Money Back Guarantee" />
 <meta name="keywords" content="" />
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-top.html")%>
 </head>
