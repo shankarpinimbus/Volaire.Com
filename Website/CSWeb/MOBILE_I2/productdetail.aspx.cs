@@ -94,6 +94,7 @@ namespace CSWeb.Mobile
 
             if (!Page.IsPostBack)
             {
+                Session["skuID_AddtoCart"] = null;
                 BindControls();
             }
 

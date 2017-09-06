@@ -94,6 +94,7 @@ namespace CSWeb
 
             if (!Page.IsPostBack)
             {
+                Session["skuID_AddtoCart"] = null;
                 BindControls();
             }
 
@@ -246,6 +247,9 @@ namespace CSWeb
                         subscriptionDetails.Visible = false;
                     }
                 }
+                
+                    
+                
             }
         }
 
