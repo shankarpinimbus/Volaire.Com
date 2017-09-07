@@ -20,6 +20,7 @@
 <form runat="server" id="fm_credit">
 <div class="container">
 <uc:Header ID="Header" runat="server" />
+    <div class="header-spacer"></div>
     <section class="steps_hdr  gradient" runat="server" id="steps_hdr_id">
         <div class="container clearfix">
             <div class="steps_hdr_step step_a step_on step_on_1b">
