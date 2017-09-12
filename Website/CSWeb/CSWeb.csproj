@@ -335,6 +335,7 @@
     <Content Include="B4\index.aspx" />
     <Content Include="Desktop\AddProduct.aspx" />
     <Content Include="Desktop\care-and-usage.aspx" />
+    <Content Include="Desktop\SendOrderToKlaviyo.aspx" />
     <Content Include="Desktop\terms-and-conditions.aspx" />
     <Content Include="Desktop\privacy-policy.aspx" />
     <Content Include="Desktop\volaire-customer-care.aspx" />
@@ -1173,6 +1174,7 @@
     </Compile>
     <Compile Include="Admin\UserControls\PageControl.ascx.cs">
       <DependentUpon>PageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\UserControls\RangeDateControl.ascx.cs">
       <DependentUpon>RangeDateControl.ascx</DependentUpon>
@@ -1254,6 +1256,13 @@
     <Compile Include="Desktop\AddProduct.aspx.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Desktop\SendOrderToKlaviyo.aspx.cs">
+      <DependentUpon>SendOrderToKlaviyo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Desktop\SendOrderToKlaviyo.aspx.designer.cs">
+      <DependentUpon>SendOrderToKlaviyo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Desktop\tangle-angel-brush.aspx.cs">
       <DependentUpon>tangle-angel-brush.aspx</DependentUpon>
@@ -1720,6 +1729,7 @@
     </Compile>
     <Compile Include="NoCart\UserControls\PageControl.ascx.cs">
       <DependentUpon>PageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NoCart\UserControls\RangeDateControl.ascx.cs">
       <DependentUpon>RangeDateControl.ascx</DependentUpon>
