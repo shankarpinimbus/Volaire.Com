@@ -193,15 +193,20 @@ namespace CSWeb.Shared.UserControls
 
                 if (mainKit)
                 {
+                   // dfreeGift.Visible = true;
+                    //imgOffer.Visible = true;
+                    //hPromoCode.Visible = true;
+                    //pnlDiscount.Visible = false;
+                    //if (CartContext.CartInfo.DiscountCode.Length > 0)
+                    //{
+                    //    CartContext.CartInfo.DiscountCode = "";
+                    //    CartContext.CartInfo.Compute();
+                    //}
                     dfreeGift.Visible = true;
-                    imgOffer.Visible = true;
-                    hPromoCode.Visible = true;
-                    pnlDiscount.Visible = false;
-                    if (CartContext.CartInfo.DiscountCode.Length > 0)
-                    {
-                        CartContext.CartInfo.DiscountCode = "";
-                        CartContext.CartInfo.Compute();
-                    }
+                    imgOffer.Visible = false;
+                    hPromoCode.Visible = false;
+                    pnlDiscount.Visible = true;
+                  
                 }
                 else
                 {
@@ -216,7 +221,15 @@ namespace CSWeb.Shared.UserControls
                 }
                 rptShoppingCart.DataSource = CartContext.CartInfo.CartItems.FindAll(x => x.Visible == true);
                 rptShoppingCart.DataBind();
-
+                //If the main kit is removed,since the promo code 'first15' must be applied to only catalog products, calling the function again to update the discount
+                if (!string.IsNullOrEmpty(CartContext.CartInfo.DiscountCode))
+                {
+                    if (CartContext.CartInfo.DiscountCode.ToUpper() == "FIRST15")
+                    {
+                        CustomDiscountCalculator cd = new CustomDiscountCalculator();
+                        cd.CalculateDiscount(CartContext.CartInfo);
+                    }
+                }
                 pnlTotal.Visible = true;
 
                 lblSubtotal.Text = String.Format("${0:0.00}", CartContext.CartInfo.SubTotal);
@@ -285,17 +298,35 @@ namespace CSWeb.Shared.UserControls
             {
                 CartContext.CartInfo.DiscountCode = txtPromotion.Text.ToLower().Trim();
                 lblCouponMsg.Visible = true;
-                if (CartContext.CartInfo.CalculateDiscount())
+                if (CartContext.CartInfo.DiscountCode.ToUpper() == "FIRST15")
                 {
-
-                    lblCouponMsg.ForeColor = System.Drawing.Color.Green;
-                    lblCouponMsg.Text = "Thank You! Your discount has been applied.";
+                    CustomDiscountCalculator cd = new CustomDiscountCalculator();
+                    if (cd.CalculateDiscount(CartContext.CartInfo))
+                    {
+                        lblCouponMsg.ForeColor = System.Drawing.Color.Green;
+                        lblCouponMsg.Text = "Thank You! Your discount has been applied.";
+                    }
+                    else
+                    {
+                        CartContext.CartInfo.DiscountCode = ""; // Making sure that we dont store any invalid code so they dont get passed to motivational.
+                        lblCouponMsg.ForeColor = System.Drawing.Color.Red;
+                        lblCouponMsg.Text = "Invalid Promo Code";
+                    }
                 }
                 else
                 {
-                    CartContext.CartInfo.DiscountCode = ""; // Making sure that we dont store any invalid code so they dont get passed to motivational.
-                    lblCouponMsg.ForeColor = System.Drawing.Color.Red;
-                    lblCouponMsg.Text = "Invalid Promo Code";
+                    if (CartContext.CartInfo.CalculateDiscount())
+                    {
+
+                        lblCouponMsg.ForeColor = System.Drawing.Color.Green;
+                        lblCouponMsg.Text = "Thank You! Your discount has been applied.";
+                    }
+                    else
+                    {
+                        CartContext.CartInfo.DiscountCode = ""; // Making sure that we dont store any invalid code so they dont get passed to motivational.
+                        lblCouponMsg.ForeColor = System.Drawing.Color.Red;
+                        lblCouponMsg.Text = "Invalid Promo Code";
+                    }
                 }
             }
             else

@@ -112,7 +112,7 @@
     <asp:PlaceHolder runat="server" ID="holderTaxAndShipping">
         <div class="horizontal_dots" runat="server" id="horizon_dots">
         </div>
-         <asp:PlaceHolder runat="server" ID="pnlDiscount" Visible="false">
+         <asp:PlaceHolder runat="server" ID="pnlDiscount" Visible="true">
                 <div class="form_line shoppingcart_btns clearfix">
                     <span>
                         <asp:Label ID="lblCouponMsg" ForeColor="Red" runat="server" Visible="false" Text="<br /><br />Your Shopping Cart is currently empty <br /><br />"></asp:Label></span>

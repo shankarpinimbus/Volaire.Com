@@ -150,7 +150,8 @@ namespace CSWeb.Shared.UserControls
                 if (mainKitPresent)
                 {
                     dagree.Visible = true;
-                    pnlPromoCode.Visible = true;
+                    //pnlPromoCode.Visible = true;
+                    pnlPromoCode.Visible = false;
                 }
                 else
                 {

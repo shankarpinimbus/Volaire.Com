@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="ContactDAL.cs" />
     <Compile Include="AbTestingVersionUpdate.cs" />
+    <Compile Include="CustomDiscountCalculator.cs" />
     <Compile Include="CustomTaxCalculator.cs" />
     <Compile Include="CustomUnityDependencyResolver.cs" />
     <Compile Include="DuplicateOrderDAL.cs" />
