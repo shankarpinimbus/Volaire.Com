@@ -13,6 +13,7 @@ using CSCore.Utils;
 using CSBusiness.OrderManagement;
 using CSBusiness.Resolver;
 using CSBusiness.ShoppingManagement;
+using System.Configuration;
 
 namespace CSWeb.Desktop
 {
@@ -46,6 +47,22 @@ namespace CSWeb.Desktop
                 }
                 ScriptManager.RegisterStartupScript(this, this.GetType(), String.Format("OrderId_{0}", orders[i].OrderId), String.Format("SendOrder('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}');", orders[i].Email, orders[i].CustomerInfo.FirstName, orders[i].CustomerInfo.LastName, "Website", orders[i].CreatedDate, orders[i].OrderId, totalOrdersByCustomerCount, totalAmountOfOrdersByCustomer, totalItemCodes, orders[i].DiscountCode == null ? "" : orders[i].DiscountCode), true);
             }
+            try
+            {
+                if (Orders.Value == "")
+                {
+                    CSCore.EmailHelper.SendEmail("info@conversionsystems.com", ConfigurationManager.AppSettings["AdminEmail"], "Volaire - Daily Klaviyo Reconciliation", string.Format("{0} Orders sent sucessfully to Klaviyo", orders.Count), false);
+                }
+                else
+                {
+                    CSCore.EmailHelper.SendEmail("info@conversionsystems.com", ConfigurationManager.AppSettings["AdminEmail"], "Volaire - Daily Klaviyo Reconciliation", "Transmission Process to Klaviyo Failed" + Orders.Value, false);
+                }
+            }
+            catch (Exception)
+            {
+                //;
+            }
+            
         }
     }
 }

@@ -22,28 +22,33 @@
             
 
         function SendOrder(email, firstname, lastname, ordersource, orderdate, ordernumber, totalorders, totalamount, totalitems, promocode) {
+            try {
+                _learnq = _learnq || [];
 
-            _learnq = _learnq || [];
+                // Identifying a person and tracking special Klaviyo properties.
+                _learnq.push(['identify', {
+                    '$email': email,
+                    '$first_name': firstname,
+                    '$last_name': lastname
+                }]);
 
-            // Identifying a person and tracking special Klaviyo properties.
-            _learnq.push(['identify', {
-                '$email': email,
-                '$first_name': firstname,
-                '$last_name': lastname
-            }]);
+                // Adding custom properties. Note that Klaviyo understands different data types.
+                _learnq.push(['identify', {
+                    'OrderSource': ordersource,
+                    'OrderDate': orderdate,
+                    'OrderNumber': ordernumber,
+                    'TotalOrdersTillDate': totalorders,
+                    'TotalAmountofOrder': totalamount,
+                    'TotalItemCodes': totalitems,
+                    'PromoCode': promocode,
+                }]);
 
-            // Adding custom properties. Note that Klaviyo understands different data types.
-            _learnq.push(['identify', {
-                'OrderSource': ordersource,
-                'OrderDate':orderdate,
-                'OrderNumber': ordernumber,
-                'TotalOrdersTillDate': totalorders,
-                'TotalAmountofOrder': totalamount,
-                'TotalItemCodes': totalitems,
-                'PromoCode': promocode,
-             }]);
-          
-            _learnq.push(['track', 'Fulfillment Order']);
+                _learnq.push(['track', 'Fulfillment Order']);
+            } catch (e) {
+                var myHidden = document.getElementById('<%= Orders.ClientID %>');
+                myHidden.value = e.message + "Error";
+            }
+            
         }
     </script> 
 </head>
