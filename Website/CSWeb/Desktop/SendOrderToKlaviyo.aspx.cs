@@ -14,6 +14,7 @@ using CSBusiness.OrderManagement;
 using CSBusiness.Resolver;
 using CSBusiness.ShoppingManagement;
 using System.Configuration;
+using System.Net.Mail;
 
 namespace CSWeb.Desktop
 {
@@ -51,18 +52,50 @@ namespace CSWeb.Desktop
             {
                 if (Orders.Value == "")
                 {
-                    CSCore.EmailHelper.SendEmail("info@conversionsystems.com", ConfigurationManager.AppSettings["AdminEmail"], "Volaire - Daily Klaviyo Reconciliation", string.Format("{0} Orders sent sucessfully to Klaviyo", orders.Count), false);
+                    //CSCore.EmailHelper.SendEmail("info@conversionsystems.com", ConfigurationManager.AppSettings["AdminEmail"], "Volaire - Daily Klaviyo Reconciliation", string.Format("{0} Orders sent sucessfully to Klaviyo", orders.Count), false);
+                    //Prepare Mail Message
+                    MailMessage _oMailMessage = new MailMessage("info@vendocommerce.com", ConfigurationManager.AppSettings["AdminEmail"], "Volaire - Daily Klaviyo Reconciliation", string.Format("{0} Orders sent sucessfully to Klaviyo", orders.Count));
+                    _oMailMessage.IsBodyHtml = true;
+                    SendMail(_oMailMessage);
                 }
                 else
                 {
-                    CSCore.EmailHelper.SendEmail("info@conversionsystems.com", ConfigurationManager.AppSettings["AdminEmail"], "Volaire - Daily Klaviyo Reconciliation", "Transmission Process to Klaviyo Failed" + Orders.Value, false);
+                    //CSCore.EmailHelper.SendEmail("info@conversionsystems.com", ConfigurationManager.AppSettings["AdminEmail"], "Volaire - Daily Klaviyo Reconciliation", "Transmission Process to Klaviyo Failed" + Orders.Value, false);
+                     MailMessage _oMailMessage = new MailMessage("info@vendocommerce.com", ConfigurationManager.AppSettings["AdminEmail"], "Volaire - Daily Klaviyo Reconciliation", "Transmission Process to Klaviyo Failed" + Orders.Value);
+                    _oMailMessage.IsBodyHtml = true;
+                    SendMail(_oMailMessage);
                 }
+                
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 //;
             }
             
+        }
+
+        public static bool SendMail(MailMessage oMsg)
+        {
+
+            bool bResult = false;
+
+            try
+            {
+                SmtpClient client;
+                oMsg.BodyEncoding = System.Text.Encoding.UTF8;
+                oMsg.CC.Clear();
+                oMsg.Bcc.Clear();
+                client = new SmtpClient();
+                client.Send(oMsg);
+                bResult = true;
+
+            }
+            catch (Exception)
+            {
+
+                bResult = false;
+            }
+            return bResult;
         }
     }
 }
