@@ -37,6 +37,7 @@
         <div class="home-slider">
             <div class="slick-slider">
                 <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Angie-1.jpg" alt="See amazing before and after photos of real VOLAIRE users to see their instant and lasting volume after one use!" /></div>
+                <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-cyndi-back.jpg" alt="" /></div>
                 <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-yvette.jpg" alt="" /></div>
                 <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/slide-cyndi.jpg" alt="" /></div>
                 <div><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/before-after/Dawn-1.jpg" alt="" /></div>
