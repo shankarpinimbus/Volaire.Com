@@ -178,7 +178,7 @@ namespace CSWeb.Shared.UserControls
                     ClientOrderData.CartInfo.RemoveSku(0);
                 }
             }
-            int qty = 1;
+            int qty = 0;
             if (CartContext.CartInfo.CartItems.Count > 0)
             {
                 bool mainKit = false;
@@ -188,7 +188,7 @@ namespace CSWeb.Shared.UserControls
                     if (sku.GetAttributeValue<bool>("isMainKit", false))
                     {
                         mainKit = true;
-                        qty = sku.Quantity;
+                        qty += sku.Quantity;
                     }
                 }
 
