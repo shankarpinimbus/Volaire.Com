@@ -61,7 +61,9 @@
         <a href="tv-introductory-offer" class="maplink homelink4">Save 40% - Get Offer!</a>
     </div>
 
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_i2/Richard-Ward-Volume.jpg" alt="Top hairstylists use VOLAIRE to give their clients lasting and effortless volume. Have salon quality hair everyday." class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_i2/Richard-Ward-Volume1.jpg" alt="Top hairstylists use VOLAIRE to give their clients lasting and effortless volume. Have salon quality hair everyday." class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_i2/kristin-davis-diy.jpg" alt="I just use Volaire myself, at home! No tools, no styling products, no salon visit. JUst Volaire! – Kristin Davis, Age 51 " class="block full" />
+    
 
     <div class="home6">
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home6.png" alt="STYLE to the fullest. See how VOLAIRE™ rises above the rest!" class="block full" />
