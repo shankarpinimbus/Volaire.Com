@@ -473,14 +473,14 @@ h2.tvoffer-upsells-hdr .part2 {
 .home-slider .btn_next {
     position: absolute;
     top: 109%;
-    right: 4%;
+    right: 2%;
     cursor: pointer;
     width: 4%;
 }
 .home-slider .btn_prev {
     position: absolute;
     top: 109%;
-    left: 4%;
+    left: 2%;
     cursor: pointer;
     width: 4%;
 }
@@ -497,10 +497,10 @@ p.note {
 
 .home-slider .slick-dots {
     list-style: none;
-    width: 85%;
+    width: 90%;
     position: absolute;
     top: 110%;
-    left: 7.5%;
+    left: 4.8%;
     text-align: center;
     line-height: 1.1;
 }
