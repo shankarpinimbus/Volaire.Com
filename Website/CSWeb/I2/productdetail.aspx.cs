@@ -393,6 +393,7 @@ namespace CSWeb
                 Session["skuID_AddtoCart"] = "120";
                 lblRetailPrice.Text = "29.95";
                 ddlQuantity.Enabled = false;
+                ddlQuantity.SelectedValue = "1";
                 subscriptionDetails.Visible = true;
             }
             else
