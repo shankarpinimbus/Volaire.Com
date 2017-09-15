@@ -118,7 +118,7 @@ namespace CSWeb.Shared.UserControls
 
             if (!IsPostBack)
             {
-                BindEmptyCart();
+                //BindEmptyCart();
                 BindCountries(true);
                 BindShippingCountries(true);
                 BindRegions();
