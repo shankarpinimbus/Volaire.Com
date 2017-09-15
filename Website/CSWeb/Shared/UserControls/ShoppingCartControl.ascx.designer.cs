@@ -40,6 +40,15 @@ namespace CSWeb.Shared.UserControls {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl dfreeGift;
         
         /// <summary>
+        /// ltQty control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltQty;
+        
+        /// <summary>
         /// ltImagePath control.
         /// </summary>
         /// <remarks>

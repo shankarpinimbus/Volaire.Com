@@ -178,6 +178,7 @@ namespace CSWeb.Shared.UserControls
                     ClientOrderData.CartInfo.RemoveSku(0);
                 }
             }
+            int qty = 1;
             if (CartContext.CartInfo.CartItems.Count > 0)
             {
                 bool mainKit = false;
@@ -187,7 +188,7 @@ namespace CSWeb.Shared.UserControls
                     if (sku.GetAttributeValue<bool>("isMainKit", false))
                     {
                         mainKit = true;
-
+                        qty = sku.Quantity;
                     }
                 }
 
@@ -206,7 +207,9 @@ namespace CSWeb.Shared.UserControls
                     imgOffer.Visible = false;
                     hPromoCode.Visible = false;
                     pnlDiscount.Visible = true;
-                  
+                    ltQty.Text = qty.ToString();
+
+
                 }
                 else
                 {
