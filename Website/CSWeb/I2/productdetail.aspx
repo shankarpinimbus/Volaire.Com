@@ -112,11 +112,11 @@
                 </asp:Panel>
                 <asp:Panel runat="server" CssClass="kitprices" Visible="false" ID="pnlKitSelection">
                     <div class="checkboxwrap">
-                        <asp:RadioButton runat="server" GroupName="KitSelection" ID="rbOneTime" AutoPostBack="True" OnCheckedChanged="OnCheckedChanged"/>
+                        <asp:RadioButton runat="server" GroupName="KitSelection" ID="rbOneTime" Checked="True" AutoPostBack="True" OnCheckedChanged="OnCheckedChanged"/>
                         <label for="rbOneTime" class="label_purchase_type"><span class="label_price_txt_1">One Time Purchase: </span> <span class="label_price_txt_2">$39.95</span></label>
                     </div>
                     <div class="checkboxwrap">
-                        <asp:RadioButton runat="server" GroupName="KitSelection" ID="rbAuto" Checked="True" AutoPostBack="True" OnCheckedChanged="OnCheckedChanged"/>
+                        <asp:RadioButton runat="server" GroupName="KitSelection" ID="rbAuto" AutoPostBack="True" OnCheckedChanged="OnCheckedChanged"/>
                         <label for="rbAuto" class="label_purchase_type"><span class="label_price_txt_1">Auto Delivery: </span> <span class="label_price_txt_2 red">$29.95*</span> <span class="label_price_txt_3 red">(Save an additional 20% + FREE S&H)</span></label>
                     </div>
                 </asp:Panel>

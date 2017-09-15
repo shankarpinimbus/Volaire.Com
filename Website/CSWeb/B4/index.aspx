@@ -112,10 +112,10 @@
         </div>
         <div class="clear">
             <div class="home4c">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/kristin-davis-just-volaire.png" alt="I just use Volaire myself, at home! No tools, no styling products, no salon visit. JUst Volaire! – Kristin Davis, Age 51 " class="block" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/kristin-davis-just-volaire.png" alt="I just use Volaire myself, at home! No tools, no styling products, no salon visit. JUst Volaire! – Kristin Davis, Age 51 " class="block" />
             </div>
             <div class="home4d">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/survey-95-percent-volaire-more-body-and-bounce.png" alt="95% of women who used Volaire said theirhair had more body and bounce.†" class="block" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/survey-95-percent-volaire-more-body-and-bounce.png" alt="95% of women who used Volaire said theirhair had more body and bounce.†" class="block" />
             </div>
         </div>
     </div>

@@ -50,7 +50,7 @@
         <a href="tv-introductory-offer"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/cta-volume-essentials.jpg" class="block full" alt="VOLAIRE Volume Essentials Collection - Get Our Best Offer!" /></a>
     </div>
     
-    <%--<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-women-agree.png" alt="After just 1 use, 100% of womenusing VOLAIRE agreed instant lift and volume.† † As reported by women in a 21-person company sponsored study." class="block full" />--%>
+    <%--<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-women-agree.png" alt="After just 1 use, 100% of womenusing VOLAIRE agreed instant lift and volume.† † As reported by women in a 21-person company sponsored study." class="block full" />--%>
     <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Air-Magic-Spray.jpg" alt="Best texturizing spray and hair spray for hair volume. Instantly get two times the volume over hair without VOLAIRE" class="block full" />
     <div class="contentpad2" style="z-index: 4;">
         <p>Thickens and texturizes hair, reviving limp locks with INSTANT volume</p>
@@ -58,7 +58,7 @@
         <p>Extends your style so you can go longer between washings</p>
     </div>
     
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-ingredients.jpg" alt="Help revive the look of lifeless hair and restore a vibrant luster with natural conditioning, including Avocado Oil, Essential Fatty Acids, and Red & Green Algae" class="block full" style="margin-top: -40%; position: relative; z-index: 3;" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-ingredients.jpg" alt="Help revive the look of lifeless hair and restore a vibrant luster with natural conditioning, including Avocado Oil, Essential Fatty Acids, and Red & Green Algae" class="block full" style="margin-top: -40%; position: relative; z-index: 3;" />
     
     <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Luke-Oconnor-1.jpg" alt="With VOLAIRE you get gorgeous, shiny,healthy-looking, bouncy hair with tons of volume that lasts all day long" class="block full"  />
 

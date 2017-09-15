@@ -72,7 +72,7 @@
     </div>
     
     
-    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home7.png" alt="95% of Women who used VOLAIRE said theirhair had more body and bounce.†  †As reported by women in a 21-person company sponsored study." class="block full" />
+    <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home7.png" alt="95% of Women who used VOLAIRE said theirhair had more body and bounce.†  †As reported by women in a 21-person company sponsored study." class="block full" />
     
 
 
