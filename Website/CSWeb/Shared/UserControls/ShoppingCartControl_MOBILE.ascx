@@ -95,7 +95,7 @@
         </div>
 
         <div class="tcell cart_qty">
-            &nbsp;
+            &nbsp;<asp:Literal runat="server" ID="ltQty" ></asp:Literal>
         </div>
         <%--<div class="tcell cart_unitprice">
             FREE
