@@ -234,6 +234,7 @@ namespace CSWeb.Shared.UserControls
 
         public void BindControls()
         {
+            
             clientData = (ClientCartContext)Session["ClientOrderData"];
             ltOfferDetails.Text = OrderHelper.GetOfferDatails();
 

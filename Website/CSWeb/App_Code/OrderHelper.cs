@@ -1673,11 +1673,11 @@ namespace CSWeb
                     {
                         if (orderData.CustomerInfo.ShippingAddress.CountryId == 46 && orderData.CustomerInfo != null && orderData.CustomerInfo.ShippingAddress != null)
                         {
-                            strDynamic = sku.GetAttributeValue<string>("OfferDetails", string.Empty).Replace("3.33", "6.33");
+                            strDynamic += sku.GetAttributeValue<string>("OfferDetails", string.Empty).Replace("3.33", "6.33");
                         }
                         else
                         {
-                            strDynamic = sku.GetAttributeValue<string>("OfferDetails", string.Empty);
+                            strDynamic += sku.GetAttributeValue<string>("OfferDetails", string.Empty);
                         }
 
                     }
@@ -1696,11 +1696,11 @@ namespace CSWeb
                         {
                             if (clientData.CustomerInfo != null && clientData.CustomerInfo.ShippingAddress != null && clientData.CustomerInfo.ShippingAddress.CountryId == 46)
                             {
-                                strDynamic = cartItem.GetAttributeValue<string>("OfferDetails", string.Empty).Replace("3.33", "6.33");
+                                strDynamic += cartItem.GetAttributeValue<string>("OfferDetails", string.Empty).Replace("3.33", "6.33");
                             }
                             else
                             {
-                                strDynamic = cartItem.GetAttributeValue<string>("OfferDetails", string.Empty);
+                                strDynamic += cartItem.GetAttributeValue<string>("OfferDetails", string.Empty);
                             }
 
                         }
