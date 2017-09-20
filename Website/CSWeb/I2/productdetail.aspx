@@ -3,6 +3,8 @@
 <%@ Register Src="/Shared/UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
 <%@ Register Src="/Shared/UserControls/Header.ascx" TagName="Header" TagPrefix="uc" %>
 <%@ Register Src="/Shared/UserControls/Footer.ascx" TagName="Footer" TagPrefix="uc" %>
+<%@ Register TagPrefix="ajaxToolkit" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit, Version=4.1.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" %>
+
 <!doctype html>
 <html>
 <head runat="server">
@@ -212,6 +214,23 @@
     <asp:Image ID="bigImage4" runat="server" />
 </div>
 <!-- end content area -->
+    <asp:LinkButton ID="btn" runat="server" style="visibility: hidden;" /> 
+    <!-- dummy button for use by modal popup -->
+    <ajaxToolkit:ModalPopupExtender runat="server" ID="mpePopup" TargetControlID="btn"
+                                    PopupControlID="pnlModalPopUpPanel" PopupDragHandleControlID="pnlModalPopUpPanel" />
+
+    <asp:Panel ID="pnlModalPopUpPanel" runat="server" CssClass="modalPopup">
+     
+     <h1>Only 1 Auto-Ship Order Allowed</h1>
+        
+
+        <p>
+            <asp:LinkButton ID="btnCancelModalPopup" CssClass="btn btn-danger" runat="server" CausesValidation="false" OnClick="btnCancelModalPopup_Click"><i class="icon-ban-circle"></i> Close</asp:LinkButton>
+        
+            <asp:LinkButton ID="btnSaveOrder" runat="server" Text="Save" Visible="False" OnClick="btnSaveOrder_Click" CssClass="btn btn-success"><i class="icon-save"></i> Save</asp:LinkButton> 
+        </p>
+   
+    </asp:Panel>
 
 
 <!-- spacer so bottomcta doesn't cover up content above -->
@@ -219,6 +238,7 @@
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("bottomcta.html")%>
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
 <uc:Footer ID="Footer1" runat="server" />
+
     </ContentTemplate></asp:UpdatePanel>
 </form>
     <uc:TrackingPixels ID="TrackingPixels" runat="server" />
