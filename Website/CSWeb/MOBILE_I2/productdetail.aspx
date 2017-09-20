@@ -15,20 +15,7 @@
     </script>
      <script type="text/javascript">
 
-         $(document).ready(function () {
-             if (buttonClicked.value == "" || buttonClicked.value == undefined) {
-                 $("#bigSizeSelectButton").addClass('btn_on');
-                 $("#smallSizeSelectButton").removeClass('btn_on');
-             }
-             else if (buttonClicked.value == "small") {
-                 $("#bigSizeSelectButton").removeClass('btn_on');
-                 $("#smallSizeSelectButton").addClass('btn_on');
-             }
-             else if (buttonClicked.value == "big") {
-                 $("#bigSizeSelectButton").addClass('btn_on');
-                 $("#smallSizeSelectButton").removeClass('btn_on');
-             }
-         });
+         //this was moved to pageLoad function in global_mobile.js
 
     </script>
 </head>
