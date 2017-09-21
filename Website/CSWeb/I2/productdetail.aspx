@@ -220,15 +220,17 @@
                                     PopupControlID="pnlModalPopUpPanel" PopupDragHandleControlID="pnlModalPopUpPanel" />
 
     <asp:Panel ID="pnlModalPopUpPanel" runat="server" CssClass="modalPopup">
-     
-     <h1>Only 1 Auto-Ship Order Allowed</h1>
-        
-
-        <p>
-            <asp:LinkButton ID="btnCancelModalPopup" CssClass="btn btn-danger" runat="server" CausesValidation="false" OnClick="btnCancelModalPopup_Click"><i class="icon-ban-circle"></i> Close</asp:LinkButton>
-        
+        <div class="autoship_modal_bg"></div>
+        <div class="autoship_modal">
+            <div class="autoship_modal_close text-right">
+                <p><asp:LinkButton ID="btnCancelModalPopup" CssClass="btn btn-danger" runat="server" CausesValidation="false" OnClick="btnCancelModalPopup_Click"><i class="icon-ban-circle"></i> Close</asp:LinkButton></p>
+            </div>
+            <h1>Only 1 Auto-Ship Order Allowed</h1>
+        <div>
             <asp:LinkButton ID="btnSaveOrder" runat="server" Text="Save" Visible="False" OnClick="btnSaveOrder_Click" CssClass="btn btn-success"><i class="icon-save"></i> Save</asp:LinkButton> 
-        </p>
+        </div>
+        </div>
+     
    
     </asp:Panel>
 
