@@ -219,20 +219,20 @@ jQuery(document).ready(function ($) {
 //use to resolve postback issues
 function pageLoad() {
     // add class for selected size on Product Detail pages
-    var buttonClicked = ""
-    if (buttonClicked.value == "" || buttonClicked.value == undefined) {
-        $("#bigSizeSelectButton").addClass('btn_on');
-        $("#smallSizeSelectButton").removeClass('btn_on');
+    if (typeof buttonClicked != "undefined") {
+        if (buttonClicked.value == "" || buttonClicked.value == undefined) {
+            $("#bigSizeSelectButton").addClass('btn_on');
+            $("#smallSizeSelectButton").removeClass('btn_on');
+        }
+        else if (buttonClicked.value == "small") {
+            $("#bigSizeSelectButton").removeClass('btn_on');
+            $("#smallSizeSelectButton").addClass('btn_on');
+        }
+        else if (buttonClicked.value == "big") {
+            $("#bigSizeSelectButton").addClass('btn_on');
+            $("#smallSizeSelectButton").removeClass('btn_on');
+        }
     }
-    else if (buttonClicked.value == "small") {
-        $("#bigSizeSelectButton").removeClass('btn_on');
-        $("#smallSizeSelectButton").addClass('btn_on');
-    }
-    else if (buttonClicked.value == "big") {
-        $("#bigSizeSelectButton").addClass('btn_on');
-        $("#smallSizeSelectButton").removeClass('btn_on');
-    }
-
 
     $(function () {
         jQuery.validator.addMethod('EmailValidation', function (phone_number, element) {
