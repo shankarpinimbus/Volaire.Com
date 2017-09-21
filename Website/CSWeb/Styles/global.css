@@ -3928,9 +3928,12 @@ ul.product_steps li {
     z-index: 100;
     background: rgba(0, 0, 0, .3);
 }
-.autoship_modal_close p {
-    padding-bottom: .5rem;
+.autoship_modal_close {
+    position: absolute;
+    top: -13px;
+    right: -13px;
 }
+
 .autoship_modal {
     padding: 1rem 2rem 1.2rem;
     background: #fff;

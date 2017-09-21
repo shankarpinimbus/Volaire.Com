@@ -15,9 +15,9 @@
         (function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/itGFmlqh7twU16FRq19FlRC31nQvBIQab9nDaHuQ/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();
     </script>
     <script type="text/javascript">
+      $(document).ready(function () {
         
-        //this was moved to pageLoad function in global.js
-
+      });
     </script>
 </head>
 <body>
@@ -223,7 +223,7 @@
         <div class="autoship_modal_bg"></div>
         <div class="autoship_modal">
             <div class="autoship_modal_close text-right">
-                <p><asp:LinkButton ID="btnCancelModalPopup" CssClass="btn btn-danger" runat="server" CausesValidation="false" OnClick="btnCancelModalPopup_Click"><i class="icon-ban-circle"></i> Close</asp:LinkButton></p>
+                <asp:LinkButton ID="btnCancelModalPopup" CssClass="btn btn-danger" runat="server" CausesValidation="false" OnClick="btnCancelModalPopup_Click"><img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/xclose.png" alt="Close"></asp:LinkButton>
             </div>
             <h1>Only 1 Auto-Ship Order Allowed</h1>
         <div>

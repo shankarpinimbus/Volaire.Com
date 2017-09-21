@@ -231,7 +231,7 @@
          <div class="autoship_modal_bg"></div>
             <div class="autoship_modal">
                 <div class="autoship_modal_close text-right">
-                    <p><asp:LinkButton ID="btnCancelModalPopup" CssClass="btn btn-danger" runat="server" CausesValidation="false" OnClick="btnCancelModalPopup_Click"><i class="icon-ban-circle"></i> Close</asp:LinkButton></p>
+                    <p><asp:LinkButton ID="btnCancelModalPopup" CssClass="btn btn-danger" runat="server" CausesValidation="false" OnClick="btnCancelModalPopup_Click"><img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/xclose.png" alt="Close"></asp:LinkButton></p>
                 </div>
                 <h1>Only 1 Auto-Ship Order Allowed</h1>
             <div>

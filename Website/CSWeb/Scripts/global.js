@@ -211,18 +211,22 @@ function pageLoad() {
     //    $(this).addClass("btn_on");
     //});
     // add class for selected size on Product Detail pages
+
     var buttonClicked = ""
     if (buttonClicked.value == "" || buttonClicked.value == undefined) {
         $("#bigSizeSelectButton").addClass('btn_on');
         $("#smallSizeSelectButton").removeClass('btn_on');
+        alert(buttonClicked.value);
     }
     else if (buttonClicked.value == "small") {
         $("#bigSizeSelectButton").removeClass('btn_on');
         $("#smallSizeSelectButton").addClass('btn_on');
+        alert(buttonClicked.value);
     }
     else if (buttonClicked.value == "big") {
         $("#bigSizeSelectButton").addClass('btn_on');
         $("#smallSizeSelectButton").removeClass('btn_on');
+        alert(buttonClicked.value);
     }
 
     $(function () {
