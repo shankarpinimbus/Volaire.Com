@@ -54,14 +54,14 @@ namespace CSWeb.Desktop
                 {
                     //CSCore.EmailHelper.SendEmail("info@conversionsystems.com", ConfigurationManager.AppSettings["AdminEmail"], "Volaire - Daily Klaviyo Reconciliation", string.Format("{0} Orders sent sucessfully to Klaviyo", orders.Count), false);
                     //Prepare Mail Message
-                    MailMessage _oMailMessage = new MailMessage("info@vendocommerce.com", ConfigurationManager.AppSettings["AdminEmail"], "Volaire - Daily Klaviyo Reconciliation", string.Format("{0} Orders sent sucessfully to Klaviyo", orders.Count));
+                    MailMessage _oMailMessage = new MailMessage("info@vendocommerce.com", "ravi@vendocommerce.com,bvav@vendocommerce.com,kevin@vendocommerce.com", "Volaire - Daily Klaviyo Reconciliation", string.Format("{0} Orders sent sucessfully to Klaviyo", orders.Count));
                     _oMailMessage.IsBodyHtml = true;
                     SendMail(_oMailMessage);
                 }
                 else
                 {
                     //CSCore.EmailHelper.SendEmail("info@conversionsystems.com", ConfigurationManager.AppSettings["AdminEmail"], "Volaire - Daily Klaviyo Reconciliation", "Transmission Process to Klaviyo Failed" + Orders.Value, false);
-                     MailMessage _oMailMessage = new MailMessage("info@vendocommerce.com", ConfigurationManager.AppSettings["AdminEmail"], "Volaire - Daily Klaviyo Reconciliation", "Transmission Process to Klaviyo Failed" + Orders.Value);
+                    MailMessage _oMailMessage = new MailMessage("info@vendocommerce.com", "ravi@vendocommerce.com,bvav@vendocommerce.com,kevin@vendocommerce.com", "Volaire - Daily Klaviyo Reconciliation", "Transmission Process to Klaviyo Failed" + Orders.Value);
                     _oMailMessage.IsBodyHtml = true;
                     SendMail(_oMailMessage);
                 }
