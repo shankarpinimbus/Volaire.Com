@@ -266,10 +266,19 @@ namespace CSWeb.Mobile
                     clientData.CartInfo.ShippingAddress = new CSBusiness.CustomerManagement.Address();
                 }
             }
+            bool showPopUP = false;
             if (Session["skuID_AddtoCart"] != null && Session["skuID_AddtoCart"].ToString() != "") // adding dynamic product to cart based on selected size of product
             {
                 var id = Convert.ToInt32(Session["skuID_AddtoCart"].ToString());
-                clientData.CartInfo.AddItem(id, Convert.ToInt32(ddlQuantity.SelectedValue), true, false);
+                if (OrderHelper.AutoshipCart() && id == 120)
+                {
+                    showPopUP = true;
+                }
+                else
+                {
+                    clientData.CartInfo.AddItem(id, Convert.ToInt32(ddlQuantity.SelectedValue), true, false);
+                }
+
             }
             else if (SkuId > 0)
             {
@@ -281,6 +290,7 @@ namespace CSWeb.Mobile
             }
 
 
+
             //clientData.CartInfo.ShippingMethod = UserShippingMethodType.Rush;
             SiteBasePage.SetCatalogShipping();
             clientData.CartInfo.Compute();
@@ -288,7 +298,25 @@ namespace CSWeb.Mobile
 
             Session["ClientOrderData"] = clientData;
 
-            Response.Redirect("cart.aspx");
+            if (showPopUP)
+            {
+                mpePopup.Show();
+            }
+            else
+            {
+                Response.Redirect("cart.aspx");
+            }
+
+        }
+
+        protected void btnCancelModalPopup_Click(object sender, EventArgs e)
+        {
+            mpePopup.Hide();
+        }
+
+        protected void btnSaveOrder_Click(object sender, EventArgs e)
+        {
+            mpePopup.Hide();
         }
         protected void smallSizeSelectButton_Click(object sender, EventArgs e)
         {
