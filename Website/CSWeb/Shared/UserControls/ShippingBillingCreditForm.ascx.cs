@@ -167,7 +167,7 @@ namespace CSWeb.Shared.UserControls
                     foreach (Sku sku in clientData.CartInfo.CartItems)
                     {
                         sku.LoadAttributeValues();
-                        if (sku.GetAttributeValue<bool>("isMainKit", false))
+                        if (sku.GetAttributeValue<bool>("isMainKit", false) && sku.SkuId != 120)
                         {
                             mainKit = true;
                         }
