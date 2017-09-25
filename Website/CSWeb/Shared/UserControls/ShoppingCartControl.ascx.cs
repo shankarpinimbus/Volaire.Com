@@ -194,20 +194,20 @@ namespace CSWeb.Shared.UserControls
 
                 if (mainKit)
                 {
-                   // dfreeGift.Visible = true;
-                    //imgOffer.Visible = true;
-                    //hPromoCode.Visible = true;
-                    //pnlDiscount.Visible = false;
-                    //if (CartContext.CartInfo.DiscountCode.Length > 0)
-                    //{
-                    //    CartContext.CartInfo.DiscountCode = "";
-                    //    CartContext.CartInfo.Compute();
-                    //}
                     dfreeGift.Visible = true;
-                    imgOffer.Visible = false;
-                    hPromoCode.Visible = false;
-                    pnlDiscount.Visible = true;
-                    ltQty.Text = qty.ToString();
+                    imgOffer.Visible = true;
+                    hPromoCode.Visible = true;
+                    pnlDiscount.Visible = false;
+                    if (CartContext.CartInfo.DiscountCode.Length > 0)
+                    {
+                        CartContext.CartInfo.DiscountCode = "";
+                        CartContext.CartInfo.Compute();
+                    }
+                    //dfreeGift.Visible = true;
+                    //imgOffer.Visible = false;
+                    //hPromoCode.Visible = false;
+                    //pnlDiscount.Visible = true;
+                    //ltQty.Text = qty.ToString();
 
 
                 }
