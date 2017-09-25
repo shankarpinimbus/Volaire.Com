@@ -655,6 +655,7 @@ p.note {
     width: 45.6%;
     text-align: right;
 }
+
 .home4c {
     float: left;
     width: 49.7%;
@@ -692,6 +693,33 @@ p.note {
     text-shadow: 0 0 0 rgba(0, 0, 0, .6);
     margin-bottom: 1rem;
     padding-right: 5%;
+}
+
+.home4b-j2 {
+    float: right;
+    width: 33.2%;
+}
+.home4b-j2 .products-ingredients {
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    width: 98%;
+    padding: 1rem 2% 0;
+    border: #a99784 solid 1px;
+    background: #fff;
+    font-size: 1.175rem;
+    font-weight: 300;
+    line-height: 1.55;
+}
+
+.home4b-j2 .products-ingredients h1 {
+    line-height: 1;
+    padding-bottom: .2rem;
+}
+.products-ingredients h3 {
+    font-size: 1.625rem;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 .volaire-rises-img {
@@ -1000,7 +1028,7 @@ p.note {
 .products-2-txt {
     top: 38%;
     left: 27%;
-    width: 45%;
+    width: 40%;
 }
 .products-3-txt {
     top: 40.5%;
@@ -1045,9 +1073,30 @@ p.note {
     font-weight: 300;
     line-height: 1.55;
 }
+.j2-about .products-ingredients {
+    top: 73%;
+    left: .5%;
+    width: 33%;
+    padding: .8rem 3% 0;
+    overflow: visible;
+    z-index: 10;
+    border: #a99784 solid 1px;
+    background: #fff;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.55;
+}
 
+.about-products-cta {
+    position: absolute;
+    top: 14%;
+    right: 0;
+    display: block;
+    z-index: 4;
+    width: 28.5%;
+}
 
-
+.about-products-cta a:hover img {opacity: .85;}
 
 .products-quotes {
     padding: 2.5rem 0;
@@ -4045,7 +4094,7 @@ ul.product_steps li {
 .order_bottom_txt p.p1, .order_bottom_txt2 p.p1 {font-size: 16px;}
 
 
-.products-txt h1 {font-size: 42px;}
+.products-txt h1 {font-size: 38px;}
 .products-txt h2 {
     font-size: 26px;
     padding-bottom: .7rem;
@@ -4056,6 +4105,13 @@ ul.product_steps li {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.45;
+}
+
+.products-ingredients h3 {
+    font-size: 1.5rem;
+}
+.j2-about .products-ingredients {
+    font-size: 1rem;
 }
 
 }
@@ -4304,12 +4360,35 @@ ul.nav li.tablet-last {margin-right: -6px;}
     font-size: 14px;
 }
 .products-2-txt {width: 50%;}
+.j2 .products-2-txt {width: 42%;}
 .products-ingredients {
     padding: .7rem 2% 0;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.45;
 }
+
+.j2-about .products-ingredients {
+    font-size: .875rem;
+    padding: .5rem 1.5% 0;
+}
+
+
+.home4b-j2 {
+    width: 35%;
+    margin-right: 2%;
+}
+.home4b-j2 .products-ingredients {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.products-ingredients h3 {
+    font-size: 1.4rem;
+}
+
+
 
 
 }

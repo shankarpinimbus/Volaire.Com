@@ -19,7 +19,7 @@
 <script src="//d39hwjxo88pg52.cloudfront.net/scripts/slick/slick.min.js"></script>
 </head>
  
-<body>
+<body class="j2">
 <form runat="server" id="fm1">
 <div class="container">
 <uc:Header ID="Header" runat="server" />
@@ -66,13 +66,16 @@
     
 
     <div class="home6">
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/home6.png" alt="STYLE to the fullest. See how VOLAIRE™ rises above the rest!" class="block full" />
-
-        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/Sink-Swim.jpg" alt="VOLAIRE AirWeight Technology at work. Light, lathering volumizing shampoo that does not weigh the hair down" class="block full" />
-        <p class="text-center"><a href="//d39hwjxo88pg52.cloudfront.net/volaire/video/sink-or-swim.mp4" class="watch_demo fancy_video">Watch Demo</a></p>
-
-        <%--<p class="p1"><span class="brand-txt">VOLAIRE</span> uses <strong class="med">AIRWEIGHT TECHNOLOGY</strong><br />
-            to infuse hair with tiny bubbles of positively charged microspheres filled with nutrient-rich ingredients that attach along each hair shaft to <strong class="med">create extra space between strands</strong> – so you get truly incredible volume – without adding any weight. </p>--%>
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/coconut-avocado-kelp-algae.jpg" class="block home6_imgredients" alt="Volaire infuses Coconut, Avocado Oil, and Kelp and Algae Extracts" />
+        <div class="products-ingredients text-center brown2">
+            <h1><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/v.png" alt="Volaire" /></h1>
+            <h3><span class="caps med">Hair Therapy</span></h3>
+            <p>Formulated with a powerful infusion of <br />
+                <span class="med ital">Coconut, Avocado Oil</span> and <span class="med ital">Kelp and Algae Extracts,</span> <br />
+                VOLAIRE fortifies and nourishes hair promoting <br />
+                healthy, fuller-looking 
+                hair with softness, and shine.</p>
+        </div>
     </div>
     
     

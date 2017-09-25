@@ -534,6 +534,47 @@ p.note {
     text-shadow: 0 0 0 rgba(0, 0, 0, .5);
 }
 
+.j2 .home6 {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.home6_imgredients {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.j2 .products-ingredients {
+    padding: .5rem 2% 0;
+    border: #a99784 solid 1px;
+    background: #fff;
+    font-size: 11px;
+    font-size: 3.55vw;
+    font-weight: 300;
+    line-height: 1.55;
+    margin-bottom: 2rem;
+}
+
+.j2 .products-ingredients p {
+    font-size: 11px;
+    font-size: 3.55vw;
+}
+
+.j2 .products-ingredients h1 {
+    line-height: 1;
+    width: 25%;
+    margin: 0 auto;
+    padding-bottom: .2rem;
+}
+.j2 .products-ingredients h3 {
+    font-size: 18px;
+    font-size: 5vw;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
+
 .brand-txt {
     font-family: Judson, 'Times New Roman', serif;
     font-size: 110%;

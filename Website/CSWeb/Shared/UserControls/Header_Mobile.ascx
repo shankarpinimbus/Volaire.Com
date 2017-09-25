@@ -72,7 +72,7 @@
                 <%
                    { %><li><a href="products" class="nav_products">Products</a></li>
                 <% }
-                   else if (versionName.ToLower().Contains("h2") || versionName.ToLower().Contains("i2"))
+                   else if (versionName.ToLower().Contains("h2") || versionName.ToLower().Contains("i2") || versionName.ToLower().Contains("j2"))
                    { %>
                 <li><a href="products" class="nav-products">Products</a></li>
                 <li><a href="hair-volumizing-products" class="nav-products">About Our Products</a></li>

@@ -384,6 +384,7 @@
     <Content Include="H2\tv-introductory-offer.aspx" />
     <Content Include="I2\bottomcta.html" />
     <Content Include="I2\Cart.aspx" />
+    <Content Include="I2\hair-volumizing-products.aspx" />
     <Content Include="I2\index.aspx" />
     <Content Include="I2\mega-volume-collection.aspx" />
     <Content Include="I2\productdetail.aspx" />
@@ -392,6 +393,8 @@
     <Content Include="I2\shine-angel-brush.aspx" />
     <Content Include="I2\tangle-angel-brush.aspx" />
     <Content Include="I2\tv-introductory-offer.aspx" />
+    <Content Include="J2\hair-volumizing-products.aspx" />
+    <Content Include="J2\index.aspx" />
     <Content Include="Mobile\volaire-customer-care.aspx" />
     <Content Include="Mobile\privacy-policy.aspx" />
     <Content Include="Mobile\terms-and-conditions.aspx" />
@@ -429,6 +432,7 @@
     <Content Include="MOBILE_H2\tv-introductory-offer.aspx" />
     <Content Include="MOBILE_I2\bottomcta.html" />
     <Content Include="MOBILE_I2\Cart.aspx" />
+    <Content Include="MOBILE_I2\hair-volumizing-products.aspx" />
     <Content Include="MOBILE_I2\index.aspx" />
     <Content Include="MOBILE_I2\mega-volume-collection.aspx" />
     <Content Include="MOBILE_I2\productdetail.aspx" />
@@ -437,6 +441,8 @@
     <Content Include="MOBILE_I2\shine-angel-brush.aspx" />
     <Content Include="MOBILE_I2\tangle-angel-brush.aspx" />
     <Content Include="MOBILE_I2\tv-introductory-offer.aspx" />
+    <Content Include="MOBILE_J2\hair-volumizing-products.aspx" />
+    <Content Include="MOBILE_J2\index.aspx" />
     <Content Include="NoCart\400.aspx" />
     <Content Include="NoCart\footer.html" />
     <Content Include="NoCart\contact.aspx" />

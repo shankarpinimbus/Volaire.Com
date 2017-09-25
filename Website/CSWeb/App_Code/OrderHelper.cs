@@ -1797,7 +1797,7 @@ namespace CSWeb
             else
             {
                 if (!version.Equals("mobile_aa1") && !version.Equals("mobile_ee2")
-                     && !version.Equals("mobile_i2"))
+                     && !version.Equals("mobile_i2") && !version.Equals("mobile_j2"))
                 {
                     if (HttpContext.Current.Request.QueryString.Count > 0)
                         HttpContext.Current.Response.Redirect("/mobile_i2/index?" + HttpContext.Current.Request.QueryString);
