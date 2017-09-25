@@ -21,14 +21,14 @@ namespace CSWeb.Desktop
             {
                 HttpContext.Current.Response.Redirect("/index");
             }
-            if (OrderHelper.GetVersionName().ToLower().Contains("i2"))
+            if (OrderHelper.GetVersionName().ToLower().Contains("i2") || OrderHelper.GetVersionName().ToLower().Contains("j2"))
             {
                 var mainKit = false;
                 ClientCartContext clientData = (ClientCartContext)Session["ClientOrderData"];
                 foreach (Sku sku in clientData.CartInfo.CartItems)
                 {
                     sku.LoadAttributeValues();
-                    if (sku.GetAttributeValue<bool>("isMainKit", false))
+                    if (sku.GetAttributeValue<bool>("isMainKit", false) && sku.SkuId != 120)
                     {
                         mainKit = true;
                     }

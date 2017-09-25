@@ -1644,6 +1644,10 @@ namespace CSWeb
                 {
                     RedirectVersion = "mobile_i2";
                 }
+                if (version.ToLower().Contains("j2"))
+                {
+                    RedirectVersion = "mobile_j2";
+                }
                 if (HttpContext.Current.Request.QueryString.Count > 0)
                 {
                     var qs = HttpUtility.ParseQueryString(HttpContext.Current.Request.QueryString.ToString());
@@ -1753,7 +1757,7 @@ namespace CSWeb
             }
             else
             {
-                if (!version.Equals("aa1") && !version.Equals("ee2") && !version.Equals("i2")) 
+                if (!version.Equals("aa1") && !version.Equals("ee2") && !version.Equals("i2") && !version.Equals("j2")) 
                 {
                     if (HttpContext.Current.Request.QueryString.Count > 0)
                         HttpContext.Current.Response.Redirect("/index?" + HttpContext.Current.Request.QueryString);

@@ -3,7 +3,7 @@
 <asp:LinkButton ID="refresh" runat="server" CausesValidation="false"></asp:LinkButton>
 
 
-<% if ( versionName.ToLower().EndsWith("i2") ) %>
+<% if ( versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("j2") ) %>
     <% { %>
                 <h1 class="shopping-cart-hdr orange"><a href="products" class="orange">Continue Shopping</a></h1>
    
@@ -142,7 +142,7 @@
     <% { %>
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/b2/cart-promo-code.png" class="fleft" />
     <% }
-                   else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("get_a1") || versionName.ToLower().EndsWith("get_aa1") ) %>
+                   else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("j2") || versionName.ToLower().EndsWith("get_a1") || versionName.ToLower().EndsWith("get_aa1") ) %>
     <% { %>
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/e2/cart-promo-code.png" class="fleft" />
     <% } else  { %>
