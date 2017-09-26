@@ -32,7 +32,8 @@ namespace CSWeb.Desktop
             {
                 OrderHelper.ChangeCart("155");
             }
-            else if (OrderHelper.GetVersionName().ToLower().Equals("i2") || OrderHelper.GetVersionName().ToLower().Equals("j2"))
+            else if (OrderHelper.GetVersionName().ToLower().Equals("i2") || OrderHelper.GetVersionName().ToLower().Equals("j2")
+                     || OrderHelper.GetVersionName().ToLower().Equals("jj2"))
             {
                 OrderHelper.ChangeCart("157");
             }
