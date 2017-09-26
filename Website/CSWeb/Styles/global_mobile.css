@@ -2537,7 +2537,19 @@ h2.products_hdr {
 .product_desc {
     margin-top: 1rem;
 }
+.yotpowrap {
+    height: 24px;
+    background: #fff url(//d39hwjxo88pg52.cloudfront.net/trydrd/images/club/stars_empty.png) no-repeat center top;
+    background-size:100%;
+    margin-right: 20px;
+    display: inline-block;
+    min-width: 3rem;
+}
 
+.yotpo-bottomline.star-clickable {background: #fff;}
+.yotpowrap .text-m {
+    display: none;
+}
 .product_various_info h3 {
     font-family: Judson, 'Times New Roman', serif;
     font-size: 18px;

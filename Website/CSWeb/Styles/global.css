@@ -3751,7 +3751,7 @@ h2.products_hdr {
 .yotpowrap {
     height: 24px;
     background: #fff url(//d39hwjxo88pg52.cloudfront.net/trydrd/images/club/stars_empty.png) no-repeat center top;
-    float: left;
+    margin-right: 20px;
 }
 
 .yotpo-bottomline.star-clickable {background: #fff;}
