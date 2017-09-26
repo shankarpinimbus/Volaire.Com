@@ -47,7 +47,7 @@
     </div>
 
     <div style="margin: 2rem 0 1rem;">
-        <a href="tv-introductory-offer"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/cta-volume-essentials.jpg" class="block full" alt="VOLAIRE Volume Essentials Collection - Get Our Best Offer!" /></a>
+        <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-women-agree.png" class="block full" alt="" />
     </div>
     
     <%--<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/products-women-agree.png" alt="After just 1 use, 100% of womenusing VOLAIRE agreed instant lift and volume.† † As reported by women in a 21-person company sponsored study." class="block full" />--%>

@@ -63,7 +63,7 @@
                 <p class="products-txt-link"><a href="products" class="caps med">&gt; Shop All Products</a></p>
             </div>
             <div class="about-products-cta">
-                <a href="tv-introductory-offer"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/cta-get-tv-offer.jpg" /></a>
+                <a href="tv-introductory-offer"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products_banner-3-1-kit.jpg" /></a>
             </div>
         </div>
         <div class="products-3 products-3b">
