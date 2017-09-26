@@ -115,7 +115,11 @@
                             <div class="product_grid_item_bottom_left">
                                 <asp:LinkButton runat="server" ID="product_anchor1b" PostBackUrl="/category.aspx">
                                     <div class="product_grid_item_review">
-                                        <div class="yotpo bottomLine yotpo-small" data-product-id="<%# DataBinder.Eval(Container.DataItem, "SkuId")%>" data-yotpo-element-id="2"> <span class="yotpo-display-wrapper" style="visibility: hidden;">  <div class="standalone-bottomline"> <div class="yotpo-bottomline pull-left  star-clickable">  <span class="yotpo-stars"> <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span><span class="yotpo-icon yotpo-icon-empty-star pull-left"></span><span class="yotpo-icon yotpo-icon-empty-star pull-left"></span><span class="yotpo-icon yotpo-icon-empty-star pull-left"></span><span class="yotpo-icon yotpo-icon-empty-star pull-left"></span> </span>   <div class="yotpo-clr"></div> </div> <div class="yotpo-clr"></div> </div>   <div class="yotpo-clr"></div> </span></div>
+                                          <div class="yotpowrap">
+                                             <div class="yotpo bottomLine"
+                                                data-product-id="<%# DataBinder.Eval(Container.DataItem, "SkuId")%>">
+                                            </div>
+                                              </div>
                                     </div>
                                 </asp:LinkButton>
                             </div>

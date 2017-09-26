@@ -3748,6 +3748,17 @@ h2.products_hdr {
     padding: .2rem .7rem;
 }
 
+.yotpowrap {
+    height: 24px;
+    background: #fff url(//d39hwjxo88pg52.cloudfront.net/trydrd/images/club/stars_empty.png) no-repeat center top;
+    float: left;
+}
+
+.yotpo-bottomline.star-clickable {background: #fff;}
+.yotpowrap .text-m {
+    display: none;
+}
+
 .productdetail_text_top p.intro {
     line-height: 1.25;
     padding-bottom: 1.7rem;
