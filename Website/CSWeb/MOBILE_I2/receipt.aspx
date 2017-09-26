@@ -19,6 +19,7 @@
 <body id="cart" class="cart_i2">
 <div class="container">
 <uc:Header ID="Header" runat="server" />
+    <div class="header-spacer"></div>
 
     <section class="steps_hdr  gradient" id="steps_hdr_id" runat="server">
         <div class="container clearfix">
