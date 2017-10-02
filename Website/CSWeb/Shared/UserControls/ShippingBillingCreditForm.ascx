@@ -468,7 +468,7 @@ $('#bfcBillingShippingCreditInfo_imgBtn').click(function() {
                                     </div>
                                     <asp:CheckBox ID="cbAgree" runat="server" CssClass="checkbox-left" Checked="false" />
                                     <label class="label-3b" for="sbcfShippingBillingCreditForm_cbAgree">
-                                        By checking this box, you are electronically signing your order, agreeing to the terms above and to our general <a href="#pop-terms" class="terms black scored">Terms and Conditions</a>, including our no-commitment auto-replenishment program, and authorizing us to charge payments to the credit card you have provided.
+                                        By checking this box, you are electronically signing your order, agreeing to the terms above and to our general <a href="#pop-terms" class="terms black scored">Terms and Conditions</a>* (including arbitration provision and the waiver of certain rights), our no commitment auto-replenishment program, and authorizing us to charge payments to the credit card you have provided. 
                     
                            
                                     </label>
