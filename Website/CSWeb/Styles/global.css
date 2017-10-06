@@ -488,6 +488,11 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
     width: 15.385%;
     height: 69.92%;
 }
+.home1bottomlink2 {
+    top: 25%;
+    right: .5%;
+    width: 20.1%;
+}
 
 .home1bottomlink:hover {
     opacity: .8;
@@ -822,6 +827,12 @@ p.note {
     top: 84%;
     left: 76.79%;
     width: 21.5%;
+    height: 14.4%;
+}
+.bottomctalink2b {
+    top: 82%;
+    left: 76.79%;
+    width: 12%;
     height: 14.4%;
 }
 .bottomctalink1:hover, 
@@ -4399,6 +4410,10 @@ ul.nav li.tablet-last {margin-right: -6px;}
     font-size: 1.4rem;
 }
 
+.offer-30-day-kit .offer-benefits {
+    margin-left: 0;
+    text-align: center;
+}
 
 
 

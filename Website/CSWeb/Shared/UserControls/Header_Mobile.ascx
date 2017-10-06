@@ -3,7 +3,7 @@
 	<section class="topbanner">
         <div class="topbanner-promo">
             <% if (versionName.ToLower().EndsWith("b2") || versionName.ToLower().EndsWith("b3") || versionName.ToLower().EndsWith("b4")) %>
-    <% { %>
+            <% { %>
                     <h2>
                     <a href="tv-introductory-offer">
                 	    <span class="part1">Save 33%</span> 
@@ -13,11 +13,9 @@
                 	    <span class="part4">VOL33</span>
                     </a>
                 </h2>
-    <% }
-        else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("j2")
-                 || versionName.ToLower().EndsWith("k2")
-            || versionName.ToLower().EndsWith("get_mobile_a1") || versionName.ToLower().EndsWith("get_mobile_aa1") )
-        { %>
+            <% }
+            else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("j2") || versionName.ToLower().EndsWith("get_mobile_a1") || versionName.ToLower().EndsWith("get_mobile_aa1") )
+            { %>
                 <h2>
                     <a href="tv-introductory-offer">
                 	    <span class="part1">Save 40%</span> 
@@ -27,7 +25,17 @@
                 	    <span class="part4">VOL40</span>
                     </a>
                 </h2>
-    <% } else  { %>
+            <% }
+            else if (versionName.ToLower().EndsWith("k2") )
+            { %>
+                <h2>
+                    <a href="tv-introductory-offer">
+                	    <span class="part2b">TV Offer Only</span> 
+                	    <span class="part3"><span style="margin-right: 2px;">|</span> </span> 
+                	    <span class="part4">Save 40%</span>
+                    </a>
+                </h2>
+            <% } else  { %>
                 <h2>
                     <a href="tv-introductory-offer">
                 	    <span class="part1">Save 40%</span> 
@@ -37,7 +45,7 @@
                 	    <span class="part4">Save40</span>
                     </a>
                 </h2>
-    <% } %>
+            <% } %>
 
         </div>
         <%--display mega collection --%>

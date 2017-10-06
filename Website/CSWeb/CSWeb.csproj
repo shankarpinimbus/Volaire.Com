@@ -395,6 +395,10 @@
     <Content Include="I2\tv-introductory-offer.aspx" />
     <Content Include="J2\hair-volumizing-products.aspx" />
     <Content Include="J2\index.aspx" />
+    <Content Include="K2\bottomcta.html" />
+    <Content Include="K2\Cart.aspx" />
+    <Content Include="K2\index.aspx" />
+    <Content Include="K2\tv-introductory-offer.aspx" />
     <Content Include="Mobile\volaire-customer-care.aspx" />
     <Content Include="Mobile\privacy-policy.aspx" />
     <Content Include="Mobile\terms-and-conditions.aspx" />
@@ -443,6 +447,9 @@
     <Content Include="MOBILE_I2\tv-introductory-offer.aspx" />
     <Content Include="MOBILE_J2\hair-volumizing-products.aspx" />
     <Content Include="MOBILE_J2\index.aspx" />
+    <Content Include="MOBILE_K2\bottomcta.html" />
+    <Content Include="MOBILE_K2\index.aspx" />
+    <Content Include="MOBILE_K2\tv-introductory-offer.aspx" />
     <Content Include="NoCart\400.aspx" />
     <Content Include="NoCart\footer.html" />
     <Content Include="NoCart\contact.aspx" />
