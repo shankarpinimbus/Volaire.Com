@@ -18,6 +18,7 @@ namespace CSWeb.Mobile.Store
         protected void Page_Load(object sender, EventArgs e)
         {
             if (OrderHelper.GetVersionName().ToLower().Contains("i2") || OrderHelper.GetVersionName().ToLower().Contains("j2")
+                || OrderHelper.GetVersionName().ToLower().Contains("k2")
                 || OrderHelper.GetVersionName().ToLower().Contains("jj2"))
             {
                 var mainKit = false;

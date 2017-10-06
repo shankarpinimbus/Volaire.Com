@@ -160,7 +160,8 @@ namespace CSWeb.Shared.UserControls
                 }
             //}
 
-                if (OrderHelper.GetVersionName().ToLower().Contains("i2") || OrderHelper.GetVersionName().ToLower().Contains("j2"))
+                if (OrderHelper.GetVersionName().ToLower().Contains("i2") || OrderHelper.GetVersionName().ToLower().Contains("j2")
+                    || OrderHelper.GetVersionName().ToLower().Contains("k2"))
                 {
                     var mainKit = false;
                     ClientCartContext clientData = (ClientCartContext)Session["ClientOrderData"];

@@ -22,6 +22,8 @@ using CSWebBase;
 using CSBusiness.CustomerManagement;
 using CSBusiness.ShoppingManagement;
 using CSData;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 
 /// <summary>
@@ -1652,6 +1654,10 @@ namespace CSWeb
                 {
                     RedirectVersion = "mobile_j2";
                 }
+                if (version.ToLower().Contains("k2"))
+                {
+                    RedirectVersion = "mobile_k2";
+                }
                 if (HttpContext.Current.Request.QueryString.Count > 0)
                 {
                     var qs = HttpUtility.ParseQueryString(HttpContext.Current.Request.QueryString.ToString());
@@ -1761,7 +1767,8 @@ namespace CSWeb
             }
             else
             {
-                if (!version.Equals("aa1") && !version.Equals("ee2") && !version.Equals("jj2") && !version.Equals("i2") && !version.Equals("j2")) 
+                if (!version.Equals("aa1") && !version.Equals("ee2") && !version.Equals("jj2") && !version.Equals("i2") && !version.Equals("j2")
+                    && !version.Equals("k2")) 
                 {
                     if (HttpContext.Current.Request.QueryString.Count > 0)
                         HttpContext.Current.Response.Redirect("/index?" + HttpContext.Current.Request.QueryString);
@@ -1801,7 +1808,7 @@ namespace CSWeb
             else
             {
                 if (!version.Equals("mobile_aa1") && !version.Equals("mobile_ee2") && !version.Equals("mobile_jj2")
-                     && !version.Equals("mobile_i2") && !version.Equals("mobile_j2"))
+                     && !version.Equals("mobile_i2") && !version.Equals("mobile_j2") && !version.Equals("mobile_k2"))
                 {
                     if (HttpContext.Current.Request.QueryString.Count > 0)
                         HttpContext.Current.Response.Redirect("/mobile_i2/index?" + HttpContext.Current.Request.QueryString);
@@ -1822,6 +1829,53 @@ namespace CSWeb
             }
             
         }
+
+        public static string getCookieString()
+        {
+            string strCookieString = "";
+            ClientCartContext clientData = (ClientCartContext)HttpContext.Current.Session["ClientOrderData"];
+            var rootObject = new RootObject();
+            var subList = new List<Subscription>();
+            //var list<Subscription> subs = new list<Subscription>();
+            rootObject.cartcount = clientData.CartInfo.ItemCount;
+            foreach (Sku sku in clientData.CartInfo.CartItems)
+            {
+                var sub = new Subscription();
+                sub.id = sku.SkuId;
+                sub.offer = sku.SkuCode;
+                subList.Add(sub);
+                //rootObject.subscriptions.Add(sub);
+            }
+            rootObject.subscriptions = subList;
+            var jsonConf = new JsonSerializerSettings
+                           {
+                               NullValueHandling = NullValueHandling.Ignore,
+                               ContractResolver = new CamelCasePropertyNamesContractResolver()
+                           };
+
+            var json = JsonConvert.SerializeObject(rootObject, jsonConf);
+            return json;
+        }
+
+       
+
+    }
+
+    public class Subscription
+    {
+        public object id { get; set; }
+        public string offer { get; set; }
+        //public string field_name { get; set; }
+        //public string field_age { get; set; }
+    }
+
+    public class RootObject
+    {
+        public int cartcount { get; set; }
+        public List<Subscription> subscriptions { get; set; }
+        //public string firstname { get; set; }
+        //public string email { get; set; }
+        //public string loggedin { get; set; }
     }
 }
 

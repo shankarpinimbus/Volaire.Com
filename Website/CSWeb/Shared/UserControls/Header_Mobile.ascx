@@ -14,8 +14,10 @@
                     </a>
                 </h2>
     <% }
-               else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("j2") || versionName.ToLower().EndsWith("get_mobile_a1") || versionName.ToLower().EndsWith("get_mobile_aa1") )
-               { %>
+        else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("j2")
+                 || versionName.ToLower().EndsWith("k2")
+            || versionName.ToLower().EndsWith("get_mobile_a1") || versionName.ToLower().EndsWith("get_mobile_aa1") )
+        { %>
                 <h2>
                     <a href="tv-introductory-offer">
                 	    <span class="part1">Save 40%</span> 
@@ -63,7 +65,8 @@
 
             <ul id="headernav" class="nav">
                 <li><a href="index">Home</a></li>
-                <% if (versionName.ToLower().Contains("g2") || versionName.ToLower().Contains("h2") || versionName.ToLower().Contains("i2") || versionName.ToLower().Contains("j2")) %>
+                <% if (versionName.ToLower().Contains("g2") || versionName.ToLower().Contains("h2") || versionName.ToLower().Contains("i2") || versionName.ToLower().Contains("j2")
+                       || versionName.ToLower().Contains("k2")) %>
                 <%
                    { %><li><a href="cart" class="nav_products">Shopping Cart</a></li>
                 <% }  %>
@@ -93,7 +96,8 @@
 </header>
 
 <div class="stickynav">
-    <% if (versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("j2")) %>
+    <% if (versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("j2")
+           || versionName.ToLower().EndsWith("k2")) %>
     <% { %>
         <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/stickynav_g2.png" alt="Menu" class="block full" />
     <% } else  { %>

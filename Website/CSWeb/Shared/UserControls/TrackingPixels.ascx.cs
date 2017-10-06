@@ -65,6 +65,8 @@ namespace CSWeb.Shared.UserControls
                 pnlGetVolaire.Visible = false;
             }
 
+          string cookieString =  OrderHelper.getCookieString();
+
         }
 
         public void SetGtmParameters()
