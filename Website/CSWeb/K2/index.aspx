@@ -31,7 +31,8 @@
             </div>
         	<div class="home1bottom">
             	<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/home-1-bottom.jpg" alt="Hair Volumizing System with AirWeight Technology" class="block">
-                <a href="tv-introductory-offer" class="home1bottomlink home1bottomlink2"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/k2/promo-code-vol-40-percent-big.png" alt="Save 40% off of Our TV Offer!" class="block" /></a>
+                <%--<a href="tv-introductory-offer" class="home1bottomlink home1bottomlink2"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/k2/promo-code-vol-40-percent-big.png" alt="Save 40% off of Our TV Offer!" class="block" /></a>--%>
+                <a href="mega-promise-money-back-guarantee" class="home1bottomlink home1bottomlink3"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/VOLAIRE-60DMBG.png"  /></a>
                 <div class="home1bottom-benefits">
                     <%# CSBusiness.DynamicVersion.Helper.IncludeFile("benefits-txt.html")%>
                 </div>

@@ -493,6 +493,11 @@ ul.nav li a:hover {text-shadow: 2px 2px 3px rgba(0, 0, 0, .3);}
     right: .5%;
     width: 20.1%;
 }
+.home1bottomlink3 {
+    top: 6%;
+    right: 5%;
+    width: 10%;
+}
 
 .home1bottomlink:hover {
     opacity: .8;

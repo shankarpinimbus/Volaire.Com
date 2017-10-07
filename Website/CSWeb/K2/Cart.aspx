@@ -35,7 +35,7 @@
 <section class="hero hero-cart-wrap gradient">
     <div class="hero-cart">
         <div class="container">
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/k2/hero-cart.jpg" alt="Volaire Hair Volumizing System - Everyday effortless volume!" class="block" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/k2/hero-cart2.jpg" alt="Volaire Hair Volumizing System - Everyday effortless volume!" class="block" />
         </div>
     </div>
 </section>
