@@ -176,7 +176,7 @@
         <% }
         else if (versionName.ToLower().EndsWith("k2") )
         { %>
-            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_k2/VOL_m_site_cart-promo-code.png" class="block" />
+            <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile_k2/cart-promo-code_40percent-instant-savings_m.png" class="block" />
         <% } else  { %>
             <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/mobile/cart-promo-code.png" class="block" />
         <% } %>
