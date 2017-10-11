@@ -493,6 +493,7 @@ namespace CSWeb.Shared.UserControls
                         BindControls();
 						if (UpdateCart != null)
 							UpdateCart(sender, e);
+                        Response.Redirect(Request.RawUrl);
                     }
                     break;
                 default:
