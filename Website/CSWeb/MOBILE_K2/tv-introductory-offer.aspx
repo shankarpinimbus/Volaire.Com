@@ -1,5 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="tv-introductory-offer.aspx.cs" Inherits="CSWeb.Mobile.tvintroductoryoffer" EnableSessionState="True" %>
 <%@ Register Src="~/Shared/UserControls/Header_Mobile.ascx" TagName="Header" TagPrefix="uc" %>
+<%@ Register Src="~/Shared/UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
 
 <!doctype html>
 <html>
@@ -52,5 +53,6 @@
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("popups.html")%>
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
 </form>
+        <uc:TrackingPixels ID="TrackingPixels" runat="server" />
 </body>
 </html>
