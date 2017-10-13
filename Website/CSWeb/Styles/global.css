@@ -3769,6 +3769,13 @@ h2.products_hdr {
     background: #fff url(//d39hwjxo88pg52.cloudfront.net/trydrd/images/club/stars_empty.png) no-repeat center top;
     margin-right: 20px;
 }
+.product_grid_item_bottom_left .yotpowrap {
+    background-position-x: left;
+    background-size: 85%;
+    margin-right: 0;
+}
+/*.product_grid_item_bottom_left .yotpo-bottomline {white-space: nowrap; background: #fff;}*/
+.product_grid_item_bottom_left .standalone-bottomline {white-space: nowrap; background: #fff; padding-bottom: .2rem;}
 
 .yotpo-bottomline.star-clickable {background: #fff;}
 .yotpowrap .text-m {
