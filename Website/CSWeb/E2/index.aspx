@@ -115,7 +115,7 @@
         </div>
         <div class="clear">
             <div class="home4c">
-                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Kristin-Davis-Quote-3.png" alt="My hair was thin and super-damaged. Then I found VOLAIRE. Now my hair is soft and full!" class="block" />
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/i2/Kristin-Davis-Quote-3.png" alt="My hair was thin and super-damaged. Then I found VOLAIRE. Now my hair is soft and full!" class="block" />
             </div>
             <div class="home4d">
                 <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/Body-Bounce.png" alt="VOLAIRE works for all hair types - long, short, curly, straight, flat, fine, thinning, color treated, or chemically-treated." class="block" />
