@@ -1161,7 +1161,7 @@ namespace CSWeb
                 List<int> RemoveSku = new List<int>();
                 foreach (Sku sku in CartContext.CartInfo.CartItems)
                 {
-                    if ((sku.SkuId >= 138 && sku.SkuId <= 152) || sku.SkuId == 161) // g2 individual products
+                    if ((sku.SkuId >= 138 && sku.SkuId <= 153) || sku.SkuId == 161) // g2 individual products
                     {
 
                     }
