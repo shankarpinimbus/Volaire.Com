@@ -241,7 +241,13 @@ namespace CSWeb.Shared.UserControls
                 lblRushShipping.Text = String.Format("${0:0.00}", CartContext.CartInfo.RushShippingCost);
                 lblOrderTotal.Text = String.Format("${0:0.00}", CartContext.CartInfo.Total);
 
+                if (CartContext.CartInfo.DiscountCode.Length > 0)
+                {
+                    pnlPromotionLabel.Visible = true;
+                    pnlPromotionalAmount.Visible = true;
 
+                    lblPromotionPrice.Text = String.Format("(${0:0.00})", CartContext.CartInfo.DiscountAmount);
+                }
                 ltOfferDetail.Text = OrderHelper.GetOfferDatails();
 
 
