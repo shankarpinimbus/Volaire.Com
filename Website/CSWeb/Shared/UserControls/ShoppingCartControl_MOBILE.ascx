@@ -141,6 +141,9 @@
                 Tax:<br />
                 S&H:<br />
                 <div style="height: .8rem"></div>
+                <asp:Panel ID="pnlPromotionLabel" runat="server" Visible="false">
+                    Discount:<br />
+                </asp:Panel>
                  <strong class="magenta">Total:</strong>
             </div>
             <div class="cart_totals_right">
@@ -148,6 +151,9 @@
                 <strong><asp:Literal runat="server" ID="lblTax"></asp:Literal></strong><br />
                 <strong><asp:Literal runat="server" ID="lblShipping"></asp:Literal></strong><br />
                 <div style="height: .8rem"></div>
+                <asp:Panel ID="pnlPromotionalAmount" runat="server" Visible="false">
+                    <asp:Label runat="server" ID="lblPromotionPrice"></asp:Label><br />
+                </asp:Panel>
                 <strong><asp:Literal runat="server" ID="lblOrderTotal"></asp:Literal></strong>
                 <asp:Literal runat="server" ID="lblRushShipping" Visible="false"></asp:Literal>
                 <table>
