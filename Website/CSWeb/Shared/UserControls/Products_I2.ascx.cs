@@ -340,6 +340,14 @@ namespace CSWeb.Store.UserControls
             }
         }
 
+        protected string GetAttributeValue(int skuID, string attributeName)
+        {
+            Sku sku = new Sku();
+            sku = CSResolve.Resolve<ISkuService>().GetSkuByID(skuID);
+            sku.LoadAttributeValues();
+            return sku.GetAttributeValue<string>(attributeName, string.Empty);
+        }
+
 
         protected void rptProducts3_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
@@ -402,7 +410,7 @@ namespace CSWeb.Store.UserControls
                     btnViewProduct.ImageUrl = "//d39hwjxo88pg52.cloudfront.net/volaire/images/products/btn_save_learn_more.png";
                 }
                 lblSize.Text = cartItem.GetAttributeValue<string>("ProductSize", String.Empty);
-
+                
                 decimal regPrice;
                 if (decimal.TryParse(cartItem.GetAttributeValue<string>("RetailPrice", cartItem.InitialPrice.ToString("n2")).Trim(), out regPrice))
                     lblRetailPrice.Text = regPrice.ToString("C");

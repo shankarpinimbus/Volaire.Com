@@ -54,7 +54,7 @@
                                     <div class="product_grid_item_review">
                                           <div class="yotpowrap">
                                              <div class="yotpo bottomLine"
-                                                data-product-id="<%# DataBinder.Eval(Container.DataItem, "SkuId")%>">
+                                                data-product-id="<%# GetAttributeValue(Convert.ToInt32(DataBinder.Eval(Container.DataItem, "SkuId")),"groupid_review")%>">
                                             </div>
                                               </div>
                                     </div>
@@ -121,7 +121,7 @@
                                     <div class="product_grid_item_review">
                                           <div class="yotpowrap">
                                              <div class="yotpo bottomLine"
-                                                data-product-id="<%# DataBinder.Eval(Container.DataItem, "SkuId")%>">
+                                                data-product-id="<%# GetAttributeValue(Convert.ToInt32(DataBinder.Eval(Container.DataItem, "SkuId")),"groupid_review")%>">
                                             </div>
                                               </div>
                                     </div>
@@ -185,13 +185,14 @@
                                 </div>
                             </div>
                         </asp:LinkButton>
+                        <asp:Literal runat="server" ID="ltGroupID" Visible="False"></asp:Literal>
                         <div class="product_grid_item_bottom clearfix">
                             <div class="product_grid_item_bottom_left">
                                 <asp:LinkButton runat="server" ID="product_anchor2b" PostBackUrl="/category.aspx">
                                    <div class="product_grid_item_review">
                                           <div class="yotpowrap">
                                              <div class="yotpo bottomLine"
-                                                data-product-id="<%# DataBinder.Eval(Container.DataItem, "SkuId")%>">
+                                                data-product-id="<%# GetAttributeValue(Convert.ToInt32(DataBinder.Eval(Container.DataItem, "SkuId")),"groupid_review")%>">
                                             </div>
                                               </div>
                                     </div>
