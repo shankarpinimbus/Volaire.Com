@@ -103,14 +103,14 @@
     <td colspan="2" style="text-align:right; padding-right: 5px;">
         SUBTOTAL:<br />
          TAX:<br />
-        <asp:Panel ID="pnlPromotionLabel" runat="server" Visible="false">
-            Discount:<br />
-        </asp:Panel>
         S&H:<br />
         <asp:Panel ID="pnlRushLabel" runat="server" Visible="false">
             Rush S &amp; H:<br />
         </asp:Panel>
         <br />
+        <asp:Panel ID="pnlPromotionLabel" runat="server" Visible="false">
+            Discount:<br />
+        </asp:Panel>
         <strong class="magenta">TOTAL:</strong>
 
     </td>
@@ -118,13 +118,13 @@
     <td>
         <strong>$<asp:Literal ID="LiteralSubTotal" runat="server"></asp:Literal></strong><br />
         $<asp:Literal ID="LiteralTax" runat="server"></asp:Literal><br />
-        <asp:Panel ID="pnlPromotionalAmount" runat="server" Visible="false">
-            <asp:Label runat="server" ID="lblPromotionPrice"></asp:Label><br />
-        </asp:Panel>
         $<asp:Literal ID="LiteralShipping" runat="server"></asp:Literal><br />
         <asp:Panel ID="pnlRush" runat="server" Visible="false">
         </asp:Panel>
         <br />
+        <asp:Panel ID="pnlPromotionalAmount" runat="server" Visible="false">
+            <asp:Label runat="server" ID="lblPromotionPrice"></asp:Label><br />
+        </asp:Panel>
         <strong class="magenta"> $<asp:Literal ID="LiteralTotal" runat="server"></asp:Literal></strong>
     </td>
 </tr></table>
