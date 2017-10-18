@@ -531,8 +531,8 @@ $('#bfcBillingShippingCreditInfo_imgBtn').click(function() {
     $(document).ready(function () {
         function initBillingForm(options) {
             var service = new window.LocationAutocomplete({
-                address: "sbcfShippingBillingCreditForm_txtAddress1",
-                city: "sbcfShippingBillingCreditForm_txtCity",
+                address: "txtAddress1",
+                city: "txtCity",
                 state: "sbcfShippingBillingCreditForm_ddlState",
                 stateHidden: "sbcfShippingBillingCreditForm_ddlStateJS",
                 stateName: "sbcfShippingBillingCreditForm$ddlState",
