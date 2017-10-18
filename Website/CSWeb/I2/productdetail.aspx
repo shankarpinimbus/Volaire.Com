@@ -24,7 +24,7 @@
 
 <form runat="server">
     <asp:ScriptManager runat="server"></asp:ScriptManager>
-    <asp:UpdatePanel runat="server"> <ContentTemplate>
+    
 <uc:Header runat="server" />
     <asp:HiddenField id="buttonClicked" runat="server"/>
 <div id="page_products">
@@ -78,7 +78,7 @@
                 
             </div>
                 <!-- smaller product images-->
-                
+        
             <div class="productdetail_text">
                 <div class="productdetail_text_top">
                     <h1><%=lblSkuTitle.Text %></h1>
@@ -86,6 +86,7 @@
                 <div class="yotpo bottomLine product_reviewsnip"
                     data-product-id="<%=GroupId %>">
                 </div>
+            <asp:UpdatePanel runat="server"> <ContentTemplate>    
                 <asp:Panel runat="server" Visible="false" ID="chooseSizePanel">
                     <p class="webfont2 choosesize">
                         <span style="font-size: 1.125rem;">Choose Size:</span> &nbsp;&nbsp; 
@@ -151,8 +152,9 @@
                     </asp:Panel>
                     <asp:Literal ID="ltDetailDescription" runat="server" />
                 </div>
+            </ContentTemplate></asp:UpdatePanel>
             </div>
-
+        
 
         </div>
     </div>
@@ -241,7 +243,7 @@
 <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
 <uc:Footer ID="Footer1" runat="server" />
 
-    </ContentTemplate></asp:UpdatePanel>
+    
 </form>
     <uc:TrackingPixels ID="TrackingPixels" runat="server" />
 </body>

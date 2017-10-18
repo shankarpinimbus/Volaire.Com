@@ -24,7 +24,7 @@
 
     <form runat="server">
         <asp:ScriptManager runat="server"></asp:ScriptManager>
-        <asp:UpdatePanel runat="server"><ContentTemplate>
+        
         <uc:Header runat="server" />
          <asp:HiddenField id="buttonClicked" runat="server"/>
 
@@ -82,7 +82,7 @@
                 </div>
 
                 <!-- right column -->
-
+            <asp:UpdatePanel runat="server"><ContentTemplate>
                 <div class="productdetail_text">
                     
                     
@@ -157,7 +157,7 @@
 
                 </div>
                 <div class="clear"></div>
-
+            </ContentTemplate></asp:UpdatePanel>
 
     </div>
 </div>
@@ -243,7 +243,7 @@
 
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
         <uc:Footer ID="Footer" runat="server" />
-        </ContentTemplate></asp:UpdatePanel>
+       
     </form>
     <uc:TrackingPixels ID="TrackingPixels" runat="server" />
 </body>
