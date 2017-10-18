@@ -553,7 +553,7 @@ $('#bfcBillingShippingCreditInfo_imgBtn').click(function() {
                 stateName: "sbcfShippingBillingCreditForm$ddlShippingState",
                 country: "sbcfShippingBillingCreditForm_ddlShippingCountry",
                 countryName: "sbcfShippingBillingCreditForm$ddlShippingCountry",
-                zip: "sbcfShippingBillingCreditForm_txtShippingZipCode",
+                zip: "txtShippingZipCode",
             });
 
             service.init();
