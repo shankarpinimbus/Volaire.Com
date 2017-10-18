@@ -2,6 +2,9 @@
 <%@ Register Src="~/Shared/UserControls/AmazonPayment.ascx" TagPrefix="uc" TagName="AmazonPayment" %>
 <%@ Register Src="~/Shared/UserControls/ShoppingCartControl.ascx" TagName="ShoppingCartControl" TagPrefix="uc" %>
 <script type="text/javascript" src="/Scripts/autoTab.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOL_scT685lbj5mX5vAiGZTflKVwePsXo&libraries=places"></script>
+<script src="/Scripts/string.min.js"></script>
+<script src="/Scripts/location.autocomplete.js"></script>
 <%-- PLACEHOLDER function for IE - http://jamesallardice.github.io/Placeholders.js/ --%>
 <%-- .click function below should have the ID of the submit button! --%>
 <%-- we might need to update this to only show on earlier IE versions --%>
@@ -521,3 +524,46 @@ $('#bfcBillingShippingCreditInfo_imgBtn').click(function() {
         <!--#include virtual="/Shared/terms-txt.html" -->
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        function initBillingForm(options) {
+            var service = new window.LocationAutocomplete({
+                address: "sbcfShippingBillingCreditForm_txtAddress1",
+                city: "sbcfShippingBillingCreditForm_txtCity",
+                state: "sbcfShippingBillingCreditForm_ddlState",
+                stateHidden: "sbcfShippingBillingCreditForm_ddlStateJS",
+                stateName: "sbcfShippingBillingCreditForm$ddlState",
+                country: "sbcfShippingBillingCreditForm_ddlCountry",
+                countryName: "sbcfShippingBillingCreditForm$ddlCountry",
+                zip: "sbcfShippingBillingCreditForm_txtZipCode"
+            });
+
+            service.init();
+        }
+
+        function initShippingForm(options) {
+            var service = new window.LocationAutocomplete({
+                address: "sbcfShippingBillingCreditForm_txtShippingAddress1",
+                city: "sbcfShippingBillingCreditForm_txtShippingCity",
+                state: "sbcfShippingBillingCreditForm_ddlShippingState",
+                stateHidden: "sbcfShippingBillingCreditForm_ddlShippingStateJS",
+                stateName: "sbcfShippingBillingCreditForm$ddlShippingState",
+                country: "sbcfShippingBillingCreditForm_ddlShippingCountry",
+                countryName: "sbcfShippingBillingCreditForm$ddlShippingCountry",
+                zip: "sbcfShippingBillingCreditForm_txtShippingZipCode",
+            });
+
+            service.init();
+        }
+
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+        prm.add_endRequest(function () {
+            initBillingForm();
+            initShippingForm();
+        });
+
+        initBillingForm();
+        initShippingForm();
+    });
+</script>
