@@ -7,6 +7,7 @@
         if (!el) {
             return false;
         }
+       
 
         var initalSelected = el.selectedIndex;
         value = value.toLowerCase();
@@ -96,6 +97,7 @@
         } else {
             selectFromDropDown(this.state, state);
             if (this.stateName != "") {
+                //document.getElementByName(this.stateName).value = state;
                 setTimeout("__doPostBack('" + this.stateName + "','')", 0);
             }
         }

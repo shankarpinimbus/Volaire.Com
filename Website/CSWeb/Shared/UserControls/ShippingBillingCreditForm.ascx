@@ -309,7 +309,7 @@ $('#bfcBillingShippingCreditInfo_imgBtn').click(function() {
                                 </div>
                                 <label class="label-1">
                                     State*</label>
-                                <asp:DropDownList ID="ddlState" required="required" runat="server" DataTextField="NAME" ClientIDMode="Static" CssClass="text-1" size="1">
+                                <asp:DropDownList ID="ddlState" required="required" runat="server" DataTextField="NAME" CssClass="text-1" size="1">
                                 </asp:DropDownList>
                                 <asp:HiddenField ID="ddlStateJS" runat="server" />
                                 <%-- <select name="ddlState" id="ddlState" runat="server" datatextfield="NAME" class="text-1" size="1">
@@ -529,8 +529,8 @@ $('#bfcBillingShippingCreditInfo_imgBtn').click(function() {
     $(document).ready(function () {
         function initBillingForm(options) {
             var service = new window.LocationAutocomplete({
-                address: "sbcfShippingBillingCreditForm_txtAddress1",
-                city: "sbcfShippingBillingCreditForm_txtCity",
+                address: "txtAddress1",
+                city: "txtCity",
                 state: "sbcfShippingBillingCreditForm_ddlState",
                 stateHidden: "sbcfShippingBillingCreditForm_ddlStateJS",
                 stateName: "sbcfShippingBillingCreditForm$ddlState",

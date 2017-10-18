@@ -533,7 +533,7 @@ $('#bfcBillingShippingCreditInfo_imgBtn').click(function() {
             var service = new window.LocationAutocomplete({
                 address: "txtAddress1",
                 city: "txtCity",
-                state: "sbcfShippingBillingCreditForm_ddlState",
+                state: "ddlState",
                 stateHidden: "sbcfShippingBillingCreditForm_ddlStateJS",
                 stateName: "sbcfShippingBillingCreditForm$ddlState",
                 country: "sbcfShippingBillingCreditForm_ddlCountry",
