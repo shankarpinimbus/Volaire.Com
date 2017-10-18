@@ -109,7 +109,7 @@
         </asp:Panel>
         <br />
         <asp:Panel ID="pnlPromotionLabel" runat="server" Visible="false">
-            Discount:<br />
+            DISCOUNT:<br />
         </asp:Panel>
         <strong class="magenta">TOTAL:</strong>
 
