@@ -239,7 +239,7 @@ namespace CSWeb.FulfillmentHouse
                         xml.WriteElementString(fieldnamePRODUCT, orderCouponInfo.DiscountCode);
                         xml.WriteElementString(fieldnameQUANTITY, "1");
                         xml.WriteElementString(fieldnamePRICE, "0");
-                        xml.WriteElementString(fieldnameDISCOUNT, "");
+                        xml.WriteElementString(fieldnameDISCOUNT, orderCouponInfo.DiscountAmount.ToString("n2"));
                         xml.WriteElementString(fieldnameCOUPON_CODE, orderCouponInfo.DiscountCode);
                         //xml.WriteElementString(fieldnameTAXRATE, "0");
                         //xml.WriteElementString(fieldnamePAIDPRICE, "0");
