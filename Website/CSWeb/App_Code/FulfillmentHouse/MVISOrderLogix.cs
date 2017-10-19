@@ -192,6 +192,7 @@ namespace CSWeb.FulfillmentHouse
                     string fieldnamePAIDPRICE = "PAID_PRICE_PROD";
                     string fieldnameSHIPPING = "SHIPPING";
                     //PAID_PRICE
+                    Order orderCouponInfo = CSResolve.Resolve<IOrderService>().GetOrderDetails(orderItem.OrderId, true);
                     foreach (Sku Item in orderItem.SkuItems)
                     {
                         Sku sku = skuManager.GetSkuByID(Item.SkuId);
@@ -216,6 +217,11 @@ namespace CSWeb.FulfillmentHouse
                             xml.WriteElementString(fieldnamePAIDPRICE, (sku.InitialPrice * Item.Quantity).ToString("N2"));
                             if (count == 1)
                             {
+                                if (orderCouponInfo.DiscountCode.Length > 0)
+                                {
+                                    xml.WriteElementString(fieldnameDISCOUNT, orderCouponInfo.DiscountAmount.ToString("n2"));
+                                    xml.WriteElementString(fieldnameCOUPON_CODE, orderCouponInfo.DiscountCode);
+                                }
                                 xml.WriteElementString(fieldnameSHIPPING, orderItem.ShippingCost.ToString("N2"));
                                 xml.WriteElementString("PAID_SHIPPING_PROD01", orderItem.ShippingCost.ToString("N2"));
                                 xml.WriteElementString("PAID_TAX_PROD01", Math.Round(orderItem.Tax, 2).ToString("N2"));
@@ -224,33 +230,33 @@ namespace CSWeb.FulfillmentHouse
                         }
 
                     }
-                     Order orderCouponInfo = CSResolve.Resolve<IOrderService>().GetOrderDetails(orderItem.OrderId, true);
-                    if (orderCouponInfo.DiscountCode.Length > 0)
-                    {
-                        string counter = zeropad(count.ToString(), 2);
-                        fieldnamePRODUCT = "PRODUCT" + counter;
-                        fieldnameQUANTITY = "QUANTITY" + counter;
-                        fieldnamePRICE = "PRICE" + counter;
-                        fieldnameDISCOUNT = "DISCOUNT" + counter;
-                        fieldnameCOUPON_CODE = "COUPON_CODE" + counter;
-                        //fieldnamePAIDPRICE = "PAID_PRICE_PROD" + counter;
-                        //fieldnameTAXRATE = "TAX_RATE" + counter;
-                        //fieldnameSHIPPING = "SHIPPING" + counter;
-                        xml.WriteElementString(fieldnamePRODUCT, orderCouponInfo.DiscountCode);
-                        xml.WriteElementString(fieldnameQUANTITY, "1");
-                        xml.WriteElementString(fieldnamePRICE, "0");
-                        xml.WriteElementString(fieldnameDISCOUNT, orderCouponInfo.DiscountAmount.ToString("n2"));
-                        xml.WriteElementString(fieldnameCOUPON_CODE, orderCouponInfo.DiscountCode);
-                        //xml.WriteElementString(fieldnameTAXRATE, "0");
-                        //xml.WriteElementString(fieldnamePAIDPRICE, "0");
-                        //if (count == 1)
-                        //{
-                        //    //xml.WriteElementString(fieldnameSHIPPING, orderItem.ShippingCost.ToString("N2"));
-                        //    xml.WriteElementString("PAID_SHIPPING_PROD01", orderItem.ShippingCost.ToString("N2"));
-                        //    xml.WriteElementString("PAID_TAX_PROD01", Math.Round(orderItem.Tax, 2).ToString("N2"));
-                        //}
-                        count++;
-                    }
+                     
+                    //if (orderCouponInfo.DiscountCode.Length > 0)
+                    //{
+                    //    string counter = zeropad(count.ToString(), 2);
+                    //    fieldnamePRODUCT = "PRODUCT" + counter;
+                    //    fieldnameQUANTITY = "QUANTITY" + counter;
+                    //    fieldnamePRICE = "PRICE" + counter;
+                    //    fieldnameDISCOUNT = "DISCOUNT" + counter;
+                    //    fieldnameCOUPON_CODE = "COUPON_CODE" + counter;
+                    //    //fieldnamePAIDPRICE = "PAID_PRICE_PROD" + counter;
+                    //    //fieldnameTAXRATE = "TAX_RATE" + counter;
+                    //    //fieldnameSHIPPING = "SHIPPING" + counter;
+                    //    xml.WriteElementString(fieldnamePRODUCT, orderCouponInfo.DiscountCode);
+                    //    xml.WriteElementString(fieldnameQUANTITY, "1");
+                    //    xml.WriteElementString(fieldnamePRICE, "0");
+                    //    xml.WriteElementString(fieldnameDISCOUNT, orderCouponInfo.DiscountAmount.ToString("n2"));
+                    //    xml.WriteElementString(fieldnameCOUPON_CODE, orderCouponInfo.DiscountCode);
+                    //    //xml.WriteElementString(fieldnameTAXRATE, "0");
+                    //    //xml.WriteElementString(fieldnamePAIDPRICE, "0");
+                    //    //if (count == 1)
+                    //    //{
+                    //    //    //xml.WriteElementString(fieldnameSHIPPING, orderItem.ShippingCost.ToString("N2"));
+                    //    //    xml.WriteElementString("PAID_SHIPPING_PROD01", orderItem.ShippingCost.ToString("N2"));
+                    //    //    xml.WriteElementString("PAID_TAX_PROD01", Math.Round(orderItem.Tax, 2).ToString("N2"));
+                    //    //}
+                    //    count++;
+                    //}
                     xml.WriteEndElement();
                     xml.WriteStartElement("Settings");
                     xml.WriteElementString("MATCH_FIRST_NAME", "");
