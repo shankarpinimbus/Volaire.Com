@@ -1767,7 +1767,7 @@ namespace CSWeb
             }
             else
             {
-                if (!version.Equals("aa1") && !version.Equals("ee2") && !version.Equals("jj2") && !version.Equals("i2") && !version.Equals("j2")
+                if (!version.Equals("aa1") && !version.Equals("ee2") && !version.Equals("jj2") /*&& !version.Equals("i2")*/ && !version.Equals("j2")
                     && !version.Equals("k2")) 
                 {
                     if (HttpContext.Current.Request.QueryString.Count > 0)
@@ -1808,13 +1808,13 @@ namespace CSWeb
             else
             {
                 if (!version.Equals("mobile_aa1") && !version.Equals("mobile_ee2") && !version.Equals("mobile_jj2")
-                     && !version.Equals("mobile_i2") && !version.Equals("mobile_j2") && !version.Equals("mobile_k2"))
+                     /*&& !version.Equals("mobile_i2")*/ && !version.Equals("mobile_j2") && !version.Equals("mobile_k2"))
                 {
                     if (HttpContext.Current.Request.QueryString.Count > 0)
-                        HttpContext.Current.Response.Redirect("/mobile_i2/index?" + HttpContext.Current.Request.QueryString);
+                        HttpContext.Current.Response.Redirect("/mobile_j2/index?" + HttpContext.Current.Request.QueryString);
                     else
                     {
-                        HttpContext.Current.Response.Redirect("/mobile_i2/index");
+                        HttpContext.Current.Response.Redirect("/mobile_j2/index");
                     }
                 }
                 if (version.Equals("mobile_aa1") || version.Equals("mobile_ee2"))
