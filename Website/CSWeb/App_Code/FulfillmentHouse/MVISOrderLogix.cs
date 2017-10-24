@@ -203,16 +203,14 @@ namespace CSWeb.FulfillmentHouse
                             fieldnamePRODUCT = "PRODUCT" + counter;
                             fieldnameQUANTITY = "QUANTITY" + counter;
                             fieldnamePRICE = "PRICE" + counter;
-                            //fieldnameDISCOUNT = "DISCOUNT" + counter;
-                            //fieldnameCOUPON_CODE = "COUPON_CODE" + counter;
+                            fieldnameDISCOUNT = "DISCOUNT" + counter;
+                            fieldnameCOUPON_CODE = "COUPON_CODE" + counter;
                             fieldnamePAIDPRICE = "PAID_PRICE_PROD" + counter;
                             fieldnameTAXRATE = "TAX_RATE" + counter;
                             fieldnameSHIPPING = "SHIPPING" + counter;
                             xml.WriteElementString(fieldnamePRODUCT, GetSkuCode(sku.SkuId, orderItem.CustomerInfo.ShippingAddress.CountryId));
                             xml.WriteElementString(fieldnameQUANTITY, Item.Quantity.ToString());
                             xml.WriteElementString(fieldnamePRICE, sku.FullPrice.ToString("N2"));
-                            xml.WriteElementString(fieldnameDISCOUNT, "");
-                            xml.WriteElementString(fieldnameCOUPON_CODE, "");
                             xml.WriteElementString(fieldnameTAXRATE, SiteBasePage.CalculateTaxRate(orderItem.OrderId, Item.FullPrice).ToString());
                             xml.WriteElementString(fieldnamePAIDPRICE, (sku.InitialPrice * Item.Quantity).ToString("N2"));
                             if (count == 1)
@@ -222,9 +220,19 @@ namespace CSWeb.FulfillmentHouse
                                     xml.WriteElementString(fieldnameDISCOUNT, orderCouponInfo.DiscountAmount.ToString("n2"));
                                     xml.WriteElementString(fieldnameCOUPON_CODE, orderCouponInfo.DiscountCode);
                                 }
+                                else
+                                {
+                                    xml.WriteElementString(fieldnameDISCOUNT, "");
+                                    xml.WriteElementString(fieldnameCOUPON_CODE, "");
+                                }
                                 xml.WriteElementString(fieldnameSHIPPING, orderItem.ShippingCost.ToString("N2"));
                                 xml.WriteElementString("PAID_SHIPPING_PROD01", orderItem.ShippingCost.ToString("N2"));
                                 xml.WriteElementString("PAID_TAX_PROD01", Math.Round(orderItem.Tax, 2).ToString("N2"));
+                            }
+                            else
+                            {
+                                xml.WriteElementString(fieldnameDISCOUNT, "");
+                                xml.WriteElementString(fieldnameCOUPON_CODE, "");
                             }
                             count++;
                         }
