@@ -14,7 +14,7 @@
                     </a>
                 </h2>
             <% }
-            else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("j2") || versionName.ToLower().EndsWith("get_mobile_a1") || versionName.ToLower().EndsWith("get_mobile_aa1") )
+            else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2") || versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("j2") ||  versionName.ToLower().EndsWith("k2") || versionName.ToLower().EndsWith("get_mobile_a1") || versionName.ToLower().EndsWith("get_mobile_aa1") )
             { %>
                 <h2>
                     <a href="tv-introductory-offer">
@@ -83,7 +83,8 @@
                 <%
                    { %><li><a href="products" class="nav_products">Products</a></li>
                 <% }
-                   else if (versionName.ToLower().Contains("h2") || versionName.ToLower().Contains("i2") || versionName.ToLower().Contains("j2"))
+                   else if (versionName.ToLower().Contains("h2") || versionName.ToLower().Contains("i2") || versionName.ToLower().Contains("j2")
+                            || versionName.ToLower().Contains("k2"))
                    { %>
                 <li><a href="products" class="nav-products">Products</a></li>
                 <li><a href="hair-volumizing-products" class="nav-products">About Our Products</a></li>
