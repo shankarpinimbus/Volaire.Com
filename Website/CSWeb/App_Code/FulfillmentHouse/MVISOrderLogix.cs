@@ -203,8 +203,8 @@ namespace CSWeb.FulfillmentHouse
                             fieldnamePRODUCT = "PRODUCT" + counter;
                             fieldnameQUANTITY = "QUANTITY" + counter;
                             fieldnamePRICE = "PRICE" + counter;
-                            fieldnameDISCOUNT = "DISCOUNT" + counter;
-                            fieldnameCOUPON_CODE = "COUPON_CODE" + counter;
+                            //fieldnameDISCOUNT = "DISCOUNT" + counter;
+                            //fieldnameCOUPON_CODE = "COUPON_CODE" + counter;
                             fieldnamePAIDPRICE = "PAID_PRICE_PROD" + counter;
                             fieldnameTAXRATE = "TAX_RATE" + counter;
                             fieldnameSHIPPING = "SHIPPING" + counter;
