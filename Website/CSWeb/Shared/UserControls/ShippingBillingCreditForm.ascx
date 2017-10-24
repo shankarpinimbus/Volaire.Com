@@ -433,6 +433,7 @@ $('#bfcBillingShippingCreditInfo_imgBtn').click(function() {
                                 </div>
                             </div>
 
+
                             <div class="clear"></div>
                             <asp:Panel runat="server" ID="pnlPromoCode">
                                 <div class="main_cart_hdr">
