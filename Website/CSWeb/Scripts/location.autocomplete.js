@@ -98,7 +98,7 @@
             selectFromDropDown(this.state, state);
             if (this.stateName != "") {
                 //document.getElementByName(this.stateName).value = state;
-                setTimeout("__doPostBack('" + this.stateName + "','')", 0);
+                setTimeout("__doPostBack('" + this.zip + "','')", 0);
             }
         }
     }
