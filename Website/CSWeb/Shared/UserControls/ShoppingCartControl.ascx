@@ -119,7 +119,7 @@
                         <asp:Label ID="lblCouponMsg" ForeColor="Red" runat="server" Visible="false" Text="<br /><br />Your Shopping Cart is currently empty <br /><br />"></asp:Label></span>
                     <asp:Panel ID="pnlDiscountApply" runat="server" DefaultButton="btnDisount">
                         <div class="shopping_top_totals_shipdrop" id="Shopping_Discount_Div" runat="server">
-                            <asp:TextBox runat="server" ID="txtPromotion" serverMaxLength="20" CssClass="input-1b"
+                            <asp:TextBox runat="server" ID="txtPromotion" serverMaxLength="20" CssClass="input-1b input_promocode"
                                 ValidationGroup="vgPromotion" placeholder="Enter Promo Code" />
                             <asp:LinkButton ID="btnDisount" runat="server" OnClick="btnPromitionCode_OnCommand"
                                 ValidationGroup="vgPromotion" CssClass="addcoupon_btn">Apply</asp:LinkButton>

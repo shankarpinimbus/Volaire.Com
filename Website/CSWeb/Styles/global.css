@@ -2554,6 +2554,11 @@ p.form_note {
 ::-moz-placeholder {color: #999; opacity: 0;}
 :-ms-input-placeholder {color: #999; opacity: 0;}
 
+.input_promocode::-webkit-input-placeholder {color: #999; opacity: 1;}
+.input_promocode:-moz-placeholder {color: #999; opacity: 1;}
+.input_promocode::-moz-placeholder {color: #999; opacity: 1;}
+.input_promocode:-ms-input-placeholder {color: #999; opacity: 1;}
+
 .cartB {
 
 }
@@ -3950,10 +3955,10 @@ ul.product_steps li {
 }
 
 .input-1b {
-    padding: .3rem .6rem .3rem;
+    padding: .3rem .4rem .3rem;
     position: relative;
     font-size: 1rem;
-    width: 10em;
+    width: 10.4em;
     margin-right: .4rem;
     border-top: #d1d0ce solid 2px;
     border-right: #dedddb solid 1px;
