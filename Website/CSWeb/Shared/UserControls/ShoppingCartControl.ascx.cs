@@ -344,6 +344,7 @@ namespace CSWeb.Shared.UserControls
                 lblCouponMsg.ForeColor = System.Drawing.Color.Red;
                 lblCouponMsg.Text = "<br /><br />" + CartContext.CartInfo.DiscountCode + " is already applied. You can't use two coupons with same order.";
             }
+            CartContext.CartInfo.Compute();
             //showorhideDiscountPanels();
             BindControls();
         }

@@ -17,7 +17,7 @@ namespace CSWebBase
             decimal taxToReturn = 0;
             //decimal taxToReturn2 = 0;
             SitePreference list = CSFactory.GetCartPrefrence();
-            decimal taxableAmount = 0;
+            decimal taxableAmount = -cart.DiscountAmount;
             if (list.IncludeShippingCostInTaxCalculation)
             {
                 taxableAmount += cart.ShippingCost;
@@ -80,7 +80,7 @@ namespace CSWebBase
         {
             decimal taxToReturn = 0;
             SitePreference list = CSFactory.GetCartPrefrence();
-            decimal taxableAmount = 0; // Tax after Discount Amount is subtracted
+            decimal taxableAmount = -cart.DiscountAmount; // Tax after Discount Amount is subtracted
             if (list.IncludeShippingCostInTaxCalculation)
             {
                 taxableAmount += cart.ShippingCost;
