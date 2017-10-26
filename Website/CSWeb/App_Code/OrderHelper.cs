@@ -21,6 +21,7 @@ using CSBusiness.Attributes;
 using CSWebBase;
 using CSBusiness.CustomerManagement;
 using CSBusiness.ShoppingManagement;
+using CSCore.ACMGService;
 using CSData;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
@@ -249,7 +250,7 @@ namespace CSWeb
 
             EmailSetting emailTemplate = EmailManager.GetEmail(emailId);
             OrderManager orderMgr = new OrderManager();
-            Order orderData = orderMgr.GetOrderDetails(orderId);
+            Order orderData = orderMgr.GetOrderDetails(orderId,true);
 
 
             if (emailTemplate.Body != null)
@@ -264,6 +265,15 @@ namespace CSWeb
                 BodyTemplate = BodyTemplate.Replace("{SHIPPING_HANDLING}", orderData.ShippingCost.ToString("N2"));
                 BodyTemplate = BodyTemplate.Replace("{TAX}", orderData.Tax.ToString("N2"));
                 BodyTemplate = BodyTemplate.Replace("{TOTAL}", orderData.Total.ToString("N2"));
+                BodyTemplate = BodyTemplate.Replace("{DISCOUNT}", orderData.DiscountAmount.ToString("N2"));
+                if (orderData.DiscountAmount <= 0)
+                {
+                    BodyTemplate = BodyTemplate.Replace("{display}", "display:none");
+                }
+                else
+                {
+                    BodyTemplate = BodyTemplate.Replace("{display}", "");
+                }
                 BodyTemplate = BodyTemplate.Replace("{ORDER_ID}", orderData.OrderId.ToString());
                 BodyTemplate = BodyTemplate.Replace("{ORDER_NUMBER}", orderData.OrderId.ToString());
                 BodyTemplate = BodyTemplate.Replace("{ORDER_DATE}", orderData.CreatedDate.ToString("dd MMM yyyy hh:mm:ss"));
