@@ -64,9 +64,10 @@ $('#bfcBillingShippingCreditInfo_imgBtn').click(function() {
 
 <section class="container cart-wrap">
     <fieldset class="form">
-         <uc:ShoppingCartControl ID="ShoppingCartControl" runat="server" />
+         
         <asp:UpdatePanel ID="pnlShippingBillingCreditForm" UpdateMode="Conditional" runat="server">
             <ContentTemplate>
+            <uc:ShoppingCartControl ID="ShoppingCartControl" runat="server" />
                 <div class="cart_content_B clearfix">
 
                    
