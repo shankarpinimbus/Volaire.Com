@@ -212,16 +212,18 @@ namespace CSWeb.FulfillmentHouse
                             xml.WriteElementString(fieldnameQUANTITY, Item.Quantity.ToString());
                             xml.WriteElementString(fieldnamePRICE, sku.FullPrice.ToString("N2"));
                             xml.WriteElementString(fieldnameTAXRATE, SiteBasePage.CalculateTaxRate(orderItem.OrderId, Item.FullPrice).ToString());
-                            xml.WriteElementString(fieldnamePAIDPRICE, (sku.InitialPrice * Item.Quantity).ToString("N2"));
+                            
                             if (count == 1)
                             {
                                 if (orderCouponInfo.DiscountCode.Length > 0)
                                 {
+                                    xml.WriteElementString(fieldnamePAIDPRICE, ((sku.InitialPrice * Item.Quantity)- orderCouponInfo.DiscountAmount).ToString("N2"));
                                     xml.WriteElementString(fieldnameDISCOUNT, orderCouponInfo.DiscountAmount.ToString("n2"));
                                     xml.WriteElementString(fieldnameCOUPON_CODE, orderCouponInfo.DiscountCode);
                                 }
                                 else
                                 {
+                                    xml.WriteElementString(fieldnamePAIDPRICE, (sku.InitialPrice * Item.Quantity).ToString("N2"));
                                     xml.WriteElementString(fieldnameDISCOUNT, "");
                                     xml.WriteElementString(fieldnameCOUPON_CODE, "");
                                 }
@@ -231,6 +233,7 @@ namespace CSWeb.FulfillmentHouse
                             }
                             else
                             {
+                                xml.WriteElementString(fieldnamePAIDPRICE, (sku.InitialPrice * Item.Quantity).ToString("N2"));
                                 xml.WriteElementString(fieldnameDISCOUNT, "");
                                 xml.WriteElementString(fieldnameCOUPON_CODE, "");
                             }
