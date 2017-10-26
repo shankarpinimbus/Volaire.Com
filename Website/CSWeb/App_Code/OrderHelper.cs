@@ -314,15 +314,19 @@ namespace CSWeb
                     for (int i = 0; i < totalSkuItems; i++)
                     {
                         Sku sku = orderData.SkuItems[i];
-                        Sku st = new SkuManager().GetSkuByID(sku.SkuId);
-                        string resultString = originalString;
-                        resultString = resultString
-                            .Replace("{SKU}", sku.SkuCode)
-                            .Replace("{SKU_QTY}", sku.Quantity.ToString())
-                            .Replace("{SKU_DESCR}", st.EmailDescription)
-                            .Replace("{SKU_PRICE}", sku.FullPrice.ToString("N2"));
+                        if (sku.SkuId != 153 && sku.SkuId != 154)
+                        {
+                            Sku st = new SkuManager().GetSkuByID(sku.SkuId);
+                            string resultString = originalString;
+                            resultString = resultString
+                                .Replace("{SKU}", sku.SkuCode)
+                                .Replace("{SKU_QTY}", sku.Quantity.ToString())
+                                .Replace("{SKU_DESCR}", st.EmailDescription)
+                                .Replace("{SKU_PRICE}", sku.FullPrice.ToString("N2"));
 
-                        sb.Append(resultString);
+                            sb.Append(resultString);
+                        }
+                        
                     }
                     BodyTemplate = BodyTemplate.Replace(originalString, sb.ToString());
                     sb.Clear();
