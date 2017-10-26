@@ -338,7 +338,7 @@ namespace CSWeb.FulfillmentHouse
             try
             {
                 //Order orderItem = new OrderManager().GetBatchProcessOrders(orderId);
-                Order orderItem = new OrderManager().GetBatchProcessOrder(orderId);
+                Order orderItem = CSResolve.Resolve<IOrderService>().GetOrderDetails(orderId, true);//new OrderManager().GetBatchProcessOrder(orderId);
                 string req = new MVISOrderLogix().GetRequest(orderItem);
 
                 string Parameters = "user=" + config.Attributes["login"].Value + "&pwd=" + config.Attributes["password"].Value + "&token=" + config.Attributes["MVISTOKEN"].Value + "&inXMLDoc=" + req;
