@@ -44,7 +44,7 @@ namespace CSWebBase
             decimal taxToReturn = 0;
             //decimal taxToReturn2 = 0;
             SitePreference list = CSFactory.GetCartPrefrence();
-            decimal taxableAmount = 0;
+            decimal taxableAmount = -order.DiscountAmount;
             if (list.IncludeShippingCostInTaxCalculation)
             {
                 taxableAmount += order.ShippingCost;
