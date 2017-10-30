@@ -120,6 +120,11 @@ namespace CSWebBase
                         }
                     }
                 }
+                if (cart.DiscountCode.ToUpper() == "FIRST15" || cart.DiscountCode.ToUpper() == "VOL15")
+                {
+                    cart.ShippingCost = Decimal.Zero;
+                }
+
                 if (cart.DiscountAmount > Decimal.Zero)
                 {
                     cart.DiscountMessage = CSBusiness.ResourceHelper.GetResoureValue("discountSuccessMsg");
