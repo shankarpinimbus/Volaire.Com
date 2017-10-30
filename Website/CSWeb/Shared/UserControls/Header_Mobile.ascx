@@ -32,7 +32,7 @@
                     <a href="tv-introductory-offer">
                 	    <span class="part2b">TV Offer Only</span> 
                 	    <span class="part3"><span style="margin-right: 2px;">|</span> </span> 
-                	    <span class="part4">Save 40%</span>
+                	    <span class="part4">Free Shipping</span>
                     </a>
                 </h2>
             <% } else  { %>
