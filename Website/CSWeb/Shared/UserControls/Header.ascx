@@ -46,7 +46,7 @@
                 </h2>
                 <% }
                 else if (versionName.ToLower().EndsWith("e2") || versionName.ToLower().EndsWith("g2") || versionName.ToLower().EndsWith("h2")
-                 || versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("j2") || versionName.ToLower().EndsWith("k2")
+                 || versionName.ToLower().EndsWith("i2") || versionName.ToLower().EndsWith("j2") 
                  || versionName.ToLower().EndsWith("get_a1") || versionName.ToLower().EndsWith("get_aa1") )
                 { %>
                 <h2>
