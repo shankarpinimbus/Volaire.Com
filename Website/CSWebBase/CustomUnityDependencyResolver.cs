@@ -24,6 +24,11 @@ namespace CSWebBase
             //    return new CustomShippingCalculator(false); // baseShippingCalculator);
             //}));
 
+            container.RegisterType<IDiscountCalculator, CustomDiscountCalculator>(new InjectionFactory(x =>
+                                                                                             {
+                                                                                                 return new CustomDiscountCalculator();
+                                                                                             }));
+
             container.RegisterType<ITaxCalculator, CustomTaxCalculator>(new InjectionFactory(x =>
             {
                 return new CustomTaxCalculator();

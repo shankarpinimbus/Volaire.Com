@@ -47,7 +47,11 @@ namespace CSWebBase
                         //{
                         //    if (!DuplicateOrderDAL.IsDuplicatePromo(ClientOrderData.CustomerInfo.Email, couponInfo.Title))
                         //    {
-                                if (couponInfo.Title.ToUpper() == "FIRST15")
+                        if (cart.DiscountCode.ToUpper() == "FIRST15" || cart.DiscountCode.ToUpper() == "VOL15")
+                        {
+                            cart.ShippingCost = Decimal.Zero;
+                        }
+                        if (couponInfo.Title.ToUpper() == "FIRST15")
                                 {
                                     decimal subTotal = 0;
                                     foreach (var item in cart.CartItems)
@@ -120,10 +124,7 @@ namespace CSWebBase
                         }
                     }
                 }
-                if (cart.DiscountCode.ToUpper() == "FIRST15" || cart.DiscountCode.ToUpper() == "VOL15")
-                {
-                    cart.ShippingCost = Decimal.Zero;
-                }
+                
 
                 if (cart.DiscountAmount > Decimal.Zero)
                 {
