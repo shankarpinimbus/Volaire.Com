@@ -335,6 +335,8 @@ namespace CSWeb
                         skuID = item.SkuId;
                         Session["skuID_AddtoCart"] = skuID.ToString();
                         RefreshControls_OnProductSizeSelected();
+                        smallSizeSelectButton.CssClass = "btn2 sizebtn btn_on";
+                        bigSizeSelectButton.CssClass = "btn1 sizebtn";
                     }
                 }
             }
@@ -358,6 +360,8 @@ namespace CSWeb
                         skuID = item.SkuId;
                         Session["skuID_AddtoCart"] = skuID.ToString();
                         RefreshControls_OnProductSizeSelected();
+                        bigSizeSelectButton.CssClass = "btn1 sizebtn btn_on";
+                        smallSizeSelectButton.CssClass = "btn2 sizebtn";
                     }
                 }
             }

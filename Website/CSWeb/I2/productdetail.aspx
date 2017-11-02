@@ -86,7 +86,7 @@
                 <div class="yotpo bottomLine product_reviewsnip"
                     data-product-id="<%=GroupId %>">
                 </div>
-            <asp:UpdatePanel runat="server"> <ContentTemplate>    
+           
                 <asp:Panel runat="server" Visible="false" ID="chooseSizePanel">
                     <p class="webfont2 choosesize">
                         <span style="font-size: 1.125rem;">Choose Size:</span> &nbsp;&nbsp; 
@@ -94,6 +94,7 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;<asp:Button runat="server" ID="smallSizeSelectButton" CssClass="btn2 sizebtn" OnClick="smallSizeSelectButton_Click" />
                     </p>
                 </asp:Panel>
+                <asp:UpdatePanel runat="server"> <ContentTemplate>    
                 <asp:Panel runat="server" CssClass="kitprices" Visible="false" ID="productRetailPricePanel">
                     <span class="price_title">Product Value: </span>
                     <span class="strikeout">$<asp:Label runat="server" ID="productValue"></asp:Label></span><br />

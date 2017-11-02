@@ -82,7 +82,7 @@
                 </div>
 
                 <!-- right column -->
-            <asp:UpdatePanel runat="server"><ContentTemplate>
+            
                 <div class="productdetail_text">
                     
                     
@@ -94,6 +94,7 @@
                         </p>
                         
                     </asp:Panel>
+                <asp:UpdatePanel runat="server"><ContentTemplate>
                     <asp:Panel runat="server" CssClass="kitprices" Visible="false" ID="productRetailPricePanel">
                         Product Value :
                             <span class="strikeout">$<asp:Label runat="server" ID="productValue"></asp:Label></span><br />
@@ -154,10 +155,10 @@
                             <asp:Literal ID="ltDetailDescription" runat="server" />
                         </div>
                     </div>
-
+                </ContentTemplate></asp:UpdatePanel>
                 </div>
                 <div class="clear"></div>
-            </ContentTemplate></asp:UpdatePanel>
+            
 
     </div>
 </div>
