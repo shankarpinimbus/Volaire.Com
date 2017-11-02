@@ -51,13 +51,13 @@ namespace CSWebBase
                         {
                             cart.ShippingCost = Decimal.Zero;
                         }
-                        if (couponInfo.Title.ToUpper() == "FIRST15")
+                        if (couponInfo.Title.ToUpper() == "FIRST15" || cart.DiscountCode.ToUpper() == "VOL15")
                                 {
                                     decimal subTotal = 0;
                                     foreach (var item in cart.CartItems)
                                     {
                                         item.LoadAttributeValues();
-                                        if (!item.GetAttributeValue<bool>("isMainKit", false))
+                                        if (!item.GetAttributeValue<bool>("isMainKit", false) && item.SkuId != 120 && item.SkuId != 161)
                                         {
                                             subTotal += item.InitialPrice * item.Quantity;
                                         }
