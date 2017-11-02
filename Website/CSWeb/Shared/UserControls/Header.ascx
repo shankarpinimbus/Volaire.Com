@@ -104,7 +104,7 @@
                        { %>
                         <li class='has-sub'><a href="products" class="nav_products">Products</a>
                         <ul class="subnav">
-                            <li><a href="hair-volumizing-products" class="nav-reviews">About Our Products</a></li>
+                            <li><a href="hair-volumizing-products" class="nav-reviews">About VOLAIRE</a></li>
                             <li><a href="tv-introductory-offer" class="nav-reviews">Shop TV Offer</a></li>
                             <li><a href="products" class="nav-reviews">Shop All Products</a></li>
                         </ul>

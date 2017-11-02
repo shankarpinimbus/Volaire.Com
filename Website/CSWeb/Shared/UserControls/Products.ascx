@@ -51,11 +51,11 @@
                             <div class="product_grid_item_bottom_left">
                                 <asp:LinkButton runat="server" ID="product_anchor1b" PostBackUrl="/category.aspx">
                                      <div class="product_grid_item_review">
-                                          <div class="yotpowrap">
-                                             <div class="yotpo bottomLine"
-                                                data-product-id="<%# DataBinder.Eval(Container.DataItem, "SkuId")%>">
+                                        <div class="yotpowrap">
+                                            <div class="yotpo bottomLine"
+                                            data-product-id="<%# DataBinder.Eval(Container.DataItem, "SkuId")%>">
                                             </div>
-                                              </div>
+                                        </div>
                                     </div>
                                 </asp:LinkButton>
                             </div>
@@ -121,17 +121,19 @@
                             <div class="product_grid_item_bottom_left">
                                 <asp:LinkButton runat="server" ID="product_anchor2b" PostBackUrl="/category.aspx">
                                     <div class="product_grid_item_review">
-                                          <div class="yotpowrap">
-                                             <div class="yotpo bottomLine"
-                                                data-product-id="<%# DataBinder.Eval(Container.DataItem, "SkuId")%>">
+                                        <div class="yotpowrap">
+                                            <div class="yotpo bottomLine"
+                                            data-product-id="<%# DataBinder.Eval(Container.DataItem, "SkuId")%>">
                                             </div>
-                                              </div>
+                                        </div>
                                     </div>
                                 </asp:LinkButton>
                             </div>
                             <div class="product_grid_item_bottom_right">
-                                <div class="products_addtocart"><asp:ImageButton ID="btnViewProduct" CommandName="ViewProduct" CommandArgument="details"
-                                    runat="server" ImageUrl="//d39hwjxo88pg52.cloudfront.net/volaire/images/products/btn_addtobag.png" CssClass="add_to_cart" />
+                                <div class="products_addtocart">
+                                    <span class="btn_learnmore"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products/btn_learnmore.png" alt="Learn More" class="add_to_cart" /></span>
+                                    <span style="display: none;"><asp:ImageButton ID="btnViewProduct" CommandName="ViewProduct" CommandArgument="details"
+                                    runat="server" ImageUrl="//d39hwjxo88pg52.cloudfront.net/volaire/images/products/btn_addtobag.png" CssClass="add_to_cart" /></span>
                                 </div>
                             </div>
                         </div>
@@ -187,22 +189,24 @@
                             </div>
                         </asp:LinkButton>
                         <div class="product_grid_item_bottom clearfix">
+                            <asp:LinkButton runat="server" ID="product_anchor3b" PostBackUrl="/category.aspx">
                             <div class="product_grid_item_bottom_left">
-                                <asp:LinkButton runat="server" ID="product_anchor3b" PostBackUrl="/category.aspx">
-                                    <div class="product_grid_item_review">
-                                          <div class="yotpowrap">
-                                             <div class="yotpo bottomLine"
-                                                data-product-id="<%# DataBinder.Eval(Container.DataItem, "SkuId")%>">
-                                            </div>
-                                              </div>
+                                <div class="product_grid_item_review">
+                                    <div class="yotpowrap">
+                                        <div class="yotpo bottomLine"
+                                        data-product-id="<%# DataBinder.Eval(Container.DataItem, "SkuId")%>">
+                                        </div>
                                     </div>
-                                </asp:LinkButton>
-                            </div>
-                            <div class="product_grid_item_bottom_right">
-                                <div class="products_addtocart"><asp:ImageButton ID="btnViewProduct" CommandName="ViewProduct" CommandArgument="details"
-                                    runat="server" ImageUrl="//d39hwjxo88pg52.cloudfront.net/volaire/images/products/btn_addtobag.png" CssClass="add_to_cart" />
                                 </div>
                             </div>
+                            <div class="product_grid_item_bottom_right">
+                                <div class="products_addtocart">
+                                    <span class="btn_learnmore"><img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products/btn_learnmore.png" alt="Learn More" class="add_to_cart" /></span>
+                                    <span style="display: none;"><asp:ImageButton ID="btnViewProduct" CommandName="ViewProduct" CommandArgument="details"
+                                    runat="server" ImageUrl="//d39hwjxo88pg52.cloudfront.net/volaire/images/products/btn_addtobag.png" CssClass="add_to_cart" /></span>
+                                </div>
+                            </div>
+                            </asp:LinkButton>
                         </div>
                     </li>
                 </ItemTemplate>

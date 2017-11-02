@@ -3567,7 +3567,7 @@ h2.products_hdr {
 .product_grid_item_bottom_left {
     float: left;
     width: 50%;
-    padding-top: 1.2rem;
+    padding-top: 1.1rem;
 }
 .product_grid_item_bottom_right {
     float: right;
@@ -3575,8 +3575,26 @@ h2.products_hdr {
     text-align: right;
 }
 
+
+/*.btn_learnmore {
+    display: inline-block;
+    float: right;
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+    border: #8c7359 solid 1px;
+    color: #8c7359;
+    padding: .5rem 3%;
+    text-transform: uppercase;
+}
+
+.btn_learnmore:hover  {
+    opacity: .85;
+}*/
+
 .add_to_cart:hover {
     opacity: .85;
+    cursor: pointer;
 }
 
 .yotpo div, .yotpo span, .yotpo p, .yotpo a, .yotpo img, .yotpo i, .yotpo strong, .yotpo sup, .yotpo ul, .yotpo li, .yotpo form, .yotpo label {
@@ -4153,6 +4171,12 @@ ul.product_steps li {
     font-size: 1rem;
 }
 
+.btn_learnmore {
+    font-size: .9375rem;
+    padding: .5rem 2%;
+    width: 95%;
+}
+
 }
 
 
@@ -4432,6 +4456,10 @@ ul.nav li.tablet-last {margin-right: -6px;}
     text-align: center;
 }
 
-
+.btn_learnmore {
+    font-size: .875rem;
+    padding: .5rem 2%;
+    width: 95%;
+}
 
 }

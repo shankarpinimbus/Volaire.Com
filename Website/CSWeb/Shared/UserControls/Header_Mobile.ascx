@@ -87,7 +87,7 @@
                             || versionName.ToLower().Contains("k2"))
                    { %>
                 <li><a href="products" class="nav-products">Products</a></li>
-                <li><a href="hair-volumizing-products" class="nav-products">About Our Products</a></li>
+                <li><a href="hair-volumizing-products" class="nav-products">About VOLAIRE</a></li>
                 <% } %>
                 <li><a href="volaire-reviews">Reviews</a></li>
                 <li><a href="volaire-befores-and-afters">Before & Afters</a></li>
