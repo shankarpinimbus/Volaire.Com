@@ -307,7 +307,7 @@ namespace CSWeb.Shared.UserControls
             {
                 CartContext.CartInfo.DiscountCode = txtPromotion.Text.ToLower().Trim();
                 lblCouponMsg.Visible = true;
-                if (CartContext.CartInfo.DiscountCode.ToUpper() == "FIRST15")
+                if (CartContext.CartInfo.DiscountCode.ToUpper() == "FIRST15" || CartContext.CartInfo.DiscountCode.ToUpper() == "VOL15")
                 {
                     CustomDiscountCalculator cd = new CustomDiscountCalculator();
                     if (cd.CalculateDiscount(CartContext.CartInfo))
@@ -319,7 +319,7 @@ namespace CSWeb.Shared.UserControls
                     {
                         CartContext.CartInfo.DiscountCode = ""; // Making sure that we dont store any invalid code so they dont get passed to motivational.
                         lblCouponMsg.ForeColor = System.Drawing.Color.Red;
-                        lblCouponMsg.Text = "Invalid Promo Code";
+                        lblCouponMsg.Text = "Your promo code is not eligible for this item.";
                     }
                 }
                 else
