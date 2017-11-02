@@ -137,6 +137,7 @@ namespace CSWeb.Shared.UserControls
             //if (OrderHelper.GetVersionName().ToLower().Contains("g2"))
             //{
                 bool mainKitPresent = false;
+                 bool mainkitCatalogPresent = false;
                 foreach (Sku sku in ClientOrderData.CartInfo.CartItems)
                 {
                     sku.LoadAttributeValues();
@@ -144,6 +145,10 @@ namespace CSWeb.Shared.UserControls
                     {
                         mainKitPresent = true;
 
+                    }
+                    if (sku.SkuId == 120)
+                    {
+                        mainkitCatalogPresent = true;
                     }
                 }
 
@@ -158,6 +163,13 @@ namespace CSWeb.Shared.UserControls
                     dagree.Visible = false;
                     pnlPromoCode.Visible = false;
                 }
+
+            if (mainkitCatalogPresent)
+            {
+                dagree.Visible = true;
+            }
+
+            
             //}
 
                 if (OrderHelper.GetVersionName().ToLower().Contains("i2") || OrderHelper.GetVersionName().ToLower().Contains("j2")
