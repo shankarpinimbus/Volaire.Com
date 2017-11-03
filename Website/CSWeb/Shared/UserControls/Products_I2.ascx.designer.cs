@@ -13,6 +13,15 @@ namespace CSWeb.Store.UserControls {
     public partial class Products_I2 {
         
         /// <summary>
+        /// ucHeader control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::CSWeb.Shared.UserControls.Header ucHeader;
+        
+        /// <summary>
         /// lblMessage control.
         /// </summary>
         /// <remarks>

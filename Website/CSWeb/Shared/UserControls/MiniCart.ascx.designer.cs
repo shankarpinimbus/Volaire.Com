@@ -7,54 +7,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CSWeb.Store.UserControls {
+namespace CSWeb.Shared.UserControls {
     
     
-    public partial class Products {
+    public partial class MiniCart {
         
         /// <summary>
-        /// ucHeader control.
+        /// refresh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::CSWeb.Shared.UserControls.Header ucHeader;
+        protected global::System.Web.UI.WebControls.LinkButton refresh;
         
         /// <summary>
-        /// lblMessage control.
+        /// MinCrt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMessage;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl MinCrt;
         
         /// <summary>
-        /// rptProducts control.
+        /// rptShoppingCart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptProducts;
+        protected global::System.Web.UI.WebControls.Repeater rptShoppingCart;
         
         /// <summary>
-        /// rptProducts2 control.
+        /// pShipping control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptProducts2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pShipping;
         
         /// <summary>
-        /// rptProducts3 control.
+        /// pFreeShipping control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptProducts3;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pFreeShipping;
     }
 }

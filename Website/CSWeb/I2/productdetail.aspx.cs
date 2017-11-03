@@ -12,6 +12,7 @@ using CSWebBase;
 using CSBusiness;
 using CSBusiness.Resolver;
 using CSCore;
+using CSWeb.Shared.UserControls;
 
 namespace CSWeb
 {
@@ -307,7 +308,8 @@ namespace CSWeb
             }
             else
             {
-                Response.Redirect("cart.aspx");
+                ucHeader.CallMiniCartFunction();
+                //Response.Redirect("cart.aspx");
             }
             
         }

@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Header.ascx.cs" Inherits="CSWeb.Shared.UserControls.Header" %>
+<%@ Register Src="MiniCart.ascx" TagName="MiniCart" TagPrefix="uc" %>
 <header>
 	<section class="topbanner">
     	<div class="container clearfix">
@@ -32,7 +33,7 @@
                 <div class="shopping_cart_nav"><a href="cart"><span class="cart_item_count"><%= itemCount %></span >Shopping Bag</a></div>
                 <% } %>
 
-
+                <uc:MiniCart ID="ucMiniCart" runat="server" />
                 <% if (versionName.ToLower().EndsWith("b2") || versionName.ToLower().EndsWith("b3") || versionName.ToLower().EndsWith("b4")) %>
                 <% { %>
                     <h2>

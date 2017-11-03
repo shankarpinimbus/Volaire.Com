@@ -25,7 +25,7 @@
 <form runat="server">
     <asp:ScriptManager runat="server"></asp:ScriptManager>
     
-<uc:Header runat="server" />
+<uc:Header runat="server" ID="ucHeader" />
     <asp:HiddenField id="buttonClicked" runat="server"/>
 <div id="page_products">
     <div class="container product_detail_top clearfix">
@@ -94,7 +94,7 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;<asp:Button runat="server" ID="smallSizeSelectButton" CssClass="btn2 sizebtn" OnClick="smallSizeSelectButton_Click" />
                     </p>
                 </asp:Panel>
-                <asp:UpdatePanel runat="server"> <ContentTemplate>    
+                <%--<asp:UpdatePanel runat="server"> <ContentTemplate>    --%>
                 <asp:Panel runat="server" CssClass="kitprices" Visible="false" ID="productRetailPricePanel">
                     <span class="price_title">Product Value: </span>
                     <span class="strikeout">$<asp:Label runat="server" ID="productValue"></asp:Label></span><br />
@@ -153,7 +153,7 @@
                     </asp:Panel>
                     <asp:Literal ID="ltDetailDescription" runat="server" />
                 </div>
-            </ContentTemplate></asp:UpdatePanel>
+            <%--</ContentTemplate></asp:UpdatePanel>--%>
             </div>
         
 

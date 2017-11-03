@@ -30,6 +30,11 @@ namespace CSWeb.Shared.UserControls
             itemCount = count.ToString();
         }
 
+        public void CallMiniCartFunction()
+        {
+            ucMiniCart.CallBindControl();
+        }
+
         public string GetDynamicSidData(string data)
         {
             return DynamicSidDAL.GetDynamicSidData(data);

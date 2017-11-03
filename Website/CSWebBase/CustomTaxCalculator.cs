@@ -17,7 +17,7 @@ namespace CSWebBase
             decimal taxToReturn = 0;
             //decimal taxToReturn2 = 0;
             SitePreference list = CSFactory.GetCartPrefrence();
-            decimal taxableAmount = -cart.DiscountAmount;
+            decimal taxableAmount = 0;
             if (list.IncludeShippingCostInTaxCalculation)
             {
                 taxableAmount += cart.ShippingCost;
@@ -54,21 +54,32 @@ namespace CSWebBase
                 taxToReturn = taxableAmount * countryRegion.Value / 100;
             }
             taxToReturn = Math.Round(taxToReturn, 2, MidpointRounding.AwayFromZero);
+            int i = 0;
             foreach (Sku item in cart.CartItems)
             {
+                i++;
+
+                decimal itemPrice = item.FullPrice;
+                if (i == 1)
+                {
+                    if (cart.DiscountAmount > 0)
+                    {
+                        itemPrice -= cart.DiscountAmount;
+                    }
+                }
                 if (cart.ShippingAddress.CountryId > 0)
                 {
                     if (zipRegion != null)
                     {
-                        taxToReturn += Math.Round((item.FullPrice*item.Quantity) * zipRegion.Value / 100,2,MidpointRounding.AwayFromZero);
+                        taxToReturn += Math.Round((itemPrice * item.Quantity) * zipRegion.Value / 100, 2, MidpointRounding.AwayFromZero);
                     }
                     else if (stateRegion != null)
                     {
-                        taxToReturn += Math.Round((item.FullPrice * item.Quantity) * stateRegion.Value / 100, 2, MidpointRounding.AwayFromZero);
+                        taxToReturn += Math.Round((itemPrice * item.Quantity) * stateRegion.Value / 100, 2, MidpointRounding.AwayFromZero);
                     }
                     else if (countryRegion != null)
                     {
-                        taxToReturn += Math.Round((item.FullPrice * item.Quantity) * countryRegion.Value / 100, 2, MidpointRounding.AwayFromZero);
+                        taxToReturn += Math.Round((itemPrice * item.Quantity) * countryRegion.Value / 100, 2, MidpointRounding.AwayFromZero);
                     }
                 }
             }
@@ -80,7 +91,7 @@ namespace CSWebBase
         {
             decimal taxToReturn = 0;
             SitePreference list = CSFactory.GetCartPrefrence();
-            decimal taxableAmount = -cart.DiscountAmount; // Tax after Discount Amount is subtracted
+            decimal taxableAmount = 0; // Tax after Discount Amount is subtracted
             if (list.IncludeShippingCostInTaxCalculation)
             {
                 taxableAmount += cart.ShippingCost;
@@ -106,32 +117,43 @@ namespace CSWebBase
 
             if (zipRegion != null)
             {
-                taxToReturn = taxableAmount * zipRegion.Value / 100;
+                taxToReturn = Math.Round(taxableAmount * zipRegion.Value / 100, 2, MidpointRounding.AwayFromZero); ;
             }
             else if (stateRegion != null)
             {
-                taxToReturn = taxableAmount * stateRegion.Value / 100;
+                taxToReturn = Math.Round(taxableAmount * stateRegion.Value / 100, 2, MidpointRounding.AwayFromZero); ;
             }
             else if (countryRegion != null)
             {
-                taxToReturn = taxableAmount * countryRegion.Value / 100;
+                taxToReturn = Math.Round(taxableAmount * countryRegion.Value / 100, MidpointRounding.AwayFromZero); ;
             }
             taxToReturn = Math.Round(taxToReturn, 2, MidpointRounding.AwayFromZero);
+            int i = 0;
             foreach (Sku item in cart.CartItems)
             {
+                i++;
+
+                decimal itemPrice = item.FullPrice;
+                if (i == 1)
+                {
+                    if (cart.DiscountAmount > 0)
+                    {
+                        itemPrice -= cart.DiscountAmount;
+                    }
+                }
                 if (cart.ShippingAddress.CountryId > 0)
                 {
                     if (zipRegion != null)
                     {
-                        taxToReturn += Math.Round((item.FullPrice * item.Quantity) * zipRegion.Value / 100, 2, MidpointRounding.AwayFromZero);
+                        taxToReturn += Math.Round((itemPrice * item.Quantity) * zipRegion.Value / 100, 2, MidpointRounding.AwayFromZero);
                     }
                     else if (stateRegion != null)
                     {
-                        taxToReturn += Math.Round((item.FullPrice * item.Quantity) * stateRegion.Value / 100, 2, MidpointRounding.AwayFromZero);
+                        taxToReturn += Math.Round((itemPrice * item.Quantity) * stateRegion.Value / 100, 2, MidpointRounding.AwayFromZero);
                     }
                     else if (countryRegion != null)
                     {
-                        taxToReturn += Math.Round((item.FullPrice * item.Quantity) * countryRegion.Value / 100, 2, MidpointRounding.AwayFromZero);
+                        taxToReturn += Math.Round((itemPrice * item.Quantity) * countryRegion.Value / 100, 2, MidpointRounding.AwayFromZero);
                     }
                 }
             }

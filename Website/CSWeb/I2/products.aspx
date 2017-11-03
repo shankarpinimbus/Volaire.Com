@@ -17,23 +17,9 @@
 </head>
 <body class="products_page products_page_i2">
 <form runat="server" id="fm1">
-    <uc:Header runat="server"/>
-
-<section>
-	<div class="shop_products_1">
-    	<div class="container">
-        	<div class="shop_productstop">
-            	<img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products/hero-products-2-1b.jpg" alt="BEST offer! Volume Essentials Collection - Get TV Offer!" class="block" />
-                <a href="tv-introductory-offer" class="home1link">Get TV Offer</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <div class="container shop_products_main">
+    
         <div class="clearfix"><uc:Products runat="server"></uc:Products></div>
-    </div>
+   
 
 
     

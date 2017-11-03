@@ -597,6 +597,7 @@
     <Content Include="Shared\UserControls\ReviewOrder.ascx" />
     <Content Include="Shared\UserControls\ShippingBillingCreditForm_MOBILE.ascx" />
     <Content Include="Shared\UserControls\ShippingForm.ascx" />
+    <Content Include="Shared\UserControls\MiniCart.ascx" />
     <Content Include="Shared\UserControls\ShoppingCartControl.ascx" />
     <Content Include="Shared\UserControls\ShoppingCartControl_MOBILE.ascx" />
     <Content Include="Shared\UserControls\TokenSecureNet.ascx" />
@@ -1587,6 +1588,13 @@
     </Compile>
     <Compile Include="Shared\UserControls\ShippingForm.ascx.designer.cs">
       <DependentUpon>ShippingForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UserControls\MiniCart.ascx.cs">
+      <DependentUpon>MiniCart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\UserControls\MiniCart.ascx.designer.cs">
+      <DependentUpon>MiniCart.ascx</DependentUpon>
     </Compile>
     <Compile Include="Shared\UserControls\ShoppingCartControl.ascx.cs">
       <DependentUpon>ShoppingCartControl.ascx</DependentUpon>

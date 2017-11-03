@@ -332,7 +332,8 @@ namespace CSWeb.Store.UserControls
                         clientData.CartInfo.ShowQuantity = false;
 
                         Session["ClientOrderData"] = clientData;
-                        Response.Redirect("Cart.aspx");
+                        //Response.Redirect("Cart.aspx");
+                        ucHeader.CallMiniCartFunction();
                     }
                     break;
                 default:
@@ -462,7 +463,8 @@ namespace CSWeb.Store.UserControls
                             clientData.CartInfo.ShowQuantity = false;
 
                             Session["ClientOrderData"] = clientData;
-                            Response.Redirect("Cart.aspx");
+                            //Response.Redirect("Cart.aspx");
+                            ucHeader.CallMiniCartFunction();
 
                         }
                         

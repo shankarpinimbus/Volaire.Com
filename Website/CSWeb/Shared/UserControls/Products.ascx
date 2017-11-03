@@ -1,5 +1,20 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Products.ascx.cs" Inherits="CSWeb.Store.UserControls.Products" %>
+<%@ Register TagPrefix="uc" TagName="Header" Src="~/Shared/UserControls/Header.ascx" %>
+<uc:Header runat="server" ID="ucHeader"/>
 
+<section>
+    <div class="shop_products_1">
+        <div class="container">
+            <div class="shop_productstop">
+                <img src="//d39hwjxo88pg52.cloudfront.net/volaire/images/products/hero-products-2-1b.jpg" alt="BEST offer! Volume Essentials Collection - Get TV Offer!" class="block" />
+                <a href="tv-introductory-offer" class="home1link">Get TV Offer</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container shop_products_main">
 <div class="container3 all_products">
     <div class="row">
         <asp:Label ID="lblMessage" runat="server" />
@@ -218,3 +233,4 @@
     <!-- //row -->
 </div>
 <!-- //container3 -->
+    </div>
