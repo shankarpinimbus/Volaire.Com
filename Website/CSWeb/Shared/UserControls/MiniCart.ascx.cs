@@ -280,7 +280,7 @@ namespace CSWeb.Shared.UserControls
             else
             {
                
-                rptShoppingCart.Visible = false;
+                //rptShoppingCart.Visible = false;
             }
             Session["RegenerateUrl"] = RegenerateCartUrl();
         }

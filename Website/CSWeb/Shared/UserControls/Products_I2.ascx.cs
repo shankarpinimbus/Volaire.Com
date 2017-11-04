@@ -334,6 +334,7 @@ namespace CSWeb.Store.UserControls
                         Session["ClientOrderData"] = clientData;
                         //Response.Redirect("Cart.aspx");
                         ucHeader.CallMiniCartFunction();
+                        PopulatePage();
                     }
                     break;
                 default:
@@ -465,6 +466,7 @@ namespace CSWeb.Store.UserControls
                             Session["ClientOrderData"] = clientData;
                             //Response.Redirect("Cart.aspx");
                             ucHeader.CallMiniCartFunction();
+                            PopulatePage();
 
                         }
                         

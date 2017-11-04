@@ -58,6 +58,6 @@
     </ItemTemplate>
 </asp:Repeater>
     <a href="cart.aspx">CheckOut</a>
-    <p runat="server" id="pShipping"> <%=remainingAmount %> remaining for Free Shipping.</p>
+    <p runat="server" id="pShipping"> <%=remainingAmount.ToString("n2") %> remaining for Free Shipping.</p>
     <p runat="server" id="pFreeShipping" Visible="False"> FREE SHIPPING You now qualify for free shipping.</p>
     </div>
