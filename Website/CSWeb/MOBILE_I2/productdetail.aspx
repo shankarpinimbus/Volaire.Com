@@ -5,6 +5,7 @@
 <%@ Register Src="/Shared/UserControls/TrackingPixels.ascx" TagName="TrackingPixels" TagPrefix="uc" %>
 <%@ Register Src="/Shared/UserControls/Header_Mobile.ascx" TagName="Header" TagPrefix="uc" %>
 <%@ Register Src="/shared/UserControls/Footer_Mobile.ascx" TagName="Footer" TagPrefix="uc" %>
+<%@ Register Src="/shared/UserControls/MiniCart_M.ascx" TagName="MiniCart" TagPrefix="uc" %>
 <!doctype html>
 <html>
 <head runat="server">
@@ -94,7 +95,7 @@
                         </p>
                         
                     </asp:Panel>
-                <asp:UpdatePanel runat="server"><ContentTemplate>
+                <%--<asp:UpdatePanel runat="server"><ContentTemplate>--%>
                     <asp:Panel runat="server" CssClass="kitprices" Visible="false" ID="productRetailPricePanel">
                         Product Value :
                             <span class="strikeout">$<asp:Label runat="server" ID="productValue"></asp:Label></span><br />
@@ -155,7 +156,7 @@
                             <asp:Literal ID="ltDetailDescription" runat="server" />
                         </div>
                     </div>
-                </ContentTemplate></asp:UpdatePanel>
+                <%--</ContentTemplate></asp:UpdatePanel>--%>
                 </div>
                 <div class="clear"></div>
             
@@ -224,6 +225,7 @@
 </div>
         <!-- end content area -->
         <asp:LinkButton ID="btn" runat="server" style="visibility: hidden;" /> 
+    <asp:LinkButton ID="btn1" runat="server" style="visibility: hidden;" /> 
         <!-- dummy button for use by modal popup -->
         <ajaxToolkit:ModalPopupExtender runat="server" ID="mpePopup" TargetControlID="btn"
                                         PopupControlID="pnlModalPopUpPanel" PopupDragHandleControlID="pnlModalPopUpPanel" />
@@ -241,6 +243,22 @@
           </div>
    
         </asp:Panel>
+    <ajaxToolkit:ModalPopupExtender runat="server" ID="mpeMiniCart" TargetControlID="btn1"
+                                    PopupControlID="pnlMiniCart" PopupDragHandleControlID="pnlMiniCart" />
+
+    <asp:Panel ID="pnlMiniCart" runat="server" CssClass="modalPopup">
+        <div class="autoship_modal_bg"></div>
+        <div class="autoship_modal">
+            <div class="autoship_modal_close text-right">
+                <p><asp:LinkButton ID="lbCancel" CssClass="btn btn-danger" runat="server" CausesValidation="false" OnClick="lbCancel_OnClick"><img src="//d39hwjxo88pg52.cloudfront.net/specificbeauty/images/xclose.png" alt="Close"></asp:LinkButton></p>
+            </div>
+            <uc:MiniCart ID="ucMiniCart" runat="server" />
+            <div>
+                <asp:LinkButton ID="LinkButton2" runat="server" Text="Save" Visible="False" OnClick="btnSaveOrder_Click" CssClass="btn btn-success"><i class="icon-save"></i> Save</asp:LinkButton> 
+            </div>
+        </div>
+   
+    </asp:Panel>
 
         <%# CSBusiness.DynamicVersion.Helper.IncludeFile("scripts-bottom.html")%>
         <uc:Footer ID="Footer" runat="server" />

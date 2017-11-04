@@ -304,7 +304,9 @@ namespace CSWeb.Mobile
             }
             else
             {
-                Response.Redirect("cart.aspx");
+                mpeMiniCart.Show();
+                ucMiniCart.CallBindControl();
+                //Response.Redirect("cart.aspx");
             }
 
         }
@@ -413,6 +415,11 @@ namespace CSWeb.Mobile
                 ddlQuantity.Enabled = true;
                 subscriptionDetails.Visible = false;
             }
+        }
+
+        protected void lbCancel_OnClick(object sender, EventArgs e)
+        {
+            mpeMiniCart.Hide();
         }
     }
 }

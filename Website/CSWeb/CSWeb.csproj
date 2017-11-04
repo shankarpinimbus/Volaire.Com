@@ -587,6 +587,7 @@
     <Content Include="Shared\UserControls\Footer_Mobile.ascx" />
     <Content Include="Shared\UserControls\Header.ascx" />
     <Content Include="Shared\UserControls\Header_Mobile.ascx" />
+    <Content Include="Shared\UserControls\MiniCart_M.ascx" />
     <Content Include="Shared\UserControls\Products_I2.ascx" />
     <Content Include="Shared\UserControls\Products.ascx" />
     <Content Include="Shared\UserControls\Products_Mobile_I2.ascx" />
@@ -1528,6 +1529,13 @@
     </Compile>
     <Compile Include="Shared\UserControls\Header.ascx.designer.cs">
       <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UserControls\MiniCart_M.ascx.cs">
+      <DependentUpon>MiniCart_M.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\UserControls\MiniCart_M.ascx.designer.cs">
+      <DependentUpon>MiniCart_M.ascx</DependentUpon>
     </Compile>
     <Compile Include="Shared\UserControls\Products_I2.ascx.cs">
       <DependentUpon>Products_I2.ascx</DependentUpon>
