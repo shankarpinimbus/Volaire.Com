@@ -182,8 +182,10 @@ namespace CSWeb.UserControls
                     clientData.CartInfo.ShowQuantity = false;
 
                     Session["ClientOrderData"] = clientData;
-                    Response.Redirect("Cart.aspx");
-                }
+                        //Response.Redirect("Cart.aspx");
+                    mpeMiniCart.Show();
+                    ucMiniCart.CallBindControl();
+                    }
                     break;
                 default:
                     break;
@@ -256,8 +258,10 @@ namespace CSWeb.UserControls
                     clientData.CartInfo.ShowQuantity = false;
 
                     Session["ClientOrderData"] = clientData;
-                    Response.Redirect("Cart.aspx");
-                }
+                        //Response.Redirect("Cart.aspx");
+                    mpeMiniCart.Show();
+                    ucMiniCart.CallBindControl();
+                    }
                     break;
                 default:
                     break;
@@ -346,8 +350,10 @@ namespace CSWeb.UserControls
                         clientData.CartInfo.ShowQuantity = false;
 
                         Session["ClientOrderData"] = clientData;
-                        Response.Redirect("Cart.aspx");
-                    }
+                            //Response.Redirect("Cart.aspx");
+                        mpeMiniCart.Show();
+                        ucMiniCart.CallBindControl();
+                        }
                 }
                     break;
                 default:
