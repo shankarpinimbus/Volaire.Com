@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Header.ascx.cs" Inherits="CSWeb.Shared.UserControls.Header" %>
+<%@ Register Src="MiniCart.ascx" TagName="MiniCart" TagPrefix="uc" %>
 <header>
 	<section class="topbanner">
         <div class="topbanner-promo">
@@ -124,4 +125,7 @@
     <% } %>
     <a href="tel:<%= GetCleanPhoneNumber(GetDynamicSidData("phone"))%>" class="maplink stickylink1">Call Now</a>
     <a href="tv-introductory-offer" class="maplink stickylink2">Order Now!</a>
+</div>
+<div style="display: none">
+    <uc:MiniCart ID="ucMiniCart" runat="server" />
 </div>
