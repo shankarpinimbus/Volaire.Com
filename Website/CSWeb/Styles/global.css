@@ -4054,6 +4054,73 @@ ul.product_steps li {
 }
 
 
+.minicart {
+    position: absolute;
+    top: 0;
+    right: 5.8%;
+    z-index: 50;
+    width: 374px;
+    padding: 20px 15px 10px 9px;
+    background-color: #fff;
+    border: #8f775e solid 1px;
+    color: #8c7359;
+    text-align: left;
+}
+
+.minicart .intro {
+    font-size: 1.125rem;
+}
+
+.minicart_shipping_text {
+    background-color: #dff4f4;
+    padding: .2rem 2%;
+    color: #020202;
+}
+
+.minicart .p1 {
+    font-size: 1.125rem;
+}
+
+.minicart .cart_image {
+    width: 33%;
+    margin: 4px 2% 0 0;
+}
+.minicart .cart_image img {
+    width: 100%;
+}
+
+.minicart .cart_text {
+    width: 64%;
+}
+
+.topbanner-promo .minicart h2 {
+	color: #54d2d9;
+	font-size: 1.25rem;
+    font-family: Judson, 'Times New Roman', sans-serif;
+	font-weight: 400;
+	line-height: 1.2;
+	text-transform: none;
+	background: none;
+	padding: 0;
+	display: block;
+	white-space: normal;
+	box-shadow: none;
+}
+
+.minicart_price {
+    font-size: 1.125rem;
+    color: #8c7359;
+    font-family: Judson, 'Times New Roman', sans-serif;
+}
+
+.close_minicart {
+    position: absolute;
+    top: .3rem;
+    right: 4%;
+    font-size: 1.5rem;
+}
+
+
 /* YOTPO - get rid of 'x' on thank you for posting a review message */
 .yotpo-icon.yotpo-icon-cross {display: none !important;}
 

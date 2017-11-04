@@ -199,6 +199,12 @@ jQuery(document).ready(function ($) {
             };
         }
     });
+
+    $('.close_minicart').click(function (e) {
+        e.preventDefault();
+        $('.minicart').hide();
+    });
+
 }); // ready
 
 
